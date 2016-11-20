@@ -1,0 +1,557 @@
+
+
+================================================================
+== Vivado HLS Report for 'feature_extractor_maxpool'
+================================================================
+* Date:           Sun Nov 20 00:40:54 2016
+
+* Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
+* Project:        cnn_filter
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.16|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  5497|  5497|  5497|  5497|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+------+------+----------+-----------+-----------+------+----------+
+        |                     |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1             |  5496|  5496|       458|          -|          -|    12|    no    |
+        | + Loop 1.1          |   456|   456|        38|          -|          -|    12|    no    |
+        |  ++ Loop 1.1.1      |    36|    36|        18|          -|          -|     2|    no    |
+        |   +++ Loop 1.1.1.1  |    16|    16|         8|          -|          -|     2|    no    |
+        +---------------------+------+------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       -|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 12
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond3)
+3 --> 
+	2  / (exitcond2)
+	4  / (!exitcond2)
+4 --> 
+	5  / (!exitcond1)
+	3  / (exitcond1)
+5 --> 
+	4  / (exitcond)
+	6  / (!exitcond)
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	5  / true
+* FSM state operations: 
+
+ <State 1>: 1.72ns
+ST_1: tmp_41_read [1/1] 0.00ns
+:0  %tmp_41_read = call i3 @_ssdm_op_Read.ap_auto.i3(i3 %tmp_41)
+
+ST_1: tmp_4_read [1/1] 0.00ns
+:1  %tmp_4_read = call i3 @_ssdm_op_Read.ap_auto.i3(i3 %tmp_4)
+
+ST_1: tmp_s [1/1] 0.00ns
+:2  %tmp_s = call i8 @_ssdm_op_BitConcatenate.i8.i3.i5(i3 %tmp_4_read, i5 0)
+
+ST_1: p_shl9_cast [1/1] 0.00ns
+:3  %p_shl9_cast = zext i8 %tmp_s to i9
+
+ST_1: tmp_5 [1/1] 0.00ns
+:4  %tmp_5 = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %tmp_4_read, i3 0)
+
+ST_1: p_shl1_cast [1/1] 0.00ns
+:5  %p_shl1_cast = zext i6 %tmp_5 to i9
+
+ST_1: p_addr [1/1] 1.72ns
+:6  %p_addr = sub i9 %p_shl9_cast, %p_shl1_cast
+
+ST_1: p_addr_cast [1/1] 0.00ns
+:7  %p_addr_cast = sext i9 %p_addr to i10
+
+ST_1: tmp_9 [1/1] 0.00ns
+:8  %tmp_9 = call i7 @_ssdm_op_BitConcatenate.i7.i3.i4(i3 %tmp_41_read, i4 0)
+
+ST_1: p_shl_cast [1/1] 0.00ns
+:9  %p_shl_cast = zext i7 %tmp_9 to i8
+
+ST_1: tmp_14 [1/1] 0.00ns
+:10  %tmp_14 = call i5 @_ssdm_op_BitConcatenate.i5.i3.i2(i3 %tmp_41_read, i2 0)
+
+ST_1: p_shl8_cast [1/1] 0.00ns
+:11  %p_shl8_cast = zext i5 %tmp_14 to i8
+
+ST_1: p_addr4 [1/1] 1.72ns
+:12  %p_addr4 = sub i8 %p_shl_cast, %p_shl8_cast
+
+ST_1: p_addr4_cast [1/1] 0.00ns
+:13  %p_addr4_cast = sext i8 %p_addr4 to i9
+
+ST_1: stg_27 [1/1] 1.57ns
+:14  br label %.loopexit
+
+
+ <State 2>: 3.68ns
+ST_2: i [1/1] 0.00ns
+.loopexit:0  %i = phi i4 [ 0, %0 ], [ %i_2, %.preheader5 ]
+
+ST_2: exitcond3 [1/1] 1.88ns
+.loopexit:1  %exitcond3 = icmp eq i4 %i, -4
+
+ST_2: empty [1/1] 0.00ns
+.loopexit:2  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 12, i64 12, i64 12)
+
+ST_2: i_2 [1/1] 0.80ns
+.loopexit:3  %i_2 = add i4 %i, 1
+
+ST_2: stg_32 [1/1] 0.00ns
+.loopexit:4  br i1 %exitcond3, label %2, label %.preheader5.preheader
+
+ST_2: tmp [1/1] 0.00ns
+.preheader5.preheader:0  %tmp = call i5 @_ssdm_op_BitConcatenate.i5.i4.i1(i4 %i, i1 false)
+
+ST_2: tmp_trn_cast [1/1] 0.00ns
+.preheader5.preheader:1  %tmp_trn_cast = zext i4 %i to i9
+
+ST_2: p_addr5 [1/1] 1.72ns
+.preheader5.preheader:2  %p_addr5 = add i9 %tmp_trn_cast, %p_addr4_cast
+
+ST_2: tmp_15 [1/1] 0.00ns
+.preheader5.preheader:3  %tmp_15 = call i13 @_ssdm_op_BitConcatenate.i13.i9.i4(i9 %p_addr5, i4 0)
+
+ST_2: p_shl2 [1/1] 0.00ns
+.preheader5.preheader:4  %p_shl2 = sext i13 %tmp_15 to i32
+
+ST_2: tmp_16 [1/1] 0.00ns
+.preheader5.preheader:5  %tmp_16 = call i11 @_ssdm_op_BitConcatenate.i11.i9.i2(i9 %p_addr5, i2 0)
+
+ST_2: p_shl3 [1/1] 0.00ns
+.preheader5.preheader:6  %p_shl3 = sext i11 %tmp_16 to i32
+
+ST_2: p_addr6 [1/1] 1.96ns
+.preheader5.preheader:7  %p_addr6 = sub i32 %p_shl2, %p_shl3
+
+ST_2: stg_41 [1/1] 1.57ns
+.preheader5.preheader:8  br label %.preheader5
+
+ST_2: stg_42 [1/1] 0.00ns
+:0  ret void
+
+
+ <State 3>: 1.88ns
+ST_3: j [1/1] 0.00ns
+.preheader5:0  %j = phi i4 [ %j_2, %1 ], [ 0, %.preheader5.preheader ]
+
+ST_3: exitcond2 [1/1] 1.88ns
+.preheader5:1  %exitcond2 = icmp eq i4 %j, -4
+
+ST_3: empty_24 [1/1] 0.00ns
+.preheader5:2  %empty_24 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 12, i64 12, i64 12)
+
+ST_3: j_2 [1/1] 0.80ns
+.preheader5:3  %j_2 = add i4 %j, 1
+
+ST_3: stg_47 [1/1] 0.00ns
+.preheader5:4  br i1 %exitcond2, label %.loopexit, label %.preheader4.preheader
+
+ST_3: tmp_1 [1/1] 0.00ns
+.preheader4.preheader:0  %tmp_1 = call i5 @_ssdm_op_BitConcatenate.i5.i4.i1(i4 %j, i1 false)
+
+ST_3: stg_49 [1/1] 1.57ns
+.preheader4.preheader:1  br label %.preheader4
+
+
+ <State 4>: 5.52ns
+ST_4: max [1/1] 0.00ns
+.preheader4:0  %max = phi i32 [ 0, %.preheader4.preheader ], [ %max_1, %.preheader ]
+
+ST_4: k [1/1] 0.00ns
+.preheader4:1  %k = phi i2 [ 0, %.preheader4.preheader ], [ %k_2, %.preheader ]
+
+ST_4: k_cast3 [1/1] 0.00ns
+.preheader4:2  %k_cast3 = zext i2 %k to i5
+
+ST_4: exitcond1 [1/1] 1.36ns
+.preheader4:3  %exitcond1 = icmp eq i2 %k, -2
+
+ST_4: empty_25 [1/1] 0.00ns
+.preheader4:4  %empty_25 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
+
+ST_4: k_2 [1/1] 0.80ns
+.preheader4:5  %k_2 = add i2 %k, 1
+
+ST_4: stg_56 [1/1] 0.00ns
+.preheader4:6  br i1 %exitcond1, label %1, label %.preheader.preheader
+
+ST_4: tmp_3 [1/1] 1.72ns
+.preheader.preheader:0  %tmp_3 = add i5 %k_cast3, %tmp
+
+ST_4: tmp_5_trn_cast [1/1] 0.00ns
+.preheader.preheader:1  %tmp_5_trn_cast = zext i5 %tmp_3 to i10
+
+ST_4: p_addr1 [1/1] 1.84ns
+.preheader.preheader:2  %p_addr1 = add i10 %p_addr_cast, %tmp_5_trn_cast
+
+ST_4: tmp_18 [1/1] 0.00ns
+.preheader.preheader:3  %tmp_18 = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %p_addr1, i5 0)
+
+ST_4: p_shl4 [1/1] 0.00ns
+.preheader.preheader:4  %p_shl4 = sext i15 %tmp_18 to i32
+
+ST_4: tmp_19 [1/1] 0.00ns
+.preheader.preheader:5  %tmp_19 = call i13 @_ssdm_op_BitConcatenate.i13.i10.i3(i10 %p_addr1, i3 0)
+
+ST_4: p_shl5 [1/1] 0.00ns
+.preheader.preheader:6  %p_shl5 = sext i13 %tmp_19 to i32
+
+ST_4: p_addr2 [1/1] 1.96ns
+.preheader.preheader:7  %p_addr2 = sub i32 %p_shl4, %p_shl5
+
+ST_4: stg_65 [1/1] 1.57ns
+.preheader.preheader:8  br label %.preheader
+
+ST_4: tmp_2_trn [1/1] 0.00ns
+:0  %tmp_2_trn = zext i4 %j to i32
+
+ST_4: p_addr7 [1/1] 1.96ns
+:1  %p_addr7 = add i32 %p_addr6, %tmp_2_trn
+
+ST_4: tmp_17 [1/1] 0.00ns
+:2  %tmp_17 = zext i32 %p_addr7 to i64
+
+ST_4: output_mat_addr [1/1] 0.00ns
+:3  %output_mat_addr = getelementptr [864 x i32]* %output_mat, i64 0, i64 %tmp_17
+
+ST_4: stg_70 [1/1] 2.71ns
+:4  store i32 %max, i32* %output_mat_addr, align 4
+
+ST_4: stg_71 [1/1] 0.00ns
+:5  br label %.preheader5
+
+
+ <State 5>: 6.41ns
+ST_5: max_1 [1/1] 0.00ns
+.preheader:0  %max_1 = phi i32 [ %max_2, %_ifconv ], [ %max, %.preheader.preheader ]
+
+ST_5: l [1/1] 0.00ns
+.preheader:1  %l = phi i2 [ %l_1, %_ifconv ], [ 0, %.preheader.preheader ]
+
+ST_5: l_cast2 [1/1] 0.00ns
+.preheader:2  %l_cast2 = zext i2 %l to i5
+
+ST_5: exitcond [1/1] 1.36ns
+.preheader:3  %exitcond = icmp eq i2 %l, -2
+
+ST_5: empty_26 [1/1] 0.00ns
+.preheader:4  %empty_26 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
+
+ST_5: l_1 [1/1] 0.80ns
+.preheader:5  %l_1 = add i2 %l, 1
+
+ST_5: stg_78 [1/1] 0.00ns
+.preheader:6  br i1 %exitcond, label %.preheader4, label %_ifconv
+
+ST_5: tmp_6 [1/1] 1.72ns
+_ifconv:0  %tmp_6 = add i5 %l_cast2, %tmp_1
+
+ST_5: tmp_7_trn [1/1] 0.00ns
+_ifconv:1  %tmp_7_trn = zext i5 %tmp_6 to i32
+
+ST_5: p_addr3 [1/1] 1.96ns
+_ifconv:2  %p_addr3 = add i32 %p_addr2, %tmp_7_trn
+
+ST_5: tmp_8 [6/6] 6.41ns
+_ifconv:6  %tmp_8 = sitofp i32 %max_1 to float
+
+
+ <State 6>: 6.41ns
+ST_6: tmp_8 [5/6] 6.41ns
+_ifconv:6  %tmp_8 = sitofp i32 %max_1 to float
+
+
+ <State 7>: 6.41ns
+ST_7: tmp_8 [4/6] 6.41ns
+_ifconv:6  %tmp_8 = sitofp i32 %max_1 to float
+
+
+ <State 8>: 6.41ns
+ST_8: tmp_8 [3/6] 6.41ns
+_ifconv:6  %tmp_8 = sitofp i32 %max_1 to float
+
+
+ <State 9>: 6.41ns
+ST_9: tmp_20 [1/1] 0.00ns
+_ifconv:3  %tmp_20 = zext i32 %p_addr3 to i64
+
+ST_9: input_mat_addr [1/1] 0.00ns
+_ifconv:4  %input_mat_addr = getelementptr [3456 x float]* %input_mat, i64 0, i64 %tmp_20
+
+ST_9: input_mat_load [2/2] 2.71ns
+_ifconv:5  %input_mat_load = load float* %input_mat_addr, align 4
+
+ST_9: tmp_8 [2/6] 6.41ns
+_ifconv:6  %tmp_8 = sitofp i32 %max_1 to float
+
+
+ <State 10>: 6.41ns
+ST_10: input_mat_load [1/2] 2.71ns
+_ifconv:5  %input_mat_load = load float* %input_mat_addr, align 4
+
+ST_10: tmp_8 [1/6] 6.41ns
+_ifconv:6  %tmp_8 = sitofp i32 %max_1 to float
+
+
+ <State 11>: 8.16ns
+ST_11: p_Val2_5 [1/1] 0.00ns
+_ifconv:7  %p_Val2_5 = bitcast float %input_mat_load to i32
+
+ST_11: loc_V [1/1] 0.00ns
+_ifconv:8  %loc_V = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %p_Val2_5, i32 23, i32 30)
+
+ST_11: loc_V_2 [1/1] 0.00ns
+_ifconv:9  %loc_V_2 = trunc i32 %p_Val2_5 to i23
+
+ST_11: tmp_8_to_int [1/1] 0.00ns
+_ifconv:10  %tmp_8_to_int = bitcast float %tmp_8 to i32
+
+ST_11: tmp_2 [1/1] 0.00ns
+_ifconv:11  %tmp_2 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_8_to_int, i32 23, i32 30)
+
+ST_11: tmp_22 [1/1] 0.00ns
+_ifconv:12  %tmp_22 = trunc i32 %tmp_8_to_int to i23
+
+ST_11: notlhs [1/1] 2.00ns
+_ifconv:13  %notlhs = icmp ne i8 %loc_V, -1
+
+ST_11: notrhs [1/1] 2.39ns
+_ifconv:14  %notrhs = icmp eq i23 %loc_V_2, 0
+
+ST_11: tmp_7 [1/1] 1.37ns
+_ifconv:15  %tmp_7 = or i1 %notrhs, %notlhs
+
+ST_11: notlhs1 [1/1] 2.00ns
+_ifconv:16  %notlhs1 = icmp ne i8 %tmp_2, -1
+
+ST_11: notrhs2 [1/1] 2.39ns
+_ifconv:17  %notrhs2 = icmp eq i23 %tmp_22, 0
+
+ST_11: tmp_10 [1/1] 1.37ns
+_ifconv:18  %tmp_10 = or i1 %notrhs2, %notlhs1
+
+ST_11: tmp_11 [1/1] 1.37ns
+_ifconv:19  %tmp_11 = and i1 %tmp_7, %tmp_10
+
+ST_11: tmp_12 [1/1] 6.79ns
+_ifconv:20  %tmp_12 = fcmp ogt float %input_mat_load, %tmp_8
+
+ST_11: tmp_13 [1/1] 1.37ns
+_ifconv:21  %tmp_13 = and i1 %tmp_11, %tmp_12
+
+ST_11: p_Result_s [1/1] 0.00ns
+_ifconv:22  %p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %p_Val2_5, i32 31)
+
+ST_11: p_Result_2 [1/1] 0.00ns
+_ifconv:23  %p_Result_2 = call i24 @_ssdm_op_BitConcatenate.i24.i1.i23(i1 true, i23 %loc_V_2) nounwind
+
+ST_11: tmp_i_i [1/1] 0.00ns
+_ifconv:24  %tmp_i_i = zext i24 %p_Result_2 to i78
+
+ST_11: tmp_i_i_i_cast1 [1/1] 0.00ns
+_ifconv:25  %tmp_i_i_i_cast1 = zext i8 %loc_V to i9
+
+ST_11: sh_assign [1/1] 1.72ns
+_ifconv:26  %sh_assign = add i9 -127, %tmp_i_i_i_cast1
+
+ST_11: isNeg [1/1] 0.00ns
+_ifconv:27  %isNeg = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %sh_assign, i32 8)
+
+ST_11: tmp_1_i_i [1/1] 1.72ns
+_ifconv:28  %tmp_1_i_i = sub i8 127, %loc_V
+
+ST_11: tmp_1_i_i_cast [1/1] 0.00ns
+_ifconv:29  %tmp_1_i_i_cast = sext i8 %tmp_1_i_i to i9
+
+ST_11: sh_assign_1 [1/1] 1.37ns
+_ifconv:30  %sh_assign_1 = select i1 %isNeg, i9 %tmp_1_i_i_cast, i9 %sh_assign
+
+ST_11: sh_assign_1_cast [1/1] 0.00ns
+_ifconv:31  %sh_assign_1_cast = sext i9 %sh_assign_1 to i32
+
+ST_11: sh_assign_1_cast_cast [1/1] 0.00ns
+_ifconv:32  %sh_assign_1_cast_cast = sext i9 %sh_assign_1 to i24
+
+ST_11: tmp_2_i_i [1/1] 0.00ns
+_ifconv:33  %tmp_2_i_i = zext i32 %sh_assign_1_cast to i78
+
+ST_11: tmp_3_i_i [1/1] 2.78ns
+_ifconv:34  %tmp_3_i_i = lshr i24 %p_Result_2, %sh_assign_1_cast_cast
+
+ST_11: tmp_5_i_i [1/1] 2.78ns
+_ifconv:35  %tmp_5_i_i = shl i78 %tmp_i_i, %tmp_2_i_i
+
+ST_11: tmp_25 [1/1] 0.00ns
+_ifconv:36  %tmp_25 = call i1 @_ssdm_op_BitSelect.i1.i24.i32(i24 %tmp_3_i_i, i32 23)
+
+ST_11: tmp_21 [1/1] 0.00ns
+_ifconv:37  %tmp_21 = zext i1 %tmp_25 to i32
+
+ST_11: tmp_23 [1/1] 0.00ns
+_ifconv:38  %tmp_23 = call i32 @_ssdm_op_PartSelect.i32.i78.i32.i32(i78 %tmp_5_i_i, i32 23, i32 54)
+
+ST_11: p_Val2_8 [1/1] 1.37ns
+_ifconv:39  %p_Val2_8 = select i1 %isNeg, i32 %tmp_21, i32 %tmp_23
+
+
+ <State 12>: 5.18ns
+ST_12: p_Val2_7_i_i [1/1] 2.44ns
+_ifconv:40  %p_Val2_7_i_i = sub i32 0, %p_Val2_8
+
+ST_12: p_Val2_s [1/1] 1.37ns
+_ifconv:41  %p_Val2_s = select i1 %p_Result_s, i32 %p_Val2_7_i_i, i32 %p_Val2_8
+
+ST_12: max_2 [1/1] 1.37ns
+_ifconv:42  %max_2 = select i1 %tmp_13, i32 %p_Val2_s, i32 %max_1
+
+ST_12: stg_128 [1/1] 0.00ns
+_ifconv:43  br label %.preheader
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

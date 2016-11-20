@@ -1,0 +1,189 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'feature_extractor'" level="0">
+<item name = "Date">Sun Nov 20 00:40:54 2016
+</item>
+<item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
+<item name = "Project">cnn_filter</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.41, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">1761897, 1761897, 1761898, 1761898, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_feature_extractor_convolve_fu_177">feature_extractor_convolve, 266786, 266786, 266786, 266786, none</column>
+<column name="grp_feature_extractor_maxpool_fu_190">feature_extractor_maxpool, 5497, 5497, 5497, 5497, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Convolve">1600728, 1600728, 266788, -, -, 6, no</column>
+<column name="- Threshold">128172, 128172, 21362, -, -, 6, no</column>
+<column name=" + Threshold.1">21360, 21360, 890, -, -, 24, no</column>
+<column name="  ++ Threshold.1.1">888, 888, 37, -, -, 24, no</column>
+<column name="- Pool">32994, 32994, 5499, -, -, 6, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Expression">-, -, 0, 906</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, 31, 3806, 6540</column>
+<column name="Memory">16, -, 0, 0</column>
+<column name="Multiplexer">-, -, -, 122</column>
+<column name="Register">-, -, 436, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">5, 14, 3, 14</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="grp_feature_extractor_convolve_fu_177">feature_extractor_convolve, 0, 5, 1076, 1670</column>
+<column name="feature_extractor_dexp_64ns_64ns_64_18_full_dsp_U17">feature_extractor_dexp_64ns_64ns_64_18_full_dsp, 0, 26, 1549, 2599</column>
+<column name="feature_extractor_fpext_32ns_64_1_U16">feature_extractor_fpext_32ns_64_1, 0, 0, 100, 138</column>
+<column name="grp_feature_extractor_maxpool_fu_190">feature_extractor_maxpool, 0, 0, 717, 1551</column>
+<column name="feature_extractor_sdiv_3ns_32ns_32_7_seq_U18">feature_extractor_sdiv_3ns_32ns_32_7_seq, 0, 0, 24, 28</column>
+<column name="feature_extractor_sitofp_32ns_32_6_U15">feature_extractor_sitofp_32ns_32_6, 0, 0, 340, 554</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="C_U">feature_extractor_C, 8, 0, 0, 3456, 32, 1, 110592</column>
+<column name="S_U">feature_extractor_C, 8, 0, 0, 3456, 32, 1, 110592</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="grp_fu_504_p1">+, 0, 0, 32, 1, 32</column>
+<column name="i_1_fu_218_p2">+, 0, 0, 3, 3, 1</column>
+<column name="i_2_fu_276_p2">+, 0, 0, 5, 5, 1</column>
+<column name="j_1_fu_230_p2">+, 0, 0, 3, 3, 1</column>
+<column name="j_2_fu_327_p2">+, 0, 0, 5, 5, 1</column>
+<column name="k_1_fu_516_p2">+, 0, 0, 3, 3, 1</column>
+<column name="p_addr1_fu_286_p2">+, 0, 0, 10, 10, 10</column>
+<column name="p_addr3_fu_337_p2">+, 0, 0, 32, 32, 32</column>
+<column name="sh_assign_fu_402_p2">+, 0, 0, 12, 11, 12</column>
+<column name="p_Val2_i_i_i_fu_488_p2">-, 0, 0, 32, 1, 32</column>
+<column name="p_addr2_fu_315_p2">-, 0, 0, 32, 32, 32</column>
+<column name="p_addr_fu_260_p2">-, 0, 0, 9, 9, 9</column>
+<column name="tmp_i_i_i_14_fu_416_p2">-, 0, 0, 11, 10, 11</column>
+<column name="p_Val2_4_fu_480_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="p_Val2_s_fu_493_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="sh_assign_1_fu_426_p3">Select, 0, 0, 12, 1, 12</column>
+<column name="exitcond1_fu_224_p2">icmp, 0, 0, 2, 3, 3</column>
+<column name="exitcond1_i_fu_270_p2">icmp, 0, 0, 2, 5, 5</column>
+<column name="exitcond2_fu_212_p2">icmp, 0, 0, 2, 3, 3</column>
+<column name="exitcond_fu_510_p2">icmp, 0, 0, 2, 3, 3</column>
+<column name="exitcond_i_fu_321_p2">icmp, 0, 0, 2, 5, 5</column>
+<column name="tmp_10_i_i_i_fu_446_p2">lshr, 0, 0, 157, 53, 53</column>
+<column name="tmp_12_i_i_i_fu_452_p2">shl, 0, 0, 429, 136, 136</column>
+<column name="tmp_12_neg_i_fu_350_p2">xor, 0, 0, 45, 32, 33</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="A_ce0">1, 2, 1, 2</column>
+<column name="C_address0">12, 3, 12, 36</column>
+<column name="C_ce0">1, 3, 1, 3</column>
+<column name="C_we0">1, 2, 1, 2</column>
+<column name="S_address0">12, 3, 12, 36</column>
+<column name="S_ce0">1, 3, 1, 3</column>
+<column name="W_ce0">1, 2, 1, 2</column>
+<column name="ap_NS_fsm">72, 40, 1, 40</column>
+<column name="feature_ce0">1, 2, 1, 2</column>
+<column name="feature_we0">1, 2, 1, 2</column>
+<column name="i_i_reg_143">5, 2, 5, 10</column>
+<column name="i_reg_120">3, 2, 3, 6</column>
+<column name="j_i_reg_154">5, 2, 5, 10</column>
+<column name="j_reg_132">3, 2, 3, 6</column>
+<column name="k_reg_165">3, 2, 3, 6</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="C_load_reg_574">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">39, 0, 39, 0</column>
+<column name="grp_feature_extractor_convolve_fu_177_ap_start_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_feature_extractor_maxpool_fu_190_ap_start_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_1_reg_525">3, 0, 3, 0</column>
+<column name="i_2_reg_546">5, 0, 5, 0</column>
+<column name="i_i_reg_143">5, 0, 5, 0</column>
+<column name="i_reg_120">3, 0, 3, 0</column>
+<column name="j_1_reg_533">3, 0, 3, 0</column>
+<column name="j_2_reg_559">5, 0, 5, 0</column>
+<column name="j_i_reg_154">5, 0, 5, 0</column>
+<column name="j_reg_132">3, 0, 3, 0</column>
+<column name="k_1_reg_623">3, 0, 3, 0</column>
+<column name="k_reg_165">3, 0, 3, 0</column>
+<column name="p_Result_s_reg_589">1, 0, 1, 0</column>
+<column name="p_Val2_4_reg_594">32, 0, 32, 0</column>
+<column name="p_Val2_s_reg_600">32, 0, 32, 0</column>
+<column name="p_addr2_reg_551">29, 0, 32, 3</column>
+<column name="p_addr_cast_reg_538">7, 0, 10, 3</column>
+<column name="tmp_11_i_reg_579">64, 0, 64, 0</column>
+<column name="tmp_14_i_reg_610">32, 0, 32, 0</column>
+<column name="tmp_15_i_reg_615">32, 0, 32, 0</column>
+<column name="tmp_5_reg_564">32, 0, 64, 32</column>
+<column name="x_assign_reg_584">64, 0, 64, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, feature_extractor, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, feature_extractor, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, feature_extractor, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, feature_extractor, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, feature_extractor, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, feature_extractor, return value</column>
+<column name="A_address0">out, 10, ap_memory, A, array</column>
+<column name="A_ce0">out, 1, ap_memory, A, array</column>
+<column name="A_q0">in, 32, ap_memory, A, array</column>
+<column name="W_address0">out, 8, ap_memory, W, array</column>
+<column name="W_ce0">out, 1, ap_memory, W, array</column>
+<column name="W_q0">in, 32, ap_memory, W, array</column>
+<column name="feature_address0">out, 10, ap_memory, feature, array</column>
+<column name="feature_ce0">out, 1, ap_memory, feature, array</column>
+<column name="feature_we0">out, 1, ap_memory, feature, array</column>
+<column name="feature_d0">out, 32, ap_memory, feature, array</column>
+</table>
+</item>
+</section>
+</profile>
