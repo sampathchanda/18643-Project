@@ -37,6 +37,11 @@
 			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter/.apc/.tb</location>
 		</link>
 		<link>
+			<name>.reference/hls_stream.h</name>
+			<type>1</type>
+			<location>/home/littlefoot/vivado/Vivado_HLS/2015.2/include/hls_stream.h</location>
+		</link>
+		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter/solution1/.tcls</location>
@@ -45,6 +50,26 @@
 			<name>source/feature_extractor.c</name>
 			<type>1</type>
 			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter/.settings/feature_extractor.c</location>
+		</link>
+		<link>
+			<name>source/feature_extractor.h</name>
+			<type>1</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter/.settings/feature_extractor.h</location>
+		</link>
+		<link>
+			<name>source/feature_extractor_relu.c</name>
+			<type>1</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter/.settings/feature_extractor_relu.c</location>
+		</link>
+		<link>
+			<name>source/feature_extractor_relu.cpp</name>
+			<type>1</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter/.settings/feature_extractor_relu.cpp</location>
+		</link>
+		<link>
+			<name>testbench/tb.c</name>
+			<type>1</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter/.settings/tb.c</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>

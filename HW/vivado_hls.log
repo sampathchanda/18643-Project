@@ -1,6 +1,6 @@
 @I [LIC-101] Checked out feature [HLS]
 @I [HLS-10] Running '/home/littlefoot/vivado/Vivado_HLS/2015.2/bin/unwrapped/lnx64.o/vivado_hls'
-            for user 'littlefoot' on host 'littlefoot-X550LC' (Linux_x86_64 version 4.4.0-47-generic) on Sun Nov 20 00:40:24 EST 2016
+            for user 'littlefoot' on host 'littlefoot-X550LC' (Linux_x86_64 version 4.4.0-47-generic) on Mon Nov 21 06:14:36 EST 2016
             in directory '/home/littlefoot/18643_project/Hardware-Accel/HW'
 @I [HLS-10] Opening project '/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter'.
 @I [HLS-10] Adding design file 'cnn_filter/.settings/feature_extractor.c' to the project
@@ -37,7 +37,7 @@
 @I [XFORM-401] Performing if-conversion on hyperblock from (cnn_filter/.settings/feature_extractor.c:75:11) to (cnn_filter/.settings/feature_extractor.c:74:28) in function 'maxpool'... converting 6 basic blocks.
 @I [XFORM-401] Performing if-conversion on hyperblock from (cnn_filter/.settings/feature_extractor.c:60:17) to (cnn_filter/.settings/feature_extractor.c:59:31) in function 'sigmoid'... converting 4 basic blocks.
 @I [XFORM-602] Inlining function 'sigmoid' into 'feature_extractor' (cnn_filter/.settings/feature_extractor.c:25) automatically.
-@I [HLS-111] Elapsed time: 18.8567 seconds; current memory usage: 289 MB.
+@I [HLS-111] Elapsed time: 17.7497 seconds; current memory usage: 289 MB.
 @I [HLS-10] Starting hardware synthesis ...
 @I [HLS-10] Synthesizing 'feature_extractor' ...
 @I [HLS-10] ----------------------------------------------------------------
@@ -45,7 +45,7 @@
 @I [HLS-10] ----------------------------------------------------------------
 @I [SCHED-11] Starting scheduling ...
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.066916 seconds; current memory usage: 290 MB.
+@I [HLS-111] Elapsed time: 0.071742 seconds; current memory usage: 290 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'feature_extractor_convolve' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -54,13 +54,13 @@
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-111] Elapsed time: 0.030914 seconds; current memory usage: 290 MB.
+@I [HLS-111] Elapsed time: 0.036917 seconds; current memory usage: 290 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Scheduling module 'feature_extractor_maxpool' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [SCHED-11] Starting scheduling ...
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.081748 seconds; current memory usage: 291 MB.
+@I [HLS-111] Elapsed time: 0.089007 seconds; current memory usage: 291 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'feature_extractor_maxpool' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -69,13 +69,13 @@
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-111] Elapsed time: 0.031767 seconds; current memory usage: 291 MB.
+@I [HLS-111] Elapsed time: 0.037685 seconds; current memory usage: 291 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Scheduling module 'feature_extractor' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [SCHED-11] Starting scheduling ...
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.083784 seconds; current memory usage: 292 MB.
+@I [HLS-111] Elapsed time: 0.085378 seconds; current memory usage: 292 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'feature_extractor' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -84,7 +84,7 @@
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-111] Elapsed time: 0.062532 seconds; current memory usage: 292 MB.
+@I [HLS-111] Elapsed time: 0.062954 seconds; current memory usage: 292 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'feature_extractor_convolve' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -92,14 +92,14 @@
 @I [RTGEN-100] Generating core module 'feature_extractor_fmul_32ns_32ns_32_4_max_dsp': 1 instance(s).
 @I [RTGEN-100] Generating core module 'feature_extractor_sitofp_32ns_32_6': 1 instance(s).
 @I [RTGEN-100] Finished creating RTL model for 'feature_extractor_convolve'.
-@I [HLS-111] Elapsed time: 0.119801 seconds; current memory usage: 293 MB.
+@I [HLS-111] Elapsed time: 0.125263 seconds; current memory usage: 293 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'feature_extractor_maxpool' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [RTGEN-100] Generating core module 'feature_extractor_fcmp_32ns_32ns_1_1': 1 instance(s).
 @I [RTGEN-100] Generating core module 'feature_extractor_sitofp_32ns_32_6': 1 instance(s).
 @I [RTGEN-100] Finished creating RTL model for 'feature_extractor_maxpool'.
-@I [HLS-111] Elapsed time: 0.135507 seconds; current memory usage: 295 MB.
+@I [HLS-111] Elapsed time: 0.138733 seconds; current memory usage: 295 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'feature_extractor' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -112,12 +112,12 @@
 @I [RTGEN-100] Generating core module 'feature_extractor_sdiv_3ns_32ns_32_7_seq': 1 instance(s).
 @I [RTGEN-100] Generating core module 'feature_extractor_sitofp_32ns_32_6': 1 instance(s).
 @I [RTGEN-100] Finished creating RTL model for 'feature_extractor'.
-@I [HLS-111] Elapsed time: 0.142402 seconds; current memory usage: 298 MB.
+@I [HLS-111] Elapsed time: 0.144337 seconds; current memory usage: 298 MB.
 @I [RTMG-282] Generating pipelined core: 'feature_extractor_sdiv_3ns_32ns_32_7_seq_div'
 @I [RTMG-278] Implementing memory 'feature_extractor_C_ram' using block RAMs.
 @I [HLS-10] Finished generating all RTL models.
 @I [WSYSC-301] Generating RTL SystemC for 'feature_extractor'.
 @I [WVHDL-304] Generating RTL VHDL for 'feature_extractor'.
 @I [WVLOG-307] Generating RTL Verilog for 'feature_extractor'.
-@I [HLS-112] Total elapsed time: 32.616 seconds; peak memory usage: 298 MB.
+@I [HLS-112] Total elapsed time: 29.124 seconds; peak memory usage: 298 MB.
 @I [LIC-101] Checked in feature [HLS]

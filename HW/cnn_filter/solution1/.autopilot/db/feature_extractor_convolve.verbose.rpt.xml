@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'feature_extractor_convolve'" level="0">
-<item name = "Date">Sun Nov 20 00:40:54 2016
+<item name = "Date">Mon Nov 21 06:15:03 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">cnn_filter</item>

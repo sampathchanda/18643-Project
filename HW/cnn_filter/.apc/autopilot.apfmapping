@@ -2,6 +2,11 @@
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
     <originFiles name="feature_extractor.c" path="/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter/.settings/feature_extractor.c"/>
+    <originFiles name="feature_extractor.h" path="/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter/.settings/feature_extractor.h"/>
+    <originFiles name="feature_extractor_relu.c" path="/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter/.settings/feature_extractor_relu.c"/>
+    <originFiles name="feature_extractor_relu.cpp" path="/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter/.settings/feature_extractor_relu.cpp"/>
   </source>
-  <testbench/>
+  <testbench>
+    <originFiles name="tb.c" path="/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_filter/.settings/tb.c"/>
+  </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

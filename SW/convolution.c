@@ -4,14 +4,15 @@
 #define N 6
 #define M 3
 
-void mm_init(float A[N][N], float W0[M][M], float W1[M][M], float W2[M][M], float W3[M][M], float W4[M][M], float W5[M][M]);
+void mm_init(float A[N][N], float W0[M][M], float W1[M][M],
+		float W2[M][M], float W3[M][M], float W4[M][M], float W5[M][M]);
 void convolve (float A[N][N], float B[M][M], float conv[N-M+1][N-M+1]);
 void sigmoid (float inp_mat[N-M+1][N-M+1], float out_mat[N-M+1][N-M+1]);
-void maxpool (float inp_mat[N-M+1][N-M+1], float out_mat[(N-M+1)/2][(N-M+1)/2]);
+
+void maxpool (float inp_mat[N-M+1][N-M+1],
+		float out_mat[(N-M+1)/2][(N-M+1)/2]);
 void print_result (float res[N-M+1][N-M+1]);
 void print_result1 (float res[(N-M+1)/2][(N-M+1)/2]);
-void scan_weights();
-void print_weights(float W[M][M]);
 void scan(FILE *fp, float W[M][M]);
 
 int main() {
@@ -90,7 +91,8 @@ int main() {
   print_result1(S3_0);
 }
 
-void mm_init(float A[N][N], float W0[M][M], float W1[M][M], float W2[M][M], float W3[M][M], float W4[M][M], float W5[M][M]) {
+void mm_init(float A[N][N], float W0[M][M], float W1[M][M],
+		float W2[M][M], float W3[M][M], float W4[M][M], float W5[M][M]) {
   for (int i=0; i<N; i++) {
     for (int j=0; j<N; j++) {
       A[i][j] = j;
