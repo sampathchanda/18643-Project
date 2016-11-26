@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1480064022000">
+  <ports id="1" name="A" type="PortType" originalName="A" coreName="RAM" bitwidth="32" iftype="IfTypeRegister" arraysize="144">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="W" type="PortType" originalName="W" coreName="RAM" bitwidth="32" iftype="IfTypeRegister" arraysize="75">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="feature" type="PortType" originalName="feature" coreName="RAM" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="48">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="88" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="91" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="92" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="93" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="94" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="97" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="100" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="101" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="102" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="105" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="106" source_obj="//@ports.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="107" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="108" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="109" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="110" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="111" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="112" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="114" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="115" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="117" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="119" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="120" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="121" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="131" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="132" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="133" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="134" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="137" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="140" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="142" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="151" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="152" source_obj="//@blocks.7/@node_objs.2" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="153" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="155" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="156" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="158" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="160" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="161" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="162" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="187" source_obj="//@blocks.8/@node_objs.3" sink_obj="//@blocks.8/@node_objs.4"/>
+  <edges id="188" source_obj="//@blocks.8/@node_objs.2" sink_obj="//@blocks.8/@node_objs.4"/>
+  <edges id="189" source_obj="//@blocks.8/@node_objs.1" sink_obj="//@blocks.8/@node_objs.5"/>
+  <edges id="192" source_obj="//@blocks.8/@node_objs.4" sink_obj="//@blocks.8/@node_objs.6"/>
+  <edges id="193" source_obj="//@blocks.8/@node_objs.5" sink_obj="//@blocks.8/@node_objs.6"/>
+  <edges id="194" source_obj="//@blocks.8/@node_objs.6" sink_obj="//@blocks.8/@node_objs.7"/>
+  <edges id="196" source_obj="//@blocks.8/@node_objs.1" sink_obj="//@blocks.8/@node_objs.7"/>
+  <edges id="200" source_obj="//@blocks.8/@node_objs.7" sink_obj="//@blocks.8/@node_objs.8"/>
+  <edges id="202" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8/@node_objs.9"/>
+  <edges id="203" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="204" source_obj="//@blocks.10/@node_objs.2" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="205" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="207" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="208" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@blocks.10/@node_objs.1"/>
+  <edges id="210" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@blocks.10/@node_objs.2"/>
+  <edges id="212" source_obj="//@blocks.10/@node_objs.1" sink_obj="//@blocks.10/@node_objs.3"/>
+  <edges id="213" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.10/@node_objs.3"/>
+  <edges id="214" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.10/@node_objs.3"/>
+  <edges id="217" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="218" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="219" source_obj="//@blocks.11/@node_objs.0" sink_obj="//@ports.2"/>
+  <edges id="220" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="221" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.11/@node_objs.1"/>
+  <edges id="273" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="274" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="275" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="276" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1"/>
+  <edges id="277" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.10"/>
+  <edges id="278" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="279" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="280" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.9"/>
+  <edges id="281" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="282" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <edges id="283" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5"/>
+  <edges id="284" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8"/>
+  <edges id="285" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7"/>
+  <edges id="286" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.3"/>
+  <edges id="287" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.12"/>
+  <edges id="288" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.11"/>
+  <edges id="289" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.10"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@blocks.8/@node_objs.8"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.1" sink_obj="//@blocks.8/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.1" sink_obj="//@blocks.8/@node_objs.3"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.8/@node_objs.8"/>
+  <blocks id="11" name="block_11" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_17</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="C" rtlName="C_U" coreName="RAM" bitwidth="32" opcode="alloca">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="S" lineNumber="19" originalName="S" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="S_U" coreName="RAM" contextFuncName="feature_extractor" bitwidth="32" opcode="alloca">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="19" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="node_10" lineNumber="21" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="21" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <controlInputObjs>block_17</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>19</validLinenumbers>
+      <validLinenumbers>21</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="17" name="block_17" type="BlockType">
+    <controlInputObjs>block_11</controlInputObjs>
+    <controlInputObjs>block_21</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader3</controlOutputObjs>
+    <controlOutputObjs>block_21</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="i" originalName="i" bitwidth="2" opcode="phi" nodeLabel="1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <controlInputObjs>block_11</controlInputObjs>
+      <controlInputObjs>block_21</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="exitcond2" lineNumber="21" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="exitcond2_fu_184_p2" contextFuncName="feature_extractor" bitwidth="1" opcode="icmp" nodeLabel="1">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="21" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="i_1" lineNumber="21" originalName="i" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="i_1_fu_190_p2" contextFuncName="feature_extractor" bitwidth="2" opcode="add" nodeLabel="1">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="21" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="node_16" lineNumber="21" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br" nodeLabel="1">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="21" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_21</controlInputObjs>
+      <controlInputObjs>.preheader3</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>21</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="21" name="block_21" type="BlockType">
+    <controlInputObjs>block_17</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_17</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="node_19" lineNumber="22" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="grp_feature_extractor_convolve_fu_155" contextFuncName="feature_extractor" opcode="call" nodeLabel="1" nodeLatency="1">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="22" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>A</dataInputObjs>
+      <dataInputObjs>W</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <constName>feature_extractor_convolve</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="node_20" lineNumber="21" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="21" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <controlInputObjs>block_17</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>22</validLinenumbers>
+      <validLinenumbers>21</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="27" name=".preheader3" type="BlockType">
+    <controlInputObjs>block_17</controlInputObjs>
+    <controlInputObjs>relu.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <controlOutputObjs>block_33</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="j" originalName="j" bitwidth="2" opcode="phi" nodeLabel="2">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>relu.exit</controlInputObjs>
+      <controlInputObjs>block_17</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="exitcond1" lineNumber="25" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="exitcond1_fu_196_p2" contextFuncName="feature_extractor" bitwidth="1" opcode="icmp" nodeLabel="2">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="j_1" lineNumber="25" originalName="j" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="j_1_fu_202_p2" contextFuncName="feature_extractor" bitwidth="2" opcode="add" nodeLabel="2">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="node_26" lineNumber="25" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_33</controlInputObjs>
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="33" name="block_33" type="BlockType">
+    <controlInputObjs>.preheader3</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.loopexit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="node_32" lineNumber="59" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="relu" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="59" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <controlInputObjs>.loopexit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>59</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="39" name=".loopexit" type="BlockType">
+    <controlInputObjs>block_33</controlInputObjs>
+    <controlInputObjs>.preheader.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>relu.exit</controlOutputObjs>
+    <controlOutputObjs>.preheader.i.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="i_i" originalName="i" bitwidth="4" opcode="phi" nodeLabel="3">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>block_33</controlInputObjs>
+      <controlInputObjs>.preheader.i</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="exitcond1_i" lineNumber="59" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="exitcond1_i_fu_220_p2" contextFuncName="relu" bitwidth="1" opcode="icmp" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="59" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="i_2" lineNumber="59" originalName="i" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="i_2_fu_226_p2" contextFuncName="relu" bitwidth="4" opcode="add" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="59" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="node_38" lineNumber="59" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="relu" opcode="br" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="59" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.preheader.i.preheader</controlInputObjs>
+      <controlInputObjs>relu.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>59</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="45" name=".preheader.i.preheader" type="BlockType">
+    <controlInputObjs>.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="p_addr1" lineNumber="61" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="p_addr1_fu_236_p2" contextFuncName="relu" bitwidth="6" opcode="add" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="node_44" lineNumber="60" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="relu" opcode="br" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <controlInputObjs>.preheader.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>61</validLinenumbers>
+      <validLinenumbers>60</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="51" name=".preheader.i" type="BlockType">
+    <controlInputObjs>.preheader.i.preheader</controlInputObjs>
+    <controlInputObjs>block_69</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.loopexit</controlOutputObjs>
+    <controlOutputObjs>block_69</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="j_i" originalName="j" bitwidth="4" opcode="phi" nodeLabel="4">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>block_69</controlInputObjs>
+      <controlInputObjs>.preheader.i.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="exitcond_i" lineNumber="60" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="exitcond_i_fu_253_p2" contextFuncName="relu" bitwidth="1" opcode="icmp" nodeLabel="4">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="j_2" lineNumber="60" originalName="j" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="j_2_fu_259_p2" contextFuncName="relu" bitwidth="4" opcode="add" nodeLabel="4">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="node_50" lineNumber="60" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="relu" opcode="br" nodeLabel="4">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_69</controlInputObjs>
+      <controlInputObjs>.loopexit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>60</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="69" name="block_69" type="BlockType">
+    <controlInputObjs>.preheader.i</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="p_addr3" lineNumber="61" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="p_addr3_fu_269_p2" contextFuncName="relu" bitwidth="32" opcode="add" nodeLabel="4">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="C_load" lineNumber="61" originalName="b" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="relu" bitwidth="32" opcode="load" nodeLabel="4" nodeLatency="1">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>fcmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="notlhs" lineNumber="61" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="notlhs_fu_296_p2" contextFuncName="relu" bitwidth="1" opcode="icmp" nodeLabel="6">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="notrhs" lineNumber="61" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="notrhs_fu_302_p2" contextFuncName="relu" bitwidth="1" opcode="icmp" nodeLabel="6">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="tmp_4" lineNumber="61" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="tmp_4_fu_308_p2" contextFuncName="relu" bitwidth="1" opcode="or" nodeLabel="6">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="tmp_5" lineNumber="87" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="feature_extractor_fcmp_32ns_32ns_1_1_U15" contextFuncName="max" bitwidth="1" opcode="fcmp" nodeLabel="6">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="87" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="max"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="tmp_6" lineNumber="87" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="tmp_6_fu_314_p2" contextFuncName="max" bitwidth="1" opcode="and" nodeLabel="6">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="87" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="max"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>fcmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="a_assign" lineNumber="87" originalName="a" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="S_d0" contextFuncName="max" bitwidth="32" opcode="select" nodeLabel="7">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="87" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="max"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="node_67" lineNumber="61" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="relu" opcode="store" nodeLabel="7">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="node_68" lineNumber="60" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="relu" opcode="br" nodeLabel="7">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="26" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="relu"/>
+      <controlInputObjs>.preheader.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>61</validLinenumbers>
+      <validLinenumbers>87</validLinenumbers>
+      <validLinenumbers>60</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="72" name="relu.exit" type="BlockType">
+    <controlInputObjs>.loopexit</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader3</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="node_71" lineNumber="25" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <controlInputObjs>.preheader3</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="78" name=".preheader" type="BlockType">
+    <controlInputObjs>.preheader3</controlInputObjs>
+    <controlInputObjs>block_82</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_84</controlOutputObjs>
+    <controlOutputObjs>block_82</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="k" originalName="k" bitwidth="2" opcode="phi" nodeLabel="3">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <controlInputObjs>block_82</controlInputObjs>
+      <controlInputObjs>.preheader3</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="exitcond" lineNumber="29" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="exitcond_fu_327_p2" contextFuncName="feature_extractor" bitwidth="1" opcode="icmp" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="29" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="k_1" lineNumber="29" originalName="k" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="k_1_fu_333_p2" contextFuncName="feature_extractor" bitwidth="2" opcode="add" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="29" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="node_77" lineNumber="29" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="29" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_82</controlInputObjs>
+      <controlInputObjs>block_84</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>29</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="82" name="block_82" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="node_80" lineNumber="30" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." rtlName="grp_feature_extractor_maxpool_fu_168" contextFuncName="feature_extractor" opcode="call" nodeLabel="3" nodeLatency="1">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="30" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>feature</dataOutputObjs>
+      <constName>feature_extractor_maxpool</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="node_81" lineNumber="29" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br" nodeLabel="4">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="29" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>30</validLinenumbers>
+      <validLinenumbers>29</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="84" name="block_84" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="node_83" lineNumber="32" fileName="cnn_layer_2/.settings/feature_descriminator.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="ret" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_layer_2/.settings/feature_descriminator.c" linenumber="32" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_layer_2/.settings/feature_descriminator.c">
+      <validLinenumbers>32</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <regnodes realName="tmp_8_reg_381">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_342">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_110">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="i_2_reg_363">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="k_reg_143">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="j_i_reg_132">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_6_reg_398">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="j_2_reg_376">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_98">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="j_1_reg_350">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="C_addr_reg_386">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="p_addr2_reg_368">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="p_addr_cast_reg_355">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="k_1_reg_406">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="C_load_reg_391">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="i_i_reg_121">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <expressionNodes realName="i_1_fu_190">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_1_fu_202">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="notlhs_fu_296">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_102">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="C_addr_gep_fu_76">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_i_phi_fu_125">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_1_fu_333">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_179">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond2_fu_184">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_2_fu_226">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_trn_cast_fu_232">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="S_addr_gep_fu_87">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="a_assign_fu_320">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr2_fu_249">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="b_assign_to_int_fu_279">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr3_fu_269">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_fu_327">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="notrhs_fu_302">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_308">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="C_alloca_fu_68">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_208">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_phi_fu_147">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_i_phi_fu_136">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_292">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_trn_fu_265">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_2_fu_259">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_274">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr_cast_fu_216">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_282">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_241">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_i_fu_253">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_phi_fu_114">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_314">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr1_fu_236">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond1_fu_196">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond1_i_fu_220">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="S_alloca_fu_72">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_feature_extractor_convolve_fu_155">
+    <nodeIds>19</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_feature_extractor_maxpool_fu_168">
+    <nodeIds>80</nodeIds>
+  </moduleNodes>
+  <memoryPorts dataString="C">
+    <nodeIds>56</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="C" portID="100">
+    <nodeIds>19</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="S">
+    <nodeIds>67</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="S" portID="100">
+    <nodeIds>80</nodeIds>
+  </memoryPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="19" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="2"/>
+      <operations id="20" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="56" stage="1" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="80" stage="2" latency="2"/>
+      <operations id="83" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="2"/>
+      <operations id="81" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="26"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="29"/>
+    </transitions>
+    <transitions inState="2" outState="4">
+      <condition id="28"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="32"/>
+    </transitions>
+    <transitions inState="4" outState="10">
+      <condition id="34"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="36"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="38"/>
+    </transitions>
+    <transitions inState="6" outState="5">
+      <condition id="40"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="41"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="43"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="44"/>
+    </transitions>
+    <transitions inState="9" outState="6">
+      <condition id="46"/>
+    </transitions>
+    <transitions inState="5" outState="4">
+      <condition id="48"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="49"/>
+    </transitions>
+    <transitions inState="11" outState="10">
+      <condition id="52"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="feature_extractor" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="91686" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>10</subRegions>
+      <subRegions>11</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>11</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Convolve" mII="-1" mDepth="-1" mMinTripCount="3" mMaxTripCount="3" mMinLatency="89004" mMaxLatency="-1" mType="1">
+      <basicBlocks>17</basicBlocks>
+      <basicBlocks>21</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Threshold" mII="-1" mDepth="-1" mMinTripCount="3" mMaxTripCount="3" mMinLatency="822" mMaxLatency="-1" mType="1">
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <subRegions>9</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>27</basicBlocks>
+      <basicBlocks>33</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Threshold.1" mII="-1" mDepth="-1" mMinTripCount="8" mMaxTripCount="8" mMinLatency="272" mMaxLatency="-1" mType="1">
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>39</basicBlocks>
+      <basicBlocks>45</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="Threshold.1.1" mII="-1" mDepth="-1" mMinTripCount="8" mMaxTripCount="8" mMinLatency="32" mMaxLatency="-1" mType="1">
+      <basicBlocks>51</basicBlocks>
+      <basicBlocks>69</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="9" mTag="Region 3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>72</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="10" mTag="Pool" mII="-1" mDepth="-1" mMinTripCount="3" mMaxTripCount="3" mMinLatency="1857" mMaxLatency="-1" mType="1">
+      <basicBlocks>78</basicBlocks>
+      <basicBlocks>82</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="11" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>84</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,0 +1,63 @@
+<stg><name>convolve_Block__proc</name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="2" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+newFuncRoot:0  call void @_ssdm_op_Write.ap_auto.i32P(i32* %done, i32 0)
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="3" bw="0">
+<![CDATA[
+newFuncRoot:1  ret void
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="4" name="done" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="done"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="6" from="_ssdm_op_Write.ap_auto.i32P" to="stg_2" fromId="5" toId="2">
+</dataflow>
+<dataflow id="7" from="done" to="stg_2" fromId="4" toId="2">
+</dataflow>
+<dataflow id="9" from="stg_8" to="stg_2" fromId="8" toId="2">
+</dataflow>
+</dataflows>
+
+
+</stg>

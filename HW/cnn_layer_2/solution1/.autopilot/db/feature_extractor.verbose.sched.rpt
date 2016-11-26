@@ -1,0 +1,419 @@
+
+
+================================================================
+== Vivado HLS Report for 'feature_extractor'
+================================================================
+* Date:           Fri Nov 25 03:53:42 2016
+
+* Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
+* Project:        cnn_layer_2
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.41|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-------+-------+-------+-------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    |  min  |  max  |  min  |  max  |   Type  |
+    +-------+-------+-------+-------+---------+
+    |  91686|  91686|  91687|  91687|   none  |
+    +-------+-------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+-------+-------+----------+-----------+-----------+------+----------+
+        |                    |    Latency    | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |  min  |  max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+-------+-------+----------+-----------+-----------+------+----------+
+        |- Convolve          |  89004|  89004|     29668|          -|          -|     3|    no    |
+        |- Threshold         |    822|    822|       274|          -|          -|     3|    no    |
+        | + Threshold.1      |    272|    272|        34|          -|          -|     8|    no    |
+        |  ++ Threshold.1.1  |     32|     32|         4|          -|          -|     8|    no    |
+        |- Pool              |   1857|   1857|       619|          -|          -|     3|    no    |
+        +--------------------+-------+-------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       -|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 11
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond2)
+	4  / (exitcond2)
+3 --> 
+	2  / true
+4 --> 
+	10  / (exitcond1)
+	5  / (!exitcond1)
+5 --> 
+	6  / (!exitcond1_i)
+	4  / (exitcond1_i)
+6 --> 
+	5  / (exitcond_i)
+	7  / (!exitcond_i)
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	6  / true
+10 --> 
+	11  / (!exitcond)
+11 --> 
+	10  / true
+* FSM state operations: 
+
+ <State 1>: 1.57ns
+ST_1: stg_12 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap([144 x i32]* %A) nounwind, !map !7
+
+ST_1: stg_13 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap([75 x float]* %W) nounwind, !map !13
+
+ST_1: stg_14 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap([48 x i32]* %feature) nounwind, !map !20
+
+ST_1: stg_15 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecTopModule([18 x i8]* @feature_extractor_str) nounwind
+
+ST_1: C [1/1] 0.00ns
+:4  %C = alloca [192 x float], align 4
+
+ST_1: S [1/1] 0.00ns
+:5  %S = alloca [192 x float], align 4
+
+ST_1: stg_18 [1/1] 1.57ns
+:6  br label %1
+
+
+ <State 2>: 2.93ns
+ST_2: i [1/1] 0.00ns
+:0  %i = phi i2 [ 0, %0 ], [ %i_1, %2 ]
+
+ST_2: exitcond2 [1/1] 1.36ns
+:1  %exitcond2 = icmp eq i2 %i, -1
+
+ST_2: empty [1/1] 0.00ns
+:2  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3) nounwind
+
+ST_2: i_1 [1/1] 0.80ns
+:3  %i_1 = add i2 %i, 1
+
+ST_2: stg_23 [1/1] 1.57ns
+:4  br i1 %exitcond2, label %.preheader3, label %2
+
+ST_2: stg_24 [2/2] 0.00ns
+:1  call fastcc void @feature_extractor_convolve([144 x i32]* nocapture %A, [75 x float]* nocapture %W, i2 %i, [192 x float]* nocapture %C, i2 %i) nounwind
+
+
+ <State 3>: 0.00ns
+ST_3: stg_25 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecLoopName([9 x i8]* @p_str) nounwind
+
+ST_3: stg_26 [1/2] 0.00ns
+:1  call fastcc void @feature_extractor_convolve([144 x i32]* nocapture %A, [75 x float]* nocapture %W, i2 %i, [192 x float]* nocapture %C, i2 %i) nounwind
+
+ST_3: stg_27 [1/1] 0.00ns
+:2  br label %1
+
+
+ <State 4>: 2.93ns
+ST_4: j [1/1] 0.00ns
+.preheader3:0  %j = phi i2 [ %j_1, %relu.exit ], [ 0, %1 ]
+
+ST_4: exitcond1 [1/1] 1.36ns
+.preheader3:1  %exitcond1 = icmp eq i2 %j, -1
+
+ST_4: empty_7 [1/1] 0.00ns
+.preheader3:2  %empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3) nounwind
+
+ST_4: j_1 [1/1] 0.80ns
+.preheader3:3  %j_1 = add i2 %j, 1
+
+ST_4: stg_32 [1/1] 1.57ns
+.preheader3:4  br i1 %exitcond1, label %.preheader, label %3
+
+ST_4: stg_33 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str1) nounwind
+
+ST_4: tmp_3 [1/1] 0.00ns
+:1  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str1) nounwind
+
+ST_4: tmp_2 [1/1] 0.00ns
+:2  %tmp_2 = call i5 @_ssdm_op_BitConcatenate.i5.i2.i3(i2 %j, i3 0)
+
+ST_4: p_addr_cast [1/1] 0.00ns
+:3  %p_addr_cast = zext i5 %tmp_2 to i6
+
+ST_4: stg_37 [1/1] 1.57ns
+:4  br label %.loopexit
+
+
+ <State 5>: 1.88ns
+ST_5: i_i [1/1] 0.00ns
+.loopexit:0  %i_i = phi i4 [ 0, %3 ], [ %i_2, %.preheader.i ]
+
+ST_5: exitcond1_i [1/1] 1.88ns
+.loopexit:1  %exitcond1_i = icmp eq i4 %i_i, -8
+
+ST_5: empty_8 [1/1] 0.00ns
+.loopexit:2  %empty_8 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8) nounwind
+
+ST_5: i_2 [1/1] 0.80ns
+.loopexit:3  %i_2 = add i4 %i_i, 1
+
+ST_5: stg_42 [1/1] 0.00ns
+.loopexit:4  br i1 %exitcond1_i, label %relu.exit, label %.preheader.i.preheader
+
+ST_5: tmp_i_trn_cast [1/1] 0.00ns
+.preheader.i.preheader:0  %tmp_i_trn_cast = zext i4 %i_i to i6
+
+ST_5: p_addr1 [1/1] 1.72ns
+.preheader.i.preheader:1  %p_addr1 = add i6 %tmp_i_trn_cast, %p_addr_cast
+
+ST_5: tmp_1 [1/1] 0.00ns
+.preheader.i.preheader:2  %tmp_1 = call i9 @_ssdm_op_BitConcatenate.i9.i6.i3(i6 %p_addr1, i3 0)
+
+ST_5: p_addr2 [1/1] 0.00ns
+.preheader.i.preheader:3  %p_addr2 = zext i9 %tmp_1 to i32
+
+ST_5: stg_47 [1/1] 1.57ns
+.preheader.i.preheader:4  br label %.preheader.i
+
+ST_5: empty_10 [1/1] 0.00ns
+relu.exit:0  %empty_10 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str1, i32 %tmp_3) nounwind
+
+ST_5: stg_49 [1/1] 0.00ns
+relu.exit:1  br label %.preheader3
+
+
+ <State 6>: 4.55ns
+ST_6: j_i [1/1] 0.00ns
+.preheader.i:0  %j_i = phi i4 [ %j_2, %4 ], [ 0, %.preheader.i.preheader ]
+
+ST_6: exitcond_i [1/1] 1.88ns
+.preheader.i:1  %exitcond_i = icmp eq i4 %j_i, -8
+
+ST_6: empty_9 [1/1] 0.00ns
+.preheader.i:2  %empty_9 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8) nounwind
+
+ST_6: j_2 [1/1] 0.80ns
+.preheader.i:3  %j_2 = add i4 %j_i, 1
+
+ST_6: stg_54 [1/1] 0.00ns
+.preheader.i:4  br i1 %exitcond_i, label %.loopexit, label %4
+
+ST_6: tmp_i_trn [1/1] 0.00ns
+:0  %tmp_i_trn = zext i4 %j_i to i32
+
+ST_6: p_addr3 [1/1] 1.84ns
+:1  %p_addr3 = add i32 %tmp_i_trn, %p_addr2
+
+ST_6: tmp_8 [1/1] 0.00ns
+:2  %tmp_8 = zext i32 %p_addr3 to i64
+
+ST_6: C_addr [1/1] 0.00ns
+:3  %C_addr = getelementptr [192 x float]* %C, i64 0, i64 %tmp_8
+
+ST_6: C_load [2/2] 2.71ns
+:4  %C_load = load float* %C_addr, align 4
+
+
+ <State 7>: 2.71ns
+ST_7: C_load [1/2] 2.71ns
+:4  %C_load = load float* %C_addr, align 4
+
+
+ <State 8>: 8.16ns
+ST_8: b_assign_to_int [1/1] 0.00ns
+:5  %b_assign_to_int = bitcast float %C_load to i32
+
+ST_8: tmp [1/1] 0.00ns
+:6  %tmp = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %b_assign_to_int, i32 23, i32 30)
+
+ST_8: tmp_7 [1/1] 0.00ns
+:7  %tmp_7 = trunc i32 %b_assign_to_int to i23
+
+ST_8: notlhs [1/1] 2.00ns
+:8  %notlhs = icmp ne i8 %tmp, -1
+
+ST_8: notrhs [1/1] 2.39ns
+:9  %notrhs = icmp eq i23 %tmp_7, 0
+
+ST_8: tmp_4 [1/1] 1.37ns
+:10  %tmp_4 = or i1 %notrhs, %notlhs
+
+ST_8: tmp_5 [1/1] 6.79ns
+:11  %tmp_5 = fcmp olt float %C_load, 0.000000e+00
+
+ST_8: tmp_6 [1/1] 1.37ns
+:12  %tmp_6 = and i1 %tmp_4, %tmp_5
+
+
+ <State 9>: 4.08ns
+ST_9: a_assign [1/1] 1.37ns
+:13  %a_assign = select i1 %tmp_6, float 0.000000e+00, float %C_load
+
+ST_9: S_addr [1/1] 0.00ns
+:14  %S_addr = getelementptr [192 x float]* %S, i64 0, i64 %tmp_8
+
+ST_9: stg_71 [1/1] 2.71ns
+:15  store float %a_assign, float* %S_addr, align 4
+
+ST_9: stg_72 [1/1] 0.00ns
+:16  br label %.preheader.i
+
+
+ <State 10>: 1.36ns
+ST_10: k [1/1] 0.00ns
+.preheader:0  %k = phi i2 [ %k_1, %5 ], [ 0, %.preheader3 ]
+
+ST_10: exitcond [1/1] 1.36ns
+.preheader:1  %exitcond = icmp eq i2 %k, -1
+
+ST_10: empty_11 [1/1] 0.00ns
+.preheader:2  %empty_11 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3) nounwind
+
+ST_10: k_1 [1/1] 0.80ns
+.preheader:3  %k_1 = add i2 %k, 1
+
+ST_10: stg_77 [1/1] 0.00ns
+.preheader:4  br i1 %exitcond, label %6, label %5
+
+ST_10: stg_78 [2/2] 0.00ns
+:1  call fastcc void @feature_extractor_maxpool([192 x float]* nocapture %S, i2 %k, [48 x i32]* nocapture %feature, i2 %k) nounwind
+
+ST_10: stg_79 [1/1] 0.00ns
+:0  ret void
+
+
+ <State 11>: 0.00ns
+ST_11: stg_80 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecLoopName([5 x i8]* @p_str2) nounwind
+
+ST_11: stg_81 [1/2] 0.00ns
+:1  call fastcc void @feature_extractor_maxpool([192 x float]* nocapture %S, i2 %k, [48 x i32]* nocapture %feature, i2 %k) nounwind
+
+ST_11: stg_82 [1/1] 0.00ns
+:2  br label %.preheader
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="convolution_layer_1.cpp" path="/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/.settings/convolution_layer_1.cpp"/>
+    <originFiles name="convolution_layer_1.h" path="/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/.settings/convolution_layer_1.h"/>
+  </source>
+  <testbench>
+    <originFiles name="convolution_layer_tb.cpp" path="/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/.settings/convolution_layer_tb.cpp"/>
+    <originFiles name="images1" path="/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/images1"/>
+    <originFiles name="weights" path="/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/weights"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

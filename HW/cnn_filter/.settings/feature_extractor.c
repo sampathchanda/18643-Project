@@ -6,7 +6,7 @@
 #define NUMBER_OF_NEURONS 6
 
 void convolve (int A[N][N], float B[M][M], float conv[N-M+1][N-M+1]);
-void sigmoid (float input_mat[N-M+1][N-M+1], float out_mat[N-M+1][N-M+1]);
+void relu (float input_mat[N-M+1][N-M+1], float out_mat[N-M+1][N-M+1]);
 void maxpool(float input_mat[N-M+1][N-M+1],	int output_mat[(N-M+1)/2][(N-M+1)/2]);
 
 void feature_extractor(int A[N][N],
@@ -22,7 +22,7 @@ void feature_extractor(int A[N][N],
 	}
 
 	Threshold: for (int j = 0; j < NUMBER_OF_NEURONS; j++) {
-		sigmoid(C[j], S[j]);
+		relu(C[j], S[j]);
 	}
 
 	Pool: for (int k = 0; k < NUMBER_OF_NEURONS; k++) {
@@ -52,13 +52,12 @@ void convolve (int A[N][N], float B[M][M], float conv[N-M+1][N-M+1]) {
   }
 }
 
-void sigmoid (float input_mat[N-M+1][N-M+1], float out_mat[N-M+1][N-M+1]) {
+void relu (float input_mat[N-M+1][N-M+1], float out_mat[N-M+1][N-M+1]) {
   int exp_val = 0;
 
   for (int i=0; i<N-M+1; i++) {
     for (int j=0; j<N-M+1; j++) {
-      exp_val = exp(-input_mat[i][j]);
-      out_mat[i][j] = 1 / (1+exp_val);
+      out_mat[i][j] = max(0, input_mat[i][j]);
     }
   }
 }

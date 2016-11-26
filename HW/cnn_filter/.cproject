@@ -26,7 +26,6 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.201459012" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1771293700" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include/etc"/>
-									<listOptionValue builtIn="false" value="/home/littlefoot/18643_project/Hardware-Accel/HW"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include"/>
@@ -44,7 +43,6 @@
 								<option id="gnu.c.compiler.exe.debug.option.debugging.level.590553085" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1096277110" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include/etc"/>
-									<listOptionValue builtIn="false" value="/home/littlefoot/18643_project/Hardware-Accel/HW"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include"/>
@@ -112,7 +110,6 @@
 								<option id="gnu.cpp.compiler.exe.release.option.debugging.level.850900645" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1824148456" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include/etc"/>
-									<listOptionValue builtIn="false" value="/home/littlefoot/18643_project/Hardware-Accel/HW"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include"/>
@@ -125,7 +122,6 @@
 								<option id="gnu.c.compiler.exe.release.option.debugging.level.1967967865" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.685899615" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include/etc"/>
-									<listOptionValue builtIn="false" value="/home/littlefoot/18643_project/Hardware-Accel/HW"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include"/>

@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1479726903000">
+  <ports id="1" name="A" type="PortType" originalName="A" coreName="RAM" bitwidth="32" iftype="IfTypeRegister" arraysize="784">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="W" type="PortType" originalName="W" coreName="RAM" bitwidth="32" iftype="IfTypeRegister" arraysize="150">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="feature" type="PortType" originalName="feature" coreName="RAM" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="864">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="116" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="117" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="118" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="119" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="122" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="125" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="126" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="127" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="130" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="131" source_obj="//@ports.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="132" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="133" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="134" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="137" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="138" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="139" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="140" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="142" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="144" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="145" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="146" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="161" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="163" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="164" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="165" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="166" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="169" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="172" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="173" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="174" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="190" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="191" source_obj="//@blocks.7/@node_objs.2" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="192" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="194" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="195" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="197" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="199" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="200" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="201" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="204" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="219" source_obj="//@blocks.8/@node_objs.3" sink_obj="//@blocks.8/@node_objs.4"/>
+  <edges id="255" source_obj="//@blocks.8/@node_objs.5" sink_obj="//@blocks.8/@node_objs.7"/>
+  <edges id="279" source_obj="//@blocks.8/@node_objs.10" sink_obj="//@blocks.8/@node_objs.11"/>
+  <edges id="281" source_obj="//@blocks.8/@node_objs.11" sink_obj="//@blocks.8/@node_objs.12"/>
+  <edges id="282" source_obj="//@blocks.8/@node_objs.10" sink_obj="//@blocks.8/@node_objs.12"/>
+  <edges id="285" source_obj="//@blocks.8/@node_objs.12" sink_obj="//@blocks.8/@node_objs.13"/>
+  <edges id="287" source_obj="//@blocks.8/@node_objs.13" sink_obj="//@blocks.8/@node_objs.14"/>
+  <edges id="288" source_obj="//@blocks.8/@node_objs.14" sink_obj="//@blocks.8/@node_objs.15"/>
+  <edges id="292" source_obj="//@blocks.8/@node_objs.15" sink_obj="//@blocks.8/@node_objs.16"/>
+  <edges id="294" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8/@node_objs.17"/>
+  <edges id="295" source_obj="//@blocks.9/@node_objs.2" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="296" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="298" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="299" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="301" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.9/@node_objs.2"/>
+  <edges id="303" source_obj="//@blocks.9/@node_objs.1" sink_obj="//@blocks.9/@node_objs.3"/>
+  <edges id="304" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.9/@node_objs.3"/>
+  <edges id="305" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.9/@node_objs.3"/>
+  <edges id="308" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="309" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="310" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@ports.2"/>
+  <edges id="311" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="312" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.10/@node_objs.1"/>
+  <edges id="357" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="358" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="359" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="360" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1"/>
+  <edges id="361" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.9"/>
+  <edges id="362" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="363" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="364" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.3"/>
+  <edges id="365" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="366" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <edges id="367" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5"/>
+  <edges id="368" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8"/>
+  <edges id="369" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7"/>
+  <edges id="370" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.11"/>
+  <edges id="371" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.10"/>
+  <edges id="372" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.9"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@blocks.8/@node_objs.16"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.1" sink_obj="//@blocks.8/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.2" sink_obj="//@blocks.8/@node_objs.3"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.4" sink_obj="//@blocks.8/@node_objs.12"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.4" sink_obj="//@blocks.8/@node_objs.5"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.4" sink_obj="//@blocks.8/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.4" sink_obj="//@blocks.8/@node_objs.9"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.4" sink_obj="//@blocks.8/@node_objs.8"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.5" sink_obj="//@blocks.8/@node_objs.7"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.5" sink_obj="//@blocks.8/@node_objs.10"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.6" sink_obj="//@blocks.8/@node_objs.7"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.7" sink_obj="//@blocks.8/@node_objs.9"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.7" sink_obj="//@blocks.8/@node_objs.8"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.8" sink_obj="//@blocks.8/@node_objs.10"/>
+  <edges id="-1" source_obj="//@blocks.8/@node_objs.9" sink_obj="//@blocks.8/@node_objs.10"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.8/@node_objs.16"/>
+  <blocks id="11" name="block_11" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_17</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="C" rtlName="C_U" coreName="RAM" bitwidth="32" opcode="alloca">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="S" lineNumber="18" originalName="S" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="S_U" coreName="RAM" contextFuncName="feature_extractor" bitwidth="32" opcode="alloca">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="18" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="node_10" lineNumber="20" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="20" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <controlInputObjs>block_17</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_filter/.settings/feature_extractor.c">
+      <validLinenumbers>18</validLinenumbers>
+      <validLinenumbers>20</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="17" name="block_17" type="BlockType">
+    <controlInputObjs>block_11</controlInputObjs>
+    <controlInputObjs>block_21</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader3</controlOutputObjs>
+    <controlOutputObjs>block_21</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="i" originalName="i" bitwidth="3" opcode="phi" nodeLabel="1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <controlInputObjs>block_11</controlInputObjs>
+      <controlInputObjs>block_21</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="exitcond2" lineNumber="20" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="exitcond2_fu_212_p2" contextFuncName="feature_extractor" bitwidth="1" opcode="icmp" nodeLabel="1">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="20" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="i_1" lineNumber="20" originalName="i" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="i_1_fu_218_p2" contextFuncName="feature_extractor" bitwidth="3" opcode="add" nodeLabel="1">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="20" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="node_16" lineNumber="20" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br" nodeLabel="1">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="20" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_21</controlInputObjs>
+      <controlInputObjs>.preheader3</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_filter/.settings/feature_extractor.c">
+      <validLinenumbers>20</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="21" name="block_21" type="BlockType">
+    <controlInputObjs>block_17</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_17</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="node_19" lineNumber="21" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="grp_feature_extractor_convolve_fu_177" contextFuncName="feature_extractor" opcode="call" nodeLabel="1" nodeLatency="1">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="21" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>A</dataInputObjs>
+      <dataInputObjs>W</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <constName>feature_extractor_convolve</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="node_20" lineNumber="20" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="20" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <controlInputObjs>block_17</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_filter/.settings/feature_extractor.c">
+      <validLinenumbers>21</validLinenumbers>
+      <validLinenumbers>20</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="27" name=".preheader3" type="BlockType">
+    <controlInputObjs>block_17</controlInputObjs>
+    <controlInputObjs>.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <controlOutputObjs>block_36</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="j" originalName="j" bitwidth="3" opcode="phi" nodeLabel="2">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <controlInputObjs>block_17</controlInputObjs>
+      <controlInputObjs>.loopexit</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="exitcond1" lineNumber="24" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="exitcond1_fu_224_p2" contextFuncName="feature_extractor" bitwidth="1" opcode="icmp" nodeLabel="2">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="24" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="j_1" lineNumber="24" originalName="j" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="j_1_fu_230_p2" contextFuncName="feature_extractor" bitwidth="3" opcode="add" nodeLabel="2">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="24" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="node_26" lineNumber="24" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="24" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_36</controlInputObjs>
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_filter/.settings/feature_extractor.c">
+      <validLinenumbers>24</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="36" name="block_36" type="BlockType">
+    <controlInputObjs>.preheader3</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.loopexit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="p_addr" lineNumber="60" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="p_addr_fu_260_p2" contextFuncName="sigmoid" bitwidth="9" opcode="sub" nodeLabel="2">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="node_35" lineNumber="58" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="sigmoid" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="58" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <controlInputObjs>.loopexit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_filter/.settings/feature_extractor.c">
+      <validLinenumbers>60</validLinenumbers>
+      <validLinenumbers>58</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="42" name=".loopexit" type="BlockType">
+    <controlInputObjs>block_36</controlInputObjs>
+    <controlInputObjs>.preheader.i</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader3</controlOutputObjs>
+    <controlOutputObjs>.preheader.i.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="i_i" originalName="i" bitwidth="5" opcode="phi" nodeLabel="3">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>block_36</controlInputObjs>
+      <controlInputObjs>.preheader.i</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="exitcond1_i" lineNumber="58" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="exitcond1_i_fu_270_p2" contextFuncName="sigmoid" bitwidth="1" opcode="icmp" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="58" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="i_2" lineNumber="58" originalName="i" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="i_2_fu_276_p2" contextFuncName="sigmoid" bitwidth="5" opcode="add" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="58" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="node_41" lineNumber="58" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="sigmoid" opcode="br" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="58" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.preheader.i.preheader</controlInputObjs>
+      <controlInputObjs>.preheader3</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_filter/.settings/feature_extractor.c">
+      <validLinenumbers>58</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="51" name=".preheader.i.preheader" type="BlockType">
+    <controlInputObjs>.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="p_addr1" lineNumber="60" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="p_addr1_fu_286_p2" contextFuncName="sigmoid" bitwidth="10" opcode="add" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="p_addr2" lineNumber="60" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="p_addr2_fu_315_p2" contextFuncName="sigmoid" bitwidth="32" opcode="sub" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="node_50" lineNumber="59" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="sigmoid" opcode="br" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="59" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <controlInputObjs>.preheader.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_filter/.settings/feature_extractor.c">
+      <validLinenumbers>60</validLinenumbers>
+      <validLinenumbers>59</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="57" name=".preheader.i" type="BlockType">
+    <controlInputObjs>.preheader.i.preheader</controlInputObjs>
+    <controlInputObjs>_ifconv.i</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.loopexit</controlOutputObjs>
+    <controlOutputObjs>_ifconv.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="j_i" originalName="j" bitwidth="5" opcode="phi" nodeLabel="4">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>_ifconv.i</controlInputObjs>
+      <controlInputObjs>.preheader.i.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="exitcond_i" lineNumber="59" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="exitcond_i_fu_321_p2" contextFuncName="sigmoid" bitwidth="1" opcode="icmp" nodeLabel="4">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="59" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="j_2" lineNumber="59" originalName="j" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="j_2_fu_327_p2" contextFuncName="sigmoid" bitwidth="5" opcode="add" nodeLabel="4">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="59" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="node_56" lineNumber="59" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="sigmoid" opcode="br" nodeLabel="4">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="59" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>_ifconv.i</controlInputObjs>
+      <controlInputObjs>.loopexit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_filter/.settings/feature_extractor.c">
+      <validLinenumbers>59</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="97" name="_ifconv.i" type="BlockType">
+    <controlInputObjs>.preheader.i</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="p_addr3" lineNumber="60" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="p_addr3_fu_337_p2" contextFuncName="sigmoid" bitwidth="32" opcode="add" nodeLabel="4">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="C_load" lineNumber="60" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="sigmoid" bitwidth="32" opcode="load" nodeLabel="4" nodeLatency="1">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="tmp_12_neg_i" lineNumber="60" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="tmp_12_neg_i_fu_350_p2" contextFuncName="sigmoid" bitwidth="32" opcode="xor" nodeLabel="6">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fpext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="tmp_11_i" lineNumber="60" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="feature_extractor_fpext_32ns_64_1_U16" contextFuncName="sigmoid" bitwidth="64" opcode="fpext" nodeLabel="6">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>dexp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="x_assign" lineNumber="60" originalName="x" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="feature_extractor_dexp_64ns_64ns_64_18_full_dsp_U17" contextFuncName="sigmoid" bitwidth="64" opcode="dexp" nodeLabel="7" nodeLatency="17">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>fpext</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+      <dataOutputObjs>lshr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="sh_assign" lineNumber="494" originalName="sh" fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h" fileDirectory="../../../../../../wrk/buildscratch/2015.2/continuous/20150626163259/src/products" rtlName="sh_assign_fu_402_p2" contextFuncName="expv" bitwidth="12" opcode="add" nodeLabel="25">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="371" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="cast_IEEE754&amp;lt;int, double&amp;gt;"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h" linenumber="494" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="expv"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="43" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="__hls_fptosi_double_i32"/>
+      <dataInputObjs>dexp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="tmp_i_i_i_14" lineNumber="371" fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="../../../../../../wrk/buildscratch/2015.2/continuous/20150626163259/src/products" rtlName="tmp_i_i_i_14_fu_416_p2" contextFuncName="cast_IEEE754&amp;lt;int, double&amp;gt;" bitwidth="11" opcode="sub" nodeLabel="25">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="371" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="cast_IEEE754&amp;lt;int, double&amp;gt;"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="43" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="__hls_fptosi_double_i32"/>
+      <dataInputObjs>dexp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="sh_assign_1" lineNumber="371" originalName="sh" fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="../../../../../../wrk/buildscratch/2015.2/continuous/20150626163259/src/products" rtlName="sh_assign_1_fu_426_p3" contextFuncName="cast_IEEE754&amp;lt;int, double&amp;gt;" bitwidth="12" opcode="select" nodeLabel="25">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="371" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="cast_IEEE754&amp;lt;int, double&amp;gt;"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="43" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="__hls_fptosi_double_i32"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+      <dataOutputObjs>lshr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="tmp_10_i_i_i" lineNumber="371" fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="../../../../../../wrk/buildscratch/2015.2/continuous/20150626163259/src/products" rtlName="tmp_10_i_i_i_fu_446_p2" contextFuncName="cast_IEEE754&amp;lt;int, double&amp;gt;" bitwidth="53" opcode="lshr" nodeLabel="25">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="371" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="cast_IEEE754&amp;lt;int, double&amp;gt;"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="43" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="__hls_fptosi_double_i32"/>
+      <dataInputObjs>dexp</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="tmp_12_i_i_i" lineNumber="371" fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="../../../../../../wrk/buildscratch/2015.2/continuous/20150626163259/src/products" rtlName="tmp_12_i_i_i_fu_452_p2" contextFuncName="cast_IEEE754&amp;lt;int, double&amp;gt;" bitwidth="136" opcode="shl" nodeLabel="25">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="371" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="cast_IEEE754&amp;lt;int, double&amp;gt;"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="43" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="__hls_fptosi_double_i32"/>
+      <dataInputObjs>dexp</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="p_Val2_4" lineNumber="371" originalName="__Val2__" fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="../../../../../../wrk/buildscratch/2015.2/continuous/20150626163259/src/products" rtlName="p_Val2_4_fu_480_p3" contextFuncName="cast_IEEE754&amp;lt;int, double&amp;gt;" bitwidth="32" opcode="select" nodeLabel="25">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="371" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="cast_IEEE754&amp;lt;int, double&amp;gt;"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="43" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="__hls_fptosi_double_i32"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>lshr</dataInputObjs>
+      <dataInputObjs>shl</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="p_Val2_i_i_i" lineNumber="383" fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="../../../../../../wrk/buildscratch/2015.2/continuous/20150626163259/src/products" rtlName="p_Val2_i_i_i_fu_488_p2" contextFuncName="cast_IEEE754&amp;lt;int, double&amp;gt;" bitwidth="32" opcode="sub" nodeLabel="26">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="383" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="cast_IEEE754&amp;lt;int, double&amp;gt;"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="43" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="__hls_fptosi_double_i32"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="p_Val2_s" lineNumber="383" originalName="__Val2__" fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" fileDirectory="../../../../../../wrk/buildscratch/2015.2/continuous/20150626163259/src/products" rtlName="p_Val2_s_fu_493_p3" contextFuncName="cast_IEEE754&amp;lt;int, double&amp;gt;" bitwidth="32" opcode="select" nodeLabel="26">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="60" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h" linenumber="383" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="cast_IEEE754&amp;lt;int, double&amp;gt;"/>
+      <inlineStackInfo fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/lib_floatconversion.cpp" linenumber="43" fileDirectory="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products" functionName="__hls_fptosi_double_i32"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>dexp</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="tmp_13_i" lineNumber="61" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="grp_fu_504_p1" contextFuncName="sigmoid" bitwidth="32" opcode="add" nodeLabel="27">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>sdiv</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="tmp_14_i" lineNumber="61" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="feature_extractor_sdiv_3ns_32ns_32_7_seq_U18" contextFuncName="sigmoid" bitwidth="32" opcode="sdiv" nodeLabel="27" nodeLatency="6">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>sitofp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="tmp_15_i" lineNumber="61" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="feature_extractor_sitofp_32ns_32_6_U15" contextFuncName="sigmoid" bitwidth="32" opcode="sitofp" nodeLabel="34" nodeLatency="5">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>sdiv</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="node_95" lineNumber="61" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="sigmoid" opcode="store" nodeLabel="40">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="61" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <dataInputObjs>sitofp</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="node_96" lineNumber="59" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="sigmoid" opcode="br" nodeLabel="40">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="25" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="59" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="sigmoid"/>
+      <controlInputObjs>.preheader.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_filter/.settings/feature_extractor.c">
+      <validLinenumbers>60</validLinenumbers>
+      <validLinenumbers>61</validLinenumbers>
+      <validLinenumbers>59</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/hls_round.h">
+      <validLinenumbers>371</validLinenumbers>
+      <validLinenumbers>383</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h">
+      <validLinenumbers>494</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/wrk/buildscratch/2015.2/continuous/20150626163259/src/products/hls/hls_lib/src/lib_floatconversion.cpp">
+      <validLinenumbers>43</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="103" name=".preheader" type="BlockType">
+    <controlInputObjs>.preheader3</controlInputObjs>
+    <controlInputObjs>block_107</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_109</controlOutputObjs>
+    <controlOutputObjs>block_107</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="k" originalName="k" bitwidth="3" opcode="phi" nodeLabel="3">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <controlInputObjs>block_107</controlInputObjs>
+      <controlInputObjs>.preheader3</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="exitcond" lineNumber="28" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="exitcond_fu_510_p2" contextFuncName="feature_extractor" bitwidth="1" opcode="icmp" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="28" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="k_1" lineNumber="28" originalName="k" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="k_1_fu_516_p2" contextFuncName="feature_extractor" bitwidth="3" opcode="add" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="28" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="node_102" lineNumber="28" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="28" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_107</controlInputObjs>
+      <controlInputObjs>block_109</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_filter/.settings/feature_extractor.c">
+      <validLinenumbers>28</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="107" name="block_107" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="node_105" lineNumber="29" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." rtlName="grp_feature_extractor_maxpool_fu_190" contextFuncName="feature_extractor" opcode="call" nodeLabel="3" nodeLatency="1">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="29" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>feature</dataOutputObjs>
+      <constName>feature_extractor_maxpool</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="106" name="node_106" lineNumber="28" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="br" nodeLabel="4">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="28" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_filter/.settings/feature_extractor.c">
+      <validLinenumbers>29</validLinenumbers>
+      <validLinenumbers>28</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="109" name="block_109" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="node_108" lineNumber="31" fileName="cnn_filter/.settings/feature_extractor.c" fileDirectory=".." contextFuncName="feature_extractor" opcode="ret" nodeLabel="3">
+      <inlineStackInfo fileName="cnn_filter/.settings/feature_extractor.c" linenumber="31" fileDirectory="/home/littlefoot/18643_project/Hardware-Accel/HW" functionName="feature_extractor"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnn_filter/.settings/feature_extractor.c">
+      <validLinenumbers>31</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <ScheduleInfo time="34"/>
+  <ScheduleInfo time="35"/>
+  <ScheduleInfo time="36"/>
+  <ScheduleInfo time="37"/>
+  <ScheduleInfo time="38"/>
+  <ScheduleInfo time="39"/>
+  <ScheduleInfo time="40"/>
+  <regnodes realName="i_1_reg_525">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Val2_s_reg_600">
+    <nodeIds>90</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_132">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Result_s_reg_589">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="k_reg_165">
+    <nodeIds>98</nodeIds>
+  </regnodes>
+  <regnodes realName="j_i_reg_154">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="p_addr_cast_reg_538">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_11_i_reg_579">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_13_i_reg_605">
+    <nodeIds>91</nodeIds>
+  </regnodes>
+  <regnodes realName="j_1_reg_533">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Val2_4_reg_594">
+    <nodeIds>88</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_5_reg_564">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="C_load_reg_574">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_120">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_15_i_reg_615">
+    <nodeIds>93</nodeIds>
+  </regnodes>
+  <regnodes realName="C_addr_reg_569">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_14_i_reg_610">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_reg_584">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <regnodes realName="i_2_reg_546">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="j_2_reg_559">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="p_addr2_reg_551">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="k_1_reg_623">
+    <nodeIds>101</nodeIds>
+  </regnodes>
+  <regnodes realName="i_i_reg_143">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <expressionNodes realName="k_1_fu_516">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond1_fu_224">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_fu_510">
+    <nodeIds>99</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sh_assign_fu_402">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="isNeg_fu_408">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr_fu_260">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_i_phi_fu_147">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="C_alloca_fu_90">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_i_fu_321">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_12_neg_i_fu_350">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_13_i_fu_499">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_trn_fu_333">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_i_i_cast_fu_422">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl_cast_fu_244">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Val2_i_i_i_fu_488">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_1_fu_230">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="loc_V_fu_372">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sh_assign_2_i_cast_fu_434">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_phi_fu_169">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Val2_1_fu_361">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_248">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond1_i_fu_270">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond2_fu_212">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_i_i_i_fu_446">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl3_fu_311">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_s_fu_364">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl2_fu_299">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_i_fu_356">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_12_i_i_i_fu_452">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_phi_fu_136">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr2_fu_315">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_11_i_fu_204">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_i_i_i_fu_438">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr3_fu_337">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="loc_V_1_fu_382">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_236">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr1_fu_286">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr_cast_fu_266">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_124">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="C_addr_gep_fu_98">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_2_fu_327">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_12_to_int_i_fu_347">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl1_cast_fu_256">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Val2_s_fu_493">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_291">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_i_i_i_cast2_fu_398">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_466">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_1_fu_386">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_fu_458">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_i_i_14_fu_416">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_303">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_i_phi_fu_158">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sh_assign_1_fu_426">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_i_i_fu_394">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_342">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_470">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_i_trn_cast_fu_282">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_i_i_i_cast_fu_442">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="S_addr_gep_fu_109">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_fu_218">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Val2_4_fu_480">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_2_fu_276">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="S_alloca_fu_94">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_feature_extractor_convolve_fu_177">
+    <nodeIds>19</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_207">
+    <nodeIds>67</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_504">
+    <nodeIds>92</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_201">
+    <nodeIds>93</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_feature_extractor_maxpool_fu_190">
+    <nodeIds>105</nodeIds>
+  </moduleNodes>
+  <memoryPorts dataString="C">
+    <nodeIds>62</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="C" portID="100">
+    <nodeIds>19</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="S">
+    <nodeIds>95</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="S" portID="100">
+    <nodeIds>105</nodeIds>
+  </memoryPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="19" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="2"/>
+      <operations id="20" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="62" stage="1" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="67" stage="18" latency="18"/>
+    </states>
+    <states id="10">
+      <operations id="67" stage="17" latency="18"/>
+    </states>
+    <states id="11">
+      <operations id="67" stage="16" latency="18"/>
+    </states>
+    <states id="12">
+      <operations id="67" stage="15" latency="18"/>
+    </states>
+    <states id="13">
+      <operations id="67" stage="14" latency="18"/>
+    </states>
+    <states id="14">
+      <operations id="67" stage="13" latency="18"/>
+    </states>
+    <states id="15">
+      <operations id="67" stage="12" latency="18"/>
+    </states>
+    <states id="16">
+      <operations id="67" stage="11" latency="18"/>
+    </states>
+    <states id="17">
+      <operations id="67" stage="10" latency="18"/>
+    </states>
+    <states id="18">
+      <operations id="67" stage="9" latency="18"/>
+    </states>
+    <states id="19">
+      <operations id="67" stage="8" latency="18"/>
+    </states>
+    <states id="20">
+      <operations id="67" stage="7" latency="18"/>
+    </states>
+    <states id="21">
+      <operations id="67" stage="6" latency="18"/>
+    </states>
+    <states id="22">
+      <operations id="67" stage="5" latency="18"/>
+    </states>
+    <states id="23">
+      <operations id="67" stage="4" latency="18"/>
+    </states>
+    <states id="24">
+      <operations id="67" stage="3" latency="18"/>
+    </states>
+    <states id="25">
+      <operations id="67" stage="2" latency="18"/>
+    </states>
+    <states id="26">
+      <operations id="67" stage="1" latency="18"/>
+    </states>
+    <states id="27">
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+    </states>
+    <states id="28">
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+    </states>
+    <states id="29">
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="7" latency="7"/>
+    </states>
+    <states id="30">
+      <operations id="92" stage="1" latency="7"/>
+    </states>
+    <states id="31">
+      <operations id="93" stage="6" latency="6"/>
+    </states>
+    <states id="32">
+      <operations id="93" stage="5" latency="6"/>
+    </states>
+    <states id="33">
+      <operations id="93" stage="4" latency="6"/>
+    </states>
+    <states id="34">
+      <operations id="93" stage="3" latency="6"/>
+    </states>
+    <states id="35">
+      <operations id="93" stage="2" latency="6"/>
+    </states>
+    <states id="36">
+      <operations id="93" stage="1" latency="6"/>
+    </states>
+    <states id="37">
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+    </states>
+    <states id="38">
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="105" stage="2" latency="2"/>
+      <operations id="108" stage="1" latency="1"/>
+    </states>
+    <states id="39">
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="2"/>
+      <operations id="106" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="52"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="55"/>
+    </transitions>
+    <transitions inState="2" outState="4">
+      <condition id="54"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="58"/>
+    </transitions>
+    <transitions inState="4" outState="38">
+      <condition id="60"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="62"/>
+    </transitions>
+    <transitions inState="5" outState="4">
+      <condition id="64"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="66"/>
+    </transitions>
+    <transitions inState="6" outState="5">
+      <condition id="68"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="69"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="71"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="72"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="73"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="74"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="75"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="76"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="77"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="78"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="79"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="80"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="81"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="82"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="83"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="84"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="85"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="86"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="87"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="88"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="89"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="90"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="91"/>
+    </transitions>
+    <transitions inState="28" outState="29">
+      <condition id="92"/>
+    </transitions>
+    <transitions inState="29" outState="30">
+      <condition id="93"/>
+    </transitions>
+    <transitions inState="30" outState="31">
+      <condition id="94"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="95"/>
+    </transitions>
+    <transitions inState="32" outState="33">
+      <condition id="96"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="97"/>
+    </transitions>
+    <transitions inState="34" outState="35">
+      <condition id="98"/>
+    </transitions>
+    <transitions inState="35" outState="36">
+      <condition id="99"/>
+    </transitions>
+    <transitions inState="36" outState="37">
+      <condition id="100"/>
+    </transitions>
+    <transitions inState="37" outState="6">
+      <condition id="102"/>
+    </transitions>
+    <transitions inState="38" outState="39">
+      <condition id="103"/>
+    </transitions>
+    <transitions inState="39" outState="38">
+      <condition id="106"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="feature_extractor" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1761897" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>9</subRegions>
+      <subRegions>10</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>11</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Convolve" mII="-1" mDepth="-1" mMinTripCount="6" mMaxTripCount="6" mMinLatency="1600728" mMaxLatency="-1" mType="1">
+      <basicBlocks>17</basicBlocks>
+      <basicBlocks>21</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Threshold" mII="-1" mDepth="-1" mMinTripCount="6" mMaxTripCount="6" mMinLatency="128172" mMaxLatency="-1" mType="1">
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>27</basicBlocks>
+      <basicBlocks>36</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Threshold.1" mII="-1" mDepth="-1" mMinTripCount="24" mMaxTripCount="24" mMinLatency="21360" mMaxLatency="-1" mType="1">
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>42</basicBlocks>
+      <basicBlocks>51</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="Threshold.1.1" mII="-1" mDepth="-1" mMinTripCount="24" mMaxTripCount="24" mMinLatency="888" mMaxLatency="-1" mType="1">
+      <basicBlocks>57</basicBlocks>
+      <basicBlocks>97</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="9" mTag="Pool" mII="-1" mDepth="-1" mMinTripCount="6" mMaxTripCount="6" mMinLatency="32994" mMaxLatency="-1" mType="1">
+      <basicBlocks>103</basicBlocks>
+      <basicBlocks>107</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="10" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>109</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

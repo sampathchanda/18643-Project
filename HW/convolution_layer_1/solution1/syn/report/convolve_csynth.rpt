@@ -1,0 +1,139 @@
+
+
+================================================================
+== Vivado HLS Report for 'convolve'
+================================================================
+* Date:           Fri Nov 25 23:36:29 2016
+
+* Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
+* Project:        convolution_layer_1
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.61|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+----------+
+    |     Latency     |     Interval    | Pipeline |
+    |   min  |   max  |   min  |   max  |   Type   |
+    +--------+--------+--------+--------+----------+
+    |  299607|  299607|  299608|  299608| dataflow |
+    +--------+--------+--------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------+---------------------------------+--------+--------+--------+--------+---------+
+        |                                           |                                 |     Latency     |     Interval    | Pipeline|
+        |                  Instance                 |              Module             |   min  |   max  |   min  |   max  |   Type  |
+        +-------------------------------------------+---------------------------------+--------+--------+--------+--------+---------+
+        |grp_convolve_Loop_BUFFER_RESET_proc_fu_30  |convolve_Loop_BUFFER_RESET_proc  |  299607|  299607|  299607|  299607|   none  |
+        |stg_13_convolve_Block_proc_fu_40           |convolve_Block_proc              |       0|       0|       0|       0|   none  |
+        +-------------------------------------------+---------------------------------+--------+--------+--------+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        0|      5|    1122|   2136|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       3|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      5|    1125|   2136|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      2|       1|      4|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------+---------------------------------+---------+-------+------+------+
+    |              Instance              |              Module             | BRAM_18K| DSP48E|  FF  |  LUT |
+    +------------------------------------+---------------------------------+---------+-------+------+------+
+    |convolve_Block_proc_U0              |convolve_Block_proc              |        0|      0|     2|     1|
+    |convolve_Loop_BUFFER_RESET_proc_U0  |convolve_Loop_BUFFER_RESET_proc  |        0|      5|  1120|  2135|
+    +------------------------------------+---------------------------------+---------+-------+------+------+
+    |Total                               |                                 |        0|      5|  1122|  2136|
+    +------------------------------------+---------------------------------+---------+-------+------+------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +----------------------------------------------------+---+----+-----+-----------+
+    |                        Name                        | FF| LUT| Bits| Const Bits|
+    +----------------------------------------------------+---+----+-----+-----------+
+    |ap_CS                                               |  1|   0|    1|          0|
+    |ap_reg_procdone_convolve_Block_proc_U0              |  1|   0|    1|          0|
+    |ap_reg_procdone_convolve_Loop_BUFFER_RESET_proc_U0  |  1|   0|    1|          0|
+    +----------------------------------------------------+---+----+-----+-----------+
+    |Total                                               |  3|   0|    3|          0|
+    +----------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+---------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  | Source Object |    C Type    |
++----------------------+-----+-----+------------+---------------+--------------+
+|image_V_dout          |  in |    8|   ap_fifo  |    image_V    |    pointer   |
+|image_V_empty_n       |  in |    1|   ap_fifo  |    image_V    |    pointer   |
+|image_V_read          | out |    1|   ap_fifo  |    image_V    |    pointer   |
+|weights_address0      | out |    5|  ap_memory |    weights    |     array    |
+|weights_ce0           | out |    1|  ap_memory |    weights    |     array    |
+|weights_d0            | out |   32|  ap_memory |    weights    |     array    |
+|weights_q0            |  in |   32|  ap_memory |    weights    |     array    |
+|weights_we0           | out |    1|  ap_memory |    weights    |     array    |
+|weights_address1      | out |    5|  ap_memory |    weights    |     array    |
+|weights_ce1           | out |    1|  ap_memory |    weights    |     array    |
+|weights_d1            | out |   32|  ap_memory |    weights    |     array    |
+|weights_q1            |  in |   32|  ap_memory |    weights    |     array    |
+|weights_we1           | out |    1|  ap_memory |    weights    |     array    |
+|conv_output_V_din     | out |   32|   ap_fifo  | conv_output_V |    pointer   |
+|conv_output_V_full_n  |  in |    1|   ap_fifo  | conv_output_V |    pointer   |
+|conv_output_V_write   | out |    1|   ap_fifo  | conv_output_V |    pointer   |
+|done                  | out |   32|   ap_vld   |      done     |    pointer   |
+|done_ap_vld           | out |    1|   ap_vld   |      done     |    pointer   |
+|ap_clk                |  in |    1| ap_ctrl_hs |    convolve   | return value |
+|ap_rst                |  in |    1| ap_ctrl_hs |    convolve   | return value |
+|ap_done               | out |    1| ap_ctrl_hs |    convolve   | return value |
+|ap_start              |  in |    1| ap_ctrl_hs |    convolve   | return value |
+|ap_idle               | out |    1| ap_ctrl_hs |    convolve   | return value |
+|ap_ready              | out |    1| ap_ctrl_hs |    convolve   | return value |
++----------------------+-----+-----+------------+---------------+--------------+
+

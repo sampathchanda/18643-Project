@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Nov 25 23:43:25 2016
+# Process ID: 14509
+# Log file: /home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/.autopilot/db/ip_tmp/vivado.log
+# Journal file: /home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/.autopilot/db/ip_tmp/vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/littlefoot/vivado/Vivado/2015.2/data/ip'.
+create_ip: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 975.422 ; gain = 43.230 ; free physical = 115 ; free virtual = 4072
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'convolve_ap_sitofp_4_no_dsp_32'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'convolve_ap_sitofp_4_no_dsp_32' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'convolve_ap_sitofp_4_no_dsp_32'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'convolve_ap_sitofp_4_no_dsp_32' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'convolve_ap_fadd_3_full_dsp_32'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'convolve_ap_fadd_3_full_dsp_32' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'convolve_ap_fadd_3_full_dsp_32'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'convolve_ap_fadd_3_full_dsp_32' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'convolve_ap_fcmp_0_no_dsp_32'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'convolve_ap_fcmp_0_no_dsp_32' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'convolve_ap_fcmp_0_no_dsp_32'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'convolve_ap_fcmp_0_no_dsp_32' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'convolve_ap_fmul_2_max_dsp_32'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'convolve_ap_fmul_2_max_dsp_32' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'convolve_ap_fmul_2_max_dsp_32'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'convolve_ap_fmul_2_max_dsp_32' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 25 23:44:00 2016...

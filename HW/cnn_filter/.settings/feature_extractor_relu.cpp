@@ -6,9 +6,11 @@ void max_pool(
 		uint8 input[CONV_OUTPUT_BUFF],
 		uint8 output[OUTPUT_BUFF_SIZE]);
 
-void extract_feature(hls::stream<uint8> *image,
+
+void extract_feature(hls::stream<uint8> &image,
 		float weights[WEIGHT_WNDW],
-		hls::stream<float> *feature){
+		hls::stream<float> &feature,
+		){
 #pragma HLS STREAM variable=feature
 #pragma HLS STREAM variable=image
 
@@ -19,7 +21,7 @@ void extract_feature(hls::stream<uint8> *image,
 			pixels_read++) {
 		for(int pos = 0; pos < IMAGE_WNDW; pos++) {
 			linebuff[pos] = pos < IMAGE_WNDW - 1 ? linebuff[pos + 1] :
-					(*image).read();
+					image.read();
 			for(int i = 0; i < CONV_WNDW_SIZE; i++) {
 				for(int j = 0; j < CONV_WNDW_SIZE; j++) {
 					output += linebuff[i * IMAGE_WIDTH + j]
@@ -31,12 +33,12 @@ void extract_feature(hls::stream<uint8> *image,
 		}
 
 		if (pixels_read >= IMAGE_WNDW - 1){
-
+			feature = output;
 		}
 	}
 }
 
 uint8 relu(float input) {
 #pragma HLS INLINE
-	return min(255, max(input, 0));
+	return input > 0 ? input : 0;
 }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [SCHED-68] Unable to enforce a carried constraint (II = 4)&#xA;   between 'fadd' operation ('output', convolution_layer_1/.settings/convolution_layer_1.cpp:57) and 'fadd' operation ('output', convolution_layer_1/.settings/convolution_layer_1.cpp:57)." projectName="convolution_layer_1" solutionName="solution1" date="2016-11-25T23:36:28.835-0500" type="Warning"/>
+        <logs message="@W [SCHED-68] Unable to enforce a carried constraint (II = 3)&#xA;   between 'fadd' operation ('output', convolution_layer_1/.settings/convolution_layer_1.cpp:57) and 'fadd' operation ('output', convolution_layer_1/.settings/convolution_layer_1.cpp:57)." projectName="convolution_layer_1" solutionName="solution1" date="2016-11-25T23:36:28.832-0500" type="Warning"/>
+        <logs message="@W [SCHED-68] Unable to enforce a carried constraint (II = 2)&#xA;   between 'fadd' operation ('output', convolution_layer_1/.settings/convolution_layer_1.cpp:57) and 'fadd' operation ('output', convolution_layer_1/.settings/convolution_layer_1.cpp:57)." projectName="convolution_layer_1" solutionName="solution1" date="2016-11-25T23:36:28.829-0500" type="Warning"/>
+        <logs message="@W [SCHED-68] Unable to enforce a carried constraint (II = 1)&#xA;   between 'fadd' operation ('output', convolution_layer_1/.settings/convolution_layer_1.cpp:57) and 'fadd' operation ('output', convolution_layer_1/.settings/convolution_layer_1.cpp:57)." projectName="convolution_layer_1" solutionName="solution1" date="2016-11-25T23:36:28.826-0500" type="Warning"/>
+        <logs message="@W [SYN-103] Legalizing function name 'convolve_Block__proc' to 'convolve_Block_proc'." projectName="convolution_layer_1" solutionName="solution1" date="2016-11-25T23:36:28.734-0500" type="Warning"/>
+        <logs message="@W [XFORM-542] Cannot flatten a loop nest 'SCAN_LINE' (convolution_layer_1/.settings/convolution_layer_1.cpp:33:20) in function 'Loop_BUFFER_RESET_proc' : &#xA;               more than one sub loop." projectName="convolution_layer_1" solutionName="solution1" date="2016-11-25T23:36:28.726-0500" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="feature_descriminator.c" path="/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_layer_2/.settings/feature_descriminator.c"/>
+  </source>
+  <testbench>
+    <originFiles name="feature_descriminator.c" path="/home/littlefoot/18643_project/Hardware-Accel/HW/cnn_layer_2/.settings/feature_descriminator.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

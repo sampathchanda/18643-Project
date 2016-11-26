@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="convolve" xd:componentRef="convolve" xd:initiationInterval="299608" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="image" xd:originalName="image" xd:direction="in" xd:interfaceRef="image_V" xd:busTypeRef="acc_fifo" xd:dataWidth="8"/>
+  <xd:arg xd:name="conv_output" xd:originalName="conv_output" xd:direction="out" xd:interfaceRef="conv_output_V" xd:busTypeRef="acc_fifo" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(done)" xd:originalName="done" xd:direction="out" xd:interfaceRef="done" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="weights_d0" xd:originalName="weights_d0" xd:direction="out" xd:interfaceRef="weights_d0" xd:busTypeRef="ap_memory" xd:arraySize="25" xd:dataWidth="32"/>
+  <xd:arg xd:name="weights_q0" xd:originalName="weights_q0" xd:direction="in" xd:interfaceRef="weights_q0" xd:busTypeRef="ap_memory" xd:arraySize="25" xd:dataWidth="32"/>
+  <xd:arg xd:name="weights_d1" xd:originalName="weights_d1" xd:direction="out" xd:interfaceRef="weights_d1" xd:busTypeRef="ap_memory" xd:arraySize="25" xd:dataWidth="32"/>
+  <xd:arg xd:name="weights_q1" xd:originalName="weights_q1" xd:direction="in" xd:interfaceRef="weights_q1" xd:busTypeRef="ap_memory" xd:arraySize="25" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="299607" xd:worst-case="299607" xd:average-case="299607"/>
+  <xd:resourceEstimates xd:LUT="2136" xd:FF="1125" xd:BRAM="0" xd:DSP="5"/>
+</xd:acceleratorMap>

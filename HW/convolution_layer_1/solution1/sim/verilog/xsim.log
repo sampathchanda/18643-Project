@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# xsim v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Nov 25 23:44:33 2016
+# Process ID: 14644
+# Log file: /home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/xsim.log
+# Journal file: /home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/convolve/xsim_script.tcl
+# xsim {convolve} -maxdeltaid 10000 -autoloadwcfg -tclbatch {convolve.tcl}
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source convolve.tcl
+## run all
+$finish called at time : 2996235400 ps : File "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/convolve.autotb.v" Line 428
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:18 . Memory (MB): peak = 309.250 ; gain = 0.000 ; free physical = 321 ; free virtual = 4200
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Nov 25 23:45:04 2016...
