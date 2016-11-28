@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# xsim v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Nov 26 05:15:33 2016
+# Process ID: 25361
+# Log file: /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/xsim.log
+# Journal file: /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/maxpool/xsim_script.tcl
+# xsim {maxpool} -maxdeltaid 10000 -autoloadwcfg -tclbatch {maxpool.tcl}
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source maxpool.tcl
+## run all
+$finish called at time : 5945400 ps : File "/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/maxpool.autotb.v" Line 316
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Nov 26 05:15:39 2016...

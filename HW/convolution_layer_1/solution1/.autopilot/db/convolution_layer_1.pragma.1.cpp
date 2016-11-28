@@ -38838,8 +38838,8 @@ typedef unsigned char uint8_t;
 void convolve(
   hls::stream<uint8_t> &image,
   float weights[(5 /* size of the convolution window*/ * 5 /* size of the convolution window*/)],
-  hls::stream<float> &conv_output,
-  int *done
+  hls::stream<uint8_t> &conv_output,
+  bool *done
   );
 #2 "convolution_layer_1/.settings/convolution_layer_1.cpp" 2
 //#include <iostream>
@@ -38851,8 +38851,10 @@ uint8_t relu(float input);
 void convolve(
   hls::stream<uint8_t> &image,
   float weights[(5 /* size of the convolution window*/ * 5 /* size of the convolution window*/)],
-  hls::stream<float> &conv_output,
-  int *done){_ssdm_SpecArrayDimSize(weights,(5 /* size of the convolution window*/ * 5 /* size of the convolution window*/));
+  hls::stream<uint8_t> &conv_output,
+  bool *done){_ssdm_SpecArrayDimSize(weights,(5 /* size of the convolution window*/ * 5 /* size of the convolution window*/));
+_ssdm_op_SpecInterface(done, "ap_none", 0, 0, 0, 0, "", "", "");
+_ssdm_op_SpecInterface(weights, "ap_memory", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecDataflowPipeline(-1, "");
 _ssdm_SpecStream( &conv_output, 0, 0, "");
 _ssdm_SpecStream( &image, 0, 0, "");
@@ -38894,11 +38896,15 @@ _ssdm_op_SpecPipeline(2, 1, 1, 0, "");
      read;
   }
 
-  for(int i = 0; i < 5 /* size of the convolution window*/; i++) {
-   for(int j = 0; j < 5 /* size of the convolution window*/; j++) {
+  for(int inner_loop = 0;
+    inner_loop < 5 /* size of the convolution window*/; inner_loop++) {
+   for(int outer_loop = 0;
+     outer_loop < 5 /* size of the convolution window*/; outer_loop++) {
 _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
- output += linebuff[i * 28 /* width of the image*/ + j]
-                       * weights[i * 5 /* size of the convolution window*/ + j];
+ output += linebuff[inner_loop * 28 /* width of the image*/ +
+         outer_loop]
+                       * weights[inner_loop *
+          5 /* size of the convolution window*/ + outer_loop];
    }
   }
   output = relu(output);
@@ -38912,8 +38918,8 @@ _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
 
  // std::cout << "done" << std::endl;
 
- *done = 1;
- *done = 0;
+ *done = true;
+ *done = false;
 
  // std::cout << "done complete returning" << std::endl;
 }

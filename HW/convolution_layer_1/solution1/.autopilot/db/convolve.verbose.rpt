@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'convolve'
 ================================================================
-* Date:           Fri Nov 25 23:36:29 2016
+* Date:           Sat Nov 26 05:43:31 2016
 
 * Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
 * Project:        convolution_layer_1
@@ -29,7 +29,7 @@
     |     Latency     |     Interval    | Pipeline |
     |   min  |   max  |   min  |   max  |   Type   |
     +--------+--------+--------+--------+----------+
-    |  299607|  299607|  299608|  299608| dataflow |
+    |  299607|  300391|  299608|  300392| dataflow |
     +--------+--------+--------+--------+----------+
 
     + Detail: 
@@ -38,8 +38,8 @@
         |                                           |                                 |     Latency     |     Interval    | Pipeline|
         |                  Instance                 |              Module             |   min  |   max  |   min  |   max  |   Type  |
         +-------------------------------------------+---------------------------------+--------+--------+--------+--------+---------+
-        |grp_convolve_Loop_BUFFER_RESET_proc_fu_30  |convolve_Loop_BUFFER_RESET_proc  |  299607|  299607|  299607|  299607|   none  |
-        |stg_13_convolve_Block_proc_fu_40           |convolve_Block_proc              |       0|       0|       0|       0|   none  |
+        |grp_convolve_Loop_BUFFER_RESET_proc_fu_38  |convolve_Loop_BUFFER_RESET_proc  |  299607|  300391|  299607|  300391|   none  |
+        |stg_15_convolve_Block_proc_fu_48           |convolve_Block_proc              |       0|       0|       0|       0|   none  |
         +-------------------------------------------+---------------------------------+--------+--------+--------+--------+---------+
 
         * Loop: 
@@ -56,12 +56,12 @@
 +-----------------+---------+-------+--------+-------+
 |Expression       |        -|      -|       -|      -|
 |FIFO             |        -|      -|       -|      -|
-|Instance         |        0|      5|    1122|   2136|
+|Instance         |        0|      5|    1162|   2318|
 |Memory           |        -|      -|       -|      -|
 |Multiplexer      |        -|      -|       -|      -|
 |Register         |        -|      -|       3|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |        0|      5|    1125|   2136|
+|Total            |        0|      5|    1165|   2318|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
@@ -74,9 +74,9 @@
     |              Instance              |              Module             | BRAM_18K| DSP48E|  FF  |  LUT |
     +------------------------------------+---------------------------------+---------+-------+------+------+
     |convolve_Block_proc_U0              |convolve_Block_proc              |        0|      0|     2|     1|
-    |convolve_Loop_BUFFER_RESET_proc_U0  |convolve_Loop_BUFFER_RESET_proc  |        0|      5|  1120|  2135|
+    |convolve_Loop_BUFFER_RESET_proc_U0  |convolve_Loop_BUFFER_RESET_proc  |        0|      5|  1160|  2317|
     +------------------------------------+---------------------------------+---------+-------+------+------+
-    |Total                               |                                 |        0|      5|  1122|  2136|
+    |Total                               |                                 |        0|      5|  1162|  2318|
     +------------------------------------+---------------------------------+---------+-------+------+------+
 
     * Memory: 
@@ -124,11 +124,10 @@
 |weights_d1            | out |   32|  ap_memory |    weights    |     array    |
 |weights_q1            |  in |   32|  ap_memory |    weights    |     array    |
 |weights_we1           | out |    1|  ap_memory |    weights    |     array    |
-|conv_output_V_din     | out |   32|   ap_fifo  | conv_output_V |    pointer   |
+|conv_output_V_din     | out |    8|   ap_fifo  | conv_output_V |    pointer   |
 |conv_output_V_full_n  |  in |    1|   ap_fifo  | conv_output_V |    pointer   |
 |conv_output_V_write   | out |    1|   ap_fifo  | conv_output_V |    pointer   |
-|done                  | out |   32|   ap_vld   |      done     |    pointer   |
-|done_ap_vld           | out |    1|   ap_vld   |      done     |    pointer   |
+|done                  | out |    1|   ap_none  |      done     |    pointer   |
 |ap_clk                |  in |    1| ap_ctrl_hs |    convolve   | return value |
 |ap_rst                |  in |    1| ap_ctrl_hs |    convolve   | return value |
 |ap_done               | out |    1| ap_ctrl_hs |    convolve   | return value |
@@ -176,18 +175,18 @@ IsGatedGlobalClock: 0
 
  <State 1>: 0.00ns
 ST_1: stg_3 [2/2] 0.00ns
-codeRepl:8  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, float* %conv_output_V)
+codeRepl:10  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, i8* %conv_output_V)
 
 
  <State 2>: 0.00ns
 ST_2: stg_4 [1/1] 0.00ns
-codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str) nounwind
+codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str1) nounwind
 
-ST_2: empty [1/1] 0.00ns
-codeRepl:1  %empty = call i32 (...)* @_ssdm_op_SpecInterface(float* %conv_output_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_5 [1/1] 0.00ns
+codeRepl:1  call void (...)* @_ssdm_op_SpecInterface(i8* %conv_output_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str26, [1 x i8]* @p_str26, [8 x i8]* @ap_fifo_str)
 
-ST_2: empty_8 [1/1] 0.00ns
-codeRepl:2  %empty_8 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %image_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_6 [1/1] 0.00ns
+codeRepl:2  call void (...)* @_ssdm_op_SpecInterface(i8* %image_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str25, [1 x i8]* @p_str25, [8 x i8]* @ap_fifo_str)
 
 ST_2: stg_7 [1/1] 0.00ns
 codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i8* %image_V), !map !7
@@ -196,22 +195,28 @@ ST_2: stg_8 [1/1] 0.00ns
 codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap([25 x float]* %weights), !map !13
 
 ST_2: stg_9 [1/1] 0.00ns
-codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(float* %conv_output_V), !map !19
+codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(i8* %conv_output_V), !map !19
 
 ST_2: stg_10 [1/1] 0.00ns
-codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i32* %done), !map !23
+codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %done), !map !23
 
 ST_2: stg_11 [1/1] 0.00ns
 codeRepl:7  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @convolve_str) nounwind
 
-ST_2: stg_12 [1/2] 0.00ns
-codeRepl:8  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, float* %conv_output_V)
+ST_2: stg_12 [1/1] 0.00ns
+codeRepl:8  call void (...)* @_ssdm_op_SpecInterface(i1* %done, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ST_2: stg_13 [1/1] 0.00ns
-codeRepl:9  call fastcc void @convolve_Block__proc(i32* %done)
+codeRepl:9  call void (...)* @_ssdm_op_SpecInterface([25 x float]* %weights, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
-ST_2: stg_14 [1/1] 0.00ns
-codeRepl:10  ret void
+ST_2: stg_14 [1/2] 0.00ns
+codeRepl:10  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, i8* %conv_output_V)
+
+ST_2: stg_15 [1/1] 0.00ns
+codeRepl:11  call fastcc void @convolve_Block__proc(i1* %done)
+
+ST_2: stg_16 [1/1] 0.00ns
+codeRepl:12  ret void
 
 
 
@@ -227,27 +232,29 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ image_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; mode=0x7fc66a882cd0; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
-Port [ weights]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7fc6607de690; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
-Port [ conv_output_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; mode=0x7fc66305c360; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
-Port [ done]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7fc669f68390; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ image_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; mode=0x7f80e5c21a50; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ weights]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f80dcc09980; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ conv_output_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; mode=0x7f80e6363690; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ done]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7f80e5e1fa00; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
 
 <LifeTime>
 <method=bitvector/>
-stg_4   (specdataflowpipeline) [ 000]
-empty   (specinterface       ) [ 000]
-empty_8 (specinterface       ) [ 000]
-stg_7   (specbitsmap         ) [ 000]
-stg_8   (specbitsmap         ) [ 000]
-stg_9   (specbitsmap         ) [ 000]
-stg_10  (specbitsmap         ) [ 000]
-stg_11  (spectopmodule       ) [ 000]
-stg_12  (call                ) [ 000]
-stg_13  (call                ) [ 000]
-stg_14  (ret                 ) [ 000]
+stg_4  (specdataflowpipeline) [ 000]
+stg_5  (specinterface       ) [ 000]
+stg_6  (specinterface       ) [ 000]
+stg_7  (specbitsmap         ) [ 000]
+stg_8  (specbitsmap         ) [ 000]
+stg_9  (specbitsmap         ) [ 000]
+stg_10 (specbitsmap         ) [ 000]
+stg_11 (spectopmodule       ) [ 000]
+stg_12 (specinterface       ) [ 000]
+stg_13 (specinterface       ) [ 000]
+stg_14 (call                ) [ 000]
+stg_15 (call                ) [ 000]
+stg_16 (ret                 ) [ 000]
 </LifeTime>
 
 <model>
@@ -322,7 +329,7 @@ stg_14  (ret                 ) [ 000]
 <pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str"/></StgValue>
+<StgValue><ssdm name="p_str1"/></StgValue>
 </bind>
 </comp>
 
@@ -358,7 +365,7 @@ stg_14  (ret                 ) [ 000]
 <pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+<StgValue><ssdm name="p_str26"/></StgValue>
 </bind>
 </comp>
 
@@ -367,7 +374,7 @@ stg_14  (ret                 ) [ 000]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+<StgValue><ssdm name="p_str25"/></StgValue>
 </bind>
 </comp>
 
@@ -376,26 +383,62 @@ stg_14  (ret                 ) [ 000]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="convolve_str"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
 </bind>
 </comp>
 
 <comp id="28" class="1001" name="const_28">
 <pin_list>
-<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="convolve_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name="convolve_Block__proc"/></StgValue>
 </bind>
 </comp>
 
-<comp id="30" class="1004" name="grp_convolve_Loop_BUFFER_RESET_proc_fu_30">
+<comp id="38" class="1004" name="grp_convolve_Loop_BUFFER_RESET_proc_fu_38">
 <pin_list>
-<pin id="31" dir="0" index="0" bw="0" slack="0"/>
-<pin id="32" dir="0" index="1" bw="32" slack="0"/>
-<pin id="33" dir="0" index="2" bw="8" slack="0"/>
-<pin id="34" dir="0" index="3" bw="32" slack="0"/>
-<pin id="35" dir="1" index="4" bw="0" slack="2147483647"/>
+<pin id="39" dir="0" index="0" bw="0" slack="0"/>
+<pin id="40" dir="0" index="1" bw="32" slack="0"/>
+<pin id="41" dir="0" index="2" bw="8" slack="0"/>
+<pin id="42" dir="0" index="3" bw="8" slack="0"/>
+<pin id="43" dir="1" index="4" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -403,32 +446,32 @@ stg_14  (ret                 ) [ 000]
 </bind>
 </comp>
 
-<comp id="40" class="1004" name="stg_13_convolve_Block_proc_fu_40">
+<comp id="48" class="1004" name="stg_15_convolve_Block_proc_fu_48">
 <pin_list>
-<pin id="41" dir="0" index="0" bw="0" slack="0"/>
-<pin id="42" dir="0" index="1" bw="32" slack="0"/>
-<pin id="43" dir="1" index="2" bw="0" slack="2147483647"/>
+<pin id="49" dir="0" index="0" bw="0" slack="0"/>
+<pin id="50" dir="0" index="1" bw="1" slack="0"/>
+<pin id="51" dir="1" index="2" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="stg_13/2 "/>
+<opset="stg_15/2 "/>
 </bind>
 </comp>
 
 </comp_list>
 
 <net_list>
-<net id="36"><net_src comp="8" pin="0"/><net_sink comp="30" pin=0"/></net>
+<net id="44"><net_src comp="8" pin="0"/><net_sink comp="38" pin=0"/></net>
 
-<net id="37"><net_src comp="2" pin="0"/><net_sink comp="30" pin=1"/></net>
+<net id="45"><net_src comp="2" pin="0"/><net_sink comp="38" pin=1"/></net>
 
-<net id="38"><net_src comp="0" pin="0"/><net_sink comp="30" pin=2"/></net>
+<net id="46"><net_src comp="0" pin="0"/><net_sink comp="38" pin=2"/></net>
 
-<net id="39"><net_src comp="4" pin="0"/><net_sink comp="30" pin=3"/></net>
+<net id="47"><net_src comp="4" pin="0"/><net_sink comp="38" pin=3"/></net>
 
-<net id="44"><net_src comp="28" pin="0"/><net_sink comp="40" pin=0"/></net>
+<net id="52"><net_src comp="36" pin="0"/><net_sink comp="48" pin=0"/></net>
 
-<net id="45"><net_src comp="6" pin="0"/><net_sink comp="40" pin=1"/></net>
+<net id="53"><net_src comp="6" pin="0"/><net_sink comp="48" pin=1"/></net>
 
 </net_list>
 
@@ -452,10 +495,10 @@ stg_14  (ret                 ) [ 000]
 |----------|-------------------------------------------|---------|---------|---------|---------|---------|
 | Operation|              Functional Unit              |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|-------------------------------------------|---------|---------|---------|---------|---------|
-|   call   | grp_convolve_Loop_BUFFER_RESET_proc_fu_30 |    0    |    5    |  12.936 |   1246  |   2039  |
-|          |      stg_13_convolve_Block_proc_fu_40     |    0    |    0    |    0    |    0    |    0    |
+|   call   | grp_convolve_Loop_BUFFER_RESET_proc_fu_38 |    0    |    5    |  12.936 |   1285  |   2198  |
+|          |      stg_15_convolve_Block_proc_fu_48     |    0    |    0    |    0    |    0    |    0    |
 |----------|-------------------------------------------|---------|---------|---------|---------|---------|
-|   Total  |                                           |    0    |    5    |  12.936 |   1246  |   2039  |
+|   Total  |                                           |    0    |    5    |  12.936 |   1285  |   2198  |
 |----------|-------------------------------------------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -477,10 +520,10 @@ N/A
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    0   |    5   |   12   |  1246  |  2039  |
+|  Function |    0   |    5   |   12   |  1285  |  2198  |
 |   Memory  |    -   |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |    0   |    5   |   12   |  1246  |  2039  |
+|   Total   |    0   |    5   |   12   |  1285  |  2198  |
 +-----------+--------+--------+--------+--------+--------+

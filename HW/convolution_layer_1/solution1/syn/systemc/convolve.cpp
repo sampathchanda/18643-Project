@@ -15,6 +15,7 @@ namespace ap_rtl {
 const sc_logic convolve::ap_const_logic_0 = sc_dt::Log_0;
 const sc_lv<5> convolve::ap_const_lv5_0 = "00000";
 const sc_lv<32> convolve::ap_const_lv32_0 = "00000000000000000000000000000000";
+const sc_lv<8> convolve::ap_const_lv8_0 = "00000000";
 const sc_logic convolve::ap_const_logic_1 = sc_dt::Log_1;
 const bool convolve::ap_true = true;
 
@@ -104,9 +105,6 @@ convolve::convolve(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_METHOD(thread_done);
     sensitive << ( convolve_Block_proc_U0_done );
 
-    SC_METHOD(thread_done_ap_vld);
-    sensitive << ( convolve_Block_proc_U0_done_ap_vld );
-
     SC_METHOD(thread_image_V_read);
     sensitive << ( convolve_Loop_BUFFER_RESET_proc_U0_image_V_read );
 
@@ -161,7 +159,6 @@ convolve::convolve(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, ap_clk, "(port)ap_clk");
     sc_trace(mVcdFile, ap_rst, "(port)ap_rst");
     sc_trace(mVcdFile, ap_done, "(port)ap_done");
-    sc_trace(mVcdFile, done_ap_vld, "(port)done_ap_vld");
     sc_trace(mVcdFile, ap_start, "(port)ap_start");
     sc_trace(mVcdFile, ap_idle, "(port)ap_idle");
     sc_trace(mVcdFile, ap_ready, "(port)ap_ready");
@@ -257,8 +254,8 @@ void convolve::thread_ap_sig_hs_continue() {
 }
 
 void convolve::thread_ap_sig_hs_done() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_procdone_convolve_Block_proc_U0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_procdone_convolve_Loop_BUFFER_RESET_proc_U0.read()))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_procdone_convolve_Loop_BUFFER_RESET_proc_U0.read()) && 
+         esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_procdone_convolve_Block_proc_U0.read()))) {
         ap_sig_hs_done = ap_const_logic_1;
     } else {
         ap_sig_hs_done = ap_const_logic_0;
@@ -310,11 +307,7 @@ void convolve::thread_convolve_Loop_BUFFER_RESET_proc_U0_weights_q0() {
 }
 
 void convolve::thread_done() {
-    done = convolve_Block_proc_U0_done.read();
-}
-
-void convolve::thread_done_ap_vld() {
-    done_ap_vld = convolve_Block_proc_U0_done_ap_vld.read();
+    done =  (sc_logic) (convolve_Block_proc_U0_done.read()[0]);
 }
 
 void convolve::thread_image_V_read() {
@@ -384,7 +377,6 @@ void convolve::thread_hdltv_gen() {
         mHdltvoutHandle << " , " <<  " \"done\" :  \"" << done.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"ap_rst\" :  \"" << ap_rst.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"ap_done\" :  \"" << ap_done.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"done_ap_vld\" :  \"" << done_ap_vld.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"ap_start\" :  \"" << ap_start.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"ap_idle\" :  \"" << ap_idle.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"ap_ready\" :  \"" << ap_ready.read() << "\" ";

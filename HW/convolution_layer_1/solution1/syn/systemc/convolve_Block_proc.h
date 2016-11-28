@@ -23,7 +23,7 @@ struct convolve_Block_proc : public sc_module {
     sc_in< sc_logic > ap_continue;
     sc_out< sc_logic > ap_idle;
     sc_out< sc_logic > ap_ready;
-    sc_out< sc_lv<32> > done;
+    sc_out< sc_lv<1> > done;
     sc_out< sc_logic > done_ap_vld;
 
 
@@ -39,20 +39,21 @@ struct convolve_Block_proc : public sc_module {
     sc_signal< sc_lv<1> > ap_CS_fsm;
     sc_signal< sc_logic > ap_sig_cseq_ST_st1_fsm_0;
     sc_signal< bool > ap_sig_bdd_20;
-    sc_signal< bool > ap_sig_bdd_32;
+    sc_signal< bool > ap_sig_bdd_33;
     sc_signal< sc_lv<1> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
     static const sc_lv<1> ap_ST_st1_fsm_0;
     static const sc_lv<32> ap_const_lv32_0;
     static const sc_lv<1> ap_const_lv1_1;
+    static const sc_lv<1> ap_const_lv1_0;
     // Thread declarations
     void thread_ap_clk_no_reset_();
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
     void thread_ap_sig_bdd_20();
-    void thread_ap_sig_bdd_32();
+    void thread_ap_sig_bdd_33();
     void thread_ap_sig_cseq_ST_st1_fsm_0();
     void thread_done();
     void thread_done_ap_vld();

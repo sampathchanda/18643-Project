@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog"/>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Port 'maxpool/ok' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="maxpool_downsample" solutionName="solution1" date="2016-11-26T05:13:00.507-0500" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'maxpool/begin_r' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="maxpool_downsample" solutionName="solution1" date="2016-11-26T05:13:00.502-0500" type="Warning"/>
+        <logs message="@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 47, distance = 1)&#xA;   between fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:39) and fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:30)." projectName="maxpool_downsample" solutionName="solution1" date="2016-11-26T05:12:59.717-0500" type="Warning"/>
+        <logs message="@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 46, distance = 1)&#xA;   between fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:38) and fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:30)." projectName="maxpool_downsample" solutionName="solution1" date="2016-11-26T05:12:59.624-0500" type="Warning"/>
+        <logs message="@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 22, distance = 1)&#xA;   between fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:30) and fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:30)." projectName="maxpool_downsample" solutionName="solution1" date="2016-11-26T05:12:59.201-0500" type="Warning"/>
+        <logs message="@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 10, distance = 1)&#xA;   between fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:30) and fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:30)." projectName="maxpool_downsample" solutionName="solution1" date="2016-11-26T05:12:59.161-0500" type="Warning"/>
+        <logs message="@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 4, distance = 1)&#xA;   between fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:30) and fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:30)." projectName="maxpool_downsample" solutionName="solution1" date="2016-11-26T05:12:59.149-0500" type="Warning"/>
+        <logs message="@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 3, distance = 1)&#xA;   between fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:31) and fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:30)." projectName="maxpool_downsample" solutionName="solution1" date="2016-11-26T05:12:59.128-0500" type="Warning"/>
+        <logs message="@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 2, distance = 1)&#xA;   between fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:30) and fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:30)." projectName="maxpool_downsample" solutionName="solution1" date="2016-11-26T05:12:59.091-0500" type="Warning"/>
+        <logs message="@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 1, distance = 1)&#xA;   between fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:31) and fifo read on port 'input_V' (maxpool_downsample/.settings/maxpool_downsample.cpp:30)." projectName="maxpool_downsample" solutionName="solution1" date="2016-11-26T05:12:59.088-0500" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'maxpool/begin' to 'maxpool/begin_r' to avoid the conflict with HDL keywords or other object names." projectName="maxpool_downsample" solutionName="solution1" date="2016-11-26T05:12:57.853-0500" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

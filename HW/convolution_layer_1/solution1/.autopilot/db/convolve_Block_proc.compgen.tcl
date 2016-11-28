@@ -18,7 +18,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_done \
     op interface \
-    ports { done { O 32 vector } done_ap_vld { O 1 bit } } \
+    ports { done { O 1 vector } done_ap_vld { O 1 bit } } \
 } "
 }
 

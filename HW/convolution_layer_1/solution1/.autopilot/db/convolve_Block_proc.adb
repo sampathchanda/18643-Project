@@ -28,7 +28,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>1</bitwidth>
           </Value>
           <direction>1</direction>
           <if_type>0</if_type>
@@ -50,7 +50,7 @@
               <name/>
               <fileName>convolution_layer_1/.settings/convolution_layer_1.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>73</lineNumber>
+              <lineNumber>79</lineNumber>
               <contextFuncName>convolve</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -65,7 +65,7 @@
                         <first>convolution_layer_1/.settings/convolution_layer_1.cpp</first>
                         <second>convolve</second>
                       </first>
-                      <second>73</second>
+                      <second>79</second>
                     </item>
                   </second>
                 </item>
@@ -133,7 +133,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>1</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>0</content>
@@ -246,7 +246,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="32" tracking_level="0" version="0">
-          <first>ap_sig_bdd_32 ( or ) </first>
+          <first>ap_sig_bdd_33 ( or ) </first>
           <second class_id="33" tracking_level="0" version="0">
             <count>4</count>
             <item_version>0</item_version>

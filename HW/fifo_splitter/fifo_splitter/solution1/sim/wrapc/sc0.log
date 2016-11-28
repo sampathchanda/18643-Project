@@ -1,0 +1,5 @@
+   Build using "/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/gcc/bin/g++"
+   Compiling fifo_splitter.cpp_pre.cpp.tb.cpp
+   Compiling apatb_splitter.cpp
+   Compiling fifo_splitter_tb.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

@@ -8,10 +8,10 @@ set isOneStateSeq 1
 set C_modelName {convolve_Block__proc}
 set C_modelType { void 0 }
 set C_modelArgList { 
-	{ done int 32 regular {pointer 1}  }
+	{ done int 1 regular {pointer 1}  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "done", "interface" : "wire", "bitwidth" : 32 ,"direction" : "WRITEONLY" } ]}
+	{ "Name" : "done", "interface" : "wire", "bitwidth" : 1 ,"direction" : "WRITEONLY" } ]}
 # RTL Port declarations: 
 set portNum 9
 set portList { 
@@ -22,7 +22,7 @@ set portList {
 	{ ap_continue sc_in sc_logic 1 continue -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ done sc_out sc_lv 32 signal 0 } 
+	{ done sc_out sc_lv 1 signal 0 } 
 	{ done_ap_vld sc_out sc_logic 1 outvld 0 } 
 }
 set NewPortList {[ 
@@ -33,8 +33,8 @@ set NewPortList {[
  	{ "name": "ap_continue", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "continue", "bundle":{"name": "ap_continue", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "done", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "done", "role": "default" }} , 
+ 	{ "name": "done", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "done", "role": "default" }} , 
  	{ "name": "done_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "done", "role": "ap_vld" }}  ]}
 set Spec2ImplPortList { 
-	done { ap_vld {  { done out_data 1 32 }  { done_ap_vld out_vld 1 1 } } }
+	done { ap_vld {  { done out_data 1 1 }  { done_ap_vld out_vld 1 1 } } }
 }

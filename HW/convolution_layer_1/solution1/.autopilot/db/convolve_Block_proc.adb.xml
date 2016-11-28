@@ -17,9 +17,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="2" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<node id="2" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-newFuncRoot:0  call void @_ssdm_op_Write.ap_auto.i32P(i32* %done, i32 0)
+newFuncRoot:0  call void @_ssdm_op_Write.ap_auto.i1P(i1* %done, i1 false)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -51,7 +51,7 @@ newFuncRoot:1  ret void
 
 
 <dataflows>
-<dataflow id="6" from="_ssdm_op_Write.ap_auto.i32P" to="stg_2" fromId="5" toId="2">
+<dataflow id="6" from="_ssdm_op_Write.ap_auto.i1P" to="stg_2" fromId="5" toId="2">
 </dataflow>
 <dataflow id="7" from="done" to="stg_2" fromId="4" toId="2">
 </dataflow>

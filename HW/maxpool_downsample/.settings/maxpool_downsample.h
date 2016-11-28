@@ -10,10 +10,12 @@
 
 #define MAXPOOL_WIDTH 2
 
+typedef unsigned char uint8_t;
+
 void maxpool(
-		int *start,
-		hls::stream<float> &input,
-		hls::stream<float> &output,
-		int *done);
+		bool *begin,
+		hls::stream<uint8_t> &input,
+		hls::stream<uint8_t> &output,
+		bool *ok);
 
 #endif

@@ -26,7 +26,6 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.878384558" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.2053035882" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include/etc"/>
-									<listOptionValue builtIn="false" value="/home/littlefoot/18643_project/Hardware-Accel/HW"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include"/>
@@ -44,7 +43,6 @@
 								<option id="gnu.c.compiler.exe.debug.option.debugging.level.1466288454" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1855295029" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include/etc"/>
-									<listOptionValue builtIn="false" value="/home/littlefoot/18643_project/Hardware-Accel/HW"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include"/>
@@ -112,7 +110,6 @@
 								<option id="gnu.cpp.compiler.exe.release.option.debugging.level.1315601563" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.399303278" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include/etc"/>
-									<listOptionValue builtIn="false" value="/home/littlefoot/18643_project/Hardware-Accel/HW"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include"/>
@@ -125,7 +122,6 @@
 								<option id="gnu.c.compiler.exe.release.option.debugging.level.250283683" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.223818891" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include/etc"/>
-									<listOptionValue builtIn="false" value="/home/littlefoot/18643_project/Hardware-Accel/HW"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/home/littlefoot/vivado/Vivado_HLS/2015.2/include"/>
@@ -183,4 +179,5 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
 </cproject>

@@ -1,0 +1,5 @@
+   Build using "/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/gcc/bin/g++"
+   Compiling maxpool_downsample.cpp_pre.cpp.tb.cpp
+   Compiling apatb_maxpool.cpp
+   Compiling maxpool_downsample_tb.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

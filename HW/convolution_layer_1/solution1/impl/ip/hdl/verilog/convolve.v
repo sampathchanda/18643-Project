@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="convolve,hls_ip_2015_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=8.613500,HLS_SYN_LAT=299607,HLS_SYN_TPT=299608,HLS_SYN_MEM=0,HLS_SYN_DSP=5,HLS_SYN_FF=1125,HLS_SYN_LUT=2136}" *)
+(* CORE_GENERATION_INFO="convolve,hls_ip_2015_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=8.613500,HLS_SYN_LAT=300391,HLS_SYN_TPT=300392,HLS_SYN_MEM=0,HLS_SYN_DSP=5,HLS_SYN_FF=1165,HLS_SYN_LUT=2318}" *)
 
 module convolve (
         image_V_dout,
@@ -30,7 +30,6 @@ module convolve (
         ap_clk,
         ap_rst,
         ap_done,
-        done_ap_vld,
         ap_start,
         ap_idle,
         ap_ready
@@ -39,6 +38,7 @@ module convolve (
 parameter    ap_const_logic_0 = 1'b0;
 parameter    ap_const_lv5_0 = 5'b00000;
 parameter    ap_const_lv32_0 = 32'b00000000000000000000000000000000;
+parameter    ap_const_lv8_0 = 8'b00000000;
 parameter    ap_const_logic_1 = 1'b1;
 parameter    ap_true = 1'b1;
 
@@ -55,14 +55,13 @@ output   weights_ce1;
 output  [31:0] weights_d1;
 input  [31:0] weights_q1;
 output   weights_we1;
-output  [31:0] conv_output_V_din;
+output  [7:0] conv_output_V_din;
 input   conv_output_V_full_n;
 output   conv_output_V_write;
-output  [31:0] done;
+output   done;
 input   ap_clk;
 input   ap_rst;
 output   ap_done;
-output   done_ap_vld;
 input   ap_start;
 output   ap_idle;
 output   ap_ready;
@@ -79,7 +78,7 @@ wire   [31:0] convolve_Loop_BUFFER_RESET_proc_U0_weights_q0;
 wire   [7:0] convolve_Loop_BUFFER_RESET_proc_U0_image_V_dout;
 wire    convolve_Loop_BUFFER_RESET_proc_U0_image_V_empty_n;
 wire    convolve_Loop_BUFFER_RESET_proc_U0_image_V_read;
-wire   [31:0] convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_din;
+wire   [7:0] convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_din;
 wire    convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_full_n;
 wire    convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_write;
 wire    ap_sig_hs_continue;
@@ -88,7 +87,7 @@ wire    convolve_Block_proc_U0_ap_done;
 wire    convolve_Block_proc_U0_ap_continue;
 wire    convolve_Block_proc_U0_ap_idle;
 wire    convolve_Block_proc_U0_ap_ready;
-wire   [31:0] convolve_Block_proc_U0_done;
+wire   [0:0] convolve_Block_proc_U0_done;
 wire    convolve_Block_proc_U0_done_ap_vld;
 reg    ap_reg_procdone_convolve_Loop_BUFFER_RESET_proc_U0 = 1'b0;
 reg    ap_sig_hs_done;
@@ -177,7 +176,7 @@ end
 /// ap_sig_hs_done assign process. ///
 always @ (ap_reg_procdone_convolve_Loop_BUFFER_RESET_proc_U0 or ap_reg_procdone_convolve_Block_proc_U0)
 begin
-    if (((ap_const_logic_1 == ap_reg_procdone_convolve_Block_proc_U0) & (ap_const_logic_1 == ap_reg_procdone_convolve_Loop_BUFFER_RESET_proc_U0))) begin
+    if (((ap_const_logic_1 == ap_reg_procdone_convolve_Loop_BUFFER_RESET_proc_U0) & (ap_const_logic_1 == ap_reg_procdone_convolve_Block_proc_U0))) begin
         ap_sig_hs_done = ap_const_logic_1;
     end else begin
         ap_sig_hs_done = ap_const_logic_0;
@@ -198,7 +197,6 @@ assign convolve_Loop_BUFFER_RESET_proc_U0_image_V_dout = image_V_dout;
 assign convolve_Loop_BUFFER_RESET_proc_U0_image_V_empty_n = image_V_empty_n;
 assign convolve_Loop_BUFFER_RESET_proc_U0_weights_q0 = weights_q0;
 assign done = convolve_Block_proc_U0_done;
-assign done_ap_vld = convolve_Block_proc_U0_done_ap_vld;
 assign image_V_read = convolve_Loop_BUFFER_RESET_proc_U0_image_V_read;
 assign weights_address0 = convolve_Loop_BUFFER_RESET_proc_U0_weights_address0;
 assign weights_address1 = ap_const_lv5_0;

@@ -17,6 +17,7 @@ const sc_logic convolve_Block_proc::ap_const_logic_0 = sc_dt::Log_0;
 const sc_lv<1> convolve_Block_proc::ap_ST_st1_fsm_0 = "1";
 const sc_lv<32> convolve_Block_proc::ap_const_lv32_0 = "00000000000000000000000000000000";
 const sc_lv<1> convolve_Block_proc::ap_const_lv1_1 = "1";
+const sc_lv<1> convolve_Block_proc::ap_const_lv1_0 = "0";
 
 convolve_Block_proc::convolve_Block_proc(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
@@ -27,7 +28,7 @@ convolve_Block_proc::convolve_Block_proc(sc_module_name name) : sc_module(name),
     SC_METHOD(thread_ap_done);
     sensitive << ( ap_done_reg );
     sensitive << ( ap_sig_cseq_ST_st1_fsm_0 );
-    sensitive << ( ap_sig_bdd_32 );
+    sensitive << ( ap_sig_bdd_33 );
 
     SC_METHOD(thread_ap_idle);
     sensitive << ( ap_start );
@@ -35,12 +36,12 @@ convolve_Block_proc::convolve_Block_proc(sc_module_name name) : sc_module(name),
 
     SC_METHOD(thread_ap_ready);
     sensitive << ( ap_sig_cseq_ST_st1_fsm_0 );
-    sensitive << ( ap_sig_bdd_32 );
+    sensitive << ( ap_sig_bdd_33 );
 
     SC_METHOD(thread_ap_sig_bdd_20);
     sensitive << ( ap_CS_fsm );
 
-    SC_METHOD(thread_ap_sig_bdd_32);
+    SC_METHOD(thread_ap_sig_bdd_33);
     sensitive << ( ap_start );
     sensitive << ( ap_done_reg );
 
@@ -49,15 +50,15 @@ convolve_Block_proc::convolve_Block_proc(sc_module_name name) : sc_module(name),
 
     SC_METHOD(thread_done);
     sensitive << ( ap_sig_cseq_ST_st1_fsm_0 );
-    sensitive << ( ap_sig_bdd_32 );
+    sensitive << ( ap_sig_bdd_33 );
 
     SC_METHOD(thread_done_ap_vld);
     sensitive << ( ap_sig_cseq_ST_st1_fsm_0 );
-    sensitive << ( ap_sig_bdd_32 );
+    sensitive << ( ap_sig_bdd_33 );
 
     SC_METHOD(thread_ap_NS_fsm);
     sensitive << ( ap_CS_fsm );
-    sensitive << ( ap_sig_bdd_32 );
+    sensitive << ( ap_sig_bdd_33 );
 
     ap_done_reg = SC_LOGIC_0;
     ap_CS_fsm = "1";
@@ -84,7 +85,7 @@ convolve_Block_proc::convolve_Block_proc(sc_module_name name) : sc_module(name),
     sc_trace(mVcdFile, ap_CS_fsm, "ap_CS_fsm");
     sc_trace(mVcdFile, ap_sig_cseq_ST_st1_fsm_0, "ap_sig_cseq_ST_st1_fsm_0");
     sc_trace(mVcdFile, ap_sig_bdd_20, "ap_sig_bdd_20");
-    sc_trace(mVcdFile, ap_sig_bdd_32, "ap_sig_bdd_32");
+    sc_trace(mVcdFile, ap_sig_bdd_33, "ap_sig_bdd_33");
     sc_trace(mVcdFile, ap_NS_fsm, "ap_NS_fsm");
 #endif
 
@@ -109,7 +110,7 @@ void convolve_Block_proc::thread_ap_clk_no_reset_() {
         if (esl_seteq<1,1,1>(ap_const_logic_1, ap_continue.read())) {
             ap_done_reg = ap_const_logic_0;
         } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st1_fsm_0.read()) && 
-                    !ap_sig_bdd_32.read())) {
+                    !ap_sig_bdd_33.read())) {
             ap_done_reg = ap_const_logic_1;
         }
     }
@@ -118,7 +119,7 @@ void convolve_Block_proc::thread_ap_clk_no_reset_() {
 void convolve_Block_proc::thread_ap_done() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_done_reg.read()) || 
          (esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st1_fsm_0.read()) && 
-          !ap_sig_bdd_32.read()))) {
+          !ap_sig_bdd_33.read()))) {
         ap_done = ap_const_logic_1;
     } else {
         ap_done = ap_const_logic_0;
@@ -136,7 +137,7 @@ void convolve_Block_proc::thread_ap_idle() {
 
 void convolve_Block_proc::thread_ap_ready() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st1_fsm_0.read()) && 
-         !ap_sig_bdd_32.read())) {
+         !ap_sig_bdd_33.read())) {
         ap_ready = ap_const_logic_1;
     } else {
         ap_ready = ap_const_logic_0;
@@ -147,8 +148,8 @@ void convolve_Block_proc::thread_ap_sig_bdd_20() {
     ap_sig_bdd_20 = esl_seteq<1,1,1>(ap_CS_fsm.read().range(0, 0), ap_const_lv1_1);
 }
 
-void convolve_Block_proc::thread_ap_sig_bdd_32() {
-    ap_sig_bdd_32 = (esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_0) || esl_seteq<1,1,1>(ap_done_reg.read(), ap_const_logic_1));
+void convolve_Block_proc::thread_ap_sig_bdd_33() {
+    ap_sig_bdd_33 = (esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_0) || esl_seteq<1,1,1>(ap_done_reg.read(), ap_const_logic_1));
 }
 
 void convolve_Block_proc::thread_ap_sig_cseq_ST_st1_fsm_0() {
@@ -160,12 +161,12 @@ void convolve_Block_proc::thread_ap_sig_cseq_ST_st1_fsm_0() {
 }
 
 void convolve_Block_proc::thread_done() {
-    done = ap_const_lv32_0;
+    done = ap_const_lv1_0;
 }
 
 void convolve_Block_proc::thread_done_ap_vld() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st1_fsm_0.read()) && 
-         !ap_sig_bdd_32.read())) {
+         !ap_sig_bdd_33.read())) {
         done_ap_vld = ap_const_logic_1;
     } else {
         done_ap_vld = ap_const_logic_0;

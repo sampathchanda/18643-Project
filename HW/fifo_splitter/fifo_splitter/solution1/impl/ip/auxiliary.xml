@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="splitter" xd:componentRef="splitter" xd:initiationInterval="787" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="input" xd:originalName="input" xd:direction="in" xd:interfaceRef="input_V" xd:busTypeRef="acc_fifo" xd:dataWidth="8"/>
+  <xd:arg xd:name="output[0]" xd:originalName="output0" xd:direction="out" xd:interfaceRef="output_0_V" xd:busTypeRef="acc_fifo" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="output[1]" xd:originalName="output1" xd:direction="out" xd:interfaceRef="output_1_V" xd:busTypeRef="acc_fifo" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="output[2]" xd:originalName="output2" xd:direction="out" xd:interfaceRef="output_2_V" xd:busTypeRef="acc_fifo" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="output[3]" xd:originalName="output3" xd:direction="out" xd:interfaceRef="output_3_V" xd:busTypeRef="acc_fifo" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="output[4]" xd:originalName="output4" xd:direction="out" xd:interfaceRef="output_4_V" xd:busTypeRef="acc_fifo" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:arg xd:name="output[5]" xd:originalName="output5" xd:direction="out" xd:interfaceRef="output_5_V" xd:busTypeRef="acc_fifo" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:latencyEstimates xd:best-case="786" xd:worst-case="786" xd:average-case="786"/>
+  <xd:resourceEstimates xd:LUT="27" xd:FF="19" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

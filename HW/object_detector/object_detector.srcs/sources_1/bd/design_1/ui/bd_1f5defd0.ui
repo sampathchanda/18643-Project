@@ -1,0 +1,12 @@
+{
+   guistr: "# # String gsaved with Nlview 6.4.12  2014-12-16 bk=1.3272 VDI=35 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace inst convolve_0 -pg 1 -lvl 3 -y 290 -defaultsOSRD
+preplace inst splitter_0 -pg 1 -lvl 1 -y 170 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 2 -y 110 -defaultsOSRD
+preplace netloc convolve_0_image_V_read 1 2 2 NJ 90 1140
+preplace netloc axis_data_fifo_0_m_axis_tdata 1 2 2 NJ 110 1130
+preplace netloc axis_data_fifo_0_m_axis_tvalid 1 2 2 NJ 70 1150
+levelinfo -pg 1 0 190 560 940 1170
+",
+}

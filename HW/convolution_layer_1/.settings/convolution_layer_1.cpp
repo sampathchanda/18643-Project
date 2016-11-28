@@ -8,8 +8,10 @@ uint8_t relu(float input);
 void convolve(
 		hls::stream<uint8_t> &image,
 		float weights[WEIGHT_WNDW],
-		hls::stream<float> &conv_output,
-		int *done){
+		hls::stream<uint8_t> &conv_output,
+		bool *done){
+#pragma HLS INTERFACE ap_none port=done
+#pragma HLS INTERFACE ap_memory port=weights
 #pragma HLS DATAFLOW
 #pragma HLS STREAM variable=conv_output
 #pragma HLS STREAM variable=image
@@ -51,11 +53,15 @@ void convolve(
 					read;
 		}
 
-		for(int i = 0; i < CONV_WNDW_SIZE; i++) {
-			for(int j = 0; j < CONV_WNDW_SIZE; j++) {
+		for(int inner_loop = 0;
+				inner_loop < CONV_WNDW_SIZE; inner_loop++) {
+			for(int outer_loop = 0; 
+					outer_loop < CONV_WNDW_SIZE; outer_loop++) {
 #pragma HLS PIPELINE
-				output += linebuff[i * IMAGE_WIDTH + j]
-				                   * weights[i * CONV_WNDW_SIZE + j];
+				output += linebuff[inner_loop * IMAGE_WIDTH + 
+									outer_loop]
+				                   * weights[inner_loop *
+										CONV_WNDW_SIZE + outer_loop];
 			}
 		}
 		output = relu(output);
@@ -69,8 +75,8 @@ void convolve(
 
 	// std::cout << "done" << std::endl;
 
-	*done = 1;
-	*done = 0;
+	*done = true;
+	*done = false;
 
 	// std::cout << "done complete returning" << std::endl;
 }

@@ -52,7 +52,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_conv_output_V \
     op interface \
-    ports { conv_output_V_din { O 32 vector } conv_output_V_full_n { I 1 bit } conv_output_V_write { O 1 bit } } \
+    ports { conv_output_V_din { O 8 vector } conv_output_V_full_n { I 1 bit } conv_output_V_write { O 1 bit } } \
 } "
 }
 
@@ -67,7 +67,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_done \
     op interface \
-    ports { done { O 32 vector } done_ap_vld { O 1 bit } } \
+    ports { done { O 1 bit } } \
 } "
 }
 

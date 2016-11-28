@@ -3,7 +3,7 @@
 
 <trans_list>
 
-<trans id="15" from="1" to="2">
+<trans id="17" from="1" to="2">
 <condition id="0">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -23,9 +23,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="13" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="32">
+<node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="8">
 <![CDATA[
-codeRepl:8  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, float* %conv_output_V)
+codeRepl:10  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, i8* %conv_output_V)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -43,7 +43,7 @@ codeRepl:8  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %wei
 
 <node id="5" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8">
 <![CDATA[
-codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str) nounwind
+codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str1) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -56,12 +56,12 @@ codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="6" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
+<node id="6" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
 <![CDATA[
-codeRepl:1  %empty = call i32 (...)* @_ssdm_op_SpecInterface(float* %conv_output_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+codeRepl:1  call void (...)* @_ssdm_op_SpecInterface(i8* %conv_output_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str26, [1 x i8]* @p_str26, [8 x i8]* @ap_fifo_str)
 
 ]]></node>
-<StgValue><ssdm name="empty"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </operation>
 
 <operation id="6" st_id="2" stage="1" lat="1">
@@ -71,12 +71,12 @@ codeRepl:1  %empty = call i32 (...)* @_ssdm_op_SpecInterface(float* %conv_output
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="7" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
+<node id="7" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
 <![CDATA[
-codeRepl:2  %empty_8 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %image_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+codeRepl:2  call void (...)* @_ssdm_op_SpecInterface(i8* %image_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str25, [1 x i8]* @p_str25, [8 x i8]* @ap_fifo_str)
 
 ]]></node>
-<StgValue><ssdm name="empty_8"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </operation>
 
 <operation id="7" st_id="2" stage="1" lat="1">
@@ -116,9 +116,9 @@ codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap([25 x float]* %weights), !map
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="10" bw="0" op_0_bw="0" op_1_bw="32">
+<node id="10" bw="0" op_0_bw="0" op_1_bw="8">
 <![CDATA[
-codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(float* %conv_output_V), !map !19
+codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(i8* %conv_output_V), !map !19
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -131,9 +131,9 @@ codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(float* %conv_output_V), !map 
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="11" bw="0" op_0_bw="0" op_1_bw="32">
+<node id="11" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i32* %done), !map !23
+codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %done), !map !23
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -154,46 +154,76 @@ codeRepl:7  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @convolve_str) no
 <StgValue><ssdm name=""/></StgValue>
 </operation>
 
-<operation id="12" st_id="2" stage="1" lat="2">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<node id="13" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="32">
-<![CDATA[
-codeRepl:8  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, float* %conv_output_V)
-
-]]></node>
-<StgValue><ssdm name=""/></StgValue>
-</operation>
-
-<operation id="13" st_id="2" stage="1" lat="1">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<node id="14" bw="0" op_0_bw="0" op_1_bw="32">
-<![CDATA[
-codeRepl:9  call fastcc void @convolve_Block__proc(i32* %done)
-
-]]></node>
-<StgValue><ssdm name=""/></StgValue>
-</operation>
-
-<operation id="14" st_id="2" stage="1" lat="1">
+<operation id="12" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="15" bw="0">
+<node id="13" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
 <![CDATA[
-codeRepl:10  ret void
+codeRepl:8  call void (...)* @_ssdm_op_SpecInterface(i1* %done, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="13" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
+<![CDATA[
+codeRepl:9  call void (...)* @_ssdm_op_SpecInterface([25 x float]* %weights, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="14" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="8">
+<![CDATA[
+codeRepl:10  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, i8* %conv_output_V)
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="15" st_id="2" stage="1" lat="1">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="16" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+codeRepl:11  call fastcc void @convolve_Block__proc(i1* %done)
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="16" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="17" bw="0">
+<![CDATA[
+codeRepl:12  ret void
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -203,108 +233,148 @@ codeRepl:10  ret void
 
 
 <ports>
-<port id="17" name="image_V" dir="0" iftype="3">
+<port id="19" name="image_V" dir="0" iftype="3">
 <core>FIFO</core><StgValue><ssdm name="image_V"/></StgValue>
 </port>
-<port id="18" name="weights" dir="0" iftype="1">
+<port id="20" name="weights" dir="0" iftype="1">
 <core>RAM</core><StgValue><ssdm name="weights"/><MemPortTyVec>1 3 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="19" name="conv_output_V" dir="1" iftype="3">
+<port id="21" name="conv_output_V" dir="1" iftype="3">
 <core>FIFO</core><StgValue><ssdm name="conv_output_V"/></StgValue>
 </port>
-<port id="20" name="done" dir="1" iftype="0">
+<port id="22" name="done" dir="1" iftype="0">
 <core>NULL</core><StgValue><ssdm name="done"/></StgValue>
 </port>
 </ports>
 
 
 <dataflows>
-<dataflow id="22" from="convolve_Loop_BUFFER_RESET_proc" to="stg_3" fromId="21" toId="3">
+<dataflow id="24" from="convolve_Loop_BUFFER_RESET_proc" to="stg_3" fromId="23" toId="3">
 </dataflow>
-<dataflow id="23" from="weights" to="stg_3" fromId="18" toId="3">
+<dataflow id="25" from="weights" to="stg_3" fromId="20" toId="3">
 </dataflow>
-<dataflow id="24" from="image_V" to="stg_3" fromId="17" toId="3">
+<dataflow id="26" from="image_V" to="stg_3" fromId="19" toId="3">
 </dataflow>
-<dataflow id="25" from="conv_output_V" to="stg_3" fromId="19" toId="3">
+<dataflow id="27" from="conv_output_V" to="stg_3" fromId="21" toId="3">
 </dataflow>
-<dataflow id="27" from="_ssdm_op_SpecDataflowPipeline" to="stg_4" fromId="26" toId="4">
+<dataflow id="29" from="_ssdm_op_SpecDataflowPipeline" to="stg_4" fromId="28" toId="4">
 </dataflow>
-<dataflow id="29" from="stg_28" to="stg_4" fromId="28" toId="4">
+<dataflow id="31" from="stg_30" to="stg_4" fromId="30" toId="4">
 </dataflow>
-<dataflow id="31" from="p_str" to="stg_4" fromId="30" toId="4">
+<dataflow id="33" from="p_str1" to="stg_4" fromId="32" toId="4">
 </dataflow>
-<dataflow id="33" from="_ssdm_op_SpecInterface" to="empty" fromId="32" toId="5">
+<dataflow id="35" from="_ssdm_op_SpecInterface" to="stg_5" fromId="34" toId="5">
 </dataflow>
-<dataflow id="34" from="conv_output_V" to="empty" fromId="19" toId="5">
+<dataflow id="36" from="conv_output_V" to="stg_5" fromId="21" toId="5">
 </dataflow>
-<dataflow id="36" from="ap_fifo_str" to="empty" fromId="35" toId="5">
+<dataflow id="38" from="ap_fifo_str" to="stg_5" fromId="37" toId="5">
 </dataflow>
-<dataflow id="38" from="stg_37" to="empty" fromId="37" toId="5">
+<dataflow id="40" from="stg_39" to="stg_5" fromId="39" toId="5">
 </dataflow>
-<dataflow id="39" from="stg_37" to="empty" fromId="37" toId="5">
+<dataflow id="41" from="stg_39" to="stg_5" fromId="39" toId="5">
 </dataflow>
-<dataflow id="40" from="stg_37" to="empty" fromId="37" toId="5">
+<dataflow id="42" from="stg_39" to="stg_5" fromId="39" toId="5">
 </dataflow>
-<dataflow id="41" from="stg_37" to="empty" fromId="37" toId="5">
+<dataflow id="43" from="stg_39" to="stg_5" fromId="39" toId="5">
 </dataflow>
-<dataflow id="42" from="p_str" to="empty" fromId="30" toId="5">
+<dataflow id="45" from="p_str26" to="stg_5" fromId="44" toId="5">
 </dataflow>
-<dataflow id="43" from="p_str" to="empty" fromId="30" toId="5">
+<dataflow id="46" from="p_str26" to="stg_5" fromId="44" toId="5">
 </dataflow>
-<dataflow id="44" from="ap_fifo_str" to="empty" fromId="35" toId="5">
+<dataflow id="47" from="ap_fifo_str" to="stg_5" fromId="37" toId="5">
 </dataflow>
-<dataflow id="45" from="_ssdm_op_SpecInterface" to="empty_8" fromId="32" toId="6">
+<dataflow id="48" from="_ssdm_op_SpecInterface" to="stg_6" fromId="34" toId="6">
 </dataflow>
-<dataflow id="46" from="image_V" to="empty_8" fromId="17" toId="6">
+<dataflow id="49" from="image_V" to="stg_6" fromId="19" toId="6">
 </dataflow>
-<dataflow id="47" from="ap_fifo_str" to="empty_8" fromId="35" toId="6">
+<dataflow id="50" from="ap_fifo_str" to="stg_6" fromId="37" toId="6">
 </dataflow>
-<dataflow id="48" from="stg_37" to="empty_8" fromId="37" toId="6">
+<dataflow id="51" from="stg_39" to="stg_6" fromId="39" toId="6">
 </dataflow>
-<dataflow id="49" from="stg_37" to="empty_8" fromId="37" toId="6">
+<dataflow id="52" from="stg_39" to="stg_6" fromId="39" toId="6">
 </dataflow>
-<dataflow id="50" from="stg_37" to="empty_8" fromId="37" toId="6">
+<dataflow id="53" from="stg_39" to="stg_6" fromId="39" toId="6">
 </dataflow>
-<dataflow id="51" from="stg_37" to="empty_8" fromId="37" toId="6">
+<dataflow id="54" from="stg_39" to="stg_6" fromId="39" toId="6">
 </dataflow>
-<dataflow id="52" from="p_str" to="empty_8" fromId="30" toId="6">
+<dataflow id="56" from="p_str25" to="stg_6" fromId="55" toId="6">
 </dataflow>
-<dataflow id="53" from="p_str" to="empty_8" fromId="30" toId="6">
+<dataflow id="57" from="p_str25" to="stg_6" fromId="55" toId="6">
 </dataflow>
-<dataflow id="54" from="ap_fifo_str" to="empty_8" fromId="35" toId="6">
+<dataflow id="58" from="ap_fifo_str" to="stg_6" fromId="37" toId="6">
 </dataflow>
-<dataflow id="56" from="_ssdm_op_SpecBitsMap" to="stg_7" fromId="55" toId="7">
+<dataflow id="60" from="_ssdm_op_SpecBitsMap" to="stg_7" fromId="59" toId="7">
 </dataflow>
-<dataflow id="57" from="image_V" to="stg_7" fromId="17" toId="7">
+<dataflow id="61" from="image_V" to="stg_7" fromId="19" toId="7">
 </dataflow>
-<dataflow id="58" from="_ssdm_op_SpecBitsMap" to="stg_8" fromId="55" toId="8">
+<dataflow id="62" from="_ssdm_op_SpecBitsMap" to="stg_8" fromId="59" toId="8">
 </dataflow>
-<dataflow id="59" from="weights" to="stg_8" fromId="18" toId="8">
+<dataflow id="63" from="weights" to="stg_8" fromId="20" toId="8">
 </dataflow>
-<dataflow id="60" from="_ssdm_op_SpecBitsMap" to="stg_9" fromId="55" toId="9">
+<dataflow id="64" from="_ssdm_op_SpecBitsMap" to="stg_9" fromId="59" toId="9">
 </dataflow>
-<dataflow id="61" from="conv_output_V" to="stg_9" fromId="19" toId="9">
+<dataflow id="65" from="conv_output_V" to="stg_9" fromId="21" toId="9">
 </dataflow>
-<dataflow id="62" from="_ssdm_op_SpecBitsMap" to="stg_10" fromId="55" toId="10">
+<dataflow id="66" from="_ssdm_op_SpecBitsMap" to="stg_10" fromId="59" toId="10">
 </dataflow>
-<dataflow id="63" from="done" to="stg_10" fromId="20" toId="10">
+<dataflow id="67" from="done" to="stg_10" fromId="22" toId="10">
 </dataflow>
-<dataflow id="65" from="_ssdm_op_SpecTopModule" to="stg_11" fromId="64" toId="11">
+<dataflow id="69" from="_ssdm_op_SpecTopModule" to="stg_11" fromId="68" toId="11">
 </dataflow>
-<dataflow id="67" from="convolve_str" to="stg_11" fromId="66" toId="11">
+<dataflow id="71" from="convolve_str" to="stg_11" fromId="70" toId="11">
 </dataflow>
-<dataflow id="68" from="convolve_Loop_BUFFER_RESET_proc" to="stg_12" fromId="21" toId="12">
+<dataflow id="72" from="_ssdm_op_SpecInterface" to="stg_12" fromId="34" toId="12">
 </dataflow>
-<dataflow id="69" from="weights" to="stg_12" fromId="18" toId="12">
+<dataflow id="73" from="done" to="stg_12" fromId="22" toId="12">
 </dataflow>
-<dataflow id="70" from="image_V" to="stg_12" fromId="17" toId="12">
+<dataflow id="75" from="p_str" to="stg_12" fromId="74" toId="12">
 </dataflow>
-<dataflow id="71" from="conv_output_V" to="stg_12" fromId="19" toId="12">
+<dataflow id="76" from="stg_39" to="stg_12" fromId="39" toId="12">
 </dataflow>
-<dataflow id="73" from="convolve_Block__proc" to="stg_13" fromId="72" toId="13">
+<dataflow id="77" from="stg_39" to="stg_12" fromId="39" toId="12">
 </dataflow>
-<dataflow id="74" from="done" to="stg_13" fromId="20" toId="13">
+<dataflow id="78" from="stg_39" to="stg_12" fromId="39" toId="12">
+</dataflow>
+<dataflow id="79" from="stg_39" to="stg_12" fromId="39" toId="12">
+</dataflow>
+<dataflow id="80" from="p_str1" to="stg_12" fromId="32" toId="12">
+</dataflow>
+<dataflow id="81" from="p_str1" to="stg_12" fromId="32" toId="12">
+</dataflow>
+<dataflow id="82" from="p_str1" to="stg_12" fromId="32" toId="12">
+</dataflow>
+<dataflow id="83" from="_ssdm_op_SpecInterface" to="stg_13" fromId="34" toId="13">
+</dataflow>
+<dataflow id="84" from="weights" to="stg_13" fromId="20" toId="13">
+</dataflow>
+<dataflow id="86" from="p_str2" to="stg_13" fromId="85" toId="13">
+</dataflow>
+<dataflow id="87" from="stg_39" to="stg_13" fromId="39" toId="13">
+</dataflow>
+<dataflow id="88" from="stg_39" to="stg_13" fromId="39" toId="13">
+</dataflow>
+<dataflow id="89" from="stg_39" to="stg_13" fromId="39" toId="13">
+</dataflow>
+<dataflow id="90" from="stg_39" to="stg_13" fromId="39" toId="13">
+</dataflow>
+<dataflow id="91" from="p_str1" to="stg_13" fromId="32" toId="13">
+</dataflow>
+<dataflow id="92" from="p_str1" to="stg_13" fromId="32" toId="13">
+</dataflow>
+<dataflow id="93" from="p_str1" to="stg_13" fromId="32" toId="13">
+</dataflow>
+<dataflow id="94" from="convolve_Loop_BUFFER_RESET_proc" to="stg_14" fromId="23" toId="14">
+</dataflow>
+<dataflow id="95" from="weights" to="stg_14" fromId="20" toId="14">
+</dataflow>
+<dataflow id="96" from="image_V" to="stg_14" fromId="19" toId="14">
+</dataflow>
+<dataflow id="97" from="conv_output_V" to="stg_14" fromId="21" toId="14">
+</dataflow>
+<dataflow id="99" from="convolve_Block__proc" to="stg_15" fromId="98" toId="15">
+</dataflow>
+<dataflow id="100" from="done" to="stg_15" fromId="22" toId="15">
 </dataflow>
 </dataflows>
 

@@ -17,7 +17,7 @@
 namespace ap_rtl {
 
 struct convolve : public sc_module {
-    // Port declarations 24
+    // Port declarations 23
     sc_in< sc_lv<8> > image_V_dout;
     sc_in< sc_logic > image_V_empty_n;
     sc_out< sc_logic > image_V_read;
@@ -31,14 +31,13 @@ struct convolve : public sc_module {
     sc_out< sc_lv<32> > weights_d1;
     sc_in< sc_lv<32> > weights_q1;
     sc_out< sc_logic > weights_we1;
-    sc_out< sc_lv<32> > conv_output_V_din;
+    sc_out< sc_lv<8> > conv_output_V_din;
     sc_in< sc_logic > conv_output_V_full_n;
     sc_out< sc_logic > conv_output_V_write;
-    sc_out< sc_lv<32> > done;
+    sc_out< sc_logic > done;
     sc_in_clk ap_clk;
     sc_in< sc_logic > ap_rst;
     sc_out< sc_logic > ap_done;
-    sc_out< sc_logic > done_ap_vld;
     sc_in< sc_logic > ap_start;
     sc_out< sc_logic > ap_idle;
     sc_out< sc_logic > ap_ready;
@@ -67,7 +66,7 @@ struct convolve : public sc_module {
     sc_signal< sc_lv<8> > convolve_Loop_BUFFER_RESET_proc_U0_image_V_dout;
     sc_signal< sc_logic > convolve_Loop_BUFFER_RESET_proc_U0_image_V_empty_n;
     sc_signal< sc_logic > convolve_Loop_BUFFER_RESET_proc_U0_image_V_read;
-    sc_signal< sc_lv<32> > convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_din;
+    sc_signal< sc_lv<8> > convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_din;
     sc_signal< sc_logic > convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_full_n;
     sc_signal< sc_logic > convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_write;
     sc_signal< sc_logic > ap_sig_hs_continue;
@@ -76,7 +75,7 @@ struct convolve : public sc_module {
     sc_signal< sc_logic > convolve_Block_proc_U0_ap_continue;
     sc_signal< sc_logic > convolve_Block_proc_U0_ap_idle;
     sc_signal< sc_logic > convolve_Block_proc_U0_ap_ready;
-    sc_signal< sc_lv<32> > convolve_Block_proc_U0_done;
+    sc_signal< sc_lv<1> > convolve_Block_proc_U0_done;
     sc_signal< sc_logic > convolve_Block_proc_U0_done_ap_vld;
     sc_signal< sc_logic > ap_reg_procdone_convolve_Loop_BUFFER_RESET_proc_U0;
     sc_signal< sc_logic > ap_sig_hs_done;
@@ -86,6 +85,7 @@ struct convolve : public sc_module {
     static const sc_logic ap_const_logic_0;
     static const sc_lv<5> ap_const_lv5_0;
     static const sc_lv<32> ap_const_lv32_0;
+    static const sc_lv<8> ap_const_lv8_0;
     static const sc_logic ap_const_logic_1;
     static const bool ap_true;
     // Thread declarations
@@ -107,7 +107,6 @@ struct convolve : public sc_module {
     void thread_convolve_Loop_BUFFER_RESET_proc_U0_image_V_empty_n();
     void thread_convolve_Loop_BUFFER_RESET_proc_U0_weights_q0();
     void thread_done();
-    void thread_done_ap_vld();
     void thread_image_V_read();
     void thread_weights_address0();
     void thread_weights_address1();

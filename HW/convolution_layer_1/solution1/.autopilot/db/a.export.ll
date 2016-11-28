@@ -2,17 +2,26 @@
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-@p_str = private unnamed_addr constant [1 x i8] zeroinitializer, align 1
-@p_str1 = private unnamed_addr constant [13 x i8] c"BUFFER_RESET\00", align 1
-@p_str2 = private unnamed_addr constant [10 x i8] c"SCAN_LINE\00", align 1
-@p_str3 = private unnamed_addr constant [13 x i8] c"BUFFER_SHIFT\00", align 1
-@p_str4 = private unnamed_addr constant [12 x i8] c"hls_label_0\00", align 1
+@p_str = private unnamed_addr constant [8 x i8] c"ap_none\00", align 1
+@p_str1 = private unnamed_addr constant [1 x i8] zeroinitializer, align 1
+@p_str2 = private unnamed_addr constant [10 x i8] c"ap_memory\00", align 1
+@p_str3 = private unnamed_addr constant [13 x i8] c"BUFFER_RESET\00", align 1
+@p_str4 = private unnamed_addr constant [10 x i8] c"SCAN_LINE\00", align 1
+@p_str5 = private unnamed_addr constant [13 x i8] c"BUFFER_SHIFT\00", align 1
+@p_str6 = private unnamed_addr constant [12 x i8] c"hls_label_0\00", align 1
 @llvm_global_ctors_0 = appending global [2 x i32] [i32 65535, i32 65535]
-@llvm_global_ctors_1 = appending global [2 x void ()*] [void ()* @_GLOBAL__I_a, void ()* @_GLOBAL__I_a16]
+@llvm_global_ctors_1 = appending global [2 x void ()*] [void ()* @_GLOBAL__I_a, void ()* @_GLOBAL__I_a20]
 @convolve_str = internal unnamed_addr constant [9 x i8] c"convolve\00"
 @ap_fifo_str = internal unnamed_addr constant [8 x i8] c"ap_fifo\00"
+@p_str25 = internal unnamed_addr constant [1 x i8] zeroinitializer
+@p_str26 = internal unnamed_addr constant [1 x i8] zeroinitializer
 
 declare void @llvm.dbg.declare(metadata, metadata) nounwind readnone
+
+define weak void @_ssdm_op_SpecInterface(...) nounwind {
+entry:
+  ret void
+}
 
 define weak void @_ssdm_op_SpecDataflowPipeline(...) nounwind {
 entry:
@@ -38,7 +47,7 @@ entry:
 
 declare void @_GLOBAL__I_a() nounwind section ".text.startup"
 
-declare void @_GLOBAL__I_a16() nounwind section ".text.startup"
+declare void @_GLOBAL__I_a20() nounwind section ".text.startup"
 
 define weak i32 @_ssdm_op_SpecRegionBegin(...) {
 entry:
@@ -50,18 +59,20 @@ entry:
   ret i32 0
 }
 
-define void @convolve(i8* %image_V, [25 x float]* %weights, float* %conv_output_V, i32* %done) {
+define void @convolve(i8* %image_V, [25 x float]* %weights, i8* %conv_output_V, i1* %done) {
 codeRepl:
-  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str) nounwind
-  %empty = call i32 (...)* @_ssdm_op_SpecInterface(float* %conv_output_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_8 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %image_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str1) nounwind
+  call void (...)* @_ssdm_op_SpecInterface(i8* %conv_output_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str26, [1 x i8]* @p_str26, [8 x i8]* @ap_fifo_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %image_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str25, [1 x i8]* @p_str25, [8 x i8]* @ap_fifo_str)
   call void (...)* @_ssdm_op_SpecBitsMap(i8* %image_V), !map !7
   call void (...)* @_ssdm_op_SpecBitsMap([25 x float]* %weights), !map !13
-  call void (...)* @_ssdm_op_SpecBitsMap(float* %conv_output_V), !map !19
-  call void (...)* @_ssdm_op_SpecBitsMap(i32* %done), !map !23
+  call void (...)* @_ssdm_op_SpecBitsMap(i8* %conv_output_V), !map !19
+  call void (...)* @_ssdm_op_SpecBitsMap(i1* %done), !map !23
   call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @convolve_str) nounwind
-  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, float* %conv_output_V)
-  call fastcc void @convolve_Block__proc(i32* %done)
+  call void (...)* @_ssdm_op_SpecInterface(i1* %done, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+  call void (...)* @_ssdm_op_SpecInterface([25 x float]* %weights, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, i8* %conv_output_V)
+  call fastcc void @convolve_Block__proc(i1* %done)
   ret void
 }
 
@@ -73,17 +84,17 @@ entry:
 define weak i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32, i32, i32) nounwind readnone {
 entry:
   %empty = call i32 @llvm.part.select.i32(i32 %0, i32 %1, i32 %2)
-  %empty_9 = trunc i32 %empty to i8
-  ret i8 %empty_9
+  %empty_8 = trunc i32 %empty to i8
+  ret i8 %empty_8
 }
 
 define weak i24 @_ssdm_op_BitConcatenate.i24.i1.i23(i1, i23) nounwind readnone {
 entry:
   %empty = zext i1 %0 to i24
-  %empty_10 = zext i23 %1 to i24
-  %empty_11 = shl i24 %empty, 23
-  %empty_12 = or i24 %empty_11, %empty_10
-  ret i24 %empty_12
+  %empty_9 = zext i23 %1 to i24
+  %empty_10 = shl i24 %empty, 23
+  %empty_11 = or i24 %empty_10, %empty_9
+  ret i24 %empty_11
 }
 
 define weak i32 @_ssdm_op_SpecLoopTripCount(...) {
@@ -91,10 +102,11 @@ entry:
   ret i32 0
 }
 
-define internal fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* nocapture %weights, i8* %image_V, float* %conv_output_V) {
+define internal fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, i8* %conv_output_V) {
 newFuncRoot:
-  %empty = call i32 (...)* @_ssdm_op_SpecInterface(i8* %image_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_13 = call i32 (...)* @_ssdm_op_SpecInterface(float* %conv_output_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+  call void (...)* @_ssdm_op_SpecInterface([25 x float]* %weights, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %image_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str25, [1 x i8]* @p_str25, [8 x i8]* @ap_fifo_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %conv_output_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str26, [1 x i8]* @p_str26, [8 x i8]* @ap_fifo_str)
   %linebuff = alloca [117 x i8], align 16
   br label %0
 
@@ -108,14 +120,14 @@ newFuncRoot:
   br i1 %exitcond7_i_i, label %.preheader9, label %1
 
 ; <label>:1                                       ; preds = %0
-  %empty_14 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 117, i64 117, i64 117)
-  call void (...)* @_ssdm_op_SpecLoopName([13 x i8]* @p_str1) nounwind
-  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str1)
-  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind
+  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 117, i64 117, i64 117)
+  call void (...)* @_ssdm_op_SpecLoopName([13 x i8]* @p_str3) nounwind
+  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str3)
+  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
   %tmp_i = zext i7 %pos_0_i_i to i64
   %linebuff_addr = getelementptr inbounds [117 x i8]* %linebuff, i64 0, i64 %tmp_i
   store i8 0, i8* %linebuff_addr, align 1
-  %empty_15 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str1, i32 %tmp)
+  %empty_12 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str3, i32 %tmp)
   br label %0
 
 .preheader9:                                      ; preds = %0, %._crit_edge10
@@ -126,17 +138,17 @@ newFuncRoot:
   br i1 %exitcond6, label %.exitStub, label %4
 
 ._crit_edge10:                                    ; preds = %5, %2
-  %empty_16 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str2, i32 %tmp_2)
+  %empty_13 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str4, i32 %tmp_2)
   br label %.preheader9
 
 ; <label>:2                                       ; preds = %.preheader
-  %input_assign_to_int = bitcast float %p_02_1 to i32
+  %input_assign_to_int = bitcast float %output_1 to i32
   %tmp_7 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %input_assign_to_int, i32 23, i32 30)
   %tmp_1 = trunc i32 %input_assign_to_int to i23
   %notlhs = icmp ne i8 %tmp_7, -1
   %notrhs = icmp eq i23 %tmp_1, 0
   %tmp_10 = or i1 %notrhs, %notlhs
-  %tmp_11 = fcmp ogt float %p_02_1, 0.000000e+00
+  %tmp_11 = fcmp ogt float %output_1, 0.000000e+00
   %tmp_13 = and i1 %tmp_10, %tmp_11
   %p_Val2_s = select i1 %tmp_13, i32 %input_assign_to_int, i32 0
   %loc_V = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %p_Val2_s, i32 23, i32 30) nounwind
@@ -157,56 +169,56 @@ newFuncRoot:
   %tmp_14 = zext i1 %tmp_23 to i8
   %tmp_15 = call i8 @_ssdm_op_PartSelect.i8.i31.i32.i32(i31 %tmp_5_i_i, i32 23, i32 30)
   %result_V = select i1 %isNeg, i8 %tmp_14, i8 %tmp_15
-  %output_s = zext i8 %result_V to i32
-  %output_2 = sitofp i32 %output_s to float
+  %output1 = zext i8 %result_V to i32
+  %output_2 = sitofp i32 %output1 to float
   %tmp_5 = icmp ugt i10 %pixels_read, 116
   %tmp_24 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %m, i32 2, i32 31)
   %icmp = icmp sgt i30 %tmp_24, 0
   %not_s = xor i1 %tmp_4, true
-  %tmp1 = and i1 %tmp_5, %not_s
-  %or_cond = and i1 %tmp1, %icmp
+  %tmp21 = and i1 %tmp_5, %not_s
+  %or_cond = and i1 %tmp21, %icmp
   br i1 %or_cond, label %5, label %._crit_edge10
 
 .preheader8:                                      ; preds = %.preheader
-  %empty_17 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 25, i64 25, i64 25)
-  %exitcond = icmp eq i3 %j, -3
-  %j_mid2 = select i1 %exitcond, i3 0, i3 %j
-  %i_s = add i3 %i, 1
-  %i_mid2 = select i1 %exitcond, i3 %i_s, i3 %i
-  %i_cast7_cast = zext i3 %i_mid2 to i4
-  %p_shl2 = call i8 @_ssdm_op_BitConcatenate.i8.i3.i5(i3 %i_mid2, i5 0)
+  %empty_14 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 25, i64 25, i64 25)
+  %exitcond = icmp eq i3 %outer_loop, -3
+  %outer_loop_mid2 = select i1 %exitcond, i3 0, i3 %outer_loop
+  %inner_loop_s = add i3 %inner_loop, 1
+  %inner_loop_mid2 = select i1 %exitcond, i3 %inner_loop_s, i3 %inner_loop
+  %inner_loop_cast7_cast = zext i3 %inner_loop_mid2 to i4
+  %p_shl2 = call i8 @_ssdm_op_BitConcatenate.i8.i3.i5(i3 %inner_loop_mid2, i5 0)
   %p_shl2_cast = zext i8 %p_shl2 to i9
-  %p_shl3 = call i5 @_ssdm_op_BitConcatenate.i5.i3.i2(i3 %i_mid2, i2 0)
+  %p_shl3 = call i5 @_ssdm_op_BitConcatenate.i5.i3.i2(i3 %inner_loop_mid2, i2 0)
   %p_shl3_cast = zext i5 %p_shl3 to i9
   %tmp_12 = sub i9 %p_shl2_cast, %p_shl3_cast
-  %j_cast4_cast = zext i3 %j_mid2 to i4
-  %j_cast5 = zext i3 %j_mid2 to i9
-  %tmp_25 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4)
-  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind
-  %tmp_16 = add i9 %j_cast5, %tmp_12
+  %outer_loop_cast4_cast = zext i3 %outer_loop_mid2 to i4
+  %outer_loop_cast5 = zext i3 %outer_loop_mid2 to i9
+  %tmp_25 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str6)
+  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+  %tmp_16 = add i9 %outer_loop_cast5, %tmp_12
   %tmp_16_cast = sext i9 %tmp_16 to i32
   %tmp_17 = zext i32 %tmp_16_cast to i64
   %linebuff_addr_3 = getelementptr inbounds [117 x i8]* %linebuff, i64 0, i64 %tmp_17
   %linebuff_load_1 = load i8* %linebuff_addr_3, align 1
   %tmp_18 = zext i8 %linebuff_load_1 to i32
   %tmp_19 = sitofp i32 %tmp_18 to float
-  %tmp2 = add i4 %j_cast4_cast, %i_cast7_cast
-  %tmp2_cast = zext i4 %tmp2 to i5
-  %tmp_20 = add i5 %p_shl3, %tmp2_cast
+  %tmp22 = add i4 %outer_loop_cast4_cast, %inner_loop_cast7_cast
+  %tmp22_cast = zext i4 %tmp22 to i5
+  %tmp_20 = add i5 %p_shl3, %tmp22_cast
   %tmp_21 = zext i5 %tmp_20 to i64
   %weights_addr = getelementptr [25 x float]* %weights, i64 0, i64 %tmp_21
   %weights_load = load float* %weights_addr, align 4
   %tmp_22 = fmul float %tmp_19, %weights_load
-  %output = fadd float %p_02_1, %tmp_22
-  %empty_18 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp_25)
-  %j_1 = add i3 %j_mid2, 1
+  %output = fadd float %output_1, %tmp_22
+  %empty_15 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str6, i32 %tmp_25)
+  %outer_loop_1 = add i3 %outer_loop_mid2, 1
   br label %.preheader
 
 .preheader:                                       ; preds = %3, %.preheader8
   %indvar_flatten = phi i5 [ %indvar_flatten_next, %.preheader8 ], [ 0, %3 ]
-  %i = phi i3 [ %i_mid2, %.preheader8 ], [ 0, %3 ]
-  %p_02_1 = phi float [ %output, %.preheader8 ], [ 0.000000e+00, %3 ]
-  %j = phi i3 [ %j_1, %.preheader8 ], [ 0, %3 ]
+  %inner_loop = phi i3 [ %inner_loop_mid2, %.preheader8 ], [ 0, %3 ]
+  %output_1 = phi float [ %output, %.preheader8 ], [ 0.000000e+00, %3 ]
+  %outer_loop = phi i3 [ %outer_loop_1, %.preheader8 ], [ 0, %3 ]
   %exitcond_flatten = icmp eq i5 %indvar_flatten, -7
   %indvar_flatten_next = add i5 %indvar_flatten, 1
   br i1 %exitcond_flatten, label %2, label %.preheader8
@@ -219,9 +231,9 @@ newFuncRoot:
 
 ; <label>:4                                       ; preds = %.preheader9
   %pixels_read_cast9 = zext i10 %pixels_read to i32
-  %empty_19 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)
-  call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str2) nounwind
-  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str2)
+  %empty_16 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)
+  call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str4) nounwind
+  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str4)
   %read = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %image_V)
   %m = sub nsw i32 %pixels_read_cast9, %t
   %tmp_4 = icmp sgt i32 %m, 27
@@ -230,10 +242,10 @@ newFuncRoot:
   br label %3
 
 _ifconv:                                          ; preds = %3
-  %empty_20 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 117, i64 117, i64 117)
-  call void (...)* @_ssdm_op_SpecLoopName([13 x i8]* @p_str3) nounwind
-  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str3)
-  call void (...)* @_ssdm_op_SpecPipeline(i32 2, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind
+  %empty_17 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 117, i64 117, i64 117)
+  call void (...)* @_ssdm_op_SpecLoopName([13 x i8]* @p_str5) nounwind
+  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str5)
+  call void (...)* @_ssdm_op_SpecPipeline(i32 2, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
   %tmp_6 = icmp ult i7 %pos1, -12
   %tmp_8 = zext i7 %pos_1 to i64
   %linebuff_addr_1 = getelementptr inbounds [117 x i8]* %linebuff, i64 0, i64 %tmp_8
@@ -242,53 +254,67 @@ _ifconv:                                          ; preds = %3
   %tmp_s = zext i7 %pos1 to i64
   %linebuff_addr_2 = getelementptr inbounds [117 x i8]* %linebuff, i64 0, i64 %tmp_s
   store i8 %tmp_9, i8* %linebuff_addr_2, align 1
-  %empty_21 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str3, i32 %tmp_3)
+  %empty_18 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str5, i32 %tmp_3)
   br label %3
 
 ; <label>:5                                       ; preds = %2
-  call void @_ssdm_op_Write.ap_fifo.volatile.floatP(float* %conv_output_V, float %output_2)
+  %p_Val2_4 = bitcast float %output_2 to i32
+  %loc_V_2 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %p_Val2_4, i32 23, i32 30) nounwind
+  %loc_V_3 = trunc i32 %p_Val2_4 to i23
+  %p_Result_4 = call i24 @_ssdm_op_BitConcatenate.i24.i1.i23(i1 true, i23 %loc_V_3) nounwind
+  %tmp_i_cast_i6 = zext i24 %p_Result_4 to i31
+  %tmp_i_i_cast_i7 = zext i8 %loc_V_2 to i9
+  %sh_assign_2 = add i9 -127, %tmp_i_i_cast_i7
+  %isNeg_1 = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %sh_assign_2, i32 8)
+  %tmp_1_i_i1 = sub i8 127, %loc_V_2
+  %tmp_1_i_cast_i1 = sext i8 %tmp_1_i_i1 to i9
+  %sh_assign_3 = select i1 %isNeg_1, i9 %tmp_1_i_cast_i1, i9 %sh_assign_2
+  %sh_assign_1_i_cast_i13_cast = sext i9 %sh_assign_3 to i24
+  %tmp_3_i_i1 = lshr i24 %p_Result_4, %sh_assign_1_i_cast_i13_cast
+  %tmp_4_i_cast_i1 = zext i9 %sh_assign_3 to i31
+  %tmp_5_i_i1 = shl i31 %tmp_i_cast_i6, %tmp_4_i_cast_i1
+  %tmp_28 = call i1 @_ssdm_op_BitSelect.i1.i24.i32(i24 %tmp_3_i_i1, i32 23)
+  %tmp_26 = zext i1 %tmp_28 to i8
+  %tmp_27 = call i8 @_ssdm_op_PartSelect.i8.i31.i32.i32(i31 %tmp_5_i_i1, i32 23, i32 30)
+  %result_V_1 = select i1 %isNeg_1, i8 %tmp_26, i8 %tmp_27
+  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %conv_output_V, i8 %result_V_1)
   br label %._crit_edge10
 }
 
-define internal fastcc void @convolve_Block__proc(i32* nocapture %done) {
+define internal fastcc void @convolve_Block__proc(i1* nocapture %done) {
 newFuncRoot:
-  call void @_ssdm_op_Write.ap_auto.i32P(i32* %done, i32 0)
+  call void @_ssdm_op_Write.ap_auto.i1P(i1* %done, i1 false)
   ret void
-}
-
-define weak i32 @_ssdm_op_SpecInterface(...) {
-entry:
-  ret i32 0
 }
 
 define weak i8 @_ssdm_op_PartSelect.i8.i31.i32.i32(i31, i32, i32) nounwind readnone {
 entry:
   %empty = call i31 @llvm.part.select.i31(i31 %0, i32 %1, i32 %2)
-  %empty_22 = trunc i31 %empty to i8
-  ret i8 %empty_22
+  %empty_19 = trunc i31 %empty to i8
+  ret i8 %empty_19
 }
 
 define weak i5 @_ssdm_op_BitConcatenate.i5.i3.i2(i3, i2) nounwind readnone {
 entry:
   %empty = zext i3 %0 to i5
-  %empty_23 = zext i2 %1 to i5
-  %empty_24 = shl i5 %empty, 2
-  %empty_25 = or i5 %empty_24, %empty_23
-  ret i5 %empty_25
+  %empty_20 = zext i2 %1 to i5
+  %empty_21 = shl i5 %empty, 2
+  %empty_22 = or i5 %empty_21, %empty_20
+  ret i5 %empty_22
 }
 
 define weak i8 @_ssdm_op_BitConcatenate.i8.i3.i5(i3, i5) nounwind readnone {
 entry:
   %empty = zext i3 %0 to i8
-  %empty_26 = zext i5 %1 to i8
-  %empty_27 = shl i8 %empty, 5
-  %empty_28 = or i8 %empty_27, %empty_26
-  ret i8 %empty_28
+  %empty_23 = zext i5 %1 to i8
+  %empty_24 = shl i8 %empty, 5
+  %empty_25 = or i8 %empty_24, %empty_23
+  ret i8 %empty_25
 }
 
-define weak void @_ssdm_op_Write.ap_auto.i32P(i32*, i32) {
+define weak void @_ssdm_op_Write.ap_auto.i1P(i1*, i1) {
 entry:
-  store i32 %1, i32* %0
+  store i1 %1, i1* %0
   ret void
 }
 
@@ -298,40 +324,40 @@ entry:
   ret i8 %empty
 }
 
-define weak void @_ssdm_op_Write.ap_fifo.volatile.floatP(float*, float) {
+define weak void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8*, i8) {
 entry:
-  %empty = call float @_autotb_FifoWrite_float(float* %0, float %1)
+  %empty = call i8 @_autotb_FifoWrite_i8(i8* %0, i8 %1)
   ret void
 }
 
 define weak i1 @_ssdm_op_BitSelect.i1.i9.i32(i9, i32) nounwind readnone {
 entry:
   %empty = trunc i32 %1 to i9
-  %empty_29 = shl i9 1, %empty
-  %empty_30 = and i9 %0, %empty_29
-  %empty_31 = icmp ne i9 %empty_30, 0
-  ret i1 %empty_31
+  %empty_26 = shl i9 1, %empty
+  %empty_27 = and i9 %0, %empty_26
+  %empty_28 = icmp ne i9 %empty_27, 0
+  ret i1 %empty_28
 }
 
 define weak i1 @_ssdm_op_BitSelect.i1.i24.i32(i24, i32) nounwind readnone {
 entry:
   %empty = trunc i32 %1 to i24
-  %empty_32 = shl i24 1, %empty
-  %empty_33 = and i24 %0, %empty_32
-  %empty_34 = icmp ne i24 %empty_33, 0
-  ret i1 %empty_34
+  %empty_29 = shl i24 1, %empty
+  %empty_30 = and i24 %0, %empty_29
+  %empty_31 = icmp ne i24 %empty_30, 0
+  ret i1 %empty_31
 }
 
 define weak i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32, i32, i32) nounwind readnone {
 entry:
   %empty = call i32 @llvm.part.select.i32(i32 %0, i32 %1, i32 %2)
-  %empty_35 = trunc i32 %empty to i30
-  ret i30 %empty_35
+  %empty_32 = trunc i32 %empty to i30
+  ret i30 %empty_32
 }
 
 declare i8 @_autotb_FifoRead_i8(i8*)
 
-declare float @_autotb_FifoWrite_float(float*, float)
+declare i8 @_autotb_FifoWrite_i8(i8*, i8)
 
 declare i32 @llvm.part.select.i32(i32, i32, i32) nounwind readnone
 
@@ -362,10 +388,10 @@ declare i23 @_ssdm_op_PartSelect.i23.i32.i32.i32(i32, i32, i32) nounwind readnon
 !17 = metadata !{metadata !18}
 !18 = metadata !{i32 0, i32 24, i32 1}
 !19 = metadata !{metadata !20}
-!20 = metadata !{i32 0, i32 31, metadata !21}
+!20 = metadata !{i32 0, i32 7, metadata !21}
 !21 = metadata !{metadata !22}
-!22 = metadata !{metadata !"conv_output.V", metadata !11, metadata !"float", i32 0, i32 31}
+!22 = metadata !{metadata !"conv_output.V", metadata !11, metadata !"unsigned char", i32 0, i32 7}
 !23 = metadata !{metadata !24}
-!24 = metadata !{i32 0, i32 31, metadata !25}
+!24 = metadata !{i32 0, i32 0, metadata !25}
 !25 = metadata !{metadata !26}
-!26 = metadata !{metadata !"done", metadata !11, metadata !"int", i32 0, i32 31}
+!26 = metadata !{metadata !"done", metadata !11, metadata !"bool", i32 0, i32 0}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fifo_splitter.cpp" path="/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/.settings/fifo_splitter.cpp"/>
+    <originFiles name="fifo_splitter.h" path="/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/.settings/fifo_splitter.h"/>
+  </source>
+  <testbench>
+    <originFiles name="fifo_splitter_tb.cpp" path="/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/.settings/fifo_splitter_tb.cpp"/>
+    <originFiles name="image" path="/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/.settings/image"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

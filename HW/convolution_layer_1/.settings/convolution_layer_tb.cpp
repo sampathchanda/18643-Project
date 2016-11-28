@@ -8,10 +8,10 @@ using namespace std;
 void s_convolve(
 		uint8_t image[IMAGE_HEIGHT * IMAGE_WIDTH],
 		float weights[WEIGHT_WNDW],
-		float output[CONV_OUTPUT_BUFF]);
+		uint8_t output[CONV_OUTPUT_BUFF]);
 
-void print_output(float output[CONV_OUTPUT_BUFF]);
-void print_output(hls::stream<float> &output);
+void print_output(uint8_t output[CONV_OUTPUT_BUFF]);
+void print_output(hls::stream<uint8_t> &output);
 
 int main() {
 	ifstream image;
@@ -20,12 +20,12 @@ int main() {
 	string inum;
 	uint8_t pixels[IMAGE_HEIGHT * IMAGE_WIDTH];
 	float weights[WEIGHT_WNDW];
-	float s_output[CONV_OUTPUT_BUFF];
+	uint8_t s_output[CONV_OUTPUT_BUFF];
 
 	hls::stream<uint8_t> input_image;
-	hls::stream<float> h_output;
+	hls::stream<uint8_t> h_output;
 
-	int *done = new int;
+	bool *done = new bool;
 
 	image.open("images1", ios::in);
 
@@ -64,7 +64,7 @@ int main() {
 void s_convolve(
 		uint8_t image[IMAGE_HEIGHT * IMAGE_WIDTH],
 		float weights[WEIGHT_WNDW],
-		float output[CONV_OUTPUT_BUFF]) {
+		uint8_t output[CONV_OUTPUT_BUFF]) {
 	int x,  y;
 	float a;
 
@@ -99,18 +99,18 @@ void s_convolve(
 	}
 }
 
-void print_output(float output[CONV_OUTPUT_BUFF]) {
+void print_output(uint8_t output[CONV_OUTPUT_BUFF]) {
 	cout << " software outputs" << endl;
 	for (int i = 0; i < CONV_OUTPUT_BUFF; i++){
-		cout << output[i] << ",";
+		cout << (int)output[i] << ",";
 	}
 	cout << endl;
 }
 
-void print_output(hls::stream<float> &output) {
+void print_output(hls::stream<uint8_t> &output) {
 	cout << " hardware outputs" << endl;
 	for (int i = 0; i < CONV_OUTPUT_BUFF; i++){
-		cout << output.read() << ",";
+		cout << (int)output.read() << ",";
 	}
 	cout << endl;
 }

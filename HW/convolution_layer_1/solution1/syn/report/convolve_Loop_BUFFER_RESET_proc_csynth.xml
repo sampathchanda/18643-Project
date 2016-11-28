@@ -22,10 +22,10 @@
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>299607</Best-caseLatency>
-<Average-caseLatency>299607</Average-caseLatency>
-<Worst-caseLatency>299607</Worst-caseLatency>
+<Average-caseLatency>300391</Average-caseLatency>
+<Worst-caseLatency>300391</Worst-caseLatency>
 <Interval-min>299607</Interval-min>
-<Interval-max>299607</Interval-max>
+<Interval-max>300391</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <BUFFER_RESET>
@@ -36,8 +36,18 @@
 </BUFFER_RESET>
 <SCAN_LINE>
 <TripCount>784</TripCount>
-<Latency>299488</Latency>
-<IterationLatency>382</IterationLatency>
+<Latency>
+<range>
+<min>299488</min>
+<max>300272</max>
+</range>
+</Latency>
+<IterationLatency>
+<range>
+<min>382</min>
+<max>383</max>
+</range>
+</IterationLatency>
 <BUFFER_SHIFT>
 <TripCount>117</TripCount>
 <Latency>234</Latency>
@@ -58,8 +68,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>5</DSP48E>
-<FF>1120</FF>
-<LUT>2135</LUT>
+<FF>1160</FF>
+<LUT>2317</LUT>
 </Resources>
 <AvailableResources>
 <BRAM_18K>280</BRAM_18K>
@@ -221,7 +231,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>8</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

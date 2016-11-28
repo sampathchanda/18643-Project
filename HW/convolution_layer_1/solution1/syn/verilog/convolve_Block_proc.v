@@ -24,6 +24,7 @@ parameter    ap_const_logic_0 = 1'b0;
 parameter    ap_ST_st1_fsm_0 = 1'b1;
 parameter    ap_const_lv32_0 = 32'b00000000000000000000000000000000;
 parameter    ap_const_lv1_1 = 1'b1;
+parameter    ap_const_lv1_0 = 1'b0;
 parameter    ap_true = 1'b1;
 
 input   ap_clk;
@@ -33,7 +34,7 @@ output   ap_done;
 input   ap_continue;
 output   ap_idle;
 output   ap_ready;
-output  [31:0] done;
+output  [0:0] done;
 output   done_ap_vld;
 
 reg ap_done;
@@ -44,7 +45,7 @@ reg    ap_done_reg = 1'b0;
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm = 1'b1;
 reg    ap_sig_cseq_ST_st1_fsm_0;
 reg    ap_sig_bdd_20;
-reg    ap_sig_bdd_32;
+reg    ap_sig_bdd_33;
 reg   [0:0] ap_NS_fsm;
 
 
@@ -68,16 +69,16 @@ begin : ap_ret_ap_done_reg
     end else begin
         if ((ap_const_logic_1 == ap_continue)) begin
             ap_done_reg <= ap_const_logic_0;
-        end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_32)) begin
+        end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_33)) begin
             ap_done_reg <= ap_const_logic_1;
         end
     end
 end
 
 /// ap_done assign process. ///
-always @ (ap_done_reg or ap_sig_cseq_ST_st1_fsm_0 or ap_sig_bdd_32)
+always @ (ap_done_reg or ap_sig_cseq_ST_st1_fsm_0 or ap_sig_bdd_33)
 begin
-    if (((ap_const_logic_1 == ap_done_reg) | ((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_32))) begin
+    if (((ap_const_logic_1 == ap_done_reg) | ((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_33))) begin
         ap_done = ap_const_logic_1;
     end else begin
         ap_done = ap_const_logic_0;
@@ -95,9 +96,9 @@ begin
 end
 
 /// ap_ready assign process. ///
-always @ (ap_sig_cseq_ST_st1_fsm_0 or ap_sig_bdd_32)
+always @ (ap_sig_cseq_ST_st1_fsm_0 or ap_sig_bdd_33)
 begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_32)) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_33)) begin
         ap_ready = ap_const_logic_1;
     end else begin
         ap_ready = ap_const_logic_0;
@@ -115,16 +116,16 @@ begin
 end
 
 /// done_ap_vld assign process. ///
-always @ (ap_sig_cseq_ST_st1_fsm_0 or ap_sig_bdd_32)
+always @ (ap_sig_cseq_ST_st1_fsm_0 or ap_sig_bdd_33)
 begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_32)) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_33)) begin
         done_ap_vld = ap_const_logic_1;
     end else begin
         done_ap_vld = ap_const_logic_0;
     end
 end
 /// the next state (ap_NS_fsm) of the state machine. ///
-always @ (ap_CS_fsm or ap_sig_bdd_32)
+always @ (ap_CS_fsm or ap_sig_bdd_33)
 begin
     case (ap_CS_fsm)
         ap_ST_st1_fsm_0 : 
@@ -145,12 +146,12 @@ begin
     ap_sig_bdd_20 = (ap_CS_fsm[ap_const_lv32_0] == ap_const_lv1_1);
 end
 
-/// ap_sig_bdd_32 assign process. ///
+/// ap_sig_bdd_33 assign process. ///
 always @ (ap_start or ap_done_reg)
 begin
-    ap_sig_bdd_32 = ((ap_start == ap_const_logic_0) | (ap_done_reg == ap_const_logic_1));
+    ap_sig_bdd_33 = ((ap_start == ap_const_logic_0) | (ap_done_reg == ap_const_logic_1));
 end
-assign done = ap_const_lv32_0;
+assign done = ap_const_lv1_0;
 
 
 endmodule //convolve_Block_proc

@@ -28,7 +28,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>1</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>0</if_type>
@@ -50,7 +50,7 @@
 						<name></name>
 						<fileName>convolution_layer_1/.settings/convolution_layer_1.cpp</fileName>
 						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
-						<lineNumber>73</lineNumber>
+						<lineNumber>79</lineNumber>
 						<contextFuncName>convolve</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -65,7 +65,7 @@
 											<first>convolution_layer_1/.settings/convolution_layer_1.cpp</first>
 											<second>convolve</second>
 										</first>
-										<second>73</second>
+										<second>79</second>
 									</item>
 								</second>
 							</item>
@@ -133,7 +133,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>1</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>

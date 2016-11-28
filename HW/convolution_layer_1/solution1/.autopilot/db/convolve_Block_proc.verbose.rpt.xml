@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'convolve_Block_proc'" level="0">
-<item name = "Date">Fri Nov 25 23:36:29 2016
+<item name = "Date">Sat Nov 26 05:43:31 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">convolution_layer_1</item>
@@ -72,7 +72,7 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="ap_sig_bdd_32">or, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_33">or, 0, 0, 1, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -99,7 +99,7 @@
 <column name="ap_continue">in, 1, ap_ctrl_hs, convolve_Block__proc, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, convolve_Block__proc, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, convolve_Block__proc, return value</column>
-<column name="done">out, 32, ap_vld, done, pointer</column>
+<column name="done">out, 1, ap_vld, done, pointer</column>
 <column name="done_ap_vld">out, 1, ap_vld, done, pointer</column>
 </table>
 </item>

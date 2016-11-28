@@ -1,0 +1,139 @@
+
+
+================================================================
+== Vivado HLS Report for 'splitter'
+================================================================
+* Date:           Sat Nov 26 12:05:58 2016
+
+* Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
+* Project:        fifo_splitter
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.75|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |  786|  786|  787|  787| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------+----------------------+-----+-----+-----+-----+---------+
+        |                                |                      |  Latency  |  Interval | Pipeline|
+        |            Instance            |        Module        | min | max | min | max |   Type  |
+        +--------------------------------+----------------------+-----+-----+-----+-----+---------+
+        |grp_splitter_Loop_1_proc_fu_34  |splitter_Loop_1_proc  |  786|  786|  786|  786|   none  |
+        +--------------------------------+----------------------+-----+-----+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|      17|     27|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       2|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|      19|     27|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+----+----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E| FF | LUT|
+    +-------------------------+----------------------+---------+-------+----+----+
+    |splitter_Loop_1_proc_U0  |splitter_Loop_1_proc  |        0|      0|  17|  27|
+    +-------------------------+----------------------+---------+-------+----+----+
+    |Total                    |                      |        0|      0|  17|  27|
+    +-------------------------+----------------------+---------+-------+----+----+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +-----------------------------------------+---+----+-----+-----------+
+    |                   Name                  | FF| LUT| Bits| Const Bits|
+    +-----------------------------------------+---+----+-----+-----------+
+    |ap_CS                                    |  1|   0|    1|          0|
+    |ap_reg_procdone_splitter_Loop_1_proc_U0  |  1|   0|    1|          0|
+    +-----------------------------------------+---+----+-----+-----------+
+    |Total                                    |  2|   0|    2|          0|
+    +-----------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-------------------+-----+-----+------------+--------------+--------------+
+|input_V_dout       |  in |    8|   ap_fifo  |    input_V   |    pointer   |
+|input_V_empty_n    |  in |    1|   ap_fifo  |    input_V   |    pointer   |
+|input_V_read       | out |    1|   ap_fifo  |    input_V   |    pointer   |
+|output_0_V_din     | out |    8|   ap_fifo  |  output_0_V  |    pointer   |
+|output_0_V_full_n  |  in |    1|   ap_fifo  |  output_0_V  |    pointer   |
+|output_0_V_write   | out |    1|   ap_fifo  |  output_0_V  |    pointer   |
+|output_1_V_din     | out |    8|   ap_fifo  |  output_1_V  |    pointer   |
+|output_1_V_full_n  |  in |    1|   ap_fifo  |  output_1_V  |    pointer   |
+|output_1_V_write   | out |    1|   ap_fifo  |  output_1_V  |    pointer   |
+|output_2_V_din     | out |    8|   ap_fifo  |  output_2_V  |    pointer   |
+|output_2_V_full_n  |  in |    1|   ap_fifo  |  output_2_V  |    pointer   |
+|output_2_V_write   | out |    1|   ap_fifo  |  output_2_V  |    pointer   |
+|output_3_V_din     | out |    8|   ap_fifo  |  output_3_V  |    pointer   |
+|output_3_V_full_n  |  in |    1|   ap_fifo  |  output_3_V  |    pointer   |
+|output_3_V_write   | out |    1|   ap_fifo  |  output_3_V  |    pointer   |
+|output_4_V_din     | out |    8|   ap_fifo  |  output_4_V  |    pointer   |
+|output_4_V_full_n  |  in |    1|   ap_fifo  |  output_4_V  |    pointer   |
+|output_4_V_write   | out |    1|   ap_fifo  |  output_4_V  |    pointer   |
+|output_5_V_din     | out |    8|   ap_fifo  |  output_5_V  |    pointer   |
+|output_5_V_full_n  |  in |    1|   ap_fifo  |  output_5_V  |    pointer   |
+|output_5_V_write   | out |    1|   ap_fifo  |  output_5_V  |    pointer   |
+|ap_clk             |  in |    1| ap_ctrl_hs |   splitter   | return value |
+|ap_rst             |  in |    1| ap_ctrl_hs |   splitter   | return value |
+|ap_done            | out |    1| ap_ctrl_hs |   splitter   | return value |
+|ap_start           |  in |    1| ap_ctrl_hs |   splitter   | return value |
+|ap_idle            | out |    1| ap_ctrl_hs |   splitter   | return value |
+|ap_ready           | out |    1| ap_ctrl_hs |   splitter   | return value |
++-------------------+-----+-----+------------+--------------+--------------+
+

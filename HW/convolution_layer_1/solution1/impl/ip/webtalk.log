@@ -2,11 +2,14 @@
 # Webtalk v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Fri Nov 25 23:46:25 2016
-# Process ID: 14830
+# Start of session at: Sat Nov 26 05:44:48 2016
+# Process ID: 26539
 # Log file: /home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/impl/ip/webtalk.log
 # Journal file: /home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/impl/ip/webtalk.jou
 #-----------------------------------------------------------
 source /home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/impl/ip/tmp.hw/webtalk/labtool_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/impl/ip/tmp.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Fri Nov 25 23:46:26 2016. For additional details about this file, please refer to the WebTalk help file at /home/littlefoot/vivado/Vivado/2015.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Fri Nov 25 23:46:26 2016...
+
+    while executing
+"webtalk_transmit -clientid 3696213418 -regid "174679548_176449548_210570730_342" -xml /home/littlefoot/18643_project/Hardware-Accel/HW/convolution_lay..."
+    (file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/impl/ip/tmp.hw/webtalk/labtool_webtalk.tcl" line 26)
+INFO: [Common 17-206] Exiting Webtalk at Sat Nov 26 05:44:51 2016...

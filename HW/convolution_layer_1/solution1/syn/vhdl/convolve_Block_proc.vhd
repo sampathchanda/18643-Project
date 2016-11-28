@@ -18,7 +18,7 @@ port (
     ap_continue : IN STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
-    done : OUT STD_LOGIC_VECTOR (31 downto 0);
+    done : OUT STD_LOGIC_VECTOR (0 downto 0);
     done_ap_vld : OUT STD_LOGIC );
 end;
 
@@ -29,6 +29,7 @@ architecture behav of convolve_Block_proc is
     constant ap_ST_st1_fsm_0 : STD_LOGIC_VECTOR (0 downto 0) := "1";
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
+    constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
 
     signal ap_done_reg : STD_LOGIC := '0';
     signal ap_CS_fsm : STD_LOGIC_VECTOR (0 downto 0) := "1";
@@ -36,7 +37,7 @@ architecture behav of convolve_Block_proc is
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_sig_cseq_ST_st1_fsm_0 : STD_LOGIC;
     signal ap_sig_bdd_20 : BOOLEAN;
-    signal ap_sig_bdd_32 : BOOLEAN;
+    signal ap_sig_bdd_33 : BOOLEAN;
     signal ap_NS_fsm : STD_LOGIC_VECTOR (0 downto 0);
 
 
@@ -67,7 +68,7 @@ begin
             else
                 if ((ap_const_logic_1 = ap_continue)) then 
                     ap_done_reg <= ap_const_logic_0;
-                elsif (((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_32))) then 
+                elsif (((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_33))) then 
                     ap_done_reg <= ap_const_logic_1;
                 end if; 
             end if;
@@ -76,7 +77,7 @@ begin
 
 
     -- the next state (ap_NS_fsm) of the state machine. --
-    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_sig_bdd_32)
+    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_sig_bdd_33)
     begin
         case ap_CS_fsm is
             when ap_ST_st1_fsm_0 => 
@@ -87,9 +88,9 @@ begin
     end process;
 
     -- ap_done assign process. --
-    ap_done_assign_proc : process(ap_done_reg, ap_sig_cseq_ST_st1_fsm_0, ap_sig_bdd_32)
+    ap_done_assign_proc : process(ap_done_reg, ap_sig_cseq_ST_st1_fsm_0, ap_sig_bdd_33)
     begin
-        if (((ap_const_logic_1 = ap_done_reg) or ((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_32)))) then 
+        if (((ap_const_logic_1 = ap_done_reg) or ((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_33)))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -109,9 +110,9 @@ begin
 
 
     -- ap_ready assign process. --
-    ap_ready_assign_proc : process(ap_sig_cseq_ST_st1_fsm_0, ap_sig_bdd_32)
+    ap_ready_assign_proc : process(ap_sig_cseq_ST_st1_fsm_0, ap_sig_bdd_33)
     begin
-        if (((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_32))) then 
+        if (((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_33))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -126,10 +127,10 @@ begin
     end process;
 
 
-    -- ap_sig_bdd_32 assign process. --
-    ap_sig_bdd_32_assign_proc : process(ap_start, ap_done_reg)
+    -- ap_sig_bdd_33 assign process. --
+    ap_sig_bdd_33_assign_proc : process(ap_start, ap_done_reg)
     begin
-                ap_sig_bdd_32 <= ((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1));
+                ap_sig_bdd_33 <= ((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1));
     end process;
 
 
@@ -143,12 +144,12 @@ begin
         end if; 
     end process;
 
-    done <= ap_const_lv32_0;
+    done <= ap_const_lv1_0;
 
     -- done_ap_vld assign process. --
-    done_ap_vld_assign_proc : process(ap_sig_cseq_ST_st1_fsm_0, ap_sig_bdd_32)
+    done_ap_vld_assign_proc : process(ap_sig_cseq_ST_st1_fsm_0, ap_sig_bdd_33)
     begin
-        if (((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_32))) then 
+        if (((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_33))) then 
             done_ap_vld <= ap_const_logic_1;
         else 
             done_ap_vld <= ap_const_logic_0;

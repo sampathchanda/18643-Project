@@ -1,0 +1,23 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="splitter" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="splitter" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="input"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="splitter" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="output"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="splitter" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="splitter" label="">
+<pragma name="UNROLL"/>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

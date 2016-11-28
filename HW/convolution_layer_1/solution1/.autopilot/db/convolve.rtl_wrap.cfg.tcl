@@ -29,7 +29,7 @@ set DataType1 "float"
 set Port1 [list $PortName1 $Interface1 $DataType1 $Pointer1 $Dims1 $Const1 $Volatile1 $ArrayOpt1]
 lappend PortList $Port1
 set PortName2 "conv_output"
-set BitWidth2 "32"
+set BitWidth2 "8"
 set ArrayOpt2 ""
 set Const2 "0"
 set Volatile2 "0"
@@ -37,7 +37,7 @@ set Pointer2 "2"
 set Reference2 "1"
 set Dims2 [list 0]
 set Interface2 [list AP_STREAM 0] 
-set DataType2 "float"
+set DataType2 "unsigned char"
 set Port2 [list $PortName2 $Interface2 $DataType2 $Pointer2 $Dims2 $Const2 $Volatile2 $ArrayOpt2]
 lappend PortList $Port2
 set PortName3 "done"
@@ -49,7 +49,7 @@ set Pointer3 "1"
 set Reference3 "0"
 set Dims3 [list 0]
 set Interface3 "wire"
-set DataType3 "int"
+set DataType3 "bool"
 set Port3 [list $PortName3 $Interface3 $DataType3 $Pointer3 $Dims3 $Const3 $Volatile3 $ArrayOpt3]
 lappend PortList $Port3
 set globalAPint "" 

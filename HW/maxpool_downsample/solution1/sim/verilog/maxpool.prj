@@ -1,0 +1,6 @@
+verilog xil_defaultlib "maxpool.v"
+verilog xil_defaultlib "maxpool.autotb.v"
+verilog xil_defaultlib "maxpool_Loop_LOOP_proc.v"
+verilog xil_defaultlib "AESL_autofifo_output_V.v"
+verilog xil_defaultlib "AESL_autofifo_input_V.v"
+

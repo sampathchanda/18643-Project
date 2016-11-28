@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'convolve'" level="0">
-<item name = "Date">Fri Nov 25 23:36:29 2016
+<item name = "Date">Sat Nov 26 05:43:31 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">convolution_layer_1</item>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">299607, 299607, 299608, 299608, dataflow</column>
+<column name="">299607, 300391, 299608, 300392, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_convolve_Loop_BUFFER_RESET_proc_fu_30">convolve_Loop_BUFFER_RESET_proc, 299607, 299607, 299607, 299607, none</column>
-<column name="stg_13_convolve_Block_proc_fu_40">convolve_Block_proc, 0, 0, 0, 0, none</column>
+<column name="grp_convolve_Loop_BUFFER_RESET_proc_fu_38">convolve_Loop_BUFFER_RESET_proc, 299607, 300391, 299607, 300391, none</column>
+<column name="stg_15_convolve_Block_proc_fu_48">convolve_Block_proc, 0, 0, 0, 0, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,7 +50,7 @@
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="Expression">-, -, -, -</column>
 <column name="FIFO">-, -, -, -</column>
-<column name="Instance">0, 5, 1122, 2136</column>
+<column name="Instance">0, 5, 1162, 2318</column>
 <column name="Memory">-, -, -, -</column>
 <column name="Multiplexer">-, -, -, -</column>
 <column name="Register">-, -, 3, -</column>
@@ -63,7 +63,7 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="convolve_Block_proc_U0">convolve_Block_proc, 0, 0, 2, 1</column>
-<column name="convolve_Loop_BUFFER_RESET_proc_U0">convolve_Loop_BUFFER_RESET_proc, 0, 5, 1120, 2135</column>
+<column name="convolve_Loop_BUFFER_RESET_proc_U0">convolve_Loop_BUFFER_RESET_proc, 0, 5, 1160, 2317</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -109,11 +109,10 @@
 <column name="weights_d1">out, 32, ap_memory, weights, array</column>
 <column name="weights_q1">in, 32, ap_memory, weights, array</column>
 <column name="weights_we1">out, 1, ap_memory, weights, array</column>
-<column name="conv_output_V_din">out, 32, ap_fifo, conv_output_V, pointer</column>
+<column name="conv_output_V_din">out, 8, ap_fifo, conv_output_V, pointer</column>
 <column name="conv_output_V_full_n">in, 1, ap_fifo, conv_output_V, pointer</column>
 <column name="conv_output_V_write">out, 1, ap_fifo, conv_output_V, pointer</column>
-<column name="done">out, 32, ap_vld, done, pointer</column>
-<column name="done_ap_vld">out, 1, ap_vld, done, pointer</column>
+<column name="done">out, 1, ap_none, done, pointer</column>
 <column name="ap_clk">in, 1, ap_ctrl_hs, convolve, return value</column>
 <column name="ap_rst">in, 1, ap_ctrl_hs, convolve, return value</column>
 <column name="ap_done">out, 1, ap_ctrl_hs, convolve, return value</column>

@@ -4,5 +4,8 @@
     <originFiles name="maxpool_downsample.h" path="/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/.settings/maxpool_downsample.h"/>
     <originFiles name="maxpool_downsample.cpp" path="/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/.settings/maxpool_downsample.cpp"/>
   </source>
-  <testbench/>
+  <testbench>
+    <originFiles name="maxpool_downsample_tb.cpp" path="/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/.settings/maxpool_downsample_tb.cpp"/>
+    <originFiles name="input" path="/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/.settings/input"/>
+  </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

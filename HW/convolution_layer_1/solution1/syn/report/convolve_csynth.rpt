@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'convolve'
 ================================================================
-* Date:           Fri Nov 25 23:36:29 2016
+* Date:           Sat Nov 26 05:43:31 2016
 
 * Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
 * Project:        convolution_layer_1
@@ -29,7 +29,7 @@
     |     Latency     |     Interval    | Pipeline |
     |   min  |   max  |   min  |   max  |   Type   |
     +--------+--------+--------+--------+----------+
-    |  299607|  299607|  299608|  299608| dataflow |
+    |  299607|  300391|  299608|  300392| dataflow |
     +--------+--------+--------+--------+----------+
 
     + Detail: 
@@ -38,8 +38,8 @@
         |                                           |                                 |     Latency     |     Interval    | Pipeline|
         |                  Instance                 |              Module             |   min  |   max  |   min  |   max  |   Type  |
         +-------------------------------------------+---------------------------------+--------+--------+--------+--------+---------+
-        |grp_convolve_Loop_BUFFER_RESET_proc_fu_30  |convolve_Loop_BUFFER_RESET_proc  |  299607|  299607|  299607|  299607|   none  |
-        |stg_13_convolve_Block_proc_fu_40           |convolve_Block_proc              |       0|       0|       0|       0|   none  |
+        |grp_convolve_Loop_BUFFER_RESET_proc_fu_38  |convolve_Loop_BUFFER_RESET_proc  |  299607|  300391|  299607|  300391|   none  |
+        |stg_15_convolve_Block_proc_fu_48           |convolve_Block_proc              |       0|       0|       0|       0|   none  |
         +-------------------------------------------+---------------------------------+--------+--------+--------+--------+---------+
 
         * Loop: 
@@ -56,12 +56,12 @@
 +-----------------+---------+-------+--------+-------+
 |Expression       |        -|      -|       -|      -|
 |FIFO             |        -|      -|       -|      -|
-|Instance         |        0|      5|    1122|   2136|
+|Instance         |        0|      5|    1162|   2318|
 |Memory           |        -|      -|       -|      -|
 |Multiplexer      |        -|      -|       -|      -|
 |Register         |        -|      -|       3|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |        0|      5|    1125|   2136|
+|Total            |        0|      5|    1165|   2318|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
@@ -74,9 +74,9 @@
     |              Instance              |              Module             | BRAM_18K| DSP48E|  FF  |  LUT |
     +------------------------------------+---------------------------------+---------+-------+------+------+
     |convolve_Block_proc_U0              |convolve_Block_proc              |        0|      0|     2|     1|
-    |convolve_Loop_BUFFER_RESET_proc_U0  |convolve_Loop_BUFFER_RESET_proc  |        0|      5|  1120|  2135|
+    |convolve_Loop_BUFFER_RESET_proc_U0  |convolve_Loop_BUFFER_RESET_proc  |        0|      5|  1160|  2317|
     +------------------------------------+---------------------------------+---------+-------+------+------+
-    |Total                               |                                 |        0|      5|  1122|  2136|
+    |Total                               |                                 |        0|      5|  1162|  2318|
     +------------------------------------+---------------------------------+---------+-------+------+------+
 
     * Memory: 
@@ -124,11 +124,10 @@
 |weights_d1            | out |   32|  ap_memory |    weights    |     array    |
 |weights_q1            |  in |   32|  ap_memory |    weights    |     array    |
 |weights_we1           | out |    1|  ap_memory |    weights    |     array    |
-|conv_output_V_din     | out |   32|   ap_fifo  | conv_output_V |    pointer   |
+|conv_output_V_din     | out |    8|   ap_fifo  | conv_output_V |    pointer   |
 |conv_output_V_full_n  |  in |    1|   ap_fifo  | conv_output_V |    pointer   |
 |conv_output_V_write   | out |    1|   ap_fifo  | conv_output_V |    pointer   |
-|done                  | out |   32|   ap_vld   |      done     |    pointer   |
-|done_ap_vld           | out |    1|   ap_vld   |      done     |    pointer   |
+|done                  | out |    1|   ap_none  |      done     |    pointer   |
 |ap_clk                |  in |    1| ap_ctrl_hs |    convolve   | return value |
 |ap_rst                |  in |    1| ap_ctrl_hs |    convolve   | return value |
 |ap_done               | out |    1| ap_ctrl_hs |    convolve   | return value |

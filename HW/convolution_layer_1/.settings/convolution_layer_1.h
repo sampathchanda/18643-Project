@@ -23,8 +23,8 @@ typedef unsigned char uint8_t;
 void convolve(
 		hls::stream<uint8_t> &image,
 		float weights[WEIGHT_WNDW],
-		hls::stream<float> &conv_output,
-		int *done
+		hls::stream<uint8_t> &conv_output,
+		bool *done
 		);
 
 #endif

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Nov 26 05:15:35 2016
+# Process ID: 25400
+# Log file: /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/webtalk.log
+# Journal file: /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/xsim.dir/maxpool/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,56 @@
+ hardware outputs
+26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /home/littlefoot/vivado/Vivado/2015.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_maxpool_top -prj maxpool.prj --lib ieee_proposed=./ieee_proposed -s maxpool 
+Multi-threading is on. Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/maxpool.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maxpool
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/maxpool.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_maxpool_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/maxpool_Loop_LOOP_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maxpool_Loop_LOOP_proc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/AESL_autofifo_output_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/AESL_autofifo_input_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_input_V
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.maxpool_Loop_LOOP_proc
+Compiling module xil_defaultlib.maxpool
+Compiling module xil_defaultlib.AESL_autofifo_input_V
+Compiling module xil_defaultlib.AESL_autofifo_output_V
+Compiling module xil_defaultlib.apatb_maxpool_top
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot maxpool
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/xsim.dir/maxpool/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/xsim.dir/maxpool/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Nov 26 05:15:33 2016. For additional details about this file, please refer to the WebTalk help file at /home/littlefoot/vivado/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat Nov 26 05:15:33 2016...
+
+****** xsim v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/maxpool/xsim_script.tcl
+# xsim {maxpool} -maxdeltaid 10000 -autoloadwcfg -tclbatch {maxpool.tcl}
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source maxpool.tcl
+## run all
+$finish called at time : 5945400 ps : File "/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/sim/verilog/maxpool.autotb.v" Line 316
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Nov 26 05:15:39 2016...
+ hardware outputs
+26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,26,28,30,32,34,36,38,40,42,44,46,48,

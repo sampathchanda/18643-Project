@@ -1,0 +1,11 @@
+verilog xil_defaultlib "AESL_autofifo_output_1_V.v"
+verilog xil_defaultlib "AESL_autofifo_output_2_V.v"
+verilog xil_defaultlib "AESL_autofifo_output_3_V.v"
+verilog xil_defaultlib "splitter.autotb.v"
+verilog xil_defaultlib "AESL_autofifo_input_V.v"
+verilog xil_defaultlib "splitter.v"
+verilog xil_defaultlib "AESL_autofifo_output_0_V.v"
+verilog xil_defaultlib "splitter_Loop_1_proc.v"
+verilog xil_defaultlib "AESL_autofifo_output_4_V.v"
+verilog xil_defaultlib "AESL_autofifo_output_5_V.v"
+

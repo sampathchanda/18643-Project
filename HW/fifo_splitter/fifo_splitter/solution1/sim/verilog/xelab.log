@@ -1,0 +1,42 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /home/littlefoot/vivado/Vivado/2015.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_splitter_top -prj splitter.prj --lib ieee_proposed=./ieee_proposed -s splitter 
+Multi-threading is on. Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/solution1/sim/verilog/AESL_autofifo_output_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_1_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/solution1/sim/verilog/AESL_autofifo_output_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_2_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/solution1/sim/verilog/AESL_autofifo_output_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_3_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/solution1/sim/verilog/splitter.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_splitter_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/solution1/sim/verilog/AESL_autofifo_input_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_input_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/solution1/sim/verilog/splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/solution1/sim/verilog/AESL_autofifo_output_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_0_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/solution1/sim/verilog/splitter_Loop_1_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module splitter_Loop_1_proc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/solution1/sim/verilog/AESL_autofifo_output_4_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_4_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/fifo_splitter/fifo_splitter/solution1/sim/verilog/AESL_autofifo_output_5_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_5_V
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.splitter_Loop_1_proc
+Compiling module xil_defaultlib.splitter
+Compiling module xil_defaultlib.AESL_autofifo_input_V
+Compiling module xil_defaultlib.AESL_autofifo_output_0_V
+Compiling module xil_defaultlib.AESL_autofifo_output_1_V
+Compiling module xil_defaultlib.AESL_autofifo_output_2_V
+Compiling module xil_defaultlib.AESL_autofifo_output_3_V
+Compiling module xil_defaultlib.AESL_autofifo_output_4_V
+Compiling module xil_defaultlib.AESL_autofifo_output_5_V
+Compiling module xil_defaultlib.apatb_splitter_top
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot splitter
