@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'obj_detector_softmax'" level="0">
-<item name = "Date">Wed Nov 30 03:19:25 2016
+<item name = "Date">Thu Dec  1 08:40:52 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">proj1_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.63, 1.25</column>
+<column name="ap_clk">20.00, 16.62, 2.50</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">200, 200, 200, 200, none</column>
+<column name="">122, 122, 122, 122, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,10 +35,10 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- softmax_label9">10, 10, 5, -, -, 2, no</column>
-<column name="- softmax_label10">32, 32, 16, -, -, 2, no</column>
-<column name="- softmax_label11">50, 50, 25, -, -, 2, no</column>
-<column name="- softmax_label12">104, 104, 52, -, -, 2, no</column>
+<column name="- softmax_label9">8, 8, 4, -, -, 2, no</column>
+<column name="- softmax_label10">20, 20, 10, -, -, 2, no</column>
+<column name="- softmax_label11">32, 32, 16, -, -, 2, no</column>
+<column name="- softmax_label12">58, 58, 29, -, -, 2, no</column>
 </table>
 </item>
 </section>

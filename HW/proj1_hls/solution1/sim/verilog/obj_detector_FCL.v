@@ -28,30 +28,25 @@ module obj_detector_FCL (
 
 parameter    ap_const_logic_1 = 1'b1;
 parameter    ap_const_logic_0 = 1'b0;
-parameter    ap_ST_st1_fsm_0 = 11'b1;
-parameter    ap_ST_st2_fsm_1 = 11'b10;
-parameter    ap_ST_st3_fsm_2 = 11'b100;
-parameter    ap_ST_st4_fsm_3 = 11'b1000;
-parameter    ap_ST_st5_fsm_4 = 11'b10000;
-parameter    ap_ST_st6_fsm_5 = 11'b100000;
-parameter    ap_ST_st7_fsm_6 = 11'b1000000;
-parameter    ap_ST_st8_fsm_7 = 11'b10000000;
-parameter    ap_ST_st9_fsm_8 = 11'b100000000;
-parameter    ap_ST_st10_fsm_9 = 11'b1000000000;
-parameter    ap_ST_st11_fsm_10 = 11'b10000000000;
+parameter    ap_ST_st1_fsm_0 = 7'b1;
+parameter    ap_ST_pp0_stg0_fsm_1 = 7'b10;
+parameter    ap_ST_pp0_stg1_fsm_2 = 7'b100;
+parameter    ap_ST_pp0_stg2_fsm_3 = 7'b1000;
+parameter    ap_ST_pp0_stg3_fsm_4 = 7'b10000;
+parameter    ap_ST_pp0_stg4_fsm_5 = 7'b100000;
+parameter    ap_ST_st12_fsm_6 = 7'b1000000;
 parameter    ap_const_lv32_0 = 32'b00000000000000000000000000000000;
 parameter    ap_const_lv1_1 = 1'b1;
 parameter    ap_const_lv32_1 = 32'b1;
 parameter    ap_const_lv1_0 = 1'b0;
 parameter    ap_const_lv32_2 = 32'b10;
 parameter    ap_const_lv32_5 = 32'b101;
-parameter    ap_const_lv32_A = 32'b1010;
 parameter    ap_const_lv10_0 = 10'b0000000000;
-parameter    ap_const_lv32_6 = 32'b110;
 parameter    ap_const_lv11_360 = 11'b1101100000;
 parameter    ap_const_lv11_0 = 11'b00000000000;
 parameter    ap_const_lv10_360 = 10'b1101100000;
 parameter    ap_const_lv10_1 = 10'b1;
+parameter    ap_const_lv32_6 = 32'b110;
 parameter    ap_const_lv4_0 = 4'b0000;
 parameter    ap_true = 1'b1;
 
@@ -77,43 +72,44 @@ reg ap_idle;
 reg ap_ready;
 reg inp_ce0;
 reg W_EN_A;
-reg[31:0] ap_return;
-(* fsm_encoding = "none" *) reg   [10:0] ap_CS_fsm = 11'b1;
+(* fsm_encoding = "none" *) reg   [6:0] ap_CS_fsm = 7'b1;
 reg    ap_sig_cseq_ST_st1_fsm_0;
-reg    ap_sig_bdd_29;
-wire   [10:0] tmp_47_cast_fu_98_p3;
-reg   [10:0] tmp_47_cast_reg_137;
-wire   [9:0] i_5_fu_112_p2;
-reg   [9:0] i_5_reg_145;
-reg    ap_sig_cseq_ST_st2_fsm_1;
+reg    ap_sig_bdd_25;
+reg   [31:0] out_reg_76;
+reg   [9:0] i_reg_88;
+wire   [10:0] tmp_16_cast_fu_110_p3;
+reg   [10:0] tmp_16_cast_reg_149;
+wire   [0:0] exitcond_fu_118_p2;
+reg   [0:0] exitcond_reg_154;
+reg    ap_sig_cseq_ST_pp0_stg0_fsm_1;
 reg    ap_sig_bdd_62;
-wire   [0:0] exitcond_fu_106_p2;
-reg    ap_sig_cseq_ST_st3_fsm_2;
-reg    ap_sig_bdd_78;
-wire   [31:0] grp_fu_92_p2;
-reg   [31:0] tmp_s_reg_170;
-reg    ap_sig_cseq_ST_st6_fsm_5;
-reg    ap_sig_bdd_88;
-wire   [31:0] grp_fu_87_p2;
-reg    ap_sig_cseq_ST_st11_fsm_10;
-reg    ap_sig_bdd_97;
-reg   [31:0] out_reg_64;
-reg   [9:0] i_reg_76;
-wire   [63:0] tmp_fu_118_p1;
-wire   [63:0] tmp_43_fu_132_p1;
+reg    ap_reg_ppiten_pp0_it0 = 1'b0;
+reg    ap_reg_ppiten_pp0_it1 = 1'b0;
+reg   [0:0] ap_reg_ppstg_exitcond_reg_154_pp0_it1;
+wire   [9:0] i_5_fu_124_p2;
+reg   [9:0] i_5_reg_158;
+reg    ap_sig_cseq_ST_pp0_stg1_fsm_2;
+reg    ap_sig_bdd_86;
+wire   [31:0] grp_fu_104_p2;
+reg   [31:0] tmp_s_reg_183;
+reg    ap_sig_cseq_ST_pp0_stg4_fsm_5;
+reg    ap_sig_bdd_98;
+wire   [31:0] grp_fu_99_p2;
+reg   [9:0] i_phi_fu_92_p4;
+wire   [63:0] tmp_fu_130_p1;
+wire   [63:0] tmp_16_fu_144_p1;
 wire   [31:0] W_Addr_A_orig;
-wire   [31:0] grp_fu_87_p0;
-wire   [31:0] grp_fu_87_p1;
-reg    ap_sig_cseq_ST_st7_fsm_6;
-reg    ap_sig_bdd_116;
-wire   [31:0] grp_fu_92_p0;
-wire   [31:0] grp_fu_92_p1;
-wire   [10:0] tmp_trn_cast_fu_123_p1;
-wire   [10:0] p_addr1_fu_127_p2;
-wire    grp_fu_87_ce;
-wire    grp_fu_92_ce;
-reg   [31:0] ap_return_preg = 32'b00000000000000000000000000000000;
-reg   [10:0] ap_NS_fsm;
+wire   [31:0] grp_fu_99_p0;
+wire   [31:0] grp_fu_99_p1;
+wire   [31:0] grp_fu_104_p0;
+wire   [31:0] grp_fu_104_p1;
+wire   [10:0] tmp_trn_cast_fu_135_p1;
+wire   [10:0] p_addr1_fu_139_p2;
+wire    grp_fu_99_ce;
+wire    grp_fu_104_ce;
+reg    ap_sig_cseq_ST_st12_fsm_6;
+reg    ap_sig_bdd_163;
+reg   [6:0] ap_NS_fsm;
 
 
 obj_detector_fadd_32ns_32ns_32_5_full_dsp #(
@@ -122,13 +118,13 @@ obj_detector_fadd_32ns_32ns_32_5_full_dsp #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-obj_detector_fadd_32ns_32ns_32_5_full_dsp_U12(
+obj_detector_fadd_32ns_32ns_32_5_full_dsp_U49(
     .clk( ap_clk ),
     .reset( ap_rst ),
-    .din0( grp_fu_87_p0 ),
-    .din1( grp_fu_87_p1 ),
-    .ce( grp_fu_87_ce ),
-    .dout( grp_fu_87_p2 )
+    .din0( grp_fu_99_p0 ),
+    .din1( grp_fu_99_p1 ),
+    .ce( grp_fu_99_ce ),
+    .dout( grp_fu_99_p2 )
 );
 
 obj_detector_fmul_32ns_32ns_32_4_max_dsp #(
@@ -137,13 +133,13 @@ obj_detector_fmul_32ns_32ns_32_4_max_dsp #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-obj_detector_fmul_32ns_32ns_32_4_max_dsp_U13(
+obj_detector_fmul_32ns_32ns_32_4_max_dsp_U50(
     .clk( ap_clk ),
     .reset( ap_rst ),
-    .din0( grp_fu_92_p0 ),
-    .din1( grp_fu_92_p1 ),
-    .ce( grp_fu_92_ce ),
-    .dout( grp_fu_92_p2 )
+    .din0( grp_fu_104_p0 ),
+    .din1( grp_fu_104_p1 ),
+    .ce( grp_fu_104_ce ),
+    .dout( grp_fu_104_p2 )
 );
 
 
@@ -158,14 +154,30 @@ begin : ap_ret_ap_CS_fsm
     end
 end
 
-/// ap_return_preg assign process. ///
+/// ap_reg_ppiten_pp0_it0 assign process. ///
 always @ (posedge ap_clk)
-begin : ap_ret_ap_return_preg
+begin : ap_ret_ap_reg_ppiten_pp0_it0
     if (ap_rst == 1'b1) begin
-        ap_return_preg <= ap_const_lv32_0;
+        ap_reg_ppiten_pp0_it0 <= ap_const_logic_0;
     end else begin
-        if (((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1) & ~(exitcond_fu_106_p2 == ap_const_lv1_0))) begin
-            ap_return_preg <= out_reg_64;
+        if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & ~(exitcond_fu_118_p2 == ap_const_lv1_0))) begin
+            ap_reg_ppiten_pp0_it0 <= ap_const_logic_0;
+        end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~(ap_start == ap_const_logic_0))) begin
+            ap_reg_ppiten_pp0_it0 <= ap_const_logic_1;
+        end
+    end
+end
+
+/// ap_reg_ppiten_pp0_it1 assign process. ///
+always @ (posedge ap_clk)
+begin : ap_ret_ap_reg_ppiten_pp0_it1
+    if (ap_rst == 1'b1) begin
+        ap_reg_ppiten_pp0_it1 <= ap_const_logic_0;
+    end else begin
+        if (((exitcond_reg_154 == ap_const_lv1_0) & (ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg4_fsm_5))) begin
+            ap_reg_ppiten_pp0_it1 <= ap_const_logic_1;
+        end else if ((((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~(ap_start == ap_const_logic_0)) | ((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg4_fsm_5) & ~(exitcond_reg_154 == ap_const_lv1_0)))) begin
+            ap_reg_ppiten_pp0_it1 <= ap_const_logic_0;
         end
     end
 end
@@ -173,28 +185,37 @@ end
 /// assign process. ///
 always @(posedge ap_clk)
 begin
-    if ((ap_const_logic_1 == ap_sig_cseq_ST_st11_fsm_10)) begin
-        i_reg_76 <= i_5_reg_145;
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & (exitcond_reg_154 == ap_const_lv1_0))) begin
+        i_reg_88 <= i_5_reg_158;
     end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~(ap_start == ap_const_logic_0))) begin
-        i_reg_76 <= ap_const_lv10_0;
+        i_reg_88 <= ap_const_lv10_0;
     end
 end
 
 /// assign process. ///
 always @(posedge ap_clk)
 begin
-    if ((ap_const_logic_1 == ap_sig_cseq_ST_st11_fsm_10)) begin
-        out_reg_64 <= grp_fu_87_p2;
+    if (((ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & (ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg4_fsm_5) & (ap_reg_ppstg_exitcond_reg_154_pp0_it1 == ap_const_lv1_0))) begin
+        out_reg_76 <= grp_fu_99_p2;
     end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~(ap_start == ap_const_logic_0))) begin
-        out_reg_64 <= ap_const_lv32_0;
+        out_reg_76 <= ap_const_lv32_0;
     end
 end
 
 /// assign process. ///
 always @(posedge ap_clk)
 begin
-    if ((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1)) begin
-        i_5_reg_145 <= i_5_fu_112_p2;
+    if ((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1)) begin
+        ap_reg_ppstg_exitcond_reg_154_pp0_it1 <= exitcond_reg_154;
+        exitcond_reg_154 <= exitcond_fu_118_p2;
+    end
+end
+
+/// assign process. ///
+always @(posedge ap_clk)
+begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it0))) begin
+        i_5_reg_158 <= i_5_fu_124_p2;
     end
 end
 
@@ -202,22 +223,22 @@ end
 always @(posedge ap_clk)
 begin
     if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~(ap_start == ap_const_logic_0))) begin
-        tmp_47_cast_reg_137[6 : 5] <= tmp_47_cast_fu_98_p3[6 : 5];tmp_47_cast_reg_137[9 : 8] <= tmp_47_cast_fu_98_p3[9 : 8];
+        tmp_16_cast_reg_149[6 : 5] <= tmp_16_cast_fu_110_p3[6 : 5];tmp_16_cast_reg_149[9 : 8] <= tmp_16_cast_fu_110_p3[9 : 8];
     end
 end
 
 /// assign process. ///
 always @(posedge ap_clk)
 begin
-    if ((ap_const_logic_1 == ap_sig_cseq_ST_st6_fsm_5)) begin
-        tmp_s_reg_170 <= grp_fu_92_p2;
+    if (((exitcond_reg_154 == ap_const_lv1_0) & (ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg4_fsm_5))) begin
+        tmp_s_reg_183 <= grp_fu_104_p2;
     end
 end
 
 /// W_EN_A assign process. ///
-always @ (ap_sig_cseq_ST_st2_fsm_1)
+always @ (ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_reg_ppiten_pp0_it0)
 begin
-    if ((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1)) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it0))) begin
         W_EN_A = ap_const_logic_1;
     end else begin
         W_EN_A = ap_const_logic_0;
@@ -225,9 +246,9 @@ begin
 end
 
 /// ap_done assign process. ///
-always @ (ap_start or ap_sig_cseq_ST_st1_fsm_0 or ap_sig_cseq_ST_st2_fsm_1 or exitcond_fu_106_p2)
+always @ (ap_start or ap_sig_cseq_ST_st1_fsm_0 or ap_sig_cseq_ST_st12_fsm_6)
 begin
-    if (((~(ap_const_logic_1 == ap_start) & (ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0)) | ((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1) & ~(exitcond_fu_106_p2 == ap_const_lv1_0)))) begin
+    if (((~(ap_const_logic_1 == ap_start) & (ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0)) | (ap_const_logic_1 == ap_sig_cseq_ST_st12_fsm_6))) begin
         ap_done = ap_const_logic_1;
     end else begin
         ap_done = ap_const_logic_0;
@@ -245,149 +266,127 @@ begin
 end
 
 /// ap_ready assign process. ///
-always @ (ap_sig_cseq_ST_st2_fsm_1 or exitcond_fu_106_p2)
+always @ (ap_sig_cseq_ST_st12_fsm_6)
 begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1) & ~(exitcond_fu_106_p2 == ap_const_lv1_0))) begin
+    if ((ap_const_logic_1 == ap_sig_cseq_ST_st12_fsm_6)) begin
         ap_ready = ap_const_logic_1;
     end else begin
         ap_ready = ap_const_logic_0;
     end
 end
 
-/// ap_return assign process. ///
-always @ (ap_sig_cseq_ST_st2_fsm_1 or exitcond_fu_106_p2 or out_reg_64 or ap_return_preg)
+/// ap_sig_cseq_ST_pp0_stg0_fsm_1 assign process. ///
+always @ (ap_sig_bdd_62)
 begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1) & ~(exitcond_fu_106_p2 == ap_const_lv1_0))) begin
-        ap_return = out_reg_64;
+    if (ap_sig_bdd_62) begin
+        ap_sig_cseq_ST_pp0_stg0_fsm_1 = ap_const_logic_1;
     end else begin
-        ap_return = ap_return_preg;
+        ap_sig_cseq_ST_pp0_stg0_fsm_1 = ap_const_logic_0;
     end
 end
 
-/// ap_sig_cseq_ST_st11_fsm_10 assign process. ///
-always @ (ap_sig_bdd_97)
+/// ap_sig_cseq_ST_pp0_stg1_fsm_2 assign process. ///
+always @ (ap_sig_bdd_86)
 begin
-    if (ap_sig_bdd_97) begin
-        ap_sig_cseq_ST_st11_fsm_10 = ap_const_logic_1;
+    if (ap_sig_bdd_86) begin
+        ap_sig_cseq_ST_pp0_stg1_fsm_2 = ap_const_logic_1;
     end else begin
-        ap_sig_cseq_ST_st11_fsm_10 = ap_const_logic_0;
+        ap_sig_cseq_ST_pp0_stg1_fsm_2 = ap_const_logic_0;
+    end
+end
+
+/// ap_sig_cseq_ST_pp0_stg4_fsm_5 assign process. ///
+always @ (ap_sig_bdd_98)
+begin
+    if (ap_sig_bdd_98) begin
+        ap_sig_cseq_ST_pp0_stg4_fsm_5 = ap_const_logic_1;
+    end else begin
+        ap_sig_cseq_ST_pp0_stg4_fsm_5 = ap_const_logic_0;
+    end
+end
+
+/// ap_sig_cseq_ST_st12_fsm_6 assign process. ///
+always @ (ap_sig_bdd_163)
+begin
+    if (ap_sig_bdd_163) begin
+        ap_sig_cseq_ST_st12_fsm_6 = ap_const_logic_1;
+    end else begin
+        ap_sig_cseq_ST_st12_fsm_6 = ap_const_logic_0;
     end
 end
 
 /// ap_sig_cseq_ST_st1_fsm_0 assign process. ///
-always @ (ap_sig_bdd_29)
+always @ (ap_sig_bdd_25)
 begin
-    if (ap_sig_bdd_29) begin
+    if (ap_sig_bdd_25) begin
         ap_sig_cseq_ST_st1_fsm_0 = ap_const_logic_1;
     end else begin
         ap_sig_cseq_ST_st1_fsm_0 = ap_const_logic_0;
     end
 end
 
-/// ap_sig_cseq_ST_st2_fsm_1 assign process. ///
-always @ (ap_sig_bdd_62)
+/// i_phi_fu_92_p4 assign process. ///
+always @ (i_reg_88 or exitcond_reg_154 or ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_reg_ppiten_pp0_it1 or i_5_reg_158)
 begin
-    if (ap_sig_bdd_62) begin
-        ap_sig_cseq_ST_st2_fsm_1 = ap_const_logic_1;
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & (exitcond_reg_154 == ap_const_lv1_0))) begin
+        i_phi_fu_92_p4 = i_5_reg_158;
     end else begin
-        ap_sig_cseq_ST_st2_fsm_1 = ap_const_logic_0;
-    end
-end
-
-/// ap_sig_cseq_ST_st3_fsm_2 assign process. ///
-always @ (ap_sig_bdd_78)
-begin
-    if (ap_sig_bdd_78) begin
-        ap_sig_cseq_ST_st3_fsm_2 = ap_const_logic_1;
-    end else begin
-        ap_sig_cseq_ST_st3_fsm_2 = ap_const_logic_0;
-    end
-end
-
-/// ap_sig_cseq_ST_st6_fsm_5 assign process. ///
-always @ (ap_sig_bdd_88)
-begin
-    if (ap_sig_bdd_88) begin
-        ap_sig_cseq_ST_st6_fsm_5 = ap_const_logic_1;
-    end else begin
-        ap_sig_cseq_ST_st6_fsm_5 = ap_const_logic_0;
-    end
-end
-
-/// ap_sig_cseq_ST_st7_fsm_6 assign process. ///
-always @ (ap_sig_bdd_116)
-begin
-    if (ap_sig_bdd_116) begin
-        ap_sig_cseq_ST_st7_fsm_6 = ap_const_logic_1;
-    end else begin
-        ap_sig_cseq_ST_st7_fsm_6 = ap_const_logic_0;
+        i_phi_fu_92_p4 = i_reg_88;
     end
 end
 
 /// inp_ce0 assign process. ///
-always @ (ap_sig_cseq_ST_st2_fsm_1)
+always @ (ap_sig_cseq_ST_pp0_stg0_fsm_1 or ap_reg_ppiten_pp0_it0)
 begin
-    if ((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1)) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg0_fsm_1) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it0))) begin
         inp_ce0 = ap_const_logic_1;
     end else begin
         inp_ce0 = ap_const_logic_0;
     end
 end
 /// the next state (ap_NS_fsm) of the state machine. ///
-always @ (ap_start or ap_CS_fsm or exitcond_fu_106_p2)
+always @ (ap_start or ap_CS_fsm or exitcond_fu_118_p2 or ap_reg_ppiten_pp0_it0 or ap_reg_ppiten_pp0_it1 or ap_sig_cseq_ST_pp0_stg4_fsm_5)
 begin
     case (ap_CS_fsm)
         ap_ST_st1_fsm_0 : 
         begin
             if (~(ap_start == ap_const_logic_0)) begin
-                ap_NS_fsm = ap_ST_st2_fsm_1;
+                ap_NS_fsm = ap_ST_pp0_stg0_fsm_1;
             end else begin
                 ap_NS_fsm = ap_ST_st1_fsm_0;
             end
         end
-        ap_ST_st2_fsm_1 : 
+        ap_ST_pp0_stg0_fsm_1 : 
         begin
-            if (~(exitcond_fu_106_p2 == ap_const_lv1_0)) begin
-                ap_NS_fsm = ap_ST_st1_fsm_0;
+            if (~((ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & ~(exitcond_fu_118_p2 == ap_const_lv1_0) & ~(ap_const_logic_1 == ap_reg_ppiten_pp0_it1))) begin
+                ap_NS_fsm = ap_ST_pp0_stg1_fsm_2;
             end else begin
-                ap_NS_fsm = ap_ST_st3_fsm_2;
+                ap_NS_fsm = ap_ST_st12_fsm_6;
             end
         end
-        ap_ST_st3_fsm_2 : 
+        ap_ST_pp0_stg1_fsm_2 : 
         begin
-            ap_NS_fsm = ap_ST_st4_fsm_3;
+            ap_NS_fsm = ap_ST_pp0_stg2_fsm_3;
         end
-        ap_ST_st4_fsm_3 : 
+        ap_ST_pp0_stg2_fsm_3 : 
         begin
-            ap_NS_fsm = ap_ST_st5_fsm_4;
+            ap_NS_fsm = ap_ST_pp0_stg3_fsm_4;
         end
-        ap_ST_st5_fsm_4 : 
+        ap_ST_pp0_stg3_fsm_4 : 
         begin
-            ap_NS_fsm = ap_ST_st6_fsm_5;
+            ap_NS_fsm = ap_ST_pp0_stg4_fsm_5;
         end
-        ap_ST_st6_fsm_5 : 
+        ap_ST_pp0_stg4_fsm_5 : 
         begin
-            ap_NS_fsm = ap_ST_st7_fsm_6;
+            if (~((ap_const_logic_1 == ap_reg_ppiten_pp0_it1) & (ap_const_logic_1 == ap_sig_cseq_ST_pp0_stg4_fsm_5) & ~(ap_const_logic_1 == ap_reg_ppiten_pp0_it0))) begin
+                ap_NS_fsm = ap_ST_pp0_stg0_fsm_1;
+            end else begin
+                ap_NS_fsm = ap_ST_st12_fsm_6;
+            end
         end
-        ap_ST_st7_fsm_6 : 
+        ap_ST_st12_fsm_6 : 
         begin
-            ap_NS_fsm = ap_ST_st8_fsm_7;
-        end
-        ap_ST_st8_fsm_7 : 
-        begin
-            ap_NS_fsm = ap_ST_st9_fsm_8;
-        end
-        ap_ST_st9_fsm_8 : 
-        begin
-            ap_NS_fsm = ap_ST_st10_fsm_9;
-        end
-        ap_ST_st10_fsm_9 : 
-        begin
-            ap_NS_fsm = ap_ST_st11_fsm_10;
-        end
-        ap_ST_st11_fsm_10 : 
-        begin
-            ap_NS_fsm = ap_ST_st2_fsm_1;
+            ap_NS_fsm = ap_ST_st1_fsm_0;
         end
         default : 
         begin
@@ -397,20 +396,21 @@ begin
 end
 
 assign W_Addr_A = W_Addr_A_orig << ap_const_lv32_2;
-assign W_Addr_A_orig = tmp_43_fu_132_p1;
+assign W_Addr_A_orig = tmp_16_fu_144_p1;
 assign W_Din_A = ap_const_lv32_0;
 assign W_WEN_A = ap_const_lv4_0;
+assign ap_return = out_reg_76;
 
-/// ap_sig_bdd_116 assign process. ///
+/// ap_sig_bdd_163 assign process. ///
 always @ (ap_CS_fsm)
 begin
-    ap_sig_bdd_116 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_6]);
+    ap_sig_bdd_163 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_6]);
 end
 
-/// ap_sig_bdd_29 assign process. ///
+/// ap_sig_bdd_25 assign process. ///
 always @ (ap_CS_fsm)
 begin
-    ap_sig_bdd_29 = (ap_CS_fsm[ap_const_lv32_0] == ap_const_lv1_1);
+    ap_sig_bdd_25 = (ap_CS_fsm[ap_const_lv32_0] == ap_const_lv1_1);
 end
 
 /// ap_sig_bdd_62 assign process. ///
@@ -419,42 +419,36 @@ begin
     ap_sig_bdd_62 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_1]);
 end
 
-/// ap_sig_bdd_78 assign process. ///
+/// ap_sig_bdd_86 assign process. ///
 always @ (ap_CS_fsm)
 begin
-    ap_sig_bdd_78 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_2]);
+    ap_sig_bdd_86 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_2]);
 end
 
-/// ap_sig_bdd_88 assign process. ///
+/// ap_sig_bdd_98 assign process. ///
 always @ (ap_CS_fsm)
 begin
-    ap_sig_bdd_88 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_5]);
+    ap_sig_bdd_98 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_5]);
 end
-
-/// ap_sig_bdd_97 assign process. ///
-always @ (ap_CS_fsm)
-begin
-    ap_sig_bdd_97 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_A]);
-end
-assign exitcond_fu_106_p2 = (i_reg_76 == ap_const_lv10_360? 1'b1: 1'b0);
-assign grp_fu_87_ce = ap_const_logic_1;
-assign grp_fu_87_p0 = out_reg_64;
-assign grp_fu_87_p1 = tmp_s_reg_170;
-assign grp_fu_92_ce = ap_const_logic_1;
-assign grp_fu_92_p0 = inp_q0;
-assign grp_fu_92_p1 = W_Dout_A;
-assign i_5_fu_112_p2 = (i_reg_76 + ap_const_lv10_1);
-assign inp_address0 = tmp_fu_118_p1;
-assign p_addr1_fu_127_p2 = (tmp_trn_cast_fu_123_p1 + tmp_47_cast_reg_137);
-assign tmp_43_fu_132_p1 = p_addr1_fu_127_p2;
-assign tmp_47_cast_fu_98_p3 = ((W_offset[0:0]===1'b1)? ap_const_lv11_360: ap_const_lv11_0);
-assign tmp_fu_118_p1 = i_reg_76;
-assign tmp_trn_cast_fu_123_p1 = i_reg_76;
+assign exitcond_fu_118_p2 = (i_phi_fu_92_p4 == ap_const_lv10_360? 1'b1: 1'b0);
+assign grp_fu_104_ce = ap_const_logic_1;
+assign grp_fu_104_p0 = inp_q0;
+assign grp_fu_104_p1 = W_Dout_A;
+assign grp_fu_99_ce = ap_const_logic_1;
+assign grp_fu_99_p0 = out_reg_76;
+assign grp_fu_99_p1 = tmp_s_reg_183;
+assign i_5_fu_124_p2 = (i_phi_fu_92_p4 + ap_const_lv10_1);
+assign inp_address0 = tmp_fu_130_p1;
+assign p_addr1_fu_139_p2 = (tmp_trn_cast_fu_135_p1 + tmp_16_cast_reg_149);
+assign tmp_16_cast_fu_110_p3 = ((W_offset[0:0]===1'b1)? ap_const_lv11_360: ap_const_lv11_0);
+assign tmp_16_fu_144_p1 = p_addr1_fu_139_p2;
+assign tmp_fu_130_p1 = i_phi_fu_92_p4;
+assign tmp_trn_cast_fu_135_p1 = i_phi_fu_92_p4;
 always @ (posedge ap_clk)
 begin
-    tmp_47_cast_reg_137[4:0] <= 5'b00000;
-    tmp_47_cast_reg_137[7:7] <= 1'b0;
-    tmp_47_cast_reg_137[10] <= 1'b0;
+    tmp_16_cast_reg_149[4:0] <= 5'b00000;
+    tmp_16_cast_reg_149[7:7] <= 1'b0;
+    tmp_16_cast_reg_149[10] <= 1'b0;
 end
 
 

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'convolve_Loop_BUFFER_RESET_proc'" level="0">
-<item name = "Date">Sat Nov 26 05:43:31 2016
+<item name = "Date">Wed Nov 30 17:10:26 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">convolution_layer_1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.61, 1.25</column>
+<column name="ap_clk">10.00, 8.20, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">299607, 300391, 299607, 300391, none</column>
+<column name="">91881, 91881, 91881, 91881, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,10 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- BUFFER_RESET">117, 117, 1, 1, 1, 117, yes</column>
-<column name="- SCAN_LINE">299488, 300272, 382 ~ 383, -, -, 784, no</column>
-<column name=" + BUFFER_SHIFT">234, 234, 2, 2, 2, 117, yes</column>
-<column name=" + SCAN_LINE.2">136, 136, 17, 5, 1, 25, yes</column>
+<column name="- BUFFER_RESET">117, 117, 1, -, -, 117, no</column>
+<column name="- SCAN_LINE">91761, 91761, 151, 117, 1, 784, yes</column>
 </table>
 </item>
 </section>

@@ -1,6 +1,6 @@
-00:21:39 **** Incremental Build of configuration Debug for project proj3_bsp_xaxicdma_example_simple_poll_1 ****
+02:25:14 **** Incremental Build of configuration Debug for project proj3_bsp_xaxicdma_example_simple_poll_1 ****
 make all 
-make: Nothing to be done for `all'.
+make: Nothing to be done for 'all'.
 
-00:21:39 Build Finished (took 153ms)
+02:25:14 Build Finished (took 73ms)
 

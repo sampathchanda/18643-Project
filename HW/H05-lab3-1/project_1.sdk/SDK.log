@@ -666,3 +666,1540 @@ Unknown Error Occured
 00:21:02 INFO  : Processor reset is completed for ps7_cortexa9_0
 00:21:24 INFO  : Processor reset is completed for ps7_cortexa9_0
 00:21:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:59:54 INFO  : Launching XSDB server: xsdb -n -s /home/littlefoot/vivado/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+21:59:59 INFO  : XSDB server has started successfully.
+22:00:00 INFO  : Processing command line option -hwspec /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf.
+22:06:04 INFO  : Launching XSDB server: xsdb -n -s /home/littlefoot/vivado/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+22:06:05 INFO  : XSDB server has started successfully.
+22:06:06 INFO  : Processing command line option -hwspec /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf.
+22:06:08 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_4.
+22:07:05 INFO  : Launching XSDB server: xsdb -n -s /home/littlefoot/vivado/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+22:07:06 INFO  : XSDB server has started successfully.
+22:07:09 INFO  : Processing command line option -hwspec /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf.
+22:07:11 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_4.
+22:12:04 INFO  : Launching XSDB server: xsdb -n -s /home/littlefoot/vivado/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+22:12:05 INFO  : XSDB server has started successfully.
+22:12:07 INFO  : Processing command line option -hwspec /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf.
+22:12:09 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_4.
+22:13:08 INFO  : Refreshed build settings on project proj4
+00:15:29 INFO  : Launching XSDB server: xsdb -n -s /home/littlefoot/vivado/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+00:15:37 INFO  : Processing command line option -hwspec /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf.
+00:15:40 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_4.
+00:15:59 ERROR : Timed out. 30 seconds have elapsed while waiting for XSDB server to launch.
+00:17:06 ERROR :  License Feature SDK is not available.
+00:57:04 INFO  : Launching XSDB server: xsdb -n -s /home/littlefoot/vivado/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+00:57:08 INFO  : XSDB server has started successfully.
+00:57:12 INFO  : Processing command line option -hwspec /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf.
+00:57:15 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_4.
+02:16:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:16:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:16:16 INFO  : FPGA configured successfully with bitstream "/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+02:18:04 INFO  : ps7_init is completed.
+02:18:05 INFO  : ps7_post_config is completed.
+02:18:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:25:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:25:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:25:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:25:55 INFO  : 'fpga -state' command is executed.
+02:25:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:25:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:25:59 INFO  : Mermory regions for PS have been updated.
+02:25:59 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:26:00 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:26:00 INFO  : 'ps7_init' command is executed.
+02:26:00 INFO  : 'ps7_post_config' command is executed.
+02:26:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:26:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:26:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:26:01 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:26:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:26:01 INFO  : Memory regions updated for context APU
+02:26:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:26:01 INFO  : 'con' command is executed.
+02:26:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:26:17 INFO  : Disconnected from the channel tcfchan#1.
+02:26:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:26:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:26:18 INFO  : 'fpga -state' command is executed.
+02:26:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:26:18 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:26:22 INFO  : Mermory regions for PS have been updated.
+02:26:22 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:26:23 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:26:23 INFO  : 'ps7_init' command is executed.
+02:26:23 INFO  : 'ps7_post_config' command is executed.
+02:26:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:26:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:26:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:26:24 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:26:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:26:24 INFO  : Memory regions updated for context APU
+02:26:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:26:24 INFO  : 'con' command is executed.
+02:26:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:28:42 INFO  : Disconnected from the channel tcfchan#2.
+02:28:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:28:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:28:43 INFO  : 'fpga -state' command is executed.
+02:28:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:28:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:28:47 INFO  : Mermory regions for PS have been updated.
+02:28:47 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:28:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:28:48 INFO  : 'ps7_init' command is executed.
+02:28:48 INFO  : 'ps7_post_config' command is executed.
+02:28:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:28:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:28:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:28:49 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:28:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:28:49 INFO  : Memory regions updated for context APU
+02:28:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:28:49 INFO  : 'con' command is executed.
+02:28:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:29:15 INFO  : Disconnected from the channel tcfchan#3.
+02:29:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:29:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:29:15 INFO  : 'fpga -state' command is executed.
+02:29:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:29:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:29:19 INFO  : Mermory regions for PS have been updated.
+02:29:20 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:29:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:29:20 INFO  : 'ps7_init' command is executed.
+02:29:20 INFO  : 'ps7_post_config' command is executed.
+02:29:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:29:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:29:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:29:21 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:29:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:29:21 INFO  : Memory regions updated for context APU
+02:29:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:29:22 INFO  : 'con' command is executed.
+02:29:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:31:41 INFO  : Disconnected from the channel tcfchan#4.
+02:31:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:31:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:31:42 INFO  : 'fpga -state' command is executed.
+02:31:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:31:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:31:46 INFO  : Mermory regions for PS have been updated.
+02:31:46 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:31:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:31:47 INFO  : 'ps7_init' command is executed.
+02:31:47 INFO  : 'ps7_post_config' command is executed.
+02:31:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:31:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:31:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:31:48 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:31:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:31:48 INFO  : Memory regions updated for context APU
+02:31:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:31:48 INFO  : 'con' command is executed.
+02:31:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:33:50 INFO  : Disconnected from the channel tcfchan#5.
+02:33:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:33:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:33:51 INFO  : 'fpga -state' command is executed.
+02:33:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:33:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:33:55 INFO  : Mermory regions for PS have been updated.
+02:33:55 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:33:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:33:56 INFO  : 'ps7_init' command is executed.
+02:33:56 INFO  : 'ps7_post_config' command is executed.
+02:33:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:33:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:33:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:33:57 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:33:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:33:57 INFO  : Memory regions updated for context APU
+02:33:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:33:57 INFO  : 'con' command is executed.
+02:33:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:35:50 INFO  : Disconnected from the channel tcfchan#6.
+02:35:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:35:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:35:51 INFO  : 'fpga -state' command is executed.
+02:35:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:35:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:35:55 INFO  : Mermory regions for PS have been updated.
+02:35:55 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:35:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:35:56 INFO  : 'ps7_init' command is executed.
+02:35:56 INFO  : 'ps7_post_config' command is executed.
+02:35:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:35:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:35:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:35:57 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:35:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:35:57 INFO  : Memory regions updated for context APU
+02:35:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:35:57 INFO  : 'con' command is executed.
+02:35:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:38:00 INFO  : Disconnected from the channel tcfchan#7.
+02:38:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:38:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:38:01 INFO  : 'fpga -state' command is executed.
+02:38:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:38:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:38:05 INFO  : Mermory regions for PS have been updated.
+02:38:05 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:38:05 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:38:06 INFO  : 'ps7_init' command is executed.
+02:38:06 INFO  : 'ps7_post_config' command is executed.
+02:38:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:38:06 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:38:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:38:07 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:38:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:38:07 INFO  : Memory regions updated for context APU
+02:38:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:38:07 INFO  : 'con' command is executed.
+02:38:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:40:10 INFO  : Disconnected from the channel tcfchan#8.
+02:40:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:40:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:40:11 INFO  : 'fpga -state' command is executed.
+02:40:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:40:11 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:40:15 INFO  : Mermory regions for PS have been updated.
+02:40:15 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:40:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:40:16 INFO  : 'ps7_init' command is executed.
+02:40:16 INFO  : 'ps7_post_config' command is executed.
+02:40:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:40:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:40:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:40:17 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:40:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:40:17 INFO  : Memory regions updated for context APU
+02:40:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:40:17 INFO  : 'con' command is executed.
+02:40:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:45:26 INFO  : Disconnected from the channel tcfchan#9.
+02:45:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:45:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:45:26 INFO  : 'fpga -state' command is executed.
+02:45:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:45:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:45:31 INFO  : Mermory regions for PS have been updated.
+02:45:31 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:45:31 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:45:31 INFO  : 'ps7_init' command is executed.
+02:45:31 INFO  : 'ps7_post_config' command is executed.
+02:45:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:45:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:45:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:45:32 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:45:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:45:32 INFO  : Memory regions updated for context APU
+02:45:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:45:33 INFO  : 'con' command is executed.
+02:45:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:46:31 INFO  : Disconnected from the channel tcfchan#10.
+02:46:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:46:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:46:31 INFO  : 'fpga -state' command is executed.
+02:46:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:46:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:46:36 INFO  : Mermory regions for PS have been updated.
+02:46:36 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:46:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:46:36 INFO  : 'ps7_init' command is executed.
+02:46:36 INFO  : 'ps7_post_config' command is executed.
+02:46:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:46:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:46:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:46:37 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:46:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:46:38 INFO  : Memory regions updated for context APU
+02:46:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:46:38 INFO  : 'con' command is executed.
+02:46:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:51:29 INFO  : Disconnected from the channel tcfchan#11.
+02:51:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:51:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:51:30 INFO  : 'fpga -state' command is executed.
+02:51:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:51:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:51:34 INFO  : Mermory regions for PS have been updated.
+02:51:34 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:51:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:51:35 INFO  : 'ps7_init' command is executed.
+02:51:35 INFO  : 'ps7_post_config' command is executed.
+02:51:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:51:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:51:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:51:36 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:51:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:51:36 INFO  : Memory regions updated for context APU
+02:51:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:51:36 INFO  : 'con' command is executed.
+02:51:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:52:07 INFO  : Disconnected from the channel tcfchan#12.
+02:52:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:52:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:52:07 INFO  : 'fpga -state' command is executed.
+02:52:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:52:07 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:52:11 INFO  : Mermory regions for PS have been updated.
+02:52:11 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:52:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:52:12 INFO  : 'ps7_init' command is executed.
+02:52:12 INFO  : 'ps7_post_config' command is executed.
+02:52:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:52:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:52:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:52:13 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:52:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:52:13 INFO  : Memory regions updated for context APU
+02:52:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:52:13 INFO  : 'con' command is executed.
+02:52:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:52:52 INFO  : Disconnected from the channel tcfchan#13.
+02:52:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:52:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:52:53 INFO  : 'fpga -state' command is executed.
+02:52:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:52:53 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:52:57 INFO  : Mermory regions for PS have been updated.
+02:52:57 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:52:57 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:52:58 INFO  : 'ps7_init' command is executed.
+02:52:58 INFO  : 'ps7_post_config' command is executed.
+02:52:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:52:58 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:52:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:52:59 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:52:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:52:59 INFO  : Memory regions updated for context APU
+02:52:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:52:59 INFO  : 'con' command is executed.
+02:52:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:54:28 INFO  : Disconnected from the channel tcfchan#14.
+02:54:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:54:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:54:28 INFO  : 'fpga -state' command is executed.
+02:54:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:54:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:54:32 INFO  : Mermory regions for PS have been updated.
+02:54:32 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:54:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:54:33 INFO  : 'ps7_init' command is executed.
+02:54:33 INFO  : 'ps7_post_config' command is executed.
+02:54:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:54:34 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:54:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:54:34 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:54:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:54:34 INFO  : Memory regions updated for context APU
+02:54:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:54:34 INFO  : 'con' command is executed.
+02:54:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:56:06 INFO  : Disconnected from the channel tcfchan#15.
+02:56:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:56:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:56:07 INFO  : 'fpga -state' command is executed.
+02:56:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:56:07 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:56:11 INFO  : Mermory regions for PS have been updated.
+02:56:11 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:56:11 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:56:12 INFO  : 'ps7_init' command is executed.
+02:56:12 INFO  : 'ps7_post_config' command is executed.
+02:56:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:56:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:56:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:56:13 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:56:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:56:13 INFO  : Memory regions updated for context APU
+02:56:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:56:13 INFO  : 'con' command is executed.
+02:56:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:56:47 INFO  : Disconnected from the channel tcfchan#16.
+02:56:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:56:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:56:48 INFO  : 'fpga -state' command is executed.
+02:56:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:56:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:56:52 INFO  : Mermory regions for PS have been updated.
+02:56:52 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:56:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:56:53 INFO  : 'ps7_init' command is executed.
+02:56:53 INFO  : 'ps7_post_config' command is executed.
+02:56:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:56:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:56:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:56:54 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:56:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:56:54 INFO  : Memory regions updated for context APU
+02:56:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:56:54 INFO  : 'con' command is executed.
+02:56:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+02:57:37 INFO  : Disconnected from the channel tcfchan#17.
+02:57:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:57:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+02:57:37 INFO  : 'fpga -state' command is executed.
+02:57:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:57:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:57:41 INFO  : Mermory regions for PS have been updated.
+02:57:42 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+02:57:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+02:57:42 INFO  : 'ps7_init' command is executed.
+02:57:42 INFO  : 'ps7_post_config' command is executed.
+02:57:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:57:43 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+02:57:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:57:43 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:57:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+02:57:43 INFO  : Memory regions updated for context APU
+02:57:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:57:44 INFO  : 'con' command is executed.
+02:57:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+03:52:18 INFO  : Disconnected from the channel tcfchan#18.
+03:53:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:53:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+03:53:13 INFO  : 'fpga -state' command is executed.
+03:53:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:53:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+03:53:18 INFO  : Mermory regions for PS have been updated.
+03:53:18 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+03:53:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+03:53:19 INFO  : 'ps7_init' command is executed.
+03:53:19 INFO  : 'ps7_post_config' command is executed.
+03:53:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:53:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:53:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:53:21 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:53:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+03:53:21 INFO  : Memory regions updated for context APU
+03:53:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:53:21 INFO  : 'con' command is executed.
+03:53:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+03:53:59 INFO  : Disconnected from the channel tcfchan#19.
+03:53:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:53:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690809" && level==0} -index 1' command is executed.
+03:53:59 INFO  : 'fpga -state' command is executed.
+03:53:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:54:00 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+03:54:04 INFO  : Mermory regions for PS have been updated.
+03:54:04 INFO  : Sourcing of '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl' is done.
+03:54:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0' command is executed.
+03:54:04 INFO  : 'ps7_init' command is executed.
+03:54:05 INFO  : 'ps7_post_config' command is executed.
+03:54:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:54:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:54:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:54:06 INFO  : The application '/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:54:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 2116222976 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+dow /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/proj4.elf
+----------------End of Script----------------
+
+03:54:06 INFO  : Memory regions updated for context APU
+03:54:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:54:06 INFO  : 'con' command is executed.
+03:54:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690809"} -index 0
+con
+----------------End of Script----------------
+
+03:55:05 INFO  : Disconnected from the channel tcfchan#20.
+03:55:16 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+08:38:10 INFO  : Launching XSDB server: xsdb -n -s /home/littlefoot/vivado/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+08:38:15 INFO  : XSDB server has started successfully.
+08:38:18 INFO  : Processing command line option -hwspec /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf.
+08:38:21 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_4.

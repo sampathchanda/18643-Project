@@ -2,10 +2,10 @@
 # xsim v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Tue Nov 29 17:58:08 2016
-# Process ID: 28792
-# Log file: C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/xsim.log
-# Journal file: C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog\xsim.jou
+# Start of session at: Thu Dec  1 03:35:00 2016
+# Process ID: 19386
+# Log file: /home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/xsim.log
+# Journal file: /home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/obj_detector/xsim_script.tcl
 source obj_detector.tcl

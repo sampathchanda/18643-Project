@@ -521,8 +521,8 @@ void splitter(
   hls::stream<uint8_t> &input,
   hls::stream<uint8_t> output[6]) {_ssdm_SpecArrayDimSize(output,6);
 #pragma HLS DATAFLOW
-#pragma HLS STREAM variable=&input
-#pragma HLS STREAM variable=output
+#pragma HLS INTERFACE axis port=&input
+#pragma HLS INTERFACE axis port=output
 
  uint8_t temp;
 

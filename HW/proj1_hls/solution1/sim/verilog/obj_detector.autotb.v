@@ -92,8 +92,8 @@ reg [31 : 0] AESL_mLatCnterIn_addr;
 reg [31 : 0] AESL_mLatCnterOut [0 : `AUTOTB_TRANSACTION_NUM + 1];
 reg [31 : 0] AESL_mLatCnterOut_addr ;
 reg [31 : 0] AESL_clk_counter ;
-reg [21 - 1 : 0] AESL_clk_ready[0 : `AUTOTB_TRANSACTION_NUM + 1];
-reg [21 - 1 : 0] AESL_clk_done[0 : `AUTOTB_TRANSACTION_NUM + 1];
+reg [17 - 1 : 0] AESL_clk_ready[0 : `AUTOTB_TRANSACTION_NUM + 1];
+reg [17 - 1 : 0] AESL_clk_done[0 : `AUTOTB_TRANSACTION_NUM + 1];
 
 reg reported_stuck = 0;
 reg reported_stuck_cnt = 0;
@@ -316,8 +316,6 @@ assign bramA_EN_A = A_EN_A;
 assign A_Dout_A = bramA_Dout_A;
 assign bramA_WEN_A = 0;
 assign bramA_Din_A = 0;
-assign bramA_WEN_B = 0;
-assign bramA_Din_B = 0;
 assign bramA_ready=	ready;
 assign bramA_done = 0;
 
@@ -361,8 +359,6 @@ assign bramW0_EN_A = W0_EN_A;
 assign W0_Dout_A = bramW0_Dout_A;
 assign bramW0_WEN_A = 0;
 assign bramW0_Din_A = 0;
-assign bramW0_WEN_B = 0;
-assign bramW0_Din_B = 0;
 assign bramW0_ready=	ready;
 assign bramW0_done = 0;
 

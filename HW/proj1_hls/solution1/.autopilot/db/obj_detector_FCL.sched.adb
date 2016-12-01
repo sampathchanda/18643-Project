@@ -133,14 +133,14 @@
 						<id>6</id>
 						<name>tmp_16_cast</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -176,14 +176,14 @@
 						<id>7</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>135</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -277,14 +277,14 @@
 						<id>11</id>
 						<name>exitcond</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>135</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -319,14 +319,14 @@
 						<id>12</id>
 						<name>i_5</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>135</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -361,14 +361,14 @@
 						<id>13</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>135</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -404,14 +404,14 @@
 						<id>19</id>
 						<name>tmp</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -445,14 +445,14 @@
 						<id>20</id>
 						<name>inp_addr</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -488,14 +488,14 @@
 						<id>21</id>
 						<name>inp_load</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -529,14 +529,14 @@
 						<id>22</id>
 						<name>tmp_trn_cast</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -570,14 +570,14 @@
 						<id>23</id>
 						<name>p_addr1</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -612,14 +612,14 @@
 						<id>24</id>
 						<name>tmp_16</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -653,14 +653,14 @@
 						<id>25</id>
 						<name>W_addr</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -696,14 +696,14 @@
 						<id>26</id>
 						<name>W_load</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -737,14 +737,14 @@
 						<id>27</id>
 						<name>tmp_s</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -779,14 +779,14 @@
 						<id>28</id>
 						<name>out_1</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>136</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -821,14 +821,14 @@
 						<id>30</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>135</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -862,14 +862,14 @@
 						<id>32</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>138</lineNumber>
 						<contextFuncName>FCL</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1459,7 +1459,7 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>4326</mMinLatency>
+			<mMinLatency>3460</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
@@ -1500,11 +1500,11 @@
 				<item>14</item>
 				<item>31</item>
 			</basic_blocks>
-			<mII>5</mII>
-			<mDepth>10</mDepth>
+			<mII>4</mII>
+			<mDepth>7</mDepth>
 			<mMinTripCount>864</mMinTripCount>
 			<mMaxTripCount>864</mMaxTripCount>
-			<mMinLatency>4324</mMinLatency>
+			<mMinLatency>3458</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
@@ -1693,21 +1693,21 @@
 		<item>
 			<first>27</first>
 			<second>
-				<first>2</first>
-				<second>3</second>
+				<first>3</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>28</first>
 			<second>
-				<first>6</first>
-				<second>4</second>
+				<first>4</first>
+				<second>3</second>
 			</second>
 		</item>
 		<item>
 			<first>30</first>
 			<second>
-				<first>10</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1740,7 +1740,7 @@
 			<first>31</first>
 			<second>
 				<first>1</first>
-				<second>10</second>
+				<second>7</second>
 			</second>
 		</item>
 		<item>
@@ -1768,8 +1768,8 @@
 			</nodes>
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
-			<interval>5</interval>
-			<pipe_depth>10</pipe_depth>
+			<interval>4</interval>
+			<pipe_depth>7</pipe_depth>
 		</item>
 	</regions>
 	<dp_fu_nodes class_id="36" tracking_level="0" version="0">

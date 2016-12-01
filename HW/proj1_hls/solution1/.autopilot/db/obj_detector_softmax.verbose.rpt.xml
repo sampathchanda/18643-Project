@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'obj_detector_softmax'" level="0">
-<item name = "Date">Wed Nov 30 03:19:48 2016
+<item name = "Date">Thu Dec  1 08:41:02 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">proj1_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.63, 1.25</column>
+<column name="ap_clk">20.00, 16.62, 2.50</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">200, 200, 200, 200, none</column>
+<column name="">122, 122, 122, 122, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,10 +35,10 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- softmax_label9">10, 10, 5, -, -, 2, no</column>
-<column name="- softmax_label10">32, 32, 16, -, -, 2, no</column>
-<column name="- softmax_label11">50, 50, 25, -, -, 2, no</column>
-<column name="- softmax_label12">104, 104, 52, -, -, 2, no</column>
+<column name="- softmax_label9">8, 8, 4, -, -, 2, no</column>
+<column name="- softmax_label10">20, 20, 10, -, -, 2, no</column>
+<column name="- softmax_label11">32, 32, 16, -, -, 2, no</column>
+<column name="- softmax_label12">58, 58, 29, -, -, 2, no</column>
 </table>
 </item>
 </section>
@@ -52,25 +52,25 @@
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="Expression">-, -, 0, 208</column>
 <column name="FIFO">-, -, -, -</column>
-<column name="Instance">-, 31, 6399, 9205</column>
+<column name="Instance">-, 31, 3786, 8970</column>
 <column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, 460</column>
-<column name="Register">-, -, 596, -</column>
+<column name="Multiplexer">-, -, -, 344</column>
+<column name="Register">-, -, 589, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
-<specialColumn name="Utilization (%)">0, 14, 6, 18</specialColumn>
+<specialColumn name="Utilization (%)">0, 14, 4, 17</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="obj_detector_dadd_64ns_64ns_64_5_full_dsp_U56">obj_detector_dadd_64ns_64ns_64_5_full_dsp, 0, 3, 445, 1149</column>
-<column name="obj_detector_ddiv_64ns_64ns_64_31_U57">obj_detector_ddiv_64ns_64ns_64_31, 0, 0, 3211, 3658</column>
-<column name="obj_detector_dexp_64ns_64ns_64_18_full_dsp_U58">obj_detector_dexp_64ns_64ns_64_18_full_dsp, 0, 26, 1549, 2599</column>
-<column name="obj_detector_fadd_32ns_32ns_32_5_full_dsp_U52">obj_detector_fadd_32ns_32ns_32_5_full_dsp, 0, 2, 205, 390</column>
-<column name="obj_detector_fdiv_32ns_32ns_32_16_U53">obj_detector_fdiv_32ns_32ns_32_16, 0, 0, 761, 994</column>
-<column name="obj_detector_fpext_32ns_64_1_U55">obj_detector_fpext_32ns_64_1, 0, 0, 100, 138</column>
-<column name="obj_detector_fptrunc_64ns_32_1_U54">obj_detector_fptrunc_64ns_32_1, 0, 0, 128, 277</column>
+<column name="obj_detector_dadd_64ns_64ns_64_4_full_dsp_U57">obj_detector_dadd_64ns_64ns_64_4_full_dsp, 0, 3, 430, 1130</column>
+<column name="obj_detector_ddiv_64ns_64ns_64_17_U58">obj_detector_ddiv_64ns_64ns_64_17, 0, 0, 1710, 3613</column>
+<column name="obj_detector_dexp_64ns_64ns_64_10_full_dsp_U59">obj_detector_dexp_64ns_64ns_64_10_full_dsp, 0, 26, 828, 2423</column>
+<column name="obj_detector_fadd_32ns_32ns_32_4_full_dsp_U53">obj_detector_fadd_32ns_32ns_32_4_full_dsp, 0, 2, 227, 403</column>
+<column name="obj_detector_fdiv_32ns_32ns_32_8_U54">obj_detector_fdiv_32ns_32ns_32_8, 0, 0, 363, 986</column>
+<column name="obj_detector_fpext_32ns_64_1_U56">obj_detector_fpext_32ns_64_1, 0, 0, 100, 138</column>
+<column name="obj_detector_fptrunc_64ns_32_1_U55">obj_detector_fptrunc_64ns_32_1, 0, 0, 128, 277</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -83,28 +83,28 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_5_fu_217_p2">+, 0, 0, 2, 2, 1</column>
-<column name="i_6_fu_240_p2">+, 0, 0, 2, 2, 1</column>
-<column name="i_7_fu_277_p2">+, 0, 0, 2, 2, 1</column>
-<column name="i_8_fu_302_p2">+, 0, 0, 2, 2, 1</column>
+<column name="i_5_fu_212_p2">+, 0, 0, 2, 2, 1</column>
+<column name="i_6_fu_235_p2">+, 0, 0, 2, 2, 1</column>
+<column name="i_7_fu_269_p2">+, 0, 0, 2, 2, 1</column>
+<column name="i_8_fu_294_p2">+, 0, 0, 2, 2, 1</column>
 <column name="grp_fu_161_p1">Select, 0, 0, 32, 1, 32</column>
-<column name="grp_fu_166_p0">Select, 0, 0, 32, 1, 32</column>
-<column name="temp_1_1_fu_257_p3">Select, 0, 0, 32, 1, 32</column>
-<column name="temp_1_2_fu_264_p3">Select, 0, 0, 32, 1, 32</column>
-<column name="temp_load_1_phi_fu_312_p3">Select, 0, 0, 32, 1, 32</column>
-<column name="temp_load_phi_fu_287_p3">Select, 0, 0, 32, 1, 32</column>
-<column name="exitcond1_fu_271_p2">icmp, 0, 0, 2, 2, 3</column>
-<column name="exitcond2_fu_234_p2">icmp, 0, 0, 2, 2, 3</column>
-<column name="exitcond3_fu_211_p2">icmp, 0, 0, 2, 2, 3</column>
-<column name="exitcond_fu_296_p2">icmp, 0, 0, 2, 2, 3</column>
+<column name="inp_1_read_assign_1_fu_245_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="temp_1_1_fu_251_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="temp_1_2_fu_257_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="temp_load_1_phi_fu_304_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="temp_load_phi_fu_279_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="exitcond1_fu_263_p2">icmp, 0, 0, 2, 2, 3</column>
+<column name="exitcond2_fu_229_p2">icmp, 0, 0, 2, 2, 3</column>
+<column name="exitcond3_fu_206_p2">icmp, 0, 0, 2, 2, 3</column>
+<column name="exitcond_fu_288_p2">icmp, 0, 0, 2, 2, 3</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">224, 100, 1, 100</column>
+<column name="ap_NS_fsm">108, 61, 1, 61</column>
 <column name="grp_fu_171_p0">64, 3, 64, 192</column>
-<column name="grp_fu_174_p0">32, 5, 32, 160</column>
-<column name="grp_fu_187_p1">64, 3, 64, 192</column>
+<column name="grp_fu_175_p0">32, 5, 32, 160</column>
+<column name="grp_fu_188_p1">64, 3, 64, 192</column>
 <column name="i1_reg_115">2, 2, 2, 4</column>
 <column name="i2_reg_138">2, 2, 2, 4</column>
 <column name="i3_reg_149">2, 2, 2, 4</column>
@@ -116,26 +116,27 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">99, 0, 99, 0</column>
+<column name="ap_CS_fsm">60, 0, 60, 0</column>
 <column name="i1_reg_115">2, 0, 2, 0</column>
 <column name="i2_reg_138">2, 0, 2, 0</column>
 <column name="i3_reg_149">2, 0, 2, 0</column>
-<column name="i_5_reg_341">2, 0, 2, 0</column>
-<column name="i_6_reg_359">2, 0, 2, 0</column>
-<column name="i_7_reg_388">2, 0, 2, 0</column>
-<column name="i_8_reg_401">2, 0, 2, 0</column>
+<column name="i_5_reg_333">2, 0, 2, 0</column>
+<column name="i_6_reg_351">2, 0, 2, 0</column>
+<column name="i_7_reg_386">2, 0, 2, 0</column>
+<column name="i_8_reg_404">2, 0, 2, 0</column>
 <column name="i_reg_68">2, 0, 2, 0</column>
-<column name="reg_192">64, 0, 64, 0</column>
-<column name="reg_199">64, 0, 64, 0</column>
-<column name="reg_205">32, 0, 32, 0</column>
+<column name="inp_1_read_assign_1_reg_362">32, 0, 32, 0</column>
+<column name="reg_193">64, 0, 64, 0</column>
+<column name="reg_200">64, 0, 64, 0</column>
 <column name="sum_1_reg_126">32, 0, 32, 0</column>
 <column name="sum_reg_79">32, 0, 32, 0</column>
+<column name="temp_0_reg_367">32, 0, 32, 0</column>
 <column name="temp_0_s_reg_103">32, 0, 32, 0</column>
 <column name="temp_1_s_reg_91">32, 0, 32, 0</column>
-<column name="tmp_10_reg_364">1, 0, 1, 0</column>
-<column name="tmp_2_reg_406">64, 0, 64, 0</column>
-<column name="tmp_4_reg_411">64, 0, 64, 0</column>
-<column name="tmp_8_reg_393">64, 0, 64, 0</column>
+<column name="tmp_10_reg_356">1, 0, 1, 0</column>
+<column name="tmp_2_reg_409">64, 0, 64, 0</column>
+<column name="tmp_4_reg_414">64, 0, 64, 0</column>
+<column name="tmp_8_reg_391">64, 0, 64, 0</column>
 </table>
 </item>
 </section>

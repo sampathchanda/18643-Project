@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'obj_detector_flatten'
 ================================================================
-* Date:           Wed Nov 30 03:19:24 2016
+* Date:           Thu Dec  1 08:40:52 2016
 
 * Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
 * Project:        proj1_hls
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|      5.42|        1.25|
+    |ap_clk  |  20.00|      5.42|        2.50|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -3627,19 +3627,19 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ inp_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de983a90; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ inp_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de984780; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ inp_2]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de9848a0; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ inp_3]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de984930; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ inp_4]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de984d20; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ inp_5]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de983d60; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ inp_6]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de983c40; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ inp_7]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de9832b0; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ inp_8]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de9849c0; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ inp_9]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de984a50; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ inp_10]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de984ae0; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ inp_11]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de984b70; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ out_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; mode=0x1f2de984c00; pingpong=0; private_global=0; MemPort=[00]; IO mode=ap_memory:ce=0
+Port [ inp_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f4152d39770; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ inp_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f4152c23f90; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ inp_2]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f4152aeb880; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ inp_3]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f4151020940; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ inp_4]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f4152b648c0; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ inp_5]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f4152b64790; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ inp_6]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f4152a8a070; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ inp_7]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f415111e4e0; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ inp_8]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f41527025f0; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ inp_9]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f41526f83d0; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ inp_10]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f4152cddc90; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ inp_11]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f41538e6fc0; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ out_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; mode=0x7f41538ff430; pingpong=0; private_global=0; MemPort=[00]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------

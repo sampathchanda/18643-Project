@@ -13,78 +13,84 @@ set isOneStateSeq 0
 set C_modelName {convolve}
 set C_modelType { void 0 }
 set C_modelArgList { 
-	{ image_V int 8 regular {fifo 0 volatile }  }
-	{ weights float 32 regular {array 25 { 1 3 } 1 1 }  }
-	{ conv_output_V int 8 regular {fifo 1 volatile }  }
+	{ image_V int 8 regular {axi_s 0 volatile  { image_V data } }  }
+	{ weights float 32 regular {bram 25 { 1 1 } 1 1 }  }
+	{ conv_output_V int 8 regular {axi_s 1 volatile  { conv_output_V data } }  }
 	{ done int 1 regular {pointer 1}  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "image_V", "interface" : "fifo", "bitwidth" : 8 ,"direction" : "READONLY" ,"bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "image.V","cData": "unsigned char","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
- 	{ "Name" : "weights", "interface" : "memory", "bitwidth" : 32 ,"direction" : "READONLY" ,"bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "weights","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 24,"step" : 1}]}]}]} , 
- 	{ "Name" : "conv_output_V", "interface" : "fifo", "bitwidth" : 8 ,"direction" : "WRITEONLY" ,"bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "conv_output.V","cData": "unsigned char","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
+	{ "Name" : "image_V", "interface" : "axis", "bitwidth" : 8 ,"direction" : "READONLY" ,"bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "image.V","cData": "unsigned char","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
+ 	{ "Name" : "weights", "interface" : "bram", "bitwidth" : 32 ,"direction" : "READONLY" ,"bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "weights","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 24,"step" : 1}]}]}]} , 
+ 	{ "Name" : "conv_output_V", "interface" : "axis", "bitwidth" : 8 ,"direction" : "WRITEONLY" ,"bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "conv_output.V","cData": "unsigned char","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "done", "interface" : "wire", "bitwidth" : 1 ,"direction" : "WRITEONLY" ,"bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "done","cData": "bool","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} ]}
 # RTL Port declarations: 
-set portNum 23
+set portNum 27
 set portList { 
-	{ image_V_dout sc_in sc_lv 8 signal 0 } 
-	{ image_V_empty_n sc_in sc_logic 1 signal 0 } 
-	{ image_V_read sc_out sc_logic 1 signal 0 } 
-	{ weights_address0 sc_out sc_lv 5 signal 1 } 
-	{ weights_ce0 sc_out sc_logic 1 signal 1 } 
-	{ weights_d0 sc_out sc_lv 32 signal 1 } 
-	{ weights_q0 sc_in sc_lv 32 signal 1 } 
-	{ weights_we0 sc_out sc_logic 1 signal 1 } 
-	{ weights_address1 sc_out sc_lv 5 signal 1 } 
-	{ weights_ce1 sc_out sc_logic 1 signal 1 } 
-	{ weights_d1 sc_out sc_lv 32 signal 1 } 
-	{ weights_q1 sc_in sc_lv 32 signal 1 } 
-	{ weights_we1 sc_out sc_logic 1 signal 1 } 
-	{ conv_output_V_din sc_out sc_lv 8 signal 2 } 
-	{ conv_output_V_full_n sc_in sc_logic 1 signal 2 } 
-	{ conv_output_V_write sc_out sc_logic 1 signal 2 } 
-	{ done sc_out sc_logic 1 signal 3 } 
+	{ image_V_TDATA sc_in sc_lv 8 signal 0 } 
+	{ weights_Addr_A sc_out sc_lv 32 signal 1 } 
+	{ weights_EN_A sc_out sc_logic 1 signal 1 } 
+	{ weights_Din_A sc_out sc_lv 32 signal 1 } 
+	{ weights_Dout_A sc_in sc_lv 32 signal 1 } 
+	{ weights_WEN_A sc_out sc_lv 4 signal 1 } 
+	{ weights_Clk_A sc_out sc_logic 1 signal 1 } 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
-	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
+	{ weights_Rst_A sc_out sc_logic 1 signal 1 } 
+	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
+	{ weights_Addr_B sc_out sc_lv 32 signal 1 } 
+	{ weights_EN_B sc_out sc_logic 1 signal 1 } 
+	{ weights_Din_B sc_out sc_lv 32 signal 1 } 
+	{ weights_Dout_B sc_in sc_lv 32 signal 1 } 
+	{ weights_WEN_B sc_out sc_lv 4 signal 1 } 
+	{ weights_Clk_B sc_out sc_logic 1 signal 1 } 
+	{ weights_Rst_B sc_out sc_logic 1 signal 1 } 
+	{ conv_output_V_TDATA sc_out sc_lv 8 signal 2 } 
+	{ done sc_out sc_logic 1 signal 3 } 
+	{ image_V_TVALID sc_in sc_logic 1 invld 0 } 
+	{ image_V_TREADY sc_out sc_logic 1 inacc 0 } 
+	{ conv_output_V_TVALID sc_out sc_logic 1 outvld 2 } 
+	{ conv_output_V_TREADY sc_in sc_logic 1 outacc 2 } 
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_start sc_in sc_logic 1 start -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 }
 set NewPortList {[ 
-	{ "name": "image_V_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "image_V", "role": "dout" }} , 
- 	{ "name": "image_V_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "image_V", "role": "empty_n" }} , 
- 	{ "name": "image_V_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "image_V", "role": "read" }} , 
- 	{ "name": "weights_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "weights", "role": "address0" }} , 
- 	{ "name": "weights_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "weights", "role": "ce0" }} , 
- 	{ "name": "weights_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "weights", "role": "d0" }} , 
- 	{ "name": "weights_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "weights", "role": "q0" }} , 
- 	{ "name": "weights_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "weights", "role": "we0" }} , 
- 	{ "name": "weights_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "weights", "role": "address1" }} , 
- 	{ "name": "weights_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "weights", "role": "ce1" }} , 
- 	{ "name": "weights_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "weights", "role": "d1" }} , 
- 	{ "name": "weights_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "weights", "role": "q1" }} , 
- 	{ "name": "weights_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "weights", "role": "we1" }} , 
- 	{ "name": "conv_output_V_din", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "conv_output_V", "role": "din" }} , 
- 	{ "name": "conv_output_V_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_output_V", "role": "full_n" }} , 
- 	{ "name": "conv_output_V_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_output_V", "role": "write" }} , 
- 	{ "name": "done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "done", "role": "default" }} , 
+	{ "name": "image_V_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "image_V", "role": "TDATA" }} , 
+ 	{ "name": "weights_Addr_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "weights", "role": "Addr_A" }} , 
+ 	{ "name": "weights_EN_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "weights", "role": "EN_A" }} , 
+ 	{ "name": "weights_Din_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "weights", "role": "Din_A" }} , 
+ 	{ "name": "weights_Dout_A", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "weights", "role": "Dout_A" }} , 
+ 	{ "name": "weights_WEN_A", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "weights", "role": "WEN_A" }} , 
+ 	{ "name": "weights_Clk_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "weights", "role": "Clk_A" }} , 
  	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
- 	{ "name": "ap_rst", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst", "role": "default" }} , 
+ 	{ "name": "weights_Rst_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "weights", "role": "Rst_A" }} , 
+ 	{ "name": "ap_rst_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst_n", "role": "default" }} , 
+ 	{ "name": "weights_Addr_B", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "weights", "role": "Addr_B" }} , 
+ 	{ "name": "weights_EN_B", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "weights", "role": "EN_B" }} , 
+ 	{ "name": "weights_Din_B", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "weights", "role": "Din_B" }} , 
+ 	{ "name": "weights_Dout_B", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "weights", "role": "Dout_B" }} , 
+ 	{ "name": "weights_WEN_B", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "weights", "role": "WEN_B" }} , 
+ 	{ "name": "weights_Clk_B", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "weights", "role": "Clk_B" }} , 
+ 	{ "name": "weights_Rst_B", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "weights", "role": "Rst_B" }} , 
+ 	{ "name": "conv_output_V_TDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "conv_output_V", "role": "TDATA" }} , 
+ 	{ "name": "done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "done", "role": "default" }} , 
+ 	{ "name": "image_V_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "image_V", "role": "TVALID" }} , 
+ 	{ "name": "image_V_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "image_V", "role": "TREADY" }} , 
+ 	{ "name": "conv_output_V_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "conv_output_V", "role": "TVALID" }} , 
+ 	{ "name": "conv_output_V_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "conv_output_V", "role": "TREADY" }} , 
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }}  ]}
 set Spec2ImplPortList { 
-	image_V { ap_fifo {  { image_V_dout fifo_data 0 8 }  { image_V_empty_n fifo_status 0 1 }  { image_V_read fifo_update 1 1 } } }
-	weights { ap_memory {  { weights_address0 mem_address 1 5 }  { weights_ce0 mem_ce 1 1 }  { weights_d0 mem_din 1 32 }  { weights_q0 mem_dout 0 32 }  { weights_we0 mem_we 1 1 }  { weights_address1 mem_address 1 5 }  { weights_ce1 mem_ce 1 1 }  { weights_d1 mem_din 1 32 }  { weights_q1 mem_dout 0 32 }  { weights_we1 mem_we 1 1 } } }
-	conv_output_V { ap_fifo {  { conv_output_V_din fifo_data 1 8 }  { conv_output_V_full_n fifo_status 0 1 }  { conv_output_V_write fifo_update 1 1 } } }
+	image_V { axis {  { image_V_TDATA in_data 0 8 }  { image_V_TVALID in_vld 0 1 }  { image_V_TREADY in_acc 1 1 } } }
+	weights { bram {  { weights_Addr_A mem_address 1 32 }  { weights_EN_A mem_ce 1 1 }  { weights_Din_A mem_din 1 32 }  { weights_Dout_A mem_dout 0 32 }  { weights_WEN_A mem_we 1 4 }  { weights_Clk_A mem_clk 1 1 }  { weights_Rst_A mem_rst 1 1 }  { weights_Addr_B mem_address 1 32 }  { weights_EN_B mem_ce 1 1 }  { weights_Din_B mem_din 1 32 }  { weights_Dout_B mem_dout 0 32 }  { weights_WEN_B mem_we 1 4 }  { weights_Clk_B mem_clk 1 1 }  { weights_Rst_B mem_rst 1 1 } } }
+	conv_output_V { axis {  { conv_output_V_TDATA out_data 1 8 }  { conv_output_V_TVALID out_vld 1 1 }  { conv_output_V_TREADY out_acc 0 1 } } }
 	done { ap_none {  { done out_data 1 1 } } }
 }
 
 # RTL port scheduling information:
 set fifoSchedulingInfoList { 
-	image_V { fifo_read 1 no_conditional }
-	conv_output_V { fifo_write 1 no_conditional }
 }
 
 # RTL bus port read request latency information:

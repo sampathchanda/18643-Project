@@ -2,14 +2,13 @@
 # 1 "proj1_hls/obj_detector.cpp" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 152 "<built-in>" 3
+# 155 "<built-in>" 3
 # 1 "<command line>" 1
 
 
 
 
-
-# 1 "C:/Xilinx/Vivado_HLS/2015.2/common/technology/autopilot\\etc/autopilot_ssdm_op.h" 1
+# 1 "/home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
 /* autopilot_ssdm_op.h*/
 /*
 #-  (c) Copyright 2011-2015 Xilinx, Inc. All rights reserved.
@@ -62,7 +61,7 @@
  *
  * $Id$
  */
-# 145 "C:/Xilinx/Vivado_HLS/2015.2/common/technology/autopilot\\etc/autopilot_ssdm_op.h"
+# 145 "/home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
 /*#define AP_SPEC_ATTR __attribute__ ((pure))*/
 
 
@@ -194,86 +193,150 @@ extern "C" {
     void _ssdm_op_SpecLicense(...) __attribute__ ((nothrow));
 
 }
-# 404 "C:/Xilinx/Vivado_HLS/2015.2/common/technology/autopilot\\etc/autopilot_ssdm_op.h"
+# 404 "/home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
 /*#define _ssdm_op_WaitUntil(X) while (!(X)) _ssdm_op_Wait(1);
 #define _ssdm_op_Delayed(X) X */
-# 7 "<command line>" 2
+# 6 "<command line>" 2
 # 1 "<built-in>" 2
 # 1 "proj1_hls/obj_detector.cpp" 2
-# 1 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 1 3
-/**
- * This file has no copyright assigned and is placed in the Public Domain.
- * This file is part of the w64 mingw-runtime package.
- * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+# 1 "/usr/include/math.h" 1 3 4
+/* Declarations for math functions.
+   Copyright (C) 1991-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+
+/*
+ *	ISO C99 Standard: 7.12 Mathematics	<math.h>
  */
 
 
 
 
 
-# 10 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
+# 1 "/usr/include/features.h" 1 3 4
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
 
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
 
-# 1 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 1 3
-/**
- * This file has no copyright assigned and is placed in the Public Domain.
- * This file is part of the w64 mingw-runtime package.
- * No warranty is given; refer to the file DISCLAIMER.PD within this package.
- */
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
 
-
-
-
-
-# 1 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include/_mingw_mac.h" 1 3
-/**
- * This file has no copyright assigned and is placed in the Public Domain.
- * This file is part of the w64 mingw-runtime package.
- * No warranty is given; refer to the file DISCLAIMER.PD within this package.
- */
-# 18 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include/_mingw_mac.h" 3
-/* mingw.org's version macros: these make gcc to define
-   MINGW32_SUPPORTS_MT_EH and to use the _CRT_MT global
-   and the __mingwthr_key_dtor() function from the MinGW
-   CRT in its private gthr-win32.h header. */
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
 
 
 
 
-/* MS does not prefix symbols by underscores for 64-bit.  */
+/* These are defined by the user (or the compiler)
+   to specify the desired environment:
 
-/* As we have to support older gcc version, which are using underscores
-   as symbol prefix for x64, we have to check here for the user label
-   prefix defined by gcc.  */
-# 62 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include/_mingw_mac.h" 3
-/* Use alias for msvcr80 export of get/set_output_format.  */
+   __STRICT_ANSI__	ISO Standard C.
+   _ISOC99_SOURCE	Extensions to ISO C89 from ISO C99.
+   _ISOC11_SOURCE	Extensions to ISO C99 from ISO C11.
+   _POSIX_SOURCE	IEEE Std 1003.1.
+   _POSIX_C_SOURCE	If ==1, like _POSIX_SOURCE; if >=2 add IEEE Std 1003.2;
+			if >=199309L, add IEEE Std 1003.1b-1993;
+			if >=199506L, add IEEE Std 1003.1c-1995;
+			if >=200112L, all of IEEE 1003.1-2004
+			if >=200809L, all of IEEE 1003.1-2008
+   _XOPEN_SOURCE	Includes POSIX and XPG things.  Set to 500 if
+			Single Unix conformance is wanted, to 600 for the
+			sixth revision, to 700 for the seventh revision.
+   _XOPEN_SOURCE_EXTENDED XPG things and X/Open Unix extensions.
+   _LARGEFILE_SOURCE	Some more functions for correct standard I/O.
+   _LARGEFILE64_SOURCE	Additional functionality from LFS for large files.
+   _FILE_OFFSET_BITS=N	Select default filesystem interface.
+   _ATFILE_SOURCE	Additional *at interfaces.
+   _GNU_SOURCE		All of the above, plus GNU extensions.
+   _DEFAULT_SOURCE	The default set of features (taking precedence over
+			__STRICT_ANSI__).
+   _REENTRANT		Select additionally reentrant object.
+   _THREAD_SAFE		Same as _REENTRANT, often used by other systems.
+   _FORTIFY_SOURCE	If set to numeric value > 0 additional security
+			measures are defined, according to level.
+
+   The `-ansi' switch to the GNU C compiler, and standards conformance
+   options such as `-std=c99', define __STRICT_ANSI__.  If none of
+   these are defined, or if _DEFAULT_SOURCE is defined, the default is
+   to have _POSIX_SOURCE set to one and _POSIX_C_SOURCE set to
+   200809L, as well as enabling miscellaneous functions from BSD and
+   SVID.  If more than one of these are defined, they accumulate.  For
+   example __STRICT_ANSI__, _POSIX_SOURCE and _POSIX_C_SOURCE together
+   give you ISO C, 1003.1, and 1003.2, but nothing else.
+
+   These are defined by this file and are used by the
+   header files to decide what to declare or define:
+
+   __USE_ISOC11		Define ISO C11 things.
+   __USE_ISOC99		Define ISO C99 things.
+   __USE_ISOC95		Define ISO C90 AMD1 (C95) things.
+   __USE_POSIX		Define IEEE Std 1003.1 things.
+   __USE_POSIX2		Define IEEE Std 1003.2 things.
+   __USE_POSIX199309	Define IEEE Std 1003.1, and .1b things.
+   __USE_POSIX199506	Define IEEE Std 1003.1, .1b, .1c and .1i things.
+   __USE_XOPEN		Define XPG things.
+   __USE_XOPEN_EXTENDED	Define X/Open Unix things.
+   __USE_UNIX98		Define Single Unix V2 things.
+   __USE_XOPEN2K        Define XPG6 things.
+   __USE_XOPEN2KXSI     Define XPG6 XSI things.
+   __USE_XOPEN2K8       Define XPG7 things.
+   __USE_XOPEN2K8XSI    Define XPG7 XSI things.
+   __USE_LARGEFILE	Define correct standard I/O things.
+   __USE_LARGEFILE64	Define LFS things with separate names.
+   __USE_FILE_OFFSET64	Define 64bit interface as default.
+   __USE_MISC		Define things from 4.3BSD or System V Unix.
+   __USE_ATFILE		Define *at interfaces and AT_* constants for them.
+   __USE_GNU		Define GNU extensions.
+   __USE_REENTRANT	Define reentrant/thread-safe *_r functions.
+   __USE_FORTIFY_LEVEL	Additional security measures used, according to level.
+
+   The macros `__GNU_LIBRARY__', `__GLIBC__', and `__GLIBC_MINOR__' are
+   defined by this file unconditionally.  `__GNU_LIBRARY__' is provided
+   only for compatibility.  All new code should use the other symbols
+   to test for features.
+
+   All macros listed above as possibly being defined by this file are
+   explicitly undefined if they are not explicitly defined.
+   Feature-test macros that are not defined by the user or compiler
+   but are implied by the other feature-test macros defined (or by the
+   lack of any definitions) are defined by the file.  */
+
+
+/* Undefine everything, so we get a clean slate.  */
+# 122 "/usr/include/features.h" 3 4
+/* Suppress kernel-name space pollution unless user expressedly asks
+   for it.  */
 
 
 
 
-/* Set VC specific compiler target macros.  */
-# 10 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 2 3
-
-
-/* C/C++ specific language defines.  */
-# 32 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-/* Note the extern. This is needed to work around GCC's
-limitations in handling dllimport attribute.  */
-# 147 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-/* Attribute `nonnull' was valid as of gcc 3.3.  We don't use GCC's
-   variadiac macro facility, because variadic macros cause syntax
-   errors with  --traditional-cpp.  */
-# 225 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-/*  High byte is the major version, low byte is the minor. */
-# 247 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-/*typedef int __int128 __attribute__ ((__mode__ (TI)));*/
-# 277 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-# 1 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\vadefs.h" 1 3
-/**
- * This file has no copyright assigned and is placed in the Public Domain.
- * This file is part of the w64 mingw-runtime package.
- * No warranty is given; refer to the file DISCLAIMER.PD within this package.
- */
+/* Convenience macros to test the versions of glibc and gcc.
+   Use them like this:
+   #if __GNUC_PREREQ (2,8)
+   ... code requiring gcc 2.8 or later ...
+   #endif
+   Note - they won't work for gcc1 or glibc1, since the _MINOR macros
+   were not defined then.  */
 
 
 
@@ -281,682 +344,2034 @@ limitations in handling dllimport attribute.  */
 
 
 
-
-# 1 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 1 3
-/**
- * This file has no copyright assigned and is placed in the Public Domain.
- * This file is part of the w64 mingw-runtime package.
- * No warranty is given; refer to the file DISCLAIMER.PD within this package.
- */
-# 674 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-# 1 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include/sdks/_mingw_directx.h" 1 3
-# 674 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 2 3
-
-# 1 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include/sdks/_mingw_ddk.h" 1 3
-# 675 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 2 3
-# 13 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\vadefs.h" 2 3
+/* _BSD_SOURCE and _SVID_SOURCE are deprecated aliases for
+   _DEFAULT_SOURCE.  If _DEFAULT_SOURCE is present we do not
+   issue a warning; the expectation is that the source is being
+   transitioned to use the new macro.  */
+# 156 "/usr/include/features.h" 3 4
+/* If _GNU_SOURCE was defined by the user, turn on all the other features.  */
+# 180 "/usr/include/features.h" 3 4
+/* If nothing (other than _GNU_SOURCE and _DEFAULT_SOURCE) is defined,
+   define _DEFAULT_SOURCE.  */
+# 191 "/usr/include/features.h" 3 4
+/* This is to enable the ISO C11 extension.  */
 
 
-#pragma pack(push,_CRT_PACKING)
 
+
+
+/* This is to enable the ISO C99 extension.  */
+
+
+
+
+
+/* This is to enable the ISO C90 Amendment 1:1995 extension.  */
+
+
+
+
+
+/* This is to enable compatibility for ISO C++11.
+
+   So far g++ does not provide a macro.  Check the temporary macro for
+   now, too.  */
+
+
+
+
+
+/* If none of the ANSI/POSIX macros are defined, or if _DEFAULT_SOURCE
+   is defined, use POSIX.1-2008 (or another version depending on
+   _XOPEN_SOURCE).  */
+# 343 "/usr/include/features.h" 3 4
+/* Get definitions of __STDC_* predefined macros, if the compiler has
+   not preincluded this header automatically.  */
+
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+
+
+
+
+/* This header is separate from features.h so that the compiler can
+   include it implicitly at the start of every compilation.  It must
+   not itself include <features.h> or any other header that includes
+   <features.h> because the implicit include comes before any feature
+   test macros that may be defined in a source file before it first
+   explicitly includes a system header.  GCC knows the name of this
+   header in order to preinclude it.  */
+
+/* glibc's intent is to support the IEC 559 math functionality, real
+   and complex.  If the GCC (4.9 and later) predefined macros
+   specifying compiler intent are available, use them to determine
+   whether the overall intent is to support these features; otherwise,
+   presume an older compiler has intent to support these features and
+   define these macros by default.  */
+# 52 "/usr/include/stdc-predef.h" 3 4
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
+
+
+/* We do not support C11 <threads.h>.  */
+# 346 "/usr/include/features.h" 2 3 4
+
+/* This macro indicates that the installed library is the GNU C Library.
+   For historic reasons the value now is 6 and this will stay from now
+   on.  The use of this variable is deprecated.  Use __GLIBC__ and
+   __GLIBC_MINOR__ now (see below) when you want to test for a specific
+   GNU C library version and use the values in <gnu/lib-names.h> to get
+   the sonames of the shared libraries.  */
+
+
+
+/* Major and minor version number of the GNU C library package.  Use
+   these macros to test for features in specific releases.  */
+
+
+
+
+
+
+/* This is here only because every header file already includes this one.  */
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
+/* Copyright (C) 1992-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+
+
+
+
+/* We are almost always included from features.h. */
+
+
+
+
+/* The GNU libc does not support any K&R compilers or the traditional mode
+   of ISO C compilers anymore.  Check for some of the combinations not
+   anymore supported.  */
+
+
+
+
+/* Some user header file might have defined this before.  */
+
+
+
+
+
+/* All functions, except those with callbacks or those that
+   synchronize memory, are leaf functions.  */
+# 49 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+/* GCC can always grok prototypes.  For C++ programs we add throw()
+   to help it optimize the function calls.  But this works only with
+   gcc 2.8.x and egcs.  For gcc 3.2 and up we even mark C functions
+   as non-throwing using a function attribute since programs can use
+   the -fexceptions options for C code as well.  */
+# 80 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+/* These two macros are not used in glibc anymore.  They are kept here
+   only because some other projects expect the macros to be defined.  */
+
+
+
+/* For these things, GCC behaves the ANSI way normally,
+   and the non-ANSI way under -traditional.  */
+
+
+
+
+/* This is not a typedef so `const __ptr_t' does the right thing.  */
+
+
+
+
+/* C++ needs to know that types and declarations are C, not C++.  */
+# 106 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+/* The standard library needs the functions from the ISO C90 standard
+   in the std namespace.  At the same time we want to be safe for
+   future changes and we include the ISO C99 code in the non-standard
+   namespace __c99.  The C++ wrapper header take case of adding the
+   definitions to the global namespace.  */
+# 119 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+/* For compatibility we do not add the declarations into any
+   namespace.  They will end up in the global namespace which is what
+   old code expects.  */
+# 131 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+/* Fortify support.  */
+# 147 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+/* Support for flexible arrays.  */
+
+/* GCC 2.97 supports C99 flexible array members.  */
+# 165 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+/* __asm__ ("xyz") is used throughout the headers to rename functions
+   at the assembly language level.  This is wrapped by the __REDIRECT
+   macro, in order to support compilers that can do this some other
+   way.  When compilers don't support asm-names at all, we have to do
+   preprocessor tricks instead (which don't have exactly the right
+   semantics, but it's the best we can do).
+
+   Example:
+   int __REDIRECT(setpgrp, (__pid_t pid, __pid_t pgrp), setpgid); */
+# 192 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+/*
+#elif __SOME_OTHER_COMPILER__
+
+# define __REDIRECT(name, proto, alias) name proto; \
+	_Pragma("let " #name " = " #alias)
+*/
+
+
+/* GCC has various useful declarations that can be made with the
+   `__attribute__' syntax.  All of the ways we use this do fine if
+   they are omitted for compilers that don't understand it. */
+
+
+
+
+/* At some point during the gcc 2.96 development the `malloc' attribute
+   for functions was introduced.  We don't want to use it unconditionally
+   (although this would be possible) since it generates warnings.  */
+
+
+
+
+
+
+/* Tell the compiler which arguments to an allocation function
+   indicate the size of the allocation.  */
+
+
+
+
+
+
+
+/* At some point during the gcc 2.96 development the `pure' attribute
+   for functions was introduced.  We don't want to use it unconditionally
+   (although this would be possible) since it generates warnings.  */
+
+
+
+
+
+
+/* This declaration tells the compiler that the value is constant.  */
+
+
+
+
+
+
+/* At some point during the gcc 3.1 development the `used' attribute
+   for functions was introduced.  We don't want to use it unconditionally
+   (although this would be possible) since it generates warnings.  */
+# 252 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+/* gcc allows marking deprecated functions.  */
+
+
+
+
+
+
+/* At some point during the gcc 2.8 development the `format_arg' attribute
+   for functions was introduced.  We don't want to use it unconditionally
+   (although this would be possible) since it generates warnings.
+   If several `format_arg' attributes are given for the same function, in
+   gcc-3.0 and older, all but the last one are ignored.  In newer gccs,
+   all designated arguments are considered.  */
+
+
+
+
+
+
+/* At some point during the gcc 2.97 development the `strfmon' format
+   attribute for functions was introduced.  We don't want to use it
+   unconditionally (although this would be possible) since it
+   generates warnings.  */
+
+
+
+
+
+
+
+/* The nonull function attribute allows to mark pointer parameters which
+   must not be NULL.  */
+
+
+
+
+
+
+/* If fortification mode, we warn about unused results of certain
+   function calls which can lead to problems.  */
+# 305 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+/* Forces a function to be always inlined.  */
+
+
+
+
+
+
+/* Associate error messages with the source location of the call site rather
+   than with the source location inside the function.  */
+
+
+
+
+
+
+/* GCC 4.3 and above with -std=c99 or -std=gnu99 implements ISO C99
+   inline semantics, unless -fgnu89-inline is used.  Using __GNUC_STDC_INLINE__
+   or __GNUC_GNU_INLINE is not a good enough check for gcc because gcc versions
+   older than 4.3 may define these macros and still not guarantee GNU inlining
+   semantics.
+
+   clang++ identifies itself as gcc-4.2, but has support for GNU inlining
+   semantics, that can be checked fot by using the __GNUC_STDC_INLINE_ and
+   __GNUC_GNU_INLINE__ macro definitions.  */
+# 346 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+/* GCC 4.3 and above allow passing all anonymous arguments of an
+   __extern_always_inline function to some other vararg function.  */
+
+
+
+
+
+/* It is possible to compile containing GCC extensions even if GCC is
+   run in pedantic mode if the uses are carefully marked using the
+   `__extension__' keyword.  But this is not generally available before
+   version 2.8.  */
+
+
+
+
+/* __restrict is known in EGCS 1.2 and above. */
+
+
+
+
+/* ISO C99 also allows to declare arrays as non-overlapping.  The syntax is
+     array_name[restrict]
+   GCC 3.1 supports this.  */
+# 410 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+/* Determine the wordsize from the preprocessor defines.  */
+# 11 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 3 4
+/* Both x86-64 and x32 use the 64-bit system call interface.  */
+# 411 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 368 "/usr/include/features.h" 2 3 4
+
+
+/* If we don't have __REDIRECT, prototypes will be missing if
+   __USE_FILE_OFFSET64 but not __USE_LARGEFILE[64]. */
+
+
+
+
+
+
+
+/* Decide whether we can define 'extern inline' functions in headers.  */
+
+
+
+
+
+
+
+/* This is here only because every header file already includes this one.
+   Get the definitions of all the appropriate `__stub_FUNCTION' symbols.
+   <gnu/stubs.h> contains `#define __stub_FUNCTION' when FUNCTION is a stub
+   that will always return failure (and set errno to ENOSYS).  */
+
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
+/* This file is automatically generated.
+   This file selects the right generated file of `__stub_FUNCTION' macros
+   based on the architecture being compiled for.  */
+
+
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
+/* This file is automatically generated.
+   It defines a symbol `__stub_FUNCTION' for each function
+   in the C library which is a stub, meaning it will fail
+   every time called, usually setting errno to ENOSYS.  */
+# 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
+# 392 "/usr/include/features.h" 2 3 4
+# 27 "/usr/include/math.h" 2 3 4
 
 extern "C" {
 
+/* Get machine-dependent vector math functions declarations.  */
 
+# 1 "/usr/include/x86_64-linux-gnu/bits/math-vector.h" 1 3 4
+/* Platform-specific SIMD declarations of math functions.
+   Copyright (C) 2014-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
 
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
 
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
 
-  typedef __builtin_va_list __gnuc_va_list;
-
-
-
-
-
-
-  typedef __gnuc_va_list va_list;
-# 46 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\vadefs.h" 3
-/* Use GCC builtins */
-# 99 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\vadefs.h" 3
-}
-
-
-#pragma pack(pop)
-# 277 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 2 3
-
-
-#pragma pack(push,_CRT_PACKING)
-# 316 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-/* We have to define _DLL for gcc based mingw version. This define is set
-   by VC, when DLL-based runtime is used. So, gcc based runtime just have
-   DLL-base runtime, therefore this define has to be set.
-   As our headers are possibly used by windows compiler having a static
-   C-runtime, we make this definition gnu compiler specific here.  */
-# 370 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-__extension__ typedef unsigned long long size_t;
-# 380 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-__extension__ typedef long long ssize_t;
-# 392 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-__extension__ typedef long long intptr_t;
-# 405 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-__extension__ typedef unsigned long long uintptr_t;
-# 418 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-__extension__ typedef long long ptrdiff_t;
-# 436 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-typedef unsigned short wint_t;
-typedef unsigned short wctype_t;
-# 456 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-typedef int errno_t;
-
-
-
-
-typedef long __time32_t;
-
-
-
-
-__extension__ typedef long long __time64_t;
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
 
 
 
 
 
 
+/* Get default empty definitions for simd declarations.  */
 
-typedef __time64_t time_t;
-# 518 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-/* _dowildcard is an int that controls the globbing of the command line.
- * The MinGW32 (mingw.org) runtime calls it _CRT_glob, so we are adding
- * a compatibility definition here:  you can use either of _CRT_glob or
- * _dowildcard .
- * If _dowildcard is non-zero, the command line will be globbed:  *.*
- * will be expanded to be all files in the startup directory.
- * In the mingw-w64 library a _dowildcard variable is defined as being
- * 0, therefore command line globbing is DISABLED by default. To turn it
- * on and to leave wildcard command line processing MS's globbing code,
- * include a line in one of your source modules defining _dowildcard and
- * setting it to -1, like so:
- * int _dowildcard = -1;
+# 1 "/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h" 1 3 4
+/* Empty definitions required for __MATHCALL_VEC unfolding in mathcalls.h.
+   Copyright (C) 2014-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+
+
+
+
+
+
+/* Needed definitions could be generated with:
+   for func in $(grep __MATHCALL_VEC math/bits/mathcalls.h |\
+		 sed -r "s|__MATHCALL_VEC.?\(||; s|,.*||"); do
+     echo "#define __DECL_SIMD_${func}";
+     echo "#define __DECL_SIMD_${func}f";
+     echo "#define __DECL_SIMD_${func}l";
+   done
  */
-# 605 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw.h" 3
-/* MSVC-isms: */
+# 26 "/usr/include/x86_64-linux-gnu/bits/math-vector.h" 2 3 4
+# 32 "/usr/include/math.h" 2 3 4
 
-struct threadlocaleinfostruct;
-struct threadmbcinfostruct;
-typedef struct threadlocaleinfostruct *pthreadlocinfo;
-typedef struct threadmbcinfostruct *pthreadmbcinfo;
-struct __lc_time_data;
+/* Get machine-dependent HUGE_VAL value (returned on overflow).
+   On all IEEE754 machines, this is +Infinity.  */
 
-typedef struct localeinfo_struct {
-  pthreadlocinfo locinfo;
-  pthreadmbcinfo mbcinfo;
-} _locale_tstruct,*_locale_t;
+# 1 "/usr/include/x86_64-linux-gnu/bits/huge_val.h" 1 3 4
+/* `HUGE_VAL' constant for IEEE 754 machines (where it is infinity).
+   Used by <stdlib.h> and <math.h> functions for overflow.
+   Copyright (C) 1992-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
 
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
 
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
 
-typedef struct tagLC_ID {
-  unsigned short wLanguage;
-  unsigned short wCountry;
-  unsigned short wCodePage;
-} LC_ID,*LPLC_ID;
-
-
-
-
-typedef struct threadlocaleinfostruct {
-  int refcount;
-  unsigned int lc_codepage;
-  unsigned int lc_collate_cp;
-  unsigned long lc_handle[6];
-  LC_ID lc_id[6];
-  struct {
-    char *locale;
-    wchar_t *wlocale;
-    int *refcount;
-    int *wrefcount;
-  } lc_category[6];
-  int lc_clike;
-  int mb_cur_max;
-  int *lconv_intl_refcount;
-  int *lconv_num_refcount;
-  int *lconv_mon_refcount;
-  struct lconv *lconv;
-  int *ctype1_refcount;
-  unsigned short *ctype1;
-  const unsigned short *pctype;
-  const unsigned char *pclmap;
-  const unsigned char *pcumap;
-  struct __lc_time_data *lc_time_curr;
-} threadlocinfo;
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
 
 
 
-extern "C" {
 
 
-/* mingw-w64 specific functions: */
-const char *__mingw_get_crt_info (void);
+/* IEEE positive infinity (-HUGE_VAL is negative infinity).  */
+# 36 "/usr/include/math.h" 2 3 4
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/huge_valf.h" 1 3 4
+/* `HUGE_VALF' constant for IEEE 754 machines (where it is infinity).
+   Used by <stdlib.h> and <math.h> functions for overflow.
+   Copyright (C) 1992-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
 
 
-}
-
-
-#pragma pack(pop)
-# 12 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 2 3
-
-
-struct _exception;
-
-#pragma pack(push,_CRT_PACKING)
-# 55 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-/* See also float.h  */
-
-
-/* IEEE 754 classication */
-# 75 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-extern "C" {
 
 
 
-  extern double * __imp__HUGE;
-# 91 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-  struct _exception {
+/* IEEE positive infinity (-HUGE_VAL is negative infinity).  */
+# 38 "/usr/include/math.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/huge_vall.h" 1 3 4
+/* `HUGE_VALL' constant for ix86 (where it is infinity).
+   Used by <stdlib.h> and <math.h> functions for overflow.
+   Copyright (C) 1992-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+# 39 "/usr/include/math.h" 2 3 4
+
+/* Get machine-dependent INFINITY value.  */
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/inf.h" 1 3 4
+/* `INFINITY' constant for IEEE 754 machines.
+   Copyright (C) 2004-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+
+
+
+
+
+/* IEEE positive infinity.  */
+# 42 "/usr/include/math.h" 2 3 4
+
+/* Get machine-dependent NAN value (returned for some domain errors).  */
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/nan.h" 1 3 4
+/* `NAN' constant for IEEE 754 machines.
+   Copyright (C) 1992-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+
+
+
+
+
+
+/* IEEE Not A Number.  */
+# 45 "/usr/include/math.h" 2 3 4
+
+
+/* Get general and ISO C99 specific information.  */
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathdef.h" 1 3 4
+/* Copyright (C) 2001-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+# 26 "/usr/include/x86_64-linux-gnu/bits/mathdef.h" 3 4
+/* The x86-64 architecture computes values with the precission of the
+   used type.  Similarly for -m32 -mfpmath=sse.  */
+typedef float float_t; /* `float' expressions are evaluated as `float'.  */
+typedef double double_t; /* `double' expressions are evaluated
+				   as `double'.  */
+# 41 "/usr/include/x86_64-linux-gnu/bits/mathdef.h" 3 4
+/* The values returned by `ilogb' for 0 and NaN respectively.  */
+
+
+
+/* The GCC 4.6 compiler will define __FP_FAST_FMA{,F,L} if the fma{,f,l}
+   builtins are supported.  */
+# 49 "/usr/include/math.h" 2 3 4
+
+/* The file <bits/mathcalls.h> contains the prototypes for all the
+   actual math functions.  These macros are used for those prototypes,
+   so we can easily declare each function as both `name' and `__name',
+   and can declare the float versions `namef' and `__namef'.  */
+# 83 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
+/* Prototype declarations for math functions; helper file for <math.h>.
+   Copyright (C) 1996-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+
+/* NOTE: Because of the special way this file is used by <math.h>, this
+   file must NOT be protected from multiple inclusion as header files
+   usually are.
+
+   This file provides prototype declarations for the math functions.
+   Most functions are declared using the macro:
+
+   __MATHCALL (NAME,[_r], (ARGS...));
+
+   This means there is a function `NAME' returning `double' and a function
+   `NAMEf' returning `float'.  Each place `_Mdouble_' appears in the
+   prototype, that is actually `double' in the prototype for `NAME' and
+   `float' in the prototype for `NAMEf'.  Reentrant variant functions are
+   called `NAME_r' and `NAMEf_r'.
+
+   Functions returning other types like `int' are declared using the macro:
+
+   __MATHDECL (TYPE, NAME,[_r], (ARGS...));
+
+   This is just like __MATHCALL but for a function returning `TYPE'
+   instead of `_Mdouble_'.  In all of these cases, there is still
+   both a `NAME' and a `NAMEf' that takes `float' arguments.
+
+   Note that there must be no whitespace before the argument passed for
+   NAME, to make token pasting work with -traditional.  */
+
+
+
+
+
+
+/* Trigonometric functions.  */
+
+
+/* Arc cosine of X.  */
+extern double acos (double __x) throw (); extern double __acos (double __x) throw ();
+/* Arc sine of X.  */
+extern double asin (double __x) throw (); extern double __asin (double __x) throw ();
+/* Arc tangent of X.  */
+extern double atan (double __x) throw (); extern double __atan (double __x) throw ();
+/* Arc tangent of Y/X.  */
+extern double atan2 (double __y, double __x) throw (); extern double __atan2 (double __y, double __x) throw ();
+
+/* Cosine of X.  */
+extern double cos (double __x) throw (); extern double __cos (double __x) throw ();
+/* Sine of X.  */
+extern double sin (double __x) throw (); extern double __sin (double __x) throw ();
+/* Tangent of X.  */
+extern double tan (double __x) throw (); extern double __tan (double __x) throw ();
+
+/* Hyperbolic functions.  */
+
+/* Hyperbolic cosine of X.  */
+extern double cosh (double __x) throw (); extern double __cosh (double __x) throw ();
+/* Hyperbolic sine of X.  */
+extern double sinh (double __x) throw (); extern double __sinh (double __x) throw ();
+/* Hyperbolic tangent of X.  */
+extern double tanh (double __x) throw (); extern double __tanh (double __x) throw ();
+
+
+
+/* Cosine and sine of X.  */
+extern void sincos (double __x, double *__sinx, double *__cosx) throw (); extern void __sincos (double __x, double *__sinx, double *__cosx) throw ();
+
+
+
+
+
+/* Hyperbolic arc cosine of X.  */
+extern double acosh (double __x) throw (); extern double __acosh (double __x) throw ();
+/* Hyperbolic arc sine of X.  */
+extern double asinh (double __x) throw (); extern double __asinh (double __x) throw ();
+/* Hyperbolic arc tangent of X.  */
+extern double atanh (double __x) throw (); extern double __atanh (double __x) throw ();
+
+
+
+/* Exponential and logarithmic functions.  */
+
+
+/* Exponential function of X.  */
+extern double exp (double __x) throw (); extern double __exp (double __x) throw ();
+
+/* Break VALUE into a normalized fraction and an integral power of 2.  */
+extern double frexp (double __x, int *__exponent) throw (); extern double __frexp (double __x, int *__exponent) throw ();
+
+/* X times (two to the EXP power).  */
+extern double ldexp (double __x, int __exponent) throw (); extern double __ldexp (double __x, int __exponent) throw ();
+
+/* Natural logarithm of X.  */
+extern double log (double __x) throw (); extern double __log (double __x) throw ();
+
+/* Base-ten logarithm of X.  */
+extern double log10 (double __x) throw (); extern double __log10 (double __x) throw ();
+
+/* Break VALUE into integral and fractional parts.  */
+extern double modf (double __x, double *__iptr) throw (); extern double __modf (double __x, double *__iptr) throw () __attribute__ ((__nonnull__ (2)));
+
+
+
+/* A function missing in all standards: compute exponent to base ten.  */
+extern double exp10 (double __x) throw (); extern double __exp10 (double __x) throw ();
+/* Another name occasionally used.  */
+extern double pow10 (double __x) throw (); extern double __pow10 (double __x) throw ();
+
+
+
+
+/* Return exp(X) - 1.  */
+extern double expm1 (double __x) throw (); extern double __expm1 (double __x) throw ();
+
+/* Return log(1 + X).  */
+extern double log1p (double __x) throw (); extern double __log1p (double __x) throw ();
+
+/* Return the base 2 signed integral exponent of X.  */
+extern double logb (double __x) throw (); extern double __logb (double __x) throw ();
+
+
+
+
+
+/* Compute base-2 exponential of X.  */
+extern double exp2 (double __x) throw (); extern double __exp2 (double __x) throw ();
+
+/* Compute base-2 logarithm of X.  */
+extern double log2 (double __x) throw (); extern double __log2 (double __x) throw ();
+
+
+
+
+/* Power functions.  */
+
+
+/* Return X to the Y power.  */
+extern double pow (double __x, double __y) throw (); extern double __pow (double __x, double __y) throw ();
+
+/* Return the square root of X.  */
+extern double sqrt (double __x) throw (); extern double __sqrt (double __x) throw ();
+
+
+
+
+/* Return `sqrt(X*X + Y*Y)'.  */
+extern double hypot (double __x, double __y) throw (); extern double __hypot (double __x, double __y) throw ();
+
+
+
+
+
+/* Return the cube root of X.  */
+extern double cbrt (double __x) throw (); extern double __cbrt (double __x) throw ();
+
+
+
+
+/* Nearest integer, absolute value, and remainder functions.  */
+
+
+/* Smallest integral value not less than X.  */
+extern double ceil (double __x) throw () __attribute__ ((__const__)); extern double __ceil (double __x) throw () __attribute__ ((__const__));
+
+/* Absolute value of X.  */
+extern double fabs (double __x) throw () __attribute__ ((__const__)); extern double __fabs (double __x) throw () __attribute__ ((__const__));
+
+/* Largest integer not greater than X.  */
+extern double floor (double __x) throw () __attribute__ ((__const__)); extern double __floor (double __x) throw () __attribute__ ((__const__));
+
+/* Floating-point modulo remainder of X/Y.  */
+extern double fmod (double __x, double __y) throw (); extern double __fmod (double __x, double __y) throw ();
+
+
+/* Return 0 if VALUE is finite or NaN, +1 if it
+   is +Infinity, -1 if it is -Infinity.  */
+extern int __isinf (double __value) throw () __attribute__ ((__const__));
+
+/* Return nonzero if VALUE is finite and not NaN.  */
+extern int __finite (double __value) throw () __attribute__ ((__const__));
+
+
+
+
+
+
+/* Return 0 if VALUE is finite or NaN, +1 if it
+   is +Infinity, -1 if it is -Infinity.  */
+extern int isinf (double __value) throw () __attribute__ ((__const__));
+
+
+/* Return nonzero if VALUE is finite and not NaN.  */
+extern int finite (double __value) throw () __attribute__ ((__const__));
+
+/* Return the remainder of X/Y.  */
+extern double drem (double __x, double __y) throw (); extern double __drem (double __x, double __y) throw ();
+
+
+/* Return the fractional part of X after dividing out `ilogb (X)'.  */
+extern double significand (double __x) throw (); extern double __significand (double __x) throw ();
+
+
+
+
+/* Return X with its signed changed to Y's.  */
+extern double copysign (double __x, double __y) throw () __attribute__ ((__const__)); extern double __copysign (double __x, double __y) throw () __attribute__ ((__const__));
+
+
+
+
+
+/* Return representation of qNaN for double type.  */
+extern double nan (const char *__tagb) throw () __attribute__ ((__const__)); extern double __nan (const char *__tagb) throw () __attribute__ ((__const__));
+
+
+
+
+/* Return nonzero if VALUE is not a number.  */
+extern int __isnan (double __value) throw () __attribute__ ((__const__));
+
+
+
+
+
+/* Return nonzero if VALUE is not a number.  */
+extern int isnan (double __value) throw () __attribute__ ((__const__));
+
+
+
+
+/* Bessel functions.  */
+extern double j0 (double) throw (); extern double __j0 (double) throw ();
+extern double j1 (double) throw (); extern double __j1 (double) throw ();
+extern double jn (int, double) throw (); extern double __jn (int, double) throw ();
+extern double y0 (double) throw (); extern double __y0 (double) throw ();
+extern double y1 (double) throw (); extern double __y1 (double) throw ();
+extern double yn (int, double) throw (); extern double __yn (int, double) throw ();
+
+
+
+
+
+/* Error and gamma functions.  */
+extern double erf (double) throw (); extern double __erf (double) throw ();
+extern double erfc (double) throw (); extern double __erfc (double) throw ();
+extern double lgamma (double) throw (); extern double __lgamma (double) throw ();
+
+
+
+
+
+/* True gamma function.  */
+extern double tgamma (double) throw (); extern double __tgamma (double) throw ();
+
+
+
+
+/* Obsolete alias for `lgamma'.  */
+extern double gamma (double) throw (); extern double __gamma (double) throw ();
+
+
+
+/* Reentrant version of lgamma.  This function uses the global variable
+   `signgam'.  The reentrant version instead takes a pointer and stores
+   the value through it.  */
+extern double lgamma_r (double, int *__signgamp) throw (); extern double __lgamma_r (double, int *__signgamp) throw ();
+
+
+
+
+
+/* Return the integer nearest X in the direction of the
+   prevailing rounding mode.  */
+extern double rint (double __x) throw (); extern double __rint (double __x) throw ();
+
+/* Return X + epsilon if X < Y, X - epsilon if X > Y.  */
+extern double nextafter (double __x, double __y) throw () __attribute__ ((__const__)); extern double __nextafter (double __x, double __y) throw () __attribute__ ((__const__));
+
+extern double nexttoward (double __x, long double __y) throw () __attribute__ ((__const__)); extern double __nexttoward (double __x, long double __y) throw () __attribute__ ((__const__));
+
+
+/* Return the remainder of integer divison X / Y with infinite precision.  */
+extern double remainder (double __x, double __y) throw (); extern double __remainder (double __x, double __y) throw ();
+
+
+/* Return X times (2 to the Nth power).  */
+extern double scalbn (double __x, int __n) throw (); extern double __scalbn (double __x, int __n) throw ();
+
+
+/* Return the binary exponent of X, which must be nonzero.  */
+extern int ilogb (double __x) throw (); extern int __ilogb (double __x) throw ();
+
+
+
+/* Return X times (2 to the Nth power).  */
+extern double scalbln (double __x, long int __n) throw (); extern double __scalbln (double __x, long int __n) throw ();
+
+/* Round X to integral value in floating-point format using current
+   rounding direction, but do not raise inexact exception.  */
+extern double nearbyint (double __x) throw (); extern double __nearbyint (double __x) throw ();
+
+/* Round X to nearest integral value, rounding halfway cases away from
+   zero.  */
+extern double round (double __x) throw () __attribute__ ((__const__)); extern double __round (double __x) throw () __attribute__ ((__const__));
+
+/* Round X to the integral value in floating-point format nearest but
+   not larger in magnitude.  */
+extern double trunc (double __x) throw () __attribute__ ((__const__)); extern double __trunc (double __x) throw () __attribute__ ((__const__));
+
+/* Compute remainder of X and Y and put in *QUO a value with sign of x/y
+   and magnitude congruent `mod 2^n' to the magnitude of the integral
+   quotient x/y, with n >= 3.  */
+extern double remquo (double __x, double __y, int *__quo) throw (); extern double __remquo (double __x, double __y, int *__quo) throw ();
+
+
+/* Conversion functions.  */
+
+/* Round X to nearest integral value according to current rounding
+   direction.  */
+extern long int lrint (double __x) throw (); extern long int __lrint (double __x) throw ();
+__extension__
+extern long long int llrint (double __x) throw (); extern long long int __llrint (double __x) throw ();
+
+/* Round X to nearest integral value, rounding halfway cases away from
+   zero.  */
+extern long int lround (double __x) throw (); extern long int __lround (double __x) throw ();
+__extension__
+extern long long int llround (double __x) throw (); extern long long int __llround (double __x) throw ();
+
+
+/* Return positive difference between X and Y.  */
+extern double fdim (double __x, double __y) throw (); extern double __fdim (double __x, double __y) throw ();
+
+/* Return maximum numeric value from X and Y.  */
+extern double fmax (double __x, double __y) throw () __attribute__ ((__const__)); extern double __fmax (double __x, double __y) throw () __attribute__ ((__const__));
+
+/* Return minimum numeric value from X and Y.  */
+extern double fmin (double __x, double __y) throw () __attribute__ ((__const__)); extern double __fmin (double __x, double __y) throw () __attribute__ ((__const__));
+
+
+/* Classify given number.  */
+extern int __fpclassify (double __value) throw ()
+     __attribute__ ((__const__));
+
+/* Test for negative number.  */
+extern int __signbit (double __value) throw ()
+     __attribute__ ((__const__));
+
+
+/* Multiply-add function computed as a ternary operation.  */
+extern double fma (double __x, double __y, double __z) throw (); extern double __fma (double __x, double __y, double __z) throw ();
+
+
+
+
+
+
+
+/* Test for signaling NaN.  */
+extern int __issignaling (double __value) throw ()
+     __attribute__ ((__const__));
+
+
+
+
+
+/* Return X times (2 to the Nth power).  */
+extern double scalb (double __x, double __n) throw (); extern double __scalb (double __x, double __n) throw ();
+# 84 "/usr/include/math.h" 2 3 4
+# 93 "/usr/include/math.h" 3 4
+/* Include the file of declarations again, this time using `float'
+   instead of `double' and appending f to each function name.  */
+# 104 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
+/* Prototype declarations for math functions; helper file for <math.h>.
+   Copyright (C) 1996-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+
+/* NOTE: Because of the special way this file is used by <math.h>, this
+   file must NOT be protected from multiple inclusion as header files
+   usually are.
+
+   This file provides prototype declarations for the math functions.
+   Most functions are declared using the macro:
+
+   __MATHCALL (NAME,[_r], (ARGS...));
+
+   This means there is a function `NAME' returning `double' and a function
+   `NAMEf' returning `float'.  Each place `_Mdouble_' appears in the
+   prototype, that is actually `double' in the prototype for `NAME' and
+   `float' in the prototype for `NAMEf'.  Reentrant variant functions are
+   called `NAME_r' and `NAMEf_r'.
+
+   Functions returning other types like `int' are declared using the macro:
+
+   __MATHDECL (TYPE, NAME,[_r], (ARGS...));
+
+   This is just like __MATHCALL but for a function returning `TYPE'
+   instead of `_Mdouble_'.  In all of these cases, there is still
+   both a `NAME' and a `NAMEf' that takes `float' arguments.
+
+   Note that there must be no whitespace before the argument passed for
+   NAME, to make token pasting work with -traditional.  */
+
+
+
+
+
+
+/* Trigonometric functions.  */
+
+
+/* Arc cosine of X.  */
+extern float acosf (float __x) throw (); extern float __acosf (float __x) throw ();
+/* Arc sine of X.  */
+extern float asinf (float __x) throw (); extern float __asinf (float __x) throw ();
+/* Arc tangent of X.  */
+extern float atanf (float __x) throw (); extern float __atanf (float __x) throw ();
+/* Arc tangent of Y/X.  */
+extern float atan2f (float __y, float __x) throw (); extern float __atan2f (float __y, float __x) throw ();
+
+/* Cosine of X.  */
+extern float cosf (float __x) throw (); extern float __cosf (float __x) throw ();
+/* Sine of X.  */
+extern float sinf (float __x) throw (); extern float __sinf (float __x) throw ();
+/* Tangent of X.  */
+extern float tanf (float __x) throw (); extern float __tanf (float __x) throw ();
+
+/* Hyperbolic functions.  */
+
+/* Hyperbolic cosine of X.  */
+extern float coshf (float __x) throw (); extern float __coshf (float __x) throw ();
+/* Hyperbolic sine of X.  */
+extern float sinhf (float __x) throw (); extern float __sinhf (float __x) throw ();
+/* Hyperbolic tangent of X.  */
+extern float tanhf (float __x) throw (); extern float __tanhf (float __x) throw ();
+
+
+
+/* Cosine and sine of X.  */
+extern void sincosf (float __x, float *__sinx, float *__cosx) throw (); extern void __sincosf (float __x, float *__sinx, float *__cosx) throw ();
+
+
+
+
+
+/* Hyperbolic arc cosine of X.  */
+extern float acoshf (float __x) throw (); extern float __acoshf (float __x) throw ();
+/* Hyperbolic arc sine of X.  */
+extern float asinhf (float __x) throw (); extern float __asinhf (float __x) throw ();
+/* Hyperbolic arc tangent of X.  */
+extern float atanhf (float __x) throw (); extern float __atanhf (float __x) throw ();
+
+
+
+/* Exponential and logarithmic functions.  */
+
+
+/* Exponential function of X.  */
+extern float expf (float __x) throw (); extern float __expf (float __x) throw ();
+
+/* Break VALUE into a normalized fraction and an integral power of 2.  */
+extern float frexpf (float __x, int *__exponent) throw (); extern float __frexpf (float __x, int *__exponent) throw ();
+
+/* X times (two to the EXP power).  */
+extern float ldexpf (float __x, int __exponent) throw (); extern float __ldexpf (float __x, int __exponent) throw ();
+
+/* Natural logarithm of X.  */
+extern float logf (float __x) throw (); extern float __logf (float __x) throw ();
+
+/* Base-ten logarithm of X.  */
+extern float log10f (float __x) throw (); extern float __log10f (float __x) throw ();
+
+/* Break VALUE into integral and fractional parts.  */
+extern float modff (float __x, float *__iptr) throw (); extern float __modff (float __x, float *__iptr) throw () __attribute__ ((__nonnull__ (2)));
+
+
+
+/* A function missing in all standards: compute exponent to base ten.  */
+extern float exp10f (float __x) throw (); extern float __exp10f (float __x) throw ();
+/* Another name occasionally used.  */
+extern float pow10f (float __x) throw (); extern float __pow10f (float __x) throw ();
+
+
+
+
+/* Return exp(X) - 1.  */
+extern float expm1f (float __x) throw (); extern float __expm1f (float __x) throw ();
+
+/* Return log(1 + X).  */
+extern float log1pf (float __x) throw (); extern float __log1pf (float __x) throw ();
+
+/* Return the base 2 signed integral exponent of X.  */
+extern float logbf (float __x) throw (); extern float __logbf (float __x) throw ();
+
+
+
+
+
+/* Compute base-2 exponential of X.  */
+extern float exp2f (float __x) throw (); extern float __exp2f (float __x) throw ();
+
+/* Compute base-2 logarithm of X.  */
+extern float log2f (float __x) throw (); extern float __log2f (float __x) throw ();
+
+
+
+
+/* Power functions.  */
+
+
+/* Return X to the Y power.  */
+extern float powf (float __x, float __y) throw (); extern float __powf (float __x, float __y) throw ();
+
+/* Return the square root of X.  */
+extern float sqrtf (float __x) throw (); extern float __sqrtf (float __x) throw ();
+
+
+
+
+/* Return `sqrt(X*X + Y*Y)'.  */
+extern float hypotf (float __x, float __y) throw (); extern float __hypotf (float __x, float __y) throw ();
+
+
+
+
+
+/* Return the cube root of X.  */
+extern float cbrtf (float __x) throw (); extern float __cbrtf (float __x) throw ();
+
+
+
+
+/* Nearest integer, absolute value, and remainder functions.  */
+
+
+/* Smallest integral value not less than X.  */
+extern float ceilf (float __x) throw () __attribute__ ((__const__)); extern float __ceilf (float __x) throw () __attribute__ ((__const__));
+
+/* Absolute value of X.  */
+extern float fabsf (float __x) throw () __attribute__ ((__const__)); extern float __fabsf (float __x) throw () __attribute__ ((__const__));
+
+/* Largest integer not greater than X.  */
+extern float floorf (float __x) throw () __attribute__ ((__const__)); extern float __floorf (float __x) throw () __attribute__ ((__const__));
+
+/* Floating-point modulo remainder of X/Y.  */
+extern float fmodf (float __x, float __y) throw (); extern float __fmodf (float __x, float __y) throw ();
+
+
+/* Return 0 if VALUE is finite or NaN, +1 if it
+   is +Infinity, -1 if it is -Infinity.  */
+extern int __isinff (float __value) throw () __attribute__ ((__const__));
+
+/* Return nonzero if VALUE is finite and not NaN.  */
+extern int __finitef (float __value) throw () __attribute__ ((__const__));
+
+
+
+
+
+
+/* Return 0 if VALUE is finite or NaN, +1 if it
+   is +Infinity, -1 if it is -Infinity.  */
+extern int isinff (float __value) throw () __attribute__ ((__const__));
+
+
+/* Return nonzero if VALUE is finite and not NaN.  */
+extern int finitef (float __value) throw () __attribute__ ((__const__));
+
+/* Return the remainder of X/Y.  */
+extern float dremf (float __x, float __y) throw (); extern float __dremf (float __x, float __y) throw ();
+
+
+/* Return the fractional part of X after dividing out `ilogb (X)'.  */
+extern float significandf (float __x) throw (); extern float __significandf (float __x) throw ();
+
+
+
+
+/* Return X with its signed changed to Y's.  */
+extern float copysignf (float __x, float __y) throw () __attribute__ ((__const__)); extern float __copysignf (float __x, float __y) throw () __attribute__ ((__const__));
+
+
+
+
+
+/* Return representation of qNaN for double type.  */
+extern float nanf (const char *__tagb) throw () __attribute__ ((__const__)); extern float __nanf (const char *__tagb) throw () __attribute__ ((__const__));
+
+
+
+
+/* Return nonzero if VALUE is not a number.  */
+extern int __isnanf (float __value) throw () __attribute__ ((__const__));
+
+
+
+
+
+/* Return nonzero if VALUE is not a number.  */
+extern int isnanf (float __value) throw () __attribute__ ((__const__));
+
+
+
+
+/* Bessel functions.  */
+extern float j0f (float) throw (); extern float __j0f (float) throw ();
+extern float j1f (float) throw (); extern float __j1f (float) throw ();
+extern float jnf (int, float) throw (); extern float __jnf (int, float) throw ();
+extern float y0f (float) throw (); extern float __y0f (float) throw ();
+extern float y1f (float) throw (); extern float __y1f (float) throw ();
+extern float ynf (int, float) throw (); extern float __ynf (int, float) throw ();
+
+
+
+
+
+/* Error and gamma functions.  */
+extern float erff (float) throw (); extern float __erff (float) throw ();
+extern float erfcf (float) throw (); extern float __erfcf (float) throw ();
+extern float lgammaf (float) throw (); extern float __lgammaf (float) throw ();
+
+
+
+
+
+/* True gamma function.  */
+extern float tgammaf (float) throw (); extern float __tgammaf (float) throw ();
+
+
+
+
+/* Obsolete alias for `lgamma'.  */
+extern float gammaf (float) throw (); extern float __gammaf (float) throw ();
+
+
+
+/* Reentrant version of lgamma.  This function uses the global variable
+   `signgam'.  The reentrant version instead takes a pointer and stores
+   the value through it.  */
+extern float lgammaf_r (float, int *__signgamp) throw (); extern float __lgammaf_r (float, int *__signgamp) throw ();
+
+
+
+
+
+/* Return the integer nearest X in the direction of the
+   prevailing rounding mode.  */
+extern float rintf (float __x) throw (); extern float __rintf (float __x) throw ();
+
+/* Return X + epsilon if X < Y, X - epsilon if X > Y.  */
+extern float nextafterf (float __x, float __y) throw () __attribute__ ((__const__)); extern float __nextafterf (float __x, float __y) throw () __attribute__ ((__const__));
+
+extern float nexttowardf (float __x, long double __y) throw () __attribute__ ((__const__)); extern float __nexttowardf (float __x, long double __y) throw () __attribute__ ((__const__));
+
+
+/* Return the remainder of integer divison X / Y with infinite precision.  */
+extern float remainderf (float __x, float __y) throw (); extern float __remainderf (float __x, float __y) throw ();
+
+
+/* Return X times (2 to the Nth power).  */
+extern float scalbnf (float __x, int __n) throw (); extern float __scalbnf (float __x, int __n) throw ();
+
+
+/* Return the binary exponent of X, which must be nonzero.  */
+extern int ilogbf (float __x) throw (); extern int __ilogbf (float __x) throw ();
+
+
+
+/* Return X times (2 to the Nth power).  */
+extern float scalblnf (float __x, long int __n) throw (); extern float __scalblnf (float __x, long int __n) throw ();
+
+/* Round X to integral value in floating-point format using current
+   rounding direction, but do not raise inexact exception.  */
+extern float nearbyintf (float __x) throw (); extern float __nearbyintf (float __x) throw ();
+
+/* Round X to nearest integral value, rounding halfway cases away from
+   zero.  */
+extern float roundf (float __x) throw () __attribute__ ((__const__)); extern float __roundf (float __x) throw () __attribute__ ((__const__));
+
+/* Round X to the integral value in floating-point format nearest but
+   not larger in magnitude.  */
+extern float truncf (float __x) throw () __attribute__ ((__const__)); extern float __truncf (float __x) throw () __attribute__ ((__const__));
+
+/* Compute remainder of X and Y and put in *QUO a value with sign of x/y
+   and magnitude congruent `mod 2^n' to the magnitude of the integral
+   quotient x/y, with n >= 3.  */
+extern float remquof (float __x, float __y, int *__quo) throw (); extern float __remquof (float __x, float __y, int *__quo) throw ();
+
+
+/* Conversion functions.  */
+
+/* Round X to nearest integral value according to current rounding
+   direction.  */
+extern long int lrintf (float __x) throw (); extern long int __lrintf (float __x) throw ();
+__extension__
+extern long long int llrintf (float __x) throw (); extern long long int __llrintf (float __x) throw ();
+
+/* Round X to nearest integral value, rounding halfway cases away from
+   zero.  */
+extern long int lroundf (float __x) throw (); extern long int __lroundf (float __x) throw ();
+__extension__
+extern long long int llroundf (float __x) throw (); extern long long int __llroundf (float __x) throw ();
+
+
+/* Return positive difference between X and Y.  */
+extern float fdimf (float __x, float __y) throw (); extern float __fdimf (float __x, float __y) throw ();
+
+/* Return maximum numeric value from X and Y.  */
+extern float fmaxf (float __x, float __y) throw () __attribute__ ((__const__)); extern float __fmaxf (float __x, float __y) throw () __attribute__ ((__const__));
+
+/* Return minimum numeric value from X and Y.  */
+extern float fminf (float __x, float __y) throw () __attribute__ ((__const__)); extern float __fminf (float __x, float __y) throw () __attribute__ ((__const__));
+
+
+/* Classify given number.  */
+extern int __fpclassifyf (float __value) throw ()
+     __attribute__ ((__const__));
+
+/* Test for negative number.  */
+extern int __signbitf (float __value) throw ()
+     __attribute__ ((__const__));
+
+
+/* Multiply-add function computed as a ternary operation.  */
+extern float fmaf (float __x, float __y, float __z) throw (); extern float __fmaf (float __x, float __y, float __z) throw ();
+
+
+
+
+
+
+
+/* Test for signaling NaN.  */
+extern int __issignalingf (float __value) throw ()
+     __attribute__ ((__const__));
+
+
+
+
+
+/* Return X times (2 to the Nth power).  */
+extern float scalbf (float __x, float __n) throw (); extern float __scalbf (float __x, float __n) throw ();
+# 105 "/usr/include/math.h" 2 3 4
+# 139 "/usr/include/math.h" 3 4
+/* Include the file of declarations again, this time using `long double'
+   instead of `double' and appending l to each function name.  */
+# 151 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
+/* Prototype declarations for math functions; helper file for <math.h>.
+   Copyright (C) 1996-2016 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+
+/* NOTE: Because of the special way this file is used by <math.h>, this
+   file must NOT be protected from multiple inclusion as header files
+   usually are.
+
+   This file provides prototype declarations for the math functions.
+   Most functions are declared using the macro:
+
+   __MATHCALL (NAME,[_r], (ARGS...));
+
+   This means there is a function `NAME' returning `double' and a function
+   `NAMEf' returning `float'.  Each place `_Mdouble_' appears in the
+   prototype, that is actually `double' in the prototype for `NAME' and
+   `float' in the prototype for `NAMEf'.  Reentrant variant functions are
+   called `NAME_r' and `NAMEf_r'.
+
+   Functions returning other types like `int' are declared using the macro:
+
+   __MATHDECL (TYPE, NAME,[_r], (ARGS...));
+
+   This is just like __MATHCALL but for a function returning `TYPE'
+   instead of `_Mdouble_'.  In all of these cases, there is still
+   both a `NAME' and a `NAMEf' that takes `float' arguments.
+
+   Note that there must be no whitespace before the argument passed for
+   NAME, to make token pasting work with -traditional.  */
+
+
+
+
+
+
+/* Trigonometric functions.  */
+
+
+/* Arc cosine of X.  */
+extern long double acosl (long double __x) throw (); extern long double __acosl (long double __x) throw ();
+/* Arc sine of X.  */
+extern long double asinl (long double __x) throw (); extern long double __asinl (long double __x) throw ();
+/* Arc tangent of X.  */
+extern long double atanl (long double __x) throw (); extern long double __atanl (long double __x) throw ();
+/* Arc tangent of Y/X.  */
+extern long double atan2l (long double __y, long double __x) throw (); extern long double __atan2l (long double __y, long double __x) throw ();
+
+/* Cosine of X.  */
+extern long double cosl (long double __x) throw (); extern long double __cosl (long double __x) throw ();
+/* Sine of X.  */
+extern long double sinl (long double __x) throw (); extern long double __sinl (long double __x) throw ();
+/* Tangent of X.  */
+extern long double tanl (long double __x) throw (); extern long double __tanl (long double __x) throw ();
+
+/* Hyperbolic functions.  */
+
+/* Hyperbolic cosine of X.  */
+extern long double coshl (long double __x) throw (); extern long double __coshl (long double __x) throw ();
+/* Hyperbolic sine of X.  */
+extern long double sinhl (long double __x) throw (); extern long double __sinhl (long double __x) throw ();
+/* Hyperbolic tangent of X.  */
+extern long double tanhl (long double __x) throw (); extern long double __tanhl (long double __x) throw ();
+
+
+
+/* Cosine and sine of X.  */
+extern void sincosl (long double __x, long double *__sinx, long double *__cosx) throw (); extern void __sincosl (long double __x, long double *__sinx, long double *__cosx) throw ();
+
+
+
+
+
+/* Hyperbolic arc cosine of X.  */
+extern long double acoshl (long double __x) throw (); extern long double __acoshl (long double __x) throw ();
+/* Hyperbolic arc sine of X.  */
+extern long double asinhl (long double __x) throw (); extern long double __asinhl (long double __x) throw ();
+/* Hyperbolic arc tangent of X.  */
+extern long double atanhl (long double __x) throw (); extern long double __atanhl (long double __x) throw ();
+
+
+
+/* Exponential and logarithmic functions.  */
+
+
+/* Exponential function of X.  */
+extern long double expl (long double __x) throw (); extern long double __expl (long double __x) throw ();
+
+/* Break VALUE into a normalized fraction and an integral power of 2.  */
+extern long double frexpl (long double __x, int *__exponent) throw (); extern long double __frexpl (long double __x, int *__exponent) throw ();
+
+/* X times (two to the EXP power).  */
+extern long double ldexpl (long double __x, int __exponent) throw (); extern long double __ldexpl (long double __x, int __exponent) throw ();
+
+/* Natural logarithm of X.  */
+extern long double logl (long double __x) throw (); extern long double __logl (long double __x) throw ();
+
+/* Base-ten logarithm of X.  */
+extern long double log10l (long double __x) throw (); extern long double __log10l (long double __x) throw ();
+
+/* Break VALUE into integral and fractional parts.  */
+extern long double modfl (long double __x, long double *__iptr) throw (); extern long double __modfl (long double __x, long double *__iptr) throw () __attribute__ ((__nonnull__ (2)));
+
+
+
+/* A function missing in all standards: compute exponent to base ten.  */
+extern long double exp10l (long double __x) throw (); extern long double __exp10l (long double __x) throw ();
+/* Another name occasionally used.  */
+extern long double pow10l (long double __x) throw (); extern long double __pow10l (long double __x) throw ();
+
+
+
+
+/* Return exp(X) - 1.  */
+extern long double expm1l (long double __x) throw (); extern long double __expm1l (long double __x) throw ();
+
+/* Return log(1 + X).  */
+extern long double log1pl (long double __x) throw (); extern long double __log1pl (long double __x) throw ();
+
+/* Return the base 2 signed integral exponent of X.  */
+extern long double logbl (long double __x) throw (); extern long double __logbl (long double __x) throw ();
+
+
+
+
+
+/* Compute base-2 exponential of X.  */
+extern long double exp2l (long double __x) throw (); extern long double __exp2l (long double __x) throw ();
+
+/* Compute base-2 logarithm of X.  */
+extern long double log2l (long double __x) throw (); extern long double __log2l (long double __x) throw ();
+
+
+
+
+/* Power functions.  */
+
+
+/* Return X to the Y power.  */
+extern long double powl (long double __x, long double __y) throw (); extern long double __powl (long double __x, long double __y) throw ();
+
+/* Return the square root of X.  */
+extern long double sqrtl (long double __x) throw (); extern long double __sqrtl (long double __x) throw ();
+
+
+
+
+/* Return `sqrt(X*X + Y*Y)'.  */
+extern long double hypotl (long double __x, long double __y) throw (); extern long double __hypotl (long double __x, long double __y) throw ();
+
+
+
+
+
+/* Return the cube root of X.  */
+extern long double cbrtl (long double __x) throw (); extern long double __cbrtl (long double __x) throw ();
+
+
+
+
+/* Nearest integer, absolute value, and remainder functions.  */
+
+
+/* Smallest integral value not less than X.  */
+extern long double ceill (long double __x) throw () __attribute__ ((__const__)); extern long double __ceill (long double __x) throw () __attribute__ ((__const__));
+
+/* Absolute value of X.  */
+extern long double fabsl (long double __x) throw () __attribute__ ((__const__)); extern long double __fabsl (long double __x) throw () __attribute__ ((__const__));
+
+/* Largest integer not greater than X.  */
+extern long double floorl (long double __x) throw () __attribute__ ((__const__)); extern long double __floorl (long double __x) throw () __attribute__ ((__const__));
+
+/* Floating-point modulo remainder of X/Y.  */
+extern long double fmodl (long double __x, long double __y) throw (); extern long double __fmodl (long double __x, long double __y) throw ();
+
+
+/* Return 0 if VALUE is finite or NaN, +1 if it
+   is +Infinity, -1 if it is -Infinity.  */
+extern int __isinfl (long double __value) throw () __attribute__ ((__const__));
+
+/* Return nonzero if VALUE is finite and not NaN.  */
+extern int __finitel (long double __value) throw () __attribute__ ((__const__));
+
+
+
+
+
+
+/* Return 0 if VALUE is finite or NaN, +1 if it
+   is +Infinity, -1 if it is -Infinity.  */
+extern int isinfl (long double __value) throw () __attribute__ ((__const__));
+
+
+/* Return nonzero if VALUE is finite and not NaN.  */
+extern int finitel (long double __value) throw () __attribute__ ((__const__));
+
+/* Return the remainder of X/Y.  */
+extern long double dreml (long double __x, long double __y) throw (); extern long double __dreml (long double __x, long double __y) throw ();
+
+
+/* Return the fractional part of X after dividing out `ilogb (X)'.  */
+extern long double significandl (long double __x) throw (); extern long double __significandl (long double __x) throw ();
+
+
+
+
+/* Return X with its signed changed to Y's.  */
+extern long double copysignl (long double __x, long double __y) throw () __attribute__ ((__const__)); extern long double __copysignl (long double __x, long double __y) throw () __attribute__ ((__const__));
+
+
+
+
+
+/* Return representation of qNaN for double type.  */
+extern long double nanl (const char *__tagb) throw () __attribute__ ((__const__)); extern long double __nanl (const char *__tagb) throw () __attribute__ ((__const__));
+
+
+
+
+/* Return nonzero if VALUE is not a number.  */
+extern int __isnanl (long double __value) throw () __attribute__ ((__const__));
+
+
+
+
+
+/* Return nonzero if VALUE is not a number.  */
+extern int isnanl (long double __value) throw () __attribute__ ((__const__));
+
+
+
+
+/* Bessel functions.  */
+extern long double j0l (long double) throw (); extern long double __j0l (long double) throw ();
+extern long double j1l (long double) throw (); extern long double __j1l (long double) throw ();
+extern long double jnl (int, long double) throw (); extern long double __jnl (int, long double) throw ();
+extern long double y0l (long double) throw (); extern long double __y0l (long double) throw ();
+extern long double y1l (long double) throw (); extern long double __y1l (long double) throw ();
+extern long double ynl (int, long double) throw (); extern long double __ynl (int, long double) throw ();
+
+
+
+
+
+/* Error and gamma functions.  */
+extern long double erfl (long double) throw (); extern long double __erfl (long double) throw ();
+extern long double erfcl (long double) throw (); extern long double __erfcl (long double) throw ();
+extern long double lgammal (long double) throw (); extern long double __lgammal (long double) throw ();
+
+
+
+
+
+/* True gamma function.  */
+extern long double tgammal (long double) throw (); extern long double __tgammal (long double) throw ();
+
+
+
+
+/* Obsolete alias for `lgamma'.  */
+extern long double gammal (long double) throw (); extern long double __gammal (long double) throw ();
+
+
+
+/* Reentrant version of lgamma.  This function uses the global variable
+   `signgam'.  The reentrant version instead takes a pointer and stores
+   the value through it.  */
+extern long double lgammal_r (long double, int *__signgamp) throw (); extern long double __lgammal_r (long double, int *__signgamp) throw ();
+
+
+
+
+
+/* Return the integer nearest X in the direction of the
+   prevailing rounding mode.  */
+extern long double rintl (long double __x) throw (); extern long double __rintl (long double __x) throw ();
+
+/* Return X + epsilon if X < Y, X - epsilon if X > Y.  */
+extern long double nextafterl (long double __x, long double __y) throw () __attribute__ ((__const__)); extern long double __nextafterl (long double __x, long double __y) throw () __attribute__ ((__const__));
+
+extern long double nexttowardl (long double __x, long double __y) throw () __attribute__ ((__const__)); extern long double __nexttowardl (long double __x, long double __y) throw () __attribute__ ((__const__));
+
+
+/* Return the remainder of integer divison X / Y with infinite precision.  */
+extern long double remainderl (long double __x, long double __y) throw (); extern long double __remainderl (long double __x, long double __y) throw ();
+
+
+/* Return X times (2 to the Nth power).  */
+extern long double scalbnl (long double __x, int __n) throw (); extern long double __scalbnl (long double __x, int __n) throw ();
+
+
+/* Return the binary exponent of X, which must be nonzero.  */
+extern int ilogbl (long double __x) throw (); extern int __ilogbl (long double __x) throw ();
+
+
+
+/* Return X times (2 to the Nth power).  */
+extern long double scalblnl (long double __x, long int __n) throw (); extern long double __scalblnl (long double __x, long int __n) throw ();
+
+/* Round X to integral value in floating-point format using current
+   rounding direction, but do not raise inexact exception.  */
+extern long double nearbyintl (long double __x) throw (); extern long double __nearbyintl (long double __x) throw ();
+
+/* Round X to nearest integral value, rounding halfway cases away from
+   zero.  */
+extern long double roundl (long double __x) throw () __attribute__ ((__const__)); extern long double __roundl (long double __x) throw () __attribute__ ((__const__));
+
+/* Round X to the integral value in floating-point format nearest but
+   not larger in magnitude.  */
+extern long double truncl (long double __x) throw () __attribute__ ((__const__)); extern long double __truncl (long double __x) throw () __attribute__ ((__const__));
+
+/* Compute remainder of X and Y and put in *QUO a value with sign of x/y
+   and magnitude congruent `mod 2^n' to the magnitude of the integral
+   quotient x/y, with n >= 3.  */
+extern long double remquol (long double __x, long double __y, int *__quo) throw (); extern long double __remquol (long double __x, long double __y, int *__quo) throw ();
+
+
+/* Conversion functions.  */
+
+/* Round X to nearest integral value according to current rounding
+   direction.  */
+extern long int lrintl (long double __x) throw (); extern long int __lrintl (long double __x) throw ();
+__extension__
+extern long long int llrintl (long double __x) throw (); extern long long int __llrintl (long double __x) throw ();
+
+/* Round X to nearest integral value, rounding halfway cases away from
+   zero.  */
+extern long int lroundl (long double __x) throw (); extern long int __lroundl (long double __x) throw ();
+__extension__
+extern long long int llroundl (long double __x) throw (); extern long long int __llroundl (long double __x) throw ();
+
+
+/* Return positive difference between X and Y.  */
+extern long double fdiml (long double __x, long double __y) throw (); extern long double __fdiml (long double __x, long double __y) throw ();
+
+/* Return maximum numeric value from X and Y.  */
+extern long double fmaxl (long double __x, long double __y) throw () __attribute__ ((__const__)); extern long double __fmaxl (long double __x, long double __y) throw () __attribute__ ((__const__));
+
+/* Return minimum numeric value from X and Y.  */
+extern long double fminl (long double __x, long double __y) throw () __attribute__ ((__const__)); extern long double __fminl (long double __x, long double __y) throw () __attribute__ ((__const__));
+
+
+/* Classify given number.  */
+extern int __fpclassifyl (long double __value) throw ()
+     __attribute__ ((__const__));
+
+/* Test for negative number.  */
+extern int __signbitl (long double __value) throw ()
+     __attribute__ ((__const__));
+
+
+/* Multiply-add function computed as a ternary operation.  */
+extern long double fmal (long double __x, long double __y, long double __z) throw (); extern long double __fmal (long double __x, long double __y, long double __z) throw ();
+
+
+
+
+
+
+
+/* Test for signaling NaN.  */
+extern int __issignalingl (long double __value) throw ()
+     __attribute__ ((__const__));
+
+
+
+
+
+/* Return X times (2 to the Nth power).  */
+extern long double scalbl (long double __x, long double __n) throw (); extern long double __scalbl (long double __x, long double __n) throw ();
+# 152 "/usr/include/math.h" 2 3 4
+# 167 "/usr/include/math.h" 3 4
+/* This variable is used by `gamma' and `lgamma'.  */
+extern int signgam;
+
+
+
+/* ISO C99 defines some generic macros which work on any data type.  */
+
+
+/* Get the architecture specific values describing the floating-point
+   evaluation.  The following symbols will get defined:
+
+    float_t	floating-point type at least as wide as `float' used
+		to evaluate `float' expressions
+    double_t	floating-point type at least as wide as `double' used
+		to evaluate `double' expressions
+
+    FLT_EVAL_METHOD
+		Defined to
+		  0	if `float_t' is `float' and `double_t' is `double'
+		  1	if `float_t' and `double_t' are `double'
+		  2	if `float_t' and `double_t' are `long double'
+		  else	`float_t' and `double_t' are unspecified
+
+    INFINITY	representation of the infinity value of type `float'
+
+    FP_FAST_FMA
+    FP_FAST_FMAF
+    FP_FAST_FMAL
+		If defined it indicates that the `fma' function
+		generally executes about as fast as a multiply and an add.
+		This macro is defined only iff the `fma' function is
+		implemented directly with a hardware multiply-add instructions.
+
+    FP_ILOGB0	Expands to a value returned by `ilogb (0.0)'.
+    FP_ILOGBNAN	Expands to a value returned by `ilogb (NAN)'.
+
+    DECIMAL_DIG	Number of decimal digits supported by conversion between
+		decimal and all internal floating-point formats.
+
+*/
+
+/* All floating-point numbers can be put in one of these categories.  */
+enum
+  {
+    FP_NAN =
+
+      0,
+    FP_INFINITE =
+
+      1,
+    FP_ZERO =
+
+      2,
+    FP_SUBNORMAL =
+
+      3,
+    FP_NORMAL =
+
+      4
+  };
+
+/* GCC bug 66462 means we cannot use the math builtins with -fsignaling-nan,
+   so disable builtins if this is enabled.  When fixed in a newer GCC,
+   the __SUPPORT_SNAN__ check may be skipped for those versions.  */
+
+/* Return number of classification appropriate for X.  */
+# 248 "/usr/include/math.h" 3 4
+/* Return nonzero value if sign of X is negative.  */
+# 268 "/usr/include/math.h" 3 4
+/* Return nonzero value if X is not +-Inf or NaN.  */
+# 282 "/usr/include/math.h" 3 4
+/* Return nonzero value if X is neither zero, subnormal, Inf, nor NaN.  */
+
+
+
+
+
+
+/* Return nonzero value if X is a NaN.  We could use `fpclassify' but
+   we already have this functions `__isnan' and it is faster.  */
+# 304 "/usr/include/math.h" 3 4
+/* Return nonzero value if X is positive or negative infinity.  */
+# 318 "/usr/include/math.h" 3 4
+/* Bitmasks for the math_errhandling macro.  */
+
+
+
+/* By default all functions support both errno and exception handling.
+   In gcc's fast math mode and if inline functions are defined this
+   might not be true.  */
+
+
+
+
+
+
+
+/* Return nonzero value if X is a signaling NaN.  */
+# 346 "/usr/include/math.h" 3 4
+/* Support for various different standard error handling behaviors.  */
+typedef enum
+{
+  _IEEE_ = -1, /* According to IEEE 754/IEEE 854.  */
+  _SVID_, /* According to System V, release 4.  */
+  _XOPEN_, /* Nowadays also Unix98.  */
+  _POSIX_,
+  _ISOC_ /* Actually this is ISO C99.  */
+} _LIB_VERSION_TYPE;
+
+/* This variable can be changed at run-time to any of the values above to
+   affect floating point error handling behavior (it may also be necessary
+   to change the hardware FPU exception settings).  */
+extern _LIB_VERSION_TYPE _LIB_VERSION;
+
+
+
+
+/* In SVID error handling, `matherr' is called with this description
+   of the exceptional condition.
+
+   We have a problem when using C++ since `exception' is a reserved
+   name in C++.  */
+
+struct __exception
+
+
+
+  {
     int type;
-    const char *name;
+    char *name;
     double arg1;
     double arg2;
     double retval;
   };
 
-  void __mingw_raise_matherr (int typ, const char *name, double a1, double a2,
-         double rslt);
-  void __mingw_setusermatherr (int ( *)(struct _exception *));
-  __attribute__ ((__dllimport__)) void __setusermatherr(int ( *)(struct _exception *));
-
-
-
-  double sin(double _X);
-  double cos(double _X);
-  double tan(double _X);
-  double sinh(double _X);
-  double cosh(double _X);
-  double tanh(double _X);
-  double asin(double _X);
-  double acos(double _X);
-  double atan(double _X);
-  double atan2(double _Y,double _X);
-  double exp(double _X);
-  double log(double _X);
-  double log10(double _X);
-  double pow(double _X,double _Y);
-  double sqrt(double _X);
-  double ceil(double _X);
-  double floor(double _X);
-  double fabs(double _X);
-# 135 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-  double ldexp(double _X,int _Y);
-  double frexp(double _X,int *_Y);
-  double modf(double _X,double *_Y);
-  double fmod(double _X,double _Y);
-
-  void sincos (double __x, double *p_sin, double *p_cos);
-  void sincosl (long double __x, long double *p_sin, long double *p_cos);
-  void sincosf (float __x, float *p_sin, float *p_cos);
-
-
-
-  int abs(int _X);
-  long labs(long _X);
-
 
-
-  double atof(const char *_String);
-  double _atof_l(const char *_String,_locale_t _Locale);
-# 162 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-  struct _complex {
-    double x;
-    double y;
-  };
+extern int matherr (struct __exception *__exc) throw ();
 
 
-  __attribute__ ((__dllimport__)) double _cabs(struct _complex _ComplexA);
-  double _hypot(double _X,double _Y);
-  __attribute__ ((__dllimport__)) double _j0(double _X);
-  __attribute__ ((__dllimport__)) double _j1(double _X);
-  __attribute__ ((__dllimport__)) double _jn(int _X,double _Y);
-  __attribute__ ((__dllimport__)) double _y0(double _X);
-  __attribute__ ((__dllimport__)) double _y1(double _X);
-  __attribute__ ((__dllimport__)) double _yn(int _X,double _Y);
 
 
-  __attribute__ ((__dllimport__)) int _matherr (struct _exception *);
-
 
-/* These are also declared in Mingw float.h; needed here as well to work 
-   around GCC build issues.  */
-/* BEGIN FLOAT.H COPY */
-/*
- * IEEE recommended functions
- */
-
 
-  __attribute__ ((__dllimport__)) double _chgsign (double _X);
-  __attribute__ ((__dllimport__)) double _copysign (double _Number,double _Sign);
-  __attribute__ ((__dllimport__)) double _logb (double);
-  __attribute__ ((__dllimport__)) double _nextafter (double, double);
-  __attribute__ ((__dllimport__)) double _scalb (double, long);
-  __attribute__ ((__dllimport__)) int _finite (double);
-  __attribute__ ((__dllimport__)) int _fpclass (double);
-  __attribute__ ((__dllimport__)) int _isnan (double);
+/* Types of exceptions in the `type' field.  */
 
 
-/* END FLOAT.H COPY */
 
 
 
-__attribute__ ((__dllimport__)) double j0 (double) ;
-__attribute__ ((__dllimport__)) double j1 (double) ;
-__attribute__ ((__dllimport__)) double jn (int, double) ;
-__attribute__ ((__dllimport__)) double y0 (double) ;
-__attribute__ ((__dllimport__)) double y1 (double) ;
-__attribute__ ((__dllimport__)) double yn (int, double) ;
 
-__attribute__ ((__dllimport__)) double chgsign (double);
-/*
- * scalb() is a GCC built-in.
- * Exclude this _scalb() stub; the semantics are incompatible
- * with the built-in implementation.
- *
-_CRTIMP double __cdecl scalb (double, long);
- *
- */
-  __attribute__ ((__dllimport__)) int finite (double);
-  __attribute__ ((__dllimport__)) int fpclass (double);
-# 260 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-/* Use the compiler's builtin define for FLT_EVAL_METHOD to
-   set float_t and double_t.  */
 
+/* SVID mode specifies returning this large value instead of infinity.  */
+# 411 "/usr/include/math.h" 3 4
+/* Some useful constants.  */
+# 428 "/usr/include/math.h" 3 4
+/* The above constants are not adequate for computation using `long double's.
+   Therefore we provide as an extension constants with similar names as a
+   GNU extension.  Provide enough digits for the 128-bit IEEE quad.  */
+# 448 "/usr/include/math.h" 3 4
+/* When compiling in strict ISO C compatible mode we must not use the
+   inline functions since they, among other things, do not set the
+   `errno' variable correctly.  */
 
-typedef float float_t;
-typedef double double_t;
-# 278 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-/* 7.12.3.1 */
-/*
-   Return values for fpclassify.
-   These are based on Intel x87 fpu condition codes
-   in the high byte of status word and differ from
-   the return values for MS IEEE 754 extension _fpclass()
-*/
 
 
 
 
+/* ISO C99 defines some macros to compare number while taking care for
+   unordered numbers.  Many FPUs provide special instructions to support
+   these operations.  Generic support in GCC for these as builtins went
+   in before 3.0.0, but not all cpus added their patterns.  We define
+   versions that use the builtins here, and <bits/mathinline.h> will
+   undef/redefine as appropriate for the specific GCC version in use.  */
+# 470 "/usr/include/math.h" 3 4
+/* Get machine-dependent inline versions (if there are any).  */
 
-/* 0x0200 is signbit mask */
 
-/*
-  We can't inline float or double, because we want to ensure truncation
-  to semantic type before classification. 
-  (A normal long double value might become subnormal when 
-  converted to double, and zero when converted to float.)
-*/
 
-  extern int __fpclassifyl (long double);
-  extern int __fpclassifyf (float);
-  extern int __fpclassify (double);
-# 325 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-/* 7.12.3.2 */
 
+/* Define special entry points to use when the compiler got told to
+   only expect finite results.  */
 
-/* 7.12.3.3 */
 
 
-/* 7.12.3.4 */
-/* We don't need to worry about truncation here:
-   A NaN stays a NaN. */
 
-  extern int __isnan (double);
-  extern int __isnanf (float);
-  extern int __isnanl (long double);
-# 372 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-/* 7.12.3.5 */
 
+/* If we've still got undefined comparison macros, provide defaults.  */
 
-/* 7.12.3.6 The signbit macro */
-  extern int __signbit (double);
-  extern int __signbitf (float);
-  extern int __signbitl (long double);
-# 403 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-/* 7.12.4 Trigonometric functions: Double in C89 */
-  extern float sinf(float _X);
-  extern long double sinl(long double);
+/* Return nonzero value if X is greater than Y.  */
 
-  extern float cosf(float _X);
-  extern long double cosl(long double);
 
-  extern float tanf(float _X);
-  extern long double tanl(long double);
-  extern float asinf(float _X);
-  extern long double asinl(long double);
 
-  extern float acosf (float);
-  extern long double acosl (long double);
 
-  extern float atanf (float);
-  extern long double atanl (long double);
 
-  extern float atan2f (float, float);
-  extern long double atan2l (long double, long double);
 
-/* 7.12.5 Hyperbolic functions: Double in C89  */
-  extern float sinhf(float _X);
 
+/* Return nonzero value if X is greater than or equal to Y.  */
 
 
-  extern long double sinhl(long double);
 
-  extern float coshf(float _X);
 
 
 
-  extern long double coshl(long double);
 
-  extern float tanhf(float _X);
+/* Return nonzero value if X is less than Y.  */
 
 
 
-  extern long double tanhl(long double);
 
-/* Inverse hyperbolic trig functions  */
-/* 7.12.5.1 */
-  extern double acosh (double);
-  extern float acoshf (float);
-  extern long double acoshl (long double);
 
-/* 7.12.5.2 */
-  extern double asinh (double);
-  extern float asinhf (float);
-  extern long double asinhl (long double);
 
-/* 7.12.5.3 */
-  extern double atanh (double);
-  extern float atanhf (float);
-  extern long double atanhl (long double);
 
-/* Exponentials and logarithms  */
-/* 7.12.6.1 Double in C89 */
-  extern float expf(float _X);
+/* Return nonzero value if X is less than or equal to Y.  */
 
 
 
-  extern long double expl(long double);
 
-/* 7.12.6.2 */
-  extern double exp2(double);
-  extern float exp2f(float);
-  extern long double exp2l(long double);
 
-/* 7.12.6.3 The expm1 functions */
-/* TODO: These could be inlined */
-  extern double expm1(double);
-  extern float expm1f(float);
-  extern long double expm1l(long double);
 
-/* 7.12.6.4 Double in C89 */
-  extern float frexpf(float _X,int *_Y);
 
+/* Return nonzero value if either X is less than Y or Y is less than X.  */
 
 
-  extern long double frexpl(long double,int *);
 
-/* 7.12.6.5 */
 
 
-  extern int ilogb (double);
-  extern int ilogbf (float);
-  extern int ilogbl (long double);
 
-/* 7.12.6.6  Double in C89 */
-  extern float ldexpf(float _X,int _Y);
 
-
-
-  extern long double ldexpl (long double, int);
-
-/* 7.12.6.7 Double in C89 */
-  extern float logf (float);
-  extern long double logl(long double);
-
-/* 7.12.6.8 Double in C89 */
-  extern float log10f (float);
-  extern long double log10l(long double);
-
-/* 7.12.6.9 */
-  extern double log1p(double);
-  extern float log1pf(float);
-  extern long double log1pl(long double);
-
-/* 7.12.6.10 */
-  extern double log2 (double);
-  extern float log2f (float);
-  extern long double log2l (long double);
-
-/* 7.12.6.11 */
-  extern double logb (double);
-  extern float logbf (float);
-  extern long double logbl (long double);
-
-/* Inline versions.  GCC-4.0+ can do a better fast-math optimization
-   with __builtins. */
-# 552 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-/* 7.12.6.12  Double in C89 */
-  extern float modff (float, float*);
-  extern long double modfl (long double, long double*);
-
-/* 7.12.6.13 */
-  extern double scalbn (double, int);
-  extern float scalbnf (float, int);
-  extern long double scalbnl (long double, int);
-
-  extern double scalbln (double, long);
-  extern float scalblnf (float, long);
-  extern long double scalblnl (long double, long);
-
-/* 7.12.7.1 */
-/* Implementations adapted from Cephes versions */
-  extern double cbrt (double);
-  extern float cbrtf (float);
-  extern long double cbrtl (long double);
-
-/* 7.12.7.2 The fabs functions: Double in C89 */
-  extern float fabsf (float x);
-# 583 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-  extern long double fabsl (long double);
-# 594 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-/* 7.12.7.3  */
-  extern double hypot (double, double) ; /* in libmoldname.a */
-  extern float hypotf (float x, float y);
-
-
-
-  extern long double hypotl (long double, long double);
-
-/* 7.12.7.4 The pow functions. Double in C89 */
-  extern float powf(float _X,float _Y);
-
-
-
-  extern long double powl (long double, long double);
-
-/* 7.12.7.5 The sqrt functions. Double in C89. */
-  extern float sqrtf (float);
-  extern long double sqrtl(long double);
-
-/* 7.12.8.1 The erf functions  */
-  extern double erf (double);
-  extern float erff (float);
-  extern long double erfl (long double);
-
-/* 7.12.8.2 The erfc functions  */
-  extern double erfc (double);
-  extern float erfcf (float);
-  extern long double erfcl (long double);
-
-/* 7.12.8.3 The lgamma functions */
-  extern double lgamma (double);
-  extern float lgammaf (float);
-  extern long double lgammal (long double);
-
-/* 7.12.8.4 The tgamma functions */
-  extern double tgamma (double);
-  extern float tgammaf (float);
-  extern long double tgammal (long double);
-
-/* 7.12.9.1 Double in C89 */
-  extern float ceilf (float);
-  extern long double ceill (long double);
-
-/* 7.12.9.2 Double in C89 */
-  extern float floorf (float);
-  extern long double floorl (long double);
-
-/* 7.12.9.3 */
-  extern double nearbyint ( double);
-  extern float nearbyintf (float);
-  extern long double nearbyintl (long double);
-
-/* 7.12.9.4 */
-/* round, using fpu control word settings */
-extern double rint (double);
-extern float rintf (float);
-extern long double rintl (long double);
-
-/* 7.12.9.5 */
-extern long lrint (double);
-extern long lrintf (float);
-extern long lrintl (long double);
-
-__extension__ long long llrint (double);
-__extension__ long long llrintf (float);
-__extension__ long long llrintl (long double);
-
-/* Inline versions of above. 
-   GCC 4.0+ can do a better fast-math job with __builtins. */
-# 737 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-/* 7.12.9.6 */
-/* round away from zero, regardless of fpu control word settings */
-  extern double round (double);
-  extern float roundf (float);
-  extern long double roundl (long double);
-
-/* 7.12.9.7  */
-  extern long lround (double);
-  extern long lroundf (float);
-  extern long lroundl (long double);
-  __extension__ long long llround (double);
-  __extension__ long long llroundf (float);
-  __extension__ long long llroundl (long double);
-
-/* 7.12.9.8 */
-/* round towards zero, regardless of fpu control word settings */
-  extern double trunc (double);
-  extern float truncf (float);
-  extern long double truncl (long double);
-
-/* 7.12.10.1 Double in C89 */
-  extern float fmodf (float, float);
-  extern long double fmodl (long double, long double);
-
-/* 7.12.10.2 */
-  extern double remainder (double, double);
-  extern float remainderf (float, float);
-  extern long double remainderl (long double, long double);
-
-/* 7.12.10.3 */
-  extern double remquo(double, double, int *);
-  extern float remquof(float, float, int *);
-  extern long double remquol(long double, long double, int *);
-
-/* 7.12.11.1 */
-  extern double copysign (double, double); /* in libmoldname.a */
-  extern float copysignf (float, float);
-  extern long double copysignl (long double, long double);
-
-/* 7.12.11.2 Return a NaN */
-  extern double nan(const char *tagp);
-  extern float nanf(const char *tagp);
-  extern long double nanl(const char *tagp);
-
-
-
-
-
-
-
-/* 7.12.11.3 */
-  extern double nextafter (double, double); /* in libmoldname.a */
-  extern float nextafterf (float, float);
-  extern long double nextafterl (long double, long double);
-
-/* 7.12.11.4 The nexttoward functions */
-  extern double nexttoward (double, long double);
-  extern float nexttowardf (float, long double);
-  extern long double nexttowardl (long double, long double);
-
-/* 7.12.12.1 */
-/*  x > y ? (x - y) : 0.0  */
-  extern double fdim (double x, double y);
-  extern float fdimf (float x, float y);
-  extern long double fdiml (long double x, long double y);
-
-/* fmax and fmin.
-   NaN arguments are treated as missing data: if one argument is a NaN
-   and the other numeric, then these functions choose the numeric
-   value. */
-
-/* 7.12.12.2 */
-  extern double fmax (double, double);
-  extern float fmaxf (float, float);
-  extern long double fmaxl (long double, long double);
-
-/* 7.12.12.3 */
-  extern double fmin (double, double);
-  extern float fminf (float, float);
-  extern long double fminl (long double, long double);
-
-/* 7.12.13.1 */
-/* return x * y + z as a ternary op */
-  extern double fma (double, double, double);
-  extern float fmaf (float, float, float);
-  extern long double fmal (long double, long double, long double);
-
-/* 7.12.14 */
-/* 
- *  With these functions, comparisons involving quiet NaNs set the FP
- *  condition code to "unordered".  The IEEE floating-point spec
- *  dictates that the result of floating-point comparisons should be
- *  false whenever a NaN is involved, with the exception of the != op, 
- *  which always returns true: yes, (NaN != NaN) is true).
- */
-# 871 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
-   __attribute__ ((__dllimport__)) float _copysignf (float _Number,float _Sign);
-   __attribute__ ((__dllimport__)) float _chgsignf (float _X);
-   __attribute__ ((__dllimport__)) float _logbf(float _X);
-   __attribute__ ((__dllimport__)) float _nextafterf(float _X,float _Y);
-   __attribute__ ((__dllimport__)) int _finitef(float _X);
-   __attribute__ ((__dllimport__)) int _isnanf(float _X);
-   __attribute__ ((__dllimport__)) int _fpclassf(float _X);
-
-
-
-   extern long double _chgsignl (long double);
-# 893 "C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\math.h" 3
+/* Return nonzero value if arguments are unordered.  */
+# 534 "/usr/include/math.h" 3 4
 }
-
-
-
-
-#pragma pack(pop)
 # 2 "proj1_hls/obj_detector.cpp" 2
 
 # 1 "proj1_hls/obj_detector.h" 1

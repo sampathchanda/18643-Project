@@ -10,7 +10,7 @@
 
 module obj_detector_fmul_32ns_32ns_32_4_max_dsp
 #(parameter
-    ID         = 1,
+    ID         = 6,
     NUM_STAGE  = 4,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

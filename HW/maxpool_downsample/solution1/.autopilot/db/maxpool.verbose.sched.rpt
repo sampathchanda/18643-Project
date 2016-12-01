@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'maxpool'
 ================================================================
-* Date:           Sat Nov 26 05:13:00 2016
+* Date:           Wed Nov 30 17:18:06 2016
 
 * Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
 * Project:        maxpool_downsample
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|      7.74|        1.25|
+    |ap_clk  |  10.00|      6.74|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline |
     | min | max | min | max |   Type   |
     +-----+-----+-----+-----+----------+
-    |  579|  579|  580|  580| dataflow |
+    |  578|  578|  579|  579| dataflow |
     +-----+-----+-----+-----+----------+
 
     + Detail: 
@@ -126,43 +126,43 @@ IsGatedGlobalClock: 0
 2 --> 
 * FSM state operations: 
 
- <State 1>: 0.00ns
-ST_1: stg_3 [2/2] 0.00ns
+ <State 1>: 6.74ns
+ST_1: stg_3 [2/2] 6.74ns
 codeRepl:10  call fastcc void @maxpool_Loop_LOOP_proc(i8* %output_V, i8* %input_V)
 
 
- <State 2>: 0.00ns
+ <State 2>: 6.74ns
 ST_2: stg_4 [1/1] 0.00ns
 codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str1) nounwind
 
 ST_2: stg_5 [1/1] 0.00ns
-codeRepl:1  call void (...)* @_ssdm_op_SpecInterface(i8* %output_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str14, [1 x i8]* @p_str14, [8 x i8]* @ap_fifo_str)
+codeRepl:1  call void (...)* @_ssdm_op_SpecBitsMap(i1* %begin_r), !map !7
 
 ST_2: stg_6 [1/1] 0.00ns
-codeRepl:2  call void (...)* @_ssdm_op_SpecInterface(i8* %input_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13, [8 x i8]* @ap_fifo_str)
+codeRepl:2  call void (...)* @_ssdm_op_SpecBitsMap(i8* %input_V), !map !11
 
 ST_2: stg_7 [1/1] 0.00ns
-codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i1* %begin_r), !map !7
+codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_V), !map !15
 
 ST_2: stg_8 [1/1] 0.00ns
-codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap(i8* %input_V), !map !11
+codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap(i1* %ok), !map !19
 
 ST_2: stg_9 [1/1] 0.00ns
-codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_V), !map !15
+codeRepl:5  call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @maxpool_str) nounwind
 
 ST_2: stg_10 [1/1] 0.00ns
-codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %ok), !map !19
+codeRepl:6  call void (...)* @_ssdm_op_SpecInterface(i1* %ok, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ST_2: stg_11 [1/1] 0.00ns
-codeRepl:7  call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @maxpool_str) nounwind
+codeRepl:7  call void (...)* @_ssdm_op_SpecInterface(i1* %begin_r, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ST_2: stg_12 [1/1] 0.00ns
-codeRepl:8  call void (...)* @_ssdm_op_SpecInterface(i1* %ok, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+codeRepl:8  call void (...)* @_ssdm_op_SpecInterface(i8* %input_V, [5 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ST_2: stg_13 [1/1] 0.00ns
-codeRepl:9  call void (...)* @_ssdm_op_SpecInterface(i1* %begin_r, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+codeRepl:9  call void (...)* @_ssdm_op_SpecInterface(i8* %output_V, [5 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
-ST_2: stg_14 [1/2] 0.00ns
+ST_2: stg_14 [1/2] 6.74ns
 codeRepl:10  call fastcc void @maxpool_Loop_LOOP_proc(i8* %output_V, i8* %input_V)
 
 ST_2: stg_15 [1/1] 0.00ns

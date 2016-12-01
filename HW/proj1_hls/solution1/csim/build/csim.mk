@@ -23,17 +23,18 @@ HLS_SOURCES = ../../../obj_detector_tb.cpp ../../../obj_detector.cpp
 
 TARGET := csim.exe
 
-AUTOPILOT_ROOT := C:/Xilinx/Vivado_HLS/2015.2
-AUTOPILOT_MACH := win64
+AUTOPILOT_ROOT := /home/littlefoot/vivado/Vivado_HLS/2015.2
+AUTOPILOT_MACH := lnx64
 ifdef AP_GCC_M32
   AUTOPILOT_MACH := Linux_x86
   IFLAG += -m32
 endif
+IFLAG += -fPIC
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := C:/Xilinx/Vivado_HLS/2015.2/msys/bin
+  AP_GCC_PATH := /home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/gcc/bin
 endif
 ifndef AP_CLANG_PATH
-  AP_CLANG_PATH := C:/Xilinx/Vivado_HLS/2015.2/win64/tools/clang/bin
+  AP_CLANG_PATH := /home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/clang/bin
 endif
 AUTOPILOT_TOOL := ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AUTOPILOT_TECH := ${AUTOPILOT_ROOT}/common/technology
@@ -47,6 +48,7 @@ IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC"
 IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC/AESL_FP_comp"
 IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC/AESL_comp"
 IFLAG += -I "${AUTOPILOT_TOOL}/auto_cc/include"
+IFLAG += -I "/usr/include/x86_64-linux-gnu"
 IFLAG += -D__SIM_FPO__
 
 IFLAG += -D__SIM_OPENCV__
@@ -58,8 +60,6 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -g
-IFLAG += -DNT
-LFLAG += -Wl,--enable-auto-import 
 
 
 

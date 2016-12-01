@@ -54,12 +54,12 @@
               </inlineStackInfo>
               <originalName>input.V</originalName>
               <rtlName/>
-              <coreName>FIFO</coreName>
+              <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
           <direction>0</direction>
-          <if_type>3</if_type>
+          <if_type>0</if_type>
           <array_size>0</array_size>
           <bit_vecs>
             <count>0</count>
@@ -82,12 +82,12 @@
               </inlineStackInfo>
               <originalName>output.V</originalName>
               <rtlName/>
-              <coreName>FIFO</coreName>
+              <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
           <direction>1</direction>
-          <if_type>3</if_type>
+          <if_type>0</if_type>
           <array_size>0</array_size>
           <bit_vecs>
             <count>0</count>
@@ -294,7 +294,7 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>579</mMinLatency>
+        <mMinLatency>578</mMinLatency>
         <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
         <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_13">
@@ -315,7 +315,7 @@
                 <item class_id="28" tracking_level="1" version="0" object_id="_15">
                   <port class_id="29" tracking_level="1" version="0" object_id="_16">
                     <name>output_V</name>
-                    <dir>0</dir>
+                    <dir>3</dir>
                     <type>1</type>
                   </port>
                   <inst class_id="30" tracking_level="1" version="0" object_id="_17">
@@ -327,7 +327,7 @@
                 <item class_id_reference="28" object_id="_18">
                   <port class_id_reference="29" object_id="_19">
                     <name>input_V</name>
-                    <dir>0</dir>
+                    <dir>3</dir>
                     <type>0</type>
                   </port>
                   <inst class_id_reference="30" object_id_reference="_17"/>
@@ -461,11 +461,11 @@
             <item_version>0</item_version>
             <item class_id="47" tracking_level="0" version="0">
               <first>FF</first>
-              <second>455</second>
+              <second>348</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>484</second>
+              <second>479</second>
             </item>
           </second>
         </item>
@@ -618,7 +618,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="59" tracking_level="0" version="0">
-        <first>34</first>
+        <first>30</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -635,7 +635,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="62" tracking_level="0" version="0">
-        <first>grp_maxpool_Loop_LOOP_proc_fu_34</first>
+        <first>grp_maxpool_Loop_LOOP_proc_fu_30</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -721,16 +721,8 @@
       </item>
     </dp_port_io_nodes>
     <port2core class_id="66" tracking_level="0" version="0">
-      <count>2</count>
+      <count>0</count>
       <item_version>0</item_version>
-      <item class_id="67" tracking_level="0" version="0">
-        <first>2</first>
-        <second>FIFO</second>
-      </item>
-      <item>
-        <first>3</first>
-        <second>FIFO</second>
-      </item>
     </port2core>
     <node2core>
       <count>0</count>

@@ -23,9 +23,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="8">
+<node id="15" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="32" op_3_bw="8">
 <![CDATA[
-codeRepl:10  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, i8* %conv_output_V)
+codeRepl:10  call fastcc void @convolve_Loop_BUFFER_RESET_proc(i8* %image_V, [25 x float]* %weights, i8* %conv_output_V)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -56,9 +56,9 @@ codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="6" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
+<node id="6" bw="0" op_0_bw="0" op_1_bw="8">
 <![CDATA[
-codeRepl:1  call void (...)* @_ssdm_op_SpecInterface(i8* %conv_output_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str26, [1 x i8]* @p_str26, [8 x i8]* @ap_fifo_str)
+codeRepl:1  call void (...)* @_ssdm_op_SpecBitsMap(i8* %image_V), !map !7
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -71,9 +71,9 @@ codeRepl:1  call void (...)* @_ssdm_op_SpecInterface(i8* %conv_output_V, [8 x i8
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="7" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
+<node id="7" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-codeRepl:2  call void (...)* @_ssdm_op_SpecInterface(i8* %image_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str25, [1 x i8]* @p_str25, [8 x i8]* @ap_fifo_str)
+codeRepl:2  call void (...)* @_ssdm_op_SpecBitsMap([25 x float]* %weights), !map !13
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -88,7 +88,7 @@ codeRepl:2  call void (...)* @_ssdm_op_SpecInterface(i8* %image_V, [8 x i8]* @ap
 
 <node id="8" bw="0" op_0_bw="0" op_1_bw="8">
 <![CDATA[
-codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i8* %image_V), !map !7
+codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i8* %conv_output_V), !map !19
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -101,9 +101,9 @@ codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i8* %image_V), !map !7
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="9" bw="0" op_0_bw="0" op_1_bw="32">
+<node id="9" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap([25 x float]* %weights), !map !13
+codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap(i1* %done), !map !23
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -118,7 +118,7 @@ codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap([25 x float]* %weights), !map
 
 <node id="10" bw="0" op_0_bw="0" op_1_bw="8">
 <![CDATA[
-codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(i8* %conv_output_V), !map !19
+codeRepl:5  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @convolve_str) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -131,9 +131,9 @@ codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(i8* %conv_output_V), !map !19
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="11" bw="0" op_0_bw="0" op_1_bw="1">
+<node id="11" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
 <![CDATA[
-codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %done), !map !23
+codeRepl:6  call void (...)* @_ssdm_op_SpecInterface(i1* %done, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -146,9 +146,9 @@ codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %done), !map !23
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="12" bw="0" op_0_bw="0" op_1_bw="8">
+<node id="12" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
 <![CDATA[
-codeRepl:7  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @convolve_str) nounwind
+codeRepl:7  call void (...)* @_ssdm_op_SpecInterface([25 x float]* %weights, [5 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -161,9 +161,9 @@ codeRepl:7  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @convolve_str) no
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="13" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
+<node id="13" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
 <![CDATA[
-codeRepl:8  call void (...)* @_ssdm_op_SpecInterface(i1* %done, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+codeRepl:8  call void (...)* @_ssdm_op_SpecInterface(i8* %conv_output_V, [5 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -176,9 +176,9 @@ codeRepl:8  call void (...)* @_ssdm_op_SpecInterface(i1* %done, [8 x i8]* @p_str
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
+<node id="14" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
 <![CDATA[
-codeRepl:9  call void (...)* @_ssdm_op_SpecInterface([25 x float]* %weights, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+codeRepl:9  call void (...)* @_ssdm_op_SpecInterface(i8* %image_V, [5 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -191,9 +191,9 @@ codeRepl:9  call void (...)* @_ssdm_op_SpecInterface([25 x float]* %weights, [10
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="8">
+<node id="15" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="32" op_3_bw="8">
 <![CDATA[
-codeRepl:10  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, i8* %conv_output_V)
+codeRepl:10  call fastcc void @convolve_Loop_BUFFER_RESET_proc(i8* %image_V, [25 x float]* %weights, i8* %conv_output_V)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>

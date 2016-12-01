@@ -38857,8 +38857,8 @@ void maxpool(
 _ssdm_op_SpecInterface(ok, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(begin, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecDataflowPipeline(-1, "");
-_ssdm_SpecStream( &input, 0, 0, "");
-_ssdm_SpecStream( &output, 0, 0, "");
+_ssdm_op_SpecInterface(&input, "axis", 0, 0, 0, 0, "", "", "");
+_ssdm_op_SpecInterface(&output, "axis", 0, 0, 0, 0, "", "", "");
 
  uint8_t linebuff[(24 / 2)];
  uint8_t temp1;

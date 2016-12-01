@@ -8,7 +8,7 @@
 </directive>
 <directive functionLabel="" functionName="convolve" label="">
 <pragma name="INTERFACE">
-<option name="ap_memory" positionalBoolean="mode" value=""/>
+<option name="bram" positionalBoolean="mode" value=""/>
 <option name="port" positionalBoolean="4" value="weights"/>
 </pragma>
 </directive>
@@ -16,21 +16,15 @@
 <pragma name="DATAFLOW"/>
 </directive>
 <directive functionLabel="" functionName="convolve" label="">
-<pragma name="STREAM">
-<option name="variable" positionalBoolean="4" value="conv_output"/>
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="conv_output"/>
 </pragma>
 </directive>
 <directive functionLabel="" functionName="convolve" label="">
-<pragma name="STREAM">
-<option name="variable" positionalBoolean="4" value="image"/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="convolve" label="">
-<pragma name="PIPELINE"/>
-</directive>
-<directive functionLabel="" functionName="convolve" label="">
-<pragma name="PIPELINE">
-<option name="II" value="2"/>
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="image"/>
 </pragma>
 </directive>
 <directive functionLabel="" functionName="convolve" label="">

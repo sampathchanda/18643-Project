@@ -22,12 +22,10 @@
 `define LENGTH_conv_output_V 575
 `define LENGTH_done 1
 
-`define	AESL_FIFO_image_V AESL_autofifo_image_V
-`define	AESL_FIFO_INST_image_V AESL_autofifo_inst_image_V
+`define   AESL_DEPTH_image_V 1
 `define	AESL_MEM_weights AESL_automem_weights
 `define	AESL_MEM_INST_weights mem_inst_weights
-`define	AESL_FIFO_conv_output_V AESL_autofifo_conv_output_V
-`define	AESL_FIFO_INST_conv_output_V AESL_autofifo_inst_conv_output_V
+`define   AESL_DEPTH_conv_output_V 1
 `define   AESL_DEPTH_done 1
 `define AUTOTB_TVIN_image_V  "../tv/cdatafile/c.convolve.autotvin_image_V.dat"
 `define AUTOTB_TVIN_weights  "../tv/cdatafile/c.convolve.autotvin_weights.dat"
@@ -91,14 +89,12 @@ reg [31 : 0] AESL_mLatCnterIn_addr;
 reg [31 : 0] AESL_mLatCnterOut [0 : `AUTOTB_TRANSACTION_NUM + 1];
 reg [31 : 0] AESL_mLatCnterOut_addr ;
 reg [31 : 0] AESL_clk_counter ;
-reg [20 - 1 : 0] AESL_clk_ready[0 : `AUTOTB_TRANSACTION_NUM + 1];
-reg [20 - 1 : 0] AESL_clk_done[0 : `AUTOTB_TRANSACTION_NUM + 1];
+reg [18 - 1 : 0] AESL_clk_ready[0 : `AUTOTB_TRANSACTION_NUM + 1];
+reg [18 - 1 : 0] AESL_clk_done[0 : `AUTOTB_TRANSACTION_NUM + 1];
 
 reg reported_stuck = 0;
 reg reported_stuck_cnt = 0;
-wire [7 : 0] image_V_dout;
-wire  image_V_empty_n;
-wire  image_V_read;
+wire [7 : 0] image_V_TDATA;
 wire [4 : 0] weights_address0;
 wire  weights_ce0;
 wire [31 : 0] weights_d0;
@@ -109,14 +105,15 @@ wire  weights_ce1;
 wire [31 : 0] weights_d1;
 wire [31 : 0] weights_q1;
 wire  weights_we1;
-wire [31 : 0] conv_output_V_din;
-wire  conv_output_V_full_n;
-wire  conv_output_V_write;
-wire [31 : 0] done;
+wire [7 : 0] conv_output_V_TDATA;
+wire  done;
 wire ap_clk;
-wire ap_rst;
+wire ap_rst_n;
+wire  image_V_TVALID;
+wire  image_V_TREADY;
+wire  conv_output_V_TVALID;
+wire  conv_output_V_TREADY;
 wire ap_done;
-wire  done_ap_vld;
 wire ap_start;
 wire ap_idle;
 wire ap_ready;
@@ -131,9 +128,7 @@ reg done_delay_last_n;
 reg interface_done = 0;
 
 `AUTOTB_DUT `AUTOTB_DUT_INST(
-.image_V_dout(image_V_dout),
-.image_V_empty_n(image_V_empty_n),
-.image_V_read(image_V_read),
+.image_V_TDATA(image_V_TDATA),
 .weights_address0(weights_address0),
 .weights_ce0(weights_ce0),
 .weights_d0(weights_d0),
@@ -144,14 +139,15 @@ reg interface_done = 0;
 .weights_d1(weights_d1),
 .weights_q1(weights_q1),
 .weights_we1(weights_we1),
-.conv_output_V_din(conv_output_V_din),
-.conv_output_V_full_n(conv_output_V_full_n),
-.conv_output_V_write(conv_output_V_write),
+.conv_output_V_TDATA(conv_output_V_TDATA),
 .done(done),
 .ap_clk(ap_clk),
-.ap_rst(ap_rst),
+.ap_rst_n(ap_rst_n),
+.image_V_TVALID(image_V_TVALID),
+.image_V_TREADY(image_V_TREADY),
+.conv_output_V_TVALID(conv_output_V_TVALID),
+.conv_output_V_TREADY(conv_output_V_TREADY),
 .ap_done(ap_done),
-.done_ap_vld(done_ap_vld),
 .ap_start(ap_start),
 .ap_idle(ap_idle),
 .ap_ready(ap_ready)
@@ -159,8 +155,8 @@ reg interface_done = 0;
 
 // Assignment for control signal
   assign ap_clk = AESL_clock;
-  assign ap_rst = AESL_reset;
-  assign ap_rst_n = ~AESL_reset;
+  assign ap_rst_n = AESL_reset;
+  assign ap_rst_n_n = ~AESL_reset;
   assign AESL_reset = rst;
   assign AESL_done = ap_done;
   assign ap_start = AESL_start;
@@ -171,7 +167,7 @@ reg interface_done = 0;
   assign AESL_continue = continue;
   always @(posedge AESL_clock)
   begin
-    if(AESL_reset)
+    if(AESL_reset === 0)
       ;
       else begin
           if ( AESL_done !== 1 && AESL_done !== 0 ) begin 
@@ -182,7 +178,7 @@ reg interface_done = 0;
   end
   always @(posedge AESL_clock)
   begin
-    if(AESL_reset)
+    if(AESL_reset === 0)
       ;
       else begin
           if ( AESL_ready !== 1 && AESL_ready !== 0 ) begin 
@@ -191,54 +187,6 @@ reg interface_done = 0;
           end
       end
   end
-//------------------------Fifoimage_V Instantiation--------------
-
-// The input and output of fifoimage_V
-wire        fifoimage_V_rd;
-wire        [7 : 0] fifoimage_V_dout;
-wire        fifoimage_V_empty_n;
-wire  fifoimage_V_ready;
-wire  fifoimage_V_done;
-integer ap_c_n_tvin_image_V_trans_num;
-reg   image_V_ready_reg;
-
-`AESL_FIFO_image_V `AESL_FIFO_INST_image_V(
-    .clk          (AESL_clock),
-    .reset        (AESL_reset),
-    .if_write     (),
-    .if_din       (),
-    .if_full_n    (),
-    .if_read      (fifoimage_V_rd),
-    .if_dout      (fifoimage_V_dout),
-    .if_empty_n   (fifoimage_V_empty_n),
-    .ready        (fifoimage_V_ready),
-    .done         (fifoimage_V_done)
-);
-
-// Assignment between dut and fifoimage_V
-
-// Assign input of fifoimage_V
-assign      fifoimage_V_rd        =   image_V_read & image_V_empty_n;
-assign    fifoimage_V_ready   =   image_V_ready_reg | ready_initial;
-assign    fifoimage_V_done    =   0;
-// Assign input of dut
-assign      image_V_dout       =   fifoimage_V_dout;
-reg   reg_fifoimage_V_empty_n;
-initial begin : gen_reg_fifoimage_V_empty_n_process
-    integer rand;
-    reg_fifoimage_V_empty_n = fifoimage_V_empty_n;
-    while(1)
-    begin
-        @(fifoimage_V_empty_n);
-        if(fifoimage_V_empty_n === 1)
-        begin
-        end
-        reg_fifoimage_V_empty_n = fifoimage_V_empty_n;
-    end
-end
-
-assign      image_V_empty_n    =   reg_fifoimage_V_empty_n;
-
 
 //------------------------arrayweights Instantiation--------------
 
@@ -274,70 +222,24 @@ assign arrayweights_ce0 = weights_ce0;
 assign weights_q0 = arrayweights_dout0;
 assign arrayweights_we0 = 0;
 assign arrayweights_din0 = 0;
+assign arrayweights_address1 = weights_address1;
+assign arrayweights_ce1 = weights_ce1;
+assign weights_q1 = arrayweights_dout1;
 assign arrayweights_we1 = 0;
 assign arrayweights_din1 = 0;
 assign arrayweights_ready=	ready;
 assign arrayweights_done = 0;
 
 
-//------------------------Fifoconv_output_V Instantiation--------------
 
-// The input and output of fifoconv_output_V
-wire  fifoconv_output_V_wr;
-wire  [31 : 0] fifoconv_output_V_din;
-wire  fifoconv_output_V_full_n;
-wire  fifoconv_output_V_ready;
-wire  fifoconv_output_V_done;
-
-`AESL_FIFO_conv_output_V `AESL_FIFO_INST_conv_output_V(
-    .clk          (AESL_clock),
-    .reset        (AESL_reset),
-    .if_write     (fifoconv_output_V_wr),
-    .if_din       (fifoconv_output_V_din),
-    .if_full_n    (fifoconv_output_V_full_n),
-    .if_read      (),
-    .if_dout      (),
-    .if_empty_n   (),
-    .ready        (fifoconv_output_V_ready),
-    .done         (fifoconv_output_V_done)
-);
-
-// Assignment between dut and fifoconv_output_V
-
-// Assign input of fifoconv_output_V
-assign      fifoconv_output_V_wr        =   conv_output_V_write & conv_output_V_full_n;
-assign      fifoconv_output_V_din        =   conv_output_V_din;
-assign    fifoconv_output_V_ready   =  0;   //ready_initial | AESL_done_delay;
-assign    fifoconv_output_V_done    =   AESL_done_delay;
-// Assign input of dut
-reg   reg_fifoconv_output_V_full_n;
-initial begin : gen_reg_fifoconv_output_V_full_n_process
-    integer rand;
-    reg_fifoconv_output_V_full_n = fifoconv_output_V_full_n;
-    while(1)
-    begin
-        @(fifoconv_output_V_full_n);
-        if(fifoconv_output_V_full_n === 1)
-        begin
-        end
-        reg_fifoconv_output_V_full_n = fifoconv_output_V_full_n;
-    end
-end
-
-assign      conv_output_V_full_n    =   reg_fifoconv_output_V_full_n;
-
-
-reg AESL_REG_done_ap_vld = 0;
 // The signal of port done
-reg [31: 0] AESL_REG_done = 0;
+reg [0: 0] AESL_REG_done = 0;
 always @(posedge AESL_clock)
 begin
-    if(AESL_reset)
+    if(AESL_reset === 0)
         AESL_REG_done = 0; 
-    else if(done_ap_vld) begin
+    else
         AESL_REG_done <= done;
-        AESL_REG_done_ap_vld <= 1;
-    end
 end 
 
 initial begin : write_file_process_done
@@ -352,7 +254,7 @@ initial begin : write_file_process_done
     reg [183  : 0] token;
     integer transaction_idx;
     reg [ 8*5 : 1] str;
-    wait(AESL_reset === 0);
+    wait(AESL_reset === 1);
     fp = $fopen(`AUTOTB_TVOUT_done_out_wrapc,"w");
     if(fp == 0) begin       // Failed to open file
         $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_done_out_wrapc);
@@ -368,10 +270,7 @@ initial begin : write_file_process_done
 	      end
         # 0.4;
         $fdisplay(fp,"[[transaction]] %d", transaction_idx);
-        if(AESL_REG_done_ap_vld)  begin
 	      $fdisplay(fp,"0x%x", AESL_REG_done);
-        AESL_REG_done_ap_vld = 0;
-        end
     transaction_idx = transaction_idx + 1;
 	  $fdisplay(fp,"[[/transaction]]");
     end
@@ -380,9 +279,79 @@ initial begin : write_file_process_done
 end
 
 
+integer ap_c_n_tvin_image_V_trans_num;
+reg  image_V_ready_reg;
+wire image_V_ready;
+wire image_V_done;
+wire axi_s_image_V_TVALID;
+wire axi_s_image_V_TREADY;
+  AESL_axi_s_image_V AESL_AXI_S_image_V(
+    .clk   (AESL_clock),
+    .reset (AESL_reset),
+    .TRAN_image_V_TDATA (image_V_TDATA),
+    .TRAN_image_V_TVALID (axi_s_image_V_TVALID),
+    .TRAN_image_V_TREADY (axi_s_image_V_TREADY),
+    .ready (image_V_ready),
+    .done  (image_V_done)
+);
+assign    image_V_ready   =   image_V_ready_reg | ready_initial;
+assign    image_V_done    =   0;
+
+reg   reg_image_V_TVALID;
+initial begin : gen_reg_image_V_TVALID_process
+    integer rand;
+    reg_image_V_TVALID = axi_s_image_V_TVALID;
+    while(1)
+    begin
+        @(axi_s_image_V_TVALID);
+        if(axi_s_image_V_TVALID === 1)
+        begin
+        end
+        reg_image_V_TVALID = axi_s_image_V_TVALID;
+    end
+end
+
+assign      image_V_TVALID    =   reg_image_V_TVALID;
+
+assign      axi_s_image_V_TREADY    =   image_V_TREADY;
+
+integer ap_c_n_tvin_conv_output_V_trans_num;
+reg  conv_output_V_ready_reg;
+wire conv_output_V_ready;
+wire conv_output_V_done;
+wire axi_s_conv_output_V_TVALID;
+wire axi_s_conv_output_V_TREADY;
+  AESL_axi_s_conv_output_V AESL_AXI_S_conv_output_V(
+    .clk   (AESL_clock),
+    .reset (AESL_reset),
+    .TRAN_conv_output_V_TDATA (conv_output_V_TDATA),
+    .TRAN_conv_output_V_TVALID (axi_s_conv_output_V_TVALID),
+    .TRAN_conv_output_V_TREADY (axi_s_conv_output_V_TREADY),
+    .ready (conv_output_V_ready),
+    .done  (conv_output_V_done)
+);
+assign    conv_output_V_ready   =   0;
+assign    conv_output_V_done    =   AESL_done_delay;
+
+assign      axi_s_conv_output_V_TVALID    =   conv_output_V_TVALID;
+
+reg   reg_conv_output_V_TREADY;
+initial begin : gen_reg_conv_output_V_TREADY_process
+    integer rand;
+    reg_conv_output_V_TREADY = 0;
+    while(1)
+    begin
+        @(axi_s_conv_output_V_TREADY);
+        reg_conv_output_V_TREADY = axi_s_conv_output_V_TREADY;
+    end
+end
+
+assign      conv_output_V_TREADY    =   reg_conv_output_V_TREADY;
+
+
 initial begin : generate_AESL_ready_cnt_proc
     AESL_ready_cnt = 0;
-    wait(AESL_reset === 0);
+    wait(AESL_reset === 1);
     while(AESL_ready_cnt != `AUTOTB_TRANSACTION_NUM) begin
         while(AESL_ready !== 1) begin
             @(posedge AESL_clock);
@@ -397,7 +366,7 @@ end
 
 initial begin : generate_ready_cnt_proc
     ready_cnt = 0;
-    wait(AESL_reset === 0);
+    wait(AESL_reset === 1);
     while(ready_cnt != `AUTOTB_TRANSACTION_NUM) begin
         while(ready !== 1) begin
             @(posedge AESL_clock);
@@ -412,7 +381,7 @@ end
 
 initial begin : generate_done_cnt_proc
     done_cnt = 0;
-    wait(AESL_reset === 0);
+    wait(AESL_reset === 1);
     while(done_cnt != `AUTOTB_TRANSACTION_NUM) begin
         while(AESL_done !== 1) begin
             @(posedge AESL_clock);
@@ -435,17 +404,17 @@ join
 
 initial begin : initial_process
     integer rand;
-    rst = 1;
+    rst = 0;
     # 100;
 	  repeat(3) @(posedge AESL_clock);
-    rst = 0;
+    rst = 1;
 end
 
 initial begin : start_process
   integer rand;
   start = 0;
   ce = 1;
-    wait(AESL_reset === 0);
+    wait(AESL_reset === 1);
   @(posedge AESL_clock);
   start <= 1;
   while(ready_cnt != `AUTOTB_TRANSACTION_NUM + 1) begin
@@ -473,7 +442,7 @@ end
 
 always @(posedge AESL_clock)
 begin
-    if(AESL_reset)
+    if(AESL_reset === 0)
       AESL_ready_delay = 0;
   else
       AESL_ready_delay = AESL_ready;
@@ -487,7 +456,7 @@ end
 
 always @(posedge AESL_clock)
 begin
-    if(AESL_reset)
+    if(AESL_reset === 0)
       ready_delay_last_n = 0;
   else
       ready_delay_last_n <= ready_last_n;
@@ -504,7 +473,7 @@ end
 
 always @(posedge AESL_clock)
 begin
-    if(AESL_reset)
+    if(AESL_reset === 0)
   begin
       AESL_done_delay <= 0;
       AESL_done_delay2 <= 0;
@@ -516,7 +485,7 @@ begin
 end
 always @(posedge AESL_clock)
 begin
-    if(AESL_reset)
+    if(AESL_reset === 0)
       interface_done = 0;
   else begin
       # 0.01;
@@ -530,13 +499,15 @@ begin
 end
 initial begin : proc_gen_image_V_internal_ready
     integer internal_trans_num;
-    wait(AESL_reset === 0);
+    wait(AESL_reset === 1);
     wait(ready_initial === 1);
     image_V_ready_reg <= 0;
     @(posedge AESL_clock);
     internal_trans_num = 1;
     while(internal_trans_num != `AUTOTB_TRANSACTION_NUM + 1) begin
-        if (ap_c_n_tvin_image_V_trans_num > internal_trans_num) begin
+      if (1
+          && ap_c_n_tvin_image_V_trans_num > internal_trans_num
+      ) begin
             image_V_ready_reg <= 1;
             @(posedge AESL_clock);
             image_V_ready_reg <= 0;
@@ -585,7 +556,7 @@ initial begin : proc_ap_c_n_tvin_image_V_trans_num
             $finish;
         end
         while (i != size) begin
-            if (image_V_read == 1) begin 
+            if (image_V_TREADY == 1) begin 
                i = i + 1;
            end 
            if (i != size) begin
@@ -633,7 +604,7 @@ initial begin : write_output_transactor_conv_output_V_runtime_process
 end
 
 always @ (negedge AESL_clock) begin
-    if(AESL_reset)
+    if(AESL_reset === 0)
     begin
         AESL_clk_counter <= 0;
     end 
@@ -642,8 +613,8 @@ always @ (negedge AESL_clock) begin
     end    
 end
 
-always @ (posedge AESL_clock or posedge AESL_reset) begin
-    if(AESL_reset)
+always @ (posedge AESL_clock or negedge AESL_reset) begin
+    if(AESL_reset === 0)
     begin
         AESL_mLatCnterOut_addr = 0;
         AESL_mLatCnterOut[AESL_mLatCnterOut_addr] = AESL_clk_counter + 1;
@@ -656,7 +627,7 @@ always @ (posedge AESL_clock or posedge AESL_reset) begin
     end
     else if (reported_stuck == 0 && reported_stuck_cnt < 4) begin
         if ( AESL_mLatCnterIn_addr > AESL_mLatCnterOut_addr ) begin
-          if ( AESL_clk_counter - AESL_mLatCnterIn[AESL_mLatCnterOut_addr] > 10 * 299607 ) begin
+          if ( AESL_clk_counter - AESL_mLatCnterIn[AESL_mLatCnterOut_addr] > 10 * 91881 ) begin
               $display("WARNING: The latency is much larger than expected. Simulation may stuck.");
               reported_stuck <= 1;
               reported_stuck_cnt <= reported_stuck_cnt + 1;
@@ -665,8 +636,8 @@ always @ (posedge AESL_clock or posedge AESL_reset) begin
     end
 end
 
-always @ (posedge AESL_clock or posedge AESL_reset) begin
-    if(AESL_reset)
+always @ (posedge AESL_clock or negedge AESL_reset) begin
+    if(AESL_reset === 0)
     begin
         AESL_mLatCnterIn_addr = 0;
     end
@@ -716,7 +687,7 @@ initial begin : performance_check
 	thraver = 0;
 
 	@(negedge AESL_clock);
-	@(negedge AESL_reset);
+	@(posedge AESL_reset);
 	while (done_cnt != `AUTOTB_TRANSACTION_NUM) begin
 		@(posedge AESL_clock);
 	end

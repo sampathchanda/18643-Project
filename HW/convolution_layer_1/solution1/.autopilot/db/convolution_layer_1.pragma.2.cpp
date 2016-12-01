@@ -38876,13 +38876,13 @@ void convolve(
   hls::stream<uint8_t> &conv_output,
   bool *done){_ssdm_SpecArrayDimSize(weights,(5 /* size of the convolution window*/ * 5 /* size of the convolution window*/));
 _ssdm_op_SpecInterface(done, "ap_none", 0, 0, 0, 0, "", "", "");
-_ssdm_op_SpecInterface(weights, "ap_memory", 0, 0, 0, 0, "", "", "");
+_ssdm_op_SpecInterface(weights, "bram", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecDataflowPipeline(-1, "");
-_ssdm_SpecStream( &conv_output, 0, 0, "");
-_ssdm_SpecStream( &image, 0, 0, "");
+_ssdm_op_SpecInterface(&conv_output, "axis", 0, 0, 0, 0, "", "", "");
+_ssdm_op_SpecInterface(&image, "axis", 0, 0, 0, 0, "", "", "");
 
  // std::cout << "successfully entered simulation" << std::endl;
- uint8_t linebuff[((28 /* width of the image*/ * (5 /* size of the convolution window*/ - 1) + 5 /* size of the convolution window*/) - 1) + 1];
+ int linebuff[((28 /* width of the image*/ * (5 /* size of the convolution window*/ - 1) + 5 /* size of the convolution window*/) - 1) + 1];
 
  uint8_t read;
  float output = 0;
@@ -38891,15 +38891,14 @@ _ssdm_SpecStream( &image, 0, 0, "");
 
  // reset the line buffer
  BUFFER_RESET: for(int pos = 0; pos < (28 /* width of the image*/ * (5 /* size of the convolution window*/ - 1) + 5 /* size of the convolution window*/); pos++) {
-_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
- linebuff[pos] = 0;
+  linebuff[pos] = 0;
  }
 
  SCAN_LINE: for(int pixels_read = 0;
    pixels_read < 28 /* width of the image*/ * 28 /* height of the image*/;
    pixels_read++) {
-
-  // read the FIFO
+_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
+ // read the FIFO
   read = image.read();
   output = 0;
   m = pixels_read - t;
@@ -38913,8 +38912,7 @@ _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
 
   // Saving data into a buffer
   BUFFER_SHIFT: for(int pos = 0; pos < (28 /* width of the image*/ * (5 /* size of the convolution window*/ - 1) + 5 /* size of the convolution window*/); pos++) {
-_ssdm_op_SpecPipeline(2, 1, 1, 0, "");
- linebuff[pos] = pos < (28 /* width of the image*/ * (5 /* size of the convolution window*/ - 1) + 5 /* size of the convolution window*/) - 1 ? linebuff[pos + 1] :
+   linebuff[pos] = pos < (28 /* width of the image*/ * (5 /* size of the convolution window*/ - 1) + 5 /* size of the convolution window*/) - 1 ? linebuff[pos + 1] :
      read;
   }
 
@@ -38922,8 +38920,7 @@ _ssdm_op_SpecPipeline(2, 1, 1, 0, "");
     inner_loop < 5 /* size of the convolution window*/; inner_loop++) {
    for(int outer_loop = 0;
      outer_loop < 5 /* size of the convolution window*/; outer_loop++) {
-_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
- output += linebuff[inner_loop * 28 /* width of the image*/ +
+    output += linebuff[inner_loop * 28 /* width of the image*/ +
          outer_loop]
                        * weights[inner_loop *
           5 /* size of the convolution window*/ + outer_loop];
@@ -38948,5 +38945,6 @@ _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
 
 uint8_t relu(float input) {
 _ssdm_InlineSelf(0, "");
- return input > 0 ? input : 0;
+ int temp = input > 0 ? input : 0;
+ return temp > 255 ? 255 : temp;
 }

@@ -6,19 +6,21 @@ Determining compilation order of HDL files.
 WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/convolve_fcmp_32ns_32ns_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module convolve_fcmp_32ns_32ns_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/AESL_axi_s_conv_output_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_conv_output_V
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/convolve_sitofp_32ns_32_6.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module convolve_sitofp_32ns_32_6
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/AESL_autofifo_image_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_autofifo_image_V
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/convolve_Loop_BUFFER_RESET_proc_linebuff.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module convolve_Loop_BUFFER_RESET_proc_linebuff_ram
 INFO: [VRFC 10-311] analyzing module convolve_Loop_BUFFER_RESET_proc_linebuff
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/AESL_axi_s_image_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_image_V
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/convolve.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module convolve
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/convolve_Loop_BUFFER_RESET_proc.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module convolve_Loop_BUFFER_RESET_proc
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/AESL_autofifo_conv_output_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_autofifo_conv_output_V
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/convolve_Block_proc.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module convolve_Block_proc
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/sim/verilog/convolve.autotb.v" into library xil_defaultlib
@@ -493,9 +495,9 @@ Compiling module xil_defaultlib.convolve_fcmp_32ns_32ns_1_1(ID=1...
 Compiling module xil_defaultlib.convolve_Loop_BUFFER_RESET_proc
 Compiling module xil_defaultlib.convolve_Block_proc
 Compiling module xil_defaultlib.convolve
-Compiling module xil_defaultlib.AESL_autofifo_image_V
 Compiling module xil_defaultlib.AESL_automem_weights
-Compiling module xil_defaultlib.AESL_autofifo_conv_output_V
+Compiling module xil_defaultlib.AESL_axi_s_image_V
+Compiling module xil_defaultlib.AESL_axi_s_conv_output_V
 Compiling module xil_defaultlib.apatb_convolve_top
-Waiting for 4 sub-compilation(s) to finish...
+Waiting for 5 sub-compilation(s) to finish...
 Built simulation snapshot convolve

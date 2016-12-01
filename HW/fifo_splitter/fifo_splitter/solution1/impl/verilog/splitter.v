@@ -7,98 +7,99 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="splitter,hls_ip_2015_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=8.750000,HLS_SYN_LAT=786,HLS_SYN_TPT=787,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=19,HLS_SYN_LUT=27}" *)
+(* CORE_GENERATION_INFO="splitter,hls_ip_2015_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.439500,HLS_SYN_LAT=786,HLS_SYN_TPT=787,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=33,HLS_SYN_LUT=40}" *)
 
 module splitter (
-        input_V_dout,
-        input_V_empty_n,
-        input_V_read,
-        output_0_V_din,
-        output_0_V_full_n,
-        output_0_V_write,
-        output_1_V_din,
-        output_1_V_full_n,
-        output_1_V_write,
-        output_2_V_din,
-        output_2_V_full_n,
-        output_2_V_write,
-        output_3_V_din,
-        output_3_V_full_n,
-        output_3_V_write,
-        output_4_V_din,
-        output_4_V_full_n,
-        output_4_V_write,
-        output_5_V_din,
-        output_5_V_full_n,
-        output_5_V_write,
+        input_V_TDATA,
+        output_0_V_TDATA,
+        output_1_V_TDATA,
+        output_2_V_TDATA,
+        output_3_V_TDATA,
+        output_4_V_TDATA,
+        output_5_V_TDATA,
         ap_clk,
-        ap_rst,
+        ap_rst_n,
+        input_V_TVALID,
+        input_V_TREADY,
+        output_0_V_TVALID,
+        output_0_V_TREADY,
+        output_1_V_TVALID,
+        output_1_V_TREADY,
+        output_2_V_TVALID,
+        output_2_V_TREADY,
+        output_3_V_TVALID,
+        output_3_V_TREADY,
+        output_4_V_TVALID,
+        output_4_V_TREADY,
+        output_5_V_TVALID,
+        output_5_V_TREADY,
         ap_done,
         ap_start,
         ap_idle,
         ap_ready
 );
 
-parameter    ap_const_logic_0 = 1'b0;
 parameter    ap_const_lv8_0 = 8'b00000000;
 parameter    ap_const_logic_1 = 1'b1;
 parameter    ap_true = 1'b1;
+parameter    ap_const_logic_0 = 1'b0;
 
-input  [7:0] input_V_dout;
-input   input_V_empty_n;
-output   input_V_read;
-output  [7:0] output_0_V_din;
-input   output_0_V_full_n;
-output   output_0_V_write;
-output  [7:0] output_1_V_din;
-input   output_1_V_full_n;
-output   output_1_V_write;
-output  [7:0] output_2_V_din;
-input   output_2_V_full_n;
-output   output_2_V_write;
-output  [7:0] output_3_V_din;
-input   output_3_V_full_n;
-output   output_3_V_write;
-output  [7:0] output_4_V_din;
-input   output_4_V_full_n;
-output   output_4_V_write;
-output  [7:0] output_5_V_din;
-input   output_5_V_full_n;
-output   output_5_V_write;
+input  [7:0] input_V_TDATA;
+output  [7:0] output_0_V_TDATA;
+output  [7:0] output_1_V_TDATA;
+output  [7:0] output_2_V_TDATA;
+output  [7:0] output_3_V_TDATA;
+output  [7:0] output_4_V_TDATA;
+output  [7:0] output_5_V_TDATA;
 input   ap_clk;
-input   ap_rst;
+input   ap_rst_n;
+input   input_V_TVALID;
+output   input_V_TREADY;
+output   output_0_V_TVALID;
+input   output_0_V_TREADY;
+output   output_1_V_TVALID;
+input   output_1_V_TREADY;
+output   output_2_V_TVALID;
+input   output_2_V_TREADY;
+output   output_3_V_TVALID;
+input   output_3_V_TREADY;
+output   output_4_V_TVALID;
+input   output_4_V_TREADY;
+output   output_5_V_TVALID;
+input   output_5_V_TREADY;
 output   ap_done;
 input   ap_start;
 output   ap_idle;
 output   ap_ready;
 
 reg ap_idle;
+reg    ap_rst_n_inv;
 wire    splitter_Loop_1_proc_U0_ap_start;
 wire    splitter_Loop_1_proc_U0_ap_done;
 wire    splitter_Loop_1_proc_U0_ap_continue;
 wire    splitter_Loop_1_proc_U0_ap_idle;
 wire    splitter_Loop_1_proc_U0_ap_ready;
-wire   [7:0] splitter_Loop_1_proc_U0_input_V_dout;
-wire    splitter_Loop_1_proc_U0_input_V_empty_n;
-wire    splitter_Loop_1_proc_U0_input_V_read;
-wire   [7:0] splitter_Loop_1_proc_U0_output_0_V_din;
-wire    splitter_Loop_1_proc_U0_output_0_V_full_n;
-wire    splitter_Loop_1_proc_U0_output_0_V_write;
-wire   [7:0] splitter_Loop_1_proc_U0_output_1_V_din;
-wire    splitter_Loop_1_proc_U0_output_1_V_full_n;
-wire    splitter_Loop_1_proc_U0_output_1_V_write;
-wire   [7:0] splitter_Loop_1_proc_U0_output_2_V_din;
-wire    splitter_Loop_1_proc_U0_output_2_V_full_n;
-wire    splitter_Loop_1_proc_U0_output_2_V_write;
-wire   [7:0] splitter_Loop_1_proc_U0_output_3_V_din;
-wire    splitter_Loop_1_proc_U0_output_3_V_full_n;
-wire    splitter_Loop_1_proc_U0_output_3_V_write;
-wire   [7:0] splitter_Loop_1_proc_U0_output_4_V_din;
-wire    splitter_Loop_1_proc_U0_output_4_V_full_n;
-wire    splitter_Loop_1_proc_U0_output_4_V_write;
-wire   [7:0] splitter_Loop_1_proc_U0_output_5_V_din;
-wire    splitter_Loop_1_proc_U0_output_5_V_full_n;
-wire    splitter_Loop_1_proc_U0_output_5_V_write;
+wire   [7:0] splitter_Loop_1_proc_U0_input_V_TDATA;
+wire    splitter_Loop_1_proc_U0_input_V_TVALID;
+wire    splitter_Loop_1_proc_U0_input_V_TREADY;
+wire   [7:0] splitter_Loop_1_proc_U0_output_0_V_TDATA;
+wire    splitter_Loop_1_proc_U0_output_0_V_TVALID;
+wire    splitter_Loop_1_proc_U0_output_0_V_TREADY;
+wire   [7:0] splitter_Loop_1_proc_U0_output_1_V_TDATA;
+wire    splitter_Loop_1_proc_U0_output_1_V_TVALID;
+wire    splitter_Loop_1_proc_U0_output_1_V_TREADY;
+wire   [7:0] splitter_Loop_1_proc_U0_output_2_V_TDATA;
+wire    splitter_Loop_1_proc_U0_output_2_V_TVALID;
+wire    splitter_Loop_1_proc_U0_output_2_V_TREADY;
+wire   [7:0] splitter_Loop_1_proc_U0_output_3_V_TDATA;
+wire    splitter_Loop_1_proc_U0_output_3_V_TVALID;
+wire    splitter_Loop_1_proc_U0_output_3_V_TREADY;
+wire   [7:0] splitter_Loop_1_proc_U0_output_4_V_TDATA;
+wire    splitter_Loop_1_proc_U0_output_4_V_TVALID;
+wire    splitter_Loop_1_proc_U0_output_4_V_TREADY;
+wire   [7:0] splitter_Loop_1_proc_U0_output_5_V_TDATA;
+wire    splitter_Loop_1_proc_U0_output_5_V_TVALID;
+wire    splitter_Loop_1_proc_U0_output_5_V_TREADY;
 wire    ap_sig_hs_continue;
 reg    ap_reg_procdone_splitter_Loop_1_proc_U0 = 1'b0;
 reg    ap_sig_hs_done;
@@ -108,33 +109,33 @@ wire    ap_sig_top_allready;
 
 splitter_Loop_1_proc splitter_Loop_1_proc_U0(
     .ap_clk( ap_clk ),
-    .ap_rst( ap_rst ),
+    .ap_rst( ap_rst_n_inv ),
     .ap_start( splitter_Loop_1_proc_U0_ap_start ),
     .ap_done( splitter_Loop_1_proc_U0_ap_done ),
     .ap_continue( splitter_Loop_1_proc_U0_ap_continue ),
     .ap_idle( splitter_Loop_1_proc_U0_ap_idle ),
     .ap_ready( splitter_Loop_1_proc_U0_ap_ready ),
-    .input_V_dout( splitter_Loop_1_proc_U0_input_V_dout ),
-    .input_V_empty_n( splitter_Loop_1_proc_U0_input_V_empty_n ),
-    .input_V_read( splitter_Loop_1_proc_U0_input_V_read ),
-    .output_0_V_din( splitter_Loop_1_proc_U0_output_0_V_din ),
-    .output_0_V_full_n( splitter_Loop_1_proc_U0_output_0_V_full_n ),
-    .output_0_V_write( splitter_Loop_1_proc_U0_output_0_V_write ),
-    .output_1_V_din( splitter_Loop_1_proc_U0_output_1_V_din ),
-    .output_1_V_full_n( splitter_Loop_1_proc_U0_output_1_V_full_n ),
-    .output_1_V_write( splitter_Loop_1_proc_U0_output_1_V_write ),
-    .output_2_V_din( splitter_Loop_1_proc_U0_output_2_V_din ),
-    .output_2_V_full_n( splitter_Loop_1_proc_U0_output_2_V_full_n ),
-    .output_2_V_write( splitter_Loop_1_proc_U0_output_2_V_write ),
-    .output_3_V_din( splitter_Loop_1_proc_U0_output_3_V_din ),
-    .output_3_V_full_n( splitter_Loop_1_proc_U0_output_3_V_full_n ),
-    .output_3_V_write( splitter_Loop_1_proc_U0_output_3_V_write ),
-    .output_4_V_din( splitter_Loop_1_proc_U0_output_4_V_din ),
-    .output_4_V_full_n( splitter_Loop_1_proc_U0_output_4_V_full_n ),
-    .output_4_V_write( splitter_Loop_1_proc_U0_output_4_V_write ),
-    .output_5_V_din( splitter_Loop_1_proc_U0_output_5_V_din ),
-    .output_5_V_full_n( splitter_Loop_1_proc_U0_output_5_V_full_n ),
-    .output_5_V_write( splitter_Loop_1_proc_U0_output_5_V_write )
+    .input_V_TDATA( splitter_Loop_1_proc_U0_input_V_TDATA ),
+    .input_V_TVALID( splitter_Loop_1_proc_U0_input_V_TVALID ),
+    .input_V_TREADY( splitter_Loop_1_proc_U0_input_V_TREADY ),
+    .output_0_V_TDATA( splitter_Loop_1_proc_U0_output_0_V_TDATA ),
+    .output_0_V_TVALID( splitter_Loop_1_proc_U0_output_0_V_TVALID ),
+    .output_0_V_TREADY( splitter_Loop_1_proc_U0_output_0_V_TREADY ),
+    .output_1_V_TDATA( splitter_Loop_1_proc_U0_output_1_V_TDATA ),
+    .output_1_V_TVALID( splitter_Loop_1_proc_U0_output_1_V_TVALID ),
+    .output_1_V_TREADY( splitter_Loop_1_proc_U0_output_1_V_TREADY ),
+    .output_2_V_TDATA( splitter_Loop_1_proc_U0_output_2_V_TDATA ),
+    .output_2_V_TVALID( splitter_Loop_1_proc_U0_output_2_V_TVALID ),
+    .output_2_V_TREADY( splitter_Loop_1_proc_U0_output_2_V_TREADY ),
+    .output_3_V_TDATA( splitter_Loop_1_proc_U0_output_3_V_TDATA ),
+    .output_3_V_TVALID( splitter_Loop_1_proc_U0_output_3_V_TVALID ),
+    .output_3_V_TREADY( splitter_Loop_1_proc_U0_output_3_V_TREADY ),
+    .output_4_V_TDATA( splitter_Loop_1_proc_U0_output_4_V_TDATA ),
+    .output_4_V_TVALID( splitter_Loop_1_proc_U0_output_4_V_TVALID ),
+    .output_4_V_TREADY( splitter_Loop_1_proc_U0_output_4_V_TREADY ),
+    .output_5_V_TDATA( splitter_Loop_1_proc_U0_output_5_V_TDATA ),
+    .output_5_V_TVALID( splitter_Loop_1_proc_U0_output_5_V_TVALID ),
+    .output_5_V_TREADY( splitter_Loop_1_proc_U0_output_5_V_TREADY )
 );
 
 
@@ -142,7 +143,7 @@ splitter_Loop_1_proc splitter_Loop_1_proc_U0(
 /// ap_reg_procdone_splitter_Loop_1_proc_U0 assign process. ///
 always @ (posedge ap_clk)
 begin : ap_ret_ap_reg_procdone_splitter_Loop_1_proc_U0
-    if (ap_rst == 1'b1) begin
+    if (ap_rst_n_inv == 1'b1) begin
         ap_reg_procdone_splitter_Loop_1_proc_U0 <= ap_const_logic_0;
     end else begin
         if ((ap_const_logic_1 == ap_sig_hs_done)) begin
@@ -180,31 +181,37 @@ begin
 end
 assign ap_done = ap_sig_hs_done;
 assign ap_ready = ap_sig_top_allready;
+
+/// ap_rst_n_inv assign process. ///
+always @ (ap_rst_n)
+begin
+    ap_rst_n_inv = ~ap_rst_n;
+end
 assign ap_sig_hs_continue = ap_const_logic_1;
 assign ap_sig_top_allready = splitter_Loop_1_proc_U0_ap_ready;
-assign input_V_read = splitter_Loop_1_proc_U0_input_V_read;
-assign output_0_V_din = splitter_Loop_1_proc_U0_output_0_V_din;
-assign output_0_V_write = splitter_Loop_1_proc_U0_output_0_V_write;
-assign output_1_V_din = splitter_Loop_1_proc_U0_output_1_V_din;
-assign output_1_V_write = splitter_Loop_1_proc_U0_output_1_V_write;
-assign output_2_V_din = splitter_Loop_1_proc_U0_output_2_V_din;
-assign output_2_V_write = splitter_Loop_1_proc_U0_output_2_V_write;
-assign output_3_V_din = splitter_Loop_1_proc_U0_output_3_V_din;
-assign output_3_V_write = splitter_Loop_1_proc_U0_output_3_V_write;
-assign output_4_V_din = splitter_Loop_1_proc_U0_output_4_V_din;
-assign output_4_V_write = splitter_Loop_1_proc_U0_output_4_V_write;
-assign output_5_V_din = splitter_Loop_1_proc_U0_output_5_V_din;
-assign output_5_V_write = splitter_Loop_1_proc_U0_output_5_V_write;
+assign input_V_TREADY = splitter_Loop_1_proc_U0_input_V_TREADY;
+assign output_0_V_TDATA = splitter_Loop_1_proc_U0_output_0_V_TDATA;
+assign output_0_V_TVALID = splitter_Loop_1_proc_U0_output_0_V_TVALID;
+assign output_1_V_TDATA = splitter_Loop_1_proc_U0_output_1_V_TDATA;
+assign output_1_V_TVALID = splitter_Loop_1_proc_U0_output_1_V_TVALID;
+assign output_2_V_TDATA = splitter_Loop_1_proc_U0_output_2_V_TDATA;
+assign output_2_V_TVALID = splitter_Loop_1_proc_U0_output_2_V_TVALID;
+assign output_3_V_TDATA = splitter_Loop_1_proc_U0_output_3_V_TDATA;
+assign output_3_V_TVALID = splitter_Loop_1_proc_U0_output_3_V_TVALID;
+assign output_4_V_TDATA = splitter_Loop_1_proc_U0_output_4_V_TDATA;
+assign output_4_V_TVALID = splitter_Loop_1_proc_U0_output_4_V_TVALID;
+assign output_5_V_TDATA = splitter_Loop_1_proc_U0_output_5_V_TDATA;
+assign output_5_V_TVALID = splitter_Loop_1_proc_U0_output_5_V_TVALID;
 assign splitter_Loop_1_proc_U0_ap_continue = ap_sig_hs_continue;
 assign splitter_Loop_1_proc_U0_ap_start = ap_start;
-assign splitter_Loop_1_proc_U0_input_V_dout = input_V_dout;
-assign splitter_Loop_1_proc_U0_input_V_empty_n = input_V_empty_n;
-assign splitter_Loop_1_proc_U0_output_0_V_full_n = output_0_V_full_n;
-assign splitter_Loop_1_proc_U0_output_1_V_full_n = output_1_V_full_n;
-assign splitter_Loop_1_proc_U0_output_2_V_full_n = output_2_V_full_n;
-assign splitter_Loop_1_proc_U0_output_3_V_full_n = output_3_V_full_n;
-assign splitter_Loop_1_proc_U0_output_4_V_full_n = output_4_V_full_n;
-assign splitter_Loop_1_proc_U0_output_5_V_full_n = output_5_V_full_n;
+assign splitter_Loop_1_proc_U0_input_V_TDATA = input_V_TDATA;
+assign splitter_Loop_1_proc_U0_input_V_TVALID = input_V_TVALID;
+assign splitter_Loop_1_proc_U0_output_0_V_TREADY = output_0_V_TREADY;
+assign splitter_Loop_1_proc_U0_output_1_V_TREADY = output_1_V_TREADY;
+assign splitter_Loop_1_proc_U0_output_2_V_TREADY = output_2_V_TREADY;
+assign splitter_Loop_1_proc_U0_output_3_V_TREADY = output_3_V_TREADY;
+assign splitter_Loop_1_proc_U0_output_4_V_TREADY = output_4_V_TREADY;
+assign splitter_Loop_1_proc_U0_output_5_V_TREADY = output_5_V_TREADY;
 
 
 endmodule //splitter

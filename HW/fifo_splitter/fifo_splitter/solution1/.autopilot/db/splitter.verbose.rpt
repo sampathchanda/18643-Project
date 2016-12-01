@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'splitter'
 ================================================================
-* Date:           Sat Nov 26 12:05:58 2016
+* Date:           Wed Nov 30 17:14:55 2016
 
 * Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
 * Project:        fifo_splitter
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|      8.75|        1.25|
+    |ap_clk  |  10.00|      3.44|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -55,12 +55,12 @@
 +-----------------+---------+-------+--------+-------+
 |Expression       |        -|      -|       -|      -|
 |FIFO             |        -|      -|       -|      -|
-|Instance         |        -|      -|      17|     27|
+|Instance         |        -|      -|      31|     40|
 |Memory           |        -|      -|       -|      -|
 |Multiplexer      |        -|      -|       -|      -|
 |Register         |        -|      -|       2|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |        0|      0|      19|     27|
+|Total            |        0|      0|      33|     40|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
@@ -72,9 +72,9 @@
     +-------------------------+----------------------+---------+-------+----+----+
     |         Instance        |        Module        | BRAM_18K| DSP48E| FF | LUT|
     +-------------------------+----------------------+---------+-------+----+----+
-    |splitter_Loop_1_proc_U0  |splitter_Loop_1_proc  |        0|      0|  17|  27|
+    |splitter_Loop_1_proc_U0  |splitter_Loop_1_proc  |        0|      0|  31|  40|
     +-------------------------+----------------------+---------+-------+----+----+
-    |Total                    |                      |        0|      0|  17|  27|
+    |Total                    |                      |        0|      0|  31|  40|
     +-------------------------+----------------------+---------+-------+----+----+
 
     * Memory: 
@@ -108,29 +108,29 @@
 +-------------------+-----+-----+------------+--------------+--------------+
 |     RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
 +-------------------+-----+-----+------------+--------------+--------------+
-|input_V_dout       |  in |    8|   ap_fifo  |    input_V   |    pointer   |
-|input_V_empty_n    |  in |    1|   ap_fifo  |    input_V   |    pointer   |
-|input_V_read       | out |    1|   ap_fifo  |    input_V   |    pointer   |
-|output_0_V_din     | out |    8|   ap_fifo  |  output_0_V  |    pointer   |
-|output_0_V_full_n  |  in |    1|   ap_fifo  |  output_0_V  |    pointer   |
-|output_0_V_write   | out |    1|   ap_fifo  |  output_0_V  |    pointer   |
-|output_1_V_din     | out |    8|   ap_fifo  |  output_1_V  |    pointer   |
-|output_1_V_full_n  |  in |    1|   ap_fifo  |  output_1_V  |    pointer   |
-|output_1_V_write   | out |    1|   ap_fifo  |  output_1_V  |    pointer   |
-|output_2_V_din     | out |    8|   ap_fifo  |  output_2_V  |    pointer   |
-|output_2_V_full_n  |  in |    1|   ap_fifo  |  output_2_V  |    pointer   |
-|output_2_V_write   | out |    1|   ap_fifo  |  output_2_V  |    pointer   |
-|output_3_V_din     | out |    8|   ap_fifo  |  output_3_V  |    pointer   |
-|output_3_V_full_n  |  in |    1|   ap_fifo  |  output_3_V  |    pointer   |
-|output_3_V_write   | out |    1|   ap_fifo  |  output_3_V  |    pointer   |
-|output_4_V_din     | out |    8|   ap_fifo  |  output_4_V  |    pointer   |
-|output_4_V_full_n  |  in |    1|   ap_fifo  |  output_4_V  |    pointer   |
-|output_4_V_write   | out |    1|   ap_fifo  |  output_4_V  |    pointer   |
-|output_5_V_din     | out |    8|   ap_fifo  |  output_5_V  |    pointer   |
-|output_5_V_full_n  |  in |    1|   ap_fifo  |  output_5_V  |    pointer   |
-|output_5_V_write   | out |    1|   ap_fifo  |  output_5_V  |    pointer   |
+|input_V_TDATA      |  in |    8|    axis    |    input_V   |    pointer   |
+|input_V_TVALID     |  in |    1|    axis    |    input_V   |    pointer   |
+|input_V_TREADY     | out |    1|    axis    |    input_V   |    pointer   |
+|output_0_V_TDATA   | out |    8|    axis    |  output_0_V  |    pointer   |
+|output_0_V_TVALID  | out |    1|    axis    |  output_0_V  |    pointer   |
+|output_0_V_TREADY  |  in |    1|    axis    |  output_0_V  |    pointer   |
+|output_1_V_TDATA   | out |    8|    axis    |  output_1_V  |    pointer   |
+|output_1_V_TVALID  | out |    1|    axis    |  output_1_V  |    pointer   |
+|output_1_V_TREADY  |  in |    1|    axis    |  output_1_V  |    pointer   |
+|output_2_V_TDATA   | out |    8|    axis    |  output_2_V  |    pointer   |
+|output_2_V_TVALID  | out |    1|    axis    |  output_2_V  |    pointer   |
+|output_2_V_TREADY  |  in |    1|    axis    |  output_2_V  |    pointer   |
+|output_3_V_TDATA   | out |    8|    axis    |  output_3_V  |    pointer   |
+|output_3_V_TVALID  | out |    1|    axis    |  output_3_V  |    pointer   |
+|output_3_V_TREADY  |  in |    1|    axis    |  output_3_V  |    pointer   |
+|output_4_V_TDATA   | out |    8|    axis    |  output_4_V  |    pointer   |
+|output_4_V_TVALID  | out |    1|    axis    |  output_4_V  |    pointer   |
+|output_4_V_TREADY  |  in |    1|    axis    |  output_4_V  |    pointer   |
+|output_5_V_TDATA   | out |    8|    axis    |  output_5_V  |    pointer   |
+|output_5_V_TVALID  | out |    1|    axis    |  output_5_V  |    pointer   |
+|output_5_V_TREADY  |  in |    1|    axis    |  output_5_V  |    pointer   |
 |ap_clk             |  in |    1| ap_ctrl_hs |   splitter   | return value |
-|ap_rst             |  in |    1| ap_ctrl_hs |   splitter   | return value |
+|ap_rst_n           |  in |    1| ap_ctrl_hs |   splitter   | return value |
 |ap_done            | out |    1| ap_ctrl_hs |   splitter   | return value |
 |ap_start           |  in |    1| ap_ctrl_hs |   splitter   | return value |
 |ap_idle            | out |    1| ap_ctrl_hs |   splitter   | return value |
@@ -183,50 +183,50 @@ codeRepl:16  call fastcc void @splitter_Loop_1_proc(i8* %input_V, i8* %output_0_
 ST_2: stg_4 [1/1] 0.00ns
 codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str) nounwind
 
-ST_2: empty [1/1] 0.00ns
-codeRepl:1  %empty = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_5 [1/1] 0.00ns
+codeRepl:1  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_5_V), !map !0
 
-ST_2: empty_3 [1/1] 0.00ns
-codeRepl:2  %empty_3 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_6 [1/1] 0.00ns
+codeRepl:2  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_4_V), !map !6
 
-ST_2: empty_4 [1/1] 0.00ns
-codeRepl:3  %empty_4 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_7 [1/1] 0.00ns
+codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_3_V), !map !12
 
-ST_2: empty_5 [1/1] 0.00ns
-codeRepl:4  %empty_5 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_8 [1/1] 0.00ns
+codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_2_V), !map !18
 
-ST_2: empty_6 [1/1] 0.00ns
-codeRepl:5  %empty_6 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_9 [1/1] 0.00ns
+codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_1_V), !map !24
 
-ST_2: empty_7 [1/1] 0.00ns
-codeRepl:6  %empty_7 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_10 [1/1] 0.00ns
+codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_0_V), !map !30
 
-ST_2: empty_8 [1/1] 0.00ns
-codeRepl:7  %empty_8 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %input_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_11 [1/1] 0.00ns
+codeRepl:7  call void (...)* @_ssdm_op_SpecBitsMap(i8* %input_V), !map !36
 
 ST_2: stg_12 [1/1] 0.00ns
-codeRepl:8  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_5_V), !map !0
+codeRepl:8  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @splitter_str) nounwind
 
 ST_2: stg_13 [1/1] 0.00ns
-codeRepl:9  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_4_V), !map !6
+codeRepl:9  call void (...)* @_ssdm_op_SpecInterface(i8* %input_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
 ST_2: stg_14 [1/1] 0.00ns
-codeRepl:10  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_3_V), !map !12
+codeRepl:10  call void (...)* @_ssdm_op_SpecInterface(i8* %output_0_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_2: stg_15 [1/1] 0.00ns
-codeRepl:11  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_2_V), !map !18
+codeRepl:11  call void (...)* @_ssdm_op_SpecInterface(i8* %output_1_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_2: stg_16 [1/1] 0.00ns
-codeRepl:12  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_1_V), !map !24
+codeRepl:12  call void (...)* @_ssdm_op_SpecInterface(i8* %output_2_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_2: stg_17 [1/1] 0.00ns
-codeRepl:13  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_0_V), !map !30
+codeRepl:13  call void (...)* @_ssdm_op_SpecInterface(i8* %output_3_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_2: stg_18 [1/1] 0.00ns
-codeRepl:14  call void (...)* @_ssdm_op_SpecBitsMap(i8* %input_V), !map !36
+codeRepl:14  call void (...)* @_ssdm_op_SpecInterface(i8* %output_4_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_2: stg_19 [1/1] 0.00ns
-codeRepl:15  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @splitter_str) nounwind
+codeRepl:15  call void (...)* @_ssdm_op_SpecInterface(i8* %output_5_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_2: stg_20 [1/2] 0.00ns
 codeRepl:16  call fastcc void @splitter_Loop_1_proc(i8* %input_V, i8* %output_0_V, i8* %output_1_V, i8* %output_2_V, i8* %output_3_V, i8* %output_4_V, i8* %output_5_V)
@@ -248,37 +248,37 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ input_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; mode=0x7fdddeaee3a0; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
-Port [ output_0_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; mode=0x7fdddeba70d0; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
-Port [ output_1_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; mode=0x7fdddeb61170; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
-Port [ output_2_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; mode=0x7fddded11dd0; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
-Port [ output_3_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; mode=0x7fddde70db20; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
-Port [ output_4_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; mode=0x7fdddeb60ff0; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
-Port [ output_5_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; mode=0x7fdddecc7fe0; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ input_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x7f699eb841f0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ output_0_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7f699c80da30; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ output_1_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7f699ecee4a0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ output_2_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7f699e723d10; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ output_3_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7f699ebec3c0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ output_4_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7f699d4707a0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ output_5_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7f699ec56f50; pingpong=0; private_global=0; IO mode=axis:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
 
 <LifeTime>
 <method=bitvector/>
-stg_4   (specdataflowpipeline) [ 000]
-empty   (specinterface       ) [ 000]
-empty_3 (specinterface       ) [ 000]
-empty_4 (specinterface       ) [ 000]
-empty_5 (specinterface       ) [ 000]
-empty_6 (specinterface       ) [ 000]
-empty_7 (specinterface       ) [ 000]
-empty_8 (specinterface       ) [ 000]
-stg_12  (specbitsmap         ) [ 000]
-stg_13  (specbitsmap         ) [ 000]
-stg_14  (specbitsmap         ) [ 000]
-stg_15  (specbitsmap         ) [ 000]
-stg_16  (specbitsmap         ) [ 000]
-stg_17  (specbitsmap         ) [ 000]
-stg_18  (specbitsmap         ) [ 000]
-stg_19  (spectopmodule       ) [ 000]
-stg_20  (call                ) [ 000]
-stg_21  (ret                 ) [ 000]
+stg_4  (specdataflowpipeline) [ 000]
+stg_5  (specbitsmap         ) [ 000]
+stg_6  (specbitsmap         ) [ 000]
+stg_7  (specbitsmap         ) [ 000]
+stg_8  (specbitsmap         ) [ 000]
+stg_9  (specbitsmap         ) [ 000]
+stg_10 (specbitsmap         ) [ 000]
+stg_11 (specbitsmap         ) [ 000]
+stg_12 (spectopmodule       ) [ 000]
+stg_13 (specinterface       ) [ 000]
+stg_14 (specinterface       ) [ 000]
+stg_15 (specinterface       ) [ 000]
+stg_16 (specinterface       ) [ 000]
+stg_17 (specinterface       ) [ 000]
+stg_18 (specinterface       ) [ 000]
+stg_19 (specinterface       ) [ 000]
+stg_20 (call                ) [ 000]
+stg_21 (ret                 ) [ 000]
 </LifeTime>
 
 <model>
@@ -388,7 +388,7 @@ stg_21  (ret                 ) [ 000]
 <pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
 </bind>
 </comp>
 
@@ -397,7 +397,7 @@ stg_21  (ret                 ) [ 000]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
 </bind>
 </comp>
 
@@ -406,7 +406,7 @@ stg_21  (ret                 ) [ 000]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="splitter_str"/></StgValue>
 </bind>
 </comp>
 
@@ -415,7 +415,7 @@ stg_21  (ret                 ) [ 000]
 <pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
 </bind>
 </comp>
 
@@ -424,7 +424,7 @@ stg_21  (ret                 ) [ 000]
 <pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+<StgValue><ssdm name="p_str1"/></StgValue>
 </bind>
 </comp>
 
@@ -433,7 +433,7 @@ stg_21  (ret                 ) [ 000]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="splitter_str"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -500,9 +500,9 @@ stg_21  (ret                 ) [ 000]
 |----------|--------------------------------|---------|---------|
 | Operation|         Functional Unit        |    FF   |   LUT   |
 |----------|--------------------------------|---------|---------|
-|   call   | grp_splitter_Loop_1_proc_fu_34 |    21   |    14   |
+|   call   | grp_splitter_Loop_1_proc_fu_34 |    29   |    14   |
 |----------|--------------------------------|---------|---------|
-|   Total  |                                |    21   |    14   |
+|   Total  |                                |    29   |    14   |
 |----------|--------------------------------|---------|---------|
 
 Memories:
@@ -524,10 +524,10 @@ N/A
 +-----------+--------+--------+
 |           |   FF   |   LUT  |
 +-----------+--------+--------+
-|  Function |   21   |   14   |
+|  Function |   29   |   14   |
 |   Memory  |    -   |    -   |
 |Multiplexer|    -   |    -   |
 |  Register |    -   |    -   |
 +-----------+--------+--------+
-|   Total   |   21   |   14   |
+|   Total   |   29   |   14   |
 +-----------+--------+--------+

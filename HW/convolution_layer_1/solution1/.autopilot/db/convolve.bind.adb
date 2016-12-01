@@ -26,12 +26,12 @@
 						</inlineStackInfo>
 						<originalName>image.V</originalName>
 						<rtlName></rtlName>
-						<coreName>FIFO</coreName>
+						<coreName></coreName>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>0</direction>
-				<if_type>3</if_type>
+				<if_type>0</if_type>
 				<array_size>0</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
@@ -82,12 +82,12 @@
 						</inlineStackInfo>
 						<originalName>conv_output.V</originalName>
 						<rtlName></rtlName>
-						<coreName>FIFO</coreName>
+						<coreName></coreName>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>1</direction>
-				<if_type>3</if_type>
+				<if_type>0</if_type>
 				<array_size>0</array_size>
 				<bit_vecs>
 					<count>0</count>
@@ -192,7 +192,7 @@
 						<name></name>
 						<fileName>convolution_layer_1/.settings/convolution_layer_1.cpp</fileName>
 						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
-						<lineNumber>82</lineNumber>
+						<lineNumber>79</lineNumber>
 						<contextFuncName>convolve</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -207,7 +207,7 @@
 											<first>convolution_layer_1/.settings/convolution_layer_1.cpp</first>
 											<second>convolve</second>
 										</first>
-										<second>82</second>
+										<second>79</second>
 									</item>
 								</second>
 							</item>
@@ -316,13 +316,13 @@
 			<item class_id_reference="20" object_id="_12">
 				<id>21</id>
 				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
+				<source_obj>1</source_obj>
 				<sink_obj>15</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_13">
 				<id>22</id>
 				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
+				<source_obj>2</source_obj>
 				<sink_obj>15</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_14">
@@ -365,7 +365,7 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>300391</mMinLatency>
+			<mMinLatency>91881</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>1</mIsDfPipe>
 			<mDfPipe class_id="23" tracking_level="1" version="0" object_id="_18">
@@ -385,8 +385,8 @@
 							<item_version>0</item_version>
 							<item class_id="28" tracking_level="1" version="0" object_id="_20">
 								<port class_id="29" tracking_level="1" version="0" object_id="_21">
-									<name>weights</name>
-									<dir>2</dir>
+									<name>image_V</name>
+									<dir>3</dir>
 									<type>0</type>
 								</port>
 								<inst class_id="30" tracking_level="1" version="0" object_id="_22">
@@ -397,8 +397,8 @@
 							</item>
 							<item class_id_reference="28" object_id="_23">
 								<port class_id_reference="29" object_id="_24">
-									<name>image_V</name>
-									<dir>0</dir>
+									<name>weights</name>
+									<dir>2</dir>
 									<type>0</type>
 								</port>
 								<inst class_id_reference="30" object_id_reference="_22"></inst>
@@ -406,7 +406,7 @@
 							<item class_id_reference="28" object_id="_25">
 								<port class_id_reference="29" object_id="_26">
 									<name>conv_output_V</name>
-									<dir>0</dir>
+									<dir>3</dir>
 									<type>1</type>
 								</port>
 								<inst class_id_reference="30" object_id_reference="_22"></inst>
@@ -670,7 +670,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item class_id="55" tracking_level="0" version="0">
-			<first>38</first>
+			<first>34</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -679,7 +679,7 @@
 			</second>
 		</item>
 		<item>
-			<first>48</first>
+			<first>44</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -695,7 +695,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item class_id="58" tracking_level="0" version="0">
-			<first>grp_convolve_Loop_BUFFER_RESET_proc_fu_38</first>
+			<first>grp_convolve_Loop_BUFFER_RESET_proc_fu_34</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -704,7 +704,7 @@
 			</second>
 		</item>
 		<item>
-			<first>stg_15_convolve_Block_proc_fu_48</first>
+			<first>stg_15_convolve_Block_proc_fu_44</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -790,19 +790,11 @@
 		</item>
 	</dp_port_io_nodes>
 	<port2core class_id="62" tracking_level="0" version="0">
-		<count>3</count>
+		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="63" tracking_level="0" version="0">
-			<first>1</first>
-			<second>FIFO</second>
-		</item>
-		<item>
 			<first>2</first>
 			<second>RAM</second>
-		</item>
-		<item>
-			<first>3</first>
-			<second>FIFO</second>
 		</item>
 	</port2core>
 	<node2core>

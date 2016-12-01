@@ -1,7 +1,7 @@
-Running: xsim.dir/obj_detector/xsimk.exe -maxdeltaid 10000 -simmode gui -wdb obj_detector.wdb -simrunnum 0 -socket 61306
+Running: xsim.dir/obj_detector/xsimk -maxdeltaid 10000 -simmode gui -wdb obj_detector.wdb -simrunnum 0 -socket 60526
 Design successfully loaded
-Design Loading Memory Usage: 40460 KB (Peak: 40460 KB)
-Design Loading CPU Usage: 436 ms
+Design Loading Memory Usage: 145404 KB (Peak: 152216 KB)
+Design Loading CPU Usage: 180 ms
 Simulation completed
-Simulation Memory Usage: 42692 KB (Peak: 42692 KB)
-Simulation CPU Usage: 217515 ms
+Simulation Memory Usage: 226804 KB (Peak: 284672 KB)
+Simulation CPU Usage: 52660 ms

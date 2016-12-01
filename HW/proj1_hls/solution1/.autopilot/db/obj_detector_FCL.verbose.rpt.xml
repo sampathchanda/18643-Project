@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'obj_detector_FCL'" level="0">
-<item name = "Date">Wed Nov 30 03:19:48 2016
+<item name = "Date">Thu Dec  1 08:41:02 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">proj1_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.41, 1.25</column>
+<column name="ap_clk">20.00, 15.48, 2.50</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">4326, 4326, 4326, 4326, none</column>
+<column name="">3460, 3460, 3460, 3460, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- FCL_label8">4324, 4324, 10, 5, 1, 864, yes</column>
+<column name="- FCL_label8">3458, 3458, 7, 4, 1, 864, yes</column>
 </table>
 </item>
 </section>
@@ -49,10 +49,10 @@
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="Expression">-, -, 0, 35</column>
 <column name="FIFO">-, -, -, -</column>
-<column name="Instance">-, 5, 348, 711</column>
+<column name="Instance">-, 5, 355, 723</column>
 <column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, 54</column>
-<column name="Register">-, -, 99, -</column>
+<column name="Multiplexer">-, -, -, 53</column>
+<column name="Register">-, -, 162, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
 <specialColumn name="Utilization (%)">0, 2, ~0, 1</specialColumn>
 </table>
@@ -61,8 +61,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="obj_detector_fadd_32ns_32ns_32_5_full_dsp_U48">obj_detector_fadd_32ns_32ns_32_5_full_dsp, 0, 2, 205, 390</column>
-<column name="obj_detector_fmul_32ns_32ns_32_4_max_dsp_U49">obj_detector_fmul_32ns_32ns_32_4_max_dsp, 0, 3, 143, 321</column>
+<column name="obj_detector_fadd_32ns_32ns_32_4_full_dsp_U49">obj_detector_fadd_32ns_32ns_32_4_full_dsp, 0, 2, 227, 403</column>
+<column name="obj_detector_fmul_32ns_32ns_32_1_max_dsp_U50">obj_detector_fmul_32ns_32ns_32_1_max_dsp, 0, 3, 128, 320</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -75,15 +75,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_5_fu_124_p2">+, 0, 0, 10, 10, 1</column>
-<column name="p_addr1_fu_139_p2">+, 0, 0, 11, 11, 11</column>
-<column name="tmp_16_cast_fu_110_p3">Select, 0, 0, 10, 1, 10</column>
-<column name="exitcond_fu_118_p2">icmp, 0, 0, 4, 10, 9</column>
+<column name="i_5_fu_122_p2">+, 0, 0, 10, 10, 1</column>
+<column name="p_addr1_fu_137_p2">+, 0, 0, 11, 11, 11</column>
+<column name="tmp_16_cast_fu_108_p3">Select, 0, 0, 10, 1, 10</column>
+<column name="exitcond_fu_116_p2">icmp, 0, 0, 4, 10, 9</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">2, 8, 1, 8</column>
+<column name="ap_NS_fsm">1, 7, 1, 7</column>
 <column name="i_phi_fu_92_p4">10, 2, 10, 20</column>
 <column name="i_reg_88">10, 2, 10, 20</column>
 <column name="out_reg_76">32, 2, 32, 64</column>
@@ -91,16 +91,18 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">7, 0, 7, 0</column>
+<column name="W_load_reg_176">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
 <column name="ap_reg_ppiten_pp0_it0">1, 0, 1, 0</column>
 <column name="ap_reg_ppiten_pp0_it1">1, 0, 1, 0</column>
-<column name="ap_reg_ppstg_exitcond_reg_154_pp0_it1">1, 0, 1, 0</column>
-<column name="exitcond_reg_154">1, 0, 1, 0</column>
-<column name="i_5_reg_158">10, 0, 10, 0</column>
+<column name="ap_reg_ppstg_exitcond_reg_152_pp0_it1">1, 0, 1, 0</column>
+<column name="exitcond_reg_152">1, 0, 1, 0</column>
+<column name="i_5_reg_156">10, 0, 10, 0</column>
 <column name="i_reg_88">10, 0, 10, 0</column>
+<column name="inp_load_reg_171">32, 0, 32, 0</column>
 <column name="out_reg_76">32, 0, 32, 0</column>
-<column name="tmp_16_cast_reg_149">4, 0, 11, 7</column>
-<column name="tmp_s_reg_183">32, 0, 32, 0</column>
+<column name="tmp_16_cast_reg_147">4, 0, 11, 7</column>
+<column name="tmp_s_reg_181">32, 0, 32, 0</column>
 </table>
 </item>
 </section>

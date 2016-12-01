@@ -161,14 +161,14 @@
 						<id>7</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>144</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -262,14 +262,14 @@
 						<id>11</id>
 						<name>exitcond3</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>144</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -304,14 +304,14 @@
 						<id>13</id>
 						<name>i_5</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>144</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -346,14 +346,14 @@
 						<id>14</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>144</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -389,14 +389,14 @@
 						<id>17</id>
 						<name>tmp</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>144</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -430,14 +430,14 @@
 						<id>18</id>
 						<name>inp_1_read_assign</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>145</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -473,14 +473,14 @@
 						<id>19</id>
 						<name>sum_2</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>145</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -515,14 +515,14 @@
 						<id>20</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>144</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -646,14 +646,14 @@
 						<id>25</id>
 						<name>exitcond2</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>147</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -688,14 +688,14 @@
 						<id>27</id>
 						<name>i_6</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>147</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -730,14 +730,14 @@
 						<id>28</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>147</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -773,14 +773,14 @@
 						<id>31</id>
 						<name>tmp_10</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>147</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -814,14 +814,14 @@
 						<id>32</id>
 						<name>inp_1_read_assign_1</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>148</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -857,14 +857,14 @@
 						<id>33</id>
 						<name>temp_0</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>148</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -899,14 +899,14 @@
 						<id>34</id>
 						<name>temp_1_1</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>148</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -942,14 +942,14 @@
 						<id>35</id>
 						<name>temp_1_2</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>148</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -985,14 +985,14 @@
 						<id>36</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>147</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1086,14 +1086,14 @@
 						<id>40</id>
 						<name>exitcond1</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>151</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1128,14 +1128,14 @@
 						<id>42</id>
 						<name>i_7</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>151</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1170,14 +1170,14 @@
 						<id>43</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>151</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1213,14 +1213,14 @@
 						<id>46</id>
 						<name>tmp_11</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>151</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1254,14 +1254,14 @@
 						<id>47</id>
 						<name>temp_load_phi</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>152</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1297,14 +1297,14 @@
 						<id>48</id>
 						<name>tmp_5</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>152</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1338,14 +1338,14 @@
 						<id>49</id>
 						<name>tmp_6</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>152</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1380,14 +1380,14 @@
 						<id>50</id>
 						<name>tmp_7</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>152</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1421,14 +1421,14 @@
 						<id>51</id>
 						<name>tmp_8</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>152</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1463,14 +1463,14 @@
 						<id>52</id>
 						<name>sum_3</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>152</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1504,14 +1504,14 @@
 						<id>53</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>151</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1545,14 +1545,14 @@
 						<id>55</id>
 						<name>tmp_s</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>155</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1586,14 +1586,14 @@
 						<id>56</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>154</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1657,14 +1657,14 @@
 						<id>59</id>
 						<name>exitcond</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>154</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1699,14 +1699,14 @@
 						<id>61</id>
 						<name>i_8</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>154</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1741,14 +1741,14 @@
 						<id>62</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>154</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1784,14 +1784,14 @@
 						<id>65</id>
 						<name>tmp_9</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>155</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1825,14 +1825,14 @@
 						<id>66</id>
 						<name>tmp_12</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>154</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1866,14 +1866,14 @@
 						<id>67</id>
 						<name>temp_load_1_phi</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>155</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1909,14 +1909,14 @@
 						<id>68</id>
 						<name>tmp_2</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>155</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1950,14 +1950,14 @@
 						<id>69</id>
 						<name>tmp_3</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>155</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1992,14 +1992,14 @@
 						<id>70</id>
 						<name>tmp_4</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>155</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2034,14 +2034,14 @@
 						<id>71</id>
 						<name>tmp_1</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>155</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2075,14 +2075,14 @@
 						<id>72</id>
 						<name>out_addr</name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>155</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2118,14 +2118,14 @@
 						<id>73</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>155</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2160,14 +2160,14 @@
 						<id>74</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>154</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2201,14 +2201,14 @@
 						<id>76</id>
 						<name></name>
 						<fileName>proj1_hls/obj_detector.cpp</fileName>
-						<fileDirectory>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</fileDirectory>
+						<fileDirectory>/home/littlefoot/18643_project/Hardware-Accel/HW</fileDirectory>
 						<lineNumber>157</lineNumber>
 						<contextFuncName>softmax</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+								<first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3464,7 +3464,7 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>200</mMinLatency>
+			<mMinLatency>122</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
@@ -3509,7 +3509,7 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>2</mMinTripCount>
 			<mMaxTripCount>2</mMaxTripCount>
-			<mMinLatency>10</mMinLatency>
+			<mMinLatency>8</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
@@ -3532,7 +3532,7 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>2</mMinTripCount>
 			<mMaxTripCount>2</mMaxTripCount>
-			<mMinLatency>32</mMinLatency>
+			<mMinLatency>20</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
@@ -3555,7 +3555,7 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>2</mMinTripCount>
 			<mMaxTripCount>2</mMaxTripCount>
-			<mMinLatency>50</mMinLatency>
+			<mMinLatency>32</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
@@ -3600,7 +3600,7 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>2</mMinTripCount>
 			<mMaxTripCount>2</mMaxTripCount>
-			<mMinLatency>104</mMinLatency>
+			<mMinLatency>58</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
@@ -3748,13 +3748,13 @@
 			<first>19</first>
 			<second>
 				<first>1</first>
-				<second>4</second>
+				<second>3</second>
 			</second>
 		</item>
 		<item>
 			<first>20</first>
 			<second>
-				<first>5</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -3817,28 +3817,28 @@
 		<item>
 			<first>33</first>
 			<second>
-				<first>2</first>
-				<second>15</second>
+				<first>3</first>
+				<second>7</second>
 			</second>
 		</item>
 		<item>
 			<first>34</first>
 			<second>
-				<first>17</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>35</first>
 			<second>
-				<first>17</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>36</first>
 			<second>
-				<first>17</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -3902,34 +3902,34 @@
 			<first>49</first>
 			<second>
 				<first>4</first>
-				<second>17</second>
+				<second>9</second>
 			</second>
 		</item>
 		<item>
 			<first>50</first>
 			<second>
-				<first>21</first>
+				<first>13</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>51</first>
 			<second>
-				<first>22</first>
-				<second>4</second>
+				<first>14</first>
+				<second>3</second>
 			</second>
 		</item>
 		<item>
 			<first>52</first>
 			<second>
-				<first>27</first>
+				<first>18</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>53</first>
 			<second>
-				<first>27</first>
+				<first>18</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -3978,7 +3978,7 @@
 		<item>
 			<first>65</first>
 			<second>
-				<first>55</first>
+				<first>32</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4007,41 +4007,41 @@
 			<first>69</first>
 			<second>
 				<first>5</first>
-				<second>17</second>
+				<second>9</second>
 			</second>
 		</item>
 		<item>
 			<first>70</first>
 			<second>
-				<first>23</first>
-				<second>30</second>
+				<first>15</first>
+				<second>16</second>
 			</second>
 		</item>
 		<item>
 			<first>71</first>
 			<second>
-				<first>54</first>
+				<first>32</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>72</first>
 			<second>
-				<first>55</first>
+				<first>32</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>73</first>
 			<second>
-				<first>55</first>
+				<first>32</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>74</first>
 			<second>
-				<first>55</first>
+				<first>32</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4074,7 +4074,7 @@
 			<first>21</first>
 			<second>
 				<first>1</first>
-				<second>5</second>
+				<second>4</second>
 			</second>
 		</item>
 		<item>
@@ -4088,7 +4088,7 @@
 			<first>37</first>
 			<second>
 				<first>2</first>
-				<second>17</second>
+				<second>11</second>
 			</second>
 		</item>
 		<item>
@@ -4102,7 +4102,7 @@
 			<first>54</first>
 			<second>
 				<first>3</first>
-				<second>27</second>
+				<second>18</second>
 			</second>
 		</item>
 		<item>
@@ -4123,7 +4123,7 @@
 			<first>75</first>
 			<second>
 				<first>4</first>
-				<second>55</second>
+				<second>32</second>
 			</second>
 		</item>
 		<item>

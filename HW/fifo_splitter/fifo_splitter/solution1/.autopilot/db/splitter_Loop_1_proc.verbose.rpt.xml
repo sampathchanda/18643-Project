@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'splitter_Loop_1_proc'" level="0">
-<item name = "Date">Sat Nov 26 12:05:58 2016
+<item name = "Date">Wed Nov 30 17:14:55 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">fifo_splitter</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.75, 1.25</column>
+<column name="ap_clk">10.00, 3.44, 1.25</column>
 </table>
 </item>
 </section>
@@ -47,12 +47,12 @@
 <section name = "Utilization Estimates" level="0">
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="Expression">-, -, 0, 16</column>
+<column name="Expression">-, -, 0, 23</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, -, -</column>
 <column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, 11</column>
-<column name="Register">-, -, 17, -</column>
+<column name="Multiplexer">-, -, -, 17</column>
+<column name="Register">-, -, 31, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0</specialColumn>
 </table>
@@ -73,26 +73,46 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="pixels_read_fu_117_p2">+, 0, 0, 10, 10, 1</column>
-<column name="exitcond4_i_i_fu_111_p2">icmp, 0, 0, 4, 10, 9</column>
-<column name="ap_sig_bdd_105">or, 0, 0, 1, 1, 1</column>
-<column name="ap_sig_bdd_92">or, 0, 0, 1, 1, 1</column>
+<column name="pixels_read_fu_111_p2">+, 0, 0, 10, 10, 1</column>
+<column name="ap_sig_bdd_193">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_194">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_197">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_199">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_201">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_203">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_205">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_65">and, 0, 0, 1, 1, 1</column>
+<column name="exitcond4_i_i_fu_105_p2">icmp, 0, 0, 4, 10, 9</column>
+<column name="ap_sig_bdd_109">or, 0, 0, 1, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">1, 4, 1, 4</column>
-<column name="pixels_read_0_i_i_reg_100">10, 2, 10, 20</column>
+<column name="ap_sig_ioackin_output_0_V_TREADY">1, 2, 1, 2</column>
+<column name="ap_sig_ioackin_output_1_V_TREADY">1, 2, 1, 2</column>
+<column name="ap_sig_ioackin_output_2_V_TREADY">1, 2, 1, 2</column>
+<column name="ap_sig_ioackin_output_3_V_TREADY">1, 2, 1, 2</column>
+<column name="ap_sig_ioackin_output_4_V_TREADY">1, 2, 1, 2</column>
+<column name="ap_sig_ioackin_output_5_V_TREADY">1, 2, 1, 2</column>
+<column name="pixels_read_0_i_i_reg_94">10, 2, 10, 20</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">3, 0, 3, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_reg_ioackin_output_0_V_TREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ioackin_output_1_V_TREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ioackin_output_2_V_TREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ioackin_output_3_V_TREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ioackin_output_4_V_TREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ioackin_output_5_V_TREADY">1, 0, 1, 0</column>
 <column name="ap_reg_ppiten_pp0_it0">1, 0, 1, 0</column>
 <column name="ap_reg_ppiten_pp0_it1">1, 0, 1, 0</column>
-<column name="exitcond4_i_i_reg_123">1, 0, 1, 0</column>
-<column name="pixels_read_0_i_i_reg_100">10, 0, 10, 0</column>
+<column name="exitcond4_i_i_reg_117">1, 0, 1, 0</column>
+<column name="pixels_read_0_i_i_reg_94">10, 0, 10, 0</column>
+<column name="temp_reg_126">8, 0, 8, 0</column>
 </table>
 </item>
 </section>
@@ -109,27 +129,27 @@
 <column name="ap_continue">in, 1, ap_ctrl_hs, splitter_Loop_1_proc, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, splitter_Loop_1_proc, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, splitter_Loop_1_proc, return value</column>
-<column name="input_V_dout">in, 8, ap_fifo, input_V, pointer</column>
-<column name="input_V_empty_n">in, 1, ap_fifo, input_V, pointer</column>
-<column name="input_V_read">out, 1, ap_fifo, input_V, pointer</column>
-<column name="output_0_V_din">out, 8, ap_fifo, output_0_V, pointer</column>
-<column name="output_0_V_full_n">in, 1, ap_fifo, output_0_V, pointer</column>
-<column name="output_0_V_write">out, 1, ap_fifo, output_0_V, pointer</column>
-<column name="output_1_V_din">out, 8, ap_fifo, output_1_V, pointer</column>
-<column name="output_1_V_full_n">in, 1, ap_fifo, output_1_V, pointer</column>
-<column name="output_1_V_write">out, 1, ap_fifo, output_1_V, pointer</column>
-<column name="output_2_V_din">out, 8, ap_fifo, output_2_V, pointer</column>
-<column name="output_2_V_full_n">in, 1, ap_fifo, output_2_V, pointer</column>
-<column name="output_2_V_write">out, 1, ap_fifo, output_2_V, pointer</column>
-<column name="output_3_V_din">out, 8, ap_fifo, output_3_V, pointer</column>
-<column name="output_3_V_full_n">in, 1, ap_fifo, output_3_V, pointer</column>
-<column name="output_3_V_write">out, 1, ap_fifo, output_3_V, pointer</column>
-<column name="output_4_V_din">out, 8, ap_fifo, output_4_V, pointer</column>
-<column name="output_4_V_full_n">in, 1, ap_fifo, output_4_V, pointer</column>
-<column name="output_4_V_write">out, 1, ap_fifo, output_4_V, pointer</column>
-<column name="output_5_V_din">out, 8, ap_fifo, output_5_V, pointer</column>
-<column name="output_5_V_full_n">in, 1, ap_fifo, output_5_V, pointer</column>
-<column name="output_5_V_write">out, 1, ap_fifo, output_5_V, pointer</column>
+<column name="input_V_TDATA">in, 8, axis, input_V, pointer</column>
+<column name="input_V_TVALID">in, 1, axis, input_V, pointer</column>
+<column name="input_V_TREADY">out, 1, axis, input_V, pointer</column>
+<column name="output_0_V_TDATA">out, 8, axis, output_0_V, pointer</column>
+<column name="output_0_V_TVALID">out, 1, axis, output_0_V, pointer</column>
+<column name="output_0_V_TREADY">in, 1, axis, output_0_V, pointer</column>
+<column name="output_1_V_TDATA">out, 8, axis, output_1_V, pointer</column>
+<column name="output_1_V_TVALID">out, 1, axis, output_1_V, pointer</column>
+<column name="output_1_V_TREADY">in, 1, axis, output_1_V, pointer</column>
+<column name="output_2_V_TDATA">out, 8, axis, output_2_V, pointer</column>
+<column name="output_2_V_TVALID">out, 1, axis, output_2_V, pointer</column>
+<column name="output_2_V_TREADY">in, 1, axis, output_2_V, pointer</column>
+<column name="output_3_V_TDATA">out, 8, axis, output_3_V, pointer</column>
+<column name="output_3_V_TVALID">out, 1, axis, output_3_V, pointer</column>
+<column name="output_3_V_TREADY">in, 1, axis, output_3_V, pointer</column>
+<column name="output_4_V_TDATA">out, 8, axis, output_4_V, pointer</column>
+<column name="output_4_V_TVALID">out, 1, axis, output_4_V, pointer</column>
+<column name="output_4_V_TREADY">in, 1, axis, output_4_V, pointer</column>
+<column name="output_5_V_TDATA">out, 8, axis, output_5_V, pointer</column>
+<column name="output_5_V_TVALID">out, 1, axis, output_5_V, pointer</column>
+<column name="output_5_V_TREADY">in, 1, axis, output_5_V, pointer</column>
 </table>
 </item>
 </section>

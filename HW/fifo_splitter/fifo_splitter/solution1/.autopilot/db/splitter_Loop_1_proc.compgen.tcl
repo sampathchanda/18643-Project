@@ -7,110 +7,138 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
-# Direct connection:
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 1 \
     name input_V \
-    type fifo \
-    dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_input_V \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { input_V_dout { I 8 vector } input_V_empty_n { I 1 bit } input_V_read { O 1 bit } } \
+    ports { input_V_TDATA { I 8 vector } input_V_TVALID { I 1 bit } input_V_TREADY { O 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_V'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 2 \
     name output_0_V \
-    type fifo \
-    dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_output_0_V \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { output_0_V_din { O 8 vector } output_0_V_full_n { I 1 bit } output_0_V_write { O 1 bit } } \
+    ports { output_0_V_TDATA { O 8 vector } output_0_V_TVALID { O 1 bit } output_0_V_TREADY { I 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_0_V'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 3 \
     name output_1_V \
-    type fifo \
-    dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_output_1_V \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { output_1_V_din { O 8 vector } output_1_V_full_n { I 1 bit } output_1_V_write { O 1 bit } } \
+    ports { output_1_V_TDATA { O 8 vector } output_1_V_TVALID { O 1 bit } output_1_V_TREADY { I 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_1_V'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 4 \
     name output_2_V \
-    type fifo \
-    dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_output_2_V \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { output_2_V_din { O 8 vector } output_2_V_full_n { I 1 bit } output_2_V_write { O 1 bit } } \
+    ports { output_2_V_TDATA { O 8 vector } output_2_V_TVALID { O 1 bit } output_2_V_TREADY { I 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_2_V'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 5 \
     name output_3_V \
-    type fifo \
-    dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_output_3_V \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { output_3_V_din { O 8 vector } output_3_V_full_n { I 1 bit } output_3_V_write { O 1 bit } } \
+    ports { output_3_V_TDATA { O 8 vector } output_3_V_TVALID { O 1 bit } output_3_V_TREADY { I 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_3_V'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 6 \
     name output_4_V \
-    type fifo \
-    dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_output_4_V \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { output_4_V_din { O 8 vector } output_4_V_full_n { I 1 bit } output_4_V_write { O 1 bit } } \
+    ports { output_4_V_TDATA { O 8 vector } output_4_V_TVALID { O 1 bit } output_4_V_TREADY { I 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_4_V'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 7 \
     name output_5_V \
-    type fifo \
-    dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_output_5_V \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { output_5_V_din { O 8 vector } output_5_V_full_n { I 1 bit } output_5_V_write { O 1 bit } } \
+    ports { output_5_V_TDATA { O 8 vector } output_5_V_TVALID { O 1 bit } output_5_V_TREADY { I 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_5_V'"
 }
+}
+
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {

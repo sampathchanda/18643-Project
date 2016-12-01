@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'convolve'
 ================================================================
-* Date:           Sat Nov 26 05:43:31 2016
+* Date:           Wed Nov 30 17:10:27 2016
 
 * Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
 * Project:        convolution_layer_1
@@ -20,27 +20,27 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|      8.61|        1.25|
+    |ap_clk  |  10.00|      8.20|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
     * Summary: 
-    +--------+--------+--------+--------+----------+
-    |     Latency     |     Interval    | Pipeline |
-    |   min  |   max  |   min  |   max  |   Type   |
-    +--------+--------+--------+--------+----------+
-    |  299607|  300391|  299608|  300392| dataflow |
-    +--------+--------+--------+--------+----------+
+    +-------+-------+-------+-------+----------+
+    |    Latency    |    Interval   | Pipeline |
+    |  min  |  max  |  min  |  max  |   Type   |
+    +-------+-------+-------+-------+----------+
+    |  91881|  91881|  91882|  91882| dataflow |
+    +-------+-------+-------+-------+----------+
 
     + Detail: 
         * Instance: 
-        +-------------------------------------------+---------------------------------+--------+--------+--------+--------+---------+
-        |                                           |                                 |     Latency     |     Interval    | Pipeline|
-        |                  Instance                 |              Module             |   min  |   max  |   min  |   max  |   Type  |
-        +-------------------------------------------+---------------------------------+--------+--------+--------+--------+---------+
-        |grp_convolve_Loop_BUFFER_RESET_proc_fu_38  |convolve_Loop_BUFFER_RESET_proc  |  299607|  300391|  299607|  300391|   none  |
-        |stg_15_convolve_Block_proc_fu_48           |convolve_Block_proc              |       0|       0|       0|       0|   none  |
-        +-------------------------------------------+---------------------------------+--------+--------+--------+--------+---------+
+        +-------------------------------------------+---------------------------------+-------+-------+-------+-------+---------+
+        |                                           |                                 |    Latency    |    Interval   | Pipeline|
+        |                  Instance                 |              Module             |  min  |  max  |  min  |  max  |   Type  |
+        +-------------------------------------------+---------------------------------+-------+-------+-------+-------+---------+
+        |grp_convolve_Loop_BUFFER_RESET_proc_fu_34  |convolve_Loop_BUFFER_RESET_proc  |  91881|  91881|  91881|  91881|   none  |
+        |stg_15_convolve_Block_proc_fu_44           |convolve_Block_proc              |      0|      0|      0|      0|   none  |
+        +-------------------------------------------+---------------------------------+-------+-------+-------+-------+---------+
 
         * Loop: 
         N/A
@@ -56,16 +56,16 @@
 +-----------------+---------+-------+--------+-------+
 |Expression       |        -|      -|       -|      -|
 |FIFO             |        -|      -|       -|      -|
-|Instance         |        0|      5|    1162|   2318|
+|Instance         |        1|      5|    3584|   4348|
 |Memory           |        -|      -|       -|      -|
 |Multiplexer      |        -|      -|       -|      -|
 |Register         |        -|      -|       3|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |        0|      5|    1165|   2318|
+|Total            |        1|      5|    3587|   4348|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
-|Utilization (%)  |        0|      2|       1|      4|
+|Utilization (%)  |    ~0   |      2|       3|      8|
 +-----------------+---------+-------+--------+-------+
 
 + Detail: 
@@ -74,9 +74,9 @@
     |              Instance              |              Module             | BRAM_18K| DSP48E|  FF  |  LUT |
     +------------------------------------+---------------------------------+---------+-------+------+------+
     |convolve_Block_proc_U0              |convolve_Block_proc              |        0|      0|     2|     1|
-    |convolve_Loop_BUFFER_RESET_proc_U0  |convolve_Loop_BUFFER_RESET_proc  |        0|      5|  1160|  2317|
+    |convolve_Loop_BUFFER_RESET_proc_U0  |convolve_Loop_BUFFER_RESET_proc  |        1|      5|  3582|  4347|
     +------------------------------------+---------------------------------+---------+-------+------+------+
-    |Total                               |                                 |        0|      5|  1162|  2318|
+    |Total                               |                                 |        1|      5|  3584|  4348|
     +------------------------------------+---------------------------------+---------+-------+------+------+
 
     * Memory: 
@@ -111,28 +111,32 @@
 +----------------------+-----+-----+------------+---------------+--------------+
 |       RTL Ports      | Dir | Bits|  Protocol  | Source Object |    C Type    |
 +----------------------+-----+-----+------------+---------------+--------------+
-|image_V_dout          |  in |    8|   ap_fifo  |    image_V    |    pointer   |
-|image_V_empty_n       |  in |    1|   ap_fifo  |    image_V    |    pointer   |
-|image_V_read          | out |    1|   ap_fifo  |    image_V    |    pointer   |
-|weights_address0      | out |    5|  ap_memory |    weights    |     array    |
-|weights_ce0           | out |    1|  ap_memory |    weights    |     array    |
-|weights_d0            | out |   32|  ap_memory |    weights    |     array    |
-|weights_q0            |  in |   32|  ap_memory |    weights    |     array    |
-|weights_we0           | out |    1|  ap_memory |    weights    |     array    |
-|weights_address1      | out |    5|  ap_memory |    weights    |     array    |
-|weights_ce1           | out |    1|  ap_memory |    weights    |     array    |
-|weights_d1            | out |   32|  ap_memory |    weights    |     array    |
-|weights_q1            |  in |   32|  ap_memory |    weights    |     array    |
-|weights_we1           | out |    1|  ap_memory |    weights    |     array    |
-|conv_output_V_din     | out |    8|   ap_fifo  | conv_output_V |    pointer   |
-|conv_output_V_full_n  |  in |    1|   ap_fifo  | conv_output_V |    pointer   |
-|conv_output_V_write   | out |    1|   ap_fifo  | conv_output_V |    pointer   |
-|done                  | out |    1|   ap_none  |      done     |    pointer   |
+|image_V_TDATA         |  in |    8|    axis    |    image_V    |    pointer   |
+|image_V_TVALID        |  in |    1|    axis    |    image_V    |    pointer   |
+|image_V_TREADY        | out |    1|    axis    |    image_V    |    pointer   |
+|weights_Addr_A        | out |   32|    bram    |    weights    |     array    |
+|weights_EN_A          | out |    1|    bram    |    weights    |     array    |
+|weights_Din_A         | out |   32|    bram    |    weights    |     array    |
+|weights_Dout_A        |  in |   32|    bram    |    weights    |     array    |
+|weights_WEN_A         | out |    4|    bram    |    weights    |     array    |
+|weights_Clk_A         | out |    1|    bram    |    weights    |     array    |
+|weights_Rst_A         | out |    1|    bram    |    weights    |     array    |
+|weights_Addr_B        | out |   32|    bram    |    weights    |     array    |
+|weights_EN_B          | out |    1|    bram    |    weights    |     array    |
+|weights_Din_B         | out |   32|    bram    |    weights    |     array    |
+|weights_Dout_B        |  in |   32|    bram    |    weights    |     array    |
+|weights_WEN_B         | out |    4|    bram    |    weights    |     array    |
+|weights_Clk_B         | out |    1|    bram    |    weights    |     array    |
+|weights_Rst_B         | out |    1|    bram    |    weights    |     array    |
 |ap_clk                |  in |    1| ap_ctrl_hs |    convolve   | return value |
-|ap_rst                |  in |    1| ap_ctrl_hs |    convolve   | return value |
+|ap_rst_n              |  in |    1| ap_ctrl_hs |    convolve   | return value |
 |ap_done               | out |    1| ap_ctrl_hs |    convolve   | return value |
 |ap_start              |  in |    1| ap_ctrl_hs |    convolve   | return value |
 |ap_idle               | out |    1| ap_ctrl_hs |    convolve   | return value |
 |ap_ready              | out |    1| ap_ctrl_hs |    convolve   | return value |
+|conv_output_V_TDATA   | out |    8|    axis    | conv_output_V |    pointer   |
+|conv_output_V_TVALID  | out |    1|    axis    | conv_output_V |    pointer   |
+|conv_output_V_TREADY  |  in |    1|    axis    | conv_output_V |    pointer   |
+|done                  | out |    1|   ap_none  |      done     |    pointer   |
 +----------------------+-----+-----+------------+---------------+--------------+
 

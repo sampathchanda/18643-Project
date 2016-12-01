@@ -1,724 +1,724 @@
-@I [HLS-0] Workspace /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1 opened at Sat Nov 26 05:17:01 EST 2016
+@I [HLS-0] Workspace /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1 opened at Wed Nov 30 17:18:55 EST 2016
 @I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
-@I [HLS-100] Command 'config_clock' returned 0; elapsed 5.7e-05Total elapsed time: 10.783 sec.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 6.8e-05Total elapsed time: 1.537 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 3.9e-05Total elapsed time: 10.784 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 4e-05Total elapsed time: 1.537 sec.
 @I [HLS-100] Command "import_lib /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.lib "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/xilinx_interface.lib "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/plb46.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00032Total elapsed time: 10.785 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000232Total elapsed time: 1.538 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/fsl.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000181Total elapsed time: 10.785 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000109Total elapsed time: 1.538 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/axi4.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000234Total elapsed time: 10.785 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00015Total elapsed time: 1.538 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000167Total elapsed time: 10.785 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000135Total elapsed time: 1.538 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.8e-05Total elapsed time: 10.786 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001331Total elapsed time: 10.786 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.3e-05Total elapsed time: 1.539 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000948Total elapsed time: 1.539 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.9e-05Total elapsed time: 10.786 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.8e-05Total elapsed time: 1.539 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfft.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.8e-05Total elapsed time: 10.786 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.1e-05Total elapsed time: 1.539 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/dds_compiler.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.8e-05Total elapsed time: 10.786 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 4.9e-05Total elapsed time: 1.539 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfir.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.2e-05Total elapsed time: 10.786 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003933Total elapsed time: 10.788 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 4.7e-05Total elapsed time: 1.539 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003133Total elapsed time: 1.541 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_old.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000527Total elapsed time: 10.790 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000512Total elapsed time: 1.542 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_vivado.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000442Total elapsed time: 10.790 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000435Total elapsed time: 1.543 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.hlp "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/target_info.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.2e-05Total elapsed time: 10.792 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.9e-05Total elapsed time: 1.545 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/xilinx_interface.hlp "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.1e-05Total elapsed time: 10.792 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.1e-05Total elapsed time: 1.545 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.4e-05Total elapsed time: 10.792 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000226Total elapsed time: 10.792 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.4e-05Total elapsed time: 1.545 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000223Total elapsed time: 1.545 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000482Total elapsed time: 10.793 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001596Total elapsed time: 10.793 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000446Total elapsed time: 1.545 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00156Total elapsed time: 1.546 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/dsp48e1.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.9e-05Total elapsed time: 10.793 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.5e-05Total elapsed time: 1.546 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 6e-06Total elapsed time: 10.793 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 5e-06Total elapsed time: 1.546 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.4e-05Total elapsed time: 10.794 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.4e-05Total elapsed time: 1.546 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed medium "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 4e-06Total elapsed time: 10.794 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.010735Total elapsed time: 10.795 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 3e-06Total elapsed time: 1.546 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.00997Total elapsed time: 1.547 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001053Total elapsed time: 10.796 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001034Total elapsed time: 1.549 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000377Total elapsed time: 10.797 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00055Total elapsed time: 1.550 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001619Total elapsed time: 10.799 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002161Total elapsed time: 1.552 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002418Total elapsed time: 10.801 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003104Total elapsed time: 1.555 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005684Total elapsed time: 10.807 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008252Total elapsed time: 10.807 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005507Total elapsed time: 1.561 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008814Total elapsed time: 1.561 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007844Total elapsed time: 10.815 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007668Total elapsed time: 1.568 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006755Total elapsed time: 10.822 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006783Total elapsed time: 1.575 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.088479Total elapsed time: 10.910 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.090558Total elapsed time: 1.666 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00013Total elapsed time: 10.910 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000129Total elapsed time: 1.666 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfir.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/tps/tcl/tcllib1.11.1/struct/list.tcl "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000552Total elapsed time: 10.923 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00132Total elapsed time: 10.924 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000568Total elapsed time: 1.679 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001273Total elapsed time: 1.680 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/tps/tcl/tcllib1.11.1/math/bignum.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000493Total elapsed time: 10.932 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.027553Total elapsed time: 10.938 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000456Total elapsed time: 1.688 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.027851Total elapsed time: 1.694 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002713Total elapsed time: 10.941 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.145406Total elapsed time: 10.941 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002798Total elapsed time: 1.697 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.149092Total elapsed time: 1.697 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.3e-05Total elapsed time: 10.942 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.146928Total elapsed time: 10.942 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.147027Total elapsed time: 10.942 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.7e-05Total elapsed time: 1.698 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.150561Total elapsed time: 1.698 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.150668Total elapsed time: 1.698 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 6e-06Total elapsed time: 10.942 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 6e-06Total elapsed time: 1.698 sec.
 @I [HLS-100] Command "import_lib /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq_fpv6 "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_fpv7.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002233Total elapsed time: 10.944 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002223Total elapsed time: 1.701 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_fpv.hlp "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.hlp "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/target_info.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000127Total elapsed time: 10.949 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00013Total elapsed time: 1.705 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/xilinx_interface.hlp "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.6e-05Total elapsed time: 10.949 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.9e-05Total elapsed time: 1.705 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.9e-05Total elapsed time: 10.949 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000215Total elapsed time: 10.949 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.8e-05Total elapsed time: 1.705 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000218Total elapsed time: 1.705 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000426Total elapsed time: 10.950 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00158Total elapsed time: 10.950 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002017Total elapsed time: 10.950 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.011942Total elapsed time: 10.954 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000446Total elapsed time: 1.706 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001629Total elapsed time: 1.706 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002044Total elapsed time: 1.707 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.012039Total elapsed time: 1.710 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001219Total elapsed time: 10.955 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001314Total elapsed time: 10.955 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001216Total elapsed time: 1.712 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001311Total elapsed time: 1.712 sec.
 @I [HLS-100] Command "set_part xc7z020clg484-1 "
 @I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 5e-06Total elapsed time: 10.959 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 4e-06Total elapsed time: 1.715 sec.
 @I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.003259Total elapsed time: 11.12 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.003951Total elapsed time: 4.16 sec.
 @I [HLS-100] Command "license_exists ap_opencl "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.002747Total elapsed time: 11.397 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.005001Total elapsed time: 4.64 sec.
 @I [HLS-100] Command "license_exists ap_sdsoc "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.004212Total elapsed time: 12.547 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.003201Total elapsed time: 4.97 sec.
 @I [HLS-100] Command "license_exists AUTOESL_NI "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.003167Total elapsed time: 12.601 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.003408Total elapsed time: 4.160 sec.
 @I [HLS-100] Command "license_exists HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 1e-05Total elapsed time: 12.601 sec.
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 9e-06Total elapsed time: 4.160 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 5e-06Total elapsed time: 12.602 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 7e-06Total elapsed time: 4.161 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.4e-05Total elapsed time: 12.602 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.7e-05Total elapsed time: 4.161 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 4e-06Total elapsed time: 12.602 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.016622Total elapsed time: 12.603 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 5e-06Total elapsed time: 4.162 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.018788Total elapsed time: 4.162 sec.
 @I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 4e-06Total elapsed time: 12.603 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 3e-06Total elapsed time: 4.163 sec.
 @I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.003038Total elapsed time: 12.652 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.003215Total elapsed time: 4.188 sec.
 @I [HLS-100] Command "license_exists ap_opencl "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.00284Total elapsed time: 12.703 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.003201Total elapsed time: 4.239 sec.
 @I [HLS-100] Command "license_exists ap_sdsoc "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.002971Total elapsed time: 12.758 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.00328Total elapsed time: 4.300 sec.
 @I [HLS-100] Command "license_exists AUTOESL_NI "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.003295Total elapsed time: 12.831 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.003009Total elapsed time: 4.363 sec.
 @I [HLS-100] Command "license_exists HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 1e-05Total elapsed time: 12.831 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.014204Total elapsed time: 12.832 sec.
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 1e-05Total elapsed time: 4.363 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.014701Total elapsed time: 4.364 sec.
 @I [HLS-10] Setting target device to 'xc7z020clg484-1'
-@I [HLS-100] Command 'set_part' returned 0; elapsed 0.033331Total elapsed time: 12.832 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.035865Total elapsed time: 4.364 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 1.9e-05Total elapsed time: 12.832 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 6e-06Total elapsed time: 4.364 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.5e-05Total elapsed time: 12.832 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 2.1e-05Total elapsed time: 4.364 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 3e-06Total elapsed time: 12.833 sec.
-@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.210439Total elapsed time: 12.833 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 5e-06Total elapsed time: 4.364 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.216073Total elapsed time: 4.365 sec.
 @I [HLS-100] Command "export_design -format ip_catalog "
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000132Total elapsed time: 12.837 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000134Total elapsed time: 4.369 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/common.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000426Total elapsed time: 12.840 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000798Total elapsed time: 12.840 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00038Total elapsed time: 4.372 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00074Total elapsed time: 4.372 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000258Total elapsed time: 12.841 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000209Total elapsed time: 4.372 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000597Total elapsed time: 12.841 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000587Total elapsed time: 4.373 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.2e-05Total elapsed time: 12.841 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.4e-05Total elapsed time: 4.373 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00011Total elapsed time: 12.842 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000111Total elapsed time: 4.373 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000831Total elapsed time: 12.843 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00083Total elapsed time: 4.375 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000346Total elapsed time: 12.843 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000354Total elapsed time: 4.375 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001643Total elapsed time: 12.845 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001615Total elapsed time: 4.377 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00238Total elapsed time: 12.847 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002348Total elapsed time: 4.379 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005253Total elapsed time: 12.853 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00777Total elapsed time: 12.853 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005302Total elapsed time: 4.384 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007769Total elapsed time: 4.384 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007614Total elapsed time: 12.860 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007494Total elapsed time: 4.392 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006717Total elapsed time: 12.867 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006961Total elapsed time: 4.399 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.085443Total elapsed time: 12.953 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.087302Total elapsed time: 4.486 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000129Total elapsed time: 12.953 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00014Total elapsed time: 4.487 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02582Total elapsed time: 12.979 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.025433Total elapsed time: 4.512 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002829Total elapsed time: 12.982 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.139734Total elapsed time: 12.982 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003196Total elapsed time: 4.515 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141719Total elapsed time: 4.515 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9e-05Total elapsed time: 12.983 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.14117Total elapsed time: 12.983 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.14125Total elapsed time: 12.983 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000118Total elapsed time: 4.517 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.143323Total elapsed time: 4.517 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.143412Total elapsed time: 4.517 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001254Total elapsed time: 12.984 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001362Total elapsed time: 12.984 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00146Total elapsed time: 4.518 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001568Total elapsed time: 4.519 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000167Total elapsed time: 12.985 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000161Total elapsed time: 4.519 sec.
 @I [IMPL-8] Exporting RTL as an IP in IP-XACT.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000138Total elapsed time: 12.986 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000203Total elapsed time: 4.520 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000144Total elapsed time: 12.990 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000154Total elapsed time: 4.526 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/common.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000412Total elapsed time: 12.991 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000872Total elapsed time: 12.991 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000419Total elapsed time: 4.526 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000895Total elapsed time: 4.527 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000224Total elapsed time: 12.992 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00024Total elapsed time: 4.527 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00067Total elapsed time: 12.992 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000676Total elapsed time: 4.528 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.8e-05Total elapsed time: 12.992 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.8e-05Total elapsed time: 4.528 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000147Total elapsed time: 12.993 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00011Total elapsed time: 4.528 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000825Total elapsed time: 12.994 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000767Total elapsed time: 4.529 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000352Total elapsed time: 12.994 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000348Total elapsed time: 4.529 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001652Total elapsed time: 12.996 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001651Total elapsed time: 4.531 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002365Total elapsed time: 12.998 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002384Total elapsed time: 4.533 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005341Total elapsed time: 13.4 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007839Total elapsed time: 13.4 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005245Total elapsed time: 4.539 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007775Total elapsed time: 4.539 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008461Total elapsed time: 13.12 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007585Total elapsed time: 4.546 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007004Total elapsed time: 13.19 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006659Total elapsed time: 4.553 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.085088Total elapsed time: 13.105 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.08413Total elapsed time: 4.638 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000137Total elapsed time: 13.105 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000126Total elapsed time: 4.638 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026798Total elapsed time: 13.132 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02574Total elapsed time: 4.663 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002851Total elapsed time: 13.135 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141642Total elapsed time: 13.135 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002828Total elapsed time: 4.666 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.138249Total elapsed time: 4.666 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.2e-05Total elapsed time: 13.136 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.143005Total elapsed time: 13.136 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.143085Total elapsed time: 13.136 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.7e-05Total elapsed time: 4.667 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.139617Total elapsed time: 4.668 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.139696Total elapsed time: 4.668 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001199Total elapsed time: 13.138 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001284Total elapsed time: 13.138 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001134Total elapsed time: 4.669 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001217Total elapsed time: 4.669 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000119Total elapsed time: 13.138 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000125Total elapsed time: 4.669 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000103Total elapsed time: 13.138 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000114Total elapsed time: 4.670 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool_Loop_LOOP_proc.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.6e-05Total elapsed time: 13.138 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.5e-05Total elapsed time: 4.670 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000111Total elapsed time: 13.139 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000103Total elapsed time: 4.670 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000114Total elapsed time: 13.140 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000217Total elapsed time: 4.672 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000102Total elapsed time: 13.140 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000208Total elapsed time: 4.672 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool_Loop_LOOP_proc.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.5e-05Total elapsed time: 13.141 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000167Total elapsed time: 4.673 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.compgen.tcl "
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000173Total elapsed time: 13.141 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000285Total elapsed time: 4.673 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000161Total elapsed time: 13.142 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000263Total elapsed time: 4.674 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000175Total elapsed time: 13.142 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000195Total elapsed time: 4.675 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.4e-05Total elapsed time: 13.142 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000115Total elapsed time: 4.675 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000104Total elapsed time: 13.142 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.022564Total elapsed time: 13.163 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000118Total elapsed time: 4.675 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026121Total elapsed time: 4.699 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00012Total elapsed time: 13.169 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00012Total elapsed time: 4.705 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000104Total elapsed time: 13.169 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000108Total elapsed time: 4.705 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool_Loop_LOOP_proc.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.3e-05Total elapsed time: 13.169 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.4e-05Total elapsed time: 4.705 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.9e-05Total elapsed time: 13.169 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.1e-05Total elapsed time: 4.705 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000123Total elapsed time: 13.212 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000121Total elapsed time: 4.729 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.5e-05Total elapsed time: 13.212 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.4e-05Total elapsed time: 4.730 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000184Total elapsed time: 13.228 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000176Total elapsed time: 4.736 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000148Total elapsed time: 13.228 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000147Total elapsed time: 4.736 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000178Total elapsed time: 13.229 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000182Total elapsed time: 4.736 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.2e-05Total elapsed time: 13.229 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000105Total elapsed time: 4.736 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.9e-05Total elapsed time: 13.229 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.8e-05Total elapsed time: 4.736 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000122Total elapsed time: 13.256 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000127Total elapsed time: 4.764 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000165Total elapsed time: 13.258 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000161Total elapsed time: 4.765 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000161Total elapsed time: 13.258 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000166Total elapsed time: 4.765 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000105Total elapsed time: 13.258 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000107Total elapsed time: 4.765 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.1e-05Total elapsed time: 13.258 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.2e-05Total elapsed time: 4.766 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000176Total elapsed time: 13.272 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000168Total elapsed time: 4.779 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000163Total elapsed time: 13.272 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000158Total elapsed time: 4.779 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000102Total elapsed time: 13.272 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000115Total elapsed time: 4.779 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.2e-05Total elapsed time: 13.272 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9e-05Total elapsed time: 4.780 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000118Total elapsed time: 13.299 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000116Total elapsed time: 4.806 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00011Total elapsed time: 13.310 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000129Total elapsed time: 4.817 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 4.8e-05Total elapsed time: 13.311 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 4.6e-05Total elapsed time: 4.818 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 4.2e-05Total elapsed time: 13.311 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 4.2e-05Total elapsed time: 4.818 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/common.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000418Total elapsed time: 13.313 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000902Total elapsed time: 13.314 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000444Total elapsed time: 4.820 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000924Total elapsed time: 4.821 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00026Total elapsed time: 13.314 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000233Total elapsed time: 4.821 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000954Total elapsed time: 13.315 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000724Total elapsed time: 4.822 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.6e-05Total elapsed time: 13.315 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.4e-05Total elapsed time: 4.822 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000122Total elapsed time: 13.315 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000121Total elapsed time: 4.822 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000972Total elapsed time: 13.317 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000815Total elapsed time: 4.823 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000404Total elapsed time: 13.317 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000436Total elapsed time: 4.824 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001825Total elapsed time: 13.319 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00196Total elapsed time: 4.826 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002397Total elapsed time: 13.321 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002516Total elapsed time: 4.828 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00538Total elapsed time: 13.327 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007914Total elapsed time: 13.327 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005544Total elapsed time: 4.834 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008183Total elapsed time: 4.834 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007728Total elapsed time: 13.335 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007646Total elapsed time: 4.842 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007386Total elapsed time: 13.342 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007553Total elapsed time: 4.849 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.082742Total elapsed time: 13.425 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.086111Total elapsed time: 4.936 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000132Total elapsed time: 13.425 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000149Total elapsed time: 4.936 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026417Total elapsed time: 13.452 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026209Total elapsed time: 4.962 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002933Total elapsed time: 13.455 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.139113Total elapsed time: 13.455 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00298Total elapsed time: 4.965 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.142702Total elapsed time: 4.965 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.8e-05Total elapsed time: 13.456 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.140565Total elapsed time: 13.456 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.140646Total elapsed time: 13.456 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.1e-05Total elapsed time: 4.966 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.144079Total elapsed time: 4.966 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.144157Total elapsed time: 4.966 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001214Total elapsed time: 13.457 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.0013Total elapsed time: 13.457 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001187Total elapsed time: 4.968 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001271Total elapsed time: 4.968 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000263Total elapsed time: 40.924 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000249Total elapsed time: 15.983 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/common.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000449Total elapsed time: 40.942 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000956Total elapsed time: 40.943 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000711Total elapsed time: 15.987 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001317Total elapsed time: 15.988 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000497Total elapsed time: 40.950 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000255Total elapsed time: 15.988 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001088Total elapsed time: 40.951 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000726Total elapsed time: 15.989 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.9e-05Total elapsed time: 40.951 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7e-05Total elapsed time: 15.989 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000129Total elapsed time: 40.952 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000134Total elapsed time: 15.989 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000928Total elapsed time: 40.953 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00087Total elapsed time: 15.990 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000387Total elapsed time: 40.953 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000376Total elapsed time: 15.991 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00181Total elapsed time: 40.955 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001879Total elapsed time: 15.993 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002516Total elapsed time: 40.958 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002419Total elapsed time: 15.995 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005322Total elapsed time: 40.963 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00797Total elapsed time: 40.963 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005892Total elapsed time: 16.1 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008452Total elapsed time: 16.1 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008214Total elapsed time: 40.971 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009015Total elapsed time: 16.10 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006914Total elapsed time: 40.978 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006886Total elapsed time: 16.17 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.083476Total elapsed time: 41.62 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.083767Total elapsed time: 16.101 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000131Total elapsed time: 41.62 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000141Total elapsed time: 16.101 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.027034Total elapsed time: 41.89 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026518Total elapsed time: 16.128 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002962Total elapsed time: 41.92 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.140466Total elapsed time: 41.93 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002967Total elapsed time: 16.131 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141497Total elapsed time: 16.131 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.5e-05Total elapsed time: 41.94 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141917Total elapsed time: 41.94 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.142026Total elapsed time: 41.94 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.6e-05Total elapsed time: 16.132 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.142938Total elapsed time: 16.132 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.143018Total elapsed time: 16.132 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001183Total elapsed time: 41.95 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001268Total elapsed time: 41.95 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001186Total elapsed time: 16.134 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001272Total elapsed time: 16.134 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000132Total elapsed time: 41.95 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000135Total elapsed time: 16.134 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000118Total elapsed time: 41.96 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000118Total elapsed time: 16.135 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000142Total elapsed time: 41.98 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000128Total elapsed time: 16.136 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/common.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000392Total elapsed time: 41.99 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00082Total elapsed time: 41.99 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000388Total elapsed time: 16.137 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000826Total elapsed time: 16.138 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000229Total elapsed time: 41.99 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000225Total elapsed time: 16.138 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000659Total elapsed time: 41.100 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000647Total elapsed time: 16.139 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.6e-05Total elapsed time: 41.100 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.7e-05Total elapsed time: 16.139 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000119Total elapsed time: 41.100 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000113Total elapsed time: 16.139 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000768Total elapsed time: 41.101 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000817Total elapsed time: 16.140 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000356Total elapsed time: 41.102 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000392Total elapsed time: 16.140 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001665Total elapsed time: 41.104 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00171Total elapsed time: 16.142 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002299Total elapsed time: 41.106 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002328Total elapsed time: 16.144 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004975Total elapsed time: 41.111 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007401Total elapsed time: 41.111 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004989Total elapsed time: 16.150 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007435Total elapsed time: 16.150 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007743Total elapsed time: 41.119 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007874Total elapsed time: 16.157 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006717Total elapsed time: 41.126 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006725Total elapsed time: 16.164 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.082368Total elapsed time: 41.208 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.08713Total elapsed time: 16.252 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000128Total elapsed time: 41.208 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000141Total elapsed time: 16.252 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026286Total elapsed time: 41.235 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026504Total elapsed time: 16.278 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003349Total elapsed time: 41.238 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.137458Total elapsed time: 41.238 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003058Total elapsed time: 16.281 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.142408Total elapsed time: 16.281 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000103Total elapsed time: 41.239 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.138925Total elapsed time: 41.239 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.13902Total elapsed time: 41.239 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00011Total elapsed time: 16.283 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.143869Total elapsed time: 16.283 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.143946Total elapsed time: 16.283 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001198Total elapsed time: 41.241 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001292Total elapsed time: 41.241 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00121Total elapsed time: 16.284 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001293Total elapsed time: 16.284 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00012Total elapsed time: 41.241 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000121Total elapsed time: 16.284 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.0001Total elapsed time: 41.241 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000101Total elapsed time: 16.285 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool_Loop_LOOP_proc.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.5e-05Total elapsed time: 41.241 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.8e-05Total elapsed time: 16.285 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.1e-05Total elapsed time: 41.242 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000122Total elapsed time: 16.285 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000137Total elapsed time: 41.273 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000139Total elapsed time: 16.306 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 4.5e-05Total elapsed time: 41.274 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 4.4e-05Total elapsed time: 16.307 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/common.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000563Total elapsed time: 41.312 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001168Total elapsed time: 41.312 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000401Total elapsed time: 16.308 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000883Total elapsed time: 16.309 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000276Total elapsed time: 41.312 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00026Total elapsed time: 16.309 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000748Total elapsed time: 41.313 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000664Total elapsed time: 16.310 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.8e-05Total elapsed time: 41.313 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.7e-05Total elapsed time: 16.310 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000118Total elapsed time: 41.313 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000112Total elapsed time: 16.310 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000799Total elapsed time: 41.315 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00079Total elapsed time: 16.311 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000359Total elapsed time: 41.315 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000397Total elapsed time: 16.311 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001766Total elapsed time: 41.317 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001655Total elapsed time: 16.313 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002378Total elapsed time: 41.319 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002315Total elapsed time: 16.315 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005068Total elapsed time: 41.324 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007583Total elapsed time: 41.324 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005004Total elapsed time: 16.321 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007441Total elapsed time: 16.321 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007892Total elapsed time: 41.332 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007717Total elapsed time: 16.328 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007341Total elapsed time: 41.340 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006651Total elapsed time: 16.335 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.08321Total elapsed time: 41.423 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.084991Total elapsed time: 16.420 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000127Total elapsed time: 41.423 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00013Total elapsed time: 16.420 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026881Total elapsed time: 41.450 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026087Total elapsed time: 16.447 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002984Total elapsed time: 41.453 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.139586Total elapsed time: 41.453 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003073Total elapsed time: 16.450 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.139601Total elapsed time: 16.450 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.5e-05Total elapsed time: 41.454 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.140985Total elapsed time: 41.454 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141088Total elapsed time: 41.455 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.8e-05Total elapsed time: 16.451 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.14099Total elapsed time: 16.451 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141069Total elapsed time: 16.451 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001165Total elapsed time: 41.456 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001251Total elapsed time: 41.456 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001239Total elapsed time: 16.452 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001334Total elapsed time: 16.452 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000181Total elapsed time: 41.499 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000199Total elapsed time: 16.458 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000182Total elapsed time: 51.421 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000202Total elapsed time: 25.941 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/common.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00052Total elapsed time: 51.425 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001036Total elapsed time: 51.425 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000437Total elapsed time: 25.945 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000939Total elapsed time: 25.945 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000258Total elapsed time: 51.425 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000254Total elapsed time: 25.945 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00074Total elapsed time: 51.426 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00083Total elapsed time: 25.946 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.1e-05Total elapsed time: 51.426 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00011Total elapsed time: 25.946 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000119Total elapsed time: 51.426 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000231Total elapsed time: 25.947 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000915Total elapsed time: 51.428 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000979Total elapsed time: 25.948 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000441Total elapsed time: 51.428 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000593Total elapsed time: 25.949 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001918Total elapsed time: 51.430 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002071Total elapsed time: 25.951 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002454Total elapsed time: 51.433 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002449Total elapsed time: 25.953 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005272Total elapsed time: 51.438 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007848Total elapsed time: 51.438 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005297Total elapsed time: 25.959 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007885Total elapsed time: 25.959 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008332Total elapsed time: 51.446 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008224Total elapsed time: 25.967 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006889Total elapsed time: 51.453 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006801Total elapsed time: 25.974 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.086306Total elapsed time: 51.540 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.085275Total elapsed time: 26.59 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000142Total elapsed time: 51.540 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000136Total elapsed time: 26.60 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02664Total elapsed time: 51.567 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026538Total elapsed time: 26.86 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00301Total elapsed time: 51.570 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.143063Total elapsed time: 51.570 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003091Total elapsed time: 26.89 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.142278Total elapsed time: 26.89 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.7e-05Total elapsed time: 51.571 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.144476Total elapsed time: 51.571 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.144555Total elapsed time: 51.571 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.6e-05Total elapsed time: 26.90 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.143705Total elapsed time: 26.91 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.143796Total elapsed time: 26.91 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001185Total elapsed time: 51.572 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00127Total elapsed time: 51.572 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001226Total elapsed time: 26.92 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00131Total elapsed time: 26.92 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000137Total elapsed time: 51.573 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000133Total elapsed time: 26.92 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000115Total elapsed time: 51.573 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000115Total elapsed time: 26.93 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000127Total elapsed time: 51.575 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000129Total elapsed time: 26.95 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/common.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000391Total elapsed time: 51.576 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000836Total elapsed time: 51.576 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000411Total elapsed time: 26.95 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000852Total elapsed time: 26.96 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000224Total elapsed time: 51.576 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000226Total elapsed time: 26.96 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000674Total elapsed time: 51.577 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00064Total elapsed time: 26.97 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.6e-05Total elapsed time: 51.577 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.6e-05Total elapsed time: 26.97 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000117Total elapsed time: 51.577 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000114Total elapsed time: 26.97 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000779Total elapsed time: 51.579 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00078Total elapsed time: 26.98 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000358Total elapsed time: 51.579 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000353Total elapsed time: 26.98 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001695Total elapsed time: 51.581 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001722Total elapsed time: 26.100 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002309Total elapsed time: 51.583 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002304Total elapsed time: 26.102 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005084Total elapsed time: 51.588 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007517Total elapsed time: 51.588 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005059Total elapsed time: 26.108 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007496Total elapsed time: 26.108 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007704Total elapsed time: 51.596 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007697Total elapsed time: 26.115 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007023Total elapsed time: 51.603 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006699Total elapsed time: 26.122 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.082095Total elapsed time: 51.685 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.085815Total elapsed time: 26.208 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00013Total elapsed time: 51.685 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000129Total elapsed time: 26.208 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026814Total elapsed time: 51.712 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026575Total elapsed time: 26.235 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002956Total elapsed time: 51.715 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.137668Total elapsed time: 51.715 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002985Total elapsed time: 26.238 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.140854Total elapsed time: 26.238 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.4e-05Total elapsed time: 51.716 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.139083Total elapsed time: 51.717 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.139167Total elapsed time: 51.717 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.4e-05Total elapsed time: 26.239 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.142262Total elapsed time: 26.239 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.142354Total elapsed time: 26.239 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001168Total elapsed time: 51.718 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001253Total elapsed time: 51.718 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001151Total elapsed time: 26.241 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001237Total elapsed time: 26.241 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00012Total elapsed time: 51.718 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000123Total elapsed time: 26.241 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.0001Total elapsed time: 51.718 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000102Total elapsed time: 26.241 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool_Loop_LOOP_proc.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.6e-05Total elapsed time: 51.719 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.1e-05Total elapsed time: 26.241 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000108Total elapsed time: 51.719 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.2e-05Total elapsed time: 26.241 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00013Total elapsed time: 51.740 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000137Total elapsed time: 26.263 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/maxpool.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 4.5e-05Total elapsed time: 51.740 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.5e-05Total elapsed time: 26.263 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/common.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000392Total elapsed time: 51.742 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000835Total elapsed time: 51.743 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000396Total elapsed time: 26.264 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000869Total elapsed time: 26.265 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000225Total elapsed time: 51.743 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000229Total elapsed time: 26.265 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000642Total elapsed time: 51.744 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000673Total elapsed time: 26.266 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.7e-05Total elapsed time: 51.744 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.8e-05Total elapsed time: 26.266 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000114Total elapsed time: 51.744 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000119Total elapsed time: 26.266 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000814Total elapsed time: 51.745 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000806Total elapsed time: 26.267 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000356Total elapsed time: 51.746 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000392Total elapsed time: 26.267 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001637Total elapsed time: 51.747 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001695Total elapsed time: 26.269 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002333Total elapsed time: 51.750 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002329Total elapsed time: 26.272 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005053Total elapsed time: 51.755 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007512Total elapsed time: 51.755 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004981Total elapsed time: 26.277 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007435Total elapsed time: 26.277 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007692Total elapsed time: 51.762 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007861Total elapsed time: 26.285 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006716Total elapsed time: 51.769 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.0067Total elapsed time: 26.291 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.084569Total elapsed time: 51.854 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.085616Total elapsed time: 26.377 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000129Total elapsed time: 51.854 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000128Total elapsed time: 26.377 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026741Total elapsed time: 51.881 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026054Total elapsed time: 26.403 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002922Total elapsed time: 51.884 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.139709Total elapsed time: 51.884 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00291Total elapsed time: 26.406 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.140223Total elapsed time: 26.406 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.6e-05Total elapsed time: 51.885 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141145Total elapsed time: 51.885 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141227Total elapsed time: 51.885 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.4e-05Total elapsed time: 26.408 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141659Total elapsed time: 26.408 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.14174Total elapsed time: 26.408 sec.
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /home/littlefoot/vivado/Vivado_HLS/2015.2/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001151Total elapsed time: 51.887 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001235Total elapsed time: 51.887 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001184Total elapsed time: 26.409 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001279Total elapsed time: 26.409 sec.
 @I [HLS-100] Command "source /home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000273Total elapsed time: 51.893 sec.
-@I [HLS-100] Command 'export_design' returned 0; elapsed 1.55752Total elapsed time: 63.555 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 1.77011Total elapsed time: 63.555 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000203Total elapsed time: 26.415 sec.
+@I [HLS-100] Command 'export_design' returned 0; elapsed 1.56695Total elapsed time: 40.388 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 1.78478Total elapsed time: 40.388 sec.
 @I [HLS-100] Command "cleanup_all "
-@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.000395Total elapsed time: 63.556 sec.
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.000331Total elapsed time: 40.389 sec.

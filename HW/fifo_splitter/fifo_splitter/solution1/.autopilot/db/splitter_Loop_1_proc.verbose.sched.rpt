@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'splitter_Loop_1_proc'
 ================================================================
-* Date:           Sat Nov 26 12:05:58 2016
+* Date:           Wed Nov 30 17:14:55 2016
 
 * Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
 * Project:        fifo_splitter
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|      8.75|        1.25|
+    |ap_clk  |  10.00|      3.44|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -140,32 +140,32 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
  <State 1>: 1.57ns
-ST_1: empty [1/1] 0.00ns
-newFuncRoot:0  %empty = call i32 (...)* @_ssdm_op_SpecInterface(i8* %input_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_1: stg_5 [1/1] 0.00ns
+newFuncRoot:0  call void (...)* @_ssdm_op_SpecInterface(i8* %output_5_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
-ST_1: empty_9 [1/1] 0.00ns
-newFuncRoot:1  %empty_9 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_1: stg_6 [1/1] 0.00ns
+newFuncRoot:1  call void (...)* @_ssdm_op_SpecInterface(i8* %output_4_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
-ST_1: empty_10 [1/1] 0.00ns
-newFuncRoot:2  %empty_10 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_1: stg_7 [1/1] 0.00ns
+newFuncRoot:2  call void (...)* @_ssdm_op_SpecInterface(i8* %output_3_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
-ST_1: empty_11 [1/1] 0.00ns
-newFuncRoot:3  %empty_11 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_1: stg_8 [1/1] 0.00ns
+newFuncRoot:3  call void (...)* @_ssdm_op_SpecInterface(i8* %output_2_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
-ST_1: empty_12 [1/1] 0.00ns
-newFuncRoot:4  %empty_12 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_1: stg_9 [1/1] 0.00ns
+newFuncRoot:4  call void (...)* @_ssdm_op_SpecInterface(i8* %output_1_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
-ST_1: empty_13 [1/1] 0.00ns
-newFuncRoot:5  %empty_13 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_1: stg_10 [1/1] 0.00ns
+newFuncRoot:5  call void (...)* @_ssdm_op_SpecInterface(i8* %output_0_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
-ST_1: empty_14 [1/1] 0.00ns
-newFuncRoot:6  %empty_14 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_1: stg_11 [1/1] 0.00ns
+newFuncRoot:6  call void (...)* @_ssdm_op_SpecInterface(i8* %input_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_1: stg_12 [1/1] 1.57ns
 newFuncRoot:7  br label %0
 
 
- <State 2>: 2.07ns
+ <State 2>: 3.44ns
 ST_2: pixels_read_0_i_i [1/1] 0.00ns
 :0  %pixels_read_0_i_i = phi i10 [ 0, %newFuncRoot ], [ %pixels_read, %1 ]
 
@@ -178,40 +178,40 @@ ST_2: pixels_read [1/1] 1.84ns
 ST_2: stg_16 [1/1] 0.00ns
 :3  br i1 %exitcond4_i_i, label %splitter_.exit2.exitStub, label %1
 
+ST_2: temp [1/1] 0.00ns
+:3  %temp = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %input_V)
 
- <State 3>: 8.75ns
-ST_3: empty_15 [1/1] 0.00ns
-:0  %empty_15 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)
+
+ <State 3>: 0.00ns
+ST_3: empty [1/1] 0.00ns
+:0  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)
 
 ST_3: tmp_2 [1/1] 0.00ns
-:1  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str1)
+:1  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2)
 
-ST_3: stg_19 [1/1] 0.00ns
+ST_3: stg_20 [1/1] 0.00ns
 :2  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind
 
-ST_3: temp [1/1] 4.38ns
-:3  %temp = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %input_V)
+ST_3: stg_21 [1/1] 0.00ns
+:4  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %output_0_V, i8 %temp)
 
-ST_3: stg_21 [1/1] 4.38ns
-:4  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %output_0_V, i8 %temp)
+ST_3: stg_22 [1/1] 0.00ns
+:5  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %output_1_V, i8 %temp)
 
-ST_3: stg_22 [1/1] 4.38ns
-:5  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %output_1_V, i8 %temp)
+ST_3: stg_23 [1/1] 0.00ns
+:6  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %output_2_V, i8 %temp)
 
-ST_3: stg_23 [1/1] 4.38ns
-:6  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %output_2_V, i8 %temp)
+ST_3: stg_24 [1/1] 0.00ns
+:7  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %output_3_V, i8 %temp)
 
-ST_3: stg_24 [1/1] 4.38ns
-:7  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %output_3_V, i8 %temp)
+ST_3: stg_25 [1/1] 0.00ns
+:8  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %output_4_V, i8 %temp)
 
-ST_3: stg_25 [1/1] 4.38ns
-:8  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %output_4_V, i8 %temp)
+ST_3: stg_26 [1/1] 0.00ns
+:9  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %output_5_V, i8 %temp)
 
-ST_3: stg_26 [1/1] 4.38ns
-:9  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %output_5_V, i8 %temp)
-
-ST_3: empty_16 [1/1] 0.00ns
-:10  %empty_16 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str1, i32 %tmp_2)
+ST_3: empty_2 [1/1] 0.00ns
+:10  %empty_2 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2, i32 %tmp_2)
 
 ST_3: stg_28 [1/1] 0.00ns
 :11  br label %0

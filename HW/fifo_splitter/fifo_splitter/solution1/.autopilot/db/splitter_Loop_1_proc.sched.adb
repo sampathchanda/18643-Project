@@ -31,7 +31,7 @@
 					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>0</direction>
-				<if_type>3</if_type>
+				<if_type>0</if_type>
 				<array_size>0</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
@@ -59,7 +59,7 @@
 					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>1</direction>
-				<if_type>3</if_type>
+				<if_type>0</if_type>
 				<array_size>0</array_size>
 				<bit_vecs>
 					<count>0</count>
@@ -87,7 +87,7 @@
 					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>1</direction>
-				<if_type>3</if_type>
+				<if_type>0</if_type>
 				<array_size>0</array_size>
 				<bit_vecs>
 					<count>0</count>
@@ -115,7 +115,7 @@
 					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>1</direction>
-				<if_type>3</if_type>
+				<if_type>0</if_type>
 				<array_size>0</array_size>
 				<bit_vecs>
 					<count>0</count>
@@ -143,7 +143,7 @@
 					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>1</direction>
-				<if_type>3</if_type>
+				<if_type>0</if_type>
 				<array_size>0</array_size>
 				<bit_vecs>
 					<count>0</count>
@@ -171,7 +171,7 @@
 					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>1</direction>
-				<if_type>3</if_type>
+				<if_type>0</if_type>
 				<array_size>0</array_size>
 				<bit_vecs>
 					<count>0</count>
@@ -199,7 +199,7 @@
 					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>1</direction>
-				<if_type>3</if_type>
+				<if_type>0</if_type>
 				<array_size>0</array_size>
 				<bit_vecs>
 					<count>0</count>
@@ -1305,7 +1305,7 @@
 		<item>
 			<first>25</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1386,7 +1386,7 @@
 		<item>
 			<first>34</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>2</second>
 			</second>
 		</item>

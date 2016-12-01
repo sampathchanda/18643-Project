@@ -10,7 +10,7 @@
 
 module obj_detector_dadd_64ns_64ns_64_5_full_dsp
 #(parameter
-    ID         = 20,
+    ID         = 57,
     NUM_STAGE  = 5,
     din0_WIDTH = 64,
     din1_WIDTH = 64,

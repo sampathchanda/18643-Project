@@ -4344,3 +4344,1532 @@ make: Nothing to be done for `all'.
 00:21:40 **** Incremental Build of configuration Debug for project proj4 ****
 make all 
 make: Nothing to be done for `all'.
+22:08:19 **** Clean-only build of configuration Debug for project proj3 ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  proj3.elf.size  proj3.elf
+ 
+22:08:19 **** Clean-only build of configuration Debug for project proj3_bsp_xaxicdma_example_simple_poll_1 ****
+make clean 
+rm -rf  ./src/xaxicdma_example_simple_poll.o  ./src/xaxicdma_example_simple_poll.d  proj3_bsp_xaxicdma_example_simple_poll_1.elf.size  proj3_bsp_xaxicdma_example_simple_poll_1.elf
+ 
+22:08:19 **** Clean-only build of configuration Debug for project proj4 ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  proj4.elf.size  proj4.elf
+ 
+22:08:20 **** Clean-only build of project proj3_bsp ****
+22:08:20 **** Clean-only build of project proj4_bsp ****
+make -k clean 
+make -k clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+rm -f ps7_cortexa9_0/lib/libxil.a
+22:08:20 **** Build of project proj3_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/axicdma_v3_0/src
+make -C ps7_cortexa9_0/libsrc/axicdma_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/obj_detector_v1_0/src
+make -C ps7_cortexa9_0/libsrc/obj_detector_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/axicdma_v3_0/src
+make -C ps7_cortexa9_0/libsrc/axicdma_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling axicdma
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/obj_detector_v1_0/src
+make -C ps7_cortexa9_0/libsrc/obj_detector_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling obj_detector
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Finished building libraries
+22:08:27 **** Build of configuration Debug for project proj3 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../proj3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:12:0: warning: "N" redefined
+ #define N 28
+ ^
+In file included from ../src/main.cpp:10:0:
+../src/main.h:4:0: note: this is the location of the previous definition
+ #define N 6
+ ^
+../src/main.cpp:13:0: warning: "M" redefined
+ #define M 5
+ ^
+In file included from ../src/main.cpp:10:0:
+../src/main.h:5:0: note: this is the location of the previous definition
+ #define M 3
+ ^
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:152:28: error: 'in_mat_b' was not declared in this scope
+     obj_detector(in_mat_a, in_mat_b, hw_result);
+                            ^
+../src/main.cpp:160:33: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+  if (!nearlyEqual(hw_result[i][j], sw_result[i][j])) {
+                                 ^
+../src/main.cpp:160:50: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+  if (!nearlyEqual(hw_result[i][j], sw_result[i][j])) {
+                                                  ^
+../src/main.cpp:161:76: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+    printf("Phase: \tRes[%d][%d]\tHW: %0.2f\tSW: %0.2f\n",i,j,hw_result[i][j],sw_result[i][j]);
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+                                                                            ^
+../src/main.cpp:161:92: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+    printf("Phase: \tRes[%d][%d]\tHW: %0.2f\tSW: %0.2f\n",i,j,hw_result[i][j],sw_result[i][j]);
+                                                                                            ^
+../src/main.cpp: In function 'void obj_detector(mat_a (*)[28], mat_b (*)[5], mat_conv (*)[24])':
+../src/main.cpp:198:27: error: 'cdma_dev_b' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_b, (u32)(b), (u32)(BRAM_B_ID), M*M*sizeof(float), NULL, NULL);
+                           ^
+../src/main.cpp:198:55: error: 'BRAM_B_ID' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_b, (u32)(b), (u32)(BRAM_B_ID), M*M*sizeof(float), NULL, NULL);
+                                                       ^
+../src/main.cpp:207:27: error: 'cdma_dev_conv' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_conv, (u32)(BRAM_CONV_ID), (u32)(conv), (N-M+1)*(N-M+1)*sizeof(float), NULL, NULL);
+                           ^
+../src/main.cpp:207:48: error: 'BRAM_CONV_ID' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_conv, (u32)(BRAM_CONV_ID), (u32)(conv), (N-M+1)*(N-M+1)*sizeof(float), NULL, NULL);
+                                                ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:26:21: error: 'XPAR_HIER_BRAM_3_AXI_CDMA_0_DEVICE_ID' was not declared in this scope
+ #define CDMA_RES_ID XPAR_HIER_BRAM_3_AXI_CDMA_0_DEVICE_ID
+                     ^
+../src/main.cpp:259:42: note: in expansion of macro 'CDMA_RES_ID'
+  cdma_config_res = XAxiCdma_LookupConfig(CDMA_RES_ID);
+                                          ^
+../src/main.cpp:27:23: error: 'XPAR_HIER_BRAM_3_AXI_CDMA_0_BASEADDR' was not declared in this scope
+ #define CDMA_RES_BASE XPAR_HIER_BRAM_3_AXI_CDMA_0_BASEADDR
+                       ^
+../src/main.cpp:260:64: note: in expansion of macro 'CDMA_RES_BASE'
+  status = XAxiCdma_CfgInitialize(&cdma_dev_res,cdma_config_res,CDMA_RES_BASE);
+                                                                ^
+make: *** [src/main.o] Error 1
+22:08:28 **** Build of configuration Debug for project proj3_bsp_xaxicdma_example_simple_poll_1 ****
+make all 
+Building file: ../src/xaxicdma_example_simple_poll.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxicdma_example_simple_poll.o" -I../../proj3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxicdma_example_simple_poll.d" -MT"src/xaxicdma_example_simple_poll.d" -o "src/xaxicdma_example_simple_poll.o" "../src/xaxicdma_example_simple_poll.c"
+Finished building: ../src/xaxicdma_example_simple_poll.c
+ 
+Building target: proj3_bsp_xaxicdma_example_simple_poll_1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../proj3_bsp/ps7_cortexa9_0/lib -o "proj3_bsp_xaxicdma_example_simple_poll_1.elf"  ./src/xaxicdma_example_simple_poll.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: proj3_bsp_xaxicdma_example_simple_poll_1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj3_bsp_xaxicdma_example_simple_poll_1.elf  |tee "proj3_bsp_xaxicdma_example_simple_poll_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31552	   1224	  23184	  55960	   da98	proj3_bsp_xaxicdma_example_simple_poll_1.elf
+Finished building: proj3_bsp_xaxicdma_example_simple_poll_1.elf.size
+ 
+22:08:28 **** Build of project proj4_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/axicdma_v3_0/src
+make -C ps7_cortexa9_0/libsrc/axicdma_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/obj_detector_v1_0/src
+make -C ps7_cortexa9_0/libsrc/obj_detector_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_0/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/axicdma_v3_0/src
+make -C ps7_cortexa9_0/libsrc/axicdma_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling axicdma
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/obj_detector_v1_0/src
+make -C ps7_cortexa9_0/libsrc/obj_detector_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling obj_detector
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_0/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling XilFFs Library
+Creating archive libxilffs.a
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Finished building libraries
+22:08:35 **** Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `initialize_sdcard()':
+/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/../src/main.cpp:263: undefined reference to `f_mount'
+/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/../src/main.cpp:269: undefined reference to `f_open'
+/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/../src/main.cpp:275: undefined reference to `f_open'
+./src/main.o: In function `sdcard_read(FIL*, void*, unsigned int)':
+/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4/Debug/../src/main.cpp:287: undefined reference to `f_read'
+collect2: error: ld returned 1 exit status
+make: *** [proj4.elf] Error 1
+makefile:48: recipe for target 'proj4.elf' failed
+22:13:09 **** Auto Build of project proj4_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/axicdma_v3_0/src
+make -C ps7_cortexa9_0/libsrc/axicdma_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/obj_detector_v1_0/src
+make -C ps7_cortexa9_0/libsrc/obj_detector_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_0/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xilflash_v4_0/src
+make -C ps7_cortexa9_0/libsrc/xilflash_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/axicdma_v3_0/src
+make -C ps7_cortexa9_0/libsrc/axicdma_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling axicdma
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/obj_detector_v1_0/src
+make -C ps7_cortexa9_0/libsrc/obj_detector_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling obj_detector
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_0/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling XilFFs Library
+Creating archive libxilffs.a
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/xilflash_v4_0/src
+make -C ps7_cortexa9_0/libsrc/xilflash_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling XilFlash Library:
+xilflash_intel.c: In function 'XFlashIntel_Initialize':
+xilflash_intel.c:267:54: warning: comparison between pointer and integer
+  if (InstancePtr->Properties.ProgCap.WriteBufferSize != NULL) {
+                                                      ^
+Creating archive libxilflash.a
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Finished building libraries
+22:13:18 **** Clean-only build of configuration Debug for project proj4 ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  proj4.elf.size  proj4.elf
+ 
+22:13:18 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  99408	   2444	  36880	 138732	  21dec	proj4.elf
+Finished building: proj4.elf.size
+ 
+01:23:24 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  99472	   2444	  36880	 138796	  21e2c	proj4.elf
+Finished building: proj4.elf.size
+ 
+01:27:05 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:146:28: error: 'in_mat_w0' was not declared in this scope
+     obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
+                            ^
+../src/main.cpp:146:39: error: 'in_mat_w1' was not declared in this scope
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+     obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
+                                       ^
+make: *** [src/main.o] Error 1
+01:43:33 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98832	   3044	  36272	 138148	  21ba4	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:11:59 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98832	   9956	  29360	 138148	  21ba4	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:12:53 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98832	   9956	  29360	 138148	  21ba4	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:14:10 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98416	   9956	  29360	 137732	  21a04	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:17:52 **** Incremental Build of configuration Debug for project proj3 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../proj3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:12:0: warning: "N" redefined
+ #define N 28
+ ^
+In file included from ../src/main.cpp:10:0:
+../src/main.h:4:0: note: this is the location of the previous definition
+ #define N 6
+ ^
+../src/main.cpp:13:0: warning: "M" redefined
+ #define M 5
+ ^
+In file included from ../src/main.cpp:10:0:
+../src/main.h:5:0: note: this is the location of the previous definition
+ #define M 3
+ ^
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:152:28: error: 'in_mat_b' was not declared in this scope
+     obj_detector(in_mat_a, in_mat_b, hw_result);
+                            ^
+../src/main.cpp:160:33: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+  if (!nearlyEqual(hw_result[i][j], sw_result[i][j])) {
+                                 ^
+../src/main.cpp:160:50: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+  if (!nearlyEqual(hw_result[i][j], sw_result[i][j])) {
+                                                  ^
+../src/main.cpp:161:76: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+    printf("Phase: \tRes[%d][%d]\tHW: %0.2f\tSW: %0.2f\n",i,j,hw_result[i][j],sw_result[i][j]);
+                                                                            ^
+../src/main.cpp:161:92: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+    printf("Phase: \tRes[%d][%d]\tHW: %0.2f\tSW: %0.2f\n",i,j,hw_result[i][j],sw_result[i][j]);
+                                                                                            ^
+../src/main.cpp: In function 'void obj_detector(mat_a (*)[28], mat_b (*)[5], mat_conv (*)[24])':
+../src/main.cpp:198:27: error: 'cdma_dev_b' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_b, (u32)(b), (u32)(BRAM_B_ID), M*M*sizeof(float), NULL, NULL);
+                           ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+../src/main.cpp:198:55: error: 'BRAM_B_ID' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_b, (u32)(b), (u32)(BRAM_B_ID), M*M*sizeof(float), NULL, NULL);
+                                                       ^
+../src/main.cpp:207:27: error: 'cdma_dev_conv' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_conv, (u32)(BRAM_CONV_ID), (u32)(conv), (N-M+1)*(N-M+1)*sizeof(float), NULL, NULL);
+                           ^
+../src/main.cpp:207:48: error: 'BRAM_CONV_ID' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_conv, (u32)(BRAM_CONV_ID), (u32)(conv), (N-M+1)*(N-M+1)*sizeof(float), NULL, NULL);
+                                                ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:26:21: error: 'XPAR_HIER_BRAM_3_AXI_CDMA_0_DEVICE_ID' was not declared in this scope
+ #define CDMA_RES_ID XPAR_HIER_BRAM_3_AXI_CDMA_0_DEVICE_ID
+                     ^
+../src/main.cpp:259:42: note: in expansion of macro 'CDMA_RES_ID'
+  cdma_config_res = XAxiCdma_LookupConfig(CDMA_RES_ID);
+                                          ^
+../src/main.cpp:27:23: error: 'XPAR_HIER_BRAM_3_AXI_CDMA_0_BASEADDR' was not declared in this scope
+ #define CDMA_RES_BASE XPAR_HIER_BRAM_3_AXI_CDMA_0_BASEADDR
+                       ^
+../src/main.cpp:260:64: note: in expansion of macro 'CDMA_RES_BASE'
+  status = XAxiCdma_CfgInitialize(&cdma_dev_res,cdma_config_res,CDMA_RES_BASE);
+                                                                ^
+make: *** [src/main.o] Error 1
+02:17:53 **** Incremental Build of configuration Debug for project proj3_bsp_xaxicdma_example_simple_poll_1 ****
+make all 
+make: Nothing to be done for 'all'.
+02:17:54 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:20:44 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98416	   9956	  29360	 137732	  21a04	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:21:18 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98416	   9956	  29360	 137732	  21a04	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:25:11 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:105:7: error: 'i' was not declared in this scope
+   for(i = 0; i < IMAGE_BYTES; i++) {
+       ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+02:25:14 **** Incremental Build of configuration Debug for project proj3 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../proj3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:12:0: warning: "N" redefined
+ #define N 28
+ ^
+In file included from ../src/main.cpp:10:0:
+../src/main.h:4:0: note: this is the location of the previous definition
+ #define N 6
+ ^
+../src/main.cpp:13:0: warning: "M" redefined
+ #define M 5
+ ^
+In file included from ../src/main.cpp:10:0:
+../src/main.h:5:0: note: this is the location of the previous definition
+ #define M 3
+ ^
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:152:28: error: 'in_mat_b' was not declared in this scope
+     obj_detector(in_mat_a, in_mat_b, hw_result);
+                            ^
+../src/main.cpp:160:33: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+  if (!nearlyEqual(hw_result[i][j], sw_result[i][j])) {
+                                 ^
+../src/main.cpp:160:50: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+  if (!nearlyEqual(hw_result[i][j], sw_result[i][j])) {
+                                                  ^
+../src/main.cpp:161:76: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+    printf("Phase: \tRes[%d][%d]\tHW: %0.2f\tSW: %0.2f\n",i,j,hw_result[i][j],sw_result[i][j]);
+                                                                            ^
+../src/main.cpp:161:92: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+    printf("Phase: \tRes[%d][%d]\tHW: %0.2f\tSW: %0.2f\n",i,j,hw_result[i][j],sw_result[i][j]);
+                                                                                            ^
+../src/main.cpp: In function 'void obj_detector(mat_a (*)[28], mat_b (*)[5], mat_conv (*)[24])':
+../src/main.cpp:198:27: error: 'cdma_dev_b' was not declared in this scope
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+  XAxiCdma_SimpleTransfer(&cdma_dev_b, (u32)(b), (u32)(BRAM_B_ID), M*M*sizeof(float), NULL, NULL);
+                           ^
+../src/main.cpp:198:55: error: 'BRAM_B_ID' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_b, (u32)(b), (u32)(BRAM_B_ID), M*M*sizeof(float), NULL, NULL);
+                                                       ^
+../src/main.cpp:207:27: error: 'cdma_dev_conv' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_conv, (u32)(BRAM_CONV_ID), (u32)(conv), (N-M+1)*(N-M+1)*sizeof(float), NULL, NULL);
+                           ^
+../src/main.cpp:207:48: error: 'BRAM_CONV_ID' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_conv, (u32)(BRAM_CONV_ID), (u32)(conv), (N-M+1)*(N-M+1)*sizeof(float), NULL, NULL);
+                                                ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:26:21: error: 'XPAR_HIER_BRAM_3_AXI_CDMA_0_DEVICE_ID' was not declared in this scope
+ #define CDMA_RES_ID XPAR_HIER_BRAM_3_AXI_CDMA_0_DEVICE_ID
+                     ^
+../src/main.cpp:259:42: note: in expansion of macro 'CDMA_RES_ID'
+  cdma_config_res = XAxiCdma_LookupConfig(CDMA_RES_ID);
+                                          ^
+../src/main.cpp:27:23: error: 'XPAR_HIER_BRAM_3_AXI_CDMA_0_BASEADDR' was not declared in this scope
+ #define CDMA_RES_BASE XPAR_HIER_BRAM_3_AXI_CDMA_0_BASEADDR
+                       ^
+../src/main.cpp:260:64: note: in expansion of macro 'CDMA_RES_BASE'
+  status = XAxiCdma_CfgInitialize(&cdma_dev_res,cdma_config_res,CDMA_RES_BASE);
+                                                                ^
+make: *** [src/main.o] Error 1
+02:25:14 **** Incremental Build of configuration Debug for project proj3_bsp_xaxicdma_example_simple_poll_1 ****
+make all 
+make: Nothing to be done for 'all'.
+02:25:15 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:105:7: error: 'i' was not declared in this scope
+   for(i = 0; i < IMAGE_BYTES; i++) {
+       ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+02:25:54 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:105:7: error: 'i' was not declared in this scope
+   for(i = 0; i < IMAGE_BYTES; i++) {
+       ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+02:26:11 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98424	   9956	  29360	 137740	  21a0c	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:26:15 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:28:28 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98400	   9956	  29360	 137716	  219f4	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:28:39 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:29:08 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98400	   9956	  29360	 137716	  219f4	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:29:11 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:31:36 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void obj_detector(float (*)[28], float (*)[5][5], float (*)[864], float*)':
+../src/main.cpp:140:34: error: 'red' was not declared in this scope
+  printf("%0.3f %0.3f\n", res[0], red[1]);
+                                  ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+02:31:38 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void obj_detector(float (*)[28], float (*)[5][5], float (*)[864], float*)':
+../src/main.cpp:140:34: error: 'red' was not declared in this scope
+  printf("%0.3f %0.3f\n", res[0], red[1]);
+                                  ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+02:31:55 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98416	   9956	  29360	 137732	  21a04	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:33:48 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:35:12 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:111:29: error: 'in_mat_w0' was not declared in this scope
+      obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
+                             ^
+../src/main.cpp:111:40: error: 'in_mat_w1' was not declared in this scope
+      obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
+                                        ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+02:35:26 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  99408	   2444	  36880	 138732	  21dec	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:35:30 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:36:54 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:111:29: error: 'in_mat_w0' was not declared in this scope
+      obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
+                             ^
+../src/main.cpp:111:40: error: 'in_mat_w1' was not declared in this scope
+      obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
+                                        ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+02:37:01 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98416	   9956	  29360	 137732	  21a04	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:37:29 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98416	   9956	  29360	 137732	  21a04	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:37:57 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:39:59 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98416	   9956	  29360	 137732	  21a04	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:40:08 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:40:49 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98416	   9956	  29360	 137732	  21a04	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:41:10 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:111:29: error: 'in_mat_w0' was not declared in this scope
+      obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
+                             ^
+../src/main.cpp:111:40: error: 'in_mat_w1' was not declared in this scope
+      obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
+                                        ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+02:42:10 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98480	   2444	  29360	 130284	  1fcec	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:44:54 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:103:5: error: 'in_mat_w2' was not declared in this scope
+     in_mat_w2[i][j] = 1;
+     ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+02:45:14 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98800	   2444	  29360	 130604	  1fe2c	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:45:23 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:46:26 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98792	   2444	  29360	 130596	  1fe24	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:46:28 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:51:04 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:134:29: error: 'in_mat_w0' was not declared in this scope
+      obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
+                             ^
+../src/main.cpp:134:40: error: 'in_mat_w1' was not declared in this scope
+      obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
+                                        ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+02:51:18 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98600	   9956	  29360	 137916	  21abc	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:51:21 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:51:45 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:134:29: error: 'in_mat_w0' was not declared in this scope
+      obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
+                             ^
+../src/main.cpp:134:40: error: 'in_mat_w1' was not declared in this scope
+      obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
+                                        ^
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+02:52:00 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98984	   2444	  29360	 130788	  1fee4	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:52:04 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:52:34 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98984	   2444	  29360	 130788	  1fee4	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:52:46 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98984	   2444	  29360	 130788	  1fee4	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:52:50 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:53:44 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98984	   9956	  29360	 138300	  21c3c	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:54:15 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98664	   9956	  29360	 137980	  21afc	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:54:21 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98600	   9956	  29360	 137916	  21abc	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:54:26 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:56:02 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98600	   9956	  29360	 137916	  21abc	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:56:04 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:56:46 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+02:57:33 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98600	   9956	  29360	 137916	  21abc	proj4.elf
+Finished building: proj4.elf.size
+ 
+02:57:35 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+03:50:33 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:88:8: warning: unused variable 'buff' [-Wunused-variable]
+   char buff[N*N];
+        ^
+../src/main.cpp:111:7: warning: unused variable 'image' [-Wunused-variable]
+   int image[N*N] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,77,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,169,250,251,31,0,0,0,0,0,0,0,19,134,248,248,248,174,0,0,0,0,0,0,0,0,0,0,169,253,253,210,18,0,0,0,0,0,0,78,200,253,253,253,253,253,118,0,0,0,0,0,0,0,0,116,253,253,210,25,0,0,0,0,0,25,198,248,253,253,253,253,253,253,123,0,0,0,0,0,0,0,0,125,253,253,32,0,0,0,0,0,176,234,253,253,253,173,25,43,253,253,123,0,0,0,0,0,0,0,0,171,253,213,12,0,0,0,76,128,246,253,253,189,141,12,0,20,253,253,123,0,0,0,0,0,0,0,0,255,253,142,0,0,0,117,247,253,253,233,141,12,0,0,0,20,253,253,166,0,0,0,0,0,0,0,0,255,253,176,6,122,209,247,253,253,159,35,0,0,0,0,0,20,253,253,253,0,0,0,0,0,0,0,0,150,253,253,206,248,253,253,231,144,12,0,0,0,0,0,0,20,253,253,253,0,0,0,0,0,0,0,0,93,218,253,253,253,253,198,63,0,0,0,0,0,0,0,0,5,168,253,253,0,0,0,0,0,0,0,0,0,30,122,140,65,65,10,0,0,0,0,0,0,0,0,0,0,143,253,155,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,166,253,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,253,253,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,253,249,41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,253,247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,253,247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,253,169,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,253,117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,147,253,117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,123,57,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+       ^
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  99752	   9956	  29360	 139068	  21f3c	proj4.elf
+Finished building: proj4.elf.size
+ 
+03:51:15 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:113:7: error: 'i' was not declared in this scope
+   for(i = 0; i < N; i++) {
+Building file: ../src/main.cpp
+       ^
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+../src/main.cpp:114:8: error: 'j' was not declared in this scope
+    for(j = 0; j < N; j++) {
+        ^
+../src/main.cpp:88:8: warning: unused variable 'buff' [-Wunused-variable]
+   char buff[N*N];
+        ^
+make: *** [src/main.o] Error 1
+03:51:30 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:88:8: warning: unused variable 'buff' [-Wunused-variable]
+   char buff[N*N];
+        ^
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  99880	   9956	  29360	 139196	  21fbc	proj4.elf
+Finished building: proj4.elf.size
+ 
+03:51:41 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:88:8: warning: unused variable 'buff' [-Wunused-variable]
+   char buff[N*N];
+        ^
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  99880	   9956	  29360	 139196	  21fbc	proj4.elf
+Finished building: proj4.elf.size
+ 
+03:51:50 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+03:53:12 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+03:53:56 **** Incremental Build of configuration Debug for project proj4 ****
+make all 
+make: Nothing to be done for 'all'.
+03:54:39 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:88:8: warning: unused variable 'buff' [-Wunused-variable]
+   char buff[N*N];
+        ^
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  99880	   9956	  29360	 139196	  21fbc	proj4.elf
+Finished building: proj4.elf.size
+ 
+08:38:33 **** Auto Build of project proj4_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/axicdma_v3_0/src
+make -C ps7_cortexa9_0/libsrc/axicdma_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/obj_detector_v1_0/src
+make -C ps7_cortexa9_0/libsrc/obj_detector_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_0/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xilflash_v4_0/src
+make -C ps7_cortexa9_0/libsrc/xilflash_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/axicdma_v3_0/src
+make -C ps7_cortexa9_0/libsrc/axicdma_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling axicdma
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/obj_detector_v1_0/src
+make -C ps7_cortexa9_0/libsrc/obj_detector_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling obj_detector
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_0/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling XilFFs Library
+Creating archive libxilffs.a
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/xilflash_v4_0/src
+make -C ps7_cortexa9_0/libsrc/xilflash_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling XilFlash Library:
+xilflash_intel.c: In function 'XFlashIntel_Initialize':
+xilflash_intel.c:267:54: warning: comparison between pointer and integer
+  if (InstancePtr->Properties.ProgCap.WriteBufferSize != NULL) {
+                                                      ^
+Creating archive libxilflash.a
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Finished building libraries
+08:38:46 **** Auto Build of configuration Debug for project proj4 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -I"/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include" -c -fmessage-length=0 -MT"src/main.o" -I../../proj4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:88:8: warning: unused variable 'buff' [-Wunused-variable]
+   char buff[N*N];
+        ^
+Finished building: ../src/main.cpp
+ 
+Building target: proj4.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../proj4_bsp/ps7_cortexa9_0/lib -o "proj4.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -lxilflash
+Finished building target: proj4.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size proj4.elf  |tee "proj4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  99880	   9956	  29360	 139196	  21fbc	proj4.elf
+Finished building: proj4.elf.size
+ 

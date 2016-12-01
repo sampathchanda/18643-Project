@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020clg484-1</Part>
 <TopModelName>obj_detector_flatten</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
+<TargetClockPeriod>20.00</TargetClockPeriod>
+<ClockUncertainty>2.50</ClockUncertainty>
 </UserAssignments>
 
 <PerformanceEstimates>

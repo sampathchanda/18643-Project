@@ -7,57 +7,58 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="maxpool,hls_ip_2015_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.743000,HLS_SYN_LAT=579,HLS_SYN_TPT=580,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=457,HLS_SYN_LUT=484}" *)
+(* CORE_GENERATION_INFO="maxpool,hls_ip_2015_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=6.736000,HLS_SYN_LAT=578,HLS_SYN_TPT=579,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=350,HLS_SYN_LUT=479}" *)
 
 module maxpool (
         begin_r,
-        input_V_dout,
-        input_V_empty_n,
-        input_V_read,
-        output_V_din,
-        output_V_full_n,
-        output_V_write,
+        input_V_TDATA,
+        output_V_TDATA,
         ok,
         ap_clk,
-        ap_rst,
+        ap_rst_n,
+        output_V_TVALID,
+        output_V_TREADY,
+        input_V_TVALID,
+        input_V_TREADY,
         ap_done,
         ap_start,
         ap_idle,
         ap_ready
 );
 
-parameter    ap_const_logic_0 = 1'b0;
 parameter    ap_const_lv8_0 = 8'b00000000;
 parameter    ap_const_logic_1 = 1'b1;
 parameter    ap_true = 1'b1;
+parameter    ap_const_logic_0 = 1'b0;
 
 input   begin_r;
-input  [7:0] input_V_dout;
-input   input_V_empty_n;
-output   input_V_read;
-output  [7:0] output_V_din;
-input   output_V_full_n;
-output   output_V_write;
+input  [7:0] input_V_TDATA;
+output  [7:0] output_V_TDATA;
 input   ok;
 input   ap_clk;
-input   ap_rst;
+input   ap_rst_n;
+output   output_V_TVALID;
+input   output_V_TREADY;
+input   input_V_TVALID;
+output   input_V_TREADY;
 output   ap_done;
 input   ap_start;
 output   ap_idle;
 output   ap_ready;
 
 reg ap_idle;
+reg    ap_rst_n_inv;
 wire    maxpool_Loop_LOOP_proc_U0_ap_start;
 wire    maxpool_Loop_LOOP_proc_U0_ap_done;
 wire    maxpool_Loop_LOOP_proc_U0_ap_continue;
 wire    maxpool_Loop_LOOP_proc_U0_ap_idle;
 wire    maxpool_Loop_LOOP_proc_U0_ap_ready;
-wire   [7:0] maxpool_Loop_LOOP_proc_U0_output_V_din;
-wire    maxpool_Loop_LOOP_proc_U0_output_V_full_n;
-wire    maxpool_Loop_LOOP_proc_U0_output_V_write;
-wire   [7:0] maxpool_Loop_LOOP_proc_U0_input_V_dout;
-wire    maxpool_Loop_LOOP_proc_U0_input_V_empty_n;
-wire    maxpool_Loop_LOOP_proc_U0_input_V_read;
+wire   [7:0] maxpool_Loop_LOOP_proc_U0_output_V_TDATA;
+wire    maxpool_Loop_LOOP_proc_U0_output_V_TVALID;
+wire    maxpool_Loop_LOOP_proc_U0_output_V_TREADY;
+wire   [7:0] maxpool_Loop_LOOP_proc_U0_input_V_TDATA;
+wire    maxpool_Loop_LOOP_proc_U0_input_V_TVALID;
+wire    maxpool_Loop_LOOP_proc_U0_input_V_TREADY;
 wire    ap_sig_hs_continue;
 reg    ap_reg_procdone_maxpool_Loop_LOOP_proc_U0 = 1'b0;
 reg    ap_sig_hs_done;
@@ -67,18 +68,18 @@ wire    ap_sig_top_allready;
 
 maxpool_Loop_LOOP_proc maxpool_Loop_LOOP_proc_U0(
     .ap_clk( ap_clk ),
-    .ap_rst( ap_rst ),
+    .ap_rst( ap_rst_n_inv ),
     .ap_start( maxpool_Loop_LOOP_proc_U0_ap_start ),
     .ap_done( maxpool_Loop_LOOP_proc_U0_ap_done ),
     .ap_continue( maxpool_Loop_LOOP_proc_U0_ap_continue ),
     .ap_idle( maxpool_Loop_LOOP_proc_U0_ap_idle ),
     .ap_ready( maxpool_Loop_LOOP_proc_U0_ap_ready ),
-    .output_V_din( maxpool_Loop_LOOP_proc_U0_output_V_din ),
-    .output_V_full_n( maxpool_Loop_LOOP_proc_U0_output_V_full_n ),
-    .output_V_write( maxpool_Loop_LOOP_proc_U0_output_V_write ),
-    .input_V_dout( maxpool_Loop_LOOP_proc_U0_input_V_dout ),
-    .input_V_empty_n( maxpool_Loop_LOOP_proc_U0_input_V_empty_n ),
-    .input_V_read( maxpool_Loop_LOOP_proc_U0_input_V_read )
+    .output_V_TDATA( maxpool_Loop_LOOP_proc_U0_output_V_TDATA ),
+    .output_V_TVALID( maxpool_Loop_LOOP_proc_U0_output_V_TVALID ),
+    .output_V_TREADY( maxpool_Loop_LOOP_proc_U0_output_V_TREADY ),
+    .input_V_TDATA( maxpool_Loop_LOOP_proc_U0_input_V_TDATA ),
+    .input_V_TVALID( maxpool_Loop_LOOP_proc_U0_input_V_TVALID ),
+    .input_V_TREADY( maxpool_Loop_LOOP_proc_U0_input_V_TREADY )
 );
 
 
@@ -86,7 +87,7 @@ maxpool_Loop_LOOP_proc maxpool_Loop_LOOP_proc_U0(
 /// ap_reg_procdone_maxpool_Loop_LOOP_proc_U0 assign process. ///
 always @ (posedge ap_clk)
 begin : ap_ret_ap_reg_procdone_maxpool_Loop_LOOP_proc_U0
-    if (ap_rst == 1'b1) begin
+    if (ap_rst_n_inv == 1'b1) begin
         ap_reg_procdone_maxpool_Loop_LOOP_proc_U0 <= ap_const_logic_0;
     end else begin
         if ((ap_const_logic_1 == ap_sig_hs_done)) begin
@@ -124,16 +125,22 @@ begin
 end
 assign ap_done = ap_sig_hs_done;
 assign ap_ready = ap_sig_top_allready;
+
+/// ap_rst_n_inv assign process. ///
+always @ (ap_rst_n)
+begin
+    ap_rst_n_inv = ~ap_rst_n;
+end
 assign ap_sig_hs_continue = ap_const_logic_1;
 assign ap_sig_top_allready = maxpool_Loop_LOOP_proc_U0_ap_ready;
-assign input_V_read = maxpool_Loop_LOOP_proc_U0_input_V_read;
+assign input_V_TREADY = maxpool_Loop_LOOP_proc_U0_input_V_TREADY;
 assign maxpool_Loop_LOOP_proc_U0_ap_continue = ap_sig_hs_continue;
 assign maxpool_Loop_LOOP_proc_U0_ap_start = ap_start;
-assign maxpool_Loop_LOOP_proc_U0_input_V_dout = input_V_dout;
-assign maxpool_Loop_LOOP_proc_U0_input_V_empty_n = input_V_empty_n;
-assign maxpool_Loop_LOOP_proc_U0_output_V_full_n = output_V_full_n;
-assign output_V_din = maxpool_Loop_LOOP_proc_U0_output_V_din;
-assign output_V_write = maxpool_Loop_LOOP_proc_U0_output_V_write;
+assign maxpool_Loop_LOOP_proc_U0_input_V_TDATA = input_V_TDATA;
+assign maxpool_Loop_LOOP_proc_U0_input_V_TVALID = input_V_TVALID;
+assign maxpool_Loop_LOOP_proc_U0_output_V_TREADY = output_V_TREADY;
+assign output_V_TDATA = maxpool_Loop_LOOP_proc_U0_output_V_TDATA;
+assign output_V_TVALID = maxpool_Loop_LOOP_proc_U0_output_V_TVALID;
 
 
 endmodule //maxpool

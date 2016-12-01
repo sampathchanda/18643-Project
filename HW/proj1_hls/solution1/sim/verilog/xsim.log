@@ -2,10 +2,10 @@
 # xsim v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Tue Nov 29 17:58:08 2016
-# Process ID: 28792
-# Log file: C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/xsim.log
-# Journal file: C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog\xsim.jou
+# Start of session at: Thu Dec  1 03:35:00 2016
+# Process ID: 19386
+# Log file: /home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/xsim.log
+# Journal file: /home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/obj_detector/xsim_script.tcl
 # xsim {obj_detector} -maxdeltaid 10000 -autoloadwcfg -tclbatch {obj_detector.tcl}
@@ -42,18 +42,18 @@ Note:
 ******************************************************
 Time: 0 ps  Iteration: 0
 Warning: DRC warning : CARRYCASCIN can only be used in the current DSP48E1 instance if the previous DSP48E1  is performing a two input ADD or SUBTRACT operation, or the current DSP48E1 is configured in the MAC extend opmode(6:0) equals 1001000. 
-Time: 0 ps  Iteration: 2  Process: /apatb_obj_detector_top/AESL_inst_obj_detector/grp_obj_detector_softmax_fu_223/obj_detector_dexp_64ns_64ns_64_18_full_dsp_U22/obj_detector_ap_dexp_16_full_dsp_64_u/U0/i_synth/exp_op/OP/i_calculate_Xf/dsp/two/dsp48e1_add_hi/DSP/prcs_carryinsel_drc  File: C:\Xilinx\Vivado\2015.2\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 0 ps  Iteration: 2  Process: /apatb_obj_detector_top/AESL_inst_obj_detector/grp_obj_detector_softmax_fu_177/obj_detector_dexp_64ns_64ns_64_18_full_dsp_U59/obj_detector_ap_dexp_16_full_dsp_64_u/U0/i_synth/exp_op/OP/i_calculate_Xf/dsp/two/dsp48e1_add_hi/DSP/prcs_carryinsel_drc  File: /home/littlefoot/vivado/Vivado/2015.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: DRC warning : DSP48E1 CARRYINSEL is set to 010 with OPMODEREG set to 0. This causes unknown values after reset occurs. It is suggested to use OPMODEREG = 1 when cascading large adders.
-Time: 0 ps  Iteration: 2  Process: /apatb_obj_detector_top/AESL_inst_obj_detector/grp_obj_detector_softmax_fu_223/obj_detector_dexp_64ns_64ns_64_18_full_dsp_U22/obj_detector_ap_dexp_16_full_dsp_64_u/U0/i_synth/exp_op/OP/i_calculate_Xf/dsp/two/dsp48e1_add_hi/DSP/prcs_carryinsel_drc  File: C:\Xilinx\Vivado\2015.2\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 0 ps  Iteration: 2  Process: /apatb_obj_detector_top/AESL_inst_obj_detector/grp_obj_detector_softmax_fu_177/obj_detector_dexp_64ns_64ns_64_18_full_dsp_U59/obj_detector_ap_dexp_16_full_dsp_64_u/U0/i_synth/exp_op/OP/i_calculate_Xf/dsp/two/dsp48e1_add_hi/DSP/prcs_carryinsel_drc  File: /home/littlefoot/vivado/Vivado/2015.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: DRC warning : CARRYCASCIN can only be used in the current DSP48E1 instance if the previous DSP48E1  is performing a two input ADD or SUBTRACT operation, or the current DSP48E1 is configured in the MAC extend opmode(6:0) equals 1001000. 
-Time: 0 ps  Iteration: 2  Process: /apatb_obj_detector_top/AESL_inst_obj_detector/grp_obj_detector_softmax_fu_223/obj_detector_dexp_64ns_64ns_64_18_full_dsp_U22/obj_detector_ap_dexp_16_full_dsp_64_u/U0/i_synth/exp_op/OP/i_ccm_ln2/\g_tables(1)\/i_addsub/dsp/two/dsp48e1_add_hi/DSP/prcs_carryinsel_drc  File: C:\Xilinx\Vivado\2015.2\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 0 ps  Iteration: 2  Process: /apatb_obj_detector_top/AESL_inst_obj_detector/grp_obj_detector_softmax_fu_177/obj_detector_dexp_64ns_64ns_64_18_full_dsp_U59/obj_detector_ap_dexp_16_full_dsp_64_u/U0/i_synth/exp_op/OP/i_ccm_ln2/\g_tables(1)\/i_addsub/dsp/two/dsp48e1_add_hi/DSP/prcs_carryinsel_drc  File: /home/littlefoot/vivado/Vivado/2015.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: DRC warning : DSP48E1 CARRYINSEL is set to 010 with OPMODEREG set to 0. This causes unknown values after reset occurs. It is suggested to use OPMODEREG = 1 when cascading large adders.
-Time: 0 ps  Iteration: 2  Process: /apatb_obj_detector_top/AESL_inst_obj_detector/grp_obj_detector_softmax_fu_223/obj_detector_dexp_64ns_64ns_64_18_full_dsp_U22/obj_detector_ap_dexp_16_full_dsp_64_u/U0/i_synth/exp_op/OP/i_ccm_ln2/\g_tables(1)\/i_addsub/dsp/two/dsp48e1_add_hi/DSP/prcs_carryinsel_drc  File: C:\Xilinx\Vivado\2015.2\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 0 ps  Iteration: 2  Process: /apatb_obj_detector_top/AESL_inst_obj_detector/grp_obj_detector_softmax_fu_177/obj_detector_dexp_64ns_64ns_64_18_full_dsp_U59/obj_detector_ap_dexp_16_full_dsp_64_u/U0/i_synth/exp_op/OP/i_ccm_ln2/\g_tables(1)\/i_addsub/dsp/two/dsp48e1_add_hi/DSP/prcs_carryinsel_drc  File: /home/littlefoot/vivado/Vivado/2015.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: DRC warning : CARRYCASCIN can only be used in the current DSP48E1 instance if the previous DSP48E1  is performing a two input ADD or SUBTRACT operation, or the current DSP48E1 is configured in the MAC extend opmode(6:0) equals 1001000. 
-Time: 0 ps  Iteration: 2  Process: /apatb_obj_detector_top/AESL_inst_obj_detector/grp_obj_detector_softmax_fu_223/obj_detector_dexp_64ns_64ns_64_18_full_dsp_U22/obj_detector_ap_dexp_16_full_dsp_64_u/U0/i_synth/exp_op/OP/i_ccm_ln2/\g_tables(0)\/i_addsub/dsp/two/dsp48e1_add_hi/DSP/prcs_carryinsel_drc  File: C:\Xilinx\Vivado\2015.2\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 0 ps  Iteration: 2  Process: /apatb_obj_detector_top/AESL_inst_obj_detector/grp_obj_detector_softmax_fu_177/obj_detector_dexp_64ns_64ns_64_18_full_dsp_U59/obj_detector_ap_dexp_16_full_dsp_64_u/U0/i_synth/exp_op/OP/i_ccm_ln2/\g_tables(0)\/i_addsub/dsp/two/dsp48e1_add_hi/DSP/prcs_carryinsel_drc  File: /home/littlefoot/vivado/Vivado/2015.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: DRC warning : DSP48E1 CARRYINSEL is set to 010 with OPMODEREG set to 0. This causes unknown values after reset occurs. It is suggested to use OPMODEREG = 1 when cascading large adders.
-Time: 0 ps  Iteration: 2  Process: /apatb_obj_detector_top/AESL_inst_obj_detector/grp_obj_detector_softmax_fu_223/obj_detector_dexp_64ns_64ns_64_18_full_dsp_U22/obj_detector_ap_dexp_16_full_dsp_64_u/U0/i_synth/exp_op/OP/i_ccm_ln2/\g_tables(0)\/i_addsub/dsp/two/dsp48e1_add_hi/DSP/prcs_carryinsel_drc  File: C:\Xilinx\Vivado\2015.2\data/vhdl/src/unisims/primitive/DSP48E1.vhd
-$finish called at time : 5653575400 ps : File "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector.autotb.v" Line 535
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:03:38 . Memory (MB): peak = 55.066 ; gain = 0.004
+Time: 0 ps  Iteration: 2  Process: /apatb_obj_detector_top/AESL_inst_obj_detector/grp_obj_detector_softmax_fu_177/obj_detector_dexp_64ns_64ns_64_18_full_dsp_U59/obj_detector_ap_dexp_16_full_dsp_64_u/U0/i_synth/exp_op/OP/i_ccm_ln2/\g_tables(0)\/i_addsub/dsp/two/dsp48e1_add_hi/DSP/prcs_carryinsel_drc  File: /home/littlefoot/vivado/Vivado/2015.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+$finish called at time : 455535400 ps : File "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector.autotb.v" Line 531
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:53 . Memory (MB): peak = 309.254 ; gain = 0.000 ; free physical = 688 ; free virtual = 3869
 ## quit
-INFO: [Common 17-206] Exiting xsim at Tue Nov 29 18:01:52 2016...
+INFO: [Common 17-206] Exiting xsim at Thu Dec  1 03:36:05 2016...

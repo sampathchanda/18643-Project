@@ -543,3 +543,5 @@
 
 /* Xilinx FAT File System Library (XilFFs) User Settings */
 #define FILE_SYSTEM_INTERFACE_SD
+/* Xilinx EDK Parallel Flash Library (XilFlash) User Settings */
+#define XPAR_XFL_DEVICE_FAMILY_INTEL

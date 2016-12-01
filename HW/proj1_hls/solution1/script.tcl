@@ -10,7 +10,7 @@ add_files proj1_hls/obj_detector.cpp
 add_files -tb proj1_hls/obj_detector_tb.cpp
 open_solution "solution1"
 set_part {xc7z020clg484-1}
-create_clock -period 10 -name default
+create_clock -period 20 -name default
 source "./proj1_hls/solution1/directives.tcl"
 csim_design
 csynth_design

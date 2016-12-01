@@ -14,7 +14,7 @@ set FftOrFirFlag 0
 set NbRWValue 0
 set NewDSPMapping 1
 set HasDSPModule 0
-set ResetLevelFlag 1
+set ResetLevelFlag 0
 set ResetStyle "control"
 set ResetSyncFlag 1
 set ResetRegisterFlag 0
@@ -43,7 +43,7 @@ set TargetInfo "xc7z020:clg484:-1"
 set SourceFiles {sc {} c ../.settings/maxpool_downsample.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {/home/littlefoot/18643_project/Hardware-Accel/HW/maxpool_downsample/solution1/solution1.directive}
-set TBFiles {verilog {../.settings/maxpool_downsample_tb.cpp ../.settings/input} bc {../.settings/maxpool_downsample_tb.cpp ../.settings/input} sc {../.settings/maxpool_downsample_tb.cpp ../.settings/input} vhdl {../.settings/maxpool_downsample_tb.cpp ../.settings/input} c {} cas {../.settings/maxpool_downsample_tb.cpp ../.settings/input}}
+set TBFiles {verilog {../.settings/input ../.settings/maxpool_downsample_tb.cpp} bc {../.settings/input ../.settings/maxpool_downsample_tb.cpp} sc {../.settings/input ../.settings/maxpool_downsample_tb.cpp} vhdl {../.settings/input ../.settings/maxpool_downsample_tb.cpp} c {} cas {../.settings/input ../.settings/maxpool_downsample_tb.cpp}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

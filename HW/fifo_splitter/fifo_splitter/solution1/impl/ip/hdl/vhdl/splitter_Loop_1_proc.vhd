@@ -18,27 +18,27 @@ port (
     ap_continue : IN STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
-    input_V_dout : IN STD_LOGIC_VECTOR (7 downto 0);
-    input_V_empty_n : IN STD_LOGIC;
-    input_V_read : OUT STD_LOGIC;
-    output_0_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-    output_0_V_full_n : IN STD_LOGIC;
-    output_0_V_write : OUT STD_LOGIC;
-    output_1_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-    output_1_V_full_n : IN STD_LOGIC;
-    output_1_V_write : OUT STD_LOGIC;
-    output_2_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-    output_2_V_full_n : IN STD_LOGIC;
-    output_2_V_write : OUT STD_LOGIC;
-    output_3_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-    output_3_V_full_n : IN STD_LOGIC;
-    output_3_V_write : OUT STD_LOGIC;
-    output_4_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-    output_4_V_full_n : IN STD_LOGIC;
-    output_4_V_write : OUT STD_LOGIC;
-    output_5_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-    output_5_V_full_n : IN STD_LOGIC;
-    output_5_V_write : OUT STD_LOGIC );
+    input_V_TDATA : IN STD_LOGIC_VECTOR (7 downto 0);
+    input_V_TVALID : IN STD_LOGIC;
+    input_V_TREADY : OUT STD_LOGIC;
+    output_0_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+    output_0_V_TVALID : OUT STD_LOGIC;
+    output_0_V_TREADY : IN STD_LOGIC;
+    output_1_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+    output_1_V_TVALID : OUT STD_LOGIC;
+    output_1_V_TREADY : IN STD_LOGIC;
+    output_2_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+    output_2_V_TVALID : OUT STD_LOGIC;
+    output_2_V_TREADY : IN STD_LOGIC;
+    output_3_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+    output_3_V_TVALID : OUT STD_LOGIC;
+    output_3_V_TREADY : IN STD_LOGIC;
+    output_4_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+    output_4_V_TVALID : OUT STD_LOGIC;
+    output_4_V_TREADY : IN STD_LOGIC;
+    output_5_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+    output_5_V_TVALID : OUT STD_LOGIC;
+    output_5_V_TREADY : IN STD_LOGIC );
 end;
 
 
@@ -63,19 +63,39 @@ architecture behav of splitter_Loop_1_proc is
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_sig_cseq_ST_st1_fsm_0 : STD_LOGIC;
     signal ap_sig_bdd_22 : BOOLEAN;
-    signal pixels_read_0_i_i_reg_100 : STD_LOGIC_VECTOR (9 downto 0);
-    signal exitcond4_i_i_fu_111_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal exitcond4_i_i_reg_123 : STD_LOGIC_VECTOR (0 downto 0);
+    signal pixels_read_0_i_i_reg_94 : STD_LOGIC_VECTOR (9 downto 0);
+    signal exitcond4_i_i_fu_105_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal exitcond4_i_i_reg_117 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_sig_cseq_ST_pp0_stg0_fsm_1 : STD_LOGIC;
-    signal ap_sig_bdd_66 : BOOLEAN;
+    signal ap_sig_bdd_59 : BOOLEAN;
+    signal ap_sig_bdd_65 : BOOLEAN;
     signal ap_reg_ppiten_pp0_it0 : STD_LOGIC := '0';
-    signal ap_sig_bdd_92 : BOOLEAN;
+    signal ap_sig_ioackin_output_0_V_TREADY : STD_LOGIC;
+    signal ap_sig_ioackin_output_1_V_TREADY : STD_LOGIC;
+    signal ap_sig_ioackin_output_2_V_TREADY : STD_LOGIC;
+    signal ap_sig_ioackin_output_3_V_TREADY : STD_LOGIC;
+    signal ap_sig_ioackin_output_4_V_TREADY : STD_LOGIC;
+    signal ap_sig_ioackin_output_5_V_TREADY : STD_LOGIC;
     signal ap_reg_ppiten_pp0_it1 : STD_LOGIC := '0';
-    signal pixels_read_fu_117_p2 : STD_LOGIC_VECTOR (9 downto 0);
-    signal ap_sig_bdd_105 : BOOLEAN;
+    signal pixels_read_fu_111_p2 : STD_LOGIC_VECTOR (9 downto 0);
+    signal temp_reg_126 : STD_LOGIC_VECTOR (7 downto 0);
+    signal ap_sig_bdd_109 : BOOLEAN;
+    signal ap_reg_ioackin_output_0_V_TREADY : STD_LOGIC := '0';
+    signal ap_reg_ioackin_output_1_V_TREADY : STD_LOGIC := '0';
+    signal ap_reg_ioackin_output_2_V_TREADY : STD_LOGIC := '0';
+    signal ap_reg_ioackin_output_3_V_TREADY : STD_LOGIC := '0';
+    signal ap_reg_ioackin_output_4_V_TREADY : STD_LOGIC := '0';
+    signal ap_reg_ioackin_output_5_V_TREADY : STD_LOGIC := '0';
     signal ap_sig_cseq_ST_st4_fsm_2 : STD_LOGIC;
-    signal ap_sig_bdd_140 : BOOLEAN;
+    signal ap_sig_bdd_173 : BOOLEAN;
     signal ap_NS_fsm : STD_LOGIC_VECTOR (2 downto 0);
+    signal ap_sig_bdd_194 : BOOLEAN;
+    signal ap_sig_bdd_193 : BOOLEAN;
+    signal ap_sig_bdd_197 : BOOLEAN;
+    signal ap_sig_bdd_199 : BOOLEAN;
+    signal ap_sig_bdd_201 : BOOLEAN;
+    signal ap_sig_bdd_203 : BOOLEAN;
+    signal ap_sig_bdd_205 : BOOLEAN;
 
 
 begin
@@ -113,6 +133,120 @@ begin
     end process;
 
 
+    -- ap_reg_ioackin_output_0_V_TREADY assign process. --
+    ap_reg_ioackin_output_0_V_TREADY_assign_proc : process(ap_clk)
+    begin
+        if (ap_clk'event and ap_clk =  '1') then
+            if (ap_rst = '1') then
+                ap_reg_ioackin_output_0_V_TREADY <= ap_const_logic_0;
+            else
+                if (ap_sig_bdd_193) then
+                    if (not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
+                        ap_reg_ioackin_output_0_V_TREADY <= ap_const_logic_0;
+                    elsif (ap_sig_bdd_194) then 
+                        ap_reg_ioackin_output_0_V_TREADY <= ap_const_logic_1;
+                    end if;
+                end if; 
+            end if;
+        end if;
+    end process;
+
+
+    -- ap_reg_ioackin_output_1_V_TREADY assign process. --
+    ap_reg_ioackin_output_1_V_TREADY_assign_proc : process(ap_clk)
+    begin
+        if (ap_clk'event and ap_clk =  '1') then
+            if (ap_rst = '1') then
+                ap_reg_ioackin_output_1_V_TREADY <= ap_const_logic_0;
+            else
+                if (ap_sig_bdd_193) then
+                    if (not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
+                        ap_reg_ioackin_output_1_V_TREADY <= ap_const_logic_0;
+                    elsif (ap_sig_bdd_197) then 
+                        ap_reg_ioackin_output_1_V_TREADY <= ap_const_logic_1;
+                    end if;
+                end if; 
+            end if;
+        end if;
+    end process;
+
+
+    -- ap_reg_ioackin_output_2_V_TREADY assign process. --
+    ap_reg_ioackin_output_2_V_TREADY_assign_proc : process(ap_clk)
+    begin
+        if (ap_clk'event and ap_clk =  '1') then
+            if (ap_rst = '1') then
+                ap_reg_ioackin_output_2_V_TREADY <= ap_const_logic_0;
+            else
+                if (ap_sig_bdd_193) then
+                    if (not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
+                        ap_reg_ioackin_output_2_V_TREADY <= ap_const_logic_0;
+                    elsif (ap_sig_bdd_199) then 
+                        ap_reg_ioackin_output_2_V_TREADY <= ap_const_logic_1;
+                    end if;
+                end if; 
+            end if;
+        end if;
+    end process;
+
+
+    -- ap_reg_ioackin_output_3_V_TREADY assign process. --
+    ap_reg_ioackin_output_3_V_TREADY_assign_proc : process(ap_clk)
+    begin
+        if (ap_clk'event and ap_clk =  '1') then
+            if (ap_rst = '1') then
+                ap_reg_ioackin_output_3_V_TREADY <= ap_const_logic_0;
+            else
+                if (ap_sig_bdd_193) then
+                    if (not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
+                        ap_reg_ioackin_output_3_V_TREADY <= ap_const_logic_0;
+                    elsif (ap_sig_bdd_201) then 
+                        ap_reg_ioackin_output_3_V_TREADY <= ap_const_logic_1;
+                    end if;
+                end if; 
+            end if;
+        end if;
+    end process;
+
+
+    -- ap_reg_ioackin_output_4_V_TREADY assign process. --
+    ap_reg_ioackin_output_4_V_TREADY_assign_proc : process(ap_clk)
+    begin
+        if (ap_clk'event and ap_clk =  '1') then
+            if (ap_rst = '1') then
+                ap_reg_ioackin_output_4_V_TREADY <= ap_const_logic_0;
+            else
+                if (ap_sig_bdd_193) then
+                    if (not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
+                        ap_reg_ioackin_output_4_V_TREADY <= ap_const_logic_0;
+                    elsif (ap_sig_bdd_203) then 
+                        ap_reg_ioackin_output_4_V_TREADY <= ap_const_logic_1;
+                    end if;
+                end if; 
+            end if;
+        end if;
+    end process;
+
+
+    -- ap_reg_ioackin_output_5_V_TREADY assign process. --
+    ap_reg_ioackin_output_5_V_TREADY_assign_proc : process(ap_clk)
+    begin
+        if (ap_clk'event and ap_clk =  '1') then
+            if (ap_rst = '1') then
+                ap_reg_ioackin_output_5_V_TREADY <= ap_const_logic_0;
+            else
+                if (ap_sig_bdd_193) then
+                    if (not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
+                        ap_reg_ioackin_output_5_V_TREADY <= ap_const_logic_0;
+                    elsif (ap_sig_bdd_205) then 
+                        ap_reg_ioackin_output_5_V_TREADY <= ap_const_logic_1;
+                    end if;
+                end if; 
+            end if;
+        end if;
+    end process;
+
+
     -- ap_reg_ppiten_pp0_it0 assign process. --
     ap_reg_ppiten_pp0_it0_assign_proc : process(ap_clk)
     begin
@@ -120,9 +254,9 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp0_it0 <= ap_const_logic_0;
             else
-                if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))) and not((exitcond4_i_i_fu_111_p2 = ap_const_lv1_0)))) then 
+                if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1)))) and not((exitcond4_i_i_fu_105_p2 = ap_const_lv1_0)))) then 
                     ap_reg_ppiten_pp0_it0 <= ap_const_logic_0;
-                elsif (((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_105))) then 
+                elsif (((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_109))) then 
                     ap_reg_ppiten_pp0_it0 <= ap_const_logic_1;
                 end if; 
             end if;
@@ -137,9 +271,9 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp0_it1 <= ap_const_logic_0;
             else
-                if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))) and (exitcond4_i_i_fu_111_p2 = ap_const_lv1_0))) then 
+                if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_fu_105_p2 = ap_const_lv1_0) and not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1)))))) then 
                     ap_reg_ppiten_pp0_it1 <= ap_const_logic_1;
-                elsif ((((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_105)) or ((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))) and not((exitcond4_i_i_fu_111_p2 = ap_const_lv1_0))))) then 
+                elsif ((((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_109)) or ((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1)))) and not((exitcond4_i_i_fu_105_p2 = ap_const_lv1_0))))) then 
                     ap_reg_ppiten_pp0_it1 <= ap_const_logic_0;
                 end if; 
             end if;
@@ -147,14 +281,14 @@ begin
     end process;
 
 
-    -- pixels_read_0_i_i_reg_100 assign process. --
-    pixels_read_0_i_i_reg_100_assign_proc : process (ap_clk)
+    -- pixels_read_0_i_i_reg_94 assign process. --
+    pixels_read_0_i_i_reg_94_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))) and (exitcond4_i_i_fu_111_p2 = ap_const_lv1_0))) then 
-                pixels_read_0_i_i_reg_100 <= pixels_read_fu_117_p2;
-            elsif (((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_105))) then 
-                pixels_read_0_i_i_reg_100 <= ap_const_lv10_0;
+            if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_fu_105_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1)))))) then 
+                pixels_read_0_i_i_reg_94 <= pixels_read_fu_111_p2;
+            elsif (((ap_const_logic_1 = ap_sig_cseq_ST_st1_fsm_0) and not(ap_sig_bdd_109))) then 
+                pixels_read_0_i_i_reg_94 <= ap_const_lv10_0;
             end if; 
         end if;
     end process;
@@ -163,26 +297,36 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then
-                exitcond4_i_i_reg_123 <= exitcond4_i_i_fu_111_p2;
+            if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1)))))) then
+                exitcond4_i_i_reg_117 <= exitcond4_i_i_fu_105_p2;
+            end if;
+        end if;
+    end process;
+
+    -- assign process. --
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_fu_105_p2 = ap_const_lv1_0) and not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1)))))) then
+                temp_reg_126 <= input_V_TDATA;
             end if;
         end if;
     end process;
 
     -- the next state (ap_NS_fsm) of the state machine. --
-    ap_NS_fsm_assign_proc : process (ap_CS_fsm, exitcond4_i_i_fu_111_p2, ap_reg_ppiten_pp0_it0, ap_sig_bdd_92, ap_reg_ppiten_pp0_it1, ap_sig_bdd_105)
+    ap_NS_fsm_assign_proc : process (ap_CS_fsm, exitcond4_i_i_fu_105_p2, exitcond4_i_i_reg_117, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0, ap_sig_ioackin_output_0_V_TREADY, ap_sig_ioackin_output_1_V_TREADY, ap_sig_ioackin_output_2_V_TREADY, ap_sig_ioackin_output_3_V_TREADY, ap_sig_ioackin_output_4_V_TREADY, ap_sig_ioackin_output_5_V_TREADY, ap_reg_ppiten_pp0_it1, ap_sig_bdd_109)
     begin
         case ap_CS_fsm is
             when ap_ST_st1_fsm_0 => 
-                if (not(ap_sig_bdd_105)) then
+                if (not(ap_sig_bdd_109)) then
                     ap_NS_fsm <= ap_ST_pp0_stg0_fsm_1;
                 else
                     ap_NS_fsm <= ap_ST_st1_fsm_0;
                 end if;
             when ap_ST_pp0_stg0_fsm_1 => 
-                if (not(((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))) and not((exitcond4_i_i_fu_111_p2 = ap_const_lv1_0))))) then
+                if (not(((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1)))) and not((exitcond4_i_i_fu_105_p2 = ap_const_lv1_0))))) then
                     ap_NS_fsm <= ap_ST_pp0_stg0_fsm_1;
-                elsif (((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))) and not((exitcond4_i_i_fu_111_p2 = ap_const_lv1_0)))) then
+                elsif (((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1)))) and not((exitcond4_i_i_fu_105_p2 = ap_const_lv1_0)))) then
                     ap_NS_fsm <= ap_ST_st4_fsm_2;
                 else
                     ap_NS_fsm <= ap_ST_pp0_stg0_fsm_1;
@@ -227,17 +371,66 @@ begin
     end process;
 
 
-    -- ap_sig_bdd_105 assign process. --
-    ap_sig_bdd_105_assign_proc : process(ap_start, ap_done_reg)
+    -- ap_sig_bdd_109 assign process. --
+    ap_sig_bdd_109_assign_proc : process(ap_start, ap_done_reg)
     begin
-                ap_sig_bdd_105 <= ((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1));
+                ap_sig_bdd_109 <= ((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1));
     end process;
 
 
-    -- ap_sig_bdd_140 assign process. --
-    ap_sig_bdd_140_assign_proc : process(ap_CS_fsm)
+    -- ap_sig_bdd_173 assign process. --
+    ap_sig_bdd_173_assign_proc : process(ap_CS_fsm)
     begin
-                ap_sig_bdd_140 <= (ap_const_lv1_1 = ap_CS_fsm(2 downto 2));
+                ap_sig_bdd_173 <= (ap_const_lv1_1 = ap_CS_fsm(2 downto 2));
+    end process;
+
+
+    -- ap_sig_bdd_193 assign process. --
+    ap_sig_bdd_193_assign_proc : process(exitcond4_i_i_reg_117, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_reg_ppiten_pp0_it1)
+    begin
+                ap_sig_bdd_193 <= ((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1));
+    end process;
+
+
+    -- ap_sig_bdd_194 assign process. --
+    ap_sig_bdd_194_assign_proc : process(output_0_V_TREADY, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0)
+    begin
+                ap_sig_bdd_194 <= (not((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0))) and (ap_const_logic_1 = output_0_V_TREADY));
+    end process;
+
+
+    -- ap_sig_bdd_197 assign process. --
+    ap_sig_bdd_197_assign_proc : process(output_1_V_TREADY, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0)
+    begin
+                ap_sig_bdd_197 <= (not((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0))) and (ap_const_logic_1 = output_1_V_TREADY));
+    end process;
+
+
+    -- ap_sig_bdd_199 assign process. --
+    ap_sig_bdd_199_assign_proc : process(output_2_V_TREADY, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0)
+    begin
+                ap_sig_bdd_199 <= (not((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0))) and (ap_const_logic_1 = output_2_V_TREADY));
+    end process;
+
+
+    -- ap_sig_bdd_201 assign process. --
+    ap_sig_bdd_201_assign_proc : process(output_3_V_TREADY, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0)
+    begin
+                ap_sig_bdd_201 <= (not((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0))) and (ap_const_logic_1 = output_3_V_TREADY));
+    end process;
+
+
+    -- ap_sig_bdd_203 assign process. --
+    ap_sig_bdd_203_assign_proc : process(output_4_V_TREADY, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0)
+    begin
+                ap_sig_bdd_203 <= (not((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0))) and (ap_const_logic_1 = output_4_V_TREADY));
+    end process;
+
+
+    -- ap_sig_bdd_205 assign process. --
+    ap_sig_bdd_205_assign_proc : process(output_5_V_TREADY, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0)
+    begin
+                ap_sig_bdd_205 <= (not((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0))) and (ap_const_logic_1 = output_5_V_TREADY));
     end process;
 
 
@@ -248,24 +441,24 @@ begin
     end process;
 
 
-    -- ap_sig_bdd_66 assign process. --
-    ap_sig_bdd_66_assign_proc : process(ap_CS_fsm)
+    -- ap_sig_bdd_59 assign process. --
+    ap_sig_bdd_59_assign_proc : process(ap_CS_fsm)
     begin
-                ap_sig_bdd_66 <= (ap_const_lv1_1 = ap_CS_fsm(1 downto 1));
+                ap_sig_bdd_59 <= (ap_const_lv1_1 = ap_CS_fsm(1 downto 1));
     end process;
 
 
-    -- ap_sig_bdd_92 assign process. --
-    ap_sig_bdd_92_assign_proc : process(input_V_empty_n, output_0_V_full_n, output_1_V_full_n, output_2_V_full_n, output_3_V_full_n, output_4_V_full_n, output_5_V_full_n, exitcond4_i_i_reg_123)
+    -- ap_sig_bdd_65 assign process. --
+    ap_sig_bdd_65_assign_proc : process(input_V_TVALID, exitcond4_i_i_fu_105_p2)
     begin
-                ap_sig_bdd_92 <= (((input_V_empty_n = ap_const_logic_0) and (exitcond4_i_i_reg_123 = ap_const_lv1_0)) or ((exitcond4_i_i_reg_123 = ap_const_lv1_0) and (output_0_V_full_n = ap_const_logic_0)) or ((exitcond4_i_i_reg_123 = ap_const_lv1_0) and (output_1_V_full_n = ap_const_logic_0)) or ((exitcond4_i_i_reg_123 = ap_const_lv1_0) and (output_2_V_full_n = ap_const_logic_0)) or ((exitcond4_i_i_reg_123 = ap_const_lv1_0) and (output_3_V_full_n = ap_const_logic_0)) or ((exitcond4_i_i_reg_123 = ap_const_lv1_0) and (output_4_V_full_n = ap_const_logic_0)) or ((exitcond4_i_i_reg_123 = ap_const_lv1_0) and (output_5_V_full_n = ap_const_logic_0)));
+                ap_sig_bdd_65 <= ((input_V_TVALID = ap_const_logic_0) and (exitcond4_i_i_fu_105_p2 = ap_const_lv1_0));
     end process;
 
 
     -- ap_sig_cseq_ST_pp0_stg0_fsm_1 assign process. --
-    ap_sig_cseq_ST_pp0_stg0_fsm_1_assign_proc : process(ap_sig_bdd_66)
+    ap_sig_cseq_ST_pp0_stg0_fsm_1_assign_proc : process(ap_sig_bdd_59)
     begin
-        if (ap_sig_bdd_66) then 
+        if (ap_sig_bdd_59) then 
             ap_sig_cseq_ST_pp0_stg0_fsm_1 <= ap_const_logic_1;
         else 
             ap_sig_cseq_ST_pp0_stg0_fsm_1 <= ap_const_logic_0;
@@ -285,98 +478,164 @@ begin
 
 
     -- ap_sig_cseq_ST_st4_fsm_2 assign process. --
-    ap_sig_cseq_ST_st4_fsm_2_assign_proc : process(ap_sig_bdd_140)
+    ap_sig_cseq_ST_st4_fsm_2_assign_proc : process(ap_sig_bdd_173)
     begin
-        if (ap_sig_bdd_140) then 
+        if (ap_sig_bdd_173) then 
             ap_sig_cseq_ST_st4_fsm_2 <= ap_const_logic_1;
         else 
             ap_sig_cseq_ST_st4_fsm_2 <= ap_const_logic_0;
         end if; 
     end process;
 
-    exitcond4_i_i_fu_111_p2 <= "1" when (pixels_read_0_i_i_reg_100 = ap_const_lv10_310) else "0";
 
-    -- input_V_read assign process. --
-    input_V_read_assign_proc : process(exitcond4_i_i_reg_123, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_92, ap_reg_ppiten_pp0_it1)
+    -- ap_sig_ioackin_output_0_V_TREADY assign process. --
+    ap_sig_ioackin_output_0_V_TREADY_assign_proc : process(output_0_V_TREADY, ap_reg_ioackin_output_0_V_TREADY)
     begin
-        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_123 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
-            input_V_read <= ap_const_logic_1;
+        if ((ap_const_logic_0 = ap_reg_ioackin_output_0_V_TREADY)) then 
+            ap_sig_ioackin_output_0_V_TREADY <= output_0_V_TREADY;
         else 
-            input_V_read <= ap_const_logic_0;
+            ap_sig_ioackin_output_0_V_TREADY <= ap_const_logic_1;
         end if; 
     end process;
 
-    output_0_V_din <= input_V_dout;
 
-    -- output_0_V_write assign process. --
-    output_0_V_write_assign_proc : process(exitcond4_i_i_reg_123, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_92, ap_reg_ppiten_pp0_it1)
+    -- ap_sig_ioackin_output_1_V_TREADY assign process. --
+    ap_sig_ioackin_output_1_V_TREADY_assign_proc : process(output_1_V_TREADY, ap_reg_ioackin_output_1_V_TREADY)
     begin
-        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_123 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
-            output_0_V_write <= ap_const_logic_1;
+        if ((ap_const_logic_0 = ap_reg_ioackin_output_1_V_TREADY)) then 
+            ap_sig_ioackin_output_1_V_TREADY <= output_1_V_TREADY;
         else 
-            output_0_V_write <= ap_const_logic_0;
+            ap_sig_ioackin_output_1_V_TREADY <= ap_const_logic_1;
         end if; 
     end process;
 
-    output_1_V_din <= input_V_dout;
 
-    -- output_1_V_write assign process. --
-    output_1_V_write_assign_proc : process(exitcond4_i_i_reg_123, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_92, ap_reg_ppiten_pp0_it1)
+    -- ap_sig_ioackin_output_2_V_TREADY assign process. --
+    ap_sig_ioackin_output_2_V_TREADY_assign_proc : process(output_2_V_TREADY, ap_reg_ioackin_output_2_V_TREADY)
     begin
-        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_123 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
-            output_1_V_write <= ap_const_logic_1;
+        if ((ap_const_logic_0 = ap_reg_ioackin_output_2_V_TREADY)) then 
+            ap_sig_ioackin_output_2_V_TREADY <= output_2_V_TREADY;
         else 
-            output_1_V_write <= ap_const_logic_0;
+            ap_sig_ioackin_output_2_V_TREADY <= ap_const_logic_1;
         end if; 
     end process;
 
-    output_2_V_din <= input_V_dout;
 
-    -- output_2_V_write assign process. --
-    output_2_V_write_assign_proc : process(exitcond4_i_i_reg_123, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_92, ap_reg_ppiten_pp0_it1)
+    -- ap_sig_ioackin_output_3_V_TREADY assign process. --
+    ap_sig_ioackin_output_3_V_TREADY_assign_proc : process(output_3_V_TREADY, ap_reg_ioackin_output_3_V_TREADY)
     begin
-        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_123 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
-            output_2_V_write <= ap_const_logic_1;
+        if ((ap_const_logic_0 = ap_reg_ioackin_output_3_V_TREADY)) then 
+            ap_sig_ioackin_output_3_V_TREADY <= output_3_V_TREADY;
         else 
-            output_2_V_write <= ap_const_logic_0;
+            ap_sig_ioackin_output_3_V_TREADY <= ap_const_logic_1;
         end if; 
     end process;
 
-    output_3_V_din <= input_V_dout;
 
-    -- output_3_V_write assign process. --
-    output_3_V_write_assign_proc : process(exitcond4_i_i_reg_123, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_92, ap_reg_ppiten_pp0_it1)
+    -- ap_sig_ioackin_output_4_V_TREADY assign process. --
+    ap_sig_ioackin_output_4_V_TREADY_assign_proc : process(output_4_V_TREADY, ap_reg_ioackin_output_4_V_TREADY)
     begin
-        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_123 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
-            output_3_V_write <= ap_const_logic_1;
+        if ((ap_const_logic_0 = ap_reg_ioackin_output_4_V_TREADY)) then 
+            ap_sig_ioackin_output_4_V_TREADY <= output_4_V_TREADY;
         else 
-            output_3_V_write <= ap_const_logic_0;
+            ap_sig_ioackin_output_4_V_TREADY <= ap_const_logic_1;
         end if; 
     end process;
 
-    output_4_V_din <= input_V_dout;
 
-    -- output_4_V_write assign process. --
-    output_4_V_write_assign_proc : process(exitcond4_i_i_reg_123, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_92, ap_reg_ppiten_pp0_it1)
+    -- ap_sig_ioackin_output_5_V_TREADY assign process. --
+    ap_sig_ioackin_output_5_V_TREADY_assign_proc : process(output_5_V_TREADY, ap_reg_ioackin_output_5_V_TREADY)
     begin
-        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_123 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
-            output_4_V_write <= ap_const_logic_1;
+        if ((ap_const_logic_0 = ap_reg_ioackin_output_5_V_TREADY)) then 
+            ap_sig_ioackin_output_5_V_TREADY <= output_5_V_TREADY;
         else 
-            output_4_V_write <= ap_const_logic_0;
+            ap_sig_ioackin_output_5_V_TREADY <= ap_const_logic_1;
         end if; 
     end process;
 
-    output_5_V_din <= input_V_dout;
+    exitcond4_i_i_fu_105_p2 <= "1" when (pixels_read_0_i_i_reg_94 = ap_const_lv10_310) else "0";
 
-    -- output_5_V_write assign process. --
-    output_5_V_write_assign_proc : process(exitcond4_i_i_reg_123, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_92, ap_reg_ppiten_pp0_it1)
+    -- input_V_TREADY assign process. --
+    input_V_TREADY_assign_proc : process(exitcond4_i_i_fu_105_p2, exitcond4_i_i_reg_117, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0, ap_sig_ioackin_output_0_V_TREADY, ap_sig_ioackin_output_1_V_TREADY, ap_sig_ioackin_output_2_V_TREADY, ap_sig_ioackin_output_3_V_TREADY, ap_sig_ioackin_output_4_V_TREADY, ap_sig_ioackin_output_5_V_TREADY, ap_reg_ppiten_pp0_it1)
     begin
-        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_123 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_92 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1))))) then 
-            output_5_V_write <= ap_const_logic_1;
+        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_fu_105_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and not(((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_0_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_1_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_2_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_3_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_4_V_TREADY)) or ((exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_0 = ap_sig_ioackin_output_5_V_TREADY))) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1)))))) then 
+            input_V_TREADY <= ap_const_logic_1;
         else 
-            output_5_V_write <= ap_const_logic_0;
+            input_V_TREADY <= ap_const_logic_0;
         end if; 
     end process;
 
-    pixels_read_fu_117_p2 <= std_logic_vector(unsigned(pixels_read_0_i_i_reg_100) + unsigned(ap_const_lv10_1));
+    output_0_V_TDATA <= temp_reg_126;
+
+    -- output_0_V_TVALID assign process. --
+    output_0_V_TVALID_assign_proc : process(exitcond4_i_i_reg_117, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it1, ap_reg_ioackin_output_0_V_TREADY)
+    begin
+        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0))) and (ap_const_logic_0 = ap_reg_ioackin_output_0_V_TREADY))) then 
+            output_0_V_TVALID <= ap_const_logic_1;
+        else 
+            output_0_V_TVALID <= ap_const_logic_0;
+        end if; 
+    end process;
+
+    output_1_V_TDATA <= temp_reg_126;
+
+    -- output_1_V_TVALID assign process. --
+    output_1_V_TVALID_assign_proc : process(exitcond4_i_i_reg_117, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it1, ap_reg_ioackin_output_1_V_TREADY)
+    begin
+        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0))) and (ap_const_logic_0 = ap_reg_ioackin_output_1_V_TREADY))) then 
+            output_1_V_TVALID <= ap_const_logic_1;
+        else 
+            output_1_V_TVALID <= ap_const_logic_0;
+        end if; 
+    end process;
+
+    output_2_V_TDATA <= temp_reg_126;
+
+    -- output_2_V_TVALID assign process. --
+    output_2_V_TVALID_assign_proc : process(exitcond4_i_i_reg_117, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it1, ap_reg_ioackin_output_2_V_TREADY)
+    begin
+        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0))) and (ap_const_logic_0 = ap_reg_ioackin_output_2_V_TREADY))) then 
+            output_2_V_TVALID <= ap_const_logic_1;
+        else 
+            output_2_V_TVALID <= ap_const_logic_0;
+        end if; 
+    end process;
+
+    output_3_V_TDATA <= temp_reg_126;
+
+    -- output_3_V_TVALID assign process. --
+    output_3_V_TVALID_assign_proc : process(exitcond4_i_i_reg_117, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it1, ap_reg_ioackin_output_3_V_TREADY)
+    begin
+        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0))) and (ap_const_logic_0 = ap_reg_ioackin_output_3_V_TREADY))) then 
+            output_3_V_TVALID <= ap_const_logic_1;
+        else 
+            output_3_V_TVALID <= ap_const_logic_0;
+        end if; 
+    end process;
+
+    output_4_V_TDATA <= temp_reg_126;
+
+    -- output_4_V_TVALID assign process. --
+    output_4_V_TVALID_assign_proc : process(exitcond4_i_i_reg_117, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it1, ap_reg_ioackin_output_4_V_TREADY)
+    begin
+        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0))) and (ap_const_logic_0 = ap_reg_ioackin_output_4_V_TREADY))) then 
+            output_4_V_TVALID <= ap_const_logic_1;
+        else 
+            output_4_V_TVALID <= ap_const_logic_0;
+        end if; 
+    end process;
+
+    output_5_V_TDATA <= temp_reg_126;
+
+    -- output_5_V_TVALID assign process. --
+    output_5_V_TVALID_assign_proc : process(exitcond4_i_i_reg_117, ap_sig_cseq_ST_pp0_stg0_fsm_1, ap_sig_bdd_65, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it1, ap_reg_ioackin_output_5_V_TREADY)
+    begin
+        if (((ap_const_logic_1 = ap_sig_cseq_ST_pp0_stg0_fsm_1) and (exitcond4_i_i_reg_117 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it1) and not((ap_sig_bdd_65 and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0))) and (ap_const_logic_0 = ap_reg_ioackin_output_5_V_TREADY))) then 
+            output_5_V_TVALID <= ap_const_logic_1;
+        else 
+            output_5_V_TVALID <= ap_const_logic_0;
+        end if; 
+    end process;
+
+    pixels_read_fu_111_p2 <= std_logic_vector(unsigned(pixels_read_0_i_i_reg_94) + unsigned(ap_const_lv10_1));
 end behav;

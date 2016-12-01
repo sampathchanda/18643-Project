@@ -12,41 +12,41 @@ using namespace std;
 
 namespace ap_rtl {
 
-const sc_logic splitter::ap_const_logic_0 = sc_dt::Log_0;
 const sc_lv<8> splitter::ap_const_lv8_0 = "00000000";
 const sc_logic splitter::ap_const_logic_1 = sc_dt::Log_1;
 const bool splitter::ap_true = true;
+const sc_logic splitter::ap_const_logic_0 = sc_dt::Log_0;
 
 splitter::splitter(sc_module_name name) : sc_module(name), mVcdFile(0) {
     splitter_Loop_1_proc_U0 = new splitter_Loop_1_proc("splitter_Loop_1_proc_U0");
     splitter_Loop_1_proc_U0->ap_clk(ap_clk);
-    splitter_Loop_1_proc_U0->ap_rst(ap_rst);
+    splitter_Loop_1_proc_U0->ap_rst(ap_rst_n_inv);
     splitter_Loop_1_proc_U0->ap_start(splitter_Loop_1_proc_U0_ap_start);
     splitter_Loop_1_proc_U0->ap_done(splitter_Loop_1_proc_U0_ap_done);
     splitter_Loop_1_proc_U0->ap_continue(splitter_Loop_1_proc_U0_ap_continue);
     splitter_Loop_1_proc_U0->ap_idle(splitter_Loop_1_proc_U0_ap_idle);
     splitter_Loop_1_proc_U0->ap_ready(splitter_Loop_1_proc_U0_ap_ready);
-    splitter_Loop_1_proc_U0->input_V_dout(splitter_Loop_1_proc_U0_input_V_dout);
-    splitter_Loop_1_proc_U0->input_V_empty_n(splitter_Loop_1_proc_U0_input_V_empty_n);
-    splitter_Loop_1_proc_U0->input_V_read(splitter_Loop_1_proc_U0_input_V_read);
-    splitter_Loop_1_proc_U0->output_0_V_din(splitter_Loop_1_proc_U0_output_0_V_din);
-    splitter_Loop_1_proc_U0->output_0_V_full_n(splitter_Loop_1_proc_U0_output_0_V_full_n);
-    splitter_Loop_1_proc_U0->output_0_V_write(splitter_Loop_1_proc_U0_output_0_V_write);
-    splitter_Loop_1_proc_U0->output_1_V_din(splitter_Loop_1_proc_U0_output_1_V_din);
-    splitter_Loop_1_proc_U0->output_1_V_full_n(splitter_Loop_1_proc_U0_output_1_V_full_n);
-    splitter_Loop_1_proc_U0->output_1_V_write(splitter_Loop_1_proc_U0_output_1_V_write);
-    splitter_Loop_1_proc_U0->output_2_V_din(splitter_Loop_1_proc_U0_output_2_V_din);
-    splitter_Loop_1_proc_U0->output_2_V_full_n(splitter_Loop_1_proc_U0_output_2_V_full_n);
-    splitter_Loop_1_proc_U0->output_2_V_write(splitter_Loop_1_proc_U0_output_2_V_write);
-    splitter_Loop_1_proc_U0->output_3_V_din(splitter_Loop_1_proc_U0_output_3_V_din);
-    splitter_Loop_1_proc_U0->output_3_V_full_n(splitter_Loop_1_proc_U0_output_3_V_full_n);
-    splitter_Loop_1_proc_U0->output_3_V_write(splitter_Loop_1_proc_U0_output_3_V_write);
-    splitter_Loop_1_proc_U0->output_4_V_din(splitter_Loop_1_proc_U0_output_4_V_din);
-    splitter_Loop_1_proc_U0->output_4_V_full_n(splitter_Loop_1_proc_U0_output_4_V_full_n);
-    splitter_Loop_1_proc_U0->output_4_V_write(splitter_Loop_1_proc_U0_output_4_V_write);
-    splitter_Loop_1_proc_U0->output_5_V_din(splitter_Loop_1_proc_U0_output_5_V_din);
-    splitter_Loop_1_proc_U0->output_5_V_full_n(splitter_Loop_1_proc_U0_output_5_V_full_n);
-    splitter_Loop_1_proc_U0->output_5_V_write(splitter_Loop_1_proc_U0_output_5_V_write);
+    splitter_Loop_1_proc_U0->input_V_TDATA(splitter_Loop_1_proc_U0_input_V_TDATA);
+    splitter_Loop_1_proc_U0->input_V_TVALID(splitter_Loop_1_proc_U0_input_V_TVALID);
+    splitter_Loop_1_proc_U0->input_V_TREADY(splitter_Loop_1_proc_U0_input_V_TREADY);
+    splitter_Loop_1_proc_U0->output_0_V_TDATA(splitter_Loop_1_proc_U0_output_0_V_TDATA);
+    splitter_Loop_1_proc_U0->output_0_V_TVALID(splitter_Loop_1_proc_U0_output_0_V_TVALID);
+    splitter_Loop_1_proc_U0->output_0_V_TREADY(splitter_Loop_1_proc_U0_output_0_V_TREADY);
+    splitter_Loop_1_proc_U0->output_1_V_TDATA(splitter_Loop_1_proc_U0_output_1_V_TDATA);
+    splitter_Loop_1_proc_U0->output_1_V_TVALID(splitter_Loop_1_proc_U0_output_1_V_TVALID);
+    splitter_Loop_1_proc_U0->output_1_V_TREADY(splitter_Loop_1_proc_U0_output_1_V_TREADY);
+    splitter_Loop_1_proc_U0->output_2_V_TDATA(splitter_Loop_1_proc_U0_output_2_V_TDATA);
+    splitter_Loop_1_proc_U0->output_2_V_TVALID(splitter_Loop_1_proc_U0_output_2_V_TVALID);
+    splitter_Loop_1_proc_U0->output_2_V_TREADY(splitter_Loop_1_proc_U0_output_2_V_TREADY);
+    splitter_Loop_1_proc_U0->output_3_V_TDATA(splitter_Loop_1_proc_U0_output_3_V_TDATA);
+    splitter_Loop_1_proc_U0->output_3_V_TVALID(splitter_Loop_1_proc_U0_output_3_V_TVALID);
+    splitter_Loop_1_proc_U0->output_3_V_TREADY(splitter_Loop_1_proc_U0_output_3_V_TREADY);
+    splitter_Loop_1_proc_U0->output_4_V_TDATA(splitter_Loop_1_proc_U0_output_4_V_TDATA);
+    splitter_Loop_1_proc_U0->output_4_V_TVALID(splitter_Loop_1_proc_U0_output_4_V_TVALID);
+    splitter_Loop_1_proc_U0->output_4_V_TREADY(splitter_Loop_1_proc_U0_output_4_V_TREADY);
+    splitter_Loop_1_proc_U0->output_5_V_TDATA(splitter_Loop_1_proc_U0_output_5_V_TDATA);
+    splitter_Loop_1_proc_U0->output_5_V_TVALID(splitter_Loop_1_proc_U0_output_5_V_TVALID);
+    splitter_Loop_1_proc_U0->output_5_V_TREADY(splitter_Loop_1_proc_U0_output_5_V_TREADY);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -61,6 +61,9 @@ splitter::splitter(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_METHOD(thread_ap_ready);
     sensitive << ( ap_sig_top_allready );
 
+    SC_METHOD(thread_ap_rst_n_inv);
+    sensitive << ( ap_rst_n );
+
     SC_METHOD(thread_ap_sig_hs_continue);
 
     SC_METHOD(thread_ap_sig_hs_done);
@@ -69,75 +72,74 @@ splitter::splitter(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_METHOD(thread_ap_sig_top_allready);
     sensitive << ( splitter_Loop_1_proc_U0_ap_ready );
 
-    SC_METHOD(thread_input_V_read);
-    sensitive << ( splitter_Loop_1_proc_U0_input_V_read );
+    SC_METHOD(thread_input_V_TREADY);
+    sensitive << ( splitter_Loop_1_proc_U0_input_V_TREADY );
 
-    SC_METHOD(thread_output_0_V_din);
-    sensitive << ( splitter_Loop_1_proc_U0_output_0_V_din );
+    SC_METHOD(thread_output_0_V_TDATA);
+    sensitive << ( splitter_Loop_1_proc_U0_output_0_V_TDATA );
 
-    SC_METHOD(thread_output_0_V_write);
-    sensitive << ( splitter_Loop_1_proc_U0_output_0_V_write );
+    SC_METHOD(thread_output_0_V_TVALID);
+    sensitive << ( splitter_Loop_1_proc_U0_output_0_V_TVALID );
 
-    SC_METHOD(thread_output_1_V_din);
-    sensitive << ( splitter_Loop_1_proc_U0_output_1_V_din );
+    SC_METHOD(thread_output_1_V_TDATA);
+    sensitive << ( splitter_Loop_1_proc_U0_output_1_V_TDATA );
 
-    SC_METHOD(thread_output_1_V_write);
-    sensitive << ( splitter_Loop_1_proc_U0_output_1_V_write );
+    SC_METHOD(thread_output_1_V_TVALID);
+    sensitive << ( splitter_Loop_1_proc_U0_output_1_V_TVALID );
 
-    SC_METHOD(thread_output_2_V_din);
-    sensitive << ( splitter_Loop_1_proc_U0_output_2_V_din );
+    SC_METHOD(thread_output_2_V_TDATA);
+    sensitive << ( splitter_Loop_1_proc_U0_output_2_V_TDATA );
 
-    SC_METHOD(thread_output_2_V_write);
-    sensitive << ( splitter_Loop_1_proc_U0_output_2_V_write );
+    SC_METHOD(thread_output_2_V_TVALID);
+    sensitive << ( splitter_Loop_1_proc_U0_output_2_V_TVALID );
 
-    SC_METHOD(thread_output_3_V_din);
-    sensitive << ( splitter_Loop_1_proc_U0_output_3_V_din );
+    SC_METHOD(thread_output_3_V_TDATA);
+    sensitive << ( splitter_Loop_1_proc_U0_output_3_V_TDATA );
 
-    SC_METHOD(thread_output_3_V_write);
-    sensitive << ( splitter_Loop_1_proc_U0_output_3_V_write );
+    SC_METHOD(thread_output_3_V_TVALID);
+    sensitive << ( splitter_Loop_1_proc_U0_output_3_V_TVALID );
 
-    SC_METHOD(thread_output_4_V_din);
-    sensitive << ( splitter_Loop_1_proc_U0_output_4_V_din );
+    SC_METHOD(thread_output_4_V_TDATA);
+    sensitive << ( splitter_Loop_1_proc_U0_output_4_V_TDATA );
 
-    SC_METHOD(thread_output_4_V_write);
-    sensitive << ( splitter_Loop_1_proc_U0_output_4_V_write );
+    SC_METHOD(thread_output_4_V_TVALID);
+    sensitive << ( splitter_Loop_1_proc_U0_output_4_V_TVALID );
 
-    SC_METHOD(thread_output_5_V_din);
-    sensitive << ( splitter_Loop_1_proc_U0_output_5_V_din );
+    SC_METHOD(thread_output_5_V_TDATA);
+    sensitive << ( splitter_Loop_1_proc_U0_output_5_V_TDATA );
 
-    SC_METHOD(thread_output_5_V_write);
-    sensitive << ( splitter_Loop_1_proc_U0_output_5_V_write );
+    SC_METHOD(thread_output_5_V_TVALID);
+    sensitive << ( splitter_Loop_1_proc_U0_output_5_V_TVALID );
 
     SC_METHOD(thread_splitter_Loop_1_proc_U0_ap_continue);
     sensitive << ( ap_sig_hs_continue );
 
     SC_METHOD(thread_splitter_Loop_1_proc_U0_ap_start);
-    sensitive << ( ap_rst );
     sensitive << ( ap_start );
 
-    SC_METHOD(thread_splitter_Loop_1_proc_U0_input_V_dout);
-    sensitive << ( input_V_dout );
+    SC_METHOD(thread_splitter_Loop_1_proc_U0_input_V_TDATA);
+    sensitive << ( input_V_TDATA );
 
-    SC_METHOD(thread_splitter_Loop_1_proc_U0_input_V_empty_n);
-    sensitive << ( input_V_empty_n );
+    SC_METHOD(thread_splitter_Loop_1_proc_U0_input_V_TVALID);
+    sensitive << ( input_V_TVALID );
 
-    SC_METHOD(thread_splitter_Loop_1_proc_U0_output_0_V_full_n);
-    sensitive << ( output_0_V_full_n );
+    SC_METHOD(thread_splitter_Loop_1_proc_U0_output_0_V_TREADY);
+    sensitive << ( output_0_V_TREADY );
 
-    SC_METHOD(thread_splitter_Loop_1_proc_U0_output_1_V_full_n);
-    sensitive << ( output_1_V_full_n );
+    SC_METHOD(thread_splitter_Loop_1_proc_U0_output_1_V_TREADY);
+    sensitive << ( output_1_V_TREADY );
 
-    SC_METHOD(thread_splitter_Loop_1_proc_U0_output_2_V_full_n);
-    sensitive << ( output_2_V_full_n );
+    SC_METHOD(thread_splitter_Loop_1_proc_U0_output_2_V_TREADY);
+    sensitive << ( output_2_V_TREADY );
 
-    SC_METHOD(thread_splitter_Loop_1_proc_U0_output_3_V_full_n);
-    sensitive << ( output_3_V_full_n );
+    SC_METHOD(thread_splitter_Loop_1_proc_U0_output_3_V_TREADY);
+    sensitive << ( output_3_V_TREADY );
 
-    SC_METHOD(thread_splitter_Loop_1_proc_U0_output_4_V_full_n);
-    sensitive << ( output_4_V_full_n );
+    SC_METHOD(thread_splitter_Loop_1_proc_U0_output_4_V_TREADY);
+    sensitive << ( output_4_V_TREADY );
 
-    SC_METHOD(thread_splitter_Loop_1_proc_U0_output_5_V_full_n);
-    sensitive << ( output_5_V_full_n );
+    SC_METHOD(thread_splitter_Loop_1_proc_U0_output_5_V_TREADY);
+    sensitive << ( output_5_V_TREADY );
 
     SC_THREAD(thread_hdltv_gen);
     sensitive << ( ap_clk.pos() );
@@ -151,61 +153,62 @@ splitter::splitter(sc_module_name name) : sc_module(name), mVcdFile(0) {
     mVcdFile->set_time_unit(1, SC_PS);
     if (1) {
 #ifdef __HLS_TRACE_LEVEL_PORT__
-    sc_trace(mVcdFile, input_V_dout, "(port)input_V_dout");
-    sc_trace(mVcdFile, input_V_empty_n, "(port)input_V_empty_n");
-    sc_trace(mVcdFile, input_V_read, "(port)input_V_read");
-    sc_trace(mVcdFile, output_0_V_din, "(port)output_0_V_din");
-    sc_trace(mVcdFile, output_0_V_full_n, "(port)output_0_V_full_n");
-    sc_trace(mVcdFile, output_0_V_write, "(port)output_0_V_write");
-    sc_trace(mVcdFile, output_1_V_din, "(port)output_1_V_din");
-    sc_trace(mVcdFile, output_1_V_full_n, "(port)output_1_V_full_n");
-    sc_trace(mVcdFile, output_1_V_write, "(port)output_1_V_write");
-    sc_trace(mVcdFile, output_2_V_din, "(port)output_2_V_din");
-    sc_trace(mVcdFile, output_2_V_full_n, "(port)output_2_V_full_n");
-    sc_trace(mVcdFile, output_2_V_write, "(port)output_2_V_write");
-    sc_trace(mVcdFile, output_3_V_din, "(port)output_3_V_din");
-    sc_trace(mVcdFile, output_3_V_full_n, "(port)output_3_V_full_n");
-    sc_trace(mVcdFile, output_3_V_write, "(port)output_3_V_write");
-    sc_trace(mVcdFile, output_4_V_din, "(port)output_4_V_din");
-    sc_trace(mVcdFile, output_4_V_full_n, "(port)output_4_V_full_n");
-    sc_trace(mVcdFile, output_4_V_write, "(port)output_4_V_write");
-    sc_trace(mVcdFile, output_5_V_din, "(port)output_5_V_din");
-    sc_trace(mVcdFile, output_5_V_full_n, "(port)output_5_V_full_n");
-    sc_trace(mVcdFile, output_5_V_write, "(port)output_5_V_write");
+    sc_trace(mVcdFile, input_V_TDATA, "(port)input_V_TDATA");
+    sc_trace(mVcdFile, output_0_V_TDATA, "(port)output_0_V_TDATA");
+    sc_trace(mVcdFile, output_1_V_TDATA, "(port)output_1_V_TDATA");
+    sc_trace(mVcdFile, output_2_V_TDATA, "(port)output_2_V_TDATA");
+    sc_trace(mVcdFile, output_3_V_TDATA, "(port)output_3_V_TDATA");
+    sc_trace(mVcdFile, output_4_V_TDATA, "(port)output_4_V_TDATA");
+    sc_trace(mVcdFile, output_5_V_TDATA, "(port)output_5_V_TDATA");
     sc_trace(mVcdFile, ap_clk, "(port)ap_clk");
-    sc_trace(mVcdFile, ap_rst, "(port)ap_rst");
+    sc_trace(mVcdFile, ap_rst_n, "(port)ap_rst_n");
+    sc_trace(mVcdFile, input_V_TVALID, "(port)input_V_TVALID");
+    sc_trace(mVcdFile, input_V_TREADY, "(port)input_V_TREADY");
+    sc_trace(mVcdFile, output_0_V_TVALID, "(port)output_0_V_TVALID");
+    sc_trace(mVcdFile, output_0_V_TREADY, "(port)output_0_V_TREADY");
+    sc_trace(mVcdFile, output_1_V_TVALID, "(port)output_1_V_TVALID");
+    sc_trace(mVcdFile, output_1_V_TREADY, "(port)output_1_V_TREADY");
+    sc_trace(mVcdFile, output_2_V_TVALID, "(port)output_2_V_TVALID");
+    sc_trace(mVcdFile, output_2_V_TREADY, "(port)output_2_V_TREADY");
+    sc_trace(mVcdFile, output_3_V_TVALID, "(port)output_3_V_TVALID");
+    sc_trace(mVcdFile, output_3_V_TREADY, "(port)output_3_V_TREADY");
+    sc_trace(mVcdFile, output_4_V_TVALID, "(port)output_4_V_TVALID");
+    sc_trace(mVcdFile, output_4_V_TREADY, "(port)output_4_V_TREADY");
+    sc_trace(mVcdFile, output_5_V_TVALID, "(port)output_5_V_TVALID");
+    sc_trace(mVcdFile, output_5_V_TREADY, "(port)output_5_V_TREADY");
     sc_trace(mVcdFile, ap_done, "(port)ap_done");
     sc_trace(mVcdFile, ap_start, "(port)ap_start");
     sc_trace(mVcdFile, ap_idle, "(port)ap_idle");
     sc_trace(mVcdFile, ap_ready, "(port)ap_ready");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
+    sc_trace(mVcdFile, ap_rst_n_inv, "ap_rst_n_inv");
     sc_trace(mVcdFile, splitter_Loop_1_proc_U0_ap_start, "splitter_Loop_1_proc_U0_ap_start");
     sc_trace(mVcdFile, splitter_Loop_1_proc_U0_ap_done, "splitter_Loop_1_proc_U0_ap_done");
     sc_trace(mVcdFile, splitter_Loop_1_proc_U0_ap_continue, "splitter_Loop_1_proc_U0_ap_continue");
     sc_trace(mVcdFile, splitter_Loop_1_proc_U0_ap_idle, "splitter_Loop_1_proc_U0_ap_idle");
     sc_trace(mVcdFile, splitter_Loop_1_proc_U0_ap_ready, "splitter_Loop_1_proc_U0_ap_ready");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_input_V_dout, "splitter_Loop_1_proc_U0_input_V_dout");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_input_V_empty_n, "splitter_Loop_1_proc_U0_input_V_empty_n");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_input_V_read, "splitter_Loop_1_proc_U0_input_V_read");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_0_V_din, "splitter_Loop_1_proc_U0_output_0_V_din");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_0_V_full_n, "splitter_Loop_1_proc_U0_output_0_V_full_n");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_0_V_write, "splitter_Loop_1_proc_U0_output_0_V_write");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_1_V_din, "splitter_Loop_1_proc_U0_output_1_V_din");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_1_V_full_n, "splitter_Loop_1_proc_U0_output_1_V_full_n");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_1_V_write, "splitter_Loop_1_proc_U0_output_1_V_write");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_2_V_din, "splitter_Loop_1_proc_U0_output_2_V_din");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_2_V_full_n, "splitter_Loop_1_proc_U0_output_2_V_full_n");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_2_V_write, "splitter_Loop_1_proc_U0_output_2_V_write");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_3_V_din, "splitter_Loop_1_proc_U0_output_3_V_din");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_3_V_full_n, "splitter_Loop_1_proc_U0_output_3_V_full_n");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_3_V_write, "splitter_Loop_1_proc_U0_output_3_V_write");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_4_V_din, "splitter_Loop_1_proc_U0_output_4_V_din");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_4_V_full_n, "splitter_Loop_1_proc_U0_output_4_V_full_n");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_4_V_write, "splitter_Loop_1_proc_U0_output_4_V_write");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_5_V_din, "splitter_Loop_1_proc_U0_output_5_V_din");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_5_V_full_n, "splitter_Loop_1_proc_U0_output_5_V_full_n");
-    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_5_V_write, "splitter_Loop_1_proc_U0_output_5_V_write");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_input_V_TDATA, "splitter_Loop_1_proc_U0_input_V_TDATA");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_input_V_TVALID, "splitter_Loop_1_proc_U0_input_V_TVALID");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_input_V_TREADY, "splitter_Loop_1_proc_U0_input_V_TREADY");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_0_V_TDATA, "splitter_Loop_1_proc_U0_output_0_V_TDATA");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_0_V_TVALID, "splitter_Loop_1_proc_U0_output_0_V_TVALID");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_0_V_TREADY, "splitter_Loop_1_proc_U0_output_0_V_TREADY");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_1_V_TDATA, "splitter_Loop_1_proc_U0_output_1_V_TDATA");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_1_V_TVALID, "splitter_Loop_1_proc_U0_output_1_V_TVALID");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_1_V_TREADY, "splitter_Loop_1_proc_U0_output_1_V_TREADY");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_2_V_TDATA, "splitter_Loop_1_proc_U0_output_2_V_TDATA");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_2_V_TVALID, "splitter_Loop_1_proc_U0_output_2_V_TVALID");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_2_V_TREADY, "splitter_Loop_1_proc_U0_output_2_V_TREADY");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_3_V_TDATA, "splitter_Loop_1_proc_U0_output_3_V_TDATA");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_3_V_TVALID, "splitter_Loop_1_proc_U0_output_3_V_TVALID");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_3_V_TREADY, "splitter_Loop_1_proc_U0_output_3_V_TREADY");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_4_V_TDATA, "splitter_Loop_1_proc_U0_output_4_V_TDATA");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_4_V_TVALID, "splitter_Loop_1_proc_U0_output_4_V_TVALID");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_4_V_TREADY, "splitter_Loop_1_proc_U0_output_4_V_TREADY");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_5_V_TDATA, "splitter_Loop_1_proc_U0_output_5_V_TDATA");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_5_V_TVALID, "splitter_Loop_1_proc_U0_output_5_V_TVALID");
+    sc_trace(mVcdFile, splitter_Loop_1_proc_U0_output_5_V_TREADY, "splitter_Loop_1_proc_U0_output_5_V_TREADY");
     sc_trace(mVcdFile, ap_sig_hs_continue, "ap_sig_hs_continue");
     sc_trace(mVcdFile, ap_reg_procdone_splitter_Loop_1_proc_U0, "ap_reg_procdone_splitter_Loop_1_proc_U0");
     sc_trace(mVcdFile, ap_sig_hs_done, "ap_sig_hs_done");
@@ -231,7 +234,7 @@ splitter::~splitter() {
 
 void splitter::thread_ap_clk_no_reset_() {
     ap_CS = ap_const_logic_0;
-    if ( ap_rst.read() == ap_const_logic_1) {
+    if ( ap_rst_n_inv.read() == ap_const_logic_1) {
         ap_reg_procdone_splitter_Loop_1_proc_U0 = ap_const_logic_0;
     } else {
         if (esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_hs_done.read())) {
@@ -258,6 +261,10 @@ void splitter::thread_ap_ready() {
     ap_ready = ap_sig_top_allready.read();
 }
 
+void splitter::thread_ap_rst_n_inv() {
+    ap_rst_n_inv =  (sc_logic) (~ap_rst_n.read());
+}
+
 void splitter::thread_ap_sig_hs_continue() {
     ap_sig_hs_continue = ap_const_logic_1;
 }
@@ -274,56 +281,56 @@ void splitter::thread_ap_sig_top_allready() {
     ap_sig_top_allready = splitter_Loop_1_proc_U0_ap_ready.read();
 }
 
-void splitter::thread_input_V_read() {
-    input_V_read = splitter_Loop_1_proc_U0_input_V_read.read();
+void splitter::thread_input_V_TREADY() {
+    input_V_TREADY = splitter_Loop_1_proc_U0_input_V_TREADY.read();
 }
 
-void splitter::thread_output_0_V_din() {
-    output_0_V_din = splitter_Loop_1_proc_U0_output_0_V_din.read();
+void splitter::thread_output_0_V_TDATA() {
+    output_0_V_TDATA = splitter_Loop_1_proc_U0_output_0_V_TDATA.read();
 }
 
-void splitter::thread_output_0_V_write() {
-    output_0_V_write = splitter_Loop_1_proc_U0_output_0_V_write.read();
+void splitter::thread_output_0_V_TVALID() {
+    output_0_V_TVALID = splitter_Loop_1_proc_U0_output_0_V_TVALID.read();
 }
 
-void splitter::thread_output_1_V_din() {
-    output_1_V_din = splitter_Loop_1_proc_U0_output_1_V_din.read();
+void splitter::thread_output_1_V_TDATA() {
+    output_1_V_TDATA = splitter_Loop_1_proc_U0_output_1_V_TDATA.read();
 }
 
-void splitter::thread_output_1_V_write() {
-    output_1_V_write = splitter_Loop_1_proc_U0_output_1_V_write.read();
+void splitter::thread_output_1_V_TVALID() {
+    output_1_V_TVALID = splitter_Loop_1_proc_U0_output_1_V_TVALID.read();
 }
 
-void splitter::thread_output_2_V_din() {
-    output_2_V_din = splitter_Loop_1_proc_U0_output_2_V_din.read();
+void splitter::thread_output_2_V_TDATA() {
+    output_2_V_TDATA = splitter_Loop_1_proc_U0_output_2_V_TDATA.read();
 }
 
-void splitter::thread_output_2_V_write() {
-    output_2_V_write = splitter_Loop_1_proc_U0_output_2_V_write.read();
+void splitter::thread_output_2_V_TVALID() {
+    output_2_V_TVALID = splitter_Loop_1_proc_U0_output_2_V_TVALID.read();
 }
 
-void splitter::thread_output_3_V_din() {
-    output_3_V_din = splitter_Loop_1_proc_U0_output_3_V_din.read();
+void splitter::thread_output_3_V_TDATA() {
+    output_3_V_TDATA = splitter_Loop_1_proc_U0_output_3_V_TDATA.read();
 }
 
-void splitter::thread_output_3_V_write() {
-    output_3_V_write = splitter_Loop_1_proc_U0_output_3_V_write.read();
+void splitter::thread_output_3_V_TVALID() {
+    output_3_V_TVALID = splitter_Loop_1_proc_U0_output_3_V_TVALID.read();
 }
 
-void splitter::thread_output_4_V_din() {
-    output_4_V_din = splitter_Loop_1_proc_U0_output_4_V_din.read();
+void splitter::thread_output_4_V_TDATA() {
+    output_4_V_TDATA = splitter_Loop_1_proc_U0_output_4_V_TDATA.read();
 }
 
-void splitter::thread_output_4_V_write() {
-    output_4_V_write = splitter_Loop_1_proc_U0_output_4_V_write.read();
+void splitter::thread_output_4_V_TVALID() {
+    output_4_V_TVALID = splitter_Loop_1_proc_U0_output_4_V_TVALID.read();
 }
 
-void splitter::thread_output_5_V_din() {
-    output_5_V_din = splitter_Loop_1_proc_U0_output_5_V_din.read();
+void splitter::thread_output_5_V_TDATA() {
+    output_5_V_TDATA = splitter_Loop_1_proc_U0_output_5_V_TDATA.read();
 }
 
-void splitter::thread_output_5_V_write() {
-    output_5_V_write = splitter_Loop_1_proc_U0_output_5_V_write.read();
+void splitter::thread_output_5_V_TVALID() {
+    output_5_V_TVALID = splitter_Loop_1_proc_U0_output_5_V_TVALID.read();
 }
 
 void splitter::thread_splitter_Loop_1_proc_U0_ap_continue() {
@@ -331,43 +338,39 @@ void splitter::thread_splitter_Loop_1_proc_U0_ap_continue() {
 }
 
 void splitter::thread_splitter_Loop_1_proc_U0_ap_start() {
-    if ( ap_rst.read() == ap_const_logic_1) {
-        splitter_Loop_1_proc_U0_ap_start = ap_const_logic_0;
-    } else {
-        splitter_Loop_1_proc_U0_ap_start = ap_start.read();
-    }
+    splitter_Loop_1_proc_U0_ap_start = ap_start.read();
 }
 
-void splitter::thread_splitter_Loop_1_proc_U0_input_V_dout() {
-    splitter_Loop_1_proc_U0_input_V_dout = input_V_dout.read();
+void splitter::thread_splitter_Loop_1_proc_U0_input_V_TDATA() {
+    splitter_Loop_1_proc_U0_input_V_TDATA = input_V_TDATA.read();
 }
 
-void splitter::thread_splitter_Loop_1_proc_U0_input_V_empty_n() {
-    splitter_Loop_1_proc_U0_input_V_empty_n = input_V_empty_n.read();
+void splitter::thread_splitter_Loop_1_proc_U0_input_V_TVALID() {
+    splitter_Loop_1_proc_U0_input_V_TVALID = input_V_TVALID.read();
 }
 
-void splitter::thread_splitter_Loop_1_proc_U0_output_0_V_full_n() {
-    splitter_Loop_1_proc_U0_output_0_V_full_n = output_0_V_full_n.read();
+void splitter::thread_splitter_Loop_1_proc_U0_output_0_V_TREADY() {
+    splitter_Loop_1_proc_U0_output_0_V_TREADY = output_0_V_TREADY.read();
 }
 
-void splitter::thread_splitter_Loop_1_proc_U0_output_1_V_full_n() {
-    splitter_Loop_1_proc_U0_output_1_V_full_n = output_1_V_full_n.read();
+void splitter::thread_splitter_Loop_1_proc_U0_output_1_V_TREADY() {
+    splitter_Loop_1_proc_U0_output_1_V_TREADY = output_1_V_TREADY.read();
 }
 
-void splitter::thread_splitter_Loop_1_proc_U0_output_2_V_full_n() {
-    splitter_Loop_1_proc_U0_output_2_V_full_n = output_2_V_full_n.read();
+void splitter::thread_splitter_Loop_1_proc_U0_output_2_V_TREADY() {
+    splitter_Loop_1_proc_U0_output_2_V_TREADY = output_2_V_TREADY.read();
 }
 
-void splitter::thread_splitter_Loop_1_proc_U0_output_3_V_full_n() {
-    splitter_Loop_1_proc_U0_output_3_V_full_n = output_3_V_full_n.read();
+void splitter::thread_splitter_Loop_1_proc_U0_output_3_V_TREADY() {
+    splitter_Loop_1_proc_U0_output_3_V_TREADY = output_3_V_TREADY.read();
 }
 
-void splitter::thread_splitter_Loop_1_proc_U0_output_4_V_full_n() {
-    splitter_Loop_1_proc_U0_output_4_V_full_n = output_4_V_full_n.read();
+void splitter::thread_splitter_Loop_1_proc_U0_output_4_V_TREADY() {
+    splitter_Loop_1_proc_U0_output_4_V_TREADY = output_4_V_TREADY.read();
 }
 
-void splitter::thread_splitter_Loop_1_proc_U0_output_5_V_full_n() {
-    splitter_Loop_1_proc_U0_output_5_V_full_n = output_5_V_full_n.read();
+void splitter::thread_splitter_Loop_1_proc_U0_output_5_V_TREADY() {
+    splitter_Loop_1_proc_U0_output_5_V_TREADY = output_5_V_TREADY.read();
 }
 
 void splitter::thread_hdltv_gen() {
@@ -382,28 +385,28 @@ void splitter::thread_hdltv_gen() {
     while (1) {
         wait();
         const char* mComma = ap_cycleNo == 0 ? " " : ", " ;
-        mHdltvinHandle << mComma << "{"  <<  " \"input_V_dout\" :  \"" << input_V_dout.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"input_V_empty_n\" :  \"" << input_V_empty_n.read() << "\" ";
-        mHdltvoutHandle << mComma << "{"  <<  " \"input_V_read\" :  \"" << input_V_read.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"output_0_V_din\" :  \"" << output_0_V_din.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"output_0_V_full_n\" :  \"" << output_0_V_full_n.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"output_0_V_write\" :  \"" << output_0_V_write.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"output_1_V_din\" :  \"" << output_1_V_din.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"output_1_V_full_n\" :  \"" << output_1_V_full_n.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"output_1_V_write\" :  \"" << output_1_V_write.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"output_2_V_din\" :  \"" << output_2_V_din.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"output_2_V_full_n\" :  \"" << output_2_V_full_n.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"output_2_V_write\" :  \"" << output_2_V_write.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"output_3_V_din\" :  \"" << output_3_V_din.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"output_3_V_full_n\" :  \"" << output_3_V_full_n.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"output_3_V_write\" :  \"" << output_3_V_write.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"output_4_V_din\" :  \"" << output_4_V_din.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"output_4_V_full_n\" :  \"" << output_4_V_full_n.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"output_4_V_write\" :  \"" << output_4_V_write.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"output_5_V_din\" :  \"" << output_5_V_din.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"output_5_V_full_n\" :  \"" << output_5_V_full_n.read() << "\" ";
-        mHdltvoutHandle << " , " <<  " \"output_5_V_write\" :  \"" << output_5_V_write.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"ap_rst\" :  \"" << ap_rst.read() << "\" ";
+        mHdltvinHandle << mComma << "{"  <<  " \"input_V_TDATA\" :  \"" << input_V_TDATA.read() << "\" ";
+        mHdltvoutHandle << mComma << "{"  <<  " \"output_0_V_TDATA\" :  \"" << output_0_V_TDATA.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"output_1_V_TDATA\" :  \"" << output_1_V_TDATA.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"output_2_V_TDATA\" :  \"" << output_2_V_TDATA.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"output_3_V_TDATA\" :  \"" << output_3_V_TDATA.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"output_4_V_TDATA\" :  \"" << output_4_V_TDATA.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"output_5_V_TDATA\" :  \"" << output_5_V_TDATA.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"ap_rst_n\" :  \"" << ap_rst_n.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"input_V_TVALID\" :  \"" << input_V_TVALID.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"input_V_TREADY\" :  \"" << input_V_TREADY.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"output_0_V_TVALID\" :  \"" << output_0_V_TVALID.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"output_0_V_TREADY\" :  \"" << output_0_V_TREADY.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"output_1_V_TVALID\" :  \"" << output_1_V_TVALID.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"output_1_V_TREADY\" :  \"" << output_1_V_TREADY.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"output_2_V_TVALID\" :  \"" << output_2_V_TVALID.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"output_2_V_TREADY\" :  \"" << output_2_V_TREADY.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"output_3_V_TVALID\" :  \"" << output_3_V_TVALID.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"output_3_V_TREADY\" :  \"" << output_3_V_TREADY.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"output_4_V_TVALID\" :  \"" << output_4_V_TVALID.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"output_4_V_TREADY\" :  \"" << output_4_V_TREADY.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"output_5_V_TVALID\" :  \"" << output_5_V_TVALID.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"output_5_V_TREADY\" :  \"" << output_5_V_TREADY.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"ap_done\" :  \"" << ap_done.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"ap_start\" :  \"" << ap_start.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"ap_idle\" :  \"" << ap_idle.read() << "\" ";

@@ -10,7 +10,7 @@
 
 module obj_detector_dexp_64ns_64ns_64_18_full_dsp
 #(parameter
-    ID         = 22,
+    ID         = 59,
     NUM_STAGE  = 18,
     din0_WIDTH = 64,
     din1_WIDTH = 64,

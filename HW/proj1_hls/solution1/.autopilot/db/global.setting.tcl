@@ -1,6 +1,6 @@
 
 set TopModule "obj_detector"
-set ClockPeriod "10.000000"
+set ClockPeriod "20.000000"
 set ClockList {ap_clk}
 set multiClockList {}
 set PortClockMap {}
@@ -42,7 +42,7 @@ set SCTraceOption "all"
 set TargetInfo "xc7z020:clg484:-1"
 set SourceFiles {sc {} c ../obj_detector.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile {C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/solution1.directive}
+set DirectiveFile {/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/solution1.directive}
 set TBFiles {verilog ../obj_detector_tb.cpp bc ../obj_detector_tb.cpp vhdl ../obj_detector_tb.cpp sc ../obj_detector_tb.cpp cas ../obj_detector_tb.cpp c {}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

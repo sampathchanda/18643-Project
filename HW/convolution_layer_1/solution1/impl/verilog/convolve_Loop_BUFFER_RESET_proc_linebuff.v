@@ -6,7 +6,7 @@
 // ==============================================================
 
 `timescale 1 ns / 1 ps
-module convolve_Loop_BUFFER_RESET_proc_linebuff_ram (addr0, ce0, d0, we0, q0,  clk);
+module convolve_Loop_BUFFER_RESET_proc_linebuff_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1, q1,  clk);
 
 parameter DWIDTH = 8;
 parameter AWIDTH = 7;
@@ -17,9 +17,14 @@ input ce0;
 input[DWIDTH-1:0] d0;
 input we0;
 output reg[DWIDTH-1:0] q0;
+input[AWIDTH-1:0] addr1;
+input ce1;
+input[DWIDTH-1:0] d1;
+input we1;
+output reg[DWIDTH-1:0] q1;
 input clk;
 
-(* ram_style = "distributed" *)reg [DWIDTH-1:0] ram[MEM_SIZE-1:0];
+(* ram_style = "block" *)reg [DWIDTH-1:0] ram[MEM_SIZE-1:0];
 
 
 
@@ -39,6 +44,21 @@ begin
 end
 
 
+always @(posedge clk)  
+begin 
+    if (ce1) 
+    begin
+        if (we1) 
+        begin 
+            ram[addr1] <= d1; 
+            q1 <= d1;
+        end 
+        else 
+            q1 <= ram[addr1];
+    end
+end
+
+
 endmodule
 
 
@@ -50,7 +70,12 @@ module convolve_Loop_BUFFER_RESET_proc_linebuff(
     ce0,
     we0,
     d0,
-    q0);
+    q0,
+    address1,
+    ce1,
+    we1,
+    d1,
+    q1);
 
 parameter DataWidth = 32'd8;
 parameter AddressRange = 32'd117;
@@ -62,6 +87,11 @@ input ce0;
 input we0;
 input[DataWidth - 1:0] d0;
 output[DataWidth - 1:0] q0;
+input[AddressWidth - 1:0] address1;
+input ce1;
+input we1;
+input[DataWidth - 1:0] d1;
+output[DataWidth - 1:0] q1;
 
 
 
@@ -71,7 +101,12 @@ convolve_Loop_BUFFER_RESET_proc_linebuff_ram convolve_Loop_BUFFER_RESET_proc_lin
     .ce0( ce0 ),
     .d0( d0 ),
     .we0( we0 ),
-    .q0( q0 ));
+    .q0( q0 ),
+    .addr1( address1 ),
+    .ce1( ce1 ),
+    .d1( d1 ),
+    .we1( we1 ),
+    .q1( q1 ));
 
 endmodule
 

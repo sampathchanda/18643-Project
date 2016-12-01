@@ -1,6 +1,6 @@
-; ModuleID = 'C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/.autopilot/db/a.o.3.bc'
+; ModuleID = '/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/.autopilot/db/a.o.3.bc'
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
-target triple = "x86_64-w64-mingw32"
+target triple = "x86_64-unknown-linux-gnu"
 
 @p_str = private unnamed_addr constant [1 x i8] zeroinitializer, align 1 ; [#uses=50 type=[1 x i8]*]
 @p_str1 = private unnamed_addr constant [12 x i8] c"RAM_1P_BRAM\00", align 1 ; [#uses=4 type=[12 x i8]*]
@@ -4548,7 +4548,7 @@ declare i8 @_ssdm_op_PartSelect.i8.i9.i32.i32(i9, i32, i32) nounwind readnone
 !24 = metadata !{metadata !18}
 !25 = metadata !{i32 786689, metadata !26, metadata !"A", null, i32 12, metadata !46, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
 !26 = metadata !{i32 786478, i32 0, metadata !27, metadata !"obj_detector", metadata !"obj_detector", metadata !"_Z12obj_detectorPA28_fPA5_A5_fPA864_fPf", metadata !27, i32 12, metadata !28, i1 false, i1 true, i32 0, i32 0, null, i32 256, i1 false, null, null, null, metadata !44, i32 12} ; [ DW_TAG_subprogram ]
-!27 = metadata !{i32 786473, metadata !"proj1_hls/obj_detector.cpp", metadata !"c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects", null} ; [ DW_TAG_file_type ]
+!27 = metadata !{i32 786473, metadata !"proj1_hls/obj_detector.cpp", metadata !"/home/littlefoot/18643_project/Hardware-Accel/HW", null} ; [ DW_TAG_file_type ]
 !28 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !29, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
 !29 = metadata !{null, metadata !30, metadata !35, metadata !39, metadata !43}
 !30 = metadata !{i32 786447, null, metadata !"", null, i32 0, i64 64, i64 64, i64 0, i32 0, metadata !31} ; [ DW_TAG_pointer_type ]

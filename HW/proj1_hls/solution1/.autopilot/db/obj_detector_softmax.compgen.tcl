@@ -1,10 +1,10 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 53
-set name obj_detector_fdiv_32ns_32ns_32_16
+set id 54
+set name obj_detector_fdiv_32ns_32ns_32_8
 set corename simcore_fdiv
 set op fdiv
-set stage_num 16
+set stage_num 8
 set max_latency -1
 set registered_input 1
 set in0_width 32
@@ -67,7 +67,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 54
+set id 55
 set name obj_detector_fptrunc_64ns_32_1
 set corename simcore_fptrunc
 set op fptrunc
@@ -128,7 +128,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 55
+set id 56
 set name obj_detector_fpext_32ns_64_1
 set corename simcore_fpext
 set op fpext
@@ -189,11 +189,11 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 56
-set name obj_detector_dadd_64ns_64ns_64_5_full_dsp
+set id 57
+set name obj_detector_dadd_64ns_64ns_64_4_full_dsp
 set corename simcore_dadd
 set op dadd
-set stage_num 5
+set stage_num 4
 set max_latency -1
 set registered_input 1
 set impl_style full_dsp
@@ -259,11 +259,11 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 57
-set name obj_detector_ddiv_64ns_64ns_64_31
+set id 58
+set name obj_detector_ddiv_64ns_64ns_64_17
 set corename simcore_ddiv
 set op ddiv
-set stage_num 31
+set stage_num 17
 set max_latency -1
 set registered_input 1
 set in0_width 64
@@ -326,11 +326,11 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 58
-set name obj_detector_dexp_64ns_64ns_64_18_full_dsp
+set id 59
+set name obj_detector_dexp_64ns_64ns_64_10_full_dsp
 set corename simcore_dexp
 set op dexp
-set stage_num 18
+set stage_num 10
 set max_latency -1
 set registered_input 1
 set impl_style full_dsp
@@ -406,7 +406,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 59 \
+    id 60 \
     name inp_0_read \
     type other \
     dir I \
@@ -421,7 +421,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 60 \
+    id 61 \
     name inp_1_read \
     type other \
     dir I \

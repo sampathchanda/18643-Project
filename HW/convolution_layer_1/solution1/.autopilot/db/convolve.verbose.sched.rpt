@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'convolve'
 ================================================================
-* Date:           Sat Nov 26 05:43:31 2016
+* Date:           Wed Nov 30 17:10:26 2016
 
 * Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
 * Project:        convolution_layer_1
@@ -20,17 +20,17 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|      8.61|        1.25|
+    |ap_clk  |  10.00|      8.20|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
     * Summary: 
-    +--------+--------+--------+--------+----------+
-    |     Latency     |     Interval    | Pipeline |
-    |   min  |   max  |   min  |   max  |   Type   |
-    +--------+--------+--------+--------+----------+
-    |  299607|  300391|  299608|  300392| dataflow |
-    +--------+--------+--------+--------+----------+
+    +-------+-------+-------+-------+----------+
+    |    Latency    |    Interval   | Pipeline |
+    |  min  |  max  |  min  |  max  |   Type   |
+    +-------+-------+-------+-------+----------+
+    |  91881|  91881|  91882|  91882| dataflow |
+    +-------+-------+-------+-------+----------+
 
     + Detail: 
         * Instance: 
@@ -128,42 +128,42 @@ IsGatedGlobalClock: 0
 
  <State 1>: 0.00ns
 ST_1: stg_3 [2/2] 0.00ns
-codeRepl:10  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, i8* %conv_output_V)
+codeRepl:10  call fastcc void @convolve_Loop_BUFFER_RESET_proc(i8* %image_V, [25 x float]* %weights, i8* %conv_output_V)
 
 
- <State 2>: 0.00ns
+ <State 2>: 4.15ns
 ST_2: stg_4 [1/1] 0.00ns
 codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str1) nounwind
 
 ST_2: stg_5 [1/1] 0.00ns
-codeRepl:1  call void (...)* @_ssdm_op_SpecInterface(i8* %conv_output_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str26, [1 x i8]* @p_str26, [8 x i8]* @ap_fifo_str)
+codeRepl:1  call void (...)* @_ssdm_op_SpecBitsMap(i8* %image_V), !map !7
 
 ST_2: stg_6 [1/1] 0.00ns
-codeRepl:2  call void (...)* @_ssdm_op_SpecInterface(i8* %image_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str25, [1 x i8]* @p_str25, [8 x i8]* @ap_fifo_str)
+codeRepl:2  call void (...)* @_ssdm_op_SpecBitsMap([25 x float]* %weights), !map !13
 
 ST_2: stg_7 [1/1] 0.00ns
-codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i8* %image_V), !map !7
+codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i8* %conv_output_V), !map !19
 
 ST_2: stg_8 [1/1] 0.00ns
-codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap([25 x float]* %weights), !map !13
+codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap(i1* %done), !map !23
 
 ST_2: stg_9 [1/1] 0.00ns
-codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(i8* %conv_output_V), !map !19
+codeRepl:5  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @convolve_str) nounwind
 
 ST_2: stg_10 [1/1] 0.00ns
-codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %done), !map !23
+codeRepl:6  call void (...)* @_ssdm_op_SpecInterface(i1* %done, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ST_2: stg_11 [1/1] 0.00ns
-codeRepl:7  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @convolve_str) nounwind
+codeRepl:7  call void (...)* @_ssdm_op_SpecInterface([25 x float]* %weights, [5 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ST_2: stg_12 [1/1] 0.00ns
-codeRepl:8  call void (...)* @_ssdm_op_SpecInterface(i1* %done, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+codeRepl:8  call void (...)* @_ssdm_op_SpecInterface(i8* %conv_output_V, [5 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ST_2: stg_13 [1/1] 0.00ns
-codeRepl:9  call void (...)* @_ssdm_op_SpecInterface([25 x float]* %weights, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+codeRepl:9  call void (...)* @_ssdm_op_SpecInterface(i8* %image_V, [5 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
-ST_2: stg_14 [1/2] 0.00ns
-codeRepl:10  call fastcc void @convolve_Loop_BUFFER_RESET_proc([25 x float]* %weights, i8* %image_V, i8* %conv_output_V)
+ST_2: stg_14 [1/2] 4.15ns
+codeRepl:10  call fastcc void @convolve_Loop_BUFFER_RESET_proc(i8* %image_V, [25 x float]* %weights, i8* %conv_output_V)
 
 ST_2: stg_15 [1/1] 0.00ns
 codeRepl:11  call fastcc void @convolve_Block__proc(i1* %done)

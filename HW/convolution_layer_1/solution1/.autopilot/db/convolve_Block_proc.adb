@@ -50,7 +50,7 @@
               <name/>
               <fileName>convolution_layer_1/.settings/convolution_layer_1.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>79</lineNumber>
+              <lineNumber>76</lineNumber>
               <contextFuncName>convolve</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -65,7 +65,7 @@
                         <first>convolution_layer_1/.settings/convolution_layer_1.cpp</first>
                         <second>convolve</second>
                       </first>
-                      <second>79</second>
+                      <second>76</second>
                     </item>
                   </second>
                 </item>

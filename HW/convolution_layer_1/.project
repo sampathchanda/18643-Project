@@ -62,6 +62,11 @@
 			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/.tcls</location>
 		</link>
 		<link>
+			<name>solution2/constraints</name>
+			<type>2</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution2/.tcls</location>
+		</link>
+		<link>
 			<name>source/convolution_layer_1.cpp</name>
 			<type>1</type>
 			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/.settings/convolution_layer_1.cpp</location>
@@ -100,6 +105,21 @@
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
 			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution1/script.tcl</location>
+		</link>
+		<link>
+			<name>solution2/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution2/solution2.directive</location>
+		</link>
+		<link>
+			<name>solution2/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution2/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution2/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution2/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

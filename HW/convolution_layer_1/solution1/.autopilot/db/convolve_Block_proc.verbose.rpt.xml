@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'convolve_Block_proc'" level="0">
-<item name = "Date">Sat Nov 26 05:43:31 2016
+<item name = "Date">Wed Nov 30 17:10:27 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">convolution_layer_1</item>

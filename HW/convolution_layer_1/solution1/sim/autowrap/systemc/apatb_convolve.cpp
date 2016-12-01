@@ -96,10 +96,10 @@ class INTER_TCL_FILE {
 
 
 #define convolve AESL_ORIG_DUT_convolve
-extern void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::stream< float >& conv_output,  int* done);
+extern void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::stream< unsigned char >& conv_output,  bool* done);
 #undef convolve
 
-void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::stream< float >& conv_output,  int* done)
+void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::stream< unsigned char >& conv_output,  bool* done)
 {
 	fstream wrapc_switch_file_token;
 	wrapc_switch_file_token.open(".hls_cosim_wrapc_switch.log");
@@ -127,7 +127,7 @@ void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::str
 		}
 
 		// define output stream variables: "conv_output"
-		std::vector< float > aesl_tmp_3;
+		std::vector< unsigned char > aesl_tmp_3;
 		int aesl_tmp_4;
 		int aesl_tmp_5 = 0;
 
@@ -154,7 +154,7 @@ void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::str
 		{
 			aesl_fh.read(AUTOTB_TVOUT_PC_conv_output_V, AESL_token); // data
 
-			std::vector<sc_bv<32> > conv_output_V_pc_buffer;
+			std::vector<sc_bv<8> > conv_output_V_pc_buffer;
 			int i = 0;
 
 			while (AESL_token != "[[/transaction]]")
@@ -230,7 +230,7 @@ void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::str
 
 				for (int tmp_aesl_tmp_3 = 0; tmp_aesl_tmp_3 < aesl_tmp_4 - aesl_tmp_3_size; tmp_aesl_tmp_3++)
 				{
-					 float tmp;
+					 unsigned char tmp;
 					aesl_tmp_3.push_back(tmp);
 				}
 			}
@@ -240,41 +240,41 @@ void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::str
 			{
 				// RTL Name: conv_output_V
 				{
-					// bitslice(31, 0)
+					// bitslice(7, 0)
 					// {
-						// celement: conv_output.V(31, 0)
+						// celement: conv_output.V(7, 0)
 						// {
-							sc_lv<32>* conv_output_V_lv0_0_0_1 = new sc_lv<32>[aesl_tmp_4 - aesl_tmp_5];
+							sc_lv<8>* conv_output_V_lv0_0_0_1 = new sc_lv<8>[aesl_tmp_4 - aesl_tmp_5];
 						// }
 					// }
 
-					// bitslice(31, 0)
+					// bitslice(7, 0)
 					{
 						int hls_map_index = 0;
-						// celement: conv_output.V(31, 0)
+						// celement: conv_output.V(7, 0)
 						{
 							// carray: (0) => (aesl_tmp_4 - aesl_tmp_5 - 1) @ (1)
 							for (int i_0 = 0; i_0 <= aesl_tmp_4 - aesl_tmp_5 - 1; i_0 += 1)
 							{
 								if (&(aesl_tmp_3[0]) != NULL) // check the null address if the c port is array or others
 								{
-									conv_output_V_lv0_0_0_1[hls_map_index++].range(31, 0) = sc_bv<32>(conv_output_V_pc_buffer[hls_map_index].range(31, 0));
+									conv_output_V_lv0_0_0_1[hls_map_index++].range(7, 0) = sc_bv<8>(conv_output_V_pc_buffer[hls_map_index].range(7, 0));
 								}
 							}
 						}
 					}
 
-					// bitslice(31, 0)
+					// bitslice(7, 0)
 					{
 						int hls_map_index = 0;
-						// celement: conv_output.V(31, 0)
+						// celement: conv_output.V(7, 0)
 						{
 							// carray: (0) => (aesl_tmp_4 - aesl_tmp_5 - 1) @ (1)
 							for (int i_0 = 0; i_0 <= aesl_tmp_4 - aesl_tmp_5 - 1; i_0 += 1)
 							{
 								if (&(aesl_tmp_3[0]) != NULL) // check the null address if the c port is array or others
 								{
-									*(int*)&aesl_tmp_3[i_0] = (conv_output_V_lv0_0_0_1[hls_map_index++]).to_uint64();
+									aesl_tmp_3[i_0] = (conv_output_V_lv0_0_0_1[hls_map_index++]).to_uint64();
 								}
 							}
 						}
@@ -295,7 +295,7 @@ void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::str
 		{
 			aesl_fh.read(AUTOTB_TVOUT_PC_done, AESL_token); // data
 
-			sc_bv<32> *done_pc_buffer = new sc_bv<32>[1];
+			sc_bv<1> *done_pc_buffer = new sc_bv<1>[1];
 			int i = 0;
 
 			while (AESL_token != "[[/transaction]]")
@@ -364,34 +364,34 @@ void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::str
 			{
 				// RTL Name: done
 				{
-					// bitslice(31, 0)
+					// bitslice(0, 0)
 					// {
-						// celement: done(31, 0)
+						// celement: done(0, 0)
 						// {
-							sc_lv<32>* done_lv0_0_0_1 = new sc_lv<32>[1];
+							sc_lv<1>* done_lv0_0_0_1 = new sc_lv<1>[1];
 						// }
 					// }
 
-					// bitslice(31, 0)
+					// bitslice(0, 0)
 					{
 						int hls_map_index = 0;
-						// celement: done(31, 0)
+						// celement: done(0, 0)
 						{
 							// carray: (0) => (0) @ (1)
 							for (int i_0 = 0; i_0 <= 0; i_0 += 1)
 							{
 								if (&(done[0]) != NULL) // check the null address if the c port is array or others
 								{
-									done_lv0_0_0_1[hls_map_index++].range(31, 0) = sc_bv<32>(done_pc_buffer[hls_map_index].range(31, 0));
+									done_lv0_0_0_1[hls_map_index++].range(0, 0) = sc_bv<1>(done_pc_buffer[hls_map_index].range(0, 0));
 								}
 							}
 						}
 					}
 
-					// bitslice(31, 0)
+					// bitslice(0, 0)
 					{
 						int hls_map_index = 0;
-						// celement: done(31, 0)
+						// celement: done(0, 0)
 						{
 							// carray: (0) => (0) @ (1)
 							for (int i_0 = 0; i_0 <= 0; i_0 += 1)
@@ -463,7 +463,7 @@ void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::str
 		}
 
 		// dump stream tvin: "conv_output"
-		std::vector< float > aesl_tmp_3;
+		std::vector< unsigned char > aesl_tmp_3;
 		int aesl_tmp_4 = 0;
 		while (!conv_output.empty())
 		{
@@ -600,23 +600,23 @@ void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::str
 		sprintf(tvout_conv_output_V, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVOUT_conv_output_V, tvout_conv_output_V);
 
-		sc_bv<32>* conv_output_V_tvout_wrapc_buffer = new sc_bv<32>[aesl_tmp_4 - aesl_tmp_5];
+		sc_bv<8>* conv_output_V_tvout_wrapc_buffer = new sc_bv<8>[aesl_tmp_4 - aesl_tmp_5];
 
 		// RTL Name: conv_output_V
 		{
-			// bitslice(31, 0)
+			// bitslice(7, 0)
 			{
 				int hls_map_index = 0;
-				// celement: conv_output.V(31, 0)
+				// celement: conv_output.V(7, 0)
 				{
 					// carray: (0) => (aesl_tmp_4 - aesl_tmp_5 - 1) @ (1)
 					for (int i_0 = 0; i_0 <= aesl_tmp_4 - aesl_tmp_5 - 1; i_0 += 1)
 					{
 						if (&(aesl_tmp_3[0]) != NULL) // check the null address if the c port is array or others
 						{
-							sc_lv<32> conv_output_V_tmp_mem;
-							conv_output_V_tmp_mem = *(int*)&aesl_tmp_3[i_0];
-							conv_output_V_tvout_wrapc_buffer[hls_map_index++].range(31, 0) = conv_output_V_tmp_mem.range(31, 0);
+							sc_lv<8> conv_output_V_tmp_mem;
+							conv_output_V_tmp_mem = aesl_tmp_3[i_0];
+							conv_output_V_tvout_wrapc_buffer[hls_map_index++].range(7, 0) = conv_output_V_tmp_mem.range(7, 0);
 						}
 					}
 				}
@@ -649,23 +649,23 @@ void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::str
 		sprintf(tvout_done, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVOUT_done, tvout_done);
 
-		sc_bv<32>* done_tvout_wrapc_buffer = new sc_bv<32>[1];
+		sc_bv<1>* done_tvout_wrapc_buffer = new sc_bv<1>[1];
 
 		// RTL Name: done
 		{
-			// bitslice(31, 0)
+			// bitslice(0, 0)
 			{
 				int hls_map_index = 0;
-				// celement: done(31, 0)
+				// celement: done(0, 0)
 				{
 					// carray: (0) => (0) @ (1)
 					for (int i_0 = 0; i_0 <= 0; i_0 += 1)
 					{
 						if (&(done[0]) != NULL) // check the null address if the c port is array or others
 						{
-							sc_lv<32> done_tmp_mem;
+							sc_lv<1> done_tmp_mem;
 							done_tmp_mem = done[i_0];
-							done_tvout_wrapc_buffer[hls_map_index++].range(31, 0) = done_tmp_mem.range(31, 0);
+							done_tvout_wrapc_buffer[hls_map_index++].range(0, 0) = done_tmp_mem.range(0, 0);
 						}
 					}
 				}

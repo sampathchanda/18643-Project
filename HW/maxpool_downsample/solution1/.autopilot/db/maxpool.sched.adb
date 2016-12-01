@@ -59,7 +59,7 @@
 					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>0</direction>
-				<if_type>3</if_type>
+				<if_type>0</if_type>
 				<array_size>0</array_size>
 				<bit_vecs>
 					<count>0</count>
@@ -87,7 +87,7 @@
 					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>1</direction>
-				<if_type>3</if_type>
+				<if_type>0</if_type>
 				<array_size>0</array_size>
 				<bit_vecs>
 					<count>0</count>
@@ -294,7 +294,7 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>579</mMinLatency>
+			<mMinLatency>578</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>1</mIsDfPipe>
 			<mDfPipe class_id="23" tracking_level="1" version="0" object_id="_13">
@@ -315,7 +315,7 @@
 							<item class_id="28" tracking_level="1" version="0" object_id="_15">
 								<port class_id="29" tracking_level="1" version="0" object_id="_16">
 									<name>output_V</name>
-									<dir>0</dir>
+									<dir>3</dir>
 									<type>1</type>
 								</port>
 								<inst class_id="30" tracking_level="1" version="0" object_id="_17">
@@ -327,7 +327,7 @@
 							<item class_id_reference="28" object_id="_18">
 								<port class_id_reference="29" object_id="_19">
 									<name>input_V</name>
-									<dir>0</dir>
+									<dir>3</dir>
 									<type>0</type>
 								</port>
 								<inst class_id_reference="30" object_id_reference="_17"></inst>

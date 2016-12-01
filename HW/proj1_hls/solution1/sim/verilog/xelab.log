@@ -1,70 +1,76 @@
 Vivado Simulator 2015.2
 Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_obj_detector_top -prj obj_detector.prj --lib ieee_proposed=./ieee_proposed -s obj_detector 
+Running: /home/littlefoot/vivado/Vivado/2015.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_obj_detector_top -prj obj_detector.prj --lib ieee_proposed=./ieee_proposed -s obj_detector 
 Multi-threading is on. Using 2 slave threads.
 Determining compilation order of HDL files.
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/AESL_autobram_A.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_autobram_A
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/AESL_autobram_res.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_autobram_res
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/AESL_autobram_W0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_autobram_W0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/AESL_autobram_W1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_autobram_W1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector.autotb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module apatb_obj_detector_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_control_s_axi.v" into library xil_defaultlib
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_control_s_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module obj_detector_control_s_axi
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_convolve.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_convolve
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_dadd_64ns_64ns_64_5_full_dsp.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_dadd_64ns_64ns_64_5_full_dsp
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_ddiv_64ns_64ns_64_31.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_ddiv_64ns_64ns_64_31
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_dexp_64ns_64ns_64_18_full_dsp.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_dexp_64ns_64ns_64_18_full_dsp
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_fadd_32ns_32ns_32_5_full_dsp.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_fadd_32ns_32ns_32_5_full_dsp
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_FCL.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_FCL
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_fcmp_32ns_32ns_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_softmax.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_softmax
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_fcmp_32ns_32ns_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module obj_detector_fcmp_32ns_32ns_1_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_fdiv_32ns_32ns_32_16.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_fdiv_32ns_32ns_32_16
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_flatten.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_flatten
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_fmul_32ns_32ns_32_4_max_dsp.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_fmul_32ns_32ns_32_4_max_dsp
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_fpext_32ns_64_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_fpext_32ns_64_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_fptrunc_64ns_32_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_convolve.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_convolve
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_fadd_32ns_32ns_32_5_full_dsp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_fadd_32ns_32ns_32_5_full_dsp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_fptrunc_64ns_32_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module obj_detector_fptrunc_64ns_32_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_ReLU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_ReLU
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_s0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_maxpool.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_maxpool
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_s0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module obj_detector_s0_ram
 INFO: [VRFC 10-311] analyzing module obj_detector_s0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_s1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_FCL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_FCL
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_ddiv_64ns_64ns_64_31.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_ddiv_64ns_64ns_64_31
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_dexp_64ns_64ns_64_18_full_dsp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_dexp_64ns_64ns_64_18_full_dsp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/AESL_autobram_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_s3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_s3_ram
+INFO: [VRFC 10-311] analyzing module obj_detector_s3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_fdiv_32ns_32ns_32_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_fdiv_32ns_32ns_32_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_dadd_64ns_64ns_64_5_full_dsp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_dadd_64ns_64ns_64_5_full_dsp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_obj_detector_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_fpext_32ns_64_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_fpext_32ns_64_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_flatten.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_flatten
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_fmul_32ns_32ns_32_4_max_dsp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_fmul_32ns_32ns_32_4_max_dsp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_s2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_s2_0_ram
+INFO: [VRFC 10-311] analyzing module obj_detector_s2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/AESL_autobram_res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_res
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_ReLU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module obj_detector_ReLU
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/obj_detector_s1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module obj_detector_s1_ram
 INFO: [VRFC 10-311] analyzing module obj_detector_s1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_s2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_s2_ram
-INFO: [VRFC 10-311] analyzing module obj_detector_s2
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/obj_detector_softmax.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module obj_detector_softmax
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_utils_v3_0/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/axi_utils_v2_0/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/AESL_autobram_W0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_W0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/AESL_autobram_W1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_W1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_utils_v3_0/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/axi_utils_v2_0/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0
 INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
 INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
 INFO: [VRFC 10-307] analyzing entity glb_ifx_master
 INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
 INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
 INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0
 INFO: [VRFC 10-307] analyzing entity op_resize
 INFO: [VRFC 10-307] analyzing entity delay_line
 INFO: [VRFC 10-307] analyzing entity cc_compare
@@ -82,20 +88,20 @@ INFO: [VRFC 10-307] analyzing entity ccm
 INFO: [VRFC 10-307] analyzing entity three_input_adder
 INFO: [VRFC 10-307] analyzing entity multmxn_lut6
 INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_viv
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0
 INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_viv
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_dsp48_wrapper_v3_0/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_dsp48_wrapper_v3_0/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0
 INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
 INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
 INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
 INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
 INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
 INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_dsp48_addsub_v3_0/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_dsp48_addsub_v3_0/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0
 INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
 INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
 INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_viv
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd" into library floating_point_v7_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd" into library floating_point_v7_0
 INFO: [VRFC 10-307] analyzing entity fdgS
 INFO: [VRFC 10-307] analyzing entity fdgW
 INFO: [VRFC 10-307] analyzing entity lutV
@@ -251,160 +257,160 @@ INFO: [VRFC 10-307] analyzing entity flt_accum_bit_encode
 INFO: [VRFC 10-307] analyzing entity flt_accum
 INFO: [VRFC 10-307] analyzing entity floating_point_v7_0_viv
 INFO: [VRFC 10-307] analyzing entity floating_point_v7_0
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0
 INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_dsp48_addsub_v3_0/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_dsp48_addsub_v3_0/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0
 INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_bram18k_v3_0/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_bram18k_v3_0/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0
 INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
 INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
 INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_viv
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_bram18k_v3_0/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_bram18k_v3_0/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0
 INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0.vhd" into library mult_gen_v12_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0.vhd" into library mult_gen_v12_0
 INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_dadd_3_full_dsp_64.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity obj_detector_ap_dadd_3_full_dsp_64
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_ddiv_29_no_dsp_64.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity obj_detector_ap_ddiv_29_no_dsp_64
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_dexp_16_full_dsp_64.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity obj_detector_ap_dexp_16_full_dsp_64
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fadd_3_full_dsp_32.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity obj_detector_ap_fadd_3_full_dsp_32
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fcmp_0_no_dsp_32.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity obj_detector_ap_fcmp_0_no_dsp_32
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fdiv_14_no_dsp_32.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity obj_detector_ap_fdiv_14_no_dsp_32
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fmul_2_max_dsp_32.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity obj_detector_ap_fmul_2_max_dsp_32
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fpext_0_no_dsp_32.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity obj_detector_ap_fpext_0_no_dsp_32
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fptrunc_0_no_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fptrunc_0_no_dsp_64.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity obj_detector_ap_fptrunc_0_no_dsp_64
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_ddiv_29_no_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity obj_detector_ap_ddiv_29_no_dsp_64
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_dadd_3_full_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity obj_detector_ap_dadd_3_full_dsp_64
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fadd_3_full_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity obj_detector_ap_fadd_3_full_dsp_32
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fdiv_14_no_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity obj_detector_ap_fdiv_14_no_dsp_32
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fmul_2_max_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity obj_detector_ap_fmul_2_max_dsp_32
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fpext_0_no_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity obj_detector_ap_fpext_0_no_dsp_32
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_dexp_16_full_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity obj_detector_ap_dexp_16_full_dsp_64
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fcmp_0_no_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity obj_detector_ap_fcmp_0_no_dsp_32
 Starting static elaboration
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2292]
-WARNING: [#UNDEF] Note: "in get_registers " [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
-WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fadd_3_full_dsp_32.vhd:189]
-WARNING: [#UNDEF] Note: "in get_registers " [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
-WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fdiv_14_no_dsp_32.vhd:189]
-WARNING: [#UNDEF] Note: "in get_registers " [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
-WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fptrunc_0_no_dsp_64.vhd:181]
-WARNING: [#UNDEF] Note: "in get_registers " [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
-WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fpext_0_no_dsp_32.vhd:181]
-WARNING: [#UNDEF] Note: "in get_registers " [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:29987]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:29987]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
-WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_dadd_3_full_dsp_64.vhd:189]
-WARNING: [#UNDEF] Note: "in get_registers " [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
-WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_ddiv_29_no_dsp_64.vhd:189]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
-WARNING: [#UNDEF] Note: "in get_registers " [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13949]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:70827]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:70959]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:70827]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:70959]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:72569]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:71200]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:14136]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
-WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_dexp_16_full_dsp_64.vhd:185]
-WARNING: [#UNDEF] Note: "in get_registers " [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
-WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fmul_2_max_dsp_32.vhd:189]
-WARNING: [#UNDEF] Note: "in get_registers " [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
-WARNING: [VRFC 10-1303] range is empty (null range) [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
-WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fcmp_0_no_dsp_32.vhd:189]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2292]
+WARNING: [#UNDEF] Note: "in get_registers " [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
+WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fadd_3_full_dsp_32.vhd:189]
+WARNING: [#UNDEF] Note: "in get_registers " [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
+WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fmul_2_max_dsp_32.vhd:189]
+WARNING: [#UNDEF] Note: "in get_registers " [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
+WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fdiv_14_no_dsp_32.vhd:189]
+WARNING: [#UNDEF] Note: "in get_registers " [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
+WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fptrunc_0_no_dsp_64.vhd:181]
+WARNING: [#UNDEF] Note: "in get_registers " [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
+WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fpext_0_no_dsp_32.vhd:181]
+WARNING: [#UNDEF] Note: "in get_registers " [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:29987]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:29987]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
+WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_dadd_3_full_dsp_64.vhd:189]
+WARNING: [#UNDEF] Note: "in get_registers " [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
+WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_ddiv_29_no_dsp_64.vhd:189]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
+WARNING: [#UNDEF] Note: "in get_registers " [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13949]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:70827]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:70959]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12440]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:70827]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:70959]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:72569]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:71200]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/mult_gen_v12_0/mult_gen_v12_0_vh_rfs.vhd:2307]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:14136]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xbip_pipe_v3_0/xbip_pipe_v3_0_vh_rfs.vhd:427]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
+WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_dexp_16_full_dsp_64.vhd:185]
+WARNING: [#UNDEF] Note: "in get_registers " [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:12551]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:83701]
+WARNING: [VRFC 10-1303] range is empty (null range) [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/floating_point_v7_0/floating_point_v7_0_vh_rfs.vhd:13398]
+WARNING: [VRFC 10-982] library name floating_point_v7_0 of instantiated unit conflicts with visible identifier [/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/sim/verilog/ip/xil_defaultlib/obj_detector_ap_fcmp_0_no_dsp_32.vhd:189]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -435,8 +441,10 @@ Compiling module xil_defaultlib.obj_detector_s0_ram
 Compiling module xil_defaultlib.obj_detector_s0(DataWidth=32,Add...
 Compiling module xil_defaultlib.obj_detector_s1_ram
 Compiling module xil_defaultlib.obj_detector_s1(DataWidth=32,Add...
-Compiling module xil_defaultlib.obj_detector_s2_ram
-Compiling module xil_defaultlib.obj_detector_s2(DataWidth=32,Add...
+Compiling module xil_defaultlib.obj_detector_s2_0_ram
+Compiling module xil_defaultlib.obj_detector_s2_0(DataWidth=32,A...
+Compiling module xil_defaultlib.obj_detector_s3_ram
+Compiling module xil_defaultlib.obj_detector_s3(DataWidth=32,Add...
 Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
 Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(7,0,false,false)\]
@@ -526,6 +534,44 @@ Compiling architecture xilinx of entity floating_point_v7_0.floating_point_v7_0 
 Compiling architecture obj_detector_ap_fadd_3_full_dsp_32_arch of entity xil_defaultlib.obj_detector_ap_fadd_3_full_dsp_32 [obj_detector_ap_fadd_3_full_dsp_...]
 Compiling module xil_defaultlib.obj_detector_fadd_32ns_32ns_32_5...
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
+Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(17,0,false,false)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(0,0,0,0,"NO_RESET","DIR...]
+Compiling architecture rtl of entity floating_point_v7_0.dsp48e1_wrapper [\dsp48e1_wrapper(24,17,16,25,41,...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(0,0,0,0,"NO_RESET","CAS...]
+Compiling architecture rtl of entity floating_point_v7_0.dsp48e1_wrapper [\dsp48e1_wrapper(24,7,48,25,31,f...]
+Compiling architecture struct of entity floating_point_v7_0.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl((false,fal...]
+Compiling architecture rtl of entity floating_point_v7_0.fix_mult [\fix_mult("zynq",flt_pt_fix_mult...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
+Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(8,0,false,true)\]
+Compiling architecture struct of entity floating_point_v7_0.carry_chain [\carry_chain("zynq",8,0,0,false,...]
+Compiling architecture struct of entity floating_point_v7_0.carry_chain [\carry_chain("zynq",4,0,0,false,...]
+Compiling architecture synth of entity floating_point_v7_0.compare_eq_im [\compare_eq_im("zynq",23,others ...]
+Compiling architecture rtl of entity floating_point_v7_0.special_detect [\special_detect("zynq",false,32,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,1,0,0,0,0,...]
+Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(2,1,false,true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,1,0,0,0,0,...]
+Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(4,1,false,true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
+Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(3,0,false,true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
+Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(14,0,false,false)\]
+Compiling architecture rtl of entity floating_point_v7_0.flt_mult_exp [\flt_mult_exp("zynq",false,32,8,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
+Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(30,0,false,false)\]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
+Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(18,0,false,false)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(0,0,0,0,"NO_RESET","DIR...]
+Compiling architecture rtl of entity floating_point_v7_0.dsp48e1_wrapper [\dsp48e1_wrapper(30,18,48,25,48,...]
+Compiling architecture struct of entity floating_point_v7_0.flt_round_dsp_opt_full [\flt_round_dsp_opt_full("zynq",(...]
+Compiling architecture rtl of entity floating_point_v7_0.flt_mult_round [\flt_mult_round("zynq",(flt_pt_i...]
+Compiling architecture synth of entity floating_point_v7_0.flt_dec_op_lat [\flt_dec_op_lat("zynq",32,24,tru...]
+Compiling architecture rtl of entity floating_point_v7_0.flt_mult [\flt_mult("zynq",1,3,32,24,32,24...]
+Compiling architecture xilinx of entity floating_point_v7_0.floating_point_v7_0_viv [\floating_point_v7_0_viv("zynq",...]
+Compiling architecture xilinx of entity floating_point_v7_0.floating_point_v7_0 [\floating_point_v7_0("zynq",0,0,...]
+Compiling architecture obj_detector_ap_fmul_2_max_dsp_32_arch of entity xil_defaultlib.obj_detector_ap_fmul_2_max_dsp_32 [obj_detector_ap_fmul_2_max_dsp_3...]
+Compiling module xil_defaultlib.obj_detector_fmul_32ns_32ns_32_4...
+Compiling module xil_defaultlib.obj_detector_convolve
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
 Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(23,0,false,false)\]
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
 Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(25,0,false,true)\]
@@ -545,8 +591,6 @@ Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(10,1,fals
 Compiling architecture rtl of entity floating_point_v7_0.special_detect [\special_detect("no_family",fals...]
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(13,1,0,0,0,0...]
 Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(1,13,false,true)\]
-Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,1,0,0,0,0,...]
-Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(2,1,false,true)\]
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(12,1,0,0,0,0...]
 Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(8,12,false,false)\]
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(12,1,0,0,0,0...]
@@ -555,8 +599,6 @@ Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_
 Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(3,12,false,true)\]
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(12,1,0,0,0,0...]
 Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(4,12,false,true)\]
-Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
-Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(14,0,false,false)\]
 Compiling architecture rtl of entity floating_point_v7_0.flt_div_exp [\flt_div_exp("no_family",false,3...]
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
 Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(12,0,false,true)\]
@@ -606,8 +648,6 @@ Compiling module xil_defaultlib.obj_detector_fpext_32ns_64_1(ID=...
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,1,0,0,0,0,...]
 Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(52,1,false,false)\]
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
-Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(3,0,false,true)\]
-Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
 Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(54,0,false,false)\]
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
 Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(11,0,false,true)\]
@@ -622,11 +662,6 @@ Compiling architecture rtl of entity floating_point_v7_0.shift_msb_first [\shift
 Compiling architecture rtl of entity floating_point_v7_0.alignment [\alignment("zynq",53,54,55,11,14...]
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
 Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(47,0,false,false)\]
-Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
-Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(30,0,false,false)\]
-Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
-Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(18,0,false,false)\]
-Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(0,0,0,0,"NO_RESET","DIR...]
 Compiling architecture rtl of entity floating_point_v7_0.dsp48e1_wrapper [\dsp48e1_wrapper(30,18,16,25,16,...]
 Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(0,0,0,0,"NO_RESET","DIR...]
 Compiling architecture rtl of entity floating_point_v7_0.dsp48e1_wrapper [\dsp48e1_wrapper(30,18,48,25,48,...]
@@ -643,8 +678,6 @@ Compiling architecture rtl of entity floating_point_v7_0.mux4 [\mux4("zynq",8,tr
 Compiling architecture rtl of entity floating_point_v7_0.mux4 [\mux4("zynq",4,true,0)(1,4)\]
 Compiling architecture rtl of entity floating_point_v7_0.mux4 [\mux4("zynq",2,true,0)(1,4)\]
 Compiling architecture rtl of entity floating_point_v7_0.mux4 [\mux4("zynq",1,true,0)(1,4)\]
-Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
-Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(8,0,false,true)\]
 Compiling architecture struct of entity floating_point_v7_0.carry_chain [\carry_chain("zynq",8,0,0,true,t...]
 Compiling architecture rtl of entity floating_point_v7_0.lead_zero_encode [\lead_zero_encode("zynq",false,1...]
 Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,1,0,0,0,0,...]
@@ -867,32 +900,7 @@ Compiling architecture xilinx of entity floating_point_v7_0.floating_point_v7_0 
 Compiling architecture obj_detector_ap_dexp_16_full_dsp_64_arch of entity xil_defaultlib.obj_detector_ap_dexp_16_full_dsp_64 [obj_detector_ap_dexp_16_full_dsp...]
 Compiling module xil_defaultlib.obj_detector_dexp_64ns_64ns_64_1...
 Compiling module xil_defaultlib.obj_detector_softmax
-Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,1,0,0,0,0,...]
-Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(17,0,false,false)\]
-Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(0,0,0,0,"NO_RESET","DIR...]
-Compiling architecture rtl of entity floating_point_v7_0.dsp48e1_wrapper [\dsp48e1_wrapper(24,17,16,25,41,...]
-Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(0,0,0,0,"NO_RESET","CAS...]
-Compiling architecture rtl of entity floating_point_v7_0.dsp48e1_wrapper [\dsp48e1_wrapper(24,7,48,25,31,f...]
-Compiling architecture struct of entity floating_point_v7_0.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl((false,fal...]
-Compiling architecture rtl of entity floating_point_v7_0.fix_mult [\fix_mult("zynq",flt_pt_fix_mult...]
-Compiling architecture struct of entity floating_point_v7_0.carry_chain [\carry_chain("zynq",8,0,0,false,...]
-Compiling architecture struct of entity floating_point_v7_0.carry_chain [\carry_chain("zynq",4,0,0,false,...]
-Compiling architecture synth of entity floating_point_v7_0.compare_eq_im [\compare_eq_im("zynq",23,others ...]
-Compiling architecture rtl of entity floating_point_v7_0.special_detect [\special_detect("zynq",false,32,...]
-Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,1,0,0,0,0,...]
-Compiling architecture rtl of entity floating_point_v7_0.delay [\delay(4,1,false,true)\]
-Compiling architecture rtl of entity floating_point_v7_0.flt_mult_exp [\flt_mult_exp("zynq",false,32,8,...]
-Compiling architecture rtl of entity floating_point_v7_0.dsp48e1_wrapper [\dsp48e1_wrapper(30,18,48,25,48,...]
-Compiling architecture struct of entity floating_point_v7_0.flt_round_dsp_opt_full [\flt_round_dsp_opt_full("zynq",(...]
-Compiling architecture rtl of entity floating_point_v7_0.flt_mult_round [\flt_mult_round("zynq",(flt_pt_i...]
-Compiling architecture synth of entity floating_point_v7_0.flt_dec_op_lat [\flt_dec_op_lat("zynq",32,24,tru...]
-Compiling architecture rtl of entity floating_point_v7_0.flt_mult [\flt_mult("zynq",1,3,32,24,32,24...]
-Compiling architecture xilinx of entity floating_point_v7_0.floating_point_v7_0_viv [\floating_point_v7_0_viv("zynq",...]
-Compiling architecture xilinx of entity floating_point_v7_0.floating_point_v7_0 [\floating_point_v7_0("zynq",0,0,...]
-Compiling architecture obj_detector_ap_fmul_2_max_dsp_32_arch of entity xil_defaultlib.obj_detector_ap_fmul_2_max_dsp_32 [obj_detector_ap_fmul_2_max_dsp_3...]
-Compiling module xil_defaultlib.obj_detector_fmul_32ns_32ns_32_4...
-Compiling module xil_defaultlib.obj_detector_convolve
-Compiling module xil_defaultlib.obj_detector_FCL
+Compiling module xil_defaultlib.obj_detector_flatten
 Compiling architecture synth of entity floating_point_v7_0.compare_eq_im [\compare_eq_im("zynq",16,others ...]
 Compiling architecture synth of entity floating_point_v7_0.compare_ne_im [\compare_ne_im("zynq",23,others ...]
 Compiling architecture synth of entity floating_point_v7_0.compare_eq_im [\compare_eq_im("zynq",8,others =...]
@@ -905,8 +913,9 @@ Compiling architecture xilinx of entity floating_point_v7_0.floating_point_v7_0_
 Compiling architecture xilinx of entity floating_point_v7_0.floating_point_v7_0 [\floating_point_v7_0("zynq",0,0,...]
 Compiling architecture obj_detector_ap_fcmp_0_no_dsp_32_arch of entity xil_defaultlib.obj_detector_ap_fcmp_0_no_dsp_32 [obj_detector_ap_fcmp_0_no_dsp_32...]
 Compiling module xil_defaultlib.obj_detector_fcmp_32ns_32ns_1_1(...
+Compiling module xil_defaultlib.obj_detector_maxpool
+Compiling module xil_defaultlib.obj_detector_FCL
 Compiling module xil_defaultlib.obj_detector_ReLU
-Compiling module xil_defaultlib.obj_detector_flatten
 Compiling module xil_defaultlib.obj_detector_default
 Compiling module xil_defaultlib.AESL_autobram_A
 Compiling module xil_defaultlib.AESL_autobram_W0
@@ -914,5 +923,5 @@ Compiling module xil_defaultlib.AESL_autobram_W1
 Compiling module xil_defaultlib.AESL_autobram_res
 Compiling module xil_defaultlib.AESL_axi_slave_control
 Compiling module xil_defaultlib.apatb_obj_detector_top
-Waiting for 10 sub-compilation(s) to finish...
+Waiting for 9 sub-compilation(s) to finish...
 Built simulation snapshot obj_detector

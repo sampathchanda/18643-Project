@@ -10,7 +10,7 @@
 
 module obj_detector_fpext_32ns_64_1
 #(parameter
-    ID         = 19,
+    ID         = 56,
     NUM_STAGE  = 1,
     din0_WIDTH = 32,
     dout_WIDTH = 64

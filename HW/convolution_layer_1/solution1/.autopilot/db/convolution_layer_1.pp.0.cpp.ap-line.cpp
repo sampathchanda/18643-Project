@@ -38834,13 +38834,13 @@ void convolve(
   hls::stream<uint8_t> &conv_output,
   bool *done){
 #pragma HLS INTERFACE ap_none port=done
-#pragma HLS INTERFACE ap_memory port=weights
+#pragma HLS INTERFACE bram port=weights
 #pragma HLS DATAFLOW
-#pragma HLS STREAM variable=conv_output
-#pragma HLS STREAM variable=image
+#pragma HLS INTERFACE axis port=conv_output
+#pragma HLS INTERFACE axis port=image
 #pragma empty_line
  // std::cout << "successfully entered simulation" << std::endl;
- uint8_t linebuff[((28 /* width of the image*/ * (5 /* size of the convolution window*/ - 1) + 5 /* size of the convolution window*/) - 1) + 1];
+ int linebuff[((28 /* width of the image*/ * (5 /* size of the convolution window*/ - 1) + 5 /* size of the convolution window*/) - 1) + 1];
 #pragma empty_line
  uint8_t read;
  float output = 0;
@@ -38849,15 +38849,14 @@ void convolve(
 #pragma empty_line
  // reset the line buffer
  BUFFER_RESET: for(int pos = 0; pos < (28 /* width of the image*/ * (5 /* size of the convolution window*/ - 1) + 5 /* size of the convolution window*/); pos++) {
-#pragma HLS PIPELINE
- linebuff[pos] = 0;
+  linebuff[pos] = 0;
  }
 #pragma empty_line
  SCAN_LINE: for(int pixels_read = 0;
    pixels_read < 28 /* width of the image*/ * 28 /* height of the image*/;
    pixels_read++) {
-#pragma empty_line
-  // read the FIFO
+#pragma HLS PIPELINE
+ // read the FIFO
   read = image.read();
   output = 0;
   m = pixels_read - t;
@@ -38871,8 +38870,7 @@ void convolve(
 #pragma empty_line
   // Saving data into a buffer
   BUFFER_SHIFT: for(int pos = 0; pos < (28 /* width of the image*/ * (5 /* size of the convolution window*/ - 1) + 5 /* size of the convolution window*/); pos++) {
-#pragma HLS PIPELINE II=2
- linebuff[pos] = pos < (28 /* width of the image*/ * (5 /* size of the convolution window*/ - 1) + 5 /* size of the convolution window*/) - 1 ? linebuff[pos + 1] :
+   linebuff[pos] = pos < (28 /* width of the image*/ * (5 /* size of the convolution window*/ - 1) + 5 /* size of the convolution window*/) - 1 ? linebuff[pos + 1] :
      read;
   }
 #pragma empty_line
@@ -38880,8 +38878,7 @@ void convolve(
     inner_loop < 5 /* size of the convolution window*/; inner_loop++) {
    for(int outer_loop = 0;
      outer_loop < 5 /* size of the convolution window*/; outer_loop++) {
-#pragma HLS PIPELINE
- output += linebuff[inner_loop * 28 /* width of the image*/ +
+    output += linebuff[inner_loop * 28 /* width of the image*/ +
          outer_loop]
                        * weights[inner_loop *
           5 /* size of the convolution window*/ + outer_loop];
@@ -38906,5 +38903,6 @@ void convolve(
 #pragma empty_line
 uint8_t relu(float input) {
 #pragma HLS INLINE
- return input > 0 ? input : 0;
+ int temp = input > 0 ? input : 0;
+ return temp > 255 ? 255 : temp;
 }

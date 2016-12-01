@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'obj_detector'" level="0">
-<item name = "Date">Wed Nov 30 03:19:50 2016
+<item name = "Date">Thu Dec  1 08:41:02 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">proj1_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 11.06, 1.25</column>
+<column name="ap_clk">20.00, 16.62, 2.50</column>
 </table>
 </item>
 </section>
@@ -24,26 +24,26 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">45523, 45523, 45524, 45524, none</column>
+<column name="">36741, 36741, 36742, 36742, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_obj_detector_convolve_fu_164">obj_detector_convolve, 3387, 3387, 3387, 3387, none</column>
-<column name="grp_obj_detector_softmax_fu_177">obj_detector_softmax, 200, 200, 200, 200, none</column>
+<column name="grp_obj_detector_convolve_fu_164">obj_detector_convolve, 3379, 3379, 3379, 3379, none</column>
+<column name="grp_obj_detector_softmax_fu_177">obj_detector_softmax, 122, 122, 122, 122, none</column>
 <column name="grp_obj_detector_flatten_fu_185">obj_detector_flatten, 434, 434, 434, 434, none</column>
-<column name="grp_obj_detector_maxpool_fu_202">obj_detector_maxpool, 292, 292, 292, 292, none</column>
-<column name="grp_obj_detector_FCL_fu_223">obj_detector_FCL, 4326, 4326, 4326, 4326, none</column>
-<column name="grp_obj_detector_ReLU_fu_234">obj_detector_ReLU, 2353, 2353, 2353, 2353, none</column>
+<column name="grp_obj_detector_maxpool_fu_202">obj_detector_maxpool, 290, 290, 290, 290, none</column>
+<column name="grp_obj_detector_FCL_fu_223">obj_detector_FCL, 3460, 3460, 3460, 3460, none</column>
+<column name="grp_obj_detector_ReLU_fu_234">obj_detector_ReLU, 1201, 1201, 1201, 1201, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- CONV">20334, 20334, 3389, -, -, 6, no</column>
-<column name="- ReLU">14130, 14130, 2355, -, -, 6, no</column>
-<column name="- Maxpool">1764, 1764, 294, -, -, 6, no</column>
+<column name="- CONV">20286, 20286, 3381, -, -, 6, no</column>
+<column name="- ReLU">7218, 7218, 1203, -, -, 6, no</column>
+<column name="- Maxpool">1752, 1752, 292, -, -, 6, no</column>
 </table>
 </item>
 </section>
@@ -57,25 +57,25 @@
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="Expression">-, -, 0, 15</column>
 <column name="FIFO">-, -, -, -</column>
-<column name="Instance">0, 62, 20277, 32059</column>
+<column name="Instance">0, 62, 16976, 31267</column>
 <column name="Memory">42, -, 0, 0</column>
 <column name="Multiplexer">-, -, -, 187</column>
 <column name="Register">-, -, 101, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
-<specialColumn name="Utilization (%)">15, 28, 19, 60</specialColumn>
+<specialColumn name="Utilization (%)">15, 28, 16, 59</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="grp_obj_detector_FCL_fu_223">obj_detector_FCL, 0, 5, 447, 800</column>
-<column name="grp_obj_detector_ReLU_fu_234">obj_detector_ReLU, 0, 0, 229, 475</column>
+<column name="grp_obj_detector_FCL_fu_223">obj_detector_FCL, 0, 5, 517, 811</column>
+<column name="grp_obj_detector_ReLU_fu_234">obj_detector_ReLU, 0, 0, 194, 475</column>
 <column name="obj_detector_control_s_axi_U">obj_detector_control_s_axi, 0, 0, 36, 40</column>
-<column name="grp_obj_detector_convolve_fu_164">obj_detector_convolve, 0, 26, 7010, 12192</column>
+<column name="grp_obj_detector_convolve_fu_164">obj_detector_convolve, 0, 26, 6459, 11804</column>
 <column name="grp_obj_detector_flatten_fu_185">obj_detector_flatten, 0, 0, 4338, 3801</column>
-<column name="grp_obj_detector_maxpool_fu_202">obj_detector_maxpool, 0, 0, 1222, 4878</column>
-<column name="grp_obj_detector_softmax_fu_177">obj_detector_softmax, 0, 31, 6995, 9873</column>
+<column name="grp_obj_detector_maxpool_fu_202">obj_detector_maxpool, 0, 0, 1057, 4814</column>
+<column name="grp_obj_detector_softmax_fu_177">obj_detector_softmax, 0, 31, 4375, 9522</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'maxpool'" level="0">
-<item name = "Date">Sat Nov 26 05:13:00 2016
+<item name = "Date">Wed Nov 30 17:18:06 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">maxpool_downsample</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 7.74, 1.25</column>
+<column name="ap_clk">10.00, 6.74, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">579, 579, 580, 580, dataflow</column>
+<column name="">578, 578, 579, 579, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_maxpool_Loop_LOOP_proc_fu_34">maxpool_Loop_LOOP_proc, 579, 579, 579, 579, none</column>
+<column name="grp_maxpool_Loop_LOOP_proc_fu_30">maxpool_Loop_LOOP_proc, 578, 578, 578, 578, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -49,7 +49,7 @@
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="Expression">-, -, -, -</column>
 <column name="FIFO">-, -, -, -</column>
-<column name="Instance">-, -, 455, 484</column>
+<column name="Instance">-, -, 348, 479</column>
 <column name="Memory">-, -, -, -</column>
 <column name="Multiplexer">-, -, -, -</column>
 <column name="Register">-, -, 2, -</column>
@@ -61,7 +61,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="maxpool_Loop_LOOP_proc_U0">maxpool_Loop_LOOP_proc, 0, 0, 455, 484</column>
+<column name="maxpool_Loop_LOOP_proc_U0">maxpool_Loop_LOOP_proc, 0, 0, 348, 479</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -94,15 +94,15 @@
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
 <column name="begin_r">in, 1, ap_none, begin_r, pointer</column>
-<column name="input_V_dout">in, 8, ap_fifo, input_V, pointer</column>
-<column name="input_V_empty_n">in, 1, ap_fifo, input_V, pointer</column>
-<column name="input_V_read">out, 1, ap_fifo, input_V, pointer</column>
-<column name="output_V_din">out, 8, ap_fifo, output_V, pointer</column>
-<column name="output_V_full_n">in, 1, ap_fifo, output_V, pointer</column>
-<column name="output_V_write">out, 1, ap_fifo, output_V, pointer</column>
+<column name="input_V_TDATA">in, 8, axis, input_V, pointer</column>
+<column name="input_V_TVALID">in, 1, axis, input_V, pointer</column>
+<column name="input_V_TREADY">out, 1, axis, input_V, pointer</column>
+<column name="output_V_TDATA">out, 8, axis, output_V, pointer</column>
+<column name="output_V_TVALID">out, 1, axis, output_V, pointer</column>
+<column name="output_V_TREADY">in, 1, axis, output_V, pointer</column>
 <column name="ok">in, 1, ap_none, ok, pointer</column>
 <column name="ap_clk">in, 1, ap_ctrl_hs, maxpool, return value</column>
-<column name="ap_rst">in, 1, ap_ctrl_hs, maxpool, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, maxpool, return value</column>
 <column name="ap_done">out, 1, ap_ctrl_hs, maxpool, return value</column>
 <column name="ap_start">in, 1, ap_ctrl_hs, maxpool, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, maxpool, return value</column>

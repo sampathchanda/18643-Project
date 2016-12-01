@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'obj_detector'" level="0">
-<item name = "Date">Wed Nov 30 03:19:28 2016
+<item name = "Date">Thu Dec  1 08:40:53 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">proj1_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 11.06, 1.25</column>
+<column name="ap_clk">20.00, 16.62, 2.50</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">45523, 45523, 45524, 45524, none</column>
+<column name="">36741, 36741, 36742, 36742, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,9 +35,9 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- CONV">20334, 20334, 3389, -, -, 6, no</column>
-<column name="- ReLU">14130, 14130, 2355, -, -, 6, no</column>
-<column name="- Maxpool">1764, 1764, 294, -, -, 6, no</column>
+<column name="- CONV">20286, 20286, 3381, -, -, 6, no</column>
+<column name="- ReLU">7218, 7218, 1203, -, -, 6, no</column>
+<column name="- Maxpool">1752, 1752, 292, -, -, 6, no</column>
 </table>
 </item>
 </section>

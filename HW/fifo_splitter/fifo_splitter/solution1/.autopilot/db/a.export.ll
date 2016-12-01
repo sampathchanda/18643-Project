@@ -3,11 +3,16 @@ target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f3
 target triple = "x86_64-unknown-linux-gnu"
 
 @p_str = private unnamed_addr constant [1 x i8] zeroinitializer, align 1
-@p_str1 = private unnamed_addr constant [12 x i8] c"hls_label_1\00", align 1
+@p_str1 = private unnamed_addr constant [5 x i8] c"axis\00", align 1
+@p_str2 = private unnamed_addr constant [12 x i8] c"hls_label_1\00", align 1
 @splitter_str = internal unnamed_addr constant [9 x i8] c"splitter\00"
-@ap_fifo_str = internal unnamed_addr constant [8 x i8] c"ap_fifo\00"
 
 define weak void @_ssdm_op_SpecDataflowPipeline(...) nounwind {
+entry:
+  ret void
+}
+
+define weak void @_ssdm_op_SpecInterface(...) nounwind {
 entry:
   ret void
 }
@@ -47,13 +52,6 @@ entry:
 define void @splitter(i8* %input_V, i8* %output_0_V, i8* %output_1_V, i8* %output_2_V, i8* %output_3_V, i8* %output_4_V, i8* %output_5_V) {
 codeRepl:
   call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str) nounwind
-  %empty = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_3 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_4 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_5 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_6 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_7 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_8 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %input_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
   call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_5_V), !map !0
   call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_4_V), !map !6
   call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_3_V), !map !12
@@ -62,19 +60,26 @@ codeRepl:
   call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_0_V), !map !30
   call void (...)* @_ssdm_op_SpecBitsMap(i8* %input_V), !map !36
   call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @splitter_str) nounwind
+  call void (...)* @_ssdm_op_SpecInterface(i8* %input_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+  call void (...)* @_ssdm_op_SpecInterface(i8* %output_0_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %output_1_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %output_2_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %output_3_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %output_4_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %output_5_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
   call fastcc void @splitter_Loop_1_proc(i8* %input_V, i8* %output_0_V, i8* %output_1_V, i8* %output_2_V, i8* %output_3_V, i8* %output_4_V, i8* %output_5_V)
   ret void
 }
 
 define internal fastcc void @splitter_Loop_1_proc(i8* %input_V, i8* %output_0_V, i8* %output_1_V, i8* %output_2_V, i8* %output_3_V, i8* %output_4_V, i8* %output_5_V) {
 newFuncRoot:
-  %empty = call i32 (...)* @_ssdm_op_SpecInterface(i8* %input_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_9 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_10 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_11 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_12 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_13 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
-  %empty_14 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %output_5_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %output_4_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %output_3_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %output_2_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %output_1_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %output_0_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+  call void (...)* @_ssdm_op_SpecInterface(i8* %input_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
   br label %0
 
 splitter_.exit2.exitStub:                         ; preds = %0
@@ -87,40 +92,31 @@ splitter_.exit2.exitStub:                         ; preds = %0
   br i1 %exitcond4_i_i, label %splitter_.exit2.exitStub, label %1
 
 ; <label>:1                                       ; preds = %0
-  %empty_15 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)
-  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str1)
+  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)
+  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2)
   call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind
-  %temp = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %input_V)
-  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %output_0_V, i8 %temp)
-  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %output_1_V, i8 %temp)
-  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %output_2_V, i8 %temp)
-  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %output_3_V, i8 %temp)
-  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %output_4_V, i8 %temp)
-  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %output_5_V, i8 %temp)
-  %empty_16 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str1, i32 %tmp_2)
+  %temp = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %input_V)
+  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %output_0_V, i8 %temp)
+  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %output_1_V, i8 %temp)
+  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %output_2_V, i8 %temp)
+  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %output_3_V, i8 %temp)
+  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %output_4_V, i8 %temp)
+  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %output_5_V, i8 %temp)
+  %empty_2 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2, i32 %tmp_2)
   br label %0
 }
 
-define weak i32 @_ssdm_op_SpecInterface(...) {
+define weak i8 @_ssdm_op_Read.axis.volatile.i8P(i8*) {
 entry:
-  ret i32 0
-}
-
-define weak i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8*) {
-entry:
-  %empty = call i8 @_autotb_FifoRead_i8(i8* %0)
+  %empty = load i8* %0
   ret i8 %empty
 }
 
-define weak void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8*, i8) {
+define weak void @_ssdm_op_Write.axis.volatile.i8P(i8*, i8) {
 entry:
-  %empty = call i8 @_autotb_FifoWrite_i8(i8* %0, i8 %1)
+  store i8 %1, i8* %0
   ret void
 }
-
-declare i8 @_autotb_FifoRead_i8(i8*)
-
-declare i8 @_autotb_FifoWrite_i8(i8*, i8)
 
 !hls.encrypted.func = !{}
 !llvm.map.gv = !{}

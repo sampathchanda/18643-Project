@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'obj_detector'
 ================================================================
-* Date:           Wed Nov 30 03:19:28 2016
+* Date:           Thu Dec  1 08:40:53 2016
 
 * Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
 * Project:        proj1_hls
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     11.06|        1.25|
+    |ap_clk  |  20.00|     16.62|        2.50|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -29,7 +29,7 @@
     |    Latency    |    Interval   | Pipeline|
     |  min  |  max  |  min  |  max  |   Type  |
     +-------+-------+-------+-------+---------+
-    |  45523|  45523|  45524|  45524|   none  |
+    |  36741|  36741|  36742|  36742|   none  |
     +-------+-------+-------+-------+---------+
 
     + Detail: 
@@ -41,9 +41,9 @@
         |           |    Latency    | Iteration|  Initiation Interval  | Trip |          |
         | Loop Name |  min  |  max  |  Latency |  achieved |   target  | Count| Pipelined|
         +-----------+-------+-------+----------+-----------+-----------+------+----------+
-        |- CONV     |  20334|  20334|      3389|          -|          -|     6|    no    |
-        |- ReLU     |  14130|  14130|      2355|          -|          -|     6|    no    |
-        |- Maxpool  |   1764|   1764|       294|          -|          -|     6|    no    |
+        |- CONV     |  20286|  20286|      3381|          -|          -|     6|    no    |
+        |- ReLU     |   7218|   7218|      1203|          -|          -|     6|    no    |
+        |- Maxpool  |   1752|   1752|       292|          -|          -|     6|    no    |
         +-----------+-------+-------+----------+-----------+-----------+------+----------+
 
 
@@ -408,10 +408,10 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ A]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de984e40; pingpong=0; private_global=0; MemPort=[1]; IO mode=bram:ce=0
-Port [ W0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de983cd0; pingpong=0; private_global=0; MemPort=[1]; IO mode=bram:ce=0
-Port [ W1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f2de9844b0; pingpong=0; private_global=0; MemPort=[13]; IO mode=bram:ce=0
-Port [ res]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; mode=0x1f2de9845d0; pingpong=0; private_global=0; MemPort=[03]; IO mode=bram:ce=0
+Port [ A]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f4153113720; pingpong=0; private_global=0; MemPort=[1]; IO mode=bram:ce=0
+Port [ W0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f41530b7c70; pingpong=0; private_global=0; MemPort=[1]; IO mode=bram:ce=0
+Port [ W1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x7f4152d99c50; pingpong=0; private_global=0; MemPort=[13]; IO mode=bram:ce=0
+Port [ res]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; mode=0x7f4150cfba70; pingpong=0; private_global=0; MemPort=[03]; IO mode=bram:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -1435,12 +1435,12 @@ stg_77    (ret              ) [ 00000000000000]
 |----------|----------------------------------|---------|---------|---------|---------|
 | Operation|          Functional Unit         |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|----------------------------------|---------|---------|---------|---------|
-|          | grp_obj_detector_convolve_fu_164 |    26   |  65.322 |   8451  |  10102  |
-|          |  grp_obj_detector_softmax_fu_177 |    31   |  15.71  |   7120  |   9763  |
+|          | grp_obj_detector_convolve_fu_164 |    26   |  55.463 |   7750  |   9586  |
+|          |  grp_obj_detector_softmax_fu_177 |    31   |  14.139 |   4539  |   9496  |
 |   call   |  grp_obj_detector_flatten_fu_185 |    0    |  70.167 |   5287  |   3667  |
-|          |  grp_obj_detector_maxpool_fu_202 |    0    |  14.354 |   1815  |   3643  |
-|          |    grp_obj_detector_FCL_fu_223   |    5    |  7.855  |   561   |   864   |
-|          |   grp_obj_detector_ReLU_fu_234   |    0    |  1.571  |   247   |   406   |
+|          |  grp_obj_detector_maxpool_fu_202 |    0    |  11.212 |   1651  |   3579  |
+|          |    grp_obj_detector_FCL_fu_223   |    5    |  4.713  |   568   |   812   |
+|          |   grp_obj_detector_ReLU_fu_234   |    0    |  1.571  |   214   |   406   |
 |----------|----------------------------------|---------|---------|---------|---------|
 |          |            i_1_fu_250            |    0    |    0    |    0    |    3    |
 |    add   |            i_2_fu_262            |    0    |    0    |    0    |    3    |
@@ -1450,7 +1450,7 @@ stg_77    (ret              ) [ 00000000000000]
 |   icmp   |         exitcond1_fu_256         |    0    |    0    |    0    |    2    |
 |          |          exitcond_fu_268         |    0    |    0    |    0    |    2    |
 |----------|----------------------------------|---------|---------|---------|---------|
-|   Total  |                                  |    62   | 174.979 |  23481  |  28460  |
+|   Total  |                                  |    62   | 157.265 |  20009  |  27561  |
 |----------|----------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -1511,10 +1511,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    -   |   62   |   174  |  23481 |  28460 |
+|  Function |    -   |   62   |   157  |  20009 |  27561 |
 |   Memory  |   42   |    -   |    -   |    0   |    0   |
 |Multiplexer|    -   |    -   |    7   |    -   |   41   |
 |  Register |    -   |    -   |    -   |   82   |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |   42   |   62   |   182  |  23563 |  28501 |
+|   Total   |   42   |   62   |   165  |  20091 |  27602 |
 +-----------+--------+--------+--------+--------+--------+

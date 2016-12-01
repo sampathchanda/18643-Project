@@ -272,7 +272,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 set ID 5
 set MemName convolve_Loop_BUFFER_RESET_proc_linebuff
 set CoreName ap_simcore_mem
-set PortList { 2 3 }
+set PortList { 2 2 }
 set DataWd 8
 set AddrRange 117
 set AddrWd 7
@@ -357,54 +357,43 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
-# XIL_BRAM:
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 6 \
-    name weights \
+    name image_V \
     reset_level 1 \
     sync_rst true \
-    dir I \
-    corename weights \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { weights_address0 { O 5 vector } weights_ce0 { O 1 bit } weights_q0 { I 32 vector } } \
+    ports { image_V_TDATA { I 8 vector } image_V_TVALID { I 1 bit } image_V_TREADY { O 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'weights'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'image_V'"
 }
 }
 
 
-# Direct connection:
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 7 \
-    name image_V \
-    type fifo \
-    dir I \
+    name conv_output_V \
     reset_level 1 \
     sync_rst true \
-    corename dc_image_V \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { image_V_dout { I 8 vector } image_V_empty_n { I 1 bit } image_V_read { O 1 bit } } \
+    ports { conv_output_V_TDATA { O 8 vector } conv_output_V_TVALID { O 1 bit } conv_output_V_TREADY { I 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'conv_output_V'"
+}
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 8 \
-    name conv_output_V \
-    type fifo \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_conv_output_V \
-    op interface \
-    ports { conv_output_V_din { O 8 vector } conv_output_V_full_n { I 1 bit } conv_output_V_write { O 1 bit } } \
-} "
-}
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {

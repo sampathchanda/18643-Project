@@ -96,7 +96,7 @@ initial begin : read_file_process
   integer i;
   transaction_idx = 0;
 
-  wait(rst === 0);
+  wait(rst === 1);
   fp = $fopen(TV_IN,"r");
   if(fp == 0) begin       // Failed to open file
 	    $display("Failed to open file \"%s\"!", TV_IN);
@@ -142,7 +142,7 @@ end
 
 // Read data from array to RTL
 always @ (posedge clk or rst) begin
-  if(rst === 1) begin
+  if(rst === 0) begin
 	    dout0 = 0;
 	    dout1 = 0;
   end
@@ -172,7 +172,7 @@ initial begin : write_file_proc
 	integer i;
 	transaction_num = 0;
   writed_flag = 1;
-  wait(rst === 0);
+  wait(rst === 1);
 	while(1) begin
       @(posedge clk);
       # 0.1;

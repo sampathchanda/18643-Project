@@ -10,7 +10,7 @@
 
 module obj_detector_ddiv_64ns_64ns_64_31
 #(parameter
-    ID         = 21,
+    ID         = 58,
     NUM_STAGE  = 31,
     din0_WIDTH = 64,
     din1_WIDTH = 64,

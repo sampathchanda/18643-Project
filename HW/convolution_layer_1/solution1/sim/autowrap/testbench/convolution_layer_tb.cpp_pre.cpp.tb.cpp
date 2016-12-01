@@ -41358,8 +41358,8 @@ typedef unsigned char uint8_t;
 void convolve(
   hls::stream<uint8_t> &image,
   float weights[(5 * 5)],
-  hls::stream<float> &conv_output,
-  int *done
+  hls::stream<uint8_t> &conv_output,
+  bool *done
   );
 #5 "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/.settings/convolution_layer_tb.cpp" 2
 
@@ -41368,10 +41368,10 @@ using namespace std;
 void s_convolve(
   uint8_t image[28 * 28],
   float weights[(5 * 5)],
-  float output[((28 - 5 + 1) * (28 - 5 + 1))]);
+  uint8_t output[((28 - 5 + 1) * (28 - 5 + 1))]);
 
-void print_output(float output[((28 - 5 + 1) * (28 - 5 + 1))]);
-void print_output(hls::stream<float> &output);
+void print_output(uint8_t output[((28 - 5 + 1) * (28 - 5 + 1))]);
+void print_output(hls::stream<uint8_t> &output);
 
 
 #ifndef HLS_FASTSIM
@@ -41383,12 +41383,12 @@ int main() {
  string inum;
  uint8_t pixels[28 * 28];
  float weights[(5 * 5)];
- float s_output[((28 - 5 + 1) * (28 - 5 + 1))];
+ uint8_t s_output[((28 - 5 + 1) * (28 - 5 + 1))];
 
  hls::stream<uint8_t> input_image;
- hls::stream<float> h_output;
+ hls::stream<uint8_t> h_output;
 
- int *done = new int;
+ bool *done = new bool;
 
  image.open("images1", ios::in);
 
@@ -41430,7 +41430,7 @@ int main() {
 void s_convolve(
   uint8_t image[28 * 28],
   float weights[(5 * 5)],
-  float output[((28 - 5 + 1) * (28 - 5 + 1))]) {
+  uint8_t output[((28 - 5 + 1) * (28 - 5 + 1))]) {
  int x, y;
  float a;
 
@@ -41465,18 +41465,18 @@ void s_convolve(
  }
 }
 
-void print_output(float output[((28 - 5 + 1) * (28 - 5 + 1))]) {
+void print_output(uint8_t output[((28 - 5 + 1) * (28 - 5 + 1))]) {
  cout << " software outputs" << endl;
  for (int i = 0; i < ((28 - 5 + 1) * (28 - 5 + 1)); i++){
-  cout << output[i] << ",";
+  cout << (int)output[i] << ",";
  }
  cout << endl;
 }
 
-void print_output(hls::stream<float> &output) {
+void print_output(hls::stream<uint8_t> &output) {
  cout << " hardware outputs" << endl;
  for (int i = 0; i < ((28 - 5 + 1) * (28 - 5 + 1)); i++){
-  cout << output.read() << ",";
+  cout << (int)output.read() << ",";
  }
  cout << endl;
 }

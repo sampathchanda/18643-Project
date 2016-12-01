@@ -11,29 +11,29 @@ use IEEE.numeric_std.all;
 
 entity splitter is
 port (
-    input_V_dout : IN STD_LOGIC_VECTOR (7 downto 0);
-    input_V_empty_n : IN STD_LOGIC;
-    input_V_read : OUT STD_LOGIC;
-    output_0_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-    output_0_V_full_n : IN STD_LOGIC;
-    output_0_V_write : OUT STD_LOGIC;
-    output_1_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-    output_1_V_full_n : IN STD_LOGIC;
-    output_1_V_write : OUT STD_LOGIC;
-    output_2_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-    output_2_V_full_n : IN STD_LOGIC;
-    output_2_V_write : OUT STD_LOGIC;
-    output_3_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-    output_3_V_full_n : IN STD_LOGIC;
-    output_3_V_write : OUT STD_LOGIC;
-    output_4_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-    output_4_V_full_n : IN STD_LOGIC;
-    output_4_V_write : OUT STD_LOGIC;
-    output_5_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-    output_5_V_full_n : IN STD_LOGIC;
-    output_5_V_write : OUT STD_LOGIC;
+    input_V_TDATA : IN STD_LOGIC_VECTOR (7 downto 0);
+    output_0_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+    output_1_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+    output_2_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+    output_3_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+    output_4_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+    output_5_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
     ap_clk : IN STD_LOGIC;
-    ap_rst : IN STD_LOGIC;
+    ap_rst_n : IN STD_LOGIC;
+    input_V_TVALID : IN STD_LOGIC;
+    input_V_TREADY : OUT STD_LOGIC;
+    output_0_V_TVALID : OUT STD_LOGIC;
+    output_0_V_TREADY : IN STD_LOGIC;
+    output_1_V_TVALID : OUT STD_LOGIC;
+    output_1_V_TREADY : IN STD_LOGIC;
+    output_2_V_TVALID : OUT STD_LOGIC;
+    output_2_V_TREADY : IN STD_LOGIC;
+    output_3_V_TVALID : OUT STD_LOGIC;
+    output_3_V_TREADY : IN STD_LOGIC;
+    output_4_V_TVALID : OUT STD_LOGIC;
+    output_4_V_TREADY : IN STD_LOGIC;
+    output_5_V_TVALID : OUT STD_LOGIC;
+    output_5_V_TREADY : IN STD_LOGIC;
     ap_done : OUT STD_LOGIC;
     ap_start : IN STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
@@ -44,38 +44,39 @@ end;
 architecture behav of splitter is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "splitter,hls_ip_2015_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=8.750000,HLS_SYN_LAT=786,HLS_SYN_TPT=787,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=19,HLS_SYN_LUT=27}";
-    constant ap_const_logic_0 : STD_LOGIC := '0';
+    "splitter,hls_ip_2015_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.439500,HLS_SYN_LAT=786,HLS_SYN_TPT=787,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=33,HLS_SYN_LUT=40}";
     constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_true : BOOLEAN := true;
+    constant ap_const_logic_0 : STD_LOGIC := '0';
 
+    signal ap_rst_n_inv : STD_LOGIC;
     signal splitter_Loop_1_proc_U0_ap_start : STD_LOGIC;
     signal splitter_Loop_1_proc_U0_ap_done : STD_LOGIC;
     signal splitter_Loop_1_proc_U0_ap_continue : STD_LOGIC;
     signal splitter_Loop_1_proc_U0_ap_idle : STD_LOGIC;
     signal splitter_Loop_1_proc_U0_ap_ready : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_input_V_dout : STD_LOGIC_VECTOR (7 downto 0);
-    signal splitter_Loop_1_proc_U0_input_V_empty_n : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_input_V_read : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_output_0_V_din : STD_LOGIC_VECTOR (7 downto 0);
-    signal splitter_Loop_1_proc_U0_output_0_V_full_n : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_output_0_V_write : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_output_1_V_din : STD_LOGIC_VECTOR (7 downto 0);
-    signal splitter_Loop_1_proc_U0_output_1_V_full_n : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_output_1_V_write : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_output_2_V_din : STD_LOGIC_VECTOR (7 downto 0);
-    signal splitter_Loop_1_proc_U0_output_2_V_full_n : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_output_2_V_write : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_output_3_V_din : STD_LOGIC_VECTOR (7 downto 0);
-    signal splitter_Loop_1_proc_U0_output_3_V_full_n : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_output_3_V_write : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_output_4_V_din : STD_LOGIC_VECTOR (7 downto 0);
-    signal splitter_Loop_1_proc_U0_output_4_V_full_n : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_output_4_V_write : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_output_5_V_din : STD_LOGIC_VECTOR (7 downto 0);
-    signal splitter_Loop_1_proc_U0_output_5_V_full_n : STD_LOGIC;
-    signal splitter_Loop_1_proc_U0_output_5_V_write : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_input_V_TDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal splitter_Loop_1_proc_U0_input_V_TVALID : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_input_V_TREADY : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_output_0_V_TDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal splitter_Loop_1_proc_U0_output_0_V_TVALID : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_output_0_V_TREADY : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_output_1_V_TDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal splitter_Loop_1_proc_U0_output_1_V_TVALID : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_output_1_V_TREADY : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_output_2_V_TDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal splitter_Loop_1_proc_U0_output_2_V_TVALID : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_output_2_V_TREADY : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_output_3_V_TDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal splitter_Loop_1_proc_U0_output_3_V_TVALID : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_output_3_V_TREADY : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_output_4_V_TDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal splitter_Loop_1_proc_U0_output_4_V_TVALID : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_output_4_V_TREADY : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_output_5_V_TDATA : STD_LOGIC_VECTOR (7 downto 0);
+    signal splitter_Loop_1_proc_U0_output_5_V_TVALID : STD_LOGIC;
+    signal splitter_Loop_1_proc_U0_output_5_V_TREADY : STD_LOGIC;
     signal ap_sig_hs_continue : STD_LOGIC;
     signal ap_reg_procdone_splitter_Loop_1_proc_U0 : STD_LOGIC := '0';
     signal ap_sig_hs_done : STD_LOGIC;
@@ -91,27 +92,27 @@ architecture behav of splitter is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        input_V_dout : IN STD_LOGIC_VECTOR (7 downto 0);
-        input_V_empty_n : IN STD_LOGIC;
-        input_V_read : OUT STD_LOGIC;
-        output_0_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-        output_0_V_full_n : IN STD_LOGIC;
-        output_0_V_write : OUT STD_LOGIC;
-        output_1_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-        output_1_V_full_n : IN STD_LOGIC;
-        output_1_V_write : OUT STD_LOGIC;
-        output_2_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-        output_2_V_full_n : IN STD_LOGIC;
-        output_2_V_write : OUT STD_LOGIC;
-        output_3_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-        output_3_V_full_n : IN STD_LOGIC;
-        output_3_V_write : OUT STD_LOGIC;
-        output_4_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-        output_4_V_full_n : IN STD_LOGIC;
-        output_4_V_write : OUT STD_LOGIC;
-        output_5_V_din : OUT STD_LOGIC_VECTOR (7 downto 0);
-        output_5_V_full_n : IN STD_LOGIC;
-        output_5_V_write : OUT STD_LOGIC );
+        input_V_TDATA : IN STD_LOGIC_VECTOR (7 downto 0);
+        input_V_TVALID : IN STD_LOGIC;
+        input_V_TREADY : OUT STD_LOGIC;
+        output_0_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+        output_0_V_TVALID : OUT STD_LOGIC;
+        output_0_V_TREADY : IN STD_LOGIC;
+        output_1_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+        output_1_V_TVALID : OUT STD_LOGIC;
+        output_1_V_TREADY : IN STD_LOGIC;
+        output_2_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+        output_2_V_TVALID : OUT STD_LOGIC;
+        output_2_V_TREADY : IN STD_LOGIC;
+        output_3_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+        output_3_V_TVALID : OUT STD_LOGIC;
+        output_3_V_TREADY : IN STD_LOGIC;
+        output_4_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+        output_4_V_TVALID : OUT STD_LOGIC;
+        output_4_V_TREADY : IN STD_LOGIC;
+        output_5_V_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
+        output_5_V_TVALID : OUT STD_LOGIC;
+        output_5_V_TREADY : IN STD_LOGIC );
     end component;
 
 
@@ -120,33 +121,33 @@ begin
     splitter_Loop_1_proc_U0 : component splitter_Loop_1_proc
     port map (
         ap_clk => ap_clk,
-        ap_rst => ap_rst,
+        ap_rst => ap_rst_n_inv,
         ap_start => splitter_Loop_1_proc_U0_ap_start,
         ap_done => splitter_Loop_1_proc_U0_ap_done,
         ap_continue => splitter_Loop_1_proc_U0_ap_continue,
         ap_idle => splitter_Loop_1_proc_U0_ap_idle,
         ap_ready => splitter_Loop_1_proc_U0_ap_ready,
-        input_V_dout => splitter_Loop_1_proc_U0_input_V_dout,
-        input_V_empty_n => splitter_Loop_1_proc_U0_input_V_empty_n,
-        input_V_read => splitter_Loop_1_proc_U0_input_V_read,
-        output_0_V_din => splitter_Loop_1_proc_U0_output_0_V_din,
-        output_0_V_full_n => splitter_Loop_1_proc_U0_output_0_V_full_n,
-        output_0_V_write => splitter_Loop_1_proc_U0_output_0_V_write,
-        output_1_V_din => splitter_Loop_1_proc_U0_output_1_V_din,
-        output_1_V_full_n => splitter_Loop_1_proc_U0_output_1_V_full_n,
-        output_1_V_write => splitter_Loop_1_proc_U0_output_1_V_write,
-        output_2_V_din => splitter_Loop_1_proc_U0_output_2_V_din,
-        output_2_V_full_n => splitter_Loop_1_proc_U0_output_2_V_full_n,
-        output_2_V_write => splitter_Loop_1_proc_U0_output_2_V_write,
-        output_3_V_din => splitter_Loop_1_proc_U0_output_3_V_din,
-        output_3_V_full_n => splitter_Loop_1_proc_U0_output_3_V_full_n,
-        output_3_V_write => splitter_Loop_1_proc_U0_output_3_V_write,
-        output_4_V_din => splitter_Loop_1_proc_U0_output_4_V_din,
-        output_4_V_full_n => splitter_Loop_1_proc_U0_output_4_V_full_n,
-        output_4_V_write => splitter_Loop_1_proc_U0_output_4_V_write,
-        output_5_V_din => splitter_Loop_1_proc_U0_output_5_V_din,
-        output_5_V_full_n => splitter_Loop_1_proc_U0_output_5_V_full_n,
-        output_5_V_write => splitter_Loop_1_proc_U0_output_5_V_write);
+        input_V_TDATA => splitter_Loop_1_proc_U0_input_V_TDATA,
+        input_V_TVALID => splitter_Loop_1_proc_U0_input_V_TVALID,
+        input_V_TREADY => splitter_Loop_1_proc_U0_input_V_TREADY,
+        output_0_V_TDATA => splitter_Loop_1_proc_U0_output_0_V_TDATA,
+        output_0_V_TVALID => splitter_Loop_1_proc_U0_output_0_V_TVALID,
+        output_0_V_TREADY => splitter_Loop_1_proc_U0_output_0_V_TREADY,
+        output_1_V_TDATA => splitter_Loop_1_proc_U0_output_1_V_TDATA,
+        output_1_V_TVALID => splitter_Loop_1_proc_U0_output_1_V_TVALID,
+        output_1_V_TREADY => splitter_Loop_1_proc_U0_output_1_V_TREADY,
+        output_2_V_TDATA => splitter_Loop_1_proc_U0_output_2_V_TDATA,
+        output_2_V_TVALID => splitter_Loop_1_proc_U0_output_2_V_TVALID,
+        output_2_V_TREADY => splitter_Loop_1_proc_U0_output_2_V_TREADY,
+        output_3_V_TDATA => splitter_Loop_1_proc_U0_output_3_V_TDATA,
+        output_3_V_TVALID => splitter_Loop_1_proc_U0_output_3_V_TVALID,
+        output_3_V_TREADY => splitter_Loop_1_proc_U0_output_3_V_TREADY,
+        output_4_V_TDATA => splitter_Loop_1_proc_U0_output_4_V_TDATA,
+        output_4_V_TVALID => splitter_Loop_1_proc_U0_output_4_V_TVALID,
+        output_4_V_TREADY => splitter_Loop_1_proc_U0_output_4_V_TREADY,
+        output_5_V_TDATA => splitter_Loop_1_proc_U0_output_5_V_TDATA,
+        output_5_V_TVALID => splitter_Loop_1_proc_U0_output_5_V_TVALID,
+        output_5_V_TREADY => splitter_Loop_1_proc_U0_output_5_V_TREADY);
 
 
 
@@ -156,7 +157,7 @@ begin
     ap_reg_procdone_splitter_Loop_1_proc_U0_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
-            if (ap_rst = '1') then
+            if (ap_rst_n_inv = '1') then
                 ap_reg_procdone_splitter_Loop_1_proc_U0 <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_sig_hs_done)) then 
@@ -189,6 +190,13 @@ begin
     end process;
 
     ap_ready <= ap_sig_top_allready;
+
+    -- ap_rst_n_inv assign process. --
+    ap_rst_n_inv_assign_proc : process(ap_rst_n)
+    begin
+                ap_rst_n_inv <= not(ap_rst_n);
+    end process;
+
     ap_sig_hs_continue <= ap_const_logic_1;
 
     -- ap_sig_hs_done assign process. --
@@ -202,27 +210,27 @@ begin
     end process;
 
     ap_sig_top_allready <= splitter_Loop_1_proc_U0_ap_ready;
-    input_V_read <= splitter_Loop_1_proc_U0_input_V_read;
-    output_0_V_din <= splitter_Loop_1_proc_U0_output_0_V_din;
-    output_0_V_write <= splitter_Loop_1_proc_U0_output_0_V_write;
-    output_1_V_din <= splitter_Loop_1_proc_U0_output_1_V_din;
-    output_1_V_write <= splitter_Loop_1_proc_U0_output_1_V_write;
-    output_2_V_din <= splitter_Loop_1_proc_U0_output_2_V_din;
-    output_2_V_write <= splitter_Loop_1_proc_U0_output_2_V_write;
-    output_3_V_din <= splitter_Loop_1_proc_U0_output_3_V_din;
-    output_3_V_write <= splitter_Loop_1_proc_U0_output_3_V_write;
-    output_4_V_din <= splitter_Loop_1_proc_U0_output_4_V_din;
-    output_4_V_write <= splitter_Loop_1_proc_U0_output_4_V_write;
-    output_5_V_din <= splitter_Loop_1_proc_U0_output_5_V_din;
-    output_5_V_write <= splitter_Loop_1_proc_U0_output_5_V_write;
+    input_V_TREADY <= splitter_Loop_1_proc_U0_input_V_TREADY;
+    output_0_V_TDATA <= splitter_Loop_1_proc_U0_output_0_V_TDATA;
+    output_0_V_TVALID <= splitter_Loop_1_proc_U0_output_0_V_TVALID;
+    output_1_V_TDATA <= splitter_Loop_1_proc_U0_output_1_V_TDATA;
+    output_1_V_TVALID <= splitter_Loop_1_proc_U0_output_1_V_TVALID;
+    output_2_V_TDATA <= splitter_Loop_1_proc_U0_output_2_V_TDATA;
+    output_2_V_TVALID <= splitter_Loop_1_proc_U0_output_2_V_TVALID;
+    output_3_V_TDATA <= splitter_Loop_1_proc_U0_output_3_V_TDATA;
+    output_3_V_TVALID <= splitter_Loop_1_proc_U0_output_3_V_TVALID;
+    output_4_V_TDATA <= splitter_Loop_1_proc_U0_output_4_V_TDATA;
+    output_4_V_TVALID <= splitter_Loop_1_proc_U0_output_4_V_TVALID;
+    output_5_V_TDATA <= splitter_Loop_1_proc_U0_output_5_V_TDATA;
+    output_5_V_TVALID <= splitter_Loop_1_proc_U0_output_5_V_TVALID;
     splitter_Loop_1_proc_U0_ap_continue <= ap_sig_hs_continue;
     splitter_Loop_1_proc_U0_ap_start <= ap_start;
-    splitter_Loop_1_proc_U0_input_V_dout <= input_V_dout;
-    splitter_Loop_1_proc_U0_input_V_empty_n <= input_V_empty_n;
-    splitter_Loop_1_proc_U0_output_0_V_full_n <= output_0_V_full_n;
-    splitter_Loop_1_proc_U0_output_1_V_full_n <= output_1_V_full_n;
-    splitter_Loop_1_proc_U0_output_2_V_full_n <= output_2_V_full_n;
-    splitter_Loop_1_proc_U0_output_3_V_full_n <= output_3_V_full_n;
-    splitter_Loop_1_proc_U0_output_4_V_full_n <= output_4_V_full_n;
-    splitter_Loop_1_proc_U0_output_5_V_full_n <= output_5_V_full_n;
+    splitter_Loop_1_proc_U0_input_V_TDATA <= input_V_TDATA;
+    splitter_Loop_1_proc_U0_input_V_TVALID <= input_V_TVALID;
+    splitter_Loop_1_proc_U0_output_0_V_TREADY <= output_0_V_TREADY;
+    splitter_Loop_1_proc_U0_output_1_V_TREADY <= output_1_V_TREADY;
+    splitter_Loop_1_proc_U0_output_2_V_TREADY <= output_2_V_TREADY;
+    splitter_Loop_1_proc_U0_output_3_V_TREADY <= output_3_V_TREADY;
+    splitter_Loop_1_proc_U0_output_4_V_TREADY <= output_4_V_TREADY;
+    splitter_Loop_1_proc_U0_output_5_V_TREADY <= output_5_V_TREADY;
 end behav;

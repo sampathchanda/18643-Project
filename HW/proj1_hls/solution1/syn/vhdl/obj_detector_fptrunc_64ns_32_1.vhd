@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity obj_detector_fptrunc_64ns_32_1 is
     generic (
-        ID         : integer := 54;
+        ID         : integer := 55;
         NUM_STAGE  : integer := 1;
         din0_WIDTH : integer := 64;
         dout_WIDTH : integer := 32

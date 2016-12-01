@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'splitter'
 ================================================================
-* Date:           Sat Nov 26 12:05:58 2016
+* Date:           Wed Nov 30 17:14:55 2016
 
 * Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
 * Project:        fifo_splitter
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|      8.75|        1.25|
+    |ap_clk  |  10.00|      3.44|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -135,50 +135,50 @@ codeRepl:16  call fastcc void @splitter_Loop_1_proc(i8* %input_V, i8* %output_0_
 ST_2: stg_4 [1/1] 0.00ns
 codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str) nounwind
 
-ST_2: empty [1/1] 0.00ns
-codeRepl:1  %empty = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_5 [1/1] 0.00ns
+codeRepl:1  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_5_V), !map !0
 
-ST_2: empty_3 [1/1] 0.00ns
-codeRepl:2  %empty_3 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_6 [1/1] 0.00ns
+codeRepl:2  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_4_V), !map !6
 
-ST_2: empty_4 [1/1] 0.00ns
-codeRepl:3  %empty_4 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_7 [1/1] 0.00ns
+codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_3_V), !map !12
 
-ST_2: empty_5 [1/1] 0.00ns
-codeRepl:4  %empty_5 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_8 [1/1] 0.00ns
+codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_2_V), !map !18
 
-ST_2: empty_6 [1/1] 0.00ns
-codeRepl:5  %empty_6 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_9 [1/1] 0.00ns
+codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_1_V), !map !24
 
-ST_2: empty_7 [1/1] 0.00ns
-codeRepl:6  %empty_7 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_10 [1/1] 0.00ns
+codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_0_V), !map !30
 
-ST_2: empty_8 [1/1] 0.00ns
-codeRepl:7  %empty_8 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %input_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [8 x i8]* @ap_fifo_str)
+ST_2: stg_11 [1/1] 0.00ns
+codeRepl:7  call void (...)* @_ssdm_op_SpecBitsMap(i8* %input_V), !map !36
 
 ST_2: stg_12 [1/1] 0.00ns
-codeRepl:8  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_5_V), !map !0
+codeRepl:8  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @splitter_str) nounwind
 
 ST_2: stg_13 [1/1] 0.00ns
-codeRepl:9  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_4_V), !map !6
+codeRepl:9  call void (...)* @_ssdm_op_SpecInterface(i8* %input_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
 ST_2: stg_14 [1/1] 0.00ns
-codeRepl:10  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_3_V), !map !12
+codeRepl:10  call void (...)* @_ssdm_op_SpecInterface(i8* %output_0_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_2: stg_15 [1/1] 0.00ns
-codeRepl:11  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_2_V), !map !18
+codeRepl:11  call void (...)* @_ssdm_op_SpecInterface(i8* %output_1_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_2: stg_16 [1/1] 0.00ns
-codeRepl:12  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_1_V), !map !24
+codeRepl:12  call void (...)* @_ssdm_op_SpecInterface(i8* %output_2_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_2: stg_17 [1/1] 0.00ns
-codeRepl:13  call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_0_V), !map !30
+codeRepl:13  call void (...)* @_ssdm_op_SpecInterface(i8* %output_3_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_2: stg_18 [1/1] 0.00ns
-codeRepl:14  call void (...)* @_ssdm_op_SpecBitsMap(i8* %input_V), !map !36
+codeRepl:14  call void (...)* @_ssdm_op_SpecInterface(i8* %output_4_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_2: stg_19 [1/1] 0.00ns
-codeRepl:15  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @splitter_str) nounwind
+codeRepl:15  call void (...)* @_ssdm_op_SpecInterface(i8* %output_5_V, [5 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ST_2: stg_20 [1/2] 0.00ns
 codeRepl:16  call fastcc void @splitter_Loop_1_proc(i8* %input_V, i8* %output_0_V, i8* %output_1_V, i8* %output_2_V, i8* %output_3_V, i8* %output_4_V, i8* %output_5_V)

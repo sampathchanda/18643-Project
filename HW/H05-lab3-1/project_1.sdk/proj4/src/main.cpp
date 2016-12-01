@@ -40,8 +40,6 @@ unsigned int * const TIMER_CONFIG_PTR = XPAR_PS7_SCUTIMER_0_BASEADDR + (unsigned
 
 //double buffered
 float in_mat_a[N][N];
-float in_mat_w0[NUM_NEURONS][M][M];
-float in_mat_w1[NUM_CLASSES][NUM_NEURONS*((N-M+1)/2)*((N-M+1)/2)];
 mat_conv hw_result[NUM_CLASSES], sw_result[NUM_CLASSES];
 
 //devices and configuration pointers for CDMA IPs used to transfer data to/from DRAM and BRAM
@@ -89,80 +87,63 @@ int main() {
   int error_count = 0;
   char buff[N*N];
 
+//  float in_mat_w0[NUM_NEURONS][M][M];
+//  float in_mat_w1[NUM_CLASSES][NUM_NEURONS*((N-M+1)/2)*((N-M+1)/2)];
+
+//  for(int i = 0; i < NUM_NEURONS; i++) {
+//	  for(int j = 0; j < NUM_NEURONS; j++) {
+//		  for(int k = 0; k < NUM_NEURONS; k++) {
+//			  in_mat_w0[i][j][k] = 1;
+//		  }
+//	  }
+//  }
+//
+//  for(int i = 0; i < NUM_CLASSES; i++) {
+//	  for(int j = 0; j < NUM_NEURONS*((N-M+1)/2)*((N-M+1)/2); j++) {
+//		  in_mat_w1[i][j] = 1;
+//	  }
+//  }
+
   initialize(error_count); // initialize timer and IPs
 
   if (error_count) return XST_FAILURE;
 
-  //char temp[8] = {0xff, 0x6c, 0x0, 0x94, 0x93, 0x3f, 0xf1, 0xbf};
-  //void *temp1;
-  //float temp1 = 0xff6c0094933ff1bf;
-  double temp1 = 0xbff13f9394006cff;
-  printf("temp: %g\n", temp1);
+  // same image as in cosim
+  int image[N*N] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,77,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,169,250,251,31,0,0,0,0,0,0,0,19,134,248,248,248,174,0,0,0,0,0,0,0,0,0,0,169,253,253,210,18,0,0,0,0,0,0,78,200,253,253,253,253,253,118,0,0,0,0,0,0,0,0,116,253,253,210,25,0,0,0,0,0,25,198,248,253,253,253,253,253,253,123,0,0,0,0,0,0,0,0,125,253,253,32,0,0,0,0,0,176,234,253,253,253,173,25,43,253,253,123,0,0,0,0,0,0,0,0,171,253,213,12,0,0,0,76,128,246,253,253,189,141,12,0,20,253,253,123,0,0,0,0,0,0,0,0,255,253,142,0,0,0,117,247,253,253,233,141,12,0,0,0,20,253,253,166,0,0,0,0,0,0,0,0,255,253,176,6,122,209,247,253,253,159,35,0,0,0,0,0,20,253,253,253,0,0,0,0,0,0,0,0,150,253,253,206,248,253,253,231,144,12,0,0,0,0,0,0,20,253,253,253,0,0,0,0,0,0,0,0,93,218,253,253,253,253,198,63,0,0,0,0,0,0,0,0,5,168,253,253,0,0,0,0,0,0,0,0,0,30,122,140,65,65,10,0,0,0,0,0,0,0,0,0,0,143,253,155,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,166,253,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,253,253,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,253,249,41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,253,247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,253,247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,253,169,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,253,117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,147,253,117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,123,57,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
-  //Xil_DCacheDisable();
+  for(int i = 0; i < N; i++) {
+	  for(int j = 0; j < N; j++) {
+    	  //in_mat_a[i][j]=((mat_a)rand())/RAND_MAX;
+    	  in_mat_a[i][j]=image[i * N + j];
+    	  //cout << in_mat_a[i][j] << " " ;
+      }
+	  //cout << "\n";
+  }
 
   // Reading from SD card
   initialize_sdcard();
 
-  // Reading out header
-  sdcard_read(&images, buff, IMAGES_HEADER_BYTES);
+  for(int i = 0; i < 100; i++) {
 
-  // Reading an image
-  sdcard_read(&images, buff, IMAGE_BYTES);
+//	  // Reading out header
+//	  sdcard_read(&images, buff, IMAGES_HEADER_BYTES);
+//
+//	  // Reading an image
+//	  sdcard_read(&images, buff, IMAGE_BYTES);
+//
+//	  for(int j = 0; j < N; j++) {
+//		  for(int k = 0; k < N; k++) {
+//			  in_mat_a[i][j] = buff[j * N + k];
+//		  }
+//	  }
 
-  for (int i=0; i<N*N; i++) {
-	  //printf("integer: %d\n", (int)buff[i]);
+	  Xil_DCacheFlush(); // Flush the initialized matrices from the CPU cache to DRAM
+	  // The CDMA IPs are connected through incoherent ports to main memory
+
+  	  // Run the Vivado HLS matrix multiplier
+  	  obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
   }
 
-  // Initialize the input matrices with random values
-  //for(int phase = 0; phase < 2; phase++) {
-	int i,j,k;
-	for(i = 0; i < N; i++) {
-	  for(j = 0; j < N; j++) {
-	in_mat_a[i][j]=((float)rand())/RAND_MAX;
-	  }
-	}
-	for (k=0; k<NUM_NEURONS; k++) {
-	  for(i = 0; i < M; i++) {
-	    for(j = 0; j < M; j++) {
-	      in_mat_w0[k][i][j]=((float)rand())/RAND_MAX;
-	    }
-	  }
-	}
-	for(i = 0; i < NUM_CLASSES; i++) {
-	  for(j = 0; j < (NUM_NEURONS*((N-M+1)/2)*((N-M+1)/2)); j++) {
-	    in_mat_w1[i][j]=((float)rand())/RAND_MAX;
-	  }
-	}
-
-
-  Xil_DCacheFlush(); // Flush the initialized matrices from the CPU cache to DRAM
-  // The CDMA IPs are connected through incoherent ports to main memory
-
-    // Run the Vivado HLS matrix multiplier
-    obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
-
-    // Invalidate the hw_result matrix range so the CPU reads from main memory
-    Xil_DCacheInvalidateRange((u32)(hw_result),(N-M+1)*(N-M+1)*sizeof(float));
-
-    // Print product matrix
-    for (int i = 0; i < NUM_CLASSES; i++) {
-      //for (int j = 0; j < N-M+1; j++) {
-	// Check result of HLS vs. expected
-	if (!nearlyEqual(hw_result[i], sw_result[i])) {
-	  printf("Phase: \tRes[%d]\tHW: %0.2f\tSW: %0.2f\n",i,hw_result[i],sw_result[i]);
-	  error_count++;
-	}
-      }
-    //}
-  //}
-
-  if (error_count)
-    printf("TEST FAIL: %d Results do not match!\n", error_count);
-  else
-    printf("Test passed!\n");
-
-  return error_count;
 }
 
 void obj_detector(
@@ -188,7 +169,8 @@ void obj_detector(
 	// Transfer the product matrix from BRAM to DRAM
 	XAxiCdma_SimpleTransfer(&cdma_dev_res, (u32)(BRAM_RES_ID), (u32)(res), (NUM_CLASSES)*sizeof(float), NULL, NULL);
 	while (XAxiCdma_IsBusy(&cdma_dev_res));
-	printf("%f\n", res[0]);
+	Xil_DCacheInvalidateRange((u32)(res),(NUM_CLASSES)*sizeof(float));
+	printf("%f %f\n", res[0], res[1]);
 }
 
 bool nearlyEqual(float a, float b) {

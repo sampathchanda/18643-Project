@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'obj_detector_FCL'" level="0">
-<item name = "Date">Wed Nov 30 03:19:25 2016
+<item name = "Date">Thu Dec  1 08:40:52 2016
 </item>
 <item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
 <item name = "Project">proj1_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.41, 1.25</column>
+<column name="ap_clk">20.00, 15.48, 2.50</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">4326, 4326, 4326, 4326, none</column>
+<column name="">3460, 3460, 3460, 3460, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- FCL_label8">4324, 4324, 10, 5, 1, 864, yes</column>
+<column name="- FCL_label8">3458, 3458, 7, 4, 1, 864, yes</column>
 </table>
 </item>
 </section>

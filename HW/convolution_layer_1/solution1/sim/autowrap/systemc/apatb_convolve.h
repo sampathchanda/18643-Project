@@ -4,4 +4,4 @@
 // Copyright (C) 2015 Xilinx Inc. All rights reserved.
 // ==============================================================
 
-extern void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::stream< float >& conv_output,  int* done);
+extern void convolve (hls::stream< unsigned char >& image,  float weights[25], hls::stream< unsigned char >& conv_output,  bool* done);

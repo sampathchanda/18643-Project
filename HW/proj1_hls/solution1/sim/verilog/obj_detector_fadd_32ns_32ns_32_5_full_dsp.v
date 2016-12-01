@@ -10,7 +10,7 @@
 
 module obj_detector_fadd_32ns_32ns_32_5_full_dsp
 #(parameter
-    ID         = 0,
+    ID         = 1,
     NUM_STAGE  = 5,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

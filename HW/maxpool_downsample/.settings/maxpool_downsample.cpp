@@ -10,8 +10,8 @@ void maxpool(
 #pragma HLS INTERFACE ap_none port=ok
 #pragma HLS INTERFACE ap_none port=begin
 #pragma HLS DATAFLOW
-#pragma HLS STREAM variable=input
-#pragma HLS STREAM variable=output
+#pragma HLS INTERFACE axis port=input
+#pragma HLS INTERFACE axis port=output
 
 	uint8_t linebuff[BUFF_SIZE];
 	uint8_t temp1;

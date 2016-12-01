@@ -39422,8 +39422,8 @@ typedef unsigned char uint8_t;
 void convolve(
   hls::stream<uint8_t> &image,
   float weights[(5 * 5)],
-  hls::stream<float> &conv_output,
-  int *done
+  hls::stream<uint8_t> &conv_output,
+  bool *done
   );
 #2 "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/.settings/convolution_layer_1.cpp" 2
 
@@ -39441,14 +39441,16 @@ uint8_t relu(float input);
 void convolve(
   hls::stream<uint8_t> &image,
   float weights[(5 * 5)],
-  hls::stream<float> &conv_output,
-  int *done){
+  hls::stream<uint8_t> &conv_output,
+  bool *done){
+#pragma HLS INTERFACE ap_none port=done
+#pragma HLS INTERFACE ap_memory port=weights
 #pragma HLS DATAFLOW
-#pragma HLS STREAM variable=conv_output
-#pragma HLS STREAM variable=image
+#pragma HLS INTERFACE axis port=conv_output
+#pragma HLS INTERFACE axis port=image
 
 
- uint8_t linebuff[((28 * (5 - 1) + 5) - 1) + 1];
+ int linebuff[((28 * (5 - 1) + 5) - 1) + 1];
 
  uint8_t read;
  float output = 0;
@@ -39457,14 +39459,13 @@ void convolve(
 
 
  BUFFER_RESET: for(int pos = 0; pos < (28 * (5 - 1) + 5); pos++) {
-#pragma HLS PIPELINE
   linebuff[pos] = 0;
  }
 
  SCAN_LINE: for(int pixels_read = 0;
    pixels_read < 28 * 28;
    pixels_read++) {
-
+#pragma HLS PIPELINE
 
   read = image.read();
   output = 0;
@@ -39479,16 +39480,18 @@ void convolve(
 
 
   BUFFER_SHIFT: for(int pos = 0; pos < (28 * (5 - 1) + 5); pos++) {
-#pragma HLS PIPELINE II=2
    linebuff[pos] = pos < (28 * (5 - 1) + 5) - 1 ? linebuff[pos + 1] :
      read;
   }
 
-  for(int i = 0; i < 5; i++) {
-   for(int j = 0; j < 5; j++) {
-#pragma HLS PIPELINE
-    output += linebuff[i * 28 + j]
-                       * weights[i * 5 + j];
+  for(int inner_loop = 0;
+    inner_loop < 5; inner_loop++) {
+   for(int outer_loop = 0;
+     outer_loop < 5; outer_loop++) {
+    output += linebuff[inner_loop * 28 +
+         outer_loop]
+                       * weights[inner_loop *
+          5 + outer_loop];
    }
   }
   output = relu(output);
@@ -39502,17 +39505,18 @@ void convolve(
 
 
 
- *done = 1;
- *done = 0;
+ *done = true;
+ *done = false;
 
 
 }
 #undef convolve
 
-#76 "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/.settings/convolution_layer_1.cpp"
+#79 "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/.settings/convolution_layer_1.cpp"
 
 
 uint8_t relu(float input) {
 #pragma HLS INLINE
- return input > 0 ? input : 0;
+ int temp = input > 0 ? input : 0;
+ return temp > 255 ? 255 : temp;
 }

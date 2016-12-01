@@ -7,80 +7,95 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="convolve,hls_ip_2015_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=8.613500,HLS_SYN_LAT=300391,HLS_SYN_TPT=300392,HLS_SYN_MEM=0,HLS_SYN_DSP=5,HLS_SYN_FF=1165,HLS_SYN_LUT=2318}" *)
+(* CORE_GENERATION_INFO="convolve,hls_ip_2015_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=8.198600,HLS_SYN_LAT=91881,HLS_SYN_TPT=91882,HLS_SYN_MEM=1,HLS_SYN_DSP=5,HLS_SYN_FF=3587,HLS_SYN_LUT=4348}" *)
 
 module convolve (
-        image_V_dout,
-        image_V_empty_n,
-        image_V_read,
-        weights_address0,
-        weights_ce0,
-        weights_d0,
-        weights_q0,
-        weights_we0,
-        weights_address1,
-        weights_ce1,
-        weights_d1,
-        weights_q1,
-        weights_we1,
-        conv_output_V_din,
-        conv_output_V_full_n,
-        conv_output_V_write,
-        done,
+        image_V_TDATA,
+        weights_Addr_A,
+        weights_EN_A,
+        weights_Din_A,
+        weights_Dout_A,
+        weights_WEN_A,
+        weights_Clk_A,
         ap_clk,
-        ap_rst,
+        weights_Rst_A,
+        ap_rst_n,
+        weights_Addr_B,
+        weights_EN_B,
+        weights_Din_B,
+        weights_Dout_B,
+        weights_WEN_B,
+        weights_Clk_B,
+        weights_Rst_B,
+        conv_output_V_TDATA,
+        done,
+        image_V_TVALID,
+        image_V_TREADY,
+        conv_output_V_TVALID,
+        conv_output_V_TREADY,
         ap_done,
         ap_start,
         ap_idle,
         ap_ready
 );
 
-parameter    ap_const_logic_0 = 1'b0;
-parameter    ap_const_lv5_0 = 5'b00000;
 parameter    ap_const_lv32_0 = 32'b00000000000000000000000000000000;
+parameter    ap_const_logic_0 = 1'b0;
 parameter    ap_const_lv8_0 = 8'b00000000;
 parameter    ap_const_logic_1 = 1'b1;
 parameter    ap_true = 1'b1;
 
-input  [7:0] image_V_dout;
-input   image_V_empty_n;
-output   image_V_read;
-output  [4:0] weights_address0;
-output   weights_ce0;
-output  [31:0] weights_d0;
-input  [31:0] weights_q0;
-output   weights_we0;
-output  [4:0] weights_address1;
-output   weights_ce1;
-output  [31:0] weights_d1;
-input  [31:0] weights_q1;
-output   weights_we1;
-output  [7:0] conv_output_V_din;
-input   conv_output_V_full_n;
-output   conv_output_V_write;
-output   done;
+input  [7:0] image_V_TDATA;
+output  [31:0] weights_Addr_A;
+output   weights_EN_A;
+output  [31:0] weights_Din_A;
+input  [31:0] weights_Dout_A;
+output  [3:0] weights_WEN_A;
+output   weights_Clk_A;
 input   ap_clk;
-input   ap_rst;
+output   weights_Rst_A;
+input   ap_rst_n;
+output  [31:0] weights_Addr_B;
+output   weights_EN_B;
+output  [31:0] weights_Din_B;
+input  [31:0] weights_Dout_B;
+output  [3:0] weights_WEN_B;
+output   weights_Clk_B;
+output   weights_Rst_B;
+output  [7:0] conv_output_V_TDATA;
+output   done;
+input   image_V_TVALID;
+output   image_V_TREADY;
+output   conv_output_V_TVALID;
+input   conv_output_V_TREADY;
 output   ap_done;
 input   ap_start;
 output   ap_idle;
 output   ap_ready;
 
 reg ap_idle;
+reg    ap_rst_n_inv;
 wire    convolve_Loop_BUFFER_RESET_proc_U0_ap_start;
 wire    convolve_Loop_BUFFER_RESET_proc_U0_ap_done;
 wire    convolve_Loop_BUFFER_RESET_proc_U0_ap_continue;
 wire    convolve_Loop_BUFFER_RESET_proc_U0_ap_idle;
 wire    convolve_Loop_BUFFER_RESET_proc_U0_ap_ready;
-wire   [4:0] convolve_Loop_BUFFER_RESET_proc_U0_weights_address0;
-wire    convolve_Loop_BUFFER_RESET_proc_U0_weights_ce0;
-wire   [31:0] convolve_Loop_BUFFER_RESET_proc_U0_weights_q0;
-wire   [7:0] convolve_Loop_BUFFER_RESET_proc_U0_image_V_dout;
-wire    convolve_Loop_BUFFER_RESET_proc_U0_image_V_empty_n;
-wire    convolve_Loop_BUFFER_RESET_proc_U0_image_V_read;
-wire   [7:0] convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_din;
-wire    convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_full_n;
-wire    convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_write;
+wire   [7:0] convolve_Loop_BUFFER_RESET_proc_U0_image_V_TDATA;
+wire    convolve_Loop_BUFFER_RESET_proc_U0_image_V_TVALID;
+wire    convolve_Loop_BUFFER_RESET_proc_U0_image_V_TREADY;
+wire   [31:0] convolve_Loop_BUFFER_RESET_proc_U0_weights_Addr_A;
+wire    convolve_Loop_BUFFER_RESET_proc_U0_weights_EN_A;
+wire   [3:0] convolve_Loop_BUFFER_RESET_proc_U0_weights_WEN_A;
+wire   [31:0] convolve_Loop_BUFFER_RESET_proc_U0_weights_Din_A;
+wire   [31:0] convolve_Loop_BUFFER_RESET_proc_U0_weights_Dout_A;
+wire   [31:0] convolve_Loop_BUFFER_RESET_proc_U0_weights_Addr_B;
+wire    convolve_Loop_BUFFER_RESET_proc_U0_weights_EN_B;
+wire   [3:0] convolve_Loop_BUFFER_RESET_proc_U0_weights_WEN_B;
+wire   [31:0] convolve_Loop_BUFFER_RESET_proc_U0_weights_Din_B;
+wire   [31:0] convolve_Loop_BUFFER_RESET_proc_U0_weights_Dout_B;
+wire   [7:0] convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_TDATA;
+wire    convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_TVALID;
+wire    convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_TREADY;
 wire    ap_sig_hs_continue;
 wire    convolve_Block_proc_U0_ap_start;
 wire    convolve_Block_proc_U0_ap_done;
@@ -98,26 +113,33 @@ wire    ap_sig_top_allready;
 
 convolve_Loop_BUFFER_RESET_proc convolve_Loop_BUFFER_RESET_proc_U0(
     .ap_clk( ap_clk ),
-    .ap_rst( ap_rst ),
+    .ap_rst( ap_rst_n_inv ),
     .ap_start( convolve_Loop_BUFFER_RESET_proc_U0_ap_start ),
     .ap_done( convolve_Loop_BUFFER_RESET_proc_U0_ap_done ),
     .ap_continue( convolve_Loop_BUFFER_RESET_proc_U0_ap_continue ),
     .ap_idle( convolve_Loop_BUFFER_RESET_proc_U0_ap_idle ),
     .ap_ready( convolve_Loop_BUFFER_RESET_proc_U0_ap_ready ),
-    .weights_address0( convolve_Loop_BUFFER_RESET_proc_U0_weights_address0 ),
-    .weights_ce0( convolve_Loop_BUFFER_RESET_proc_U0_weights_ce0 ),
-    .weights_q0( convolve_Loop_BUFFER_RESET_proc_U0_weights_q0 ),
-    .image_V_dout( convolve_Loop_BUFFER_RESET_proc_U0_image_V_dout ),
-    .image_V_empty_n( convolve_Loop_BUFFER_RESET_proc_U0_image_V_empty_n ),
-    .image_V_read( convolve_Loop_BUFFER_RESET_proc_U0_image_V_read ),
-    .conv_output_V_din( convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_din ),
-    .conv_output_V_full_n( convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_full_n ),
-    .conv_output_V_write( convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_write )
+    .image_V_TDATA( convolve_Loop_BUFFER_RESET_proc_U0_image_V_TDATA ),
+    .image_V_TVALID( convolve_Loop_BUFFER_RESET_proc_U0_image_V_TVALID ),
+    .image_V_TREADY( convolve_Loop_BUFFER_RESET_proc_U0_image_V_TREADY ),
+    .weights_Addr_A( convolve_Loop_BUFFER_RESET_proc_U0_weights_Addr_A ),
+    .weights_EN_A( convolve_Loop_BUFFER_RESET_proc_U0_weights_EN_A ),
+    .weights_WEN_A( convolve_Loop_BUFFER_RESET_proc_U0_weights_WEN_A ),
+    .weights_Din_A( convolve_Loop_BUFFER_RESET_proc_U0_weights_Din_A ),
+    .weights_Dout_A( convolve_Loop_BUFFER_RESET_proc_U0_weights_Dout_A ),
+    .weights_Addr_B( convolve_Loop_BUFFER_RESET_proc_U0_weights_Addr_B ),
+    .weights_EN_B( convolve_Loop_BUFFER_RESET_proc_U0_weights_EN_B ),
+    .weights_WEN_B( convolve_Loop_BUFFER_RESET_proc_U0_weights_WEN_B ),
+    .weights_Din_B( convolve_Loop_BUFFER_RESET_proc_U0_weights_Din_B ),
+    .weights_Dout_B( convolve_Loop_BUFFER_RESET_proc_U0_weights_Dout_B ),
+    .conv_output_V_TDATA( convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_TDATA ),
+    .conv_output_V_TVALID( convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_TVALID ),
+    .conv_output_V_TREADY( convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_TREADY )
 );
 
 convolve_Block_proc convolve_Block_proc_U0(
     .ap_clk( ap_clk ),
-    .ap_rst( ap_rst ),
+    .ap_rst( ap_rst_n_inv ),
     .ap_start( convolve_Block_proc_U0_ap_start ),
     .ap_done( convolve_Block_proc_U0_ap_done ),
     .ap_continue( convolve_Block_proc_U0_ap_continue ),
@@ -132,7 +154,7 @@ convolve_Block_proc convolve_Block_proc_U0(
 /// ap_reg_procdone_convolve_Block_proc_U0 assign process. ///
 always @ (posedge ap_clk)
 begin : ap_ret_ap_reg_procdone_convolve_Block_proc_U0
-    if (ap_rst == 1'b1) begin
+    if (ap_rst_n_inv == 1'b1) begin
         ap_reg_procdone_convolve_Block_proc_U0 <= ap_const_logic_0;
     end else begin
         if ((ap_const_logic_1 == ap_sig_hs_done)) begin
@@ -146,7 +168,7 @@ end
 /// ap_reg_procdone_convolve_Loop_BUFFER_RESET_proc_U0 assign process. ///
 always @ (posedge ap_clk)
 begin : ap_ret_ap_reg_procdone_convolve_Loop_BUFFER_RESET_proc_U0
-    if (ap_rst == 1'b1) begin
+    if (ap_rst_n_inv == 1'b1) begin
         ap_reg_procdone_convolve_Loop_BUFFER_RESET_proc_U0 <= ap_const_logic_0;
     end else begin
         if ((ap_const_logic_1 == ap_sig_hs_done)) begin
@@ -184,28 +206,39 @@ begin
 end
 assign ap_done = ap_sig_hs_done;
 assign ap_ready = ap_sig_top_allready;
+
+/// ap_rst_n_inv assign process. ///
+always @ (ap_rst_n)
+begin
+    ap_rst_n_inv = ~ap_rst_n;
+end
 assign ap_sig_hs_continue = ap_sig_hs_done;
 assign ap_sig_top_allready = convolve_Loop_BUFFER_RESET_proc_U0_ap_ready;
-assign conv_output_V_din = convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_din;
-assign conv_output_V_write = convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_write;
+assign conv_output_V_TDATA = convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_TDATA;
+assign conv_output_V_TVALID = convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_TVALID;
 assign convolve_Block_proc_U0_ap_continue = ap_sig_hs_continue;
 assign convolve_Block_proc_U0_ap_start = ap_start;
 assign convolve_Loop_BUFFER_RESET_proc_U0_ap_continue = ap_sig_hs_continue;
 assign convolve_Loop_BUFFER_RESET_proc_U0_ap_start = ap_start;
-assign convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_full_n = conv_output_V_full_n;
-assign convolve_Loop_BUFFER_RESET_proc_U0_image_V_dout = image_V_dout;
-assign convolve_Loop_BUFFER_RESET_proc_U0_image_V_empty_n = image_V_empty_n;
-assign convolve_Loop_BUFFER_RESET_proc_U0_weights_q0 = weights_q0;
+assign convolve_Loop_BUFFER_RESET_proc_U0_conv_output_V_TREADY = conv_output_V_TREADY;
+assign convolve_Loop_BUFFER_RESET_proc_U0_image_V_TDATA = image_V_TDATA;
+assign convolve_Loop_BUFFER_RESET_proc_U0_image_V_TVALID = image_V_TVALID;
+assign convolve_Loop_BUFFER_RESET_proc_U0_weights_Dout_A = weights_Dout_A;
+assign convolve_Loop_BUFFER_RESET_proc_U0_weights_Dout_B = weights_Dout_B;
 assign done = convolve_Block_proc_U0_done;
-assign image_V_read = convolve_Loop_BUFFER_RESET_proc_U0_image_V_read;
-assign weights_address0 = convolve_Loop_BUFFER_RESET_proc_U0_weights_address0;
-assign weights_address1 = ap_const_lv5_0;
-assign weights_ce0 = convolve_Loop_BUFFER_RESET_proc_U0_weights_ce0;
-assign weights_ce1 = ap_const_logic_0;
-assign weights_d0 = ap_const_lv32_0;
-assign weights_d1 = ap_const_lv32_0;
-assign weights_we0 = ap_const_logic_0;
-assign weights_we1 = ap_const_logic_0;
+assign image_V_TREADY = convolve_Loop_BUFFER_RESET_proc_U0_image_V_TREADY;
+assign weights_Addr_A = convolve_Loop_BUFFER_RESET_proc_U0_weights_Addr_A;
+assign weights_Addr_B = convolve_Loop_BUFFER_RESET_proc_U0_weights_Addr_B;
+assign weights_Clk_A = ap_clk;
+assign weights_Clk_B = ap_clk;
+assign weights_Din_A = ap_const_lv32_0;
+assign weights_Din_B = ap_const_lv32_0;
+assign weights_EN_A = convolve_Loop_BUFFER_RESET_proc_U0_weights_EN_A;
+assign weights_EN_B = convolve_Loop_BUFFER_RESET_proc_U0_weights_EN_B;
+assign weights_Rst_A = ap_rst_n_inv;
+assign weights_Rst_B = ap_rst_n_inv;
+assign weights_WEN_A = ap_const_logic_0;
+assign weights_WEN_B = ap_const_logic_0;
 
 
 endmodule //convolve

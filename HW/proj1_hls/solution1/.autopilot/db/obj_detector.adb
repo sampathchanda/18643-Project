@@ -140,7 +140,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -181,7 +181,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -222,7 +222,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -263,7 +263,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -304,7 +304,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -345,7 +345,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -386,7 +386,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -427,7 +427,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -468,7 +468,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -509,7 +509,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -550,7 +550,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -591,7 +591,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -632,7 +632,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -673,7 +673,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -714,7 +714,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -755,7 +755,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -826,7 +826,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -868,7 +868,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -910,7 +910,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -953,7 +953,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -999,7 +999,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1070,7 +1070,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1112,7 +1112,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1154,7 +1154,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1197,7 +1197,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1242,7 +1242,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1313,7 +1313,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1355,7 +1355,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1397,7 +1397,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1440,7 +1440,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1496,7 +1496,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1537,7 +1537,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1591,7 +1591,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1637,7 +1637,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1682,7 +1682,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1726,7 +1726,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects</first>
+                  <first>/home/littlefoot/18643_project/Hardware-Accel/HW</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2989,7 +2989,7 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>45523</mMinLatency>
+        <mMinLatency>36741</mMinLatency>
         <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
@@ -3034,7 +3034,7 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>6</mMinTripCount>
         <mMaxTripCount>6</mMaxTripCount>
-        <mMinLatency>20334</mMinLatency>
+        <mMinLatency>20286</mMinLatency>
         <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
@@ -3057,7 +3057,7 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>6</mMinTripCount>
         <mMaxTripCount>6</mMaxTripCount>
-        <mMinLatency>14130</mMinLatency>
+        <mMinLatency>7218</mMinLatency>
         <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
@@ -3080,7 +3080,7 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>6</mMinTripCount>
         <mMaxTripCount>6</mMaxTripCount>
-        <mMinLatency>1764</mMinLatency>
+        <mMinLatency>1752</mMinLatency>
         <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
@@ -3102,7 +3102,7 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>9292</mMinLatency>
+        <mMinLatency>7482</mMinLatency>
         <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
@@ -3811,11 +3811,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>447</second>
+              <second>517</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>800</second>
+              <second>811</second>
             </item>
           </second>
         </item>
@@ -3830,7 +3830,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>229</second>
+              <second>194</second>
             </item>
             <item>
               <first>LUT</first>
@@ -3849,11 +3849,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>7010</second>
+              <second>6459</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>12192</second>
+              <second>11804</second>
             </item>
           </second>
         </item>
@@ -3883,11 +3883,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>1222</second>
+              <second>1057</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>4878</second>
+              <second>4814</second>
             </item>
           </second>
         </item>
@@ -3902,11 +3902,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>6995</second>
+              <second>4375</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>9873</second>
+              <second>9522</second>
             </item>
           </second>
         </item>

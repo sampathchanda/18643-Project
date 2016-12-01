@@ -5,8 +5,9 @@ target triple = "x86_64-unknown-linux-gnu"
 %"class.hls::stream.0" = type { i8 }
 
 @.str = private unnamed_addr constant [1 x i8] zeroinitializer, align 1 ; [#uses=1 type=[1 x i8]*]
-@.str1 = private unnamed_addr constant [12 x i8] c"hls_label_1\00", align 1 ; [#uses=1 type=[12 x i8]*]
-@.str2 = private unnamed_addr constant [12 x i8] c"hls_label_0\00", align 1 ; [#uses=1 type=[12 x i8]*]
+@.str1 = private unnamed_addr constant [5 x i8] c"axis\00", align 1 ; [#uses=1 type=[5 x i8]*]
+@.str2 = private unnamed_addr constant [12 x i8] c"hls_label_1\00", align 1 ; [#uses=1 type=[12 x i8]*]
+@.str3 = private unnamed_addr constant [12 x i8] c"hls_label_0\00", align 1 ; [#uses=1 type=[12 x i8]*]
 @splitter.str = internal unnamed_addr constant [9 x i8] c"splitter\00" ; [#uses=1 type=[9 x i8]*]
 
 ; [#uses=0]
@@ -19,8 +20,8 @@ codeRepl:
   call void @llvm.dbg.value(metadata !{%"class.hls::stream.0"* %output}, i64 0, metadata !73), !dbg !74 ; [debug line = 5:24] [debug variable = output]
   call void (...)* @_ssdm_SpecArrayDimSize(%"class.hls::stream.0"* %output, i32 6) nounwind, !dbg !75 ; [debug line = 5:36]
   call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i8* getelementptr inbounds ([1 x i8]* @.str, i64 0, i64 0)) nounwind, !dbg !77 ; [debug line = 6:1]
-  call void (...)* @_ssdm_SpecStream(%"class.hls::stream.0"* %input, i32 0, i32 0, i8* getelementptr inbounds ([1 x i8]* @.str, i64 0, i64 0)) nounwind, !dbg !78 ; [debug line = 7:1]
-  call void (...)* @_ssdm_SpecStream(%"class.hls::stream.0"* %output, i32 0, i32 0, i8* getelementptr inbounds ([1 x i8]* @.str, i64 0, i64 0)) nounwind, !dbg !79 ; [debug line = 8:1]
+  call void (...)* @_ssdm_op_SpecInterface(%"class.hls::stream.0"* %input, i8* getelementptr inbounds ([5 x i8]* @.str1, i64 0, i64 0), i32 0, i32 0, i32 0, i32 0, i8* getelementptr inbounds ([1 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([1 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([1 x i8]* @.str, i64 0, i64 0)) nounwind, !dbg !78 ; [debug line = 7:1]
+  call void (...)* @_ssdm_op_SpecInterface(%"class.hls::stream.0"* %output, i8* getelementptr inbounds ([5 x i8]* @.str1, i64 0, i64 0), i32 0, i32 0, i32 0, i32 0, i8* getelementptr inbounds ([1 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([1 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([1 x i8]* @.str, i64 0, i64 0)) nounwind, !dbg !79 ; [debug line = 8:1]
   %input.addr = getelementptr inbounds %"class.hls::stream.0"* %input, i64 0, i32 0, !dbg !80 ; [#uses=1 type=i8*] [debug line = 131:9@14:9]
   call void @llvm.dbg.value(metadata !{%"class.hls::stream.0"* %input}, i64 0, metadata !85), !dbg !86 ; [debug line = 129:56@14:9] [debug variable = this]
   br label %0
@@ -31,7 +32,7 @@ codeRepl:
   br i1 %exitcond4.i, label %splitter_.exit, label %3, !dbg !87 ; [debug line = 12:25]
 
 ; <label>:1                                       ; preds = %2
-  %rend6 = call i32 (...)* @_ssdm_op_SpecRegionEnd(i8* getelementptr inbounds ([12 x i8]* @.str1, i64 0, i64 0), i32 %rbegin5) nounwind, !dbg !88 ; [#uses=0 type=i32] [debug line = 21:2]
+  %rend6 = call i32 (...)* @_ssdm_op_SpecRegionEnd(i8* getelementptr inbounds ([12 x i8]* @.str2, i64 0, i64 0), i32 %rbegin5) nounwind, !dbg !88 ; [#uses=0 type=i32] [debug line = 21:2]
   %pixels_read = add nsw i32 %pixels_read.0.i, 1, !dbg !89 ; [#uses=1 type=i32] [debug line = 12:101]
   call void @llvm.dbg.value(metadata !{i32 %pixels_read}, i64 0, metadata !90) nounwind, !dbg !89 ; [debug line = 12:101] [debug variable = pixels_read]
   br label %0, !dbg !89                           ; [debug line = 12:101]
@@ -42,7 +43,7 @@ codeRepl:
   br i1 %exitcond.i, label %1, label %4, !dbg !92 ; [debug line = 16:25]
 
 ; <label>:3                                       ; preds = %0
-  %rbegin5 = call i32 (...)* @_ssdm_op_SpecRegionBegin(i8* getelementptr inbounds ([12 x i8]* @.str1, i64 0, i64 0)) nounwind, !dbg !94 ; [#uses=1 type=i32] [debug line = 12:117]
+  %rbegin5 = call i32 (...)* @_ssdm_op_SpecRegionBegin(i8* getelementptr inbounds ([12 x i8]* @.str2, i64 0, i64 0)) nounwind, !dbg !94 ; [#uses=1 type=i32] [debug line = 12:117]
   call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, i8* getelementptr inbounds ([1 x i8]* @.str, i64 0, i64 0)) nounwind, !dbg !95 ; [debug line = 13:1]
   call void @llvm.dbg.declare(metadata !{i8* %tmp}, metadata !96) nounwind, !dbg !97 ; [debug line = 130:22@14:9] [debug variable = tmp]
   call void @_ssdm_op_IfRead.Stream.i8P.i8P(i8* %input.addr, i8* %tmp) nounwind, !dbg !80 ; [debug line = 131:9@14:9]
@@ -62,7 +63,7 @@ codeRepl:
   br label %2, !dbg !92                           ; [debug line = 16:25]
 
 ; <label>:4                                       ; preds = %2
-  %rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin(i8* getelementptr inbounds ([12 x i8]* @.str2, i64 0, i64 0)) nounwind, !dbg !101 ; [#uses=1 type=i32] [debug line = 17:20]
+  %rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin(i8* getelementptr inbounds ([12 x i8]* @.str3, i64 0, i64 0)) nounwind, !dbg !101 ; [#uses=1 type=i32] [debug line = 17:20]
   call void (...)* @_ssdm_Unroll(i32 0, i32 0, i32 0, i8* getelementptr inbounds ([1 x i8]* @.str, i64 0, i64 0)) nounwind, !dbg !103 ; [debug line = 18:1]
   %tmp.2 = sext i32 %loop_count.0.i to i64, !dbg !104 ; [#uses=1 type=i64] [debug line = 19:2]
   call void @llvm.dbg.declare(metadata !{i8* %tmp.3}, metadata !105) nounwind, !dbg !107 ; [debug line = 145:22@19:2] [debug variable = tmp]
@@ -80,7 +81,7 @@ codeRepl:
   store i8 %temp, i8* %tmp.3, align 1, !dbg !108  ; [debug line = 145:31@19:2]
   %output.addr = getelementptr inbounds %"class.hls::stream.0"* %output, i64 %tmp.2, i32 0, !dbg !109 ; [#uses=1 type=i8*] [debug line = 146:9@19:2]
   call void @_ssdm_op_IfWrite.Stream.i8P.i8P(i8* %output.addr, i8* %tmp.3) nounwind, !dbg !109 ; [debug line = 146:9@19:2]
-  %rend = call i32 (...)* @_ssdm_op_SpecRegionEnd(i8* getelementptr inbounds ([12 x i8]* @.str2, i64 0, i64 0), i32 %rbegin) nounwind, !dbg !110 ; [#uses=0 type=i32] [debug line = 20:3]
+  %rend = call i32 (...)* @_ssdm_op_SpecRegionEnd(i8* getelementptr inbounds ([12 x i8]* @.str3, i64 0, i64 0), i32 %rbegin) nounwind, !dbg !110 ; [#uses=0 type=i32] [debug line = 20:3]
   %loop_count = add nsw i32 %loop_count.0.i, 1, !dbg !111 ; [#uses=1 type=i32] [debug line = 17:5]
   call void @llvm.dbg.value(metadata !{i32 %loop_count}, i64 0, metadata !112) nounwind, !dbg !111 ; [debug line = 17:5] [debug variable = loop_count]
   br label %2, !dbg !111                          ; [debug line = 17:5]
@@ -99,7 +100,7 @@ declare void @_ssdm_SpecArrayDimSize(...) nounwind
 declare void @_ssdm_op_SpecDataflowPipeline(...) nounwind
 
 ; [#uses=2]
-declare void @_ssdm_SpecStream(...) nounwind
+declare void @_ssdm_op_SpecInterface(...) nounwind
 
 ; [#uses=1]
 declare void @_ssdm_op_SpecPipeline(...) nounwind
