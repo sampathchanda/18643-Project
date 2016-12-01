@@ -1,0 +1,297 @@
+
+
+================================================================
+== Vivado HLS Report for 'obj_detector'
+================================================================
+* Date:           Wed Nov 30 03:19:50 2016
+
+* Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
+* Project:        proj1_hls
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     11.06|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-------+-------+-------+-------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    |  min  |  max  |  min  |  max  |   Type  |
+    +-------+-------+-------+-------+---------+
+    |  45523|  45523|  45524|  45524|   none  |
+    +-------+-------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------+-----------------------+------+------+------+------+---------+
+        |                                  |                       |   Latency   |   Interval  | Pipeline|
+        |             Instance             |         Module        |  min |  max |  min |  max |   Type  |
+        +----------------------------------+-----------------------+------+------+------+------+---------+
+        |grp_obj_detector_convolve_fu_164  |obj_detector_convolve  |  3387|  3387|  3387|  3387|   none  |
+        |grp_obj_detector_softmax_fu_177   |obj_detector_softmax   |   200|   200|   200|   200|   none  |
+        |grp_obj_detector_flatten_fu_185   |obj_detector_flatten   |   434|   434|   434|   434|   none  |
+        |grp_obj_detector_maxpool_fu_202   |obj_detector_maxpool   |   292|   292|   292|   292|   none  |
+        |grp_obj_detector_FCL_fu_223       |obj_detector_FCL       |  4326|  4326|  4326|  4326|   none  |
+        |grp_obj_detector_ReLU_fu_234      |obj_detector_ReLU      |  2353|  2353|  2353|  2353|   none  |
+        +----------------------------------+-----------------------+------+------+------+------+---------+
+
+        * Loop: 
+        +-----------+-------+-------+----------+-----------+-----------+------+----------+
+        |           |    Latency    | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name |  min  |  max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------+-------+-------+----------+-----------+-----------+------+----------+
+        |- CONV     |  20334|  20334|      3389|          -|          -|     6|    no    |
+        |- ReLU     |  14130|  14130|      2355|          -|          -|     6|    no    |
+        |- Maxpool  |   1764|   1764|       294|          -|          -|     6|    no    |
+        +-----------+-------+-------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|Expression       |        -|      -|       0|     15|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        0|     62|   20277|  32059|
+|Memory           |       42|      -|       0|      0|
+|Multiplexer      |        -|      -|       -|    187|
+|Register         |        -|      -|     101|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |       42|     62|   20378|  32261|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |       15|     28|      19|     60|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------+----------------------------+---------+-------+------+-------+
+    |             Instance             |           Module           | BRAM_18K| DSP48E|  FF  |  LUT  |
+    +----------------------------------+----------------------------+---------+-------+------+-------+
+    |grp_obj_detector_FCL_fu_223       |obj_detector_FCL            |        0|      5|   447|    800|
+    |grp_obj_detector_ReLU_fu_234      |obj_detector_ReLU           |        0|      0|   229|    475|
+    |obj_detector_control_s_axi_U      |obj_detector_control_s_axi  |        0|      0|    36|     40|
+    |grp_obj_detector_convolve_fu_164  |obj_detector_convolve       |        0|     26|  7010|  12192|
+    |grp_obj_detector_flatten_fu_185   |obj_detector_flatten        |        0|      0|  4338|   3801|
+    |grp_obj_detector_maxpool_fu_202   |obj_detector_maxpool        |        0|      0|  1222|   4878|
+    |grp_obj_detector_softmax_fu_177   |obj_detector_softmax        |        0|     31|  6995|   9873|
+    +----------------------------------+----------------------------+---------+-------+------+-------+
+    |Total                             |                            |        0|     62| 20277|  32059|
+    +----------------------------------+----------------------------+---------+-------+------+-------+
+
+    * Memory: 
+    +---------+-------------------+---------+---+----+------+-----+------+-------------+
+    |  Memory |       Module      | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +---------+-------------------+---------+---+----+------+-----+------+-------------+
+    |s0_U     |obj_detector_s0    |        8|  0|   0|  3456|   32|     1|       110592|
+    |s1_U     |obj_detector_s1    |        8|  0|   0|  3456|   32|     1|       110592|
+    |s2_0_U   |obj_detector_s2_0  |        2|  0|   0|    72|   32|     1|         2304|
+    |s2_1_U   |obj_detector_s2_0  |        2|  0|   0|    72|   32|     1|         2304|
+    |s2_2_U   |obj_detector_s2_0  |        2|  0|   0|    72|   32|     1|         2304|
+    |s2_3_U   |obj_detector_s2_0  |        2|  0|   0|    72|   32|     1|         2304|
+    |s2_4_U   |obj_detector_s2_0  |        2|  0|   0|    72|   32|     1|         2304|
+    |s2_5_U   |obj_detector_s2_0  |        2|  0|   0|    72|   32|     1|         2304|
+    |s2_6_U   |obj_detector_s2_0  |        2|  0|   0|    72|   32|     1|         2304|
+    |s2_7_U   |obj_detector_s2_0  |        2|  0|   0|    72|   32|     1|         2304|
+    |s2_8_U   |obj_detector_s2_0  |        2|  0|   0|    72|   32|     1|         2304|
+    |s2_9_U   |obj_detector_s2_0  |        2|  0|   0|    72|   32|     1|         2304|
+    |s2_10_U  |obj_detector_s2_0  |        2|  0|   0|    72|   32|     1|         2304|
+    |s2_11_U  |obj_detector_s2_0  |        2|  0|   0|    72|   32|     1|         2304|
+    |s3_U     |obj_detector_s3    |        2|  0|   0|   864|   32|     1|        27648|
+    +---------+-------------------+---------+---+----+------+-----+------+-------------+
+    |Total    |                   |       42|  0|   0|  8640|  480|    15|       276480|
+    +---------+-------------------+---------+---+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |i_1_fu_250_p2        |     +    |      0|  0|   3|           3|           1|
+    |i_2_fu_262_p2        |     +    |      0|  0|   3|           3|           1|
+    |i_3_fu_274_p2        |     +    |      0|  0|   3|           3|           1|
+    |exitcond1_fu_256_p2  |   icmp   |      0|  0|   2|           3|           3|
+    |exitcond2_fu_244_p2  |   icmp   |      0|  0|   2|           3|           3|
+    |exitcond_fu_268_p2   |   icmp   |      0|  0|   2|           3|           3|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |Total                |          |      0|  0|  15|          18|          12|
+    +---------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |A_EN_A                                |   1|          2|    1|          2|
+    |W0_EN_A                               |   1|          2|    1|          2|
+    |W1_EN_A                               |   1|          2|    1|          2|
+    |ap_NS_fsm                             |   6|         14|    1|         14|
+    |grp_obj_detector_FCL_fu_223_W_offset  |   1|          3|    1|          3|
+    |i1_reg_140                            |   3|          2|    3|          6|
+    |i2_reg_152                            |   3|          2|    3|          6|
+    |i_reg_128                             |   3|          2|    3|          6|
+    |res_EN_A                              |   1|          2|    1|          2|
+    |res_WEN_A                             |   4|          2|    4|          8|
+    |s0_address0                           |  12|          3|   12|         36|
+    |s0_ce0                                |   1|          3|    1|          3|
+    |s0_we0                                |   1|          2|    1|          2|
+    |s1_address0                           |  12|          3|   12|         36|
+    |s1_ce0                                |   1|          3|    1|          3|
+    |s1_ce1                                |   1|          2|    1|          2|
+    |s1_we0                                |   1|          2|    1|          2|
+    |s2_0_address0                         |   7|          3|    7|         21|
+    |s2_0_ce0                              |   1|          3|    1|          3|
+    |s2_0_ce1                              |   1|          2|    1|          2|
+    |s2_0_we0                              |   1|          2|    1|          2|
+    |s2_10_address0                        |   7|          3|    7|         21|
+    |s2_10_ce0                             |   1|          3|    1|          3|
+    |s2_10_ce1                             |   1|          2|    1|          2|
+    |s2_10_we0                             |   1|          2|    1|          2|
+    |s2_11_address0                        |   7|          3|    7|         21|
+    |s2_11_ce0                             |   1|          3|    1|          3|
+    |s2_11_ce1                             |   1|          2|    1|          2|
+    |s2_11_we0                             |   1|          2|    1|          2|
+    |s2_1_address0                         |   7|          3|    7|         21|
+    |s2_1_ce0                              |   1|          3|    1|          3|
+    |s2_1_ce1                              |   1|          2|    1|          2|
+    |s2_1_we0                              |   1|          2|    1|          2|
+    |s2_2_address0                         |   7|          3|    7|         21|
+    |s2_2_ce0                              |   1|          3|    1|          3|
+    |s2_2_ce1                              |   1|          2|    1|          2|
+    |s2_2_we0                              |   1|          2|    1|          2|
+    |s2_3_address0                         |   7|          3|    7|         21|
+    |s2_3_ce0                              |   1|          3|    1|          3|
+    |s2_3_ce1                              |   1|          2|    1|          2|
+    |s2_3_we0                              |   1|          2|    1|          2|
+    |s2_4_address0                         |   7|          3|    7|         21|
+    |s2_4_ce0                              |   1|          3|    1|          3|
+    |s2_4_ce1                              |   1|          2|    1|          2|
+    |s2_4_we0                              |   1|          2|    1|          2|
+    |s2_5_address0                         |   7|          3|    7|         21|
+    |s2_5_ce0                              |   1|          3|    1|          3|
+    |s2_5_ce1                              |   1|          2|    1|          2|
+    |s2_5_we0                              |   1|          2|    1|          2|
+    |s2_6_address0                         |   7|          3|    7|         21|
+    |s2_6_ce0                              |   1|          3|    1|          3|
+    |s2_6_ce1                              |   1|          2|    1|          2|
+    |s2_6_we0                              |   1|          2|    1|          2|
+    |s2_7_address0                         |   7|          3|    7|         21|
+    |s2_7_ce0                              |   1|          3|    1|          3|
+    |s2_7_ce1                              |   1|          2|    1|          2|
+    |s2_7_we0                              |   1|          2|    1|          2|
+    |s2_8_address0                         |   7|          3|    7|         21|
+    |s2_8_ce0                              |   1|          3|    1|          3|
+    |s2_8_ce1                              |   1|          2|    1|          2|
+    |s2_8_we0                              |   1|          2|    1|          2|
+    |s2_9_address0                         |   7|          3|    7|         21|
+    |s2_9_ce0                              |   1|          3|    1|          3|
+    |s2_9_ce1                              |   1|          2|    1|          2|
+    |s2_9_we0                              |   1|          2|    1|          2|
+    |s3_address0                           |  10|          3|   10|         30|
+    |s3_ce0                                |   1|          3|    1|          3|
+    |s3_ce1                                |   1|          2|    1|          2|
+    |s3_we0                                |   1|          2|    1|          2|
+    |s3_we1                                |   1|          2|    1|          2|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 | 187|        183|  182|        510|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------------+----+----+-----+-----------+
+    |                          Name                          | FF | LUT| Bits| Const Bits|
+    +--------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                               |  13|   0|   13|          0|
+    |cost_0_reg_304                                          |  32|   0|   32|          0|
+    |cost_1_reg_309                                          |  32|   0|   32|          0|
+    |grp_obj_detector_FCL_fu_223_ap_start_ap_start_reg       |   1|   0|    1|          0|
+    |grp_obj_detector_ReLU_fu_234_ap_start_ap_start_reg      |   1|   0|    1|          0|
+    |grp_obj_detector_convolve_fu_164_ap_start_ap_start_reg  |   1|   0|    1|          0|
+    |grp_obj_detector_flatten_fu_185_ap_start_ap_start_reg   |   1|   0|    1|          0|
+    |grp_obj_detector_maxpool_fu_202_ap_start_ap_start_reg   |   1|   0|    1|          0|
+    |grp_obj_detector_softmax_fu_177_ap_start_ap_start_reg   |   1|   0|    1|          0|
+    |i1_reg_140                                              |   3|   0|    3|          0|
+    |i2_reg_152                                              |   3|   0|    3|          0|
+    |i_1_reg_283                                             |   3|   0|    3|          0|
+    |i_2_reg_291                                             |   3|   0|    3|          0|
+    |i_3_reg_299                                             |   3|   0|    3|          0|
+    |i_reg_128                                               |   3|   0|    3|          0|
+    +--------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                   | 101|   0|  101|          0|
+    +--------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+--------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------------------+-----+-----+------------+--------------+--------------+
+|s_axi_control_AWVALID  |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_AWREADY  | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_AWADDR   |  in |    5|    s_axi   |    control   |  return void |
+|s_axi_control_WVALID   |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_WREADY   | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_WDATA    |  in |   32|    s_axi   |    control   |  return void |
+|s_axi_control_WSTRB    |  in |    4|    s_axi   |    control   |  return void |
+|s_axi_control_ARVALID  |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_ARREADY  | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_ARADDR   |  in |    5|    s_axi   |    control   |  return void |
+|s_axi_control_RVALID   | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_RREADY   |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_RDATA    | out |   32|    s_axi   |    control   |  return void |
+|s_axi_control_RRESP    | out |    2|    s_axi   |    control   |  return void |
+|s_axi_control_BVALID   | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_BREADY   |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_BRESP    | out |    2|    s_axi   |    control   |  return void |
+|ap_clk                 |  in |    1| ap_ctrl_hs | obj_detector | return value |
+|ap_rst_n               |  in |    1| ap_ctrl_hs | obj_detector | return value |
+|interrupt              | out |    1| ap_ctrl_hs | obj_detector | return value |
+|A_Addr_A               | out |   32|    bram    |       A      |     array    |
+|A_EN_A                 | out |    1|    bram    |       A      |     array    |
+|A_WEN_A                | out |    4|    bram    |       A      |     array    |
+|A_Din_A                | out |   32|    bram    |       A      |     array    |
+|A_Dout_A               |  in |   32|    bram    |       A      |     array    |
+|A_Clk_A                | out |    1|    bram    |       A      |     array    |
+|A_Rst_A                | out |    1|    bram    |       A      |     array    |
+|W0_Addr_A              | out |   32|    bram    |      W0      |     array    |
+|W0_EN_A                | out |    1|    bram    |      W0      |     array    |
+|W0_WEN_A               | out |    4|    bram    |      W0      |     array    |
+|W0_Din_A               | out |   32|    bram    |      W0      |     array    |
+|W0_Dout_A              |  in |   32|    bram    |      W0      |     array    |
+|W0_Clk_A               | out |    1|    bram    |      W0      |     array    |
+|W0_Rst_A               | out |    1|    bram    |      W0      |     array    |
+|W1_Addr_A              | out |   32|    bram    |      W1      |     array    |
+|W1_EN_A                | out |    1|    bram    |      W1      |     array    |
+|W1_WEN_A               | out |    4|    bram    |      W1      |     array    |
+|W1_Din_A               | out |   32|    bram    |      W1      |     array    |
+|W1_Dout_A              |  in |   32|    bram    |      W1      |     array    |
+|W1_Clk_A               | out |    1|    bram    |      W1      |     array    |
+|W1_Rst_A               | out |    1|    bram    |      W1      |     array    |
+|res_Addr_A             | out |   32|    bram    |      res     |     array    |
+|res_EN_A               | out |    1|    bram    |      res     |     array    |
+|res_WEN_A              | out |    4|    bram    |      res     |     array    |
+|res_Din_A              | out |   32|    bram    |      res     |     array    |
+|res_Dout_A             |  in |   32|    bram    |      res     |     array    |
+|res_Clk_A              | out |    1|    bram    |      res     |     array    |
+|res_Rst_A              | out |    1|    bram    |      res     |     array    |
++-----------------------+-----+-----+------------+--------------+--------------+
+

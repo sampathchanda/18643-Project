@@ -1,0 +1,11 @@
+#ifndef MAIN_H_
+#define MAIN_H_
+
+#define N 6
+#define M 3
+
+typedef float mat_a;
+typedef float mat_b;
+typedef float mat_conv;
+
+#endif /* MAIN_H_ */

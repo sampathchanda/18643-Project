@@ -1,0 +1,28 @@
+23:34:45 **** Auto Build of configuration Debug for project proj1 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../proj1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:9:8: warning: unused variable 'conv' [-Wunused-variable]
+  float conv[N-M+1][N-M+1];
+        ^
+../src/main.c:8:8: warning: variable 'B' set but not used [-Wunused-but-set-variable]
+  float B[M][M];
+        ^
+../src/main.c:7:8: warning: variable 'A' set but not used [-Wunused-but-set-variable]
+  float A[N][N];
+        ^
+'Finished building: ../src/main.c'
+' '
+'Building target: proj1.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../proj1_bsp/ps7_cortexa9_0/lib -o "proj1.elf"  ./src/main.o ./src/testperiph.o ./src/xaxicdma_example_simple_poll.o ./src/xdevcfg_selftest_example.o ./src/xdmaps_example_w_intr.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/xqspips_selftest_example.o ./src/xscugic_tapp_example.o ./src/xscutimer_intr_example.o ./src/xscutimer_polled_example.o ./src/xscuwdt_intr_example.o ./src/xttcps_tapp_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/testperiph.o: In function `main':
+C:\Users\sunny\Google_Drive\CMU\Courses\CMU\18643\vivado_projects\H05-lab3\project_1.sdk\proj1\Debug/../src/testperiph.c:54: multiple definition of `main'
+./src/main.o:C:\Users\sunny\Google_Drive\CMU\Courses\CMU\18643\vivado_projects\H05-lab3\project_1.sdk\proj1\Debug/../src/main.c:4: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [proj1.elf] Error 1
+
+23:34:46 Build Finished (took 698ms)
+

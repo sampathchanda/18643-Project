@@ -1,0 +1,668 @@
+12:22:06 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+12:22:09 INFO  : Processing command line option -hwspec C:/000_HLS/H05-lab3/project_1.sdk/design_1_wrapper.hdf.
+12:22:10 INFO  : XSDB server has started successfully.
+15:13:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:13:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248446549" && level==0} -index 1' command is executed.
+15:13:09 INFO  : FPGA configured successfully with bitstream "C:/000_HLS/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:22:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:24:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:25:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:25:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:26:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:27:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:38:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:38:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:39:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:39:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:39:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:39:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:39:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:39:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:39:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:40:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:42:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:42:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:42:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:43:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:43:55 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:32:52 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+09:32:54 INFO  : XSDB server has started successfully.
+09:32:55 INFO  : Processing command line option -hwspec C:/000_HLS/H05-lab3/project_1.sdk/design_1_wrapper.hdf.
+09:32:56 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+09:33:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:33:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:34:53 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:27:36 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+14:27:43 INFO  : XSDB server has started successfully.
+14:27:46 INFO  : Processing command line option -hwspec C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk/design_1_wrapper.hdf.
+06:59:24 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+06:59:30 INFO  : Processing command line option -hwspec C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk/design_1_wrapper.hdf.
+06:59:33 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+06:59:45 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1477652320426,  Project:1474993162000
+06:59:45 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_1' is different from C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk/design_1_wrapper.hdf.
+06:59:54 ERROR : Timed out. 30 seconds have elapsed while waiting for XSDB server to launch.
+07:00:33 INFO  : Copied contents of C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_1\system.hdf.
+07:00:43 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+07:00:44 INFO  : Clearing existing target manager status.
+07:00:46 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+07:00:46 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+07:12:52 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+07:12:53 INFO  : XSDB server has started successfully.
+07:12:54 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+07:13:14 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+07:13:18 INFO  : Processing command line option -hwspec C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk/design_1_wrapper.hdf.
+07:13:19 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+07:13:51 ERROR : Timed out. 30 seconds have elapsed while waiting for XSDB server to launch.
+07:22:06 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+07:22:06 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:381)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:290)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+22:14:00 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.read(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Unknown Source)
+22:14:00 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+23:19:56 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+23:20:01 INFO  : Processing command line option -hwspec C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper.hdf.
+23:20:13 INFO  : XSDB server has started successfully.
+23:21:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:21:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+23:21:34 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/design_1_wrapper.bit"
+12:57:38 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+12:58:01 INFO  : Processing command line option -hwspec C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper.hdf.
+12:58:03 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_2.
+12:58:08 ERROR : Timed out. 30 seconds have elapsed while waiting for XSDB server to launch.
+12:59:50 ERROR :  License Feature SDK is not available.
+14:04:49 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+14:04:56 INFO  : XSDB server has started successfully.
+14:04:57 INFO  : Processing command line option -hwspec C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper.hdf.
+14:04:58 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_2.
+14:31:39 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+14:31:50 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248686234 on TCP:127.0.0.1:3121
+
+
+14:31:51 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248686234 on TCP:127.0.0.1:3121
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:381)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:290)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:33:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:33:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+14:34:00 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/design_1_wrapper.bit"
+14:34:14 INFO  : ps7_init is completed.
+14:34:14 INFO  : ps7_post_config is completed.
+14:34:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:35:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:43:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:43:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:45:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:00:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:02:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:03:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:03:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:06:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:07:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:09:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:15:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:16:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:18:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:19:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:19:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:20:21 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:20:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:22:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:22:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:23:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:23:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:58:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1480373659053,  Project:1480306505656
+17:58:31 INFO  : Project design_1_wrapper_hw_platform_2's source hardware specification located at C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+17:59:18 INFO  : Copied contents of C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_2\system.hdf.
+17:59:38 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:59:43 INFO  : 
+17:59:44 INFO  : Updating hardware inferred compiler options for proj3.
+17:59:44 INFO  : Clearing existing target manager status.
+17:59:44 INFO  : Closing and re-opening the MSS file of ther project proj3_bsp
+17:59:47 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:00:40 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+18:01:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:01:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+18:01:16 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/design_1_wrapper.bit"
+18:01:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:01:25 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unknown Error Occured
+    Target '64' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:670)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:609)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+18:04:10 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:06:12 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+18:06:23 INFO  : XSDB server has started successfully.
+18:06:32 INFO  : Processing command line option -hwspec C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper.hdf.
+18:06:39 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_2.
+18:08:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:08:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+18:08:55 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/design_1_wrapper.bit"
+18:09:19 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+18:09:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:13:39 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:13:50 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+18:14:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:14:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+18:14:05 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/design_1_wrapper.bit"
+18:14:38 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:506)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+18:15:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:15:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+18:15:12 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/design_1_wrapper.bit"
+18:15:23 INFO  : ps7_init is completed.
+18:15:23 INFO  : ps7_post_config is completed.
+18:15:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:29:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:29:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:31:10 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:31:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:32:08 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:32:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:06:42 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:06:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:07:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:13:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:14:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:18:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:27:39 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:27:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:30:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:34:30 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:34:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:42:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:42:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:06:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:06:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+20:06:37 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/design_1_wrapper.bit"
+20:06:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:09:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:15:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:17:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:19:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:22:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:26:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:27:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:27:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:28:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:29:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:29:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:30:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:30:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:31:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:32:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:33:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:33:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:34:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:37:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:38:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:39:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:40:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:44:25 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:44:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:47:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:48:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:50:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:53:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:53:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:56:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:56:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:56:57 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1480384486901,  Project:1480373659053
+20:56:57 INFO  : Project design_1_wrapper_hw_platform_2's source hardware specification located at C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+20:57:02 INFO  : Copied contents of C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_2\system.hdf.
+20:57:16 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:57:21 INFO  : 
+20:57:22 INFO  : Updating hardware inferred compiler options for proj3.
+20:57:22 INFO  : Clearing existing target manager status.
+20:57:22 INFO  : Closing and re-opening the MSS file of ther project proj3_bsp
+20:57:22 INFO  : Closing and re-opening the MSS file of ther project proj3_bsp
+20:57:22 INFO  : Closing and re-opening the MSS file of ther project proj3_bsp
+20:57:22 INFO  : Closing and re-opening the MSS file of ther project proj3_bsp
+20:57:22 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+20:57:24 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+20:57:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:57:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+20:57:39 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/design_1_wrapper.bit"
+20:58:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:59:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:07:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:07:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:08:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:16:01 INFO  : Example project proj3_bsp_xaxicdma_example_simple_poll_1 has been created successfully.
+21:16:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:16:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+21:16:41 INFO  : 'fpga -state' command is executed.
+21:16:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:16:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0' command is executed.
+21:16:58 INFO  : Mermory regions for PS have been updated.
+21:16:58 INFO  : Sourcing of 'C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/ps7_init.tcl' is done.
+21:16:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0' command is executed.
+21:17:20 INFO  : 'ps7_init' command is executed.
+21:17:20 INFO  : 'ps7_post_config' command is executed.
+21:17:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:17:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:17:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:17:25 INFO  : The application 'C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/proj3_bsp_xaxicdma_example_simple_poll_1/Debug/proj3_bsp_xaxicdma_example_simple_poll_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:17:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+dow C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/proj3_bsp_xaxicdma_example_simple_poll_1/Debug/proj3_bsp_xaxicdma_example_simple_poll_1.elf
+----------------End of Script----------------
+
+21:17:28 INFO  : Memory regions updated for context APU
+21:17:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:17:28 INFO  : 'con' command is executed.
+21:17:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+con
+----------------End of Script----------------
+
+21:18:45 INFO  : Disconnected from the channel tcfchan#1.
+21:18:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:18:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+21:18:50 INFO  : 'fpga -state' command is executed.
+21:18:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:18:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0' command is executed.
+21:19:10 INFO  : Mermory regions for PS have been updated.
+21:19:10 INFO  : Sourcing of 'C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/ps7_init.tcl' is done.
+21:19:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0' command is executed.
+21:19:48 INFO  : 'ps7_init' command is executed.
+21:19:49 INFO  : 'ps7_post_config' command is executed.
+21:19:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:19:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:19:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:19:50 INFO  : The application 'C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/proj3_bsp_xaxicdma_example_simple_poll_1/Debug/proj3_bsp_xaxicdma_example_simple_poll_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:19:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+dow C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/proj3_bsp_xaxicdma_example_simple_poll_1/Debug/proj3_bsp_xaxicdma_example_simple_poll_1.elf
+----------------End of Script----------------
+
+21:19:52 INFO  : Memory regions updated for context APU
+21:19:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:19:53 INFO  : 'con' command is executed.
+21:19:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+con
+----------------End of Script----------------
+
+21:20:57 INFO  : Disconnected from the channel tcfchan#2.
+21:21:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:21:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+21:21:14 INFO  : 'fpga -state' command is executed.
+21:21:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:21:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0' command is executed.
+21:21:29 INFO  : Mermory regions for PS have been updated.
+21:21:29 INFO  : Sourcing of 'C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/ps7_init.tcl' is done.
+21:21:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0' command is executed.
+21:21:56 INFO  : 'ps7_init' command is executed.
+21:21:56 INFO  : 'ps7_post_config' command is executed.
+21:21:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:22:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:22:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:22:03 INFO  : The application 'C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/proj3_bsp_xaxicdma_example_simple_poll_1/Debug/proj3_bsp_xaxicdma_example_simple_poll_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:22:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+memmap -addr 2116026368 -size 65536 -flags 3
+memmap -addr 2116091904 -size 65536 -flags 3
+memmap -addr 2116157440 -size 65536 -flags 3
+memmap -addr 1136656384 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 535822336 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/design_1_wrapper_hw_platform_2/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+dow C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3/project_1.sdk/proj3_bsp_xaxicdma_example_simple_poll_1/Debug/proj3_bsp_xaxicdma_example_simple_poll_1.elf
+----------------End of Script----------------
+
+21:22:06 INFO  : Memory regions updated for context APU
+21:22:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:22:10 INFO  : 'con' command is executed.
+21:22:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686234"} -index 0
+con
+----------------End of Script----------------
+
+21:26:59 INFO  : Disconnected from the channel tcfchan#3.
+21:27:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:28:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:29:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:35:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:36:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:36:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:51:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:52:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:54:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:55:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:57:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:58:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:59:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:59:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:00:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:02:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:43:15 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+02:43:24 INFO  : Processing command line option -hwspec C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf.
+02:43:31 INFO  : XSDB server has started successfully.
+02:49:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:49:58 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+02:50:20 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+02:50:23 INFO  : XSDB server has started successfully.
+02:50:28 INFO  : Processing command line option -hwspec C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf.
+02:50:31 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_3.
+03:11:24 INFO  : No changes in MSS file content so not generating sources.
+03:30:46 INFO  : ----------------XSDB Script----------------
+----------------End of Script----------------
+
+03:33:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+03:34:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:34:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+03:34:11 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+03:34:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+03:34:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:30:34 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1480416805975,  Project:1480405293078
+08:30:35 INFO  : Project design_1_wrapper_hw_platform_3's source hardware specification located at C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+08:30:51 INFO  : Copied contents of C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_3\system.hdf.
+08:31:28 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+08:31:35 INFO  : 
+08:31:37 INFO  : Updating hardware inferred compiler options for proj4.
+08:31:37 INFO  : Clearing existing target manager status.
+08:31:37 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+08:33:43 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+08:35:02 INFO  : Refreshed build settings on project proj4
+09:03:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:03:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:03:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+09:03:48 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+09:03:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:04:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:05:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:06:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:06:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:08:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:09:11 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:10:46 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+09:10:50 INFO  : XSDB server has started successfully.
+09:10:53 INFO  : Processing command line option -hwspec C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf.
+09:10:59 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_3.
+09:15:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:17:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:17:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+09:17:26 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+09:17:36 INFO  : ps7_init is completed.
+09:17:36 INFO  : ps7_post_config is completed.
+09:17:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:48:42 INFO  : Refreshed build settings on project proj4
+14:49:29 INFO  : No changes in MSS file content so not generating sources.
+15:13:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:13:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+15:13:17 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+15:13:28 INFO  : ps7_init is completed.
+15:13:28 INFO  : ps7_post_config is completed.
+15:13:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:47:37 INFO  : Refreshed build settings on project proj4
+16:59:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:00:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:00:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+17:00:12 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:00:19 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:00:26 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unable to Stop Processor. System could be in unknown state.
+                     Please reset the system
+Unknown Error Occured
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(TM.java:757)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(CPURunSession.java:27)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminateCurrentLaunch(TM.java:805)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:568)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:00:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:00:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686234" && level==0} -index 1' command is executed.
+17:00:46 INFO  : FPGA configured successfully with bitstream "C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3-1/project_1.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:01:38 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:02:48 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+17:02:55 INFO  : XSDB server has started successfully.
+17:02:56 INFO  : Processing command line option -hwspec C:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects/H05-lab3-1/project_1.sdk/design_1_wrapper.hdf.
+17:02:58 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_3.
+17:45:56 INFO  : No changes in MSS file content so not generating sources.
+17:52:10 INFO  : ps7_init is completed.
+17:52:10 INFO  : ps7_post_config is completed.
+17:52:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:10:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:10:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:41:02 INFO  : No changes in MSS file content so not generating sources.
+18:42:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:56:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:59:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:00:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:52:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:53:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:56:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:07:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:08:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:09:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:12:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:14:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:16:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:19:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:21:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:21:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:21:46 INFO  : Processor reset is completed for ps7_cortexa9_0

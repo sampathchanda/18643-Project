@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="obj_detector" xd:componentRef="obj_detector" xd:initiationInterval="1042050" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="A[][]" xd:originalName="A" xd:direction="in" xd:interfaceRef="A_PORTA" xd:busTypeRef="bram" xd:arraySize="784" xd:dataWidth="32"/>
+  <xd:arg xd:name="W0[][][]" xd:originalName="W0" xd:direction="in" xd:interfaceRef="W0_PORTA" xd:busTypeRef="bram" xd:arraySize="150" xd:dataWidth="32"/>
+  <xd:arg xd:name="W1[][]" xd:originalName="W1" xd:direction="in" xd:interfaceRef="W1_PORTA" xd:busTypeRef="bram" xd:arraySize="1728" xd:dataWidth="32"/>
+  <xd:arg xd:name="res[]" xd:originalName="res" xd:direction="out" xd:interfaceRef="res_PORTA" xd:busTypeRef="bram" xd:arraySize="2" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="1042049" xd:worst-case="1042049" xd:average-case="1042049"/>
+  <xd:resourceEstimates xd:LUT="3796" xd:FF="2213" xd:BRAM="20" xd:DSP="10"/>
+</xd:acceleratorMap>

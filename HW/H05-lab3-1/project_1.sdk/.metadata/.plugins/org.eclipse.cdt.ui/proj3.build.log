@@ -1,0 +1,65 @@
+00:21:39 **** Incremental Build of configuration Debug for project proj3 ****
+make all 
+'Building file: ../src/main.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../proj3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:12:0: warning: "N" redefined
+ #define N 28
+ ^
+In file included from ../src/main.cpp:10:0:
+../src/main.h:4:0: note: this is the location of the previous definition
+ #define N 6
+ ^
+../src/main.cpp:13:0: warning: "M" redefined
+ #define M 5
+ ^
+In file included from ../src/main.cpp:10:0:
+../src/main.h:5:0: note: this is the location of the previous definition
+ #define M 3
+ ^
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:152:28: error: 'in_mat_b' was not declared in this scope
+     obj_detector(in_mat_a, in_mat_b, hw_result);
+                            ^
+../src/main.cpp:160:33: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+  if (!nearlyEqual(hw_result[i][j], sw_result[i][j])) {
+                                 ^
+../src/main.cpp:160:50: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+  if (!nearlyEqual(hw_result[i][j], sw_result[i][j])) {
+                                                  ^
+../src/main.cpp:161:76: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+    printf("Phase: \tRes[%d][%d]\tHW: %0.2f\tSW: %0.2f\n",i,j,hw_result[i][j],sw_result[i][j]);
+                                                                            ^
+../src/main.cpp:161:92: error: invalid types 'mat_conv {aka float}[int]' for array subscript
+    printf("Phase: \tRes[%d][%d]\tHW: %0.2f\tSW: %0.2f\n",i,j,hw_result[i][j],sw_result[i][j]);
+                                                                                            ^
+../src/main.cpp: In function 'void obj_detector(mat_a (*)[28], mat_b (*)[5], mat_conv (*)[24])':
+../src/main.cpp:198:27: error: 'cdma_dev_b' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_b, (u32)(b), (u32)(BRAM_B_ID), M*M*sizeof(float), NULL, NULL);
+                           ^
+../src/main.cpp:198:55: error: 'BRAM_B_ID' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_b, (u32)(b), (u32)(BRAM_B_ID), M*M*sizeof(float), NULL, NULL);
+                                                       ^
+../src/main.cpp:207:27: error: 'cdma_dev_conv' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_conv, (u32)(BRAM_CONV_ID), (u32)(conv), (N-M+1)*(N-M+1)*sizeof(float), NULL, NULL);
+                           ^
+../src/main.cpp:207:48: error: 'BRAM_CONV_ID' was not declared in this scope
+  XAxiCdma_SimpleTransfer(&cdma_dev_conv, (u32)(BRAM_CONV_ID), (u32)(conv), (N-M+1)*(N-M+1)*sizeof(float), NULL, NULL);
+                                                ^
+../src/main.cpp: In function 'void initialize(int&)':
+../src/main.cpp:26:21: error: 'XPAR_HIER_BRAM_3_AXI_CDMA_0_DEVICE_ID' was not declared in this scope
+ #define CDMA_RES_ID XPAR_HIER_BRAM_3_AXI_CDMA_0_DEVICE_ID
+                     ^
+../src/main.cpp:259:42: note: in expansion of macro 'CDMA_RES_ID'
+  cdma_config_res = XAxiCdma_LookupConfig(CDMA_RES_ID);
+                                          ^
+../src/main.cpp:27:23: error: 'XPAR_HIER_BRAM_3_AXI_CDMA_0_BASEADDR' was not declared in this scope
+ #define CDMA_RES_BASE XPAR_HIER_BRAM_3_AXI_CDMA_0_BASEADDR
+                       ^
+../src/main.cpp:260:64: note: in expansion of macro 'CDMA_RES_BASE'
+  status = XAxiCdma_CfgInitialize(&cdma_dev_res,cdma_config_res,CDMA_RES_BASE);
+                                                                ^
+make: *** [src/main.o] Error 1
+
+00:21:39 Build Finished (took 337ms)
+

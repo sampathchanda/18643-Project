@@ -1,0 +1,93 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Tue Nov 29 01:39:24 2016
+| Host         : DESKTOP-GKODPFB running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_obj_detector_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_obj_detector_0_0 (xilinx.com:hls:obj_detector:1.0) from (Rev. 1611281651) to (Rev. 1611290133)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'design_1_obj_detector_0_0'.
+
+
+-upgrade has removed interface 'B_PORTA'
+-upgrade has removed interface 'conv_PORTA'
+-upgrade has added interface 'W0_PORTA'
+-upgrade has added interface 'W1_PORTA'
+-upgrade has added interface 'res_PORTA'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'design_1_obj_detector_0_0'. These changes may impact your design.
+
+
+-upgrade has removed port 'B_Addr_A'
+-upgrade has removed port 'B_Clk_A'
+-upgrade has removed port 'B_Din_A'
+-upgrade has removed port 'B_Dout_A'
+-upgrade has removed port 'B_EN_A'
+-upgrade has removed port 'B_Rst_A'
+-upgrade has removed port 'B_WEN_A'
+-upgrade has removed port 'conv_Addr_A'
+-upgrade has removed port 'conv_Clk_A'
+-upgrade has removed port 'conv_Din_A'
+-upgrade has removed port 'conv_Dout_A'
+-upgrade has removed port 'conv_EN_A'
+-upgrade has removed port 'conv_Rst_A'
+-upgrade has removed port 'conv_WEN_A'
+-upgrade has added port 'W0_Addr_A'
+-upgrade has added port 'W0_Clk_A'
+-upgrade has added port 'W0_Din_A'
+-upgrade has added port 'W0_Dout_A'
+-upgrade has added port 'W0_EN_A'
+-upgrade has added port 'W0_Rst_A'
+-upgrade has added port 'W0_WEN_A'
+-upgrade has added port 'W1_Addr_A'
+-upgrade has added port 'W1_Clk_A'
+-upgrade has added port 'W1_Din_A'
+-upgrade has added port 'W1_Dout_A'
+-upgrade has added port 'W1_EN_A'
+-upgrade has added port 'W1_Rst_A'
+-upgrade has added port 'W1_WEN_A'
+-upgrade has added port 'res_Addr_A'
+-upgrade has added port 'res_Clk_A'
+-upgrade has added port 'res_Din_A'
+-upgrade has added port 'res_Dout_A'
+-upgrade has added port 'res_EN_A'
+-upgrade has added port 'res_Rst_A'
+-upgrade has added port 'res_WEN_A'
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon Nov 28 16:54:10 2016
+| Host         : DESKTOP-GKODPFB running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_obj_detector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_obj_detector_0_0 (xilinx.com:hls:obj_detector:1.0) from (Rev. 1611272112) to (Rev. 1611281651)
+

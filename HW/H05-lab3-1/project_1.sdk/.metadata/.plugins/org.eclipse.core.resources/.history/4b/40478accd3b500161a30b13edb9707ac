@@ -1,0 +1,214 @@
+#include <xparameters.h>
+#include <xaxicdma.h>
+#include <xil_cache.h>
+#include <xobj_detector.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cfloat>
+#include <cmath>
+#include <limits.h>
+#include "main.h"
+
+#define CDMA_A_ID XPAR_HIER_BRAM_0_AXI_CDMA_0_DEVICE_ID
+#define CDMA_A_BASE XPAR_HIER_BRAM_0_AXI_CDMA_0_BASEADDR
+
+#define CDMA_B_ID XPAR_HIER_BRAM_1_AXI_CDMA_0_DEVICE_ID
+#define CDMA_B_BASE XPAR_HIER_BRAM_1_AXI_CDMA_0_BASEADDR
+
+#define CDMA_CONV_ID XPAR_HIER_BRAM_2_AXI_CDMA_0_DEVICE_ID
+#define CDMA_CONV_BASE XPAR_HIER_BRAM_2_AXI_CDMA_0_BASEADDR
+
+#define OBJ_DETECTOR_ID XPAR_OBJ_DETECTOR_0_DEVICE_ID
+
+#define BRAM_A_ID 0xC0000000
+#define BRAM_B_ID 0xC2000000
+#define BRAM_CONV_ID 0xC4000000
+
+#define CLOCKS_PER_SEC (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2)
+//CPU 32-bit timer (SCUTIMER) clocked at half the CPU frequency
+unsigned int * const TIMER_LOAD_PTR = (unsigned int *)XPAR_PS7_SCUTIMER_0_BASEADDR;
+unsigned int * const TIMER_PTR = XPAR_PS7_SCUTIMER_0_BASEADDR + (unsigned int *)0x04;
+unsigned int * const TIMER_CONFIG_PTR = XPAR_PS7_SCUTIMER_0_BASEADDR + (unsigned int *)0x08;
+
+//double buffered
+mat_a in_mat_a[N][N];
+mat_b in_mat_b[M][M];
+mat_conv hw_result[N-M+1][N-M+1], sw_result[N-M+1][N-M+1];
+
+//devices and configuration pointers for CDMA IPs used to transfer data to/from DRAM and BRAM
+XAxiCdma		 cdma_dev_a;
+XAxiCdma_Config *cdma_config_a;
+XAxiCdma		 cdma_dev_b;
+XAxiCdma_Config *cdma_config_b;
+XAxiCdma		 cdma_dev_conv;
+XAxiCdma_Config *cdma_config_conv;
+
+//device and configuration pointer for the Lab 2 matrix mult HLS IP
+XObj_detector		 obj_detector_dev;
+XObj_detector_Config *obj_detector_config;
+
+#define EPSILON (1e-4)  // do not chanage this value
+
+bool nearlyEqual(float a, float b);
+void initialize(int &error);
+
+void obj_detector(
+		 mat_a a[N][N],
+		 mat_b b[M][M],
+		 mat_conv conv[N-M+1][N-M+1]
+		 );
+
+int main() {
+  printf("\nBegin Matrix Multiplication\n");
+  int error_count = 0;
+
+  initialize(error_count); // initialize timer and IPs
+
+  if (error_count) return XST_FAILURE;
+
+  // Initialize the input matrices with random values
+  //for(int phase = 0; phase < 2; phase++) {
+	int i,j;
+	for(i = 0; i < N; i++) {
+	  for(j = 0; j < N; j++) {
+	in_mat_a[i][j]=((float)rand())/RAND_MAX;
+	  }
+	}
+	for(i = 0; i < M; i++) {
+	  for(j = 0; j < M; j++) {
+	in_mat_b[i][j]=((float)rand())/RAND_MAX;
+	  }
+	}
+  //}
+
+  // Generate the expected result
+  // Iterate over the rows of the A matrix
+	/*
+  //for(int phase = 0; phase < 2; phase++) {
+	for(int i = 0; i < IN_A_ROWS; i++) {
+	  for(int j = 0; j < IN_B_COLS; j++) {
+	// Iterate over the columns of the B matrix
+	sw_result[i][j] = 0;
+	// Do the inner product of a row of A and col of B
+	for(int k = 0; k < IN_B_ROWS; k++) {
+	  sw_result[i][j] += in_mat_a[i][k] * in_mat_b[k][j];
+	}
+	  }
+	}
+  //}
+   */
+
+
+  Xil_DCacheFlush(); // Flush the initialized matrices from the CPU cache to DRAM
+  // The CDMA IPs are connected through incoherent ports to main memory
+
+  //for(int phase = 0; phase < 2; phase++) {
+    // Run the Vivado HLS matrix multiplier
+    obj_detector(in_mat_a, in_mat_b, hw_result);
+
+    // Invalidate the hw_result matrix range so the CPU reads from main memory
+    Xil_DCacheInvalidateRange((u32)&(hw_result),(N-M+1)*(N-M+1)*sizeof(float));
+    // Print product matrix
+    for (int i = 0; i < N-M+1; i++) {
+      for (int j = 0; j < N-M+1; j++) {
+	// Check result of HLS vs. expected
+	if (!nearlyEqual(hw_result[i][j], sw_result[i][j])) {
+	  printf("Phase: \tRes[%d][%d]\tHW: %0.2f\tSW: %0.2f\n",i,j,hw_result[i][j],sw_result[i][j]);
+	  error_count++;
+	}
+      }
+    }
+  //}
+
+  if (error_count)
+    printf("TEST FAIL: %d Results do not match!\n", error_count);
+  else
+    printf("Test passed!\n");
+
+  return error_count;
+}
+
+void obj_detector(
+		 mat_a a[N][N],
+		 mat_b b[M][M],
+		 mat_conv conv[N-M+1][N-M+1]
+		)
+{
+	// Write to the Matrix Mult IP 'phase' configuration register
+	//XMatrix_mult_Set_phase(&matrix_mult_dev, (u32)phase);
+	mat_a a_orig[N][N] = {55};
+	mat_a a1[N][N];
+	//mat_a *temp;
+
+	printf("Before: %f\n", a_orig[0][0]);
+	//temp = (mat_a*)(BRAM_A_ID);
+	//*temp = a[0][0];
+	//a1[0][0] = *temp;
+	XAxiCdma_SimpleTransfer(&cdma_dev_a, (u32)&(a_orig[0]), (u32)(BRAM_A_ID), N*N*sizeof(float), NULL, NULL);
+	while (XAxiCdma_IsBusy(&cdma_dev_a));
+	XAxiCdma_SimpleTransfer(&cdma_dev_a, (u32)(BRAM_A_ID), (u32)&(a1[0]), N*N*sizeof(float), NULL, NULL);
+	while (XAxiCdma_IsBusy(&cdma_dev_a));
+	printf("After: %f\n", a1[0][0]);
+
+	// Transfer the a and b matrices from DRAM to BRAM
+	// Pointer arithmatic and indexing done here for transfers
+	XAxiCdma_SimpleTransfer(&cdma_dev_a, (u32)&(a), (u32)(BRAM_A_ID), N*N*sizeof(float), NULL, NULL);
+	XAxiCdma_SimpleTransfer(&cdma_dev_b, (u32)&(b), (u32)(BRAM_B_ID), M*M*sizeof(float), NULL, NULL);
+	while (XAxiCdma_IsBusy(&cdma_dev_b) || XAxiCdma_IsBusy(&cdma_dev_a));
+
+	// Issue Start signal to the Matrix Mult IP
+	XObj_detector_Start(&obj_detector_dev);
+	// Spin check the Done signal from the Matrix Mult IP
+	while (!XObj_detector_IsDone(&obj_detector_dev));
+
+	// Transfer the product matrix from BRAM to DRAM
+	XAxiCdma_SimpleTransfer(&cdma_dev_conv, (u32)(BRAM_CONV_ID), (u32)&(hw_result), (N-M+1)*(N-M+1)*sizeof(float), NULL, NULL);
+	printf("%f\n", hw_result[0][0]);
+}
+
+bool nearlyEqual(float a, float b) {
+  // The Floating Point Guide, http://floating-point-gui.de/errors/comparison/
+  float absA = abs(a);
+  float absB = abs(b);
+  float diff = abs(a - b);
+
+  if (a == b) { // shortcut, handles infinities
+    return true;
+  } else if (a == 0 || b == 0 || diff < FLT_MIN) {
+    // a or b is zero or both are extremely close to it
+    // relative error is less meaningful here
+    return diff < (EPSILON * FLT_MIN);
+  } else { // use relative error
+    return diff / fmin((absA + absB), FLT_MAX) < EPSILON;
+  }
+}
+
+void initialize(int &error) {
+    *TIMER_CONFIG_PTR = 0x00000003;
+	*TIMER_PTR = UINT_MAX; //count down from max amount
+
+	obj_detector_config = XObj_detector_LookupConfig(OBJ_DETECTOR_ID);
+	int status = XObj_detector_CfgInitialize(&obj_detector_dev,obj_detector_config);
+	if(status !=XST_SUCCESS){
+		printf("ERROR: Matrix_mult Setup Failed\n");
+		error++;
+	}
+	cdma_config_a = XAxiCdma_LookupConfig(CDMA_A_ID);
+	status = XAxiCdma_CfgInitialize(&cdma_dev_a,cdma_config_a,CDMA_A_BASE);
+	if(status !=XST_SUCCESS){
+		printf("ERROR: CDMA A Setup Failed\n");
+		error++;
+	}
+	cdma_config_b = XAxiCdma_LookupConfig(CDMA_B_ID);
+	status = XAxiCdma_CfgInitialize(&cdma_dev_b,cdma_config_b,CDMA_B_BASE);
+	if(status !=XST_SUCCESS){
+		printf("ERROR: CDMA B Setup Failed\n");
+		error++;
+	}
+	cdma_config_conv = XAxiCdma_LookupConfig(CDMA_CONV_ID);
+	status = XAxiCdma_CfgInitialize(&cdma_dev_conv,cdma_config_conv,CDMA_CONV_BASE);
+	if(status !=XST_SUCCESS){
+		printf("ERROR: CDMA PROD Setup Failed\n");
+		error++;
+	}
+}

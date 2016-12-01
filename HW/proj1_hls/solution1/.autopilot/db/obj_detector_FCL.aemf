@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1480493988318">
+  <ports id="1" name="inp" type="PortType" originalName="inp" coreName="RAM" bitwidth="32" iftype="IfTypeRegister" arraysize="864">
+    <dataOutputObjs>load</dataOutputObjs>
+  </ports>
+  <ports id="2" name="W" type="PortType" originalName="W" coreName="RAM" bitwidth="32" iftype="IfTypeRegister" arraysize="1728">
+    <dataOutputObjs>load</dataOutputObjs>
+  </ports>
+  <ports id="3" name="W_offset" type="PortType" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="13" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="36" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="37" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="42" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="45" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="46" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="47" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="50" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="51" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="52" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="53" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="56" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="60" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="61" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="70" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="77" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="80" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="121" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="122" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="123" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="124" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges source_obj="//@blocks.1/@node_objs.0" sink_obj="//@ports.3"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="-1" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <blocks id="8" name="block_8" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_14</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="W_offset_read" bitwidth="1" opcode="read">
+      <dataInputObjs>W_offset</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="tmp_16_cast" lineNumber="136" fileName="proj1_hls/obj_detector.cpp" fileDirectory=".." rtlName="tmp_16_cast_fu_110_p3" contextFuncName="FCL" bitwidth="11" opcode="select">
+      <inlineStackInfo fileName="proj1_hls/obj_detector.cpp" linenumber="136" fileDirectory="c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects" functionName="FCL"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="node_7" lineNumber="135" fileName="proj1_hls/obj_detector.cpp" fileDirectory=".." contextFuncName="FCL" opcode="br">
+      <inlineStackInfo fileName="proj1_hls/obj_detector.cpp" linenumber="135" fileDirectory="c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects" functionName="FCL"/>
+      <controlInputObjs>block_14</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="proj1_hls/obj_detector.cpp">
+      <validLinenumbers>136</validLinenumbers>
+      <validLinenumbers>135</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="33" name="block_33" type="BlockType">
+    <controlInputObjs>block_14</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="node_32" lineNumber="138" fileName="proj1_hls/obj_detector.cpp" fileDirectory=".." contextFuncName="FCL" opcode="ret" nodeLabel="2">
+      <inlineStackInfo fileName="proj1_hls/obj_detector.cpp" linenumber="138" fileDirectory="c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects" functionName="FCL"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>ap_return</dataOutputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="proj1_hls/obj_detector.cpp">
+      <validLinenumbers>138</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="5" typeName="Pipeline" id="143" pipe_depth="10" RegionName="FCL_label8">
+    <basic_blocks id="14" name="block_14" type="BlockType">
+      <controlInputObjs>block_8</controlInputObjs>
+      <controlInputObjs>block_31</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_33</controlOutputObjs>
+      <controlOutputObjs>block_31</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="out" originalName="out" bitwidth="32" opcode="phi" nodeLabel="1">
+        <dataInputObjs>fadd</dataInputObjs>
+        <dataOutputObjs>fadd</dataOutputObjs>
+        <dataOutputObjs>ret</dataOutputObjs>
+        <controlInputObjs>block_8</controlInputObjs>
+        <controlInputObjs>block_31</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i" originalName="i" bitwidth="10" opcode="phi" nodeLabel="1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>block_8</controlInputObjs>
+        <controlInputObjs>block_31</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="exitcond" lineNumber="135" fileName="proj1_hls/obj_detector.cpp" fileDirectory=".." rtlName="exitcond_fu_118_p2" contextFuncName="FCL" bitwidth="1" opcode="icmp" nodeLabel="1">
+        <inlineStackInfo fileName="proj1_hls/obj_detector.cpp" linenumber="135" fileDirectory="c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects" functionName="FCL"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="i_5" lineNumber="135" originalName="i" fileName="proj1_hls/obj_detector.cpp" fileDirectory=".." rtlName="i_5_fu_124_p2" contextFuncName="FCL" bitwidth="10" opcode="add" nodeLabel="1">
+        <inlineStackInfo fileName="proj1_hls/obj_detector.cpp" linenumber="135" fileDirectory="c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects" functionName="FCL"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="node_13" lineNumber="135" fileName="proj1_hls/obj_detector.cpp" fileDirectory=".." contextFuncName="FCL" opcode="br" nodeLabel="1">
+        <inlineStackInfo fileName="proj1_hls/obj_detector.cpp" linenumber="135" fileDirectory="c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects" functionName="FCL"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>block_31</controlInputObjs>
+        <controlInputObjs>block_33</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="proj1_hls/obj_detector.cpp">
+        <validLinenumbers>135</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="31" name="block_31" type="BlockType">
+      <controlInputObjs>block_14</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_14</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="inp_load" lineNumber="136" fileName="proj1_hls/obj_detector.cpp" fileDirectory=".." contextFuncName="FCL" bitwidth="32" opcode="load" nodeLabel="1" nodeLatency="1">
+        <inlineStackInfo fileName="proj1_hls/obj_detector.cpp" linenumber="136" fileDirectory="c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects" functionName="FCL"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>inp</dataInputObjs>
+        <dataOutputObjs>fmul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="p_addr1" lineNumber="136" fileName="proj1_hls/obj_detector.cpp" fileDirectory=".." rtlName="p_addr1_fu_139_p2" contextFuncName="FCL" bitwidth="11" opcode="add" nodeLabel="1">
+        <inlineStackInfo fileName="proj1_hls/obj_detector.cpp" linenumber="136" fileDirectory="c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects" functionName="FCL"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="W_load" lineNumber="136" fileName="proj1_hls/obj_detector.cpp" fileDirectory=".." contextFuncName="FCL" bitwidth="32" opcode="load" nodeLabel="1" nodeLatency="1">
+        <inlineStackInfo fileName="proj1_hls/obj_detector.cpp" linenumber="136" fileDirectory="c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects" functionName="FCL"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>W</dataInputObjs>
+        <dataOutputObjs>fmul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_s" lineNumber="136" fileName="proj1_hls/obj_detector.cpp" fileDirectory=".." rtlName="obj_detector_fmul_32ns_32ns_32_4_max_dsp_U49" contextFuncName="FCL" bitwidth="32" opcode="fmul" nodeLabel="2" nodeLatency="3">
+        <inlineStackInfo fileName="proj1_hls/obj_detector.cpp" linenumber="136" fileDirectory="c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects" functionName="FCL"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>fadd</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="out_1" lineNumber="136" originalName="out" fileName="proj1_hls/obj_detector.cpp" fileDirectory=".." rtlName="obj_detector_fadd_32ns_32ns_32_5_full_dsp_U48" contextFuncName="FCL" bitwidth="32" opcode="fadd" nodeLabel="6" nodeLatency="4">
+        <inlineStackInfo fileName="proj1_hls/obj_detector.cpp" linenumber="136" fileDirectory="c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects" functionName="FCL"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>fmul</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="node_30" lineNumber="135" fileName="proj1_hls/obj_detector.cpp" fileDirectory=".." contextFuncName="FCL" opcode="br" nodeLabel="10">
+        <inlineStackInfo fileName="proj1_hls/obj_detector.cpp" linenumber="135" fileDirectory="c:/Users/sunny/Google_Drive/CMU/Courses/CMU/18643/vivado_projects" functionName="FCL"/>
+        <controlInputObjs>block_14</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="proj1_hls/obj_detector.cpp">
+        <validLinenumbers>136</validLinenumbers>
+        <validLinenumbers>135</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <regnodes realName="inp_addr_reg_163">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_16_cast_reg_149">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_88">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="out_reg_76">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="out_1_reg_188">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="W_addr_reg_168">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="W_load_reg_178">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="i_5_reg_158">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="inp_load_reg_173">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_s_reg_183">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="exitcond_reg_154">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <expressionNodes realName="exitcond_fu_118">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_92">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_phi_fu_80">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="W_addr_gep_fu_64">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_16_fu_144">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="inp_addr_gep_fu_52">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_16_cast_fu_110">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_5_fu_124">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr1_fu_139">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_130">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_trn_cast_fu_135">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_104">
+    <nodeIds>27</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_99">
+    <nodeIds>28</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="W_offset_read_read_fu_46">
+    <nodeIds>5</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="W">
+    <nodeIds>26</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="inp">
+    <nodeIds>21</nodeIds>
+  </memoryPorts>
+  <ioPorts name="W(p0)">
+    <contents name="load">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="W_offset">
+    <contents name="read">
+      <nodeIds>5</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="inp(p0)">
+    <contents name="load">
+      <nodeIds>21</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="2" latency="2"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="21" stage="1" latency="2"/>
+      <operations id="26" stage="1" latency="2"/>
+      <operations id="27" stage="4" latency="4"/>
+    </states>
+    <states id="4">
+      <operations id="27" stage="3" latency="4"/>
+    </states>
+    <states id="5">
+      <operations id="27" stage="2" latency="4"/>
+    </states>
+    <states id="6">
+      <operations id="27" stage="1" latency="4"/>
+    </states>
+    <states id="7">
+      <operations id="28" stage="5" latency="5"/>
+    </states>
+    <states id="8">
+      <operations id="28" stage="4" latency="5"/>
+    </states>
+    <states id="9">
+      <operations id="28" stage="3" latency="5"/>
+    </states>
+    <states id="10">
+      <operations id="28" stage="2" latency="5"/>
+    </states>
+    <states id="11">
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="5"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+    </states>
+    <states id="12">
+      <operations id="32" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="28"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="44"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="45"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="46"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="47"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="48"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="49"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="50"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="51"/>
+    </transitions>
+    <transitions inState="11" outState="2">
+      <condition id="52"/>
+    </transitions>
+    <transitions inState="2" outState="12">
+      <condition id="43"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="53"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="obj_detector_FCL" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4326" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>8</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="FCL_label8" mII="5" mDepth="10" mMinTripCount="864" mMaxTripCount="864" mMinLatency="4324" mMaxLatency="-1" mType="1">
+      <basicBlocks>14</basicBlocks>
+      <basicBlocks>31</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>33</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

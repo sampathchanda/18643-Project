@@ -1,0 +1,56 @@
+07:21:56 **** Incremental Build of configuration Debug for project matrix_mult ****
+make all 
+'Building target: matrix_mult.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../matrix_mult_bsp/ps7_cortexa9_0/lib -o "matrix_mult.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2015.2/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/bin/ld.exe: warning: cannot find entry symbol _vector_table; defaulting to 00100000
+./src/main.o: In function `main':
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:121: undefined reference to `XTime_SetTime'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:122: undefined reference to `Xil_DCacheFlush'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:133: undefined reference to `XTime_GetTime'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:137: undefined reference to `Xil_DCacheFlush'
+./src/main.o: In function `matrix_mult(float (*) [1024][1024], float (*) [1024][1024], float (*) [1024][1024], int)':
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:168: undefined reference to `XMatrix_mult_Set_phase'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:179: undefined reference to `XAxiCdma_SimpleTransfer'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:180: undefined reference to `XAxiCdma_SimpleTransfer'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:181: undefined reference to `XAxiCdma_IsBusy'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:181: undefined reference to `XAxiCdma_IsBusy'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:185: undefined reference to `XMatrix_mult_Start'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:187: undefined reference to `XMatrix_mult_IsDone'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:192: undefined reference to `XAxiCdma_SimpleTransfer'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:193: undefined reference to `XAxiCdma_IsBusy'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:196: undefined reference to `Xil_DCacheInvalidateRange'
+./src/main.o: In function `initialize(int&)':
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:233: undefined reference to `XMatrix_mult_LookupConfig'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:234: undefined reference to `XMatrix_mult_CfgInitialize'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:239: undefined reference to `XAxiCdma_LookupConfig'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:240: undefined reference to `XAxiCdma_CfgInitialize'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:245: undefined reference to `XAxiCdma_LookupConfig'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:246: undefined reference to `XAxiCdma_CfgInitialize'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:251: undefined reference to `XAxiCdma_LookupConfig'
+C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.sdk\matrix_mult\Debug/../src/main.cpp:252: undefined reference to `XAxiCdma_CfgInitialize'
+c:/xilinx/sdk/2015.2/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/lib\libc.a(lib_a-abort.o): In function `abort':
+abort.c:(.text+0x10): undefined reference to `_exit'
+c:/xilinx/sdk/2015.2/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/lib\libc.a(lib_a-signalr.o): In function `_kill_r':
+signalr.c:(.text+0x20): undefined reference to `_kill'
+c:/xilinx/sdk/2015.2/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/lib\libc.a(lib_a-signalr.o): In function `_getpid_r':
+signalr.c:(.text+0x3c): undefined reference to `_getpid'
+c:/xilinx/sdk/2015.2/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/lib\libc.a(lib_a-sbrkr.o): In function `_sbrk_r':
+sbrkr.c:(.text+0x1c): undefined reference to `_sbrk'
+c:/xilinx/sdk/2015.2/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/lib\libc.a(lib_a-writer.o): In function `_write_r':
+writer.c:(.text+0x24): undefined reference to `_write'
+c:/xilinx/sdk/2015.2/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/lib\libc.a(lib_a-closer.o): In function `_close_r':
+closer.c:(.text+0x1c): undefined reference to `_close'
+c:/xilinx/sdk/2015.2/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/lib\libc.a(lib_a-fstatr.o): In function `_fstat_r':
+fstatr.c:(.text+0x20): undefined reference to `_fstat'
+c:/xilinx/sdk/2015.2/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/lib\libc.a(lib_a-isattyr.o): In function `_isatty_r':
+isattyr.c:(.text+0x1c): undefined reference to `_isatty'
+c:/xilinx/sdk/2015.2/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/lib\libc.a(lib_a-lseekr.o): In function `_lseek_r':
+lseekr.c:(.text+0x24): undefined reference to `_lseek'
+c:/xilinx/sdk/2015.2/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/lib\libc.a(lib_a-readr.o): In function `_read_r':
+readr.c:(.text+0x24): undefined reference to `_read'
+collect2.exe: error: ld returned 1 exit status
+make: *** [matrix_mult.elf] Error 1
+
+07:21:58 Build Finished (took 1s.460ms)
+

@@ -1,0 +1,766 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 8760
+
+Current time: 	10/28/16 5:02:35 AM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 1
+
+Screen size: 1280x800
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	sunny
+User directory: C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: C:/Users/sunny/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/sunny/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	122 MB
+GUI max memory:		3,066 MB
+Engine allocated memory: 342 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 55) elapsed time: 10s
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\sunny\GDrive\CMU\Courses\CMU\18643\Labs\Lab3\H05-lab3\H05-lab3\project_1.xpr. Version: Vivado v2015.2 
+// [GUI Memory]: 45 MB (+44466kb) [00:00:14]
+// [Engine Memory]: 341 MB (+206391kb) [00:00:14]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 346 MB. GUI used memory: 27 MB. Current time: 10/28/16 5:02:37 AM EDT
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// [Engine Memory]: 400 MB (+43827kb) [00:00:25]
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 444 MB. GUI used memory: 29 MB. Current time: 10/28/16 5:02:55 AM EDT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 50 MB (+3180kb) [00:00:36]
+// [Engine Memory]: 463 MB (+44705kb) [00:00:36]
+// [Engine Memory]: 505 MB (+19985kb) [00:00:39]
+// [GUI Memory]: 70 MB (+18271kb) [00:00:41]
+// [GUI Memory]: 79 MB (+6169kb) [00:00:44]
+// [GUI Memory]: 87 MB (+3254kb) [00:00:47]
+// [Engine Memory]: 531 MB (+523kb) [00:00:47]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/lab2-opt/mmm1/mmm1/solution1/impl/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 545 MB. GUI used memory: 42 MB. Current time: 10/28/16 5:03:12 AM EDT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_1; location: C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3; part: xc7z020clg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 583.375 ; gain = 175.809 
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// cp:P (cl:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// [Engine Memory]: 572 MB (+15666kb) [00:01:02]
+// Tcl Message: open_bd_design {C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M Adding component instance block -- xilinx.com:hls:matrix_mult:1.0 - matrix_mult_0 Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0 Adding component instance block -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0 Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.2 - blk_mem_gen_0 Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_pc_0  
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 624 MB (+23750kb) [00:01:06]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Successfully read diagram <design_1> from BD file <C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 72 MB. Current time: 10/28/16 5:03:35 AM EDT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: INFO: [BD 41-433]  Design successfully migrated to use XCI files... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: Wrote  : <C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/design_1.bd>  
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 676.887 ; gain = 88.164 
+// [GUI Memory]: 96 MB (+5190kb) [00:01:23]
+// 'bb' command handler elapsed time: 23 seconds
+// Elapsed time: 23 seconds
+dismissDialog("Open Block Design"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 658 MB (+3710kb) [00:01:25]
+// Elapsed time: 25 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "matr"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Matrix_mult", 1, "Matrix_mult", 0, false); // O:av (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Matrix_mult", 1, "Matrix_mult", 0, false, false, false, false, false, true); // O:av (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// cp:P (cl:JFrame):  Add IP : addNotify
+// Tcl Message: startgroup 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:hls:matrix_mult:1.0 matrix_mult_1 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 672 MB. GUI used memory: 48 MB. Current time: 10/28/16 5:04:23 AM EDT
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // i:l (JPanel:JComponent, cl:JFrame)
+// t:ag (cl:JFrame): Run Connection Automation: addNotify
+// PAPropertyPanels.initPanels (s_axi_control) elapsed time: 0.3s
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (1 out of 4 selected), matrix_mult_1, s_axi_control]", 5, false, true, ui.utils.TriState.True); // H:a (JViewport:JComponent, t:ag)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, t:ag)
+dismissDialog("Run Connection Automation"); // t:ag (cl:JFrame)
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 770 167} [get_bd_cells matrix_mult_1] 
+// Elapsed time: 12 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // V:P (Workspace:JPanel, cl:JFrame)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net -net [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_pins matrix_mult_1/ap_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] 
+// PAPropertyPanels.initPanels (processing_system7_0_FCLK_CLK0) elapsed time: 0.4s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net -net [get_bd_nets rst_processing_system7_0_100M_peripheral_aresetn] [get_bd_pins matrix_mult_1/ap_rst_n] [get_bd_pins rst_processing_system7_0_100M/peripheral_aresetn] 
+// Elapsed time: 46 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 339, 285, 1033, 595, false, false, false, true, false); // ex:aK (TdiGroup:JideTabbedPane, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M01_AXI] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins matrix_mult_1/s_axi_control] -boundary_type upper [get_bd_intf_pins processing_system7_0_axi_periph/M01_AXI] 
+// Elapsed time: 13 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 650, 38, 1033, 595, false, false, false, true, false); // ex:aK (TdiGroup:JideTabbedPane, cl:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets matrix_mult_0_a_PORTA] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins matrix_mult_1/a_PORTA] -boundary_type upper [get_bd_intf_pins hier_bram_0/BRAM_PORTB] 
+// Elapsed time: 10 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 596, 297, 1033, 595, false, false, false, true, false); // ex:aK (TdiGroup:JideTabbedPane, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 101 MB (+248kb) [00:03:44]
+// Tcl Message: delete_bd_objs [get_bd_intf_nets matrix_mult_0_b_PORTA] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins matrix_mult_0/b_PORTA] -boundary_type upper [get_bd_intf_pins hier_bram_1/BRAM_PORTB] 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 590, 314, 1033, 595, false, false, false, true, false); // ex:aK (TdiGroup:JideTabbedPane, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets matrix_mult_0_prod_PORTA] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins matrix_mult_0/prod_PORTA] -boundary_type upper [get_bd_intf_pins hier_bram_2/BRAM_PORTB] 
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// ap:bI (cl:JFrame): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:bI)
+// aR:ah (cl:JFrame): Save Project: addNotify
+dismissDialog("Run Synthesis"); // ap:bI (cl:JFrame)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aR:ah)
+// cp:P (cl:JFrame):  Save Constraints : addNotify
+dismissDialog("Save Project"); // aR:ah (cl:JFrame)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/design_1.bd>  
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cp:P (cl:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: launch_runs synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Oct 28 05:06:38 2016] Launched synth_1... Run output will be captured here: C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.runs/synth_1/runme.log 
+// 'm' command handler elapsed time: 14 seconds
+// TclEventType: DG_UPDATE_GRAPH
+// PAPropertyPanels.initPanels (matrix_mult_0) elapsed time: 19.8s
+// Elapsed time: 14 seconds
+dismissDialog("Starting Design Runs"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 78 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, cl:JFrame)
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+// Elapsed time: 48 seconds
+selectButton("PAResourceQtoS.StateMonitor_YOU_ABOUT_TO_CANCEL_YOUR_RUNNING_Delete Files", "Delete Files"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 704.813 ; gain = 0.000 
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, cl:JFrame)
+dismissDialog("Resetting Runs"); // cp:P (cl:JFrame)
+// Elapsed time: 10 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 403, 271, 1033, 348, false, false, false, true, false); // ex:aK (TdiGroup:JideTabbedPane, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets matrix_mult_0_b_PORTA] [get_bd_intf_nets matrix_mult_0_prod_PORTA] [get_bd_cells matrix_mult_0] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 694 MB (+3035kb) [00:06:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 694 MB. GUI used memory: 53 MB. Current time: 10/28/16 5:09:16 AM EDT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// aR:ah (cl:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aR:ah)
+// cp:P (cl:JFrame):  Save Constraints : addNotify
+dismissDialog("Save Project"); // aR:ah (cl:JFrame)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/design_1.bd>  
+// Tcl Message: save_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 715.184 ; gain = 2.652 
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+// cp:P (cl:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs synth_1 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// HMemoryUtils.trashcanNow. Engine heap size: 737 MB. GUI used memory: 46 MB. Current time: 10/28/16 5:09:40 AM EDT
+// [Engine Memory]: 766 MB (+39151kb) [00:07:24]
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 811 MB (+6942kb) [00:07:33]
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: INFO: [Ipptcl 7-578] No Compatible Board Interface found.Board Tab not created 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 839 MB. GUI used memory: 47 MB. Current time: 10/28/16 5:09:57 AM EDT
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 920 MB (+71415kb) [00:07:58]
+// Tcl Message: Verilog Output written to : C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/hdl/design_1.v Verilog Output written to : C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : <C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: RSB_SCRIPT_TASK
+// HMemoryUtils.trashcanNow. Engine heap size: 920 MB. GUI used memory: 46 MB. Current time: 10/28/16 5:10:20 AM EDT
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_processing_system7_0_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'design_1_axi_cdma_0_0'. Target already exists and is up to date. INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_bram_0/axi_cdma_0 . INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'design_1_axi_bram_ctrl_0_0'. Target already exists and is up to date. INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_bram_0/axi_bram_ctrl_0 . INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_blk_mem_gen_0_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc . INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_s00_mmu_0'... INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_mmu . INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_auto_pc_1'... INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_bram_0/axi_mem_intercon/m00_couplers/auto_pc . INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_auto_ds_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_bram_0/axi_mem_intercon/m01_couplers/auto_ds . INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_auto_us_0'... INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_bram_0/axi_mem_intercon/s00_couplers/auto_us . INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_auto_pc_2'... INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_bram_1/axi_mem_intercon/m00_couplers/auto_pc . INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_auto_ds_1'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/hdl/design_1.hwdef 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: Verilog Output written to : C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/hdl/design_1.v Verilog Output written to : C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v Wrote  : <C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 956 MB. GUI used memory: 53 MB. Current time: 10/28/16 5:11:20 AM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: Generated Hardware Definition File C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.srcs/sources_1/bd/design_1/hdl/design_1.hwdef [Fri Oct 28 05:11:24 2016] Launched synth_1... Run output will be captured here: C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:01:08 ; elapsed = 00:01:57 . Memory (MB): peak = 984.031 ; gain = 268.848 
+// ak:a (cl:JFrame): Launch Run Critical Messages: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 139 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, ak:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, ak:a)
+// 'm' command handler elapsed time: 141 seconds
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog("Launch Run Critical Messages"); // ak:a (cl:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 50 MB. Current time: 10/28/16 5:41:46 AM EDT
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 2933 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, Q:ap)
+dismissDialog("Synthesis Completed"); // Q:ap (cl:JFrame)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // i:l (JPanel:JComponent, cl:JFrame)
+// TclEventType: CREATE_IP_CATALOG
+// cp:P (cl:JFrame):  Refresh IP Catalog : addNotify
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/lab2-opt/mmm1/mmm1/solution1/impl/ip'. 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // cp:P (cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cp:P (cl:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Fri Oct 28 06:01:00 2016] Launched synth_1... Run output will be captured here: C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.runs/synth_1/runme.log 
+// 'm' command handler elapsed time: 7 seconds
+dismissDialog("Starting Design Runs"); // cp:P (cl:JFrame)
+// [GUI Memory]: 107 MB (+957kb) [00:59:04]
+// [GUI Memory]: 113 MB (+1046kb) [00:59:39]
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 60 MB. Current time: 10/28/16 6:11:43 AM EDT
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Synthesis Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 56 MB. Current time: 10/28/16 6:41:25 AM EDT
+// Elapsed time: 2660 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:ap)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// cp:P (cl:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Fri Oct 28 06:45:29 2016] Launched impl_1... Run output will be captured here: C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.508 ; gain = 0.000 
+// 'c' command handler elapsed time: 6 seconds
+// Elapsed time: 14 seconds
+dismissDialog("Starting Design Runs"); // cp:P (cl:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Implementation Completed: addNotify
+// Elapsed time: 504 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a:JRadioButton (JPanel:JComponent, Q:ap)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:ap)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // Q:ap (cl:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// cp:P (cl:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Fri Oct 28 06:54:12 2016] Launched impl_1... Run output will be captured here: C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.runs/impl_1/runme.log 
+// Elapsed time: 12 seconds
+dismissDialog("Generate Bitstream"); // cp:P (cl:JFrame)
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 104 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, Q:ap)
+dismissDialog("Bitstream Generation Completed"); // Q:ap (cl:JFrame)
+// Elapsed time: 113 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ab:JMenuItem (JPopupMenu:JComponent, cl:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// G:ag (cl:JFrame): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:ag)
+// Elapsed time: 23 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_BITSTREAM_OUT_OF_DATE_DO_YOU_WANT_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+// 'n' command handler elapsed time: 32 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Export Hardware"); // G:ag (cl:JFrame)
+// cp:P (cl:JFrame):  Export Hardware : addNotify
+// Tcl Message: write_hwdef -force  -file C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk/design_1_wrapper.hdf 
+dismissDialog("Export Hardware"); // cp:P (cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ab:JMenuItem (JPopupMenu:JComponent, cl:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// J:ag (cl:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, J:ag)
+dismissDialog("Launch SDK"); // J:ag (cl:JFrame)
+// cp:P (cl:JFrame):  Launch SDK : addNotify
+// Tcl Message: launch_sdk -workspace C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk -hwspec C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk -hwspec C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+dismissDialog("Launch SDK"); // cp:P (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 57 MB. Current time: 10/28/16 7:11:29 AM EDT
+// Elapsed time: 845 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ab:JMenuItem (JPopupMenu:JComponent, cl:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// J:ag (cl:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, J:ag)
+dismissDialog("Launch SDK"); // J:ag (cl:JFrame)
+// Tcl Message: launch_sdk -workspace C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk -hwspec C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk -hwspec C:/Users/sunny/GDrive/CMU/Courses/CMU/18643/Labs/Lab3/H05-lab3/H05-lab3/project_1.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 53 MB. Current time: 10/28/16 7:41:29 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 54 MB. Current time: 10/28/16 8:11:30 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 55 MB. Current time: 10/28/16 10:01:21 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 55 MB. Current time: 10/28/16 10:01:25 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 52 MB. Current time: 10/28/16 10:35:42 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 69 MB. Current time: 10/28/16 11:05:43 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 69 MB. Current time: 10/28/16 11:52:50 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 70 MB. Current time: 10/28/16 12:46:04 PM EDT
+// [GUI Memory]: 119 MB (+520kb) [08:02:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 68 MB. Current time: 10/28/16 1:16:04 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 68 MB. Current time: 10/28/16 1:46:05 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 69 MB. Current time: 10/28/16 2:16:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 69 MB. Current time: 10/28/16 2:46:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 67 MB. Current time: 10/28/16 3:16:07 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 68 MB. Current time: 10/28/16 8:27:43 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 69 MB. Current time: 10/28/16 8:57:48 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 70 MB. Current time: 10/28/16 9:27:55 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 68 MB. Current time: 10/28/16 9:58:57 PM EDT
