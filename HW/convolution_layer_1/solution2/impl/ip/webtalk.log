@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Nov 30 16:25:30 2016
+# Process ID: 2684
+# Log file: /home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution2/impl/ip/webtalk.log
+# Journal file: /home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution2/impl/ip/webtalk.jou
+#-----------------------------------------------------------
+source /home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution2/impl/ip/tmp.hw/webtalk/labtool_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1536718317 -regid "174679548_176449548_210570730_342" -xml /home/littlefoot/18643_project/Hardware-Accel/HW/convolution_lay..."
+    (file "/home/littlefoot/18643_project/Hardware-Accel/HW/convolution_layer_1/solution2/impl/ip/tmp.hw/webtalk/labtool_webtalk.tcl" line 26)
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 30 16:25:33 2016...
