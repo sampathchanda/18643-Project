@@ -40,7 +40,7 @@ void obj_detector(float A[N][N], float W0[NUM_NEURONS][M][M], float W1[NUM_CLASS
 	cost[1] = FCL(s3, W1[1]);
 
 	// Layer 6 - Softmax
-	softmax(cost, res);
+	//softmax(cost, res);
 }
 
 /*
@@ -137,7 +137,7 @@ float FCL(float inp[NUM_NEURONS*((N-M+1)/2)*((N-M+1)/2)], float W[NUM_NEURONS*((
 	}
 	return out;
 }
-
+/*
 void softmax(float inp[NUM_CLASSES], float out[NUM_CLASSES]) {
 	float sum = 0;
 		float temp[NUM_CLASSES];
@@ -155,3 +155,4 @@ void softmax(float inp[NUM_CLASSES], float out[NUM_CLASSES]) {
 			out[i] = exp(temp[i])/sum;
 		}
 }
+*/

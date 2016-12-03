@@ -748,12 +748,12 @@
 </instance>
 <instance id="xilinx.gnu.arm.exe.debug.213141985;xilinx.gnu.arm.exe.debug.213141985.;xilinx.gnu.arm.cxx.toolchain.compiler.debug.703684143;xilinx.gnu.arm.cxx.compiler.input.1063610208">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="/home/littlefoot/vivado/SDK/2015.2/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/include/c++/4.9.1"/>
-<includePath path="/home/littlefoot/vivado/SDK/2015.2/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/include/c++/4.9.1/arm-xilinx-eabi"/>
-<includePath path="/home/littlefoot/vivado/SDK/2015.2/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/include/c++/4.9.1/backward"/>
-<includePath path="/home/littlefoot/vivado/SDK/2015.2/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/include"/>
-<includePath path="/home/littlefoot/vivado/SDK/2015.2/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/include-fixed"/>
-<includePath path="/home/littlefoot/vivado/SDK/2015.2/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/include"/>
+<includePath path="c:\xilinx\sdk\2015.2\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/include/c++/4.9.1"/>
+<includePath path="c:\xilinx\sdk\2015.2\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/include/c++/4.9.1/arm-xilinx-eabi"/>
+<includePath path="c:\xilinx\sdk\2015.2\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/include/c++/4.9.1/backward"/>
+<includePath path="c:\xilinx\sdk\2015.2\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.9.1/include"/>
+<includePath path="c:\xilinx\sdk\2015.2\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.9.1/include-fixed"/>
+<includePath path="c:\xilinx\sdk\2015.2\gnu\arm\nt\bin\../lib/gcc/arm-xilinx-eabi/4.9.1/../../../../arm-xilinx-eabi/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__cplusplus=199711L"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>

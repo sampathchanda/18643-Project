@@ -33,11 +33,13 @@
 #define BRAM_W1_ID 0xC4000000
 #define BRAM_RES_ID 0xC6000000
 
+
 #define CLOCKS_PER_SEC (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2)
-//CPU 32-bit timer (SCUTIMER) clocked at half the CPU frequency
+/*CPU 32-bit timer (SCUTIMER) clocked at half the CPU frequency
 unsigned int * const TIMER_LOAD_PTR = (unsigned int *)XPAR_PS7_SCUTIMER_0_BASEADDR;
 unsigned int * const TIMER_PTR = XPAR_PS7_SCUTIMER_0_BASEADDR + (unsigned int *)0x04;
 unsigned int * const TIMER_CONFIG_PTR = XPAR_PS7_SCUTIMER_0_BASEADDR + (unsigned int *)0x08;
+*/
 
 
 void obj_detector_sw(float A[N][N], float W0[NUM_NEURONS][M][M], float W1[NUM_CLASSES][NUM_NEURONS*((N-M+1)/2)*((N-M+1)/2)], float res[NUM_CLASSES]);
@@ -78,7 +80,7 @@ FIL labels;
 #define IMAGE_BYTES 28*28
 #define LABEL_BYTES 1
 
-XTime xtime;
+XTime *xtime;
 XTime x1;
 XTime x2;
 
@@ -163,8 +165,8 @@ int main() {
   	  // Run the Vivado HLS matrix multiplier
   	  obj_detector(in_mat_a, in_mat_w0, in_mat_w1, hw_result);
   }
-  XTime_GetTime(&xtime);
-  float elapsed_time = ((double)(xtime)/CLOCKS_PER_SEC);
+  XTime_GetTime(xtime);
+  float elapsed_time = ((double)(*xtime)/CLOCKS_PER_SEC);
   printf("execution time for 10 images = %f\n", elapsed_time);
 
   Xil_DCacheInvalidate();
@@ -222,8 +224,8 @@ bool nearlyEqual(float a, float b) {
 }
 
 void initialize(int &error) {
-    *TIMER_CONFIG_PTR = 0x00000003;
-	*TIMER_PTR = UINT_MAX; //count down from max amount
+    //*TIMER_CONFIG_PTR = 0x00000003;
+	//*TIMER_PTR = UINT_MAX; //count down from max amount
 
 	obj_detector_config = XObj_detector_LookupConfig(OBJ_DETECTOR_ID);
 	int status = XObj_detector_CfgInitialize(&obj_detector_dev,obj_detector_config);

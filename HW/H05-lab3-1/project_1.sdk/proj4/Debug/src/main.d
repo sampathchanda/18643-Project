@@ -18,13 +18,13 @@ src/main.o src/main.d: ../src/main.cpp \
  ../../proj4_bsp/ps7_cortexa9_0/include/xil_cache.h \
  ../../proj4_bsp/ps7_cortexa9_0/include/xobj_detector.h \
  ../../proj4_bsp/ps7_cortexa9_0/include/xobj_detector_hw.h \
- /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include/ff.h \
+ C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\H05-lab3-1\project_1.sdk\proj4_bsp\ps7_cortexa9_0\libsrc\xilffs_v3_0\src\include/ff.h \
  ../../proj4_bsp/ps7_cortexa9_0/include/xil_types.h \
- /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include/integer.h \
- /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include/ffconf.h \
+ C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\H05-lab3-1\project_1.sdk\proj4_bsp\ps7_cortexa9_0\libsrc\xilffs_v3_0\src\include/integer.h \
+ C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\H05-lab3-1\project_1.sdk\proj4_bsp\ps7_cortexa9_0\libsrc\xilffs_v3_0\src\include/ffconf.h \
  ../../proj4_bsp/ps7_cortexa9_0/include/xstatus.h \
- /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include/diskio.h \
- ../src/main.h
+ C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\H05-lab3-1\project_1.sdk\proj4_bsp\ps7_cortexa9_0\libsrc\xilffs_v3_0\src\include/diskio.h \
+ ../src/main.h ../../proj4_bsp/ps7_cortexa9_0/include/xtime_l.h
 
 ../../proj4_bsp/ps7_cortexa9_0/include/xparameters.h:
 
@@ -64,16 +64,18 @@ src/main.o src/main.d: ../src/main.cpp \
 
 ../../proj4_bsp/ps7_cortexa9_0/include/xobj_detector_hw.h:
 
-/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include/ff.h:
+C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\H05-lab3-1\project_1.sdk\proj4_bsp\ps7_cortexa9_0\libsrc\xilffs_v3_0\src\include/ff.h:
 
 ../../proj4_bsp/ps7_cortexa9_0/include/xil_types.h:
 
-/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include/integer.h:
+C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\H05-lab3-1\project_1.sdk\proj4_bsp\ps7_cortexa9_0\libsrc\xilffs_v3_0\src\include/integer.h:
 
-/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include/ffconf.h:
+C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\H05-lab3-1\project_1.sdk\proj4_bsp\ps7_cortexa9_0\libsrc\xilffs_v3_0\src\include/ffconf.h:
 
 ../../proj4_bsp/ps7_cortexa9_0/include/xstatus.h:
 
-/home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/proj4_bsp/ps7_cortexa9_0/libsrc/xilffs_v3_0/src/include/diskio.h:
+C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\H05-lab3-1\project_1.sdk\proj4_bsp\ps7_cortexa9_0\libsrc\xilffs_v3_0\src\include/diskio.h:
 
 ../src/main.h:
+
+../../proj4_bsp/ps7_cortexa9_0/include/xtime_l.h:
