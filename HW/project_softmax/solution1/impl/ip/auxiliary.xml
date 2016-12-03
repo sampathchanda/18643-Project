@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="softmax" xd:componentRef="softmax" xd:initiationInterval="207" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="inp[]" xd:originalName="inp" xd:direction="in" xd:interfaceRef="inp_PORTA" xd:busTypeRef="bram" xd:arraySize="2" xd:dataWidth="32"/>
+  <xd:arg xd:name="out[]" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_r_PORTA" xd:busTypeRef="bram" xd:arraySize="2" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="206" xd:worst-case="206" xd:average-case="206"/>
+  <xd:resourceEstimates xd:LUT="9881" xd:FF="7066" xd:BRAM="0" xd:DSP="31"/>
+</xd:acceleratorMap>

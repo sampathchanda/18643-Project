@@ -1,0 +1,186 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'softmax'" level="0">
+<item name = "Date">Fri Dec 02 17:58:48 2016
+</item>
+<item name = "Version">2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)</item>
+<item name = "Project">project_softmax</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.62, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">206, 206, 207, 207, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- softmax_label9">14, 14, 7, -, -, 2, no</column>
+<column name="- softmax_label10">34, 34, 17, -, -, 2, no</column>
+<column name="- softmax_label11">50, 50, 25, -, -, 2, no</column>
+<column name="- softmax_label12">104, 104, 52, -, -, 2, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Expression">-, -, 0, 144</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">0, 31, 6435, 9245</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 492</column>
+<column name="Register">-, -, 631, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 14, 6, 18</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="softmax_control_s_axi_U">softmax_control_s_axi, 0, 0, 36, 40</column>
+<column name="softmax_dadd_64ns_64ns_64_5_full_dsp_U4">softmax_dadd_64ns_64ns_64_5_full_dsp, 0, 3, 445, 1149</column>
+<column name="softmax_ddiv_64ns_64ns_64_31_U5">softmax_ddiv_64ns_64ns_64_31, 0, 0, 3211, 3658</column>
+<column name="softmax_dexp_64ns_64ns_64_18_full_dsp_U6">softmax_dexp_64ns_64ns_64_18_full_dsp, 0, 26, 1549, 2599</column>
+<column name="softmax_fadd_32ns_32ns_32_5_full_dsp_U0">softmax_fadd_32ns_32ns_32_5_full_dsp, 0, 2, 205, 390</column>
+<column name="softmax_fdiv_32ns_32ns_32_16_U1">softmax_fdiv_32ns_32ns_32_16, 0, 0, 761, 994</column>
+<column name="softmax_fpext_32ns_64_1_U3">softmax_fpext_32ns_64_1, 0, 0, 100, 138</column>
+<column name="softmax_fptrunc_64ns_32_1_U2">softmax_fptrunc_64ns_32_1, 0, 0, 128, 277</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_1_fu_238_p2">+, 0, 0, 2, 2, 1</column>
+<column name="i_2_fu_255_p2">+, 0, 0, 2, 2, 1</column>
+<column name="i_3_fu_290_p2">+, 0, 0, 2, 2, 1</column>
+<column name="i_4_fu_315_p2">+, 0, 0, 2, 2, 1</column>
+<column name="temp_1_1_fu_270_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="temp_1_2_fu_277_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="temp_load_1_phi_fu_325_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="temp_load_phi_fu_300_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="exitcond1_fu_284_p2">icmp, 0, 0, 2, 2, 3</column>
+<column name="exitcond2_fu_249_p2">icmp, 0, 0, 2, 2, 3</column>
+<column name="exitcond3_fu_232_p2">icmp, 0, 0, 2, 2, 3</column>
+<column name="exitcond_fu_309_p2">icmp, 0, 0, 2, 2, 3</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">224, 103, 1, 103</column>
+<column name="grp_fu_186_p0">64, 3, 64, 192</column>
+<column name="grp_fu_189_p0">32, 5, 32, 160</column>
+<column name="grp_fu_202_p1">64, 3, 64, 192</column>
+<column name="i1_reg_129">2, 2, 2, 4</column>
+<column name="i2_reg_152">2, 2, 2, 4</column>
+<column name="i3_reg_163">2, 2, 2, 4</column>
+<column name="i_reg_82">2, 2, 2, 4</column>
+<column name="inp_Addr_A_orig">32, 3, 32, 96</column>
+<column name="out_r_WEN_A">4, 2, 4, 8</column>
+<column name="sum_1_reg_140">32, 2, 32, 64</column>
+<column name="sum_reg_93">32, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">102, 0, 102, 0</column>
+<column name="i1_reg_129">2, 0, 2, 0</column>
+<column name="i2_reg_152">2, 0, 2, 0</column>
+<column name="i3_reg_163">2, 0, 2, 0</column>
+<column name="i_1_reg_342">2, 0, 2, 0</column>
+<column name="i_2_reg_360">2, 0, 2, 0</column>
+<column name="i_3_reg_389">2, 0, 2, 0</column>
+<column name="i_4_reg_402">2, 0, 2, 0</column>
+<column name="i_reg_82">2, 0, 2, 0</column>
+<column name="reg_207">32, 0, 32, 0</column>
+<column name="reg_213">64, 0, 64, 0</column>
+<column name="reg_220">64, 0, 64, 0</column>
+<column name="reg_226">32, 0, 32, 0</column>
+<column name="sum_1_reg_140">32, 0, 32, 0</column>
+<column name="sum_reg_93">32, 0, 32, 0</column>
+<column name="temp_0_s_reg_117">32, 0, 32, 0</column>
+<column name="temp_1_s_reg_105">32, 0, 32, 0</column>
+<column name="tmp_11_reg_370">1, 0, 1, 0</column>
+<column name="tmp_1_reg_394">64, 0, 64, 0</column>
+<column name="tmp_5_reg_407">64, 0, 64, 0</column>
+<column name="tmp_7_reg_412">64, 0, 64, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_control_AWVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_AWREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_AWADDR">in, 5, s_axi, control, return void</column>
+<column name="s_axi_control_WVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_WREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_WDATA">in, 32, s_axi, control, return void</column>
+<column name="s_axi_control_WSTRB">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_ARVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_ARREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_ARADDR">in, 5, s_axi, control, return void</column>
+<column name="s_axi_control_RVALID">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_RREADY">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_RDATA">out, 32, s_axi, control, return void</column>
+<column name="s_axi_control_RRESP">out, 2, s_axi, control, return void</column>
+<column name="s_axi_control_BVALID">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_BREADY">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_BRESP">out, 2, s_axi, control, return void</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, softmax, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, softmax, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, softmax, return value</column>
+<column name="inp_Addr_A">out, 32, bram, inp, array</column>
+<column name="inp_EN_A">out, 1, bram, inp, array</column>
+<column name="inp_WEN_A">out, 4, bram, inp, array</column>
+<column name="inp_Din_A">out, 32, bram, inp, array</column>
+<column name="inp_Dout_A">in, 32, bram, inp, array</column>
+<column name="inp_Clk_A">out, 1, bram, inp, array</column>
+<column name="inp_Rst_A">out, 1, bram, inp, array</column>
+<column name="out_r_Addr_A">out, 32, bram, out_r, array</column>
+<column name="out_r_EN_A">out, 1, bram, out_r, array</column>
+<column name="out_r_WEN_A">out, 4, bram, out_r, array</column>
+<column name="out_r_Din_A">out, 32, bram, out_r, array</column>
+<column name="out_r_Dout_A">in, 32, bram, out_r, array</column>
+<column name="out_r_Clk_A">out, 1, bram, out_r, array</column>
+<column name="out_r_Rst_A">out, 1, bram, out_r, array</column>
+</table>
+</item>
+</section>
+</profile>

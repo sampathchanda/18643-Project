@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="obj_detector.cpp" path="C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\obj_detector.cpp"/>
+    <originFiles name="obj_detector.h" path="C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\obj_detector.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

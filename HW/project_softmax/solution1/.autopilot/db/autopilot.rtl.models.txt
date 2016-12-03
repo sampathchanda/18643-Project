@@ -1,0 +1,9 @@
+softmax_fadd_32ns_32ns_32_5_full_dsp
+softmax_fdiv_32ns_32ns_32_16
+softmax_fptrunc_64ns_32_1
+softmax_fpext_32ns_64_1
+softmax_dadd_64ns_64ns_64_5_full_dsp
+softmax_ddiv_64ns_64ns_64_31
+softmax_dexp_64ns_64ns_64_18_full_dsp
+softmax_control_s_axi
+softmax

@@ -1,0 +1,209 @@
+
+
+================================================================
+== Vivado HLS Report for 'softmax'
+================================================================
+* Date:           Fri Dec 02 17:58:47 2016
+
+* Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
+* Project:        project_softmax
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.62|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  206|  206|  207|  207|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                   |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- softmax_label9   |   14|   14|         7|          -|          -|     2|    no    |
+        |- softmax_label10  |   34|   34|        17|          -|          -|     2|    no    |
+        |- softmax_label11  |   50|   50|        25|          -|          -|     2|    no    |
+        |- softmax_label12  |  104|  104|        52|          -|          -|     2|    no    |
+        +-------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|Expression       |        -|      -|       0|    144|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        0|     31|    6435|   9245|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    492|
+|Register         |        -|      -|     631|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|     31|    7066|   9881|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|     14|       6|     18|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------+---------------------------------------+---------+-------+------+------+
+    |                 Instance                 |                 Module                | BRAM_18K| DSP48E|  FF  |  LUT |
+    +------------------------------------------+---------------------------------------+---------+-------+------+------+
+    |softmax_control_s_axi_U                   |softmax_control_s_axi                  |        0|      0|    36|    40|
+    |softmax_dadd_64ns_64ns_64_5_full_dsp_U4   |softmax_dadd_64ns_64ns_64_5_full_dsp   |        0|      3|   445|  1149|
+    |softmax_ddiv_64ns_64ns_64_31_U5           |softmax_ddiv_64ns_64ns_64_31           |        0|      0|  3211|  3658|
+    |softmax_dexp_64ns_64ns_64_18_full_dsp_U6  |softmax_dexp_64ns_64ns_64_18_full_dsp  |        0|     26|  1549|  2599|
+    |softmax_fadd_32ns_32ns_32_5_full_dsp_U0   |softmax_fadd_32ns_32ns_32_5_full_dsp   |        0|      2|   205|   390|
+    |softmax_fdiv_32ns_32ns_32_16_U1           |softmax_fdiv_32ns_32ns_32_16           |        0|      0|   761|   994|
+    |softmax_fpext_32ns_64_1_U3                |softmax_fpext_32ns_64_1                |        0|      0|   100|   138|
+    |softmax_fptrunc_64ns_32_1_U2              |softmax_fptrunc_64ns_32_1              |        0|      0|   128|   277|
+    +------------------------------------------+---------------------------------------+---------+-------+------+------+
+    |Total                                     |                                       |        0|     31|  6435|  9245|
+    +------------------------------------------+---------------------------------------+---------+-------+------+------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |i_1_fu_238_p2              |     +    |      0|  0|   2|           2|           1|
+    |i_2_fu_255_p2              |     +    |      0|  0|   2|           2|           1|
+    |i_3_fu_290_p2              |     +    |      0|  0|   2|           2|           1|
+    |i_4_fu_315_p2              |     +    |      0|  0|   2|           2|           1|
+    |temp_1_1_fu_270_p3         |  Select  |      0|  0|  32|           1|          32|
+    |temp_1_2_fu_277_p3         |  Select  |      0|  0|  32|           1|          32|
+    |temp_load_1_phi_fu_325_p3  |  Select  |      0|  0|  32|           1|          32|
+    |temp_load_phi_fu_300_p3    |  Select  |      0|  0|  32|           1|          32|
+    |exitcond1_fu_284_p2        |   icmp   |      0|  0|   2|           2|           3|
+    |exitcond2_fu_249_p2        |   icmp   |      0|  0|   2|           2|           3|
+    |exitcond3_fu_232_p2        |   icmp   |      0|  0|   2|           2|           3|
+    |exitcond_fu_309_p2         |   icmp   |      0|  0|   2|           2|           3|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |Total                      |          |      0|  0| 144|          20|         144|
+    +---------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------+-----+-----------+-----+-----------+
+    |       Name      | LUT | Input Size| Bits| Total Bits|
+    +-----------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm        |  224|        103|    1|        103|
+    |grp_fu_186_p0    |   64|          3|   64|        192|
+    |grp_fu_189_p0    |   32|          5|   32|        160|
+    |grp_fu_202_p1    |   64|          3|   64|        192|
+    |i1_reg_129       |    2|          2|    2|          4|
+    |i2_reg_152       |    2|          2|    2|          4|
+    |i3_reg_163       |    2|          2|    2|          4|
+    |i_reg_82         |    2|          2|    2|          4|
+    |inp_Addr_A_orig  |   32|          3|   32|         96|
+    |out_r_WEN_A      |    4|          2|    4|          8|
+    |sum_1_reg_140    |   32|          2|   32|         64|
+    |sum_reg_93       |   32|          2|   32|         64|
+    +-----------------+-----+-----------+-----+-----------+
+    |Total            |  492|        131|  269|        895|
+    +-----------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------+-----+----+-----+-----------+
+    |       Name       |  FF | LUT| Bits| Const Bits|
+    +------------------+-----+----+-----+-----------+
+    |ap_CS_fsm         |  102|   0|  102|          0|
+    |i1_reg_129        |    2|   0|    2|          0|
+    |i2_reg_152        |    2|   0|    2|          0|
+    |i3_reg_163        |    2|   0|    2|          0|
+    |i_1_reg_342       |    2|   0|    2|          0|
+    |i_2_reg_360       |    2|   0|    2|          0|
+    |i_3_reg_389       |    2|   0|    2|          0|
+    |i_4_reg_402       |    2|   0|    2|          0|
+    |i_reg_82          |    2|   0|    2|          0|
+    |reg_207           |   32|   0|   32|          0|
+    |reg_213           |   64|   0|   64|          0|
+    |reg_220           |   64|   0|   64|          0|
+    |reg_226           |   32|   0|   32|          0|
+    |sum_1_reg_140     |   32|   0|   32|          0|
+    |sum_reg_93        |   32|   0|   32|          0|
+    |temp_0_s_reg_117  |   32|   0|   32|          0|
+    |temp_1_s_reg_105  |   32|   0|   32|          0|
+    |tmp_11_reg_370    |    1|   0|    1|          0|
+    |tmp_1_reg_394     |   64|   0|   64|          0|
+    |tmp_5_reg_407     |   64|   0|   64|          0|
+    |tmp_7_reg_412     |   64|   0|   64|          0|
+    +------------------+-----+----+-----+-----------+
+    |Total             |  631|   0|  631|          0|
+    +------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+--------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------------------+-----+-----+------------+--------------+--------------+
+|s_axi_control_AWVALID  |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_AWREADY  | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_AWADDR   |  in |    5|    s_axi   |    control   |  return void |
+|s_axi_control_WVALID   |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_WREADY   | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_WDATA    |  in |   32|    s_axi   |    control   |  return void |
+|s_axi_control_WSTRB    |  in |    4|    s_axi   |    control   |  return void |
+|s_axi_control_ARVALID  |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_ARREADY  | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_ARADDR   |  in |    5|    s_axi   |    control   |  return void |
+|s_axi_control_RVALID   | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_RREADY   |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_RDATA    | out |   32|    s_axi   |    control   |  return void |
+|s_axi_control_RRESP    | out |    2|    s_axi   |    control   |  return void |
+|s_axi_control_BVALID   | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_BREADY   |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_BRESP    | out |    2|    s_axi   |    control   |  return void |
+|ap_clk                 |  in |    1| ap_ctrl_hs |    softmax   | return value |
+|ap_rst_n               |  in |    1| ap_ctrl_hs |    softmax   | return value |
+|interrupt              | out |    1| ap_ctrl_hs |    softmax   | return value |
+|inp_Addr_A             | out |   32|    bram    |      inp     |     array    |
+|inp_EN_A               | out |    1|    bram    |      inp     |     array    |
+|inp_WEN_A              | out |    4|    bram    |      inp     |     array    |
+|inp_Din_A              | out |   32|    bram    |      inp     |     array    |
+|inp_Dout_A             |  in |   32|    bram    |      inp     |     array    |
+|inp_Clk_A              | out |    1|    bram    |      inp     |     array    |
+|inp_Rst_A              | out |    1|    bram    |      inp     |     array    |
+|out_r_Addr_A           | out |   32|    bram    |     out_r    |     array    |
+|out_r_EN_A             | out |    1|    bram    |     out_r    |     array    |
+|out_r_WEN_A            | out |    4|    bram    |     out_r    |     array    |
+|out_r_Din_A            | out |   32|    bram    |     out_r    |     array    |
+|out_r_Dout_A           |  in |   32|    bram    |     out_r    |     array    |
+|out_r_Clk_A            | out |    1|    bram    |     out_r    |     array    |
+|out_r_Rst_A            | out |    1|    bram    |     out_r    |     array    |
++-----------------------+-----+-----+------------+--------------+--------------+
+
