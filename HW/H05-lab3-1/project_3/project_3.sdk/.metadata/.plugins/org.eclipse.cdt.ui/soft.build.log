@@ -1,0 +1,155 @@
+00:25:07 **** Auto Build of configuration Debug for project soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../soft_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:43:1: error: unknown type name 'mat_conv'
+ mat_conv hw_result[NUM_CLASSES], sw_result[NUM_CLASSES];
+ ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:97:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("\nBegin Matrix Multiplication\n");
+   ^
+../src/helloworld.c:97:3: warning: incompatible implicit declaration of built-in function 'printf'
+../src/helloworld.c:100:3: warning: passing argument 1 of 'initialize' makes pointer from integer without a cast
+   initialize(error_count); // initialize timer and IPs
+   ^
+../src/helloworld.c:62:6: note: expected 'int *' but argument is of type 'int'
+ void initialize(int *error);
+      ^
+../src/helloworld.c:112:2: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+  for (int k=0; k<NUM_NEURONS; k++) {
+  ^
+../src/helloworld.c:112:2: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+../src/helloworld.c:122:23: error: subscripted value is neither array nor pointer nor vector
+        in_mat_w1[k][i][j]=((float)rand())/RAND_MAX;
+                       ^
+../src/helloworld.c:151:28: error: 'in_mat_b' undeclared (first use in this function)
+     obj_detector(in_mat_a, in_mat_b, hw_result);
+                            ^
+../src/helloworld.c:151:28: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:151:5: warning: passing argument 3 of 'obj_detector' from incompatible pointer type
+     obj_detector(in_mat_a, in_mat_b, hw_result);
+     ^
+../src/helloworld.c:64:6: note: expected 'float (*)[864]' but argument is of type 'int *'
+ void obj_detector(
+      ^
+../src/helloworld.c:151:5: error: too few arguments to function 'obj_detector'
+     obj_detector(in_mat_a, in_mat_b, hw_result);
+     ^
+../src/helloworld.c:64:6: note: declared here
+ void obj_detector(
+      ^
+../src/helloworld.c:156:14: error: redeclaration of 'i' with no linkage
+     for (int i = 0; i < N-M+1; i++) {
+              ^
+../src/helloworld.c:106:6: note: previous declaration of 'i' was here
+  int i,j;
+      ^
+../src/helloworld.c:156:5: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+     for (int i = 0; i < N-M+1; i++) {
+     ^
+../src/helloworld.c:157:7: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+       for (int j = 0; j < N-M+1; j++) {
+       ^
+../src/helloworld.c:159:31: error: subscripted value is neither array nor pointer nor vector
+  if (!nearlyEqual(hw_result[i][j], sw_result[i][j])) {
+                               ^
+../src/helloworld.c:159:48: error: subscripted value is neither array nor pointer nor vector
+  if (!nearlyEqual(hw_result[i][j], sw_result[i][j])) {
+                                                ^
+../src/helloworld.c:160:74: error: subscripted value is neither array nor pointer nor vector
+    printf("Phase: \tRes[%d][%d]\tHW: %0.2f\tSW: %0.2f\n",i,j,hw_result[i][j],sw_result[i][j]);
+                                                                          ^
+../src/helloworld.c:160:90: error: subscripted value is neither array nor pointer nor vector
+    printf("Phase: \tRes[%d][%d]\tHW: %0.2f\tSW: %0.2f\n",i,j,hw_result[i][j],sw_result[i][j]);
+                                                                                          ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:175:1: warning: missing braces around initializer [-Wmissing-braces]
+ float a_orig[N][N] = {56};
+ ^
+../src/helloworld.c:175:1: warning: (near initialization for 'a_orig[0]') [-Wmissing-braces]
+../src/helloworld.c:176:1: warning: missing braces around initializer [-Wmissing-braces]
+ float a1[N][N] = {3};
+ ^
+../src/helloworld.c:176:1: warning: (near initialization for 'a1[0]') [-Wmissing-braces]
+../src/helloworld.c:179:4: error: unknown type name 'mat_a'
+    mat_a a[N][N],
+    ^
+../src/helloworld.c:180:4: error: unknown type name 'mat_b'
+    mat_b b[M][M],
+    ^
+../src/helloworld.c:181:4: error: unknown type name 'mat_conv'
+    mat_conv conv[N-M+1][N-M+1]
+    ^
+../src/helloworld.c:210:2: error: expected identifier or '(' before '/' token
+ */
+  ^
+../src/helloworld.c: In function 'initialize':
+../src/helloworld.c:232:2: warning: implicit declaration of function 'XObj_detector_LookupConfig' [-Wimplicit-function-declaration]
+  obj_detector_config = XObj_detector_LookupConfig(OBJ_DETECTOR_ID);
+  ^
+../src/helloworld.c:232:51: error: 'OBJ_DETECTOR_ID' undeclared (first use in this function)
+  obj_detector_config = XObj_detector_LookupConfig(OBJ_DETECTOR_ID);
+                                                   ^
+../src/helloworld.c:233:2: warning: implicit declaration of function 'XObj_detector_CfgInitialize' [-Wimplicit-function-declaration]
+  int status = XObj_detector_CfgInitialize(&obj_detector_dev,obj_detector_config);
+  ^
+../src/helloworld.c:235:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("ERROR: Matrix_mult Setup Failed\n");
+   ^
+../src/helloworld.c:236:3: warning: value computed is not used [-Wunused-value]
+   *error++;
+   ^
+../src/helloworld.c:239:40: error: 'CDMA_A_ID' undeclared (first use in this function)
+  cdma_config_a = XAxiCdma_LookupConfig(CDMA_A_ID);
+                                        ^
+../src/helloworld.c:240:60: error: 'CDMA_A_BASE' undeclared (first use in this function)
+  status = XAxiCdma_CfgInitialize(&cdma_dev_a,cdma_config_a,CDMA_A_BASE);
+                                                            ^
+../src/helloworld.c:245:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("ERROR: CDMA A Setup Failed\n");
+   ^
+../src/helloworld.c:246:3: warning: value computed is not used [-Wunused-value]
+   *error++;
+   ^
+../src/helloworld.c:248:2: error: 'cdma_config_b' undeclared (first use in this function)
+  cdma_config_b = XAxiCdma_LookupConfig(CDMA_B_ID);
+  ^
+../src/helloworld.c:248:40: error: 'CDMA_B_ID' undeclared (first use in this function)
+  cdma_config_b = XAxiCdma_LookupConfig(CDMA_B_ID);
+                                        ^
+../src/helloworld.c:249:35: error: 'cdma_dev_b' undeclared (first use in this function)
+  status = XAxiCdma_CfgInitialize(&cdma_dev_b,cdma_config_b,CDMA_B_BASE);
+                                   ^
+../src/helloworld.c:249:60: error: 'CDMA_B_BASE' undeclared (first use in this function)
+  status = XAxiCdma_CfgInitialize(&cdma_dev_b,cdma_config_b,CDMA_B_BASE);
+                                                            ^
+../src/helloworld.c:251:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("ERROR: CDMA B Setup Failed\n");
+   ^
+../src/helloworld.c:252:3: warning: value computed is not used [-Wunused-value]
+   *error++;
+   ^
+../src/helloworld.c:254:2: error: 'cdma_config_conv' undeclared (first use in this function)
+  cdma_config_conv = XAxiCdma_LookupConfig(CDMA_CONV_ID);
+  ^
+../src/helloworld.c:254:43: error: 'CDMA_CONV_ID' undeclared (first use in this function)
+  cdma_config_conv = XAxiCdma_LookupConfig(CDMA_CONV_ID);
+                                           ^
+../src/helloworld.c:255:35: error: 'cdma_dev_conv' undeclared (first use in this function)
+  status = XAxiCdma_CfgInitialize(&cdma_dev_conv,cdma_config_conv,CDMA_CONV_BASE);
+                                   ^
+../src/helloworld.c:255:66: error: 'CDMA_CONV_BASE' undeclared (first use in this function)
+  status = XAxiCdma_CfgInitialize(&cdma_dev_conv,cdma_config_conv,CDMA_CONV_BASE);
+                                                                  ^
+../src/helloworld.c:257:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("ERROR: CDMA PROD Setup Failed\n");
+   ^
+../src/helloworld.c:258:3: warning: value computed is not used [-Wunused-value]
+   *error++;
+   ^
+make: *** [src/helloworld.o] Error 1
+
+00:25:07 Build Finished (took 508ms)
+

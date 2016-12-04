@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# 
+# Start of session at: Fri Dec 02 22:16:22 2016
+# Process ID: 9296
+# Log file: C:/Users/AraniBasu/Documents/GitHub/Reconfig-project/Hardware-Accel/HW/H05-lab3-1/project_3/project_3.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/AraniBasu/Documents/GitHub/Reconfig-project/Hardware-Accel/HW/H05-lab3-1/project_3/project_3.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
