@@ -2,6 +2,9 @@
     <downStreamTool>
         <DownStreamTool name=""/>
     </downStreamTool>
+    <clockList>
+        <clock default="false" name="default" period="20"/>
+    </clockList>
     <config>
         <schedule model="obj_detector"/>
     </config>
@@ -64,8 +67,5 @@
         <library name="DefaultPlatform" value="xilinx/zynq/zynq"/>
         <library name="DefaultPlatform" value="xilinx/zynq/zynq_fpv6"/>
     </libraryList>
-    <clockList>
-        <clock name="default" default="false" period="20"/>
-    </clockList>
 </solution>
 

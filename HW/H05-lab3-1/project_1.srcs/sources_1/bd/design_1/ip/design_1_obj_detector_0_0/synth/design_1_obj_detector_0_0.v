@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:obj_detector:1.0
-// IP Revision: 1611290133
+// IP Revision: 1612040919
 
 (* X_CORE_INFO = "obj_detector,Vivado 2015.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_obj_detector_0_0,obj_detector,{}" *)
-(* CORE_GENERATION_INFO = "design_1_obj_detector_0_0,obj_detector,{x_ipProduct=Vivado 2015.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=obj_detector,x_ipVersion=1.0,x_ipCoreRevision=1611290133,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_ADDR_WIDTH=5,C_S_AXI_CONTROL_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "design_1_obj_detector_0_0,obj_detector,{x_ipProduct=Vivado 2015.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=obj_detector,x_ipVersion=1.0,x_ipCoreRevision=1612040919,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_ADDR_WIDTH=5,C_S_AXI_CONTROL_DATA_WIDTH=32}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_obj_detector_0_0 (
   s_axi_control_AWADDR,

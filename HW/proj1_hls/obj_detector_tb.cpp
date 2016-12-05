@@ -1,9 +1,11 @@
 #include <iostream>
+#include <ctime>
 #include <cstdlib>
 #include <cfloat>
-#include <math.h>
+#include <cmath>
 #include "obj_detector.h"
 #include <stdio.h>
+#include <fstream>
 
 using namespace std;
 
@@ -30,7 +32,7 @@ bool nearlyEqual(float a, float b) {
     // relative error is less meaningful here
     return diff < (EPSILON * FLT_MIN);
   } else { // use relative error
-    return diff / fmin((absA + absB), FLT_MAX) < EPSILON;
+    return diff / min((absA + absB), FLT_MAX) < EPSILON;
   }
 }
 
@@ -43,7 +45,12 @@ int main(int argc, char **argv)
   //mat_b res[NUM_CLASSES];
   mat_conv hw_result[NUM_CLASSES], sw_result[NUM_CLASSES];
 
-  int image[N*N] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,77,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,169,250,251,31,0,0,0,0,0,0,0,19,134,248,248,248,174,0,0,0,0,0,0,0,0,0,0,169,253,253,210,18,0,0,0,0,0,0,78,200,253,253,253,253,253,118,0,0,0,0,0,0,0,0,116,253,253,210,25,0,0,0,0,0,25,198,248,253,253,253,253,253,253,123,0,0,0,0,0,0,0,0,125,253,253,32,0,0,0,0,0,176,234,253,253,253,173,25,43,253,253,123,0,0,0,0,0,0,0,0,171,253,213,12,0,0,0,76,128,246,253,253,189,141,12,0,20,253,253,123,0,0,0,0,0,0,0,0,255,253,142,0,0,0,117,247,253,253,233,141,12,0,0,0,20,253,253,166,0,0,0,0,0,0,0,0,255,253,176,6,122,209,247,253,253,159,35,0,0,0,0,0,20,253,253,253,0,0,0,0,0,0,0,0,150,253,253,206,248,253,253,231,144,12,0,0,0,0,0,0,20,253,253,253,0,0,0,0,0,0,0,0,93,218,253,253,253,253,198,63,0,0,0,0,0,0,0,0,5,168,253,253,0,0,0,0,0,0,0,0,0,30,122,140,65,65,10,0,0,0,0,0,0,0,0,0,0,143,253,155,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,166,253,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,253,253,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,253,249,41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,253,247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,253,247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,253,169,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,253,117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,147,253,117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,123,57,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+  ifstream image0;
+  ifstream image1;
+  clock_t start, end;
+
+  image0.open("images0.bin", ios::binary | ios::in);
+  image1.open("images1.bin", ios::binary | ios::in);
 
   float in_mat_w0[NUM_NEURONS][M][M] = {
   		{
@@ -1835,35 +1842,50 @@ int main(int argc, char **argv)
   int error_count = 0;
 
   int i, j, k, l, x, y;
+  unsigned char t;
+  start = std::clock();
+  for(int loop = 0; loop < 20; loop++) {
+	  for(i = 0; i < N; i++) {
+		  for(j = 0; j < N; j++) {
+			  //in_mat_a9[i][j]=((mat_a)rand())/RAND_MAX;
+			  image0.read((char *)(&t), 1);
+			  in_mat_a[i][j]= t;
+//			  cout << in_mat_a[i][j] << " " ;
+		  }
+//		  cout << "\n";
+	  }
 
-  for(i = 0; i < N; i++) {
-	  for(j = 0; j < N; j++) {
-    	  //in_mat_a[i][j]=((mat_a)rand())/RAND_MAX;
-    	  in_mat_a[i][j]=image[i * N + j];
-    	  //cout << in_mat_a[i][j] << " " ;
-      }
-	  //cout << "\n";
-    }
 
-  /*
-  // Generate the expected result
-  // Iterate over the rows of the A matrix
-	for (i=M/2; i< N-(M/2); i++) {
-		for (j=M/2; j<N-(M/2); j++) {
-			for (k=0; k<M; k++) {
-				for (l=0; l<M; l++) {
-					x = i-M/2 + k;
-					y = j-M/2 + l;
-					// printf("%d %d\n", A[x][y], B[k][l]);
-					sw_result[i-M/2][j-M/2] = in_mat_a[x][y] * in_mat_b[k][l];
-					//cout << sw_result[i-M/2][i-M/2] << " ";
-				}
-			}
-		}
-		//cout << "\n";
-	}
-	*/
-  obj_detector_sw(in_mat_a, in_mat_w0, in_mat_w1, sw_result);
+  	  obj_detector_sw(in_mat_a, in_mat_w0, in_mat_w1, sw_result);
+  	  for(int k = 0; k < NUM_CLASSES; k++) {
+  		  cout << sw_result[k] << " ";
+  	  }
+  	cout << "  |\n";
+  }
+
+  for(int loop = 0; loop < 20; loop++) {
+	  for(i = 0; i < N; i++) {
+		  for(j = 0; j < N; j++) {
+			  //in_mat_a9[i][j]=((mat_a)rand())/RAND_MAX;
+			  image1.read((char *)(&t), 1);
+			  in_mat_a[i][j]= t;
+//			  cout << in_mat_a[i][j] << " " ;
+		  }
+		  //cout << "\n";
+	  }
+
+
+  	  obj_detector_sw(in_mat_a, in_mat_w0, in_mat_w1, sw_result);
+  	  for(int k = 0; k < NUM_CLASSES; k++) {
+ 		  cout << sw_result[k] << " ";
+  	  }
+  	cout << "  |\n";
+  }
+
+  end = std::clock();
+
+  std::cout << "time = " << (end - start) / (double)(CLOCKS_PER_SEC) /10000 << std::endl;
+
   cout << sw_result[0] << "\t" << sw_result[1];
 
 #ifdef HW_COSIM

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="obj_detector.cpp" path="C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\proj1_hls\obj_detector.cpp"/>
-    <originFiles name="obj_detector.h" path="C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\proj1_hls\obj_detector.h"/>
+    <originFiles name="images.csv" path="/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/images.csv"/>
+    <originFiles name="obj_detector.cpp" path="/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/obj_detector.cpp"/>
+    <originFiles name="obj_detector.h" path="/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/obj_detector.h"/>
   </source>
   <testbench>
-    <originFiles name="obj_detector_tb.cpp" path="C:\Users\AraniBasu\Documents\GitHub\Reconfig-project\Hardware-Accel\HW\proj1_hls\obj_detector_tb.cpp"/>
+    <originFiles name="obj_detector_tb.cpp" path="/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/obj_detector_tb.cpp"/>
+    <originFiles name="images0.mat" path="/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/images0.mat"/>
+    <originFiles name="images1.mat" path="/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/images1.mat"/>
+    <originFiles name="images0.bin" path="/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/images0.bin"/>
+    <originFiles name="images1.bin" path="/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/images1.bin"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

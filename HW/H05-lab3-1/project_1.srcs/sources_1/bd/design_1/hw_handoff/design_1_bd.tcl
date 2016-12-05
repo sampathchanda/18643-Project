@@ -466,7 +466,7 @@ proc create_root_design { parentCell } {
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
-  set_property -dict [ list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_SD0_GRP_POW_ENABLE {0} CONFIG.PCW_SD0_PERIPHERAL_ENABLE {1} CONFIG.PCW_SD0_SD0_IO {MIO 40 .. 45} CONFIG.PCW_SD1_PERIPHERAL_ENABLE {0} CONFIG.PCW_USE_S_AXI_HP0 {1} CONFIG.PCW_USE_S_AXI_HP1 {1} CONFIG.PCW_USE_S_AXI_HP2 {1} CONFIG.PCW_USE_S_AXI_HP3 {1} CONFIG.preset {ZedBoard}  ] $processing_system7_0
+  set_property -dict [ list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_SD0_GRP_POW_ENABLE {0} CONFIG.PCW_SD0_PERIPHERAL_ENABLE {1} CONFIG.PCW_SD0_SD0_IO {MIO 40 .. 45} CONFIG.PCW_SD1_PERIPHERAL_ENABLE {0} CONFIG.PCW_UIPARAM_DDR_BOARD_DELAY0 {0.063} CONFIG.PCW_UIPARAM_DDR_BOARD_DELAY1 {0.062} CONFIG.PCW_UIPARAM_DDR_BOARD_DELAY2 {0.065} CONFIG.PCW_UIPARAM_DDR_BOARD_DELAY3 {0.083} CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 {-0.007} CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 {-0.010} CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 {-0.006} CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 {-0.048} CONFIG.PCW_USE_S_AXI_HP0 {1} CONFIG.PCW_USE_S_AXI_HP1 {1} CONFIG.PCW_USE_S_AXI_HP2 {1} CONFIG.PCW_USE_S_AXI_HP3 {1} CONFIG.preset {ZedBoard}  ] $processing_system7_0
 
   # Create instance: processing_system7_0_axi_periph, and set properties
   set processing_system7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 processing_system7_0_axi_periph ]
@@ -476,14 +476,14 @@ proc create_root_design { parentCell } {
   set rst_processing_system7_0_100M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_processing_system7_0_100M ]
 
   # Create interface connections
+  connect_bd_intf_net -intf_net BRAM_PORTB_1 [get_bd_intf_pins hier_bram_0/BRAM_PORTB] [get_bd_intf_pins obj_detector_0/A_PORTA]
   connect_bd_intf_net -intf_net S_AXI_LITE_1 [get_bd_intf_pins hier_bram_3/S_AXI_LITE] [get_bd_intf_pins processing_system7_0_axi_periph/M04_AXI]
   connect_bd_intf_net -intf_net axi_mem_intercon_M00_AXI [get_bd_intf_pins hier_bram_0/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
   connect_bd_intf_net -intf_net hier_bram_1_M00_AXI [get_bd_intf_pins hier_bram_1/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP1]
   connect_bd_intf_net -intf_net hier_bram_2_M00_AXI [get_bd_intf_pins hier_bram_2/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP2]
   connect_bd_intf_net -intf_net hier_bram_3_M00_AXI [get_bd_intf_pins hier_bram_3/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP3]
-  connect_bd_intf_net -intf_net obj_detector_0_A_PORTA [get_bd_intf_pins hier_bram_0/BRAM_PORTB] [get_bd_intf_pins obj_detector_0/A_PORTA]
-  connect_bd_intf_net -intf_net obj_detector_0_B_PORTA [get_bd_intf_pins hier_bram_1/BRAM_PORTB] [get_bd_intf_pins obj_detector_0/W0_PORTA]
-  connect_bd_intf_net -intf_net obj_detector_0_conv_PORTA [get_bd_intf_pins hier_bram_2/BRAM_PORTB] [get_bd_intf_pins obj_detector_0/W1_PORTA]
+  connect_bd_intf_net -intf_net obj_detector_0_W0_PORTA [get_bd_intf_pins hier_bram_1/BRAM_PORTB] [get_bd_intf_pins obj_detector_0/W0_PORTA]
+  connect_bd_intf_net -intf_net obj_detector_0_W1_PORTA [get_bd_intf_pins hier_bram_2/BRAM_PORTB] [get_bd_intf_pins obj_detector_0/W1_PORTA]
   connect_bd_intf_net -intf_net obj_detector_0_res_PORTA [get_bd_intf_pins hier_bram_3/BRAM_PORTB] [get_bd_intf_pins obj_detector_0/res_PORTA]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
@@ -507,11 +507,11 @@ proc create_root_design { parentCell } {
   create_bd_addr_seg -range 0x10000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs obj_detector_0/s_axi_control/Reg] SEG_obj_detector_0_Reg
   create_bd_addr_seg -range 0x10000 -offset 0xC0000000 [get_bd_addr_spaces hier_bram_0/axi_cdma_0/Data] [get_bd_addr_segs hier_bram_0/axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
   create_bd_addr_seg -range 0x20000000 -offset 0x0 [get_bd_addr_spaces hier_bram_0/axi_cdma_0/Data] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] SEG_processing_system7_0_HP0_DDR_LOWOCM
-  create_bd_addr_seg -range 0x10000 -offset 0xC2000000 [get_bd_addr_spaces hier_bram_1/axi_cdma_0/Data] [get_bd_addr_segs hier_bram_1/axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
+  create_bd_addr_seg -range 0x2000 -offset 0xC2000000 [get_bd_addr_spaces hier_bram_1/axi_cdma_0/Data] [get_bd_addr_segs hier_bram_1/axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
   create_bd_addr_seg -range 0x20000000 -offset 0x0 [get_bd_addr_spaces hier_bram_1/axi_cdma_0/Data] [get_bd_addr_segs processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM] SEG_processing_system7_0_HP1_DDR_LOWOCM
-  create_bd_addr_seg -range 0x10000 -offset 0xC4000000 [get_bd_addr_spaces hier_bram_2/axi_cdma_0/Data] [get_bd_addr_segs hier_bram_2/axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
+  create_bd_addr_seg -range 0x2000 -offset 0xC4000000 [get_bd_addr_spaces hier_bram_2/axi_cdma_0/Data] [get_bd_addr_segs hier_bram_2/axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
   create_bd_addr_seg -range 0x20000000 -offset 0x0 [get_bd_addr_spaces hier_bram_2/axi_cdma_0/Data] [get_bd_addr_segs processing_system7_0/S_AXI_HP2/HP2_DDR_LOWOCM] SEG_processing_system7_0_HP2_DDR_LOWOCM
-  create_bd_addr_seg -range 0x10000 -offset 0xC6000000 [get_bd_addr_spaces hier_bram_3/axi_cdma_0/Data] [get_bd_addr_segs hier_bram_3/axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
+  create_bd_addr_seg -range 0x2000 -offset 0xC6000000 [get_bd_addr_spaces hier_bram_3/axi_cdma_0/Data] [get_bd_addr_segs hier_bram_3/axi_bram_ctrl_0/S_AXI/Mem0] SEG_axi_bram_ctrl_0_Mem0
   create_bd_addr_seg -range 0x20000000 -offset 0x0 [get_bd_addr_spaces hier_bram_3/axi_cdma_0/Data] [get_bd_addr_segs processing_system7_0/S_AXI_HP3/HP3_DDR_LOWOCM] SEG_processing_system7_0_HP3_DDR_LOWOCM
   
 

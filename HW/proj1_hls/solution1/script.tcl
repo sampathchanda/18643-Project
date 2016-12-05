@@ -5,13 +5,18 @@
 ############################################################
 open_project proj1_hls
 set_top obj_detector
+add_files proj1_hls/images.csv
 add_files proj1_hls/obj_detector.cpp
 add_files proj1_hls/obj_detector.h
+add_files -tb proj1_hls/images0.bin
+add_files -tb proj1_hls/images0.mat
+add_files -tb proj1_hls/images1.bin
+add_files -tb proj1_hls/images1.mat
 add_files -tb proj1_hls/obj_detector_tb.cpp
 open_solution "solution1"
 set_part {xc7z020clg484-1}
 create_clock -period 20 -name default
-source "./proj1_hls/solution1/directives.tcl"
+#source "./proj1_hls/solution1/directives.tcl"
 csim_design
 csynth_design
 cosim_design -tool xsim

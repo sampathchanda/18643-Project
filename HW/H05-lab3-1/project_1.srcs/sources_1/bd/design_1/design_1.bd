@@ -49,6 +49,14 @@
         <spirit:componentRef spirit:library="ip" spirit:name="processing_system7" spirit:vendor="xilinx.com" spirit:version="5.5"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_processing_system7_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0">-0.007</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1">-0.010</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2">-0.006</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3">-0.048</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_BOARD_DELAY0">0.063</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_BOARD_DELAY1">0.062</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_BOARD_DELAY2">0.065</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_BOARD_DELAY3">0.083</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_USE_S_AXI_HP0">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_USE_S_AXI_HP1">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_USE_S_AXI_HP2">1</spirit:configurableElementValue>
@@ -90,15 +98,15 @@
         <spirit:componentRef spirit:library="BlockDiagram/design_1_imp" spirit:name="hier_bram_2" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
       </spirit:componentInstance>
       <spirit:componentInstance>
+        <spirit:instanceName>hier_bram_3</spirit:instanceName>
+        <spirit:componentRef spirit:library="BlockDiagram/design_1_imp" spirit:name="hier_bram_3" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
         <spirit:instanceName>obj_detector_0</spirit:instanceName>
         <spirit:componentRef spirit:library="hls" spirit:name="obj_detector" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_obj_detector_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>hier_bram_3</spirit:instanceName>
-        <spirit:componentRef spirit:library="BlockDiagram/design_1_imp" spirit:name="hier_bram_3" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
       </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:interconnections>
@@ -138,29 +146,29 @@
         <spirit:activeInterface spirit:busRef="S_AXI_LITE" spirit:componentRef="hier_bram_2"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>processing_system7_0_axi_periph_M01_AXI</spirit:name>
-        <spirit:activeInterface spirit:busRef="s_axi_control" spirit:componentRef="obj_detector_0"/>
-        <spirit:activeInterface spirit:busRef="M01_AXI" spirit:componentRef="processing_system7_0_axi_periph"/>
+        <spirit:name>S_AXI_LITE_1</spirit:name>
+        <spirit:activeInterface spirit:busRef="S_AXI_LITE" spirit:componentRef="hier_bram_3"/>
+        <spirit:activeInterface spirit:busRef="M04_AXI" spirit:componentRef="processing_system7_0_axi_periph"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>obj_detector_0_A_PORTA</spirit:name>
-        <spirit:activeInterface spirit:busRef="A_PORTA" spirit:componentRef="obj_detector_0"/>
+        <spirit:name>hier_bram_3_M00_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="S_AXI_HP3" spirit:componentRef="processing_system7_0"/>
+        <spirit:activeInterface spirit:busRef="M00_AXI" spirit:componentRef="hier_bram_3"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>BRAM_PORTB_1</spirit:name>
         <spirit:activeInterface spirit:busRef="BRAM_PORTB" spirit:componentRef="hier_bram_0"/>
+        <spirit:activeInterface spirit:busRef="A_PORTA" spirit:componentRef="obj_detector_0"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>obj_detector_0_B_PORTA</spirit:name>
+        <spirit:name>obj_detector_0_W0_PORTA</spirit:name>
         <spirit:activeInterface spirit:busRef="W0_PORTA" spirit:componentRef="obj_detector_0"/>
         <spirit:activeInterface spirit:busRef="BRAM_PORTB" spirit:componentRef="hier_bram_1"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>obj_detector_0_conv_PORTA</spirit:name>
+        <spirit:name>obj_detector_0_W1_PORTA</spirit:name>
         <spirit:activeInterface spirit:busRef="W1_PORTA" spirit:componentRef="obj_detector_0"/>
         <spirit:activeInterface spirit:busRef="BRAM_PORTB" spirit:componentRef="hier_bram_2"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
-        <spirit:name>S_AXI_LITE_1</spirit:name>
-        <spirit:activeInterface spirit:busRef="S_AXI_LITE" spirit:componentRef="hier_bram_3"/>
-        <spirit:activeInterface spirit:busRef="M04_AXI" spirit:componentRef="processing_system7_0_axi_periph"/>
       </spirit:interconnection>
       <spirit:interconnection>
         <spirit:name>obj_detector_0_res_PORTA</spirit:name>
@@ -168,9 +176,9 @@
         <spirit:activeInterface spirit:busRef="BRAM_PORTB" spirit:componentRef="hier_bram_3"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>hier_bram_3_M00_AXI</spirit:name>
-        <spirit:activeInterface spirit:busRef="S_AXI_HP3" spirit:componentRef="processing_system7_0"/>
-        <spirit:activeInterface spirit:busRef="M00_AXI" spirit:componentRef="hier_bram_3"/>
+        <spirit:name>processing_system7_0_axi_periph_M01_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M01_AXI" spirit:componentRef="processing_system7_0_axi_periph"/>
+        <spirit:activeInterface spirit:busRef="s_axi_control" spirit:componentRef="obj_detector_0"/>
       </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
@@ -182,6 +190,8 @@
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="S_AXI_HP0_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="S_AXI_HP1_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="S_AXI_HP2_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="S_AXI_HP3_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="obj_detector_0" spirit:portRef="ap_clk"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M00_ACLK"/>
@@ -191,9 +201,7 @@
         <spirit:internalPortReference spirit:componentRef="hier_bram_2" spirit:portRef="s_axi_lite_aclk"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M02_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M03_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="obj_detector_0" spirit:portRef="ap_clk"/>
         <spirit:internalPortReference spirit:componentRef="hier_bram_3" spirit:portRef="s_axi_lite_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="S_AXI_HP3_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M04_ACLK"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
@@ -204,6 +212,7 @@
       <spirit:adHocConnection>
         <spirit:name>rst_processing_system7_0_100M_peripheral_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="rst_processing_system7_0_100M" spirit:portRef="peripheral_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="obj_detector_0" spirit:portRef="ap_rst_n"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M01_ARESETN"/>
@@ -212,7 +221,6 @@
         <spirit:internalPortReference spirit:componentRef="hier_bram_2" spirit:portRef="s_axi_lite_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M02_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M03_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="obj_detector_0" spirit:portRef="ap_rst_n"/>
         <spirit:internalPortReference spirit:componentRef="hier_bram_3" spirit:portRef="s_axi_lite_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M04_ARESETN"/>
       </spirit:adHocConnection>
@@ -7274,15 +7282,15 @@
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
-            <spirit:name>SEG_obj_detector_0_Reg</spirit:name>
-            <spirit:displayName>/obj_detector_0/s_axi_control/Reg</spirit:displayName>
-            <spirit:addressOffset>0x43C00000</spirit:addressOffset>
-            <spirit:range>64K</spirit:range>
-          </spirit:segment>
-          <spirit:segment>
             <spirit:name>SEG_axi_cdma_0_Reg3</spirit:name>
             <spirit:displayName>/hier_bram_3/axi_cdma_0/S_AXI_LITE/Reg</spirit:displayName>
             <spirit:addressOffset>0x7E230000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_obj_detector_0_Reg</spirit:name>
+            <spirit:displayName>/obj_detector_0/s_axi_control/Reg</spirit:displayName>
+            <spirit:addressOffset>0x43C00000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>
@@ -7339,7 +7347,7 @@
             <spirit:name>SEG_axi_bram_ctrl_0_Mem0</spirit:name>
             <spirit:displayName>/hier_bram_1/axi_bram_ctrl_0/S_AXI/Mem0</spirit:displayName>
             <spirit:addressOffset>0xC2000000</spirit:addressOffset>
-            <spirit:range>64K</spirit:range>
+            <spirit:range>8K</spirit:range>
           </spirit:segment>
         </spirit:segments>
       </spirit:addressSpace>
@@ -7367,7 +7375,7 @@
             <spirit:name>SEG_axi_bram_ctrl_0_Mem0</spirit:name>
             <spirit:displayName>/hier_bram_2/axi_bram_ctrl_0/S_AXI/Mem0</spirit:displayName>
             <spirit:addressOffset>0xC4000000</spirit:addressOffset>
-            <spirit:range>64K</spirit:range>
+            <spirit:range>8K</spirit:range>
           </spirit:segment>
         </spirit:segments>
       </spirit:addressSpace>
@@ -7395,7 +7403,7 @@
             <spirit:name>SEG_axi_bram_ctrl_0_Mem0</spirit:name>
             <spirit:displayName>/hier_bram_3/axi_bram_ctrl_0/S_AXI/Mem0</spirit:displayName>
             <spirit:addressOffset>0xC6000000</spirit:addressOffset>
-            <spirit:range>64K</spirit:range>
+            <spirit:range>8K</spirit:range>
           </spirit:segment>
         </spirit:segments>
       </spirit:addressSpace>

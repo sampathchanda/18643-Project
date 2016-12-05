@@ -29,47 +29,87 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/AraniBasu/Documents/GitHub/Reconfig-project/Hardware-Accel/HW/proj1_hls/.apc/.src</location>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/AraniBasu/Documents/GitHub/Reconfig-project/Hardware-Accel/HW/proj1_hls/.apc/.tb</location>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/.apc/.tb</location>
+		</link>
+		<link>
+			<name>.reference/cmath</name>
+			<type>1</type>
+			<location>/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/gcc/include/c++/4.6.3/cmath</location>
+		</link>
+		<link>
+			<name>.reference/ctime</name>
+			<type>1</type>
+			<location>/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/gcc/include/c++/4.6.3/ctime</location>
+		</link>
+		<link>
+			<name>.reference/stl_algobase.h</name>
+			<type>1</type>
+			<location>/home/littlefoot/vivado/Vivado_HLS/2015.2/lnx64/tools/gcc/include/c++/4.6.3/bits/stl_algobase.h</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Users/AraniBasu/Documents/GitHub/Reconfig-project/Hardware-Accel/HW/proj1_hls/solution1/.tcls</location>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/.tcls</location>
+		</link>
+		<link>
+			<name>source/images.csv</name>
+			<type>1</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/images.csv</location>
 		</link>
 		<link>
 			<name>source/obj_detector.cpp</name>
 			<type>1</type>
-			<location>C:/Users/AraniBasu/Documents/GitHub/Reconfig-project/Hardware-Accel/HW/proj1_hls/obj_detector.cpp</location>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/obj_detector.cpp</location>
 		</link>
 		<link>
 			<name>source/obj_detector.h</name>
 			<type>1</type>
-			<location>C:/Users/AraniBasu/Documents/GitHub/Reconfig-project/Hardware-Accel/HW/proj1_hls/obj_detector.h</location>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/obj_detector.h</location>
+		</link>
+		<link>
+			<name>testbench/images0.bin</name>
+			<type>1</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/images0.bin</location>
+		</link>
+		<link>
+			<name>testbench/images0.mat</name>
+			<type>1</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/images0.mat</location>
+		</link>
+		<link>
+			<name>testbench/images1.bin</name>
+			<type>1</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/images1.bin</location>
+		</link>
+		<link>
+			<name>testbench/images1.mat</name>
+			<type>1</type>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/images1.mat</location>
 		</link>
 		<link>
 			<name>testbench/obj_detector_tb.cpp</name>
 			<type>1</type>
-			<location>C:/Users/AraniBasu/Documents/GitHub/Reconfig-project/Hardware-Accel/HW/proj1_hls/obj_detector_tb.cpp</location>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/obj_detector_tb.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/AraniBasu/Documents/GitHub/Reconfig-project/Hardware-Accel/HW/proj1_hls/solution1/solution1.directive</location>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/AraniBasu/Documents/GitHub/Reconfig-project/Hardware-Accel/HW/proj1_hls/solution1/directives.tcl</location>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/AraniBasu/Documents/GitHub/Reconfig-project/Hardware-Accel/HW/proj1_hls/solution1/script.tcl</location>
+			<location>/home/littlefoot/18643_project/Hardware-Accel/HW/proj1_hls/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

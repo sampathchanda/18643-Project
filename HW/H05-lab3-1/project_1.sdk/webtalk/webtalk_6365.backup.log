@@ -1,0 +1,51 @@
+INFO: [Common 17-701] A license check has taken more than 10 seconds to complete. This may indicate that there is a performance issue with one or more license servers listed in XILINXD_LICENSE_FILE or LM_LICENSE_FILE, or that the license servers are just not responding at all. Try setting the FLEXLM_DIAGNOSTICS environment variable to 3 and running Vivado again to get more information.
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# 
+# Start of session at: Sun Dec  4 00:31:09 2016
+# Process ID: 27618
+# Log file: /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/webtalk/webtalk.log
+# Journal file: /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
+# webtalk_init -webtalk_dir /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/webtalk
+# webtalk_register_client -client project
+# webtalk_add_data -client project -key date_generated -value "Sun Dec 4 00:30:12 2016" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key product_version -value "SDK v2015.2" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key build_version -value "2015.2" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key os_platform -value "amd64" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key registration_id -value "" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key tool_flow -value "SDK" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key beta -value "false" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key route_design -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_family -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_device -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_package -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_speed -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key random_id -value "cc30m7kb2hgk4hjmo24hrerah" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_id -value "2015.2_19" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_iteration -value "19" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key os_name -value "" -context "user_environment"
+# webtalk_add_data -client project -key os_release -value "" -context "user_environment"
+# webtalk_add_data -client project -key cpu_name -value "" -context "user_environment"
+# webtalk_add_data -client project -key cpu_speed -value "" -context "user_environment"
+# webtalk_add_data -client project -key total_processors -value "" -context "user_environment"
+# webtalk_add_data -client project -key system_ram -value "" -context "user_environment"
+# webtalk_register_client -client sdk
+# webtalk_add_data -client sdk -key uid -value "1480821195000" -context "sdk\\\\bsp/1480821195000"
+# webtalk_add_data -client sdk -key hwid -value "1480806617000" -context "sdk\\\\bsp/1480821195000"
+# webtalk_add_data -client sdk -key os -value "standalone" -context "sdk\\\\bsp/1480821195000"
+# webtalk_add_data -client sdk -key apptemplate -value "empty_application" -context "sdk\\\\bsp/1480821195000"
+# webtalk_add_data -client sdk -key uid -value "1480821198000" -context "sdk\\\\application/1480821198000"
+# webtalk_add_data -client sdk -key hwid -value "1480806617000" -context "sdk\\\\application/1480821198000"
+# webtalk_add_data -client sdk -key bspid -value "1480821195000" -context "sdk\\\\application/1480821198000"
+# webtalk_add_data -client sdk -key newbsp -value "true" -context "sdk\\\\application/1480821198000"
+# webtalk_add_data -client sdk -key os -value "standalone" -context "sdk\\\\application/1480821198000"
+# webtalk_add_data -client sdk -key apptemplate -value "empty_application" -context "sdk\\\\application/1480821198000"
+# webtalk_transmit -clientid 2879119156 -regid "" -xml /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/webtalk/usage_statistics_ext_sdk.xml -html /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/webtalk/usage_statistics_ext_sdk.html -wdm /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/webtalk/sdk_webtalk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
+
+    while executing
+"webtalk_transmit -clientid 2879119156 -regid "" -xml /home/littlefoot/18643_project/Hardware-Accel/HW/H05-lab3-1/project_1.sdk/webtalk/usage_statistic..."
+    (file "sdk_webtalk.tcl" line 35)
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec  4 00:31:09 2016...
