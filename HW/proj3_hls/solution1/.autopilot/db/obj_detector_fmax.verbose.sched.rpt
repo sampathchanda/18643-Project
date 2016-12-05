@@ -1,0 +1,273 @@
+
+
+================================================================
+== Vivado HLS Report for 'obj_detector_fmax'
+================================================================
+* Date:           Sat Dec 03 21:39:10 2016
+
+* Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
+* Project:        proj3_hls
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.22|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    2|    2|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       -|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 3
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+* FSM state operations: 
+
+ <State 1>: 7.60ns
+ST_1: y_read [1/1] 2.22ns
+_ifconv:0  %y_read = call double @_ssdm_op_Read.ap_auto.double(double %y) nounwind
+
+ST_1: x_read [1/1] 2.22ns
+_ifconv:1  %x_read = call double @_ssdm_op_Read.ap_auto.double(double %x) nounwind
+
+ST_1: p_Val2_s [1/1] 0.00ns
+_ifconv:2  %p_Val2_s = bitcast double %x_read to i64
+
+ST_1: p_Result_6 [1/1] 0.00ns
+_ifconv:3  %p_Result_6 = call i1 @_ssdm_op_BitSelect.i1.i64.i32(i64 %p_Val2_s, i32 63)
+
+ST_1: loc_V [1/1] 0.00ns
+_ifconv:4  %loc_V = call i11 @_ssdm_op_PartSelect.i11.i64.i32.i32(i64 %p_Val2_s, i32 52, i32 62) nounwind
+
+ST_1: loc_V_1 [1/1] 0.00ns
+_ifconv:5  %loc_V_1 = trunc i64 %p_Val2_s to i52
+
+ST_1: p_Val2_1 [1/1] 0.00ns
+_ifconv:6  %p_Val2_1 = bitcast double %y_read to i64
+
+ST_1: loc_V_2 [1/1] 0.00ns
+_ifconv:7  %loc_V_2 = call i11 @_ssdm_op_PartSelect.i11.i64.i32.i32(i64 %p_Val2_1, i32 52, i32 62) nounwind
+
+ST_1: loc_V_3 [1/1] 0.00ns
+_ifconv:8  %loc_V_3 = trunc i64 %p_Val2_1 to i52
+
+ST_1: tmp_i [1/1] 2.11ns
+_ifconv:9  %tmp_i = icmp eq i11 %loc_V, 0
+
+ST_1: tmp_i_7 [1/1] 2.64ns
+_ifconv:10  %tmp_i_7 = icmp eq i52 %loc_V_1, 0
+
+ST_1: tmp_1_i [1/1] 2.11ns
+_ifconv:11  %tmp_1_i = icmp eq i11 %loc_V_2, 0
+
+ST_1: tmp_2_i [1/1] 2.64ns
+_ifconv:12  %tmp_2_i = icmp eq i52 %loc_V_3, 0
+
+ST_1: tmp [1/1] 1.37ns
+_ifconv:13  %tmp = and i1 %tmp_i_7, %tmp_1_i
+
+ST_1: tmp1 [1/1] 1.37ns
+_ifconv:14  %tmp1 = and i1 %tmp_i, %tmp_2_i
+
+ST_1: or_cond2_i [1/1] 1.37ns
+_ifconv:15  %or_cond2_i = and i1 %tmp1, %tmp
+
+ST_1: tmp_3_i [1/1] 2.11ns
+_ifconv:16  %tmp_3_i = icmp ne i11 %loc_V, -1
+
+ST_1: or_cond3_i [1/1] 1.37ns
+_ifconv:17  %or_cond3_i = or i1 %tmp_3_i, %tmp_i_7
+
+ST_1: tmp_4_i [1/1] 2.11ns
+_ifconv:18  %tmp_4_i = icmp ne i11 %loc_V_2, -1
+
+ST_1: or_cond4_i [1/1] 1.37ns
+_ifconv:19  %or_cond4_i = or i1 %tmp_4_i, %tmp_2_i
+
+
+ <State 2>: 8.20ns
+ST_2: tmp_8 [1/1] 1.37ns
+_ifconv:20  %tmp_8 = and i1 %or_cond3_i, %or_cond4_i
+
+ST_2: tmp_9 [1/1] 6.83ns
+_ifconv:21  %tmp_9 = fcmp ogt double %x_read, %y_read
+
+ST_2: tmp_s [1/1] 1.37ns
+_ifconv:22  %tmp_s = and i1 %tmp_8, %tmp_9
+
+
+ <State 3>: 8.22ns
+ST_3: res [1/1] 1.37ns
+_ifconv:23  %res = select i1 %tmp_s, double %x_read, double %y_read
+
+ST_3: x_fp_sig_V [1/1] 0.00ns
+_ifconv:24  %x_fp_sig_V = or i52 %loc_V_1, -2251799813685248
+
+ST_3: p_Result_s [1/1] 0.00ns
+_ifconv:25  %p_Result_s = call i64 @_ssdm_op_BitConcatenate.i64.i1.i11.i52(i1 %p_Result_6, i11 -1, i52 %x_fp_sig_V) nounwind
+
+ST_3: res_1 [1/1] 0.00ns
+_ifconv:26  %res_1 = bitcast i64 %p_Result_s to double
+
+ST_3: sel_tmp1 [1/1] 1.37ns
+_ifconv:27  %sel_tmp1 = xor i1 %or_cond2_i, %or_cond3_i
+
+ST_3: sel_tmp2 [1/1] 1.37ns
+_ifconv:28  %sel_tmp2 = and i1 %sel_tmp1, %or_cond4_i
+
+ST_3: res_2 [1/1] 1.37ns
+_ifconv:29  %res_2 = select i1 %sel_tmp2, double %res, double %res_1
+
+ST_3: res_3 [1/1] 1.37ns
+_ifconv:30  %res_3 = select i1 %or_cond2_i, double %y_read, double %res_2
+
+ST_3: sel_tmp7_demorgan [1/1] 1.37ns
+_ifconv:31  %sel_tmp7_demorgan = or i1 %or_cond2_i, %or_cond3_i
+
+ST_3: sel_tmp7 [1/1] 1.37ns
+_ifconv:32  %sel_tmp7 = xor i1 %sel_tmp7_demorgan, true
+
+ST_3: sel_tmp8 [1/1] 1.37ns
+_ifconv:33  %sel_tmp8 = and i1 %or_cond4_i, %sel_tmp7
+
+ST_3: res_4 [1/1] 1.37ns
+_ifconv:34  %res_4 = select i1 %sel_tmp8, double %y_read, double %res_3
+
+ST_3: sel_tmp [1/1] 1.37ns
+_ifconv:35  %sel_tmp = xor i1 %or_cond4_i, true
+
+ST_3: sel_tmp3 [1/1] 1.37ns
+_ifconv:36  %sel_tmp3 = and i1 %sel_tmp1, %sel_tmp
+
+ST_3: res_5 [1/1] 1.37ns
+_ifconv:37  %res_5 = select i1 %sel_tmp3, double %x_read, double %res_4
+
+ST_3: stg_42 [1/1] 0.00ns
+_ifconv:38  ret double %res_5
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

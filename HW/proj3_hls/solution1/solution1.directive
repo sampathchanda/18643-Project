@@ -1,0 +1,23 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="convolve" label="convolve_label3" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="convolve" label="convolve_label5" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="maxpool" label="maxpool_label6" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="flatten" label="flatten_label7" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="FCL" label="FCL_label8" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="convolve" label="convolve_label1" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="obj_detector" xd:componentRef="obj_detector" xd:initiationInterval="38514" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="A[][]" xd:originalName="A" xd:direction="inout" xd:interfaceRef="m_axi_HP0" xd:busTypeRef="aximm" xd:arraySize="784" xd:dataWidth="32" xd:bufferDirection="in"/>
+  <xd:arg xd:name="W0[][][]" xd:originalName="W0" xd:direction="inout" xd:interfaceRef="m_axi_HP1" xd:busTypeRef="aximm" xd:arraySize="150" xd:dataWidth="32" xd:bufferDirection="in"/>
+  <xd:arg xd:name="W1[][]" xd:originalName="W1" xd:direction="inout" xd:interfaceRef="m_axi_HP2" xd:busTypeRef="aximm" xd:arraySize="1728" xd:dataWidth="32" xd:bufferDirection="in"/>
+  <xd:arg xd:name="res[]" xd:originalName="res" xd:direction="inout" xd:interfaceRef="m_axi_HP3" xd:busTypeRef="aximm" xd:arraySize="2" xd:dataWidth="32" xd:bufferDirection="out"/>
+  <xd:arg xd:name="A" xd:originalName="A" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_HP0" xd:dataWidth="32" xd:offset="0x10" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="W0" xd:originalName="W0" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_HP1" xd:dataWidth="32" xd:offset="0x18" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="W1" xd:originalName="W1" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_HP2" xd:dataWidth="32" xd:offset="0x20" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="res" xd:originalName="res" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_HP3" xd:dataWidth="32" xd:offset="0x28" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="38513" xd:worst-case="38513" xd:average-case="38513"/>
+  <xd:resourceEstimates xd:LUT="42870" xd:FF="38217" xd:BRAM="50" xd:DSP="82"/>
+</xd:acceleratorMap>
